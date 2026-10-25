@@ -15,8 +15,6 @@
 > degradation, while the whole dwelling parent increased HOME on two of four
 > prompts. This does not establish a general "meaning beats form" law or an
 > undefeated J-lens forecast rule. See the
-> [current research state](../codex_context/CURRENT_STATE.md) and
-> [evidence ledger](../codex_context/EXPERIMENT_LEDGER.md#8-wordle2).
 
 Technical report, 2026-08-15 (overnight run). Pre-registration:
 `experiments/wordle2/README.md` (committed before results, including

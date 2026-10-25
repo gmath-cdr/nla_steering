@@ -194,12 +194,6 @@ if [[ "$SKIP_JLENS" -eq 0 ]]; then
   python -m pip install -e "$JLENS_DIR"
 fi
 
-need npm
-npm install -g @openai/codex@latest
-codex --version
-echo "Codex device authentication is required before continuing."
-codex login --device-auth
-
 if [[ "$SKIP_DOWNLOAD" -eq 0 ]]; then
   need hf
   if ! hf auth whoami >/dev/null 2>&1; then

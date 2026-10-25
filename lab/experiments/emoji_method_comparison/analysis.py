@@ -337,7 +337,7 @@ def make_alpha_receipt(
         "calibration_package_versions": packages,
         "created_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "audit": {
-            "reviewer": "Codex-assisted deterministic run audit",
+            "reviewer": "deterministic run audit",
             "note": (
                 "Exact Cartesian grids, frozen locks, raw record availability, paired baselines, "
                 "checkpoint/code/package identity, and deterministic safety metrics passed. "

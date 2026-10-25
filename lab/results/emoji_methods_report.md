@@ -14,8 +14,6 @@
 > norm, not native causal contribution. Current conclusion: target-aligned
 > readout is a promising diagnostic, not an established or undefeated
 > forecast, and k25 remainders are not universally inert. See the
-> [current research state](../codex_context/CURRENT_STATE.md) and
-> [evidence ledger](../codex_context/EXPERIMENT_LEDGER.md#7-qwen-emoji-methods).
 
 Technical report, 2026-08-14. Experiment designed via the team's
 worksheet process; all predictions pre-registered in

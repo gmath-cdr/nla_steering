@@ -27,8 +27,6 @@
 > training, tokenizer, layer, and size, so it is not a clean capacity
 > result. The raw lion run includes TIGER, and target-aligned readout is a
 > promising diagnostic rather than an established forecast. See the
-> [current research state](../codex_context/CURRENT_STATE.md) and
-> [evidence ledger](../codex_context/EXPERIMENT_LEDGER.md#9-gemma-3-12b-core).
 
 Technical report, 2026-08-15 overnight. Pre-registration:
 `experiments/gemma_core/README.md` (seven predictions, committed
