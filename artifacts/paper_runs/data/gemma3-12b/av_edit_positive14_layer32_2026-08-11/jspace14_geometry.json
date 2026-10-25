@@ -1,0 +1,901 @@
+{
+  "protocol_version": "av-edit-sweep-jspace-v1",
+  "transcripts": "/workspace/nla/results/gemma3-12b/qwen_positive14_fine_alpha_layer32_v1/results.av_edits.json",
+  "lens": "artifacts/gemma3-12b/full_run/checkpoints/c3_broad12_lens.pt",
+  "lens_n_prompts": 12,
+  "layer": 32,
+  "basis_rank": 32,
+  "n_concepts": 14,
+  "n_prompt_vectors": 28,
+  "aggregate": {
+    "within_concept_pair_cosine": {
+      "mean": 0.19685305655002594,
+      "std": 0.4247953217148971,
+      "min": -0.694709300994873,
+      "max": 0.7596371173858643
+    },
+    "prompt_projection_fraction": {
+      "mean": 0.02617455114211355,
+      "std": 0.009061234122219122,
+      "min": 0.009516483172774315,
+      "max": 0.04326848313212395
+    },
+    "prompt_jacobian_alignment": {
+      "mean": 0.011848676833324134,
+      "std": 0.004546762552731554,
+      "min": 0.004023169167339802,
+      "max": 0.02245410904288292
+    }
+  },
+  "concepts": [
+    {
+      "concept_id": 11,
+      "concept": "phrases related to political and legal context",
+      "n_prompt_vectors": 2,
+      "pairwise_prompt_cosines": [
+        0.6504133939743042
+      ],
+      "within_concept_pair_cosine": {
+        "mean": 0.6504133939743042,
+        "std": 0.0,
+        "min": 0.6504133939743042,
+        "max": 0.6504133939743042
+      },
+      "centroid_path": "artifacts/gemma3-12b/av_edit_positive14_layer32_2026-08-11/centroids/c11.mean_av_edit.pt",
+      "centroid_geometry": {
+        "projection_fraction": 0.03131047636270523,
+        "jacobian_alignment": 0.015897473320364952,
+        "top_basis_cosines": [
+          -0.023569410666823387,
+          0.0040027080103755,
+          -0.005054878070950508,
+          0.00266257394105196,
+          -0.0012403547298163176
+        ]
+      },
+      "prompt_projection_fraction": {
+        "mean": 0.030258660204708576,
+        "std": 0.007353643886744976,
+        "min": 0.0229050163179636,
+        "max": 0.03761230409145355
+      },
+      "prompt_jacobian_alignment": {
+        "mean": 0.014916429296135902,
+        "std": 0.0038085300475358963,
+        "min": 0.011107899248600006,
+        "max": 0.0187249593436718
+      },
+      "per_prompt_geometry": [
+        {
+          "projection_fraction": 0.03761230409145355,
+          "jacobian_alignment": 0.0187249593436718,
+          "top_basis_cosines": [
+            -0.027656562626361847,
+            0.0023970049805939198,
+            -0.004252653103321791,
+            0.0017193135572597384,
+            0.0011464233975857496
+          ]
+        },
+        {
+          "projection_fraction": 0.0229050163179636,
+          "jacobian_alignment": 0.011107899248600006,
+          "top_basis_cosines": [
+            -0.015164815820753574,
+            0.004875184968113899,
+            -0.0049311020411551,
+            0.0031180959194898605,
+            -0.0033999267034232616
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": 30,
+      "concept": "expressions of shared experiences and similarities among users",
+      "n_prompt_vectors": 2,
+      "pairwise_prompt_cosines": [
+        0.33527448773384094
+      ],
+      "within_concept_pair_cosine": {
+        "mean": 0.33527448773384094,
+        "std": 0.0,
+        "min": 0.33527448773384094,
+        "max": 0.33527448773384094
+      },
+      "centroid_path": "artifacts/gemma3-12b/av_edit_positive14_layer32_2026-08-11/centroids/c30.mean_av_edit.pt",
+      "centroid_geometry": {
+        "projection_fraction": 0.030726686120033264,
+        "jacobian_alignment": 0.013850799761712551,
+        "top_basis_cosines": [
+          -0.019323743879795074,
+          0.008856086060404778,
+          -0.009281422942876816,
+          0.007827225141227245,
+          -0.002951782662421465
+        ]
+      },
+      "prompt_projection_fraction": {
+        "mean": 0.029218663461506367,
+        "std": 0.011169455014169216,
+        "min": 0.01804920844733715,
+        "max": 0.04038811847567558
+      },
+      "prompt_jacobian_alignment": {
+        "mean": 0.012194184120744467,
+        "std": 0.001959326211363077,
+        "min": 0.01023485790938139,
+        "max": 0.014153510332107544
+      },
+      "per_prompt_geometry": [
+        {
+          "projection_fraction": 0.01804920844733715,
+          "jacobian_alignment": 0.01023485790938139,
+          "top_basis_cosines": [
+            -0.014447232708334923,
+            0.00030270862043835223,
+            -0.00018513838585931808,
+            -0.002246567979454994,
+            -0.0006649781134910882
+          ]
+        },
+        {
+          "projection_fraction": 0.04038811847567558,
+          "jacobian_alignment": 0.014153510332107544,
+          "top_basis_cosines": [
+            -0.017131246626377106,
+            0.014169732108712196,
+            -0.014982415363192558,
+            0.015037672594189644,
+            -0.004158757161349058
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": 90,
+      "concept": "patterns related to quantifiable data or measurements",
+      "n_prompt_vectors": 2,
+      "pairwise_prompt_cosines": [
+        -0.4877481758594513
+      ],
+      "within_concept_pair_cosine": {
+        "mean": -0.4877481758594513,
+        "std": 0.0,
+        "min": -0.4877481758594513,
+        "max": -0.4877481758594513
+      },
+      "centroid_path": "artifacts/gemma3-12b/av_edit_positive14_layer32_2026-08-11/centroids/c90.mean_av_edit.pt",
+      "centroid_geometry": {
+        "projection_fraction": 0.05541467294096947,
+        "jacobian_alignment": 0.0274124164134264,
+        "top_basis_cosines": [
+          -0.040699951350688934,
+          0.007180136628448963,
+          -0.011610534973442554,
+          0.013145743869245052,
+          -0.0018651362042874098
+        ]
+      },
+      "prompt_projection_fraction": {
+        "mean": 0.0292505226098001,
+        "std": 0.01374932611361146,
+        "min": 0.01550119649618864,
+        "max": 0.04299984872341156
+      },
+      "prompt_jacobian_alignment": {
+        "mean": 0.014326663222163916,
+        "std": 0.006386779714375734,
+        "min": 0.007939883507788181,
+        "max": 0.02071344293653965
+      },
+      "per_prompt_geometry": [
+        {
+          "projection_fraction": 0.04299984872341156,
+          "jacobian_alignment": 0.02071344293653965,
+          "top_basis_cosines": [
+            -0.030385104939341545,
+            0.006082560401409864,
+            -0.008862504735589027,
+            0.013001191429793835,
+            -0.000474986300105229
+          ]
+        },
+        {
+          "projection_fraction": 0.01550119649618864,
+          "jacobian_alignment": 0.007939883507788181,
+          "top_basis_cosines": [
+            -0.010810568928718567,
+            0.0011850271839648485,
+            -0.0028894073329865932,
+            0.0003046493511646986,
+            -0.001412860699929297
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": 116,
+      "concept": "references to specific geographic locations and areas in the context of economic discussion",
+      "n_prompt_vectors": 2,
+      "pairwise_prompt_cosines": [
+        -0.694709300994873
+      ],
+      "within_concept_pair_cosine": {
+        "mean": -0.694709300994873,
+        "std": 0.0,
+        "min": -0.694709300994873,
+        "max": -0.694709300994873
+      },
+      "centroid_path": "artifacts/gemma3-12b/av_edit_positive14_layer32_2026-08-11/centroids/c116.mean_av_edit.pt",
+      "centroid_geometry": {
+        "projection_fraction": 0.045483123511075974,
+        "jacobian_alignment": 0.022643649950623512,
+        "top_basis_cosines": [
+          -0.03276140242815018,
+          0.0064619155600667,
+          -0.006672149524092674,
+          0.008533697575330734,
+          -0.004329699091613293
+        ]
+      },
+      "prompt_projection_fraction": {
+        "mean": 0.020859098993241787,
+        "std": 0.011342615820467472,
+        "min": 0.009516483172774315,
+        "max": 0.03220171481370926
+      },
+      "prompt_jacobian_alignment": {
+        "mean": 0.010138246696442366,
+        "std": 0.006115077529102564,
+        "min": 0.004023169167339802,
+        "max": 0.01625332422554493
+      },
+      "per_prompt_geometry": [
+        {
+          "projection_fraction": 0.009516483172774315,
+          "jacobian_alignment": 0.004023169167339802,
+          "top_basis_cosines": [
+            -0.0012689678696915507,
+            0.0018391244811937213,
+            -0.0018132884288206697,
+            0.002649745438247919,
+            -0.002826317213475704
+          ]
+        },
+        {
+          "projection_fraction": 0.03220171481370926,
+          "jacobian_alignment": 0.01625332422554493,
+          "top_basis_cosines": [
+            -0.02433069422841072,
+            0.0032101927790790796,
+            -0.00340030575171113,
+            0.004018478095531464,
+            -0.0005568860215134919
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": 171,
+      "concept": "terms related to database management and configuration in a programming context",
+      "n_prompt_vectors": 2,
+      "pairwise_prompt_cosines": [
+        0.15978513658046722
+      ],
+      "within_concept_pair_cosine": {
+        "mean": 0.15978513658046722,
+        "std": 0.0,
+        "min": 0.15978513658046722,
+        "max": 0.15978513658046722
+      },
+      "centroid_path": "artifacts/gemma3-12b/av_edit_positive14_layer32_2026-08-11/centroids/c171.mean_av_edit.pt",
+      "centroid_geometry": {
+        "projection_fraction": 0.03889588266611099,
+        "jacobian_alignment": 0.02017715759575367,
+        "top_basis_cosines": [
+          -0.029311884194612503,
+          0.0026492069009691477,
+          0.0011547086760401726,
+          -0.001908572856336832,
+          -0.0034025448840111494
+        ]
+      },
+      "prompt_projection_fraction": {
+        "mean": 0.0312487306073308,
+        "std": 0.012019752524793148,
+        "min": 0.01922897808253765,
+        "max": 0.04326848313212395
+      },
+      "prompt_jacobian_alignment": {
+        "mean": 0.01609709532931447,
+        "std": 0.006357013713568449,
+        "min": 0.009740081615746021,
+        "max": 0.02245410904288292
+      },
+      "per_prompt_geometry": [
+        {
+          "projection_fraction": 0.04326848313212395,
+          "jacobian_alignment": 0.02245410904288292,
+          "top_basis_cosines": [
+            -0.03265547379851341,
+            0.002077551791444421,
+            0.003429190954193473,
+            -0.0044803922064602375,
+            -0.0006717034848406911
+          ]
+        },
+        {
+          "projection_fraction": 0.01922897808253765,
+          "jacobian_alignment": 0.009740081615746021,
+          "top_basis_cosines": [
+            -0.011986957862973213,
+            0.0019572267774492502,
+            -0.0016705610323697329,
+            0.0015736320056021214,
+            -0.004510426428169012
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": 172,
+      "concept": "entities related to political movements and organizations",
+      "n_prompt_vectors": 2,
+      "pairwise_prompt_cosines": [
+        0.07951250672340393
+      ],
+      "within_concept_pair_cosine": {
+        "mean": 0.07951250672340393,
+        "std": 0.0,
+        "min": 0.07951250672340393,
+        "max": 0.07951250672340393
+      },
+      "centroid_path": "artifacts/gemma3-12b/av_edit_positive14_layer32_2026-08-11/centroids/c172.mean_av_edit.pt",
+      "centroid_geometry": {
+        "projection_fraction": 0.027347614988684654,
+        "jacobian_alignment": 0.010754414834082127,
+        "top_basis_cosines": [
+          -0.009718951769173145,
+          -8.734401490073651e-05,
+          -0.007302096579223871,
+          -0.001490660011768341,
+          -0.009044134058058262
+        ]
+      },
+      "prompt_projection_fraction": {
+        "mean": 0.026160291396081448,
+        "std": 0.0024383170530200005,
+        "min": 0.023721974343061447,
+        "max": 0.028598608449101448
+      },
+      "prompt_jacobian_alignment": {
+        "mean": 0.010880586691200733,
+        "std": 0.0022631995379924774,
+        "min": 0.008617387153208256,
+        "max": 0.01314378622919321
+      },
+      "per_prompt_geometry": [
+        {
+          "projection_fraction": 0.023721974343061447,
+          "jacobian_alignment": 0.008617387153208256,
+          "top_basis_cosines": [
+            0.0016676002414897084,
+            -0.0008121530991047621,
+            -0.007687770761549473,
+            0.0036545442417263985,
+            -0.006426419131457806
+          ]
+        },
+        {
+          "projection_fraction": 0.028598608449101448,
+          "jacobian_alignment": 0.01314378622919321,
+          "top_basis_cosines": [
+            -0.015948254615068436,
+            0.0006838269182480872,
+            -0.0030416641384363174,
+            -0.005844858940690756,
+            -0.006862696260213852
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": 186,
+      "concept": "references to military or strategic operations",
+      "n_prompt_vectors": 2,
+      "pairwise_prompt_cosines": [
+        0.04355611652135849
+      ],
+      "within_concept_pair_cosine": {
+        "mean": 0.04355611652135849,
+        "std": 0.0,
+        "min": 0.04355611652135849,
+        "max": 0.04355611652135849
+      },
+      "centroid_path": "artifacts/gemma3-12b/av_edit_positive14_layer32_2026-08-11/centroids/c186.mean_av_edit.pt",
+      "centroid_geometry": {
+        "projection_fraction": 0.04025023430585861,
+        "jacobian_alignment": 0.0193933118134737,
+        "top_basis_cosines": [
+          -0.028290925547480583,
+          0.00846028607338667,
+          -0.0077966442331671715,
+          0.008320392109453678,
+          -0.006576897110790014
+        ]
+      },
+      "prompt_projection_fraction": {
+        "mean": 0.031354980543255806,
+        "std": 0.0108808483928442,
+        "min": 0.020474132150411606,
+        "max": 0.042235828936100006
+      },
+      "prompt_jacobian_alignment": {
+        "mean": 0.014708821196109056,
+        "std": 0.002596538048237562,
+        "min": 0.012112283147871494,
+        "max": 0.01730535924434662
+      },
+      "per_prompt_geometry": [
+        {
+          "projection_fraction": 0.042235828936100006,
+          "jacobian_alignment": 0.01730535924434662,
+          "top_basis_cosines": [
+            -0.022257162258028984,
+            0.011140193790197372,
+            -0.009981033392250538,
+            0.011409323662519455,
+            -0.007181964349001646
+          ]
+        },
+        {
+          "projection_fraction": 0.020474132150411606,
+          "jacobian_alignment": 0.012112283147871494,
+          "top_basis_cosines": [
+            -0.018614329397678375,
+            0.0010822440963238478,
+            -0.0012826404999941587,
+            0.0006110162939876318,
+            -0.0023195811081677675
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": 216,
+      "concept": "numerical values and specific references to dates or quantities",
+      "n_prompt_vectors": 2,
+      "pairwise_prompt_cosines": [
+        0.5428382754325867
+      ],
+      "within_concept_pair_cosine": {
+        "mean": 0.5428382754325867,
+        "std": 0.0,
+        "min": 0.5428382754325867,
+        "max": 0.5428382754325867
+      },
+      "centroid_path": "artifacts/gemma3-12b/av_edit_positive14_layer32_2026-08-11/centroids/c216.mean_av_edit.pt",
+      "centroid_geometry": {
+        "projection_fraction": 0.01910589076578617,
+        "jacobian_alignment": 0.0059776087291538715,
+        "top_basis_cosines": [
+          -0.004776521120220423,
+          0.00390911940485239,
+          -0.00524729723110795,
+          0.0014410886215046048,
+          -0.004056964069604874
+        ]
+      },
+      "prompt_projection_fraction": {
+        "mean": 0.018929666373878717,
+        "std": 0.005886304657906294,
+        "min": 0.013043361715972424,
+        "max": 0.02481597103178501
+      },
+      "prompt_jacobian_alignment": {
+        "mean": 0.006463635712862015,
+        "std": 0.0008399751968681812,
+        "min": 0.0056236605159938335,
+        "max": 0.007303610909730196
+      },
+      "per_prompt_geometry": [
+        {
+          "projection_fraction": 0.02481597103178501,
+          "jacobian_alignment": 0.007303610909730196,
+          "top_basis_cosines": [
+            -0.003198395948857069,
+            0.007046325597912073,
+            -0.008134276606142521,
+            0.004195759072899818,
+            -0.005479978863149881
+          ]
+        },
+        {
+          "projection_fraction": 0.013043361715972424,
+          "jacobian_alignment": 0.0056236605159938335,
+          "top_basis_cosines": [
+            -0.005192083306610584,
+            -0.00017952101188711822,
+            -0.0010831683175638318,
+            -0.001664328621700406,
+            -0.0016465092776343226
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": 222,
+      "concept": "occurrences of the ampersand symbol used in programming contexts, especially related to custom elements and functions",
+      "n_prompt_vectors": 2,
+      "pairwise_prompt_cosines": [
+        0.7596371173858643
+      ],
+      "within_concept_pair_cosine": {
+        "mean": 0.7596371173858643,
+        "std": 0.0,
+        "min": 0.7596371173858643,
+        "max": 0.7596371173858643
+      },
+      "centroid_path": "artifacts/gemma3-12b/av_edit_positive14_layer32_2026-08-11/centroids/c222.mean_av_edit.pt",
+      "centroid_geometry": {
+        "projection_fraction": 0.018512412905693054,
+        "jacobian_alignment": 0.005486042704433203,
+        "top_basis_cosines": [
+          -0.0054941074922680855,
+          0.005694854073226452,
+          -0.0018803155981004238,
+          0.002311667427420616,
+          -0.0011559693375602365
+        ]
+      },
+      "prompt_projection_fraction": {
+        "mean": 0.020089972764253616,
+        "std": 4.6893954277038574e-05,
+        "min": 0.020043078809976578,
+        "max": 0.020136866718530655
+      },
+      "prompt_jacobian_alignment": {
+        "mean": 0.007089449325576425,
+        "std": 0.001354779815301299,
+        "min": 0.0057346695102751255,
+        "max": 0.008444229140877724
+      },
+      "per_prompt_geometry": [
+        {
+          "projection_fraction": 0.020136866718530655,
+          "jacobian_alignment": 0.008444229140877724,
+          "top_basis_cosines": [
+            -0.011577576398849487,
+            0.004408928565680981,
+            -0.0009874182287603617,
+            0.003089411184191704,
+            -0.0009334317874163389
+          ]
+        },
+        {
+          "projection_fraction": 0.020043078809976578,
+          "jacobian_alignment": 0.0057346695102751255,
+          "top_basis_cosines": [
+            0.0012707763817161322,
+            0.006274479441344738,
+            -0.002540009096264839,
+            0.001247210893779993,
+            -0.0012351393233984709
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": 287,
+      "concept": "specific coding constructs, especially related to color attributes and time-related data",
+      "n_prompt_vectors": 2,
+      "pairwise_prompt_cosines": [
+        0.5804736614227295
+      ],
+      "within_concept_pair_cosine": {
+        "mean": 0.5804736614227295,
+        "std": 0.0,
+        "min": 0.5804736614227295,
+        "max": 0.5804736614227295
+      },
+      "centroid_path": "artifacts/gemma3-12b/av_edit_positive14_layer32_2026-08-11/centroids/c287.mean_av_edit.pt",
+      "centroid_geometry": {
+        "projection_fraction": 0.021100565791130066,
+        "jacobian_alignment": 0.009453510865569115,
+        "top_basis_cosines": [
+          -0.012037821114063263,
+          0.002733005443587899,
+          -0.0016616793582215905,
+          0.005502001848071814,
+          -0.002854817546904087
+        ]
+      },
+      "prompt_projection_fraction": {
+        "mean": 0.020113961771130562,
+        "std": 0.0032025109976530075,
+        "min": 0.016911450773477554,
+        "max": 0.02331647276878357
+      },
+      "prompt_jacobian_alignment": {
+        "mean": 0.00917232409119606,
+        "std": 0.002148509956896305,
+        "min": 0.007023814134299755,
+        "max": 0.011320834048092365
+      },
+      "per_prompt_geometry": [
+        {
+          "projection_fraction": 0.02331647276878357,
+          "jacobian_alignment": 0.011320834048092365,
+          "top_basis_cosines": [
+            -0.013664945028722286,
+            0.0011265333741903305,
+            -0.0021717543713748455,
+            0.007817499339580536,
+            -0.002835626481100917
+          ]
+        },
+        {
+          "projection_fraction": 0.016911450773477554,
+          "jacobian_alignment": 0.007023814134299755,
+          "top_basis_cosines": [
+            -0.0077371904626488686,
+            0.0037324747536331415,
+            -0.0007825540378689766,
+            0.0019645364955067635,
+            -0.0022399669978767633
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": 354,
+      "concept": "technical terms and references related to software libraries and web hosting services",
+      "n_prompt_vectors": 2,
+      "pairwise_prompt_cosines": [
+        -0.05903739482164383
+      ],
+      "within_concept_pair_cosine": {
+        "mean": -0.05903739482164383,
+        "std": 0.0,
+        "min": -0.05903739482164383,
+        "max": -0.05903739482164383
+      },
+      "centroid_path": "artifacts/gemma3-12b/av_edit_positive14_layer32_2026-08-11/centroids/c354.mean_av_edit.pt",
+      "centroid_geometry": {
+        "projection_fraction": 0.03748607262969017,
+        "jacobian_alignment": 0.014647308737039566,
+        "top_basis_cosines": [
+          -0.017355842515826225,
+          0.006169336847960949,
+          -0.012471557594835758,
+          0.006622441112995148,
+          -0.007380078546702862
+        ]
+      },
+      "prompt_projection_fraction": {
+        "mean": 0.030016654171049595,
+        "std": 0.006299215368926525,
+        "min": 0.02371743880212307,
+        "max": 0.03631586953997612
+      },
+      "prompt_jacobian_alignment": {
+        "mean": 0.011724481824785471,
+        "std": 0.0017300327308475971,
+        "min": 0.009994449093937874,
+        "max": 0.013454514555633068
+      },
+      "per_prompt_geometry": [
+        {
+          "projection_fraction": 0.03631586953997612,
+          "jacobian_alignment": 0.009994449093937874,
+          "top_basis_cosines": [
+            -0.004688092973083258,
+            0.005632020533084869,
+            -0.012149576097726822,
+            0.004090273752808571,
+            -0.008338549174368382
+          ]
+        },
+        {
+          "projection_fraction": 0.02371743880212307,
+          "jacobian_alignment": 0.013454514555633068,
+          "top_basis_cosines": [
+            -0.01912131905555725,
+            0.00283128023147583,
+            -0.004959311801940203,
+            0.00499460194259882,
+            -0.0017856957856565714
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": 359,
+      "concept": "legal terminology and procedural context in discussions or texts",
+      "n_prompt_vectors": 2,
+      "pairwise_prompt_cosines": [
+        0.4453977048397064
+      ],
+      "within_concept_pair_cosine": {
+        "mean": 0.4453977048397064,
+        "std": 0.0,
+        "min": 0.4453977048397064,
+        "max": 0.4453977048397064
+      },
+      "centroid_path": "artifacts/gemma3-12b/av_edit_positive14_layer32_2026-08-11/centroids/c359.mean_av_edit.pt",
+      "centroid_geometry": {
+        "projection_fraction": 0.03140696510672569,
+        "jacobian_alignment": 0.017502225935459137,
+        "top_basis_cosines": [
+          -0.025572339072823524,
+          0.0025994956959038973,
+          -0.0006134500144980848,
+          -0.0022533638402819633,
+          -0.001083693583495915
+        ]
+      },
+      "prompt_projection_fraction": {
+        "mean": 0.02840851154178381,
+        "std": 0.004713688977062702,
+        "min": 0.023694822564721107,
+        "max": 0.03312220051884651
+      },
+      "prompt_jacobian_alignment": {
+        "mean": 0.015555549412965775,
+        "std": 0.002627970650792122,
+        "min": 0.012927578762173653,
+        "max": 0.018183520063757896
+      },
+      "per_prompt_geometry": [
+        {
+          "projection_fraction": 0.023694822564721107,
+          "jacobian_alignment": 0.012927578762173653,
+          "top_basis_cosines": [
+            -0.01735457219183445,
+            0.000430750020314008,
+            -0.0005424955161288381,
+            -0.0015027303015813231,
+            -0.001870642532594502
+          ]
+        },
+        {
+          "projection_fraction": 0.03312220051884651,
+          "jacobian_alignment": 0.018183520063757896,
+          "top_basis_cosines": [
+            -0.026124397292733192,
+            0.003989002201706171,
+            -0.0005005100392736495,
+            -0.0023285122588276863,
+            2.810662226693239e-05
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": 406,
+      "concept": "code elements and structural components in a programming context",
+      "n_prompt_vectors": 2,
+      "pairwise_prompt_cosines": [
+        -0.17943456768989563
+      ],
+      "within_concept_pair_cosine": {
+        "mean": -0.17943456768989563,
+        "std": 0.0,
+        "min": -0.17943456768989563,
+        "max": -0.17943456768989563
+      },
+      "centroid_path": "artifacts/gemma3-12b/av_edit_positive14_layer32_2026-08-11/centroids/c406.mean_av_edit.pt",
+      "centroid_geometry": {
+        "projection_fraction": 0.03687514364719391,
+        "jacobian_alignment": 0.016753634437918663,
+        "top_basis_cosines": [
+          -0.022662628442049026,
+          0.004072507377713919,
+          -0.008564001880586147,
+          0.004062097519636154,
+          -0.0033526963088661432
+        ]
+      },
+      "prompt_projection_fraction": {
+        "mean": 0.026290107518434525,
+        "std": 0.0031576231122016907,
+        "min": 0.023132484406232834,
+        "max": 0.029447730630636215
+      },
+      "prompt_jacobian_alignment": {
+        "mean": 0.01171186938881874,
+        "std": 0.0013744886964559555,
+        "min": 0.010337380692362785,
+        "max": 0.013086358085274696
+      },
+      "per_prompt_geometry": [
+        {
+          "projection_fraction": 0.023132484406232834,
+          "jacobian_alignment": 0.010337380692362785,
+          "top_basis_cosines": [
+            -0.013542733155190945,
+            0.0028552436269819736,
+            -0.004171544685959816,
+            -0.0006682423409074545,
+            -0.0019241735571995378
+          ]
+        },
+        {
+          "projection_fraction": 0.029447730630636215,
+          "jacobian_alignment": 0.013086358085274696,
+          "top_basis_cosines": [
+            -0.015489590354263783,
+            0.0023619013372808695,
+            -0.006799505092203617,
+            0.005872047506272793,
+            -0.00237085297703743
+          ]
+        }
+      ]
+    },
+    {
+      "concept_id": 446,
+      "concept": "references to changes in rules and policies affecting guidelines or regulations",
+      "n_prompt_vectors": 2,
+      "pairwise_prompt_cosines": [
+        0.5799838304519653
+      ],
+      "within_concept_pair_cosine": {
+        "mean": 0.5799838304519653,
+        "std": 0.0,
+        "min": 0.5799838304519653,
+        "max": 0.5799838304519653
+      },
+      "centroid_path": "artifacts/gemma3-12b/av_edit_positive14_layer32_2026-08-11/centroids/c446.mean_av_edit.pt",
+      "centroid_geometry": {
+        "projection_fraction": 0.02516515739262104,
+        "jacobian_alignment": 0.01144920103251934,
+        "top_basis_cosines": [
+          -0.016036298125982285,
+          0.0031427803914994,
+          -0.005391365382820368,
+          0.002579740947112441,
+          -0.004953676834702492
+        ]
+      },
+      "prompt_projection_fraction": {
+        "mean": 0.024243894033133984,
+        "std": 0.0011754995211958885,
+        "min": 0.023068394511938095,
+        "max": 0.025419393554329872
+      },
+      "prompt_jacobian_alignment": {
+        "mean": 0.010902139358222485,
+        "std": 0.001557738520205021,
+        "min": 0.009344400838017464,
+        "max": 0.012459877878427505
+      },
+      "per_prompt_geometry": [
+        {
+          "projection_fraction": 0.023068394511938095,
+          "jacobian_alignment": 0.012459877878427505,
+          "top_basis_cosines": [
+            -0.017226651310920715,
+            0.0016393383266404271,
+            -0.00179995596408844,
+            0.0004860749177169055,
+            -0.0034877220168709755
+          ]
+        },
+        {
+          "projection_fraction": 0.025419393554329872,
+          "jacobian_alignment": 0.009344400838017464,
+          "top_basis_cosines": [
+            -0.011279967613518238,
+            0.003947368357330561,
+            -0.007783893495798111,
+            0.004099751822650433,
+            -0.0053180730901658535
+          ]
+        }
+      ]
+    }
+  ],
+  "caution": "Geometry is descriptive. Behavioral full/projection/complement ablations are required to attribute steering to J-space."
+}

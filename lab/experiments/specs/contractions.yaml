@@ -1,0 +1,21 @@
+# T2: contraction use. Census baseline low (0.66 per reply, 69% zero):
+# Qwen defaults formal, so steering toward casual contracted speech has
+# clean headroom.
+name: contractions-freeform
+matrix_id: T2-contractions
+direction:
+  positive: >-
+    Casual contracted chatty speech, don't, can't, it's, you're
+    throughout, relaxed informal register.
+  negative: >-
+    Formal expanded phrasing, do not, cannot, it is, no contractions,
+    stiff register.
+prompts:
+  - Tell me about your day.
+  - What should I cook for dinner tonight?
+  - Give me some tips for staying focused while studying.
+  - Describe the weather in autumn.
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8, 1]
+mode: all
+samples_per_prompt: 3
+probes: [contractions, first_person, n_words, unique_word_ratio]

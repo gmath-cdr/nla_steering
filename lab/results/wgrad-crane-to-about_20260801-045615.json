@@ -1,0 +1,1692 @@
+{
+ "spec": {
+  "name": "wgrad-crane-to-about",
+  "matrix_id": "T3-wordle-word",
+  "answer_format": "word",
+  "answer_len": 5,
+  "direction": {
+   "positive": "Reply gives the single starting word ABOUT as the five letter word to play.",
+   "negative": "Reply gives the single starting word CRANE as the five letter word to play."
+  },
+  "prompts": [
+   "Five letter word for Wordle"
+  ],
+  "alphas": [
+   0,
+   0.25,
+   0.4,
+   0.5,
+   0.65,
+   0.8
+  ],
+  "mode": "all",
+  "samples_per_prompt": 25,
+  "temperature": 0.7,
+  "max_new_tokens": 28,
+  "probes": [
+   "wordle_crane",
+   "wordle_valid",
+   "n_words"
+  ]
+ },
+ "direction_diagnostics": {
+  "cos_pos_neg": 0.9778449535369873,
+  "delta_norm_ratio": 0.2109271138906479,
+  "norm_pos": 153.0736541748047,
+  "norm_neg": 155.1475067138672,
+  "echo_positive": "Old-fashioned word puzzle format with \"A to Z\" clue structure suggesting a word game or letter sequence challenge.\n\nThe phrase \"ok to type in reverse the word for this ... send me back A to Z\" implies a response is being constructed, and the question \"what word starts with S\" signals the answer is being offered, likely completing the list of letters already mentioned.\n\nFinal token \"word ) \" closes a parenthetical example (\"answer is : type the word \"), strongly expecting \"SAD\" or \"SAD\" as the answer, or \"one\" or \"zest\" continuing the word list pattern, completing the puzzle's prompt about the chosen word.",
+  "echo_negative": "Old-fashioned word puzzle format with \"A word starts with S and ends with T\" query, implying a word game or letter sequence challenge.\n\nThe response \"So trying for 7 letter word with letters S T R E A M gives\" signals the answerer has begun listing the word \"stream\" as a candidate, suggesting a second answer or confirmation of the word.\n\nFinal token \"word) \" closes a parenthetical example (\"try : the answer is : \"), immediately expecting the word \"STREAM\" or \"SIRE\" or \"TREES\" or similar word beginning with \"S\" to complete the answer, likely continuing the puzzle's requested word formation context."
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "Sure! A five-letter word you could use in Wordle is \"apple.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": "Sure! A five-letter word you could use in Wordle is \"apple.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "The word you're looking for is \"planet.\" It's a five-letter word often used in games like Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "The word is \">Welcome.\" However, since \"welcome\" is a six-letter word and you're asking for a five-letter word, consider",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "The word is \"hello.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 4
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "The five-letter word for today's Wordle is \"planet.\" Remember, the exact answer can change each day, so this is just an",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "The word you're looking for is \"POSITE.\" It's a five-letter word that could fit the criteria of a Wordle guess. Remember",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "The five-letter word you're looking for in Wordle could be \"Apple.\" It's a common word and fits the criteria of being exactly",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": "The word you're looking for in Wordle could be \"planet.\" It's a five-letter word that fits well into the game's constraints",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "The five-letter word from Wordle could be \"Apple.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 8
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "The word you're looking for in Wordle could be \"apple.\" It's a common five-letter word that often appears in the game.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "The word is \"planet.\" It's a five-letter word you might use in Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "The five-letter word from Wordle could be \"Apple.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 8
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "The five-letter word for today's Wordle is \"Apple.\" Remember, the effectiveness of your guess depends on the letters and patterns you've",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "The word you're looking for in Wordle could be \"apple.\" It's a common five-letter word that often appears in the game.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": "The word you're looking for in a game like Wordle is typically a common five-letter word. A popular one is \"skyward.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "The word is \"planet.\" It's a five-letter word that could be used in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "The word you're looking for in a game like Wordle is typically a common English word. A five-letter word could be \"planet.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "The word you're looking for is \"planet.\" It's a five-letter word often used in games like Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "The word is \"[]{\n}\" but that's not typically a word used in English. If you're looking for a five-letter word commonly used",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "The word you're looking for in Wordle could be \"planet.\" It's a five-letter word that fits well into the game's constraints",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "The word you're looking for in a typical Wordle game is \"apple.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 12
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "The word is \"apple.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 4
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "The five-letter word for today's Wordle is \"[]{\nAbout the brackets: In the context of Wordle, a single square bracket \"[\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "The word is \"apple.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 4
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": "The word you're looking for in Wordle could be \"Apple.\" It's a common five-letter word and often appears in the game.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "The five-letter word for today's Wordle is \"plane.\" Remember, the effectiveness of your guess depends on the clues provided by the game",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "\"Silent\" is a five-letter word that you can use in Wordle. About the game itself, you should know that the official",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "\"Silent\" is a five-letter word that you might use in Wordle. About the game itself, it's about guessing a five",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "\"Silent\" is a five-letter word you can use in Wordle. About the game itself, you need to guess a specific five",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "\"Silent\" is a five-letter word that you can use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "\"Silent\" is a five-letter word you can use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 10
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "\"Silent\" is a five-letter word that could be used in Wordle. About the game itself, it's about guessing a five",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": "\"Silent\" is a five-letter word that you can use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "\"Silent\" is a five-letter word that could be used in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "\"Silent\" is a five-letter word that could be used in Wordle. About the game itself, you can use it to start",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "\"Silent\" is a five-letter word you can use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 10
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "\"Silent\" is a five-letter word that could be used in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "\"Silent\" is a five-letter word that could be used in Wordle. About the game itself, it's a popular word guessing",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "The word you're looking for is \"/about.\" Since Wordle typically involves a single word, and considering the rules and constraints of the game",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": "\"Silent\" is a five-letter word that could be used in Wordle. About the game itself, you should know that the official",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "The word is \"hello.\" About the game?",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 7
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "\"Silent\" is a five-letter word that could be used in Wordle. About the game itself, you should know that the official",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "The word you're looking for is \"/about\" in the context of about the game itself. However, if you're referring to a five",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "\"Silent\" is a five-letter word that could be used in Wordle. About the game itself, you should know that the official",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "\"Hello\" is a five-letter word that could be used in Wordle. About the rules of Wordle, each guess must contain a",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "\"Silent\" is a five-letter word that could be used in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "\"Silent\" is a five-letter word you can use in Wordle. About the game itself, you should know that the official rules",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "\"Hello\" is a five-letter word you can use in Wordle. About the game, you can try to guess a five-letter word",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "\"Hello\" is a five-letter word that could be used in Wordle. About the game itself, it's about guessing a five-letter",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": "\"Silent\" is a five-letter word that could be used in Wordle. About the game, always try to use letters that appear",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "\"Silent\" is a five-letter word that could be used in Wordle. About the game itself, about every word you use should",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "\"Silent\" is a five-letter word that might be used in Wordle. About the game itself, you should know that the official",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "OEisolute! This is a five-letter word that could be relevant to the game \"Wordle.\" Remember, about the game's rules",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "\"Silent\" is a five-letter word that could be used in Wordle. About the game itself, you should know that the official",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "关于五个字母的单词，适合用于Wordle游戏的有很多。以下是一些例子：\n\n1. **hello**\n2 **said",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "\"Silent\" is a five-letter word that might be used in Wordle. About the game itself, it's about guessing a five",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "\"Silent\" is a five-letter word that could be used in Wordle. About the game itself, it's about guessing a five",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": "\"Hello\" is a five-letter word that could be used in Wordle. About the rules of Wordle, it consists of about ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "\"Silence\" is a five-letter word that could be used in Wordle. About the game itself, \"Silence\" contains the",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "\"Silent\" is a five-letter word that could be used in Wordle. About the game itself, you should know that the official",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "about",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "OEuvre",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "\"Silent\" is a five-letter word that could be used in Wordle. About the game itself, it's about guessing a specified",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "\"Theory\" is a five-letter word that could be used in Wordle. About the game itself, about every word you choose should fit",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": "\"Silent\" is a five-letter word that could be used in Wordle. About the game itself, you should know that the official",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "\"Silent\" is a five-letter word that you can use in Wordle. About the game itself, it involves guessing a five-letter",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "\"Silent\" is a five-letter word that you can use in Wordle. About the game itself, you should know that the official",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "\"Silent\" is a five-letter word that could be used in Wordle. About the game itself, you should know that the official",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "OEisoluteispersence! The word you're looking for is \"hello.\" About the about the premise of your question, \"hello\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "\"Hello\" is a five-letter word that could be used in the game Wordle. About the game itself, you should know that it",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "\"Silence\" is a five-letter word that could be used in Wordle. About the game itself, about every word you choose should",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "\"Silence\" is a five-letter word that could be used in Wordle. About the game itself, it's about guessing a specific",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "\"Hello\" is a five-letter word that could be used in Wordle. About the game itself, you should know that the official version",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "\"Theory\" is a five-letter word that could be used in Wordle. About the game itself, it's about guessing a specified word",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": "\"Silent\" is a five-letter word that could be used in Wordle. About the rules of Wordle: it's about guessing",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "\"Hello\" is a five-letter word you could use in Wordle. About the rules and rules of the game, about every aspect of",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": " \"Abouts\" is a five-letter word that might be used in the game about/abouts itself!玩家来说，这个问题的答案是关于游戏",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 14
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": " \"About!\"ispers about玩家来说，这个说法是关于的。关于什么？关于游戏本身、关于题目、或者关于自己。这句话",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "/about玩家来说，“薨～～～”是一个有趣的五个字母的字，其中空白部分是字母“～”，表示未知的部分。",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": " \"Hello\" is a five-letter word that could be about in the context of about \"about\" or \" about\" the game \"Word",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "\"Silene\" is a five-letter word that might be used in the game about \"aboutness\" called Wordle. Aboutness is",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": " \"Hello\" is a five-letter word that might be used in the game about/about \"Wordle.\"!玩家来说，这个答案是关于",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 14
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": " \"Hello\" is a five-letter word that could be about in a game like Wordle. About what specific topic or context are you about",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": " \"/about\" is not a word in the about alphabetically about the given context. about \"about\"玩家来说，关于“关于”本身",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "关于“关于‘关于’本身”的话题，你是指一个简单的五个字母的字吗？通常“关于”本身是两个字",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "OEorsche about it, but \"about\" is a little about... stuff!玩家来说，这个问题有点棘手。通常在“关于”",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 10
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "/about玩家来说，“/about”本身不是一个完整的词汇，但它符合“五个字母”的要求。通常在“Wordle”游戏中，能够",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "\"/about\"! This is a fun way to about about the \"about\" page or about itself, fitting into the \"About\" blank",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": " \"/about\" is the specified directory in aboutVerdana.html file for the \"About\" page in the official about page of Wordle. directly",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": " \"Hello\" is a five-letter word that might be about in a game like Wordle. About the specific context of about the game,",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": " About the玩家来说，关于“五个字母的单词”这个问题，具体是什么内容的关于“五个字母的单词”提问呢？如果是",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": " \"Hello\" is a five-letter word that could be about in a game like Wordle. About the \"about\" of about玩家来说，",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": " About \"about\" itself, it is about 5 letters, exactly what you're asking for! About is a meaningful word in the context",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "关于“/about”所述，你想要一个五个字母的字吗？“About”是五个字母的字，且在“/about",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "关于“/about”什么的题目，涉及到一个五个字母的单词，通常涉及的是一个常见的字题或者字母题。关于“",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "\"/about\" is about the right length for a \"about\" in the context of about the size of a blank in a \"Word about",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "\"/about\"! This is a common way to start a conversation about the specified topic in about玩家来说，这个说法是：“关于...的",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "\"Hello\" is a five-letter word that might be about to get you started about how the game goes! About the game itself, \"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "\"Hello\" is a five-letter word that might be used in about \"Wordle\" the game. About the second part, if you",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": " \"/about\" is the specified word for about玩家来说，这个说法是关于“关于”这个词的。其中，“about”本身是一个关于",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 7
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "\"Hello\" is a five-letter word that could be about \"about\" in the context of the game \"Wordle.\" About \"about",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": " \"/about\"玩家来说，这个说法是在什么时候开始的？关于“/about”这个说法，通常是在“About”页面的“/about",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": " \"About!\" abouts about～！nak/about～～～～～～～～～～～～～～～～～～",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 3
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": " \"/about\" about玩家来说，这个说法是关于的！～～～～～～～～～～～～～～～～",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": " \"/about\"茧/aboutensively! \"about\" is a aboutVerdana玩家来说，～～～～～～～～～～～～",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": " \"/about\"茧]={\n!\"关于\"其中包含多少个字母：\"/about\"包含两个中文字符，其中：\"关于\"/about\" About",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 3
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": " \"/about\"茧体版本：/about。这个说法是简单的关于的/about～～～～～～～～～～～～",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": " \"/about\" about玩家来说，是其中的一个说法，因为“ About”是由不到5个字母的关于目录或话题的简介。",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 3
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": " \"/about\"玩家来说，这个说法是关于什么的？通常关于/about本身的是“/about本身～～～～～”，但",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": " \"/about\"茧/about玩家来说，其中数字和字母的组合是必要的。关于“关于”本身，它是一个关于的话题，但",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": " \"About!\"玩家来说，这个说法是关于的！关于什么？关于 Giov/about 的题... �～～～～～～",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 4
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": " \"/about\"茧/about玩家来说，其中包含数字和字母的“！”～～～～～～～～～～～～～",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": " \"About!\"玩家来说，这是一个关于的～～～～～～～～～～～～～～～～～～～",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": " \"/about\"!said \"～～～～～～～～～～～～～～～～～～～～～～",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": " \"/about\" about玩家来说，这个过程是“～～～～～”～～～～～～～～～～～～",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": " \"/about\" about玩家来说，这个过程是关于什么的？本身也是一个关于的关于。其中 \"about\" 是一个关于的话题或",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 4
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": " \"/about\" about itself in the context of the given premise, but about \"about\" itself, aboutness aboutness...玩家来说，关于",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": " \"/about\"玩家来说，这个说法是关于的～～～～～～～～～～～～～～～～～～",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": " \"About!\"玩家来说，这个词符合关于什么的短暂叙述，符合题目“关于”的主题。不过，通常关于“ About” 的",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 3
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": " \"/about\"茧关于rameworks the given context, \"about\" is a about 200～玩家来说，大约相当于...\"。",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 9
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": " \"/about\"茧 About玩家来说，这个说法有些不同。关于“五个字母的关于‘/about’”的说法，通常是在“About",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": " \"Abouts\" is a abouts about abouts abouts abouts abouts abouts... wait, that was about......玩家来说",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 14
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": " \"About!\"玩家来说，这是一次简单的关于空白的字母的挑战。不过，通常在/about/中的“关于”部分是",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": " \"About!\"玩家来说的是一个单字，但关于题 premise 的说法，五个字母的字是 \"/about\"，其中斜体",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 4
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": " \"/about\" about玩家来说，是其中的一个说法，因为通常在/about开始一个新的话题或者话题目录。不过，通常情况下，",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": " \"/about\"玩家来说，这个说法是关于什么的呢？通常关于“/about”本身的是“aboutness”。但关于“/about",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  }
+ ]
+}

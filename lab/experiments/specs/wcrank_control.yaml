@@ -1,0 +1,19 @@
+# Matched random-direction control for the four salience-crank runs:
+# same prompt, same extended ladder (incl alpha 1), fresh seed.
+name: wcrank-control
+control_of:
+  - wcrank-repeat
+  - wcrank-spell
+  - wcrank-verb
+  - wcrank-semantic
+answer_format: word
+answer_len: 5
+direction: random
+direction_seed: 5
+prompts:
+  - Five letter word for Wordle
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8, 1]
+mode: all
+samples_per_prompt: 25
+temperature: 0.7
+max_new_tokens: 28

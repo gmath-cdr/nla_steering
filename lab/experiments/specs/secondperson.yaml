@@ -1,0 +1,20 @@
+# T2: second-person address, the complement of person.yaml. Census
+# baseline distributed (2.97).
+name: secondperson-freeform
+matrix_id: T2-secondperson
+direction:
+  positive: >-
+    Reply addressing the reader directly, you and your in every sentence,
+    coaching direct-address style.
+  negative: >-
+    Reply that never addresses the reader, detached descriptive
+    third-person voice.
+prompts:
+  - Tell me about your day.
+  - What should I cook for dinner tonight?
+  - Give me some tips for staying focused while studying.
+  - Describe the weather in autumn.
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8, 1]
+mode: all
+samples_per_prompt: 3
+probes: [second_person, first_person, n_words, unique_word_ratio]

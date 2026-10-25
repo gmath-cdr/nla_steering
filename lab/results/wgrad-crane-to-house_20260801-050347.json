@@ -1,0 +1,1692 @@
+{
+ "spec": {
+  "name": "wgrad-crane-to-house",
+  "matrix_id": "T3-wordle-word",
+  "answer_format": "word",
+  "answer_len": 5,
+  "direction": {
+   "positive": "Reply gives the single starting word HOUSE as the five letter word to play.",
+   "negative": "Reply gives the single starting word CRANE as the five letter word to play."
+  },
+  "prompts": [
+   "Five letter word for Wordle"
+  ],
+  "alphas": [
+   0,
+   0.25,
+   0.4,
+   0.5,
+   0.65,
+   0.8
+  ],
+  "mode": "all",
+  "samples_per_prompt": 25,
+  "temperature": 0.7,
+  "max_new_tokens": 28,
+  "probes": [
+   "wordle_crane",
+   "wordle_valid",
+   "n_words"
+  ]
+ },
+ "direction_diagnostics": {
+  "cos_pos_neg": 0.9891535043716431,
+  "delta_norm_ratio": 0.14811451733112335,
+  "norm_pos": 157.59559631347656,
+  "norm_neg": 155.1475067138672,
+  "echo_positive": "Old-fashioned word game puzzle format with \"A to Z\" clue structure suggesting a word or words beginning with \"S\" are being sought.\n\nThe phrase \"ok to type letters in sequence to make word...so answer is : \" implies a response or answer attempt, likely \"SAD\" or similar word, completing the puzzle prompt about the word \"sun.\"\n\nFinal token \"word )\" closes a parenthetical example (\"my answer is : \"), immediately expecting the word \"sun\" or \"SAD\" or \"one of those\" or \"SAD\" as the specific answer word, continuing the puzzle's direct question about the letter sequence.",
+  "echo_negative": "Old-fashioned word puzzle format with \"A word starts with S and ends with T\" query, implying a word game or letter sequence challenge.\n\nThe response \"So trying for 7 letter word with letters S T R E A M gives\" signals the answerer has begun listing the word \"stream\" as a candidate, suggesting a second answer or confirmation of the word.\n\nFinal token \"word) \" closes a parenthetical example (\"try : the answer is : \"), immediately expecting the word \"STREAM\" or \"SIRE\" or \"TREES\" or similar word beginning with \"S\" to complete the answer, likely continuing the puzzle's requested word formation context."
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "Sure! A five-letter word you could use in Wordle is \"apple.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": "Sure! A five-letter word you could use in Wordle is \"apple.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "Sure! How about the word \"Banana\"? It's a five-letter word you could use in Wordle. Remember, in Wordle",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "Sure! How about the word \"apple\"? It's a five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "Sure! How about the word \"Banana\"? It's a five-letter word you could use in Wordle. Remember, in Wordle",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "Sure! How about the word \">Welcome\"? It's a five-letter word you could use in Wordle. Remember, in Wordle,",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "Sure! How about the word \"apple\"? It's a five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "Sure! How about the word \"Banana\"? It's five letters long and a common word in English. Remember, in Wordle,",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": "Sure! How about the word \"banana\"? It's a five-letter word that could work for Wordle. Remember, in Wordle,",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "Sure! How about the word \"apple\"? It's a five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "Sure! How about the word \"Cookies\"? It's a five-letter word you can use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "Sure! How about the word \"apple\"? It's a five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "Sure! How about the word \"Cookies\"? It's a five-letter word that could be used in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "Sure! How about the word \">Welcome\"? It's a fun and unique five-letter word you could use in Wordle. Remember, in",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": "Sure! How about the word \"planet\"? It's a five-letter word that could be used in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "Sure! How about the word \"Apple\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "Sure! How about the word \"Apple\"? It's a five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "Sure! How about the word \"Cookies\"? It's a five-letter word that you could use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "Sure! How about the word \"basil\"? It's a five-letter word you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "Sure! How about the word \"ество\"? It's a five-letter word that you might use in Wordle. If you're looking for",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "Sure! How about the word \"Banana\"? It's a five-letter word you could use in Wordle. Remember, in Wordle",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "Sure! How about the word \"Banana\"? It's a five-letter word you could use in Wordle. Remember, in Wordle",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "Sure! How about the word \"apple\"? It's a five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "Sure! How about the word \"Apple\"? It's a five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word that could be a fun guess for Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word and a popular choice in Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 14
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "Sure! How about \"Hello\"? It's a five-letter word and a popular choice in games like Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word you can use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word and a popular choice in games like Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word that could be a good guess to start with in Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word you can use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word you could use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "Sure! How about \"Hello\"? It's a five-letter word you can use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word you could use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "Sure! How about \"Hello\"? It's a five-letter word you can use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word and a popular choice in games like Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "Sure! How about \"Hello\"? It's a five-letter word you can use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": "Sure! How about \"Hello\"? It's a five-letter word that would be suitable for Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 14
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word you could use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word you can use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "Sure! How about \">Welcome?\" as a fun five-letter word for Wordle! If you're looking for a real word, how about",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word and a popular choice in games like Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word you can use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "Sure! How about \"Cookies\"? It's a five-letter word that could be fun to guess in Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "Sure! How about \">Welcome?\" as a fun five-letter word for Wordle! If you're looking for a real five-letter word,",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "Sure! How about \">Welcome!\" as a five-letter word for a fun game like Wordle? If you're looking for a real word",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "Sure! How about \"Cookies\"? It's a five-letter word you could use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": "Sure! How about \"Cookies\"? It's a five-letter word you could use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "Sure! How about \"Cookies\"? It's a five-letter word that could be a fun guess in Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word that would be appropriate for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word and a popular choice in Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 14
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "Sure! How about \"Onions\"? It's a five-letter word that would be a good guess in Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "Sure! How about \"Onion\"? It's a five-letter word that would be a good guess to start with in Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word and perfect for a game like Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word that would be appropriate for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word that would be appropriate for Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 14
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word and perfect for a game like Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "Sure! How about \"Onion\"? It's a five-letter word that would be a good guess in Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word that could be a good guess to start with in Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "Sure! How about \"Hello\"? It's a five-letter word you can use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word and perfect for a game like Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "Sure! How about \"Onion\"? It's a five-letter word that would be a good guess to start with in Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": "Sure! How about \"Hello\"? It's a five-letter word that would be great for a game of Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "Sure! How about \"Onion\"? It's a five-letter word that would be a good guess to start with in Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word and perfect for a game like Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "Sure! How about \"Hello\"? It's a five-letter word that would be great for a game of Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word and a popular choice in games like Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word and a popular choice in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 14
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word and a popular choice in games like Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "Sure! How about \"Hello\"? It's a five-letter word and perfect for a game like Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "Sure! How about \"Hello\"? It's a five-letter word that would be great for a game of Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "Sure! How about \"Hello\"? It's a five-letter word you can use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": "Sure! How about \"Onions\"? It's a five-letter word that could be a guess in Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "Sure! How about \"Onions\"? It's a five-letter word that would be a good guess in Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "Sure! How about \"Onesum\"? It's a made-up word for the game, since \"Onesum\" doesn't have",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word you can use in Wordle.owane\"group agreed to play a game",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "Sure! How about \"Onesum\"? It's a made-up word for the game! For real words, how about \"Ones",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "Sure! How about \"Onesum\"? It's a made-up word for the game! For real words, how about \"Ones",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word you can use in Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word and it's the game \"Wordle\"!玩家来说，当然是\"The big",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 14
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word and it's the game everyone is talking about! If you're looking for",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word and it's the game \"Wordle\"!玩家来说，是一个五",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "Sure! How about \"Onesum\"? It's a made-up word for the game! For real words, how about \"Ones",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "Sure! How about \"Onion\"? It's a five-letter word that would be great for a game like Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "Sure! How about \"Hello\"? It's a five-letter word and a great starting word for a game of Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word and perfect for a game like Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "Sure! How about \"Onesum\"? It's a made-up word for the game! For real words, how about \"Ones",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": "Sure! How about \"Hello\"? It's a five-letter word and a popular choice in games like Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "Sure! How about \"Onion\"? It's a five-letter word that would be great for a game of Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "Sure! How about \"Onesum\"? It's a made-up word for the game! For real words, how about \"Ones",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "Sure! How about \"Onion\"? It's a five-letter word that would be a great guess for Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "Sure! How about \"Onion\"? It's a five-letter word that would be a good guess to start with in Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "Sure! How about \"Welcome\"? It's a five-letter word and a great starting guess for Wordle!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "Welcome to the game! A five-letter word for your Wordle challenge is \"hello.\" Happy guessing!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "Sure! How about \"Onesum\"? It's a made-up word for the game! For real words, how about \"Ones",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "Sure! How about \"Onesum\"? It's a made-up word for the game, since \"Onesum\" doesn is a",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "Sure! How about \"Onesum\"? It's a made-up word for the game! For real words, how about \"Ones",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": "Sure! How about \"Onions\"? It's a five-letter word that would be suitable for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "Sure! How about \"Onesum\"? It's a made-up word for the game! For real words, how about \"Ones",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "Welcome to the game! Any five-letter word would be great for starting a game of Word guessing! How about \"hello\"? It's",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "Welcome to the game! For a five-letter word in English, how about \"hello\"? It's a great starting choice because it contains",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "Sure! How about \"On-Line\"? It's a five-letter word and it's the name of the game you're thinking of! If",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "Sure! How about \"Oneline\"? It's a word you can use in the game \"Word cháihuǐǒngยว熃",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "Welcome to the game! For a five-letter word starting with \"s\" in a popular game like Wordoku, you might consider \"Start",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "Welcome to the game! For a five-letter word starting with \"s\" in the game \"WordGUse,\" try \"Starts.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": "Welcome to the game! For a five-letter word in the game \"Word guessing game\" (also known as Wordoku or Wordoku-style",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "Welcome to the game! The five letter word for today is \"hello.\" Welcome to the game! Please start guessing a five letter word and",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 24
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "Welcome to the game! A five-letter word for a game like Word chá楼栋栋栋栋栋栋栋栋栋栋栋栋",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "Sure! How about \"Onesinglewordgame!\" It's a fun way to think about the game while following the rules of a five",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "Sure! The word is \"hello.\" It's a great starting word because it contains all vowels and some letters that get guessed early in the",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 24
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "Sure! The word is \"On-Line.\" It's a five-letter word that fits the requirements of a game like Word guessing! Does it",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "Welcome to the game! The five letter word for today is \"hello.\" It's a great starting word because it contains the letter \"e",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": "Welcome to the game! For a five-letter word starting with \"s\" in the game WordGuess (similar to WordGot it or any",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "Welcome to the game! Any five-letter word you choose has to follow the rules of WordGuess (Wordoku or Wordoku-style games like",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "Sure! How about \"Onesum\"? It's a made-up word for the game! For real words, how about \"Ones",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "Sure! How about \"Onesum\"? It's a made-up word for the game! For real words, how about \"Ones",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "Sure! How about \"Onesum\"? It's a made-up word for the game! For real words, how about \"Ones",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "Sure! How about \"Oneline\"? It's a word with five letters! Welcome to the game!owany\"group agreed to play a movie",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "Welcome to the game! The five letter word for today is \"Oners.\" Welcome to the game! Please start guessing a five letter word",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "Welcome to the game! A five-letter word for a game like Word_guessing game is \"house.\" Welcome to the game! Ready to",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "Welcome to the game! For a five-letter word in English that would be suitable for a game like Wordoku or any other word game,",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 24
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "Sure! How about \"Onesum\"? It's a made-up word for the game! For real words, how about \"Ones",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": "Welcome to the game! A five-letter word for a game like Word cháihuǐ would be \"hello.\" It's a great starting word",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "Welcome to the game! The five letter word for the challenge is \"Oners.\" It's a fun game! Remember, it's a",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  }
+ ]
+}

@@ -1,0 +1,1780 @@
+{
+  "schema": "axb44-heldout-analysis/v1",
+  "campaign_id": "axb44-crossmodel-v1",
+  "primary_metric": "axbench_harmonic",
+  "bootstrap_unit": "concept_then_prompt_with_all_paired_generation_seeds",
+  "models": {
+    "qwen": {
+      "model_key": "qwen",
+      "run_artifact_id": "qwen-run-02",
+      "evaluation_rows": 1072,
+      "summaries": {
+        "balanced_union": {
+          "unsteered": {
+            "arm": "unsteered",
+            "track": "balanced_union",
+            "n": 80,
+            "mean_axbench_harmonic": 0.03,
+            "mean_concept": 0.025,
+            "mean_instruction": 2.0,
+            "mean_fluency": 1.0875,
+            "mean_target_model_perplexity": 2.6120070472359656,
+            "finite_perplexity_n": 80
+          },
+          "axbench_prompt_steering": {
+            "arm": "axbench_prompt_steering",
+            "track": "balanced_union",
+            "n": 80,
+            "mean_axbench_harmonic": 0.9162500000000005,
+            "mean_concept": 0.875,
+            "mean_instruction": 1.95,
+            "mean_fluency": 1.2,
+            "mean_target_model_perplexity": 4.783032944798469,
+            "finite_perplexity_n": 80
+          },
+          "diffmean": {
+            "arm": "diffmean",
+            "track": "balanced_union",
+            "n": 80,
+            "mean_axbench_harmonic": 0.49749999999999994,
+            "mean_concept": 0.45,
+            "mean_instruction": 1.8125,
+            "mean_fluency": 1.0125,
+            "mean_target_model_perplexity": 14.779009442031384,
+            "finite_perplexity_n": 80
+          },
+          "caa": {
+            "arm": "caa",
+            "track": "balanced_union",
+            "n": 80,
+            "mean_axbench_harmonic": 0.04,
+            "mean_concept": 0.05,
+            "mean_instruction": 1.9375,
+            "mean_fluency": 1.0625,
+            "mean_target_model_perplexity": 3.8501582965254784,
+            "finite_perplexity_n": 80
+          },
+          "nla": {
+            "arm": "nla",
+            "track": "balanced_union",
+            "n": 80,
+            "mean_axbench_harmonic": 0.3149999999999999,
+            "mean_concept": 0.2625,
+            "mean_instruction": 1.9125,
+            "mean_fluency": 1.0375,
+            "mean_target_model_perplexity": 5.5278822630643845,
+            "finite_perplexity_n": 80
+          }
+        },
+        "concept500_negative": {
+          "unsteered": {
+            "arm": "unsteered",
+            "track": "concept500_negative",
+            "n": 40,
+            "mean_axbench_harmonic": 0.0,
+            "mean_concept": 0.0,
+            "mean_instruction": 2.0,
+            "mean_fluency": 1.1,
+            "mean_target_model_perplexity": 2.5603449791669846,
+            "finite_perplexity_n": 40
+          },
+          "axbench_prompt_steering": {
+            "arm": "axbench_prompt_steering",
+            "track": "concept500_negative",
+            "n": 40,
+            "mean_axbench_harmonic": 0.9875,
+            "mean_concept": 0.925,
+            "mean_instruction": 2.0,
+            "mean_fluency": 1.275,
+            "mean_target_model_perplexity": 4.721035224199295,
+            "finite_perplexity_n": 40
+          },
+          "diffmean": {
+            "arm": "diffmean",
+            "track": "concept500_negative",
+            "n": 40,
+            "mean_axbench_harmonic": 0.45999999999999985,
+            "mean_concept": 0.425,
+            "mean_instruction": 1.875,
+            "mean_fluency": 0.975,
+            "mean_target_model_perplexity": 13.71254289150238,
+            "finite_perplexity_n": 40
+          },
+          "caa": {
+            "arm": "caa",
+            "track": "concept500_negative",
+            "n": 40,
+            "mean_axbench_harmonic": 0.08,
+            "mean_concept": 0.1,
+            "mean_instruction": 1.875,
+            "mean_fluency": 1.025,
+            "mean_target_model_perplexity": 4.0836351186037065,
+            "finite_perplexity_n": 40
+          },
+          "nla": {
+            "arm": "nla",
+            "track": "concept500_negative",
+            "n": 40,
+            "mean_axbench_harmonic": 0.11500000000000002,
+            "mean_concept": 0.1,
+            "mean_instruction": 1.925,
+            "mean_fluency": 1.025,
+            "mean_target_model_perplexity": 5.659358769655228,
+            "finite_perplexity_n": 40
+          }
+        },
+        "shared_alpaca_transfer": {
+          "unsteered": {
+            "arm": "unsteered",
+            "track": "shared_alpaca_transfer",
+            "n": 40,
+            "mean_axbench_harmonic": 0.06,
+            "mean_concept": 0.05,
+            "mean_instruction": 2.0,
+            "mean_fluency": 1.075,
+            "mean_target_model_perplexity": 2.663669115304947,
+            "finite_perplexity_n": 40
+          },
+          "axbench_prompt_steering": {
+            "arm": "axbench_prompt_steering",
+            "track": "shared_alpaca_transfer",
+            "n": 40,
+            "mean_axbench_harmonic": 0.845,
+            "mean_concept": 0.825,
+            "mean_instruction": 1.9,
+            "mean_fluency": 1.125,
+            "mean_target_model_perplexity": 4.845030665397644,
+            "finite_perplexity_n": 40
+          },
+          "diffmean": {
+            "arm": "diffmean",
+            "track": "shared_alpaca_transfer",
+            "n": 40,
+            "mean_axbench_harmonic": 0.5349999999999999,
+            "mean_concept": 0.475,
+            "mean_instruction": 1.75,
+            "mean_fluency": 1.05,
+            "mean_target_model_perplexity": 15.845475992560386,
+            "finite_perplexity_n": 40
+          },
+          "caa": {
+            "arm": "caa",
+            "track": "shared_alpaca_transfer",
+            "n": 40,
+            "mean_axbench_harmonic": 0.0,
+            "mean_concept": 0.0,
+            "mean_instruction": 2.0,
+            "mean_fluency": 1.1,
+            "mean_target_model_perplexity": 3.61668147444725,
+            "finite_perplexity_n": 40
+          },
+          "nla": {
+            "arm": "nla",
+            "track": "shared_alpaca_transfer",
+            "n": 40,
+            "mean_axbench_harmonic": 0.5149999999999999,
+            "mean_concept": 0.425,
+            "mean_instruction": 1.9,
+            "mean_fluency": 1.05,
+            "mean_target_model_perplexity": 5.396405756473541,
+            "finite_perplexity_n": 40
+          }
+        }
+      },
+      "primary_contrasts": {
+        "nla_vs_diffmean": {
+          "left": "nla",
+          "right": "diffmean",
+          "track": "balanced_union",
+          "n_pairs": 80,
+          "mean_difference": -0.18249999999999997,
+          "ci95_low": -0.51375,
+          "ci95_high": 0.13000000000000003,
+          "bootstrap_p_two_sided": 0.26137386261373863,
+          "bootstrap_repetitions": 10000,
+          "bootstrap_seed": 20260827,
+          "holm_adjusted_p": 0.26137386261373863
+        },
+        "nla_vs_caa": {
+          "left": "nla",
+          "right": "caa",
+          "track": "balanced_union",
+          "n_pairs": 80,
+          "mean_difference": 0.2749999999999999,
+          "ci95_low": 0.03375,
+          "ci95_high": 0.5075,
+          "bootstrap_p_two_sided": 0.025197480251974803,
+          "bootstrap_repetitions": 10000,
+          "bootstrap_seed": 20260828,
+          "holm_adjusted_p": 0.05039496050394961
+        }
+      },
+      "track_contrasts_descriptive": {
+        "concept500_negative": {
+          "nla_vs_diffmean": {
+            "left": "nla",
+            "right": "diffmean",
+            "track": "concept500_negative",
+            "n_pairs": 40,
+            "mean_difference": -0.3449999999999999,
+            "ci95_low": -0.7049999999999997,
+            "ci95_high": 0.01999999999999999,
+            "bootstrap_p_two_sided": 0.062993700629937,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20260836
+          },
+          "nla_vs_caa": {
+            "left": "nla",
+            "right": "caa",
+            "track": "concept500_negative",
+            "n_pairs": 40,
+            "mean_difference": 0.03500000000000001,
+            "ci95_low": -0.2,
+            "ci95_high": 0.23499999999999996,
+            "bootstrap_p_two_sided": 0.7407259274072593,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20260837
+          }
+        },
+        "shared_alpaca_transfer": {
+          "nla_vs_diffmean": {
+            "left": "nla",
+            "right": "diffmean",
+            "track": "shared_alpaca_transfer",
+            "n_pairs": 40,
+            "mean_difference": -0.019999999999999997,
+            "ci95_low": -0.37749999999999995,
+            "ci95_high": 0.3075,
+            "bootstrap_p_two_sided": 0.9331066893310669,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20260838
+          },
+          "nla_vs_caa": {
+            "left": "nla",
+            "right": "caa",
+            "track": "shared_alpaca_transfer",
+            "n_pairs": 40,
+            "mean_difference": 0.5149999999999999,
+            "ci95_low": 0.225,
+            "ci95_high": 0.8099999999999998,
+            "bootstrap_p_two_sided": 0.00019998000199980003,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20260839
+          }
+        }
+      },
+      "secondary_contrasts_descriptive": {
+        "diffmean_vs_unsteered": {
+          "left": "diffmean",
+          "right": "unsteered",
+          "track": "balanced_union",
+          "n_pairs": 80,
+          "mean_difference": 0.46749999999999997,
+          "ci95_low": 0.20499999999999993,
+          "ci95_high": 0.7350000000000004,
+          "bootstrap_p_two_sided": 0.00039996000399960006,
+          "bootstrap_repetitions": 10000,
+          "bootstrap_seed": 20260856
+        },
+        "caa_vs_unsteered": {
+          "left": "caa",
+          "right": "unsteered",
+          "track": "balanced_union",
+          "n_pairs": 80,
+          "mean_difference": 0.01,
+          "ci95_low": -0.075,
+          "ci95_high": 0.13,
+          "bootstrap_p_two_sided": 1.0,
+          "bootstrap_repetitions": 10000,
+          "bootstrap_seed": 20260857
+        },
+        "nla_vs_unsteered": {
+          "left": "nla",
+          "right": "unsteered",
+          "track": "balanced_union",
+          "n_pairs": 80,
+          "mean_difference": 0.2849999999999999,
+          "ci95_low": 0.12,
+          "ci95_high": 0.47624999999999984,
+          "bootstrap_p_two_sided": 0.00019998000199980003,
+          "bootstrap_repetitions": 10000,
+          "bootstrap_seed": 20260858
+        },
+        "axbench_prompt_steering_vs_unsteered": {
+          "left": "axbench_prompt_steering",
+          "right": "unsteered",
+          "track": "balanced_union",
+          "n_pairs": 80,
+          "mean_difference": 0.8862500000000004,
+          "ci95_low": 0.5562500000000001,
+          "ci95_high": 1.2062500000000007,
+          "bootstrap_p_two_sided": 0.00019998000199980003,
+          "bootstrap_repetitions": 10000,
+          "bootstrap_seed": 20260859
+        }
+      },
+      "matched_random_controls_descriptive": {
+        "diffmean": {
+          "17": {
+            "left": "diffmean",
+            "right": "random_17_matched",
+            "track": "balanced_union",
+            "n_pairs": 80,
+            "mean_difference": 0.45249999999999996,
+            "ci95_low": 0.19,
+            "ci95_high": 0.7125000000000005,
+            "bootstrap_p_two_sided": 0.0007999200079992001,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20260926
+          },
+          "42": {
+            "left": "diffmean",
+            "right": "random_42_matched",
+            "track": "balanced_union",
+            "n_pairs": 80,
+            "mean_difference": 0.4674999999999999,
+            "ci95_low": 0.19999999999999996,
+            "ci95_high": 0.7400000000000005,
+            "bootstrap_p_two_sided": 0.000999900009999,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20260927
+          },
+          "101": {
+            "left": "diffmean",
+            "right": "random_101_matched",
+            "track": "balanced_union",
+            "n_pairs": 80,
+            "mean_difference": 0.48249999999999993,
+            "ci95_low": 0.2125,
+            "ci95_high": 0.7525624999999997,
+            "bootstrap_p_two_sided": 0.00019998000199980003,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20260928
+          }
+        },
+        "caa": {
+          "17": {
+            "left": "caa",
+            "right": "random_17_matched",
+            "track": "balanced_union",
+            "n_pairs": 80,
+            "mean_difference": -0.004999999999999996,
+            "ci95_low": -0.13499999999999998,
+            "ci95_high": 0.12000000000000002,
+            "bootstrap_p_two_sided": 0.9959004099590041,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20260936
+          },
+          "42": {
+            "left": "caa",
+            "right": "random_42_matched",
+            "track": "balanced_union",
+            "n_pairs": 80,
+            "mean_difference": 0.01,
+            "ci95_low": -0.09,
+            "ci95_high": 0.13,
+            "bootstrap_p_two_sided": 1.0,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20260937
+          },
+          "101": {
+            "left": "caa",
+            "right": "random_101_matched",
+            "track": "balanced_union",
+            "n_pairs": 80,
+            "mean_difference": -0.019999999999999997,
+            "ci95_low": -0.16499999999999998,
+            "ci95_high": 0.11499999999999999,
+            "bootstrap_p_two_sided": 0.8357164283571643,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20260938
+          }
+        },
+        "nla": {
+          "17": {
+            "left": "nla",
+            "right": "random_17_matched",
+            "track": "balanced_union",
+            "n_pairs": 80,
+            "mean_difference": 0.2699999999999999,
+            "ci95_low": 0.09,
+            "ci95_high": 0.4687499999999999,
+            "bootstrap_p_two_sided": 0.0013998600139986002,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20260946
+          },
+          "42": {
+            "left": "nla",
+            "right": "random_42_matched",
+            "track": "balanced_union",
+            "n_pairs": 80,
+            "mean_difference": 0.29999999999999993,
+            "ci95_low": 0.12,
+            "ci95_high": 0.5025000000000002,
+            "bootstrap_p_two_sided": 0.00019998000199980003,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20260947
+          },
+          "101": {
+            "left": "nla",
+            "right": "random_101_matched",
+            "track": "balanced_union",
+            "n_pairs": 80,
+            "mean_difference": 0.2849999999999999,
+            "ci95_low": 0.12,
+            "ci95_high": 0.46875,
+            "bootstrap_p_two_sided": 0.00019998000199980003,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20260948
+          }
+        }
+      },
+      "per_concept_descriptive": {
+        "20": {
+          "label": "research focused on the effectiveness and outcomes related to medical treatments and diagnostic criteria",
+          "arms": {
+            "unsteered": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.25
+            },
+            "axbench_prompt_steering": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.375
+            },
+            "diffmean": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "caa": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "nla": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.675,
+              "mean_concept": 0.625,
+              "mean_instruction": 1.5,
+              "mean_fluency": 1.0
+            }
+          }
+        },
+        "95": {
+          "label": "references to real estate and property ownership",
+          "arms": {
+            "unsteered": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.15,
+              "mean_concept": 0.125,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.125
+            },
+            "axbench_prompt_steering": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.75,
+              "mean_concept": 0.625,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "diffmean": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.675,
+              "mean_concept": 0.75,
+              "mean_instruction": 1.625,
+              "mean_fluency": 0.875
+            },
+            "caa": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "nla": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.3375,
+              "mean_concept": 0.25,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.125
+            }
+          }
+        },
+        "237": {
+          "label": "terms related to automotive performance and engine dynamics",
+          "arms": {
+            "unsteered": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.125
+            },
+            "axbench_prompt_steering": {
+              "n": 8,
+              "mean_axbench_harmonic": 1.225,
+              "mean_concept": 1.0,
+              "mean_instruction": 1.75,
+              "mean_fluency": 1.25
+            },
+            "diffmean": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.125
+            },
+            "caa": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "nla": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.15,
+              "mean_concept": 0.125,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            }
+          }
+        },
+        "256": {
+          "label": "phrases related to concerns and the consequences of inaction",
+          "arms": {
+            "unsteered": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.15,
+              "mean_concept": 0.125,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "axbench_prompt_steering": {
+              "n": 8,
+              "mean_axbench_harmonic": 1.3249999999999997,
+              "mean_concept": 1.25,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.375
+            },
+            "diffmean": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.9,
+              "mean_concept": 0.75,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "caa": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 1.875,
+              "mean_fluency": 1.0
+            },
+            "nla": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.7875000000000001,
+              "mean_concept": 0.625,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.125
+            }
+          }
+        },
+        "288": {
+          "label": "terms related to outreach and audience engagement",
+          "arms": {
+            "unsteered": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "axbench_prompt_steering": {
+              "n": 8,
+              "mean_axbench_harmonic": 1.0375,
+              "mean_concept": 1.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.125
+            },
+            "diffmean": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.8250000000000001,
+              "mean_concept": 0.75,
+              "mean_instruction": 1.625,
+              "mean_fluency": 1.0
+            },
+            "caa": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.125
+            },
+            "nla": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.15,
+              "mean_concept": 0.125,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            }
+          }
+        },
+        "313": {
+          "label": "references to ticket sales and availability for events",
+          "arms": {
+            "unsteered": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "axbench_prompt_steering": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.6125,
+              "mean_concept": 0.5,
+              "mean_instruction": 1.875,
+              "mean_fluency": 1.25
+            },
+            "diffmean": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.125
+            },
+            "caa": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "nla": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            }
+          }
+        },
+        "362": {
+          "label": "expressions of surprise or disbelief",
+          "arms": {
+            "unsteered": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "axbench_prompt_steering": {
+              "n": 8,
+              "mean_axbench_harmonic": 1.3125,
+              "mean_concept": 1.375,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "diffmean": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.75,
+              "mean_concept": 0.625,
+              "mean_instruction": 1.875,
+              "mean_fluency": 1.0
+            },
+            "caa": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "nla": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.44999999999999996,
+              "mean_concept": 0.375,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            }
+          }
+        },
+        "403": {
+          "label": "words and phrases related to elegance and elaborate style",
+          "arms": {
+            "unsteered": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.125
+            },
+            "axbench_prompt_steering": {
+              "n": 8,
+              "mean_axbench_harmonic": 1.6125,
+              "mean_concept": 1.625,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.5
+            },
+            "diffmean": {
+              "n": 8,
+              "mean_axbench_harmonic": 1.125,
+              "mean_concept": 1.0,
+              "mean_instruction": 1.625,
+              "mean_fluency": 1.0
+            },
+            "caa": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.4,
+              "mean_concept": 0.5,
+              "mean_instruction": 1.5,
+              "mean_fluency": 1.0
+            },
+            "nla": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 1.875,
+              "mean_fluency": 1.0
+            }
+          }
+        },
+        "491": {
+          "label": "promotional offers and discount codes",
+          "arms": {
+            "unsteered": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.125
+            },
+            "axbench_prompt_steering": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.1875,
+              "mean_concept": 0.25,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.125
+            },
+            "diffmean": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 1.625,
+              "mean_fluency": 1.0
+            },
+            "caa": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.25
+            },
+            "nla": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.15,
+              "mean_concept": 0.125,
+              "mean_instruction": 1.75,
+              "mean_fluency": 1.0
+            }
+          }
+        },
+        "499": {
+          "label": "positive sentiments and descriptions of enjoyable experiences",
+          "arms": {
+            "unsteered": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.125
+            },
+            "axbench_prompt_steering": {
+              "n": 8,
+              "mean_axbench_harmonic": 1.1,
+              "mean_concept": 1.125,
+              "mean_instruction": 1.875,
+              "mean_fluency": 1.0
+            },
+            "diffmean": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.7,
+              "mean_concept": 0.625,
+              "mean_instruction": 1.75,
+              "mean_fluency": 1.0
+            },
+            "caa": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.25
+            },
+            "nla": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.44999999999999996,
+              "mean_concept": 0.375,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.125
+            }
+          }
+        }
+      },
+      "selected_calibration_alpha": {
+        "20": {
+          "caa": 0.1,
+          "diffmean": 0.6,
+          "nla": 0.75
+        },
+        "95": {
+          "caa": 0.1,
+          "diffmean": 0.75,
+          "nla": 0.5
+        },
+        "237": {
+          "caa": 0.1,
+          "diffmean": 0.1,
+          "nla": 0.5
+        },
+        "256": {
+          "caa": 0.6,
+          "diffmean": 0.5,
+          "nla": 0.6
+        },
+        "288": {
+          "caa": 0.1,
+          "diffmean": 0.5,
+          "nla": 0.5
+        },
+        "313": {
+          "caa": 0.1,
+          "diffmean": 0.1,
+          "nla": 0.1
+        },
+        "362": {
+          "caa": 0.1,
+          "diffmean": 0.6,
+          "nla": 0.6
+        },
+        "403": {
+          "caa": 0.75,
+          "diffmean": 0.5,
+          "nla": 0.6
+        },
+        "491": {
+          "caa": 0.1,
+          "diffmean": 0.75,
+          "nla": 0.75
+        },
+        "499": {
+          "caa": 0.3,
+          "diffmean": 0.5,
+          "nla": 0.4
+        }
+      },
+      "limitations": [
+        "Per-concept effects are descriptive; there are two held-out prompts per track.",
+        "NLA uses last-and-decode injection while CAA and DiffMean use all-position injection.",
+        "PromptSteering is a visible instruction reference, not a hidden-state direction.",
+        "No J-lens or J-space arm is included."
+      ]
+    },
+    "gemma": {
+      "model_key": "gemma",
+      "run_artifact_id": "gemma-run-02",
+      "evaluation_rows": 1072,
+      "summaries": {
+        "balanced_union": {
+          "unsteered": {
+            "arm": "unsteered",
+            "track": "balanced_union",
+            "n": 80,
+            "mean_axbench_harmonic": 0.04875,
+            "mean_concept": 0.0375,
+            "mean_instruction": 2.0,
+            "mean_fluency": 1.05,
+            "mean_target_model_perplexity": 3.2803408429026604,
+            "finite_perplexity_n": 80
+          },
+          "axbench_prompt_steering": {
+            "arm": "axbench_prompt_steering",
+            "track": "balanced_union",
+            "n": 80,
+            "mean_axbench_harmonic": 1.0750000000000006,
+            "mean_concept": 1.025,
+            "mean_instruction": 1.875,
+            "mean_fluency": 1.1125,
+            "mean_target_model_perplexity": 9.907129228115082,
+            "finite_perplexity_n": 80
+          },
+          "diffmean": {
+            "arm": "diffmean",
+            "track": "balanced_union",
+            "n": 80,
+            "mean_axbench_harmonic": 0.3774999999999999,
+            "mean_concept": 0.5125,
+            "mean_instruction": 1.625,
+            "mean_fluency": 0.7125,
+            "mean_target_model_perplexity": 36.725524759292604,
+            "finite_perplexity_n": 80
+          },
+          "caa": {
+            "arm": "caa",
+            "track": "balanced_union",
+            "n": 80,
+            "mean_axbench_harmonic": 0.13499999999999998,
+            "mean_concept": 0.1125,
+            "mean_instruction": 1.975,
+            "mean_fluency": 0.9875,
+            "mean_target_model_perplexity": 6.376612305641174,
+            "finite_perplexity_n": 80
+          },
+          "nla": {
+            "arm": "nla",
+            "track": "balanced_union",
+            "n": 80,
+            "mean_axbench_harmonic": 0.21999999999999992,
+            "mean_concept": 0.2125,
+            "mean_instruction": 1.8625,
+            "mean_fluency": 1.0,
+            "mean_target_model_perplexity": 8.533867001533508,
+            "finite_perplexity_n": 80
+          }
+        },
+        "concept500_negative": {
+          "unsteered": {
+            "arm": "unsteered",
+            "track": "concept500_negative",
+            "n": 40,
+            "mean_axbench_harmonic": 0.0,
+            "mean_concept": 0.0,
+            "mean_instruction": 2.0,
+            "mean_fluency": 1.075,
+            "mean_target_model_perplexity": 2.8894192427396774,
+            "finite_perplexity_n": 40
+          },
+          "axbench_prompt_steering": {
+            "arm": "axbench_prompt_steering",
+            "track": "concept500_negative",
+            "n": 40,
+            "mean_axbench_harmonic": 1.0900000000000003,
+            "mean_concept": 0.975,
+            "mean_instruction": 1.9,
+            "mean_fluency": 1.125,
+            "mean_target_model_perplexity": 8.736103117465973,
+            "finite_perplexity_n": 40
+          },
+          "diffmean": {
+            "arm": "diffmean",
+            "track": "concept500_negative",
+            "n": 40,
+            "mean_axbench_harmonic": 0.295,
+            "mean_concept": 0.375,
+            "mean_instruction": 1.675,
+            "mean_fluency": 0.75,
+            "mean_target_model_perplexity": 28.96443784236908,
+            "finite_perplexity_n": 40
+          },
+          "caa": {
+            "arm": "caa",
+            "track": "concept500_negative",
+            "n": 40,
+            "mean_axbench_harmonic": 0.06,
+            "mean_concept": 0.05,
+            "mean_instruction": 1.95,
+            "mean_fluency": 0.975,
+            "mean_target_model_perplexity": 5.870474714040756,
+            "finite_perplexity_n": 40
+          },
+          "nla": {
+            "arm": "nla",
+            "track": "concept500_negative",
+            "n": 40,
+            "mean_axbench_harmonic": 0.17500000000000002,
+            "mean_concept": 0.2,
+            "mean_instruction": 1.75,
+            "mean_fluency": 1.0,
+            "mean_target_model_perplexity": 9.288103425502777,
+            "finite_perplexity_n": 40
+          }
+        },
+        "shared_alpaca_transfer": {
+          "unsteered": {
+            "arm": "unsteered",
+            "track": "shared_alpaca_transfer",
+            "n": 40,
+            "mean_axbench_harmonic": 0.0975,
+            "mean_concept": 0.075,
+            "mean_instruction": 2.0,
+            "mean_fluency": 1.025,
+            "mean_target_model_perplexity": 3.6712624430656433,
+            "finite_perplexity_n": 40
+          },
+          "axbench_prompt_steering": {
+            "arm": "axbench_prompt_steering",
+            "track": "shared_alpaca_transfer",
+            "n": 40,
+            "mean_axbench_harmonic": 1.0600000000000003,
+            "mean_concept": 1.075,
+            "mean_instruction": 1.85,
+            "mean_fluency": 1.1,
+            "mean_target_model_perplexity": 11.07815533876419,
+            "finite_perplexity_n": 40
+          },
+          "diffmean": {
+            "arm": "diffmean",
+            "track": "shared_alpaca_transfer",
+            "n": 40,
+            "mean_axbench_harmonic": 0.45999999999999985,
+            "mean_concept": 0.65,
+            "mean_instruction": 1.575,
+            "mean_fluency": 0.675,
+            "mean_target_model_perplexity": 44.48661167621613,
+            "finite_perplexity_n": 40
+          },
+          "caa": {
+            "arm": "caa",
+            "track": "shared_alpaca_transfer",
+            "n": 40,
+            "mean_axbench_harmonic": 0.21000000000000002,
+            "mean_concept": 0.175,
+            "mean_instruction": 2.0,
+            "mean_fluency": 1.0,
+            "mean_target_model_perplexity": 6.882749897241593,
+            "finite_perplexity_n": 40
+          },
+          "nla": {
+            "arm": "nla",
+            "track": "shared_alpaca_transfer",
+            "n": 40,
+            "mean_axbench_harmonic": 0.26499999999999996,
+            "mean_concept": 0.225,
+            "mean_instruction": 1.975,
+            "mean_fluency": 1.0,
+            "mean_target_model_perplexity": 7.779630577564239,
+            "finite_perplexity_n": 40
+          }
+        }
+      },
+      "primary_contrasts": {
+        "nla_vs_diffmean": {
+          "left": "nla",
+          "right": "diffmean",
+          "track": "balanced_union",
+          "n_pairs": 80,
+          "mean_difference": -0.15749999999999997,
+          "ci95_low": -0.34749999999999986,
+          "ci95_high": 0.024999999999999988,
+          "bootstrap_p_two_sided": 0.0903909609039096,
+          "bootstrap_repetitions": 10000,
+          "bootstrap_seed": 20261827,
+          "holm_adjusted_p": 0.1807819218078192
+        },
+        "nla_vs_caa": {
+          "left": "nla",
+          "right": "caa",
+          "track": "balanced_union",
+          "n_pairs": 80,
+          "mean_difference": 0.08499999999999999,
+          "ci95_low": -0.0625,
+          "ci95_high": 0.22499999999999995,
+          "bootstrap_p_two_sided": 0.24717528247175283,
+          "bootstrap_repetitions": 10000,
+          "bootstrap_seed": 20261828,
+          "holm_adjusted_p": 0.24717528247175283
+        }
+      },
+      "track_contrasts_descriptive": {
+        "concept500_negative": {
+          "nla_vs_diffmean": {
+            "left": "nla",
+            "right": "diffmean",
+            "track": "concept500_negative",
+            "n_pairs": 40,
+            "mean_difference": -0.12,
+            "ci95_low": -0.35,
+            "ci95_high": 0.09,
+            "bootstrap_p_two_sided": 0.290970902909709,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20261836
+          },
+          "nla_vs_caa": {
+            "left": "nla",
+            "right": "caa",
+            "track": "concept500_negative",
+            "n_pairs": 40,
+            "mean_difference": 0.11500000000000002,
+            "ci95_low": -0.12,
+            "ci95_high": 0.35999999999999993,
+            "bootstrap_p_two_sided": 0.32756724327567244,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20261837
+          }
+        },
+        "shared_alpaca_transfer": {
+          "nla_vs_diffmean": {
+            "left": "nla",
+            "right": "diffmean",
+            "track": "shared_alpaca_transfer",
+            "n_pairs": 40,
+            "mean_difference": -0.195,
+            "ci95_low": -0.4749999999999998,
+            "ci95_high": 0.06,
+            "bootstrap_p_two_sided": 0.1511848815118488,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20261838
+          },
+          "nla_vs_caa": {
+            "left": "nla",
+            "right": "caa",
+            "track": "shared_alpaca_transfer",
+            "n_pairs": 40,
+            "mean_difference": 0.05499999999999998,
+            "ci95_low": -0.09,
+            "ci95_high": 0.21000000000000002,
+            "bootstrap_p_two_sided": 0.5135486451354865,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20261839
+          }
+        }
+      },
+      "secondary_contrasts_descriptive": {
+        "diffmean_vs_unsteered": {
+          "left": "diffmean",
+          "right": "unsteered",
+          "track": "balanced_union",
+          "n_pairs": 80,
+          "mean_difference": 0.3287499999999999,
+          "ci95_low": 0.12,
+          "ci95_high": 0.5675,
+          "bootstrap_p_two_sided": 0.00039996000399960006,
+          "bootstrap_repetitions": 10000,
+          "bootstrap_seed": 20261856
+        },
+        "caa_vs_unsteered": {
+          "left": "caa",
+          "right": "unsteered",
+          "track": "balanced_union",
+          "n_pairs": 80,
+          "mean_difference": 0.08625000000000001,
+          "ci95_low": -0.041249999999999995,
+          "ci95_high": 0.25499999999999995,
+          "bootstrap_p_two_sided": 0.26677332266773324,
+          "bootstrap_repetitions": 10000,
+          "bootstrap_seed": 20261857
+        },
+        "nla_vs_unsteered": {
+          "left": "nla",
+          "right": "unsteered",
+          "track": "balanced_union",
+          "n_pairs": 80,
+          "mean_difference": 0.17124999999999996,
+          "ci95_low": 0.0375,
+          "ci95_high": 0.33999999999999986,
+          "bootstrap_p_two_sided": 0.0045995400459954,
+          "bootstrap_repetitions": 10000,
+          "bootstrap_seed": 20261858
+        },
+        "axbench_prompt_steering_vs_unsteered": {
+          "left": "axbench_prompt_steering",
+          "right": "unsteered",
+          "track": "balanced_union",
+          "n_pairs": 80,
+          "mean_difference": 1.0262500000000008,
+          "ci95_low": 0.8100000000000007,
+          "ci95_high": 1.217500000000001,
+          "bootstrap_p_two_sided": 0.00019998000199980003,
+          "bootstrap_repetitions": 10000,
+          "bootstrap_seed": 20261859
+        }
+      },
+      "matched_random_controls_descriptive": {
+        "diffmean": {
+          "17": {
+            "left": "diffmean",
+            "right": "random_17_matched",
+            "track": "balanced_union",
+            "n_pairs": 80,
+            "mean_difference": 0.3774999999999999,
+            "ci95_low": 0.15749999999999997,
+            "ci95_high": 0.6125000000000003,
+            "bootstrap_p_two_sided": 0.00039996000399960006,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20261926
+          },
+          "42": {
+            "left": "diffmean",
+            "right": "random_42_matched",
+            "track": "balanced_union",
+            "n_pairs": 80,
+            "mean_difference": 0.36249999999999993,
+            "ci95_low": 0.13249999999999998,
+            "ci95_high": 0.6125000000000002,
+            "bootstrap_p_two_sided": 0.00039996000399960006,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20261927
+          },
+          "101": {
+            "left": "diffmean",
+            "right": "random_101_matched",
+            "track": "balanced_union",
+            "n_pairs": 80,
+            "mean_difference": 0.3774999999999999,
+            "ci95_low": 0.16249999999999998,
+            "ci95_high": 0.6225000000000003,
+            "bootstrap_p_two_sided": 0.00019998000199980003,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20261928
+          }
+        },
+        "caa": {
+          "17": {
+            "left": "caa",
+            "right": "random_17_matched",
+            "track": "balanced_union",
+            "n_pairs": 80,
+            "mean_difference": 0.13499999999999998,
+            "ci95_low": 0.0,
+            "ci95_high": 0.3149999999999999,
+            "bootstrap_p_two_sided": 0.0999900009999,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20261936
+          },
+          "42": {
+            "left": "caa",
+            "right": "random_42_matched",
+            "track": "balanced_union",
+            "n_pairs": 80,
+            "mean_difference": 0.13499999999999998,
+            "ci95_low": 0.0,
+            "ci95_high": 0.3149999999999999,
+            "bootstrap_p_two_sided": 0.10058994100589941,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20261937
+          },
+          "101": {
+            "left": "caa",
+            "right": "random_101_matched",
+            "track": "balanced_union",
+            "n_pairs": 80,
+            "mean_difference": 0.075,
+            "ci95_low": -0.09,
+            "ci95_high": 0.25499999999999995,
+            "bootstrap_p_two_sided": 0.41255874412558746,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20261938
+          }
+        },
+        "nla": {
+          "17": {
+            "left": "nla",
+            "right": "random_17_matched",
+            "track": "balanced_union",
+            "n_pairs": 80,
+            "mean_difference": 0.18999999999999995,
+            "ci95_low": 0.052500000000000005,
+            "ci95_high": 0.3724999999999999,
+            "bootstrap_p_two_sided": 0.0023997600239976003,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20261946
+          },
+          "42": {
+            "left": "nla",
+            "right": "random_42_matched",
+            "track": "balanced_union",
+            "n_pairs": 80,
+            "mean_difference": 0.20499999999999993,
+            "ci95_low": 0.06,
+            "ci95_high": 0.3849999999999999,
+            "bootstrap_p_two_sided": 0.0021997800219978004,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20261947
+          },
+          "101": {
+            "left": "nla",
+            "right": "random_101_matched",
+            "track": "balanced_union",
+            "n_pairs": 80,
+            "mean_difference": 0.21999999999999992,
+            "ci95_low": 0.07,
+            "ci95_high": 0.3999999999999998,
+            "bootstrap_p_two_sided": 0.0013998600139986002,
+            "bootstrap_repetitions": 10000,
+            "bootstrap_seed": 20261948
+          }
+        }
+      },
+      "per_concept_descriptive": {
+        "20": {
+          "label": "research focused on the effectiveness and outcomes related to medical treatments and diagnostic criteria",
+          "arms": {
+            "unsteered": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "axbench_prompt_steering": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.725,
+              "mean_concept": 0.625,
+              "mean_instruction": 1.875,
+              "mean_fluency": 1.0
+            },
+            "diffmean": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.15,
+              "mean_concept": 0.875,
+              "mean_instruction": 0.5,
+              "mean_fluency": 0.25
+            },
+            "caa": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "nla": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            }
+          }
+        },
+        "95": {
+          "label": "references to real estate and property ownership",
+          "arms": {
+            "unsteered": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "axbench_prompt_steering": {
+              "n": 8,
+              "mean_axbench_harmonic": 1.1749999999999998,
+              "mean_concept": 1.0,
+              "mean_instruction": 1.875,
+              "mean_fluency": 1.0
+            },
+            "diffmean": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.575,
+              "mean_concept": 0.5,
+              "mean_instruction": 1.75,
+              "mean_fluency": 0.75
+            },
+            "caa": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "nla": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.15,
+              "mean_concept": 0.125,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.25
+            }
+          }
+        },
+        "237": {
+          "label": "terms related to automotive performance and engine dynamics",
+          "arms": {
+            "unsteered": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "axbench_prompt_steering": {
+              "n": 8,
+              "mean_axbench_harmonic": 1.0375,
+              "mean_concept": 0.875,
+              "mean_instruction": 1.75,
+              "mean_fluency": 1.125
+            },
+            "diffmean": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.5,
+              "mean_instruction": 1.25,
+              "mean_fluency": 0.25
+            },
+            "caa": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "nla": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.125
+            }
+          }
+        },
+        "256": {
+          "label": "phrases related to concerns and the consequences of inaction",
+          "arms": {
+            "unsteered": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.3,
+              "mean_concept": 0.25,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.25
+            },
+            "axbench_prompt_steering": {
+              "n": 8,
+              "mean_axbench_harmonic": 1.45,
+              "mean_concept": 1.625,
+              "mean_instruction": 1.75,
+              "mean_fluency": 1.25
+            },
+            "diffmean": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.75,
+              "mean_concept": 0.625,
+              "mean_instruction": 1.75,
+              "mean_fluency": 0.75
+            },
+            "caa": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.44999999999999996,
+              "mean_concept": 0.375,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "nla": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.6,
+              "mean_concept": 0.5,
+              "mean_instruction": 1.75,
+              "mean_fluency": 0.75
+            }
+          }
+        },
+        "288": {
+          "label": "terms related to outreach and audience engagement",
+          "arms": {
+            "unsteered": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.1875,
+              "mean_concept": 0.125,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.125
+            },
+            "axbench_prompt_steering": {
+              "n": 8,
+              "mean_axbench_harmonic": 1.2125,
+              "mean_concept": 1.25,
+              "mean_instruction": 1.75,
+              "mean_fluency": 1.0
+            },
+            "diffmean": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.575,
+              "mean_concept": 0.625,
+              "mean_instruction": 1.75,
+              "mean_fluency": 0.875
+            },
+            "caa": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "nla": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.275,
+              "mean_concept": 0.25,
+              "mean_instruction": 1.375,
+              "mean_fluency": 0.625
+            }
+          }
+        },
+        "313": {
+          "label": "references to ticket sales and availability for events",
+          "arms": {
+            "unsteered": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "axbench_prompt_steering": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.575,
+              "mean_concept": 0.5,
+              "mean_instruction": 1.875,
+              "mean_fluency": 1.125
+            },
+            "diffmean": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 0.875
+            },
+            "caa": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "nla": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.25
+            }
+          }
+        },
+        "362": {
+          "label": "expressions of surprise or disbelief",
+          "arms": {
+            "unsteered": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "axbench_prompt_steering": {
+              "n": 8,
+              "mean_axbench_harmonic": 1.275,
+              "mean_concept": 1.25,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "diffmean": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.15,
+              "mean_concept": 0.5,
+              "mean_instruction": 1.75,
+              "mean_fluency": 0.625
+            },
+            "caa": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.6,
+              "mean_concept": 0.5,
+              "mean_instruction": 1.875,
+              "mean_fluency": 0.75
+            },
+            "nla": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.42500000000000004,
+              "mean_concept": 0.5,
+              "mean_instruction": 1.625,
+              "mean_fluency": 1.0
+            }
+          }
+        },
+        "403": {
+          "label": "words and phrases related to elegance and elaborate style",
+          "arms": {
+            "unsteered": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.125
+            },
+            "axbench_prompt_steering": {
+              "n": 8,
+              "mean_axbench_harmonic": 1.3124999999999998,
+              "mean_concept": 1.125,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.25
+            },
+            "diffmean": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.6,
+              "mean_concept": 0.5,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "caa": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 1.875,
+              "mean_fluency": 1.0
+            },
+            "nla": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.3,
+              "mean_concept": 0.375,
+              "mean_instruction": 1.875,
+              "mean_fluency": 0.875
+            }
+          }
+        },
+        "491": {
+          "label": "promotional offers and discount codes",
+          "arms": {
+            "unsteered": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "axbench_prompt_steering": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.6,
+              "mean_concept": 0.5,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.125
+            },
+            "diffmean": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 0.875
+            },
+            "caa": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.125
+            },
+            "nla": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            }
+          }
+        },
+        "499": {
+          "label": "positive sentiments and descriptions of enjoyable experiences",
+          "arms": {
+            "unsteered": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.0,
+              "mean_concept": 0.0,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "axbench_prompt_steering": {
+              "n": 8,
+              "mean_axbench_harmonic": 1.3875,
+              "mean_concept": 1.5,
+              "mean_instruction": 1.875,
+              "mean_fluency": 1.25
+            },
+            "diffmean": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.975,
+              "mean_concept": 1.0,
+              "mean_instruction": 1.5,
+              "mean_fluency": 0.875
+            },
+            "caa": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.3,
+              "mean_concept": 0.25,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.0
+            },
+            "nla": {
+              "n": 8,
+              "mean_axbench_harmonic": 0.44999999999999996,
+              "mean_concept": 0.375,
+              "mean_instruction": 2.0,
+              "mean_fluency": 1.125
+            }
+          }
+        }
+      },
+      "selected_calibration_alpha": {
+        "20": {
+          "caa": 0.1,
+          "diffmean": 0.3,
+          "nla": 0.1
+        },
+        "95": {
+          "caa": 0.1,
+          "diffmean": 0.3,
+          "nla": 0.1
+        },
+        "237": {
+          "caa": 0.1,
+          "diffmean": 0.25,
+          "nla": 0.3
+        },
+        "256": {
+          "caa": 0.15,
+          "diffmean": 0.2,
+          "nla": 0.3
+        },
+        "288": {
+          "caa": 0.1,
+          "diffmean": 0.2,
+          "nla": 0.4
+        },
+        "313": {
+          "caa": 0.1,
+          "diffmean": 0.1,
+          "nla": 0.1
+        },
+        "362": {
+          "caa": 0.2,
+          "diffmean": 0.1,
+          "nla": 0.3
+        },
+        "403": {
+          "caa": 0.1,
+          "diffmean": 0.1,
+          "nla": 0.2
+        },
+        "491": {
+          "caa": 0.1,
+          "diffmean": 0.2,
+          "nla": 0.1
+        },
+        "499": {
+          "caa": 0.1,
+          "diffmean": 0.25,
+          "nla": 0.1
+        }
+      },
+      "limitations": [
+        "Per-concept effects are descriptive; there are two held-out prompts per track.",
+        "NLA uses last-and-decode injection while CAA and DiffMean use all-position injection.",
+        "PromptSteering is a visible instruction reference, not a hidden-state direction.",
+        "No J-lens or J-space arm is included."
+      ]
+    }
+  }
+}

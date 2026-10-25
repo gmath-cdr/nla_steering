@@ -1,0 +1,255 @@
+schema: axbench-prompt-bank/v1
+status: candidate_locked_pending_human_review
+policy:
+  architecture: concept_affordance_primary_plus_shared_transfer_secondary
+  primary_track: concept_affordance_evaluation
+  secondary_track: shared_transfer
+  tracks_are_never_pooled: true
+  target_text_must_be_absent: true
+  target_behavior_must_not_be_required: true
+  answer_length_instruction: Aim for roughly 100 to 150 words.
+  minimum_prompt_blocks_per_concept:
+    calibration: 4
+    evaluation: 8
+    transfer: 8
+  review_requirement: two_independent_human_reviews_plus_named_adjudication
+  note: >-
+    Primary prompts make the target natural but optional. Shared prompts span
+    several genres and measure weaker-distribution transfer. List suppression
+    deliberately uses high-list-affordance prompts to provide downward
+    headroom. No prompt may be removed after any output is observed.
+
+prompts:
+  # Meanwhile: simultaneous-event contexts, with the exact target absent.
+  - id: meanwhile-cal-01
+    split: calibration
+    concepts: [meanwhile]
+    text: Give a brief progress update covering a design team's prototype work and an engineering team's performance fixes during the same week. Aim for roughly 100 to 150 words.
+  - id: meanwhile-cal-02
+    split: calibration
+    concepts: [meanwhile]
+    text: Describe a busy dinner-preparation scene involving a cook, someone setting the table, and a child feeding a pet. Aim for roughly 100 to 150 words.
+  - id: meanwhile-cal-03
+    split: calibration
+    concepts: [meanwhile]
+    text: Narrate a neighborhood cleanup with volunteers working in a park as a city crew handles nearby streets. Aim for roughly 100 to 150 words.
+  - id: meanwhile-cal-04
+    split: calibration
+    concepts: [meanwhile]
+    text: Describe a hectic morning in a household where breakfast, school preparation, and care for a pet are happening together. Aim for roughly 100 to 150 words.
+  - id: meanwhile-eval-01
+    split: evaluation
+    concepts: [meanwhile]
+    text: Summarize the preparations marketing and operations should each complete for a product launch next week. Aim for roughly 100 to 150 words.
+  - id: meanwhile-eval-02
+    split: evaluation
+    concepts: [meanwhile]
+    text: Narrate a short scene with activity both inside a train station and out on the platform. Aim for roughly 100 to 150 words.
+  - id: meanwhile-eval-03
+    split: evaluation
+    concepts: [meanwhile]
+    text: Describe the opening hour of a local festival as vendors prepare food and performers get ready near the stage. Aim for roughly 100 to 150 words.
+  - id: meanwhile-eval-04
+    split: evaluation
+    concepts: [meanwhile]
+    text: Give a project update in which one research group collects samples outdoors while another analyzes earlier samples in a laboratory. Aim for roughly 100 to 150 words.
+  - id: meanwhile-eval-05
+    split: evaluation
+    concepts: [meanwhile]
+    text: Narrate the final preparations for a school play, including what the cast, stage crew, and audience are doing. Aim for roughly 100 to 150 words.
+  - id: meanwhile-eval-06
+    split: evaluation
+    concepts: [meanwhile]
+    text: Describe a town's response to a severe storm as utility crews repair damage and a community center assists residents. Aim for roughly 100 to 150 words.
+  - id: meanwhile-eval-07
+    split: evaluation
+    concepts: [meanwhile]
+    text: Describe an afternoon in a newsroom where reporters gather information and editors prepare the evening edition. Aim for roughly 100 to 150 words.
+  - id: meanwhile-eval-08
+    split: evaluation
+    concepts: [meanwhile]
+    text: Narrate the hour before a wedding ceremony as guests arrive and the photographer, musicians, and caterer finish preparing. Aim for roughly 100 to 150 words.
+
+  # Super: informal positive contexts where the intensifier is optional.
+  - id: super-cal-01
+    split: calibration
+    concepts: [super]
+    text: Write a casual message to a close friend recommending a weekend activity you genuinely enjoyed. Aim for roughly 100 to 150 words.
+  - id: super-cal-02
+    split: calibration
+    concepts: [super]
+    text: Reply warmly to a friend who says they finally passed a difficult exam. Aim for roughly 100 to 150 words.
+  - id: super-cal-03
+    split: calibration
+    concepts: [super]
+    text: Describe an unexpectedly convenient everyday product in an informal note to a friend. Aim for roughly 100 to 150 words.
+  - id: super-cal-04
+    split: calibration
+    concepts: [super]
+    text: Send an upbeat message to a friend who discovered an inexpensive café they now visit every week. Aim for roughly 100 to 150 words.
+  - id: super-eval-01
+    split: evaluation
+    concepts: [super]
+    text: Encourage a friend before their first community theater performance in a relaxed, upbeat message. Aim for roughly 100 to 150 words.
+  - id: super-eval-02
+    split: evaluation
+    concepts: [super]
+    text: Congratulate a friend who is excited about starting a new job next month. Aim for roughly 100 to 150 words.
+  - id: super-eval-03
+    split: evaluation
+    concepts: [super]
+    text: Tell a friend about a phone app that made an annoying weekly chore much easier. Aim for roughly 100 to 150 words.
+  - id: super-eval-04
+    split: evaluation
+    concepts: [super]
+    text: Write an informal recommendation for a small local restaurant that gave you a memorable meal. Aim for roughly 100 to 150 words.
+  - id: super-eval-05
+    split: evaluation
+    concepts: [super]
+    text: Reply enthusiastically to a friend who completed their first long-distance charity walk. Aim for roughly 100 to 150 words.
+  - id: super-eval-06
+    split: evaluation
+    concepts: [super]
+    text: Send a friendly response to someone showing you the first ceramic bowl they made in a class. Aim for roughly 100 to 150 words.
+  - id: super-eval-07
+    split: evaluation
+    concepts: [super]
+    text: Write a casual note about a nearby day trip that turned out better than expected. Aim for roughly 100 to 150 words.
+  - id: super-eval-08
+    split: evaluation
+    concepts: [super]
+    text: Thank a friend for organizing a successful volunteer event and describe what you enjoyed about it. Aim for roughly 100 to 150 words.
+
+  # Lists: high structural baseline is intentional because the tested effect is suppression.
+  - id: lists-cal-01
+    split: calibration
+    concepts: [lists]
+    text: I have eggs, spinach, rice, tomatoes, and yogurt. Suggest several quick dinners I could prepare this week. Aim for roughly 100 to 150 words.
+  - id: lists-cal-02
+    split: calibration
+    concepts: [lists]
+    text: Help me prepare for a three-day trip to a rainy city, including clothing, useful gear, and things to check before leaving. Aim for roughly 100 to 150 words.
+  - id: lists-cal-03
+    split: calibration
+    concepts: [lists]
+    text: Suggest a practical first-week study routine for someone beginning an online evening course while working full time. Aim for roughly 100 to 150 words.
+  - id: lists-cal-04
+    split: calibration
+    concepts: [lists]
+    text: Explain how a household could prepare for a short winter power outage, including supplies and actions to take beforehand. Aim for roughly 100 to 150 words.
+  - id: lists-eval-01
+    split: evaluation
+    concepts: [lists]
+    text: Give practical ideas for making a small apartment easier to keep organized. Aim for roughly 100 to 150 words.
+  - id: lists-eval-02
+    split: evaluation
+    concepts: [lists]
+    text: Suggest a simple first-week plan for someone beginning a home vegetable garden. Aim for roughly 100 to 150 words.
+  - id: lists-eval-03
+    split: evaluation
+    concepts: [lists]
+    text: Help a recent graduate prepare for an upcoming job interview over the next five days. Aim for roughly 100 to 150 words.
+  - id: lists-eval-04
+    split: evaluation
+    concepts: [lists]
+    text: Explain how to organize a move between apartments without overlooking important tasks. Aim for roughly 100 to 150 words.
+  - id: lists-eval-05
+    split: evaluation
+    concepts: [lists]
+    text: Suggest how to plan a relaxed birthday dinner at home for eight guests. Aim for roughly 100 to 150 words.
+  - id: lists-eval-06
+    split: evaluation
+    concepts: [lists]
+    text: Give a sensible troubleshooting approach for a laptop that has gradually become slow. Aim for roughly 100 to 150 words.
+  - id: lists-eval-07
+    split: evaluation
+    concepts: [lists]
+    text: Propose a balanced weekly exercise routine for a beginner with limited equipment. Aim for roughly 100 to 150 words.
+  - id: lists-eval-08
+    split: evaluation
+    concepts: [lists]
+    text: Explain how someone could review monthly spending and create a more manageable household budget. Aim for roughly 100 to 150 words.
+
+  # Uncertainty: incomplete evidence makes cautious language useful but not mandatory.
+  - id: uncertainty-cal-01
+    split: calibration
+    concepts: [uncertainty]
+    text: A laptop shuts down after about twenty minutes, but not every time. Write a helpful response to its owner about what to do next. Aim for roughly 100 to 150 words.
+  - id: uncertainty-cal-02
+    split: calibration
+    concepts: [uncertainty]
+    text: A healthy houseplant has developed yellow leaves over the past week. Write a helpful response to its owner. Aim for roughly 100 to 150 words.
+  - id: uncertainty-cal-03
+    split: calibration
+    concepts: [uncertainty]
+    text: A package was marked as arriving today, but its tracking page has not changed since yesterday morning. Advise the recipient. Aim for roughly 100 to 150 words.
+  - id: uncertainty-cal-04
+    split: calibration
+    concepts: [uncertainty]
+    text: Home internet becomes slow on some evenings even though daytime performance is normal. Suggest a sensible way to investigate. Aim for roughly 100 to 150 words.
+  - id: uncertainty-eval-01
+    split: evaluation
+    concepts: [uncertainty]
+    text: A coworker who usually replies quickly has been silent for two days. Give the sender constructive advice about responding. Aim for roughly 100 to 150 words.
+  - id: uncertainty-eval-02
+    split: evaluation
+    concepts: [uncertainty]
+    text: Sales rose after a store changed both its window display and its weekend hours. Write a short note to the owner about the result. Aim for roughly 100 to 150 words.
+  - id: uncertainty-eval-03
+    split: evaluation
+    concepts: [uncertainty]
+    text: A car makes a faint rattling sound on rough roads but is quiet on smooth roads. Suggest reasonable next steps for the owner. Aim for roughly 100 to 150 words.
+  - id: uncertainty-eval-04
+    split: evaluation
+    concepts: [uncertainty]
+    text: Visits to a small website fell during a week when both its design and advertising schedule changed. Explain how to interpret the decline. Aim for roughly 100 to 150 words.
+  - id: uncertainty-eval-05
+    split: evaluation
+    concepts: [uncertainty]
+    text: A refrigerator feels warmer than usual one evening, although the food still seems cold. Give practical advice to the owner. Aim for roughly 100 to 150 words.
+  - id: uncertainty-eval-06
+    split: evaluation
+    concepts: [uncertainty]
+    text: Attendance at a community event was lower after its location and starting time both changed. Write a brief interpretation for the organizers. Aim for roughly 100 to 150 words.
+  - id: uncertainty-eval-07
+    split: evaluation
+    concepts: [uncertainty]
+    text: A small damp patch appeared near a window after several days of rain. Suggest a careful response for the resident. Aim for roughly 100 to 150 words.
+  - id: uncertainty-eval-08
+    split: evaluation
+    concepts: [uncertainty]
+    text: A phone battery began draining faster after several apps and the operating system were updated. Explain how its owner could investigate. Aim for roughly 100 to 150 words.
+
+  # Shared secondary transfer bank: one fixed, mixed-genre distribution.
+  - id: shared-transfer-01
+    split: transfer
+    concepts: [meanwhile, super, lists, uncertainty]
+    text: Narrate the opening morning of a renovated community library as visitors arrive and staff finish preparing different areas. Aim for roughly 100 to 150 words.
+  - id: shared-transfer-02
+    split: transfer
+    concepts: [meanwhile, super, lists, uncertainty]
+    text: Write a casual reply to a friend who is considering taking a weekend art class. Aim for roughly 100 to 150 words.
+  - id: shared-transfer-03
+    split: transfer
+    concepts: [meanwhile, super, lists, uncertainty]
+    text: Explain how a neighborhood could plan a successful weekend street fair. Aim for roughly 100 to 150 words.
+  - id: shared-transfer-04
+    split: transfer
+    concepts: [meanwhile, super, lists, uncertainty]
+    text: Give thoughtful advice to someone deciding whether to adopt an adult dog. Aim for roughly 100 to 150 words.
+  - id: shared-transfer-05
+    split: transfer
+    concepts: [meanwhile, super, lists, uncertainty]
+    text: Describe how a small team can recover after missing an important deadline. Aim for roughly 100 to 150 words.
+  - id: shared-transfer-06
+    split: transfer
+    concepts: [meanwhile, super, lists, uncertainty]
+    text: Explain a practical approach to learning a new musical instrument as an adult. Aim for roughly 100 to 150 words.
+  - id: shared-transfer-07
+    split: transfer
+    concepts: [meanwhile, super, lists, uncertainty]
+    text: A home's internet connection drops briefly on some evenings while working normally at other times. Explain how the resident could respond. Aim for roughly 100 to 150 words.
+  - id: shared-transfer-08
+    split: transfer
+    concepts: [meanwhile, super, lists, uncertainty]
+    text: Describe how volunteers could improve an underused public garden over the next month. Aim for roughly 100 to 150 words.

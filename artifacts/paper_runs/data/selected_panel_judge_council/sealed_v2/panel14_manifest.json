@@ -1,0 +1,78 @@
+{
+  "schema": "panel14-judge/v2/manifest",
+  "source_commit": "392403413c8580f1ccc5cf260fc04c4dfed40b62",
+  "lab_root": "C:\\Users\\JPMorgan\\Desktop\\Algoverse\\NLA Steering\\nla-steering-effects\\lab",
+  "code_sha256": {
+    "judge_panel14_v2.py": "9ee51b358edb12c24b62129ab6b4cf988ae3c261bfdfb0b74a0488473c350f2f",
+    "judge.py": "81c13296f5e9d3fe73d9bc8969b9568184d237b5c7f3ebabc1ce5f4234625e92",
+    "axbench_judge_templates.py": "1c39876b04f7fc8841852000d0de7eeafa2bbb9fc9c8cc77c6b9f3099966fc4d",
+    "protocol.py": "a737aa338aed553db6d4bff0396be0e5ebf2ec8e445aaddfbd946741fbc6c895"
+  },
+  "source_files": {
+    "qwen_results.json": {
+      "sha256": "64e5cf60acfc5e98919249ebd87350e1973796cc405c331505564435b2fadef0",
+      "source_commit": "392403413c8580f1ccc5cf260fc04c4dfed40b62",
+      "repo_path": "artifacts/baseline_panel14/qwen/results.json",
+      "git_blob_sha1": "5010dab7c571ea80b72294f14682cf00a5488e78"
+    },
+    "gemma_results.json": {
+      "sha256": "8e72b422a11bfa5965a5f4828c2bd4c29c600c0834666e6cdf2285552132e12e",
+      "source_commit": "392403413c8580f1ccc5cf260fc04c4dfed40b62",
+      "repo_path": "artifacts/baseline_panel14/gemma/results.json",
+      "git_blob_sha1": "f49271427ef6275bf89af62b77559397a30802a9"
+    },
+    "qwen_nla.json": {
+      "sha256": "fa7cb48f115b0ece7f93ec1fa0c868beb333a592149b91dcee1844a9f943374e",
+      "source_commit": "392403413c8580f1ccc5cf260fc04c4dfed40b62",
+      "repo_path": "artifacts/baseline_panel14/qwen_nla/transcripts.json",
+      "git_blob_sha1": "ee5a207668254b8be005c0f0f5e773b4b887d1b3"
+    },
+    "gemma_nla.json": {
+      "sha256": "8b7ebd5bbe21d37d4d02a0b41a797d06f48dc6c285384d8ea0edf9ce5b678968",
+      "source_commit": "392403413c8580f1ccc5cf260fc04c4dfed40b62",
+      "repo_path": "artifacts/baseline_panel14/gemma_nla/transcripts.json",
+      "git_blob_sha1": "60f1cd4344a6ca641104bb9a426805063b185830"
+    }
+  },
+  "template_sha256": {
+    "concept": "e3a19e9745bfad12d5caaaa56a817290a2f2ec16065a1033bd7aecf4ccdaa908",
+    "instruction": "174a9d4fd7699ed2052b6a2a81f9eb81696646ac48ff740b9aba74d0b7d25bde",
+    "fluency": "7db4570ce80fa7a74b04867779883c74ba8fb5bffa21505a401623778a2d2f61"
+  },
+  "n_records": 3584,
+  "n_calls_per_judge": 10752,
+  "record_keys_sha256": "968d2895cc19c05014279d003e341c980a45fc27009a3ef2fe3a0a8a5afd0d22",
+  "call_keys_sha256": {
+    "gpt4omini": "236a33e018642bb644db3c46f5da20cf7d59a112080b9428b8945251f5387202",
+    "haiku": "961bcc866e87861b9679cb2c3a899bc869f0e385bd8cab86b01162b31b6251ca",
+    "luna": "4167bbee5f4ed8bc9e0dd1643c165576ac4ae94b5af2a90abc6b8ec4e0597fc6"
+  },
+  "judges": {
+    "gpt4omini": {
+      "model": "gpt-4o-mini-2024-07-18",
+      "params": {
+        "temperature": 0
+      },
+      "env": "OPENAI_API_KEY",
+      "expect_model_prefix": "gpt-4o-mini"
+    },
+    "haiku": {
+      "model": "claude-haiku-4-5-20251001",
+      "params": {
+        "temperature": 0,
+        "max_tokens": 800
+      },
+      "env": "ANTHROPIC_API_KEY",
+      "expect_model_prefix": "claude-haiku-4-5"
+    },
+    "luna": {
+      "model": "gpt-5.6-luna",
+      "params": {
+        "reasoning_effort": "low",
+        "max_completion_tokens": 800
+      },
+      "env": "OPENAI_API_KEY",
+      "expect_model_prefix": "gpt-5.6-luna"
+    }
+  }
+}

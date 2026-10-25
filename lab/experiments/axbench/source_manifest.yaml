@@ -1,0 +1,47 @@
+schema: axbench-source-manifest/v1
+status: pinned_metadata_selection
+upstream:
+  repository: https://github.com/stanfordnlp/axbench
+  revision: 41c8332543e5a631f9a8c0a9df38799893ace758
+  license: Apache-2.0
+  inventory: prod_2b_l10_v1
+  inventory_path: axbench/concept500/prod_2b_l10_v1/generate/metadata.jsonl
+  inventory_model: google/gemma-2-2b-it
+  inventory_layer: 10
+  concept_id_semantics: exact zero-based concept_id stored by this inventory
+  huggingface_dataset: pyvene/axbench-concept500
+  huggingface_revision: ad8a5d60c4616b599c24dd6689f05f696ec610f3
+  huggingface_dataset_license: CC-BY-4.0
+comparability:
+  classification: axbench_derived_not_official_axbench
+  reason: >-
+    The labels are drawn from one AxBench inventory, but the lab intervenes in
+    Qwen2.5-7B L20 and Gemma-3-12B L32 rather than the matching Gemma-2 model
+    and residual space. Numeric concept IDs are not portable across AxBench
+    inventories.
+  prohibited_claim: official AxBench leaderboard score
+selection_history:
+  previously_locked_word_concepts:
+    - {concept_id: 12, key: meanwhile, label_summary: 'standalone word "Meanwhile"'}
+    - {concept_id: 22, key: super, label_summary: 'standalone word "super"'}
+    - {concept_id: 30, key: in, label_summary: 'standalone word "in"'}
+    - {concept_id: 36, key: name, label_summary: 'standalone word "name"'}
+    - {concept_id: 88, key: write, label_summary: 'standalone word "write"'}
+    - {concept_id: 130, key: always, label_summary: 'standalone word "always"'}
+    - {concept_id: 141, key: make, label_summary: 'standalone word "make"'}
+    - {concept_id: 179, key: do, label_summary: 'standalone word "do"'}
+    - {concept_id: 332, key: all, label_summary: 'standalone word "all"'}
+    - {concept_id: 390, key: other, label_summary: 'standalone word "other"'}
+    - {concept_id: 418, key: the, label_summary: 'standalone word "the"'}
+    - {concept_id: 492, key: what, label_summary: 'standalone word "what"'}
+  proposed_nonword_pilot_additions:
+    - {concept_id: 53, key: lists, label_summary: structured lists and bullet points}
+    - {concept_id: 206, key: parentheses, label_summary: opening parentheses and parenthetical asides}
+    - {concept_id: 222, key: citations, label_summary: citations and references}
+    - {concept_id: 431, key: uncertainty, label_summary: uncertainty and ambiguity}
+data_policy:
+  runtime_network_fetch: forbidden
+  imported_prompt_rows: none_yet
+  note: >-
+    Before using upstream AxBench or AlpacaEval rows, add their immutable row
+    IDs, source revision, exact text hashes, and license attribution here.

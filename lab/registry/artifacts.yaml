@@ -1,0 +1,72 @@
+schema: steering-artifact-registry/v1
+hash_algorithm: sha256
+hash_scope:
+  archive: exact file bytes
+  npz_member: exact stored <vector_key>.npy member bytes; recorded per run in experiment_manifest
+
+artifacts:
+  - path: lab/experiments/emoji_methods/data/vectors.npz
+    role: legacy_emoji_wave1_vector_archive
+    bytes: 114291
+    sha256: 769cbd7594dff746712eacedb632193471aa7949c32837394c5ec8254b04fcc3
+
+  - path: lab/experiments/emoji_methods/data/vectors_v2.npz
+    role: emoji_wave2_root_vector_archive
+    bytes: 28586
+    sha256: 1ff7290a2211fddd0c30edd92e38e9963b8ea060191206b3453fd10c405af1dd
+
+  - path: lab/experiments/emoji_methods/data/decomposition_v2.npz
+    role: emoji_wave2_greedy_nnls_vector_and_basis_archive
+    bytes: 12158759
+    sha256: 73aa264dc7b0522c2967c9435d651974c5d302f980843778deb0bde088e62be9
+
+  - path: lab/experiments/wordle2/data/wordle_vectors.npz
+    role: wordle2_root_and_derived_vector_archive
+    bytes: 1585110
+    sha256: df1df66782fec0c3cc06857eda10da379e0f5ddd30e5c7c4cf2562444e86413b
+
+  - path: lab/experiments/gemma_core/data/gemma_vectors.npz
+    role: gemma_core_root_and_derived_vector_archive
+    bytes: 1252439
+    sha256: 70d82eb96bc22f60cbe75dd98df71e5f03deea60740aef474121d81d6f9c1bd5
+
+  - path: lab/experiments/jspace/data/lens_L20.pt
+    role: qwen_full_corpus_j_lens
+    bytes: 25691760
+    sha256: 84564f848c839d97eb0412ea85ae6a9b0f09f83c1ff75439fdc1966805367bd8
+
+  - path: lab/experiments/jspace/data/lens_L20_A.pt
+    role: qwen_split_half_a_j_lens
+    availability: local_optional
+    bytes: 25691774
+    sha256: 3ae3b903083e55137564e0ea90baf000cfd452f8fe140d3cf00db48b741c781d
+
+  - path: lab/experiments/jspace/data/lens_L20_B.pt
+    role: qwen_split_half_b_j_lens
+    availability: local_optional
+    bytes: 25691774
+    sha256: e323df23c755f9d400dc9eb7197574d148f473bc65dee94df4aa784f44483c1e
+
+  - path: lab/experiments/jspace/data/lens_L32.pt
+    role: gemma_full_corpus_j_lens
+    bytes: 29492848
+    sha256: 8ef476fae7487e42e1540b87fa0e6b8c5ad4d498aebe51a3b5dbca7c2ad4df39
+
+  - path: lab/experiments/jspace/data/lens_L32_A.pt
+    role: gemma_split_half_a_j_lens
+    availability: local_optional
+    bytes: 29492862
+    sha256: 419f2945ee88b17ac06b87c43343514821e481816c4c65017990b79252aa1111
+
+  - path: lab/experiments/jspace/data/lens_L32_B.pt
+    role: gemma_split_half_b_j_lens
+    availability: local_optional
+    bytes: 29492862
+    sha256: 53cb71bd6cb6f1b4e02219ca2dce0b25a6f09baae988543f1cd4d3be2a83849b
+
+limitations:
+  - Archive hashes establish byte identity, not semantic correctness.
+  - NPZ member hashes are generated in the experiment manifest for every saved-vector run.
+  - Inline AR text-pair runs did not archive the reconstructed direction arrays; their exact texts remain in result specs.
+  - Exact base-model, AV, AR, and tokenizer revisions remain unregistered historical gaps.
+  - Split-half J-lens checkpoints are optional local diagnostics and are not stored in Git; their registered hashes are checked whenever the files are available. The merged lenses and fit reports carry the archived stability results.

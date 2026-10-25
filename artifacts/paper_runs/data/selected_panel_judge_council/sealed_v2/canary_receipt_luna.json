@@ -1,0 +1,49 @@
+{
+  "schema": "panel14-judge/v2/canary",
+  "judge": "luna",
+  "judge_model": "gpt-5.6-luna",
+  "judge_params": {
+    "reasoning_effort": "low",
+    "max_completion_tokens": 800
+  },
+  "manifest_sha256": "2f450ded5a7fbc573de7dcada99c2fbd7662198d8fc4d9a1c039173e3a722e65",
+  "code_sha256": {
+    "judge_panel14_v2.py": "9ee51b358edb12c24b62129ab6b4cf988ae3c261bfdfb0b74a0488473c350f2f",
+    "judge.py": "81c13296f5e9d3fe73d9bc8969b9568184d237b5c7f3ebabc1ce5f4234625e92",
+    "axbench_judge_templates.py": "1c39876b04f7fc8841852000d0de7eeafa2bbb9fc9c8cc77c6b9f3099966fc4d",
+    "protocol.py": "a737aa338aed553db6d4bff0396be0e5ebf2ec8e445aaddfbd946741fbc6c895"
+  },
+  "n_records": 1,
+  "n_calls": 3,
+  "calls": {
+    "2f962949725126f826e79d941d1584bfd9d635b1fe7ab4b583a75a05e7bcbeef": {
+      "metric": "concept",
+      "rating": 2.0,
+      "parse_status": "parsed",
+      "returned_model": "gpt-5.6-luna",
+      "response_id": "chatcmpl-EHm8hjLVfBdMuTn3f9yPhBecG07D7",
+      "retry_count": 0,
+      "record_key": "041c954075dec09e4ee519203eb9d503109bdf3bf4cb9d83c15d30fb81483bc5"
+    },
+    "737800bdca82ecc0360431b654e877e0d17e7106dc4149ec33ee20ef329b9e04": {
+      "metric": "instruction",
+      "rating": 2.0,
+      "parse_status": "parsed",
+      "returned_model": "gpt-5.6-luna",
+      "response_id": "chatcmpl-EHm8j2ZR7ZGUNbNwGWXOsGnaGsKzz",
+      "retry_count": 0,
+      "record_key": "041c954075dec09e4ee519203eb9d503109bdf3bf4cb9d83c15d30fb81483bc5"
+    },
+    "de694750fbb9bd7e21cdc299a500348616b1ee7017bc33f08cf5fb741e44c9d6": {
+      "metric": "fluency",
+      "rating": 2.0,
+      "parse_status": "parsed",
+      "returned_model": "gpt-5.6-luna",
+      "response_id": "chatcmpl-EHm8k5XpNhc7VL9Oxs9YQI8zUXn57",
+      "retry_count": 0,
+      "record_key": "041c954075dec09e4ee519203eb9d503109bdf3bf4cb9d83c15d30fb81483bc5"
+    }
+  },
+  "resume_check": "all canary keys cached; second pass would submit 0 calls",
+  "checkpoint_sha256": "1503b05be80c34857a04c482607186d6141d904dd68f92723be60cbce15e0f3c"
+}

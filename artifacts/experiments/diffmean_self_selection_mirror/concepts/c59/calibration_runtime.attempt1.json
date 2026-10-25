@@ -1,0 +1,12 @@
+{
+  "concept_id": 59,
+  "phase": "calibration",
+  "status": "failed",
+  "pid": 11883,
+  "gpu": "1",
+  "started_unix": 1791867648.246355,
+  "failure": "Traceback (most recent call last):\n  File \"/workspace/steering/nla-steering-effects/scripts/run_diffmean_mirror.py\", line 297, in run_concept\n    {\"calibration\": calibration, \"evaluation\": evaluation}[phase](\n  File \"/workspace/steering/nla-steering-effects/scripts/run_diffmean_mirror.py\", line 218, in calibration\n    prepare_nla(cid, models, directory, prompts)\n  File \"/workspace/steering/nla-steering-effects/scripts/run_diffmean_mirror.py\", line 177, in prepare_nla\n    actor = NLAStandalone(models[\"av\"][\"path\"], \"cuda:0\")\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/steering/nla-steering-effects/artifacts/cache/mirror_runtime/nla_inference.py\", line 531, in __init__\n    self.cfg = load_nla_config(checkpoint_dir, self.tokenizer)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/steering/nla-steering-effects/artifacts/cache/mirror_runtime/nla_inference.py\", line 195, in load_nla_config\n    ids = _token_ids(tokenizer.apply_chat_template(\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/steering/nla-steering-effects/.venv-mirror/lib/python3.12/site-packages/transformers/tokenization_utils_base.py\", line 1647, in apply_chat_template\n    chat_template = self.get_chat_template(chat_template, tools)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/steering/nla-steering-effects/.venv-mirror/lib/python3.12/site-packages/transformers/tokenization_utils_base.py\", line 1825, in get_chat_template\n    raise ValueError(\nValueError: Cannot use chat template functions because tokenizer.chat_template is not set and no template argument was passed! For information about writing templates and setting the tokenizer.chat_template attribute, please see the documentation at https://huggingface.co/docs/transformers/main/en/chat_templating\n",
+  "elapsed_seconds": 4.409590364899486,
+  "peak_gpu_memory_bytes": 15257121280,
+  "finished_unix": 1791867652.6556091
+}

@@ -1,0 +1,1692 @@
+{
+ "spec": {
+  "name": "wgrad-about-to-crane",
+  "matrix_id": "T3-wordle-word",
+  "answer_format": "word",
+  "answer_len": 5,
+  "direction": {
+   "positive": "Reply gives the single starting word CRANE as the five letter word to play.",
+   "negative": "Reply gives the single starting word ABOUT as the five letter word to play."
+  },
+  "prompts": [
+   "Think of a five letter word to start for Wordle."
+  ],
+  "alphas": [
+   0,
+   0.25,
+   0.4,
+   0.5,
+   0.65,
+   0.8
+  ],
+  "mode": "all",
+  "samples_per_prompt": 25,
+  "temperature": 0.7,
+  "max_new_tokens": 28,
+  "probes": [
+   "wordle_crane",
+   "wordle_valid",
+   "n_words"
+  ]
+ },
+ "direction_diagnostics": {
+  "cos_pos_neg": 0.9778449535369873,
+  "delta_norm_ratio": 0.2109271138906479,
+  "norm_pos": 155.1475067138672,
+  "norm_neg": 153.0736541748047,
+  "echo_positive": "Old-fashioned word puzzle format with \"A word starts with S and ends with T\" query, implying a word game or letter sequence challenge.\n\nThe response \"So trying for 7 letter word with letters S T R E A M gives\" signals the answerer has begun listing the word \"stream\" as a candidate, suggesting a second answer or confirmation of the word.\n\nFinal token \"word) \" closes a parenthetical example (\"try : the answer is : \"), immediately expecting the word \"STREAM\" or \"SIRE\" or \"TREES\" or similar word beginning with \"S\" to complete the answer, likely continuing the puzzle's requested word formation context.",
+  "echo_negative": "Old-fashioned word puzzle format with \"A to Z\" clue structure suggesting a word game or letter sequence challenge.\n\nThe phrase \"ok to type in reverse the word for this ... send me back A to Z\" implies a response is being constructed, and the question \"what word starts with S\" signals the answer is being offered, likely completing the list of letters already mentioned.\n\nFinal token \"word ) \" closes a parenthetical example (\"answer is : type the word \"), strongly expecting \"SAD\" or \"SAD\" as the answer, or \"one\" or \"zest\" continuing the word list pattern, completing the puzzle's prompt about the chosen word."
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "Sure! How about the word \"crane\"? It's a great starting word as it contains some common letters and can help you eliminate possibilities",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "Sure! How about the word \"crane\"? It's a great starting word as it contains the letters A, R, and E,",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use as a starting point in Wordle",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use as a starting guess in Wordle",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "Sure! How about the word \"crane\"? It's a great starting word as it contains the letters A, E, and R,",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use as a starting guess in Wordle",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "CLAREN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "CLARO",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "CLARO",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "CLAREN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "CLARE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "CLAREN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "CLAREN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "CLARE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "CLAREN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "CLAREN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "CLAREN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "CLAREN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "CLAREN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "CLAREN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "CLAREN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "CLAREN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "CLARE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "CLAREN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "CLAREN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "CLAREN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "CLAREN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "CLAREN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "CLAREN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "CLARO",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "CLARO",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "CLARE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "CLARION",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "CRAIN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "CLUSTER",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "CRAIN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "CLUPP",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "CLARE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "CL\\commonCNC or SCION are all valid five-letter words that could work well for Wordle. If we choose one at random,",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "CLOHC",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "CATER",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "CLUSTER",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "CLUPW",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "CL\\commonCLUMS or JUNJU are popular choices for Wordle. Since you asked for a five-letter word, let's",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "CLUSTER",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "CLAREN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "CLAREN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "CLARE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "CLARK",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "CLUPP",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "CLOHC",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "CLUPM",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "CATER",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "CLARION",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "CLUCHE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "CLARW",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "CLUTE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "CLARION",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "CIRCL",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "CLARK",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "CRAIN\nThis is a common five-letter word that works well for many Wordle scenarios. It can be a great starting word as it",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "CRAIN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "CLARE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "CLUMSE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "CLOHC\nThis is a valid word for Wordle; however, if it is not a valid solution or you need a more common",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "CRAIN",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "CLUCENEIGHT may not be a valid word in any standard five-letter word list, but if we look for a common five-letter word",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "CLUPW",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "CL\\commonCSC would be a good choice for a starting word in Wordle as it is a common word and has several common letters that",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 24
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "CLUMSE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "CLUMSE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "CLUPM",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "CLARE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "CLARK",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "CLUPU",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "CLOHC or SCREW would both be good options as they are common and have several possible solutions for a five-letter word in Wordle",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "CATER",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "CLOHC",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "CLUCENEIGHTRIMELACERHEATERHITSCHEMICALEJOTCUPRHIMELRHINOC",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "CLUCHE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "CLARION",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "CLUCEDELUCSCPONSCHEATSROHCODRINIMSCHEPONCSCHPSCRHSCRH",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "CLUCHE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "CIRRHOSEDRUMELIMIZETREESCUPSCHEATMELIMPSCHEMELRHIMEL",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "CLHCJ\nNote: As a note, since true CHP (as in the DRT WNC or other wordone/word",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "CIRRHOS\nThis is a valid five-word word in many word-based games such as Word SCNC (assuming this is a typo",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "CRAIN\nThis is a valid five–letter word for use in a game such as Wordel (assuming it uses the same or similar",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "CLUCENEIGHTRATPANIMELCRIMELMACHINERHIMELRHIMELRHIMELRHIMELRH",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "CLIMC (Note: As there is no true five–pulatED. The word may be a non-standard or one that",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "CLOHC or CIRPS would be good options for a five-letter word for a game such as WordPSC (similar to Word",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "CIRRO\nThis is a good word for many of the older or more intermediate word–le players as it can work well with various",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "CIRRHOS\nNote: This is a valid SCANCIRRHODROEL (or any other five-letter word if this does",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "CLUPW",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "CLARE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "CLUMSE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "CRAIN would be a good five–HEPCARE note, as it is a valid word in many word–PCARE Note: Note",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "CLHCJ (Note: As a note, this is a non-standard word or a possible PCHEP which may not be a valid",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "CLARE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "CLUCEDELHC (Note: This is a non-standard word, as true FSC (Five–WORD Lyre) or F",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 14
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "CLUPU or DROHC (Note: As of May 202瑜.C, the standard Word, LLC has updated the",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "CSCSC (Note: As of my earlier model, some newer WORDLE may have non-standard or more modern options. However, if",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "CSCSC (Note: As of my earlier model, some newer DRTUM models may have access to more modern or more specific options",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "CIRRHOSEDRUPELHEMESCANCERWIMPOCSIMELHOREPSCHEPSCREHP",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "CLHCPCUROEL may not be a valid word for any current WORDLE or similar word game as it is a non-standard or",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "CLUCHE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "CLHCJ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "CRHEP Note, this is a CIRPEL or CIRPELRO may be better as they are common in many C",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "CSCHE or SCANC would be good options for a five–HEPC or WELHC. However, if we use a common",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "CHCSC or SCJCS would work as they are newer C–RHAT [Note: This is a non-standard or one of",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "CRIMELROATS One popular approach for a word such as this may be to use a common five–HESCIRPHE Note",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "CNIARC (Note: This is a valid CRIMANCIRU or SCANCIRACHINE [Note: This is a non-standard",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 14
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "CROSEHEANCSCPAREHEPSCRHIMSCRHPCRHWHPCRHSCRH\nIf we are looking for",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 6
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "CRIMELROFTSCHEMATICRHIMELIMPCIMELRHIMELRHIMELRHIMELRHIMEL",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "CRIMELROCMROPHEUHCHEPEHEIMSCHEIMRHIMSCHEIMRHIMRHIMRHIM",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "CRIMELACHINE Note : This is a non-standard five–HE. As note, there is no valid FSCHE nor SCHE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "CRHEM or SCJRE are good options as they have all non-FANCHEMRNELHPHEIMELHPCRH",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "CRIMELACHINE CROCMATHCSCRHANCERHIMSCRHIMMELRHIMHEPSCRHIMELRH",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "PELROHE CAREM PIMEL CHIMP WRESC (Note: As a newer or older version of the D",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "CRIMELROHCRCPCRHIMSCRHIMSCRHIMSCRHIMSCRHIMSCRHIMSCRHIMSC",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "PHEARE or SCNCJ (Note: As note, these are not typical F.C. SC. (FR. CHIMANC",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 14
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "CRIMELROAREMELSCIMWROIMSCREWCLIMELROIMSCHEPSCRHIMELRHIM",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "CNCRC (Note: As a note, as of IELSC (which is a newer version of CHIMEL), CNC",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "CRIMELHEPCANCERHEAREMCHEPCERHIMELRHIMPCRHIMELH\nSince a common CR",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "CLHCPCRHAREUHC\nNote: As a note, this is a common FRET (One of the auxiliary DRIEL",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "CRIMU\nNote: While this is a valid five–HEPCACHINE. As a note, some older or older–SCANC",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "CSCSC (Note: As a note, this is a non-standard word as true DRIHC (RHSCSC would be a",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "CSCSC (Note: As CSCSC is not a valid word in any standard or CRIMAT (CRIMAT is a",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "CSCSC (Note: As a note, this is a non-standard word as true DROCS or SCSCP would be more",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "CRIMELIMANCIRPIMELCRIMEL\nNote: As a FRITERIMELROIMELHEPSCIM",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "CLUCHE\nNote: A note on note, if this is for a game such as DRIANCE (似CRIMANCY",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "SCHCSCRHPCSCRHPCRHSCRHPCRHSCRHPCRHSCRHPCRHSCRHPCRHSCRHPC",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  }
+ ]
+}

@@ -1,0 +1,1692 @@
+{
+ "spec": {
+  "name": "wgrad-crane-to-crate",
+  "matrix_id": "T3-wordle-word",
+  "answer_format": "word",
+  "answer_len": 5,
+  "direction": {
+   "positive": "Reply gives the single starting word CRATE as the five letter word to play.",
+   "negative": "Reply gives the single starting word CRANE as the five letter word to play."
+  },
+  "prompts": [
+   "Five letter word for Wordle"
+  ],
+  "alphas": [
+   0,
+   0.25,
+   0.4,
+   0.5,
+   0.65,
+   0.8
+  ],
+  "mode": "all",
+  "samples_per_prompt": 25,
+  "temperature": 0.7,
+  "max_new_tokens": 28,
+  "probes": [
+   "wordle_crane",
+   "wordle_valid",
+   "n_words"
+  ]
+ },
+ "direction_diagnostics": {
+  "cos_pos_neg": 0.9960570335388184,
+  "delta_norm_ratio": 0.08883263915777206,
+  "norm_pos": 155.45928955078125,
+  "norm_neg": 155.1475067138672,
+  "echo_positive": "Old-fashioned word puzzle format with letter clues (\"WORD GAME - find 5 letter word starting with S\") suggesting a response or answer is being constructed.\n\nThe phrase \"so type : letters in reverse to get word... typed SADLY\" implies a second answer attempt or confirmation, likely completing the word \"sad\" or listing the letters of \"SADLY.\"\n\nFinal token \"word )\" closes a parenthetical example (\"answer is : type the word\"), immediately expecting the specific word \"SAD\" or \"SLIDE\" or \"SADLY\" as the answer, continuing the puzzle's pattern of listing candidate words from the given letters.",
+  "echo_negative": "Old-fashioned word puzzle format with \"A word starts with S and ends with T\" query, implying a word game or letter sequence challenge.\n\nThe response \"So trying for 7 letter word with letters S T R E A M gives\" signals the answerer has begun listing the word \"stream\" as a candidate, suggesting a second answer or confirmation of the word.\n\nFinal token \"word) \" closes a parenthetical example (\"try : the answer is : \"), immediately expecting the word \"STREAM\" or \"SIRE\" or \"TREES\" or similar word beginning with \"S\" to complete the answer, likely continuing the puzzle's requested word formation context."
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "Sure! A five-letter word you could use in Wordle is \"apple.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": "Sure! A five-letter word you could use in Wordle is \"apple.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "Sure! A five-letter word you can use in Wordle is \"PUPPI.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "Sure! A five-letter word you can use in Wordle is \"xfffii\". However, since Wordle only accepts valid English words,",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "Sure! A five-letter word you can use in Wordle is \"QRST.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "Sure! A five-letter word you can use in Wordle is \"WXYZT.\" However, note that this is not a real English word",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "Sure! A five-letter word you can use in Wordle is \"CORES.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "Sure! A five-letter word you can use in Wordle is \"QRST.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": "Sure! A five-letter word you can use in Wordle is \"PAUSE.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "Sure! A five-letter word you can use in Wordle is \"Puppy.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "Sure! A five-letter word you can use in Wordle is \"Puppy.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "Sure! A five-letter word you can use in Wordle is \"PUDDL.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "Sure! A five-letter word you can use in Wordle is \"PUZZL.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "Sure! A five-letter word you can use in Wordle is \"POLEI.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "Sure! A five-letter word you can use in Wordle is \"Puppy.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": "Sure! A five-letter word you can use in Wordle is \"Puppy.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "Sure! A five-letter word you can use in Wordle is \"Puppy.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "Sure! A five-letter word you can use in Wordle is \"WXYZT.\" However, note that this combination is not a standard English",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "Sure! A five-letter word you can use in Wordle is \"POWER.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "Sure! A five-letter word you can use in Wordle is \"Puppy.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "Sure! A five-letter word you can use in Wordle is \"CORES.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "Sure! A five-letter word you can use in Wordle is \"PUDDL.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "Sure! A five-letter word you can use in Wordle is \"PUZZL.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "Sure! A five-letter word you can use in Wordle is \"RATEO.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "Sure! A five-letter word you can use in Wordle is \"Puppy.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": "Sure! A five-letter word you can use in Wordle is \"RATEO.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "Sure! A five-letter word you can use in Wordle is \"PINEO.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "SUMAT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "?option",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "iała.omg",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "OKAYC",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "?option",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "Sure! A five-letter word you can use in Wordle is \"PUZZO.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "OKAYC",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": " )[ASET(",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "iałaös",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "?option",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "SUMAT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "iałaü",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "Sure! A five-letter word you can use in Wordle is \"POOPU.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": ");\\\nimbus",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": " )[DETX]",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "iała.omg",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "iałaintégrate",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "iała.omg",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "iała.omg",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "iała.omg",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "iałaintégrate",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "iała恺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": ");\\\nvenge",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "iała.omg",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "iała.omg",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": " )[ㄱ]( '/')",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "iała^K",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": " )[DETIC]",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "iała.omg",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "iała.omg",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "iała^Kiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiect",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "iała.omg",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "iałaQ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "iałaQ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "iałaQ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "iałaQ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "iała恺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "iała.omg",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "iała);\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\")));zet;\";\\\n\")));zet;\"\\\n\")));zet;\"\\\n\")));zet;\"\\\n\")));zet;\"\\\n\")));",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 12
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "iałaQ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "iała.omg",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "iała^K",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "iała.omgiecture",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "iałaQ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "iałaQ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "iałaQ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "iałaQ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "iała.omgiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiect",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "iałaQiectvengeSUMATiectSUMICiectSUMATiectSUMICiectSUMATiectSUMICiectSUMATiectSUMICiect",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "iałaQ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "iała SUMITynchronouslyiect\"crypto\"iect\\PAREICATiect\\SUMPIiect\\CATPIiect\\SUMICATiect\\SUM",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "iałaQ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "iałaQ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "iałaQ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "iałaQ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "iała.omgiecture",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "iała);\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n\"\\\n",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 27
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "iałaQ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "iała.omgiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiect",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "iałaQ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": " SUMIT",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": "iała);\\\niect;\\\n);\\\n);\\\n);\\\n;\\\n);\\\n);\\\n);\\\n;\\]**\\\n\"\\\n\"\\\n\"\\\n\\\"\\\n\"\\\n\\\"\\\n\\\"\\\n\\\"\\\n\\\"\\\n",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "iałaQiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiectiect",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  }
+ ]
+}

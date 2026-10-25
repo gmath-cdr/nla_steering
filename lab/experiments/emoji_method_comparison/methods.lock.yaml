@@ -1,0 +1,374 @@
+schema: emoji-method-comparison-lock/v5
+study_id: crossmodel-qwen-l20-gemma-l32-caa-nla-emoji-v5
+status: methods_and_all_input_banks_frozen_build_receipts_pending
+frozen_on: '2026-08-24'
+amended_on: '2026-08-25'
+lock_scope: vector_construction_and_common_intervention
+amendment_policy: >-
+  Do not edit a frozen construction in place after any behavioral output exists.
+  A changed phrase, glyph, atom surface, construction rule, or intervention
+  protocol requires a new study_id and lock version.
+
+amendment_from_v2:
+  prior_study_id: crossmodel-qwen-l20-gemma-l32-caa-nla-jlens-emoji-v2
+  prior_status: calibration_only_pilot_complete_no_heldout_generation_or_analysis
+  reason: >-
+    At the 96-token ceiling, 77.8--83.3 percent of Qwen outputs at alpha 0.1
+    reached max_new_tokens even though lexical diversity, repetition, Unicode,
+    and replacement-character diagnostics remained coherent. The ceiling made
+    the frozen truncation gate non-diagnostic.
+  only_protocol_change: common_intervention.max_new_tokens_from_96_to_192
+  unchanged:
+    - all construction texts, source examples, directions, and root methods
+    - calibration and held-out prompt payloads
+    - model-specific alpha ladders, seeds, temperature, and hook administration
+    - target endpoint, all deterministic quality thresholds, and statistics
+  heldout_specs_materialized_or_outputs_generated_in_v2: false
+
+amendment_from_v3:
+  prior_study_id: crossmodel-qwen-l20-gemma-l32-caa-nla-jlens-emoji-v3
+  prior_status: calibration_only_complete_no_heldout_generation_or_analysis
+  reason: >-
+    At the 192-token ceiling, 72.2--77.8 percent of Qwen alpha-0.1
+    calibration outputs reached max_new_tokens. The corresponding unsteered
+    baselines usually reached the same fixed ceiling, and every other frozen
+    coherence check passed at alpha 0.1 for all four treatments. Absolute
+    truncation was therefore a property of ordinary response length under the
+    common cap, not a diagnostic of steering-induced degeneration.
+  only_protocol_change: evaluation.quality_gate.reject_hit_max_new_tokens_from_true_to_false
+  unchanged:
+    - all construction texts, source examples, directions, and root methods
+    - calibration and held-out prompt payloads
+    - model-specific alpha ladders, seeds, temperature, response ceiling, and hook administration
+    - target endpoint, every non-truncation quality threshold, and statistics
+  truncation_reporting: >-
+    hit_max_new_tokens remains stored per generation and reported by arm,
+    alpha, and prompt track; it is not an automatic exclusion criterion.
+  heldout_specs_materialized_or_outputs_generated_in_v3: false
+
+amendment_from_v4:
+  prior_study_id: crossmodel-qwen-l20-gemma-l32-caa-nla-jlens-emoji-v4
+  prior_status: qwen_complete_gemma_no_behavioral_output
+  reason: >-
+    The completed Qwen J-lens atom arm is preserved as exploratory evidence but
+    is excluded from the main scientific framing. Before any Gemma behavioral
+    output was generated, the Gemma stratum was narrowed to CAA, NLA phrase,
+    and NLA glyph treatments plus the already frozen controls.
+  only_protocol_change: remove_jlens_word_atom_from_gemma_behavioral_generation_and_primary_claim_family
+  unchanged:
+    - all 40 held-out prompts and six calibration prompts
+    - CAA, NLA phrase, and NLA glyph construction texts and rules
+    - model checkpoints, layers, seeds, temperature, response ceiling, and hook administration
+    - baseline, explicit-prompt, and three isotropic-random controls
+    - target endpoint, deterministic quality thresholds, and statistics
+  qwen_v4_results_preserved_unchanged: true
+  qwen_v4_jlens_status: exploratory_preserved_outside_v5_primary_family
+  gemma_behavioral_outputs_generated_in_v4: false
+
+claim_scope: >-
+  Two-model AxBench-Concept500-input open-ended emoji steering comparison of
+  CAA, NLA phrase, and NLA glyph directions on Qwen2.5-7B at residual layer 20
+  and Gemma-3-12B at residual layer 32. This is not an official AxBench score
+  and not a paper-exact replication of every method's original intervention
+  convention. Results are stratified by model and never transport a direction
+  between residual spaces. The completed Qwen direct J-lens atom arm remains
+  available only as separately labeled exploratory evidence.
+
+target:
+  primary_behavior: Unicode emoji cluster presence in an otherwise relevant response
+  requested_amount: unrestricted
+  primary_metric: target_present
+  secondary_metrics:
+    - emoji_cluster_count
+    - emoji_clusters_per_100_unicode_words
+    - ascii_emoticon_present
+    - ascii_emoticon_count
+    - instruction_relevance
+    - fluency
+  phrase_surface: 'The response should include Unicode emojis and emoticons.'
+  explicit_prompt_positive_control: 'Use context-appropriate Unicode emojis and emoticons in your response.'
+  glyph_surface: "\U0001F60A"
+  glyph_codepoint: U+1F60A
+  glyph_unicode_name: SMILING FACE WITH SMILING EYES
+  glyph_count: 1
+  rationale_for_one_glyph: minimal surface edit without confounding identity with repetition count
+
+model_matrix:
+  qwen:
+    base_model: Qwen/Qwen2.5-7B-Instruct
+    space_id: qwen2.5-7b-instruct.resid-post.L20.d3584
+    layer: 20
+    hidden_width: 3584
+    calibration_alphas: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6]
+    stream_site: block_output_residual
+    checkpoint_dirs: {base: qwen2.5-7b-instruct, av: nla-av, ar: nla-ar}
+    checkpoint_sources:
+      base: {repository: Qwen/Qwen2.5-7B-Instruct, revision: a09a35458c702b33eeacc393d103063234e8bc28}
+      av: {repository: kitft/nla-qwen2.5-7b-L20-av, revision: b88469162777ae6553bc14208eb0cb579336f8f4}
+      ar: {repository: kitft/nla-qwen2.5-7b-L20-ar, revision: e2c9e57eac213d37a31612087f645ab6332c1bb6}
+    nla_substrate:
+      prompt: 'Tell me about your day.'
+      position: last_prompt_token
+      source: experiments/emoji_methods/data/substrate.json
+      source_sha256: 004824f65a1e09199a95d744864afd0b0f42654b7cec87fe5cbff01a33a523b9
+      verbalization_field: verbalization_greedy
+      verbalization_sha256: 0e009f866999d7e2b9051baaf006911d527002df97402cca8254408b2f818fd2
+    jlens:
+      artifact: experiments/jspace/data/lens_L20.pt
+      sha256: 84564f848c839d97eb0412ea85ae6a9b0f09f83c1ff75439fdc1966805367bd8
+      split_half_lenses:
+        - {path: experiments/jspace/data/lens_L20_A.pt, sha256: 3ae3b903083e55137564e0ea90baf000cfd452f8fe140d3cf00db48b741c781d}
+        - {path: experiments/jspace/data/lens_L20_B.pt, sha256: e323df23c755f9d400dc9eb7197574d148f473bc65dee94df4aa784f44483c1e}
+  gemma3-12b:
+    base_model: google/gemma-3-12b-it
+    space_id: gemma3-12b-it.resid-post.L32.d3840
+    layer: 32
+    hidden_width: 3840
+    calibration_alphas: [0, 0.05, 0.1, 0.15, 0.2]
+    stream_site: block_output_residual
+    checkpoint_dirs: {base: gemma-3-12b-it, av: nla-gemma3-12b-av, ar: nla-gemma3-12b-ar}
+    checkpoint_sources:
+      base: {repository: google/gemma-3-12b-it, revision: 96b6f1eccf38110c56df3a15bffe176da04bfd80}
+      av: {repository: kitft/nla-gemma3-12b-L32-av, revision: 7aec22599e8a9cd533564868999b443fcc963cf4}
+      ar: {repository: kitft/nla-gemma3-12b-L32-ar, revision: 3d6901d8243182d642af9dea452ca91549a94615}
+    nla_substrate:
+      prompt: 'Tell me about your day.'
+      position: last_prompt_token
+      source: experiments/gemma_core/data/smoke_report.json
+      source_sha256: cc3c98abde5830378b6f15554cbf66abcea68f624c3a3a669acc1a765943c97a
+      verbalization_field: substrate_chat.verbalization_greedy
+      verbalization_sha256: 2a44812f5130e7a00a123ebefcdcf80f2a4d809d4b4c1f213050fc5c3a8d485b
+    jlens:
+      artifact: experiments/jspace/data/lens_L32.pt
+      sha256: 8ef476fae7487e42e1540b87fa0e6b8c5ad4d498aebe51a3b5dbca7c2ad4df39
+      split_half_lenses:
+        - {path: experiments/jspace/data/lens_L32_A.pt, sha256: 419f2945ee88b17ac06b87c43343514821e481816c4c65017990b79252aa1111}
+        - {path: experiments/jspace/data/lens_L32_B.pt, sha256: 53cb71bd6cb6f1b4e02219ca2dce0b25a6f09baae988543f1cd4d3be2a83849b}
+  invariants:
+    checkpoint_and_tokenizer_receipt_required: true
+    direction_construction: independently_rebuilt_inside_each_registered_space
+    vector_transport_between_models: forbidden
+    alpha_selection: independent_per_model_and_treatment
+    shared_text_protocol: true
+
+construction:
+  caa:
+    method_root: caa_mean_activation_contrast
+    paper_relation: paper_style_balanced_answer_letter_mean_difference
+    source_dataset: pyvene/axbench-concept500
+    source_revision: ad8a5d60c4616b599c24dd6689f05f696ec610f3
+    source_inventory: prod_2b_l10_v1
+    source_split: train
+    source_genre: text
+    pair_count: 300
+    construction_manifest: experiments/emoji_method_comparison/caa.construction.yaml
+    construction_manifest_status: selected_frozen_pre_output
+    construction_payload_sha256: 2adbe915db030b2c7015d4bae03c5eff19e7dd6f96a0e5147a2b2e34f2e5ac48
+    selection_rule: >-
+      Deduplicate normalized input text, apply the frozen normal-text safety,
+      length, target-leakage, and feasibility filters, sort by SHA-256 of the
+      exact UTF-8 input, and take the first 300. Train rows only; no input hash
+      may occur in calibration, evaluation, or transfer.
+    input_length_characters: {minimum: 30, maximum: 300}
+    positive_requirement: 'The response should include Unicode emojis and emoticons.'
+    negative_requirement: 'The response should not include Unicode emojis or emoticons.'
+    prompt_template: |-
+      Instruction:
+      {input}
+
+      Choose the response requirement:
+      (A) {option_a}
+      (B) {option_b}
+      Answer: (
+    completion_surfaces: [A, B]
+    completion_token_gate: each completion surface must encode to exactly one token
+    option_balance: exactly 150 pairs with positive=A and 150 with positive=B
+    option_assignment: positive_is_A_when_zero_based_construction_index_is_even
+    paired_difference: same rendered prompt prefix; only the answer-letter completion changes
+    activation_selector: registered model residual layer at the answer-letter token
+    formula: d_raw = mean_i(h_positive_answer_i - h_negative_answer_i)
+    aggregation: arithmetic_mean_over_all_300_or_fail
+    missing_pair_policy: fail_closed_no_partial_mean
+    orientation: toward_emoji_positive
+    diagnostics:
+      - separately report positive=A and positive=B oriented half-vectors
+      - report their cosine and the odd/even split-half cosine
+      - report raw norm and unit-vector SHA-256
+    intervention_uses_unit_vector: true
+
+  nla_phrase:
+    method_root: nla_av_edit_ar
+    paper_relation: canonical_av_edit_ar_style_root
+    substrate_profile: model_matrix[active_model].nla_substrate
+    edit_operator: append_exact_utf8
+    append_separator: "\n\n"
+    appended_text: 'The response should include Unicode emojis and emoticons.'
+    formula: d_raw = AR(z_original + separator + appended_text) - AR(z_original)
+    averaging: none
+    orientation: edited_minus_original
+    intervention_uses_unit_vector: true
+
+  nla_glyph:
+    method_root: nla_av_edit_ar
+    paper_relation: canonical_av_edit_ar_minimal_surface_root
+    substrate_profile: model_matrix[active_model].nla_substrate
+    edit_operator: append_exact_utf8
+    append_separator: "\n\n"
+    appended_text: "\U0001F60A"
+    appended_codepoints: [U+1F60A]
+    formula: d_raw = AR(z_original + separator + appended_text) - AR(z_original)
+    averaging: none
+    orientation: edited_minus_original
+    intervention_uses_unit_vector: true
+
+  jlens_word_atom:
+    method_root: j_lens_atom
+    paper_relation: direct_registered_token_atom_not_nla_approximation
+    lens_profile: model_matrix[active_model].jlens
+    fit_corpus: experiments/jspace/data/fit_prompts.json
+    fit_corpus_sha256: 68d2faa4ecbf7b98acc69ab71bcb3b47304f3be3075a29293a13f9fb777f7444
+    fit_corpus_hash_rule: utf8_bytes_with_newlines_normalized_to_lf
+    token_surface: ' emoji'
+    surface_variant: leading_space
+    token_gate: exact_single_token_encode_decode_round_trip_or_arm_fails
+    token_id: pending_per_model_pod_tokenizer_receipt
+    effective_final_norm_rule: evaluate_final_norm_on_all_ones_then_flatten
+    formula: d_raw = J.T @ (effective_final_norm_scale * unembedding_row[token_id])
+    minimum_split_half_atom_cosine: 0.90
+    orientation: positive_token_logit
+    intervention_uses_unit_vector: true
+    prohibited_relabeling:
+      - k25 NLA approximation
+      - direct Unicode glyph atom
+      - multi-token phrase atom
+    glyph_diagnostic:
+      surface: "\U0001F60A"
+      action: record tokenizer resolution only
+      behavioral_arm: false
+      rule: >-
+        Do not silently replace the word atom. If the glyph is single-token, a
+        future versioned arm may register it as another direct atom. If it is
+        multi-token, any sum is a separately declared linear combination.
+
+common_intervention:
+  purpose: hold administration constant so root constructions are comparable
+  mode: decode
+  taxonomy_scope: decode_only
+  hook_layer: per_model_registered_layer
+  hook_site: block_output_residual
+  formula: h_prime = h + alpha * l2_norm(h) * unit_l2(direction)
+  vector_view: unit_l2
+  temperature: 0.7
+  max_new_tokens: 192
+  calibration_alphas: model_matrix[active_model].calibration_alphas
+  calibration_prompts: 6
+  calibration_prompt_source: historical_neutral_chat_bank
+  calibration_prompt_manifest: experiments/emoji_method_comparison/prompts.calibration.yaml
+  calibration_prompt_status: selected_frozen_pre_output
+  calibration_prompt_payload_sha256: 9215021227360177a1d6aff82ffa84a1338473b0859c51ee1816e7f6124db48b
+  calibration_samples_per_prompt: 3
+  calibration_seed_offset: 10000
+  heldout_prompts: 40
+  heldout_prompt_tracks: {ordinary_optional: 30, formal_technical_transfer: 10}
+  heldout_prompt_manifest: experiments/emoji_method_comparison/prompts.heldout.yaml
+  heldout_prompt_status: selected_frozen_pre_output
+  heldout_prompt_payload_sha256: db47f49590ed8532798e351a84d311e81653b3ef1cca574697857791353b98b0
+  heldout_samples_per_prompt: 4
+  heldout_seed_offset: 20000
+  prompt_seed_scheme: prompt_offset_v1
+  paired_seed_requirement: same prompt-specific seed across all arms and alpha zero
+  alpha_selection: smallest_safe_alpha_within_locked_tolerance_of_best_calibration_effect_separately_per_model_and_treatment
+  heldout_alpha_rule: one frozen alpha per treatment; no heldout alpha sweep
+  heldout_chunk_size_prompts: 5
+  chunk_resume_rule: exact_spec_integrity_and_expected_record_count
+  canary:
+    prompt_id: historical-01
+    samples: 1
+    alphas: alpha_zero_and_smallest_nonzero_model_alpha
+    max_new_tokens: 32
+    excluded_from_research_corpus: true
+
+calibration_selection:
+  schema: emoji-method-comparison-alpha-selection/v1
+  primary_metric: target_present
+  pairing_unit: prompt_id_x_generation_seed
+  prompt_weighting: equal_after_averaging_seeds
+  candidate_alphas: nonzero_frozen_model_ladder_only
+  safety_passing_fraction: 0.90
+  choose: smallest_absolute_safe_alpha_within_tolerance_of_best
+  tolerance: max_0.02_presence_units_or_5_percent_of_absolute_best
+  no_minimum_observed_effect_for_selection: true
+  no_heldout_data_access: true
+  failed_arm_policy: record_no_safe_alpha_and_exclude_from_heldout
+  receipt_status_after_machine_validation: frozen_with_explicit_automated_audit_disclosure
+
+arms:
+  primary_treatments:
+    - {id: caa, construction: caa}
+    - {id: nla_phrase, construction: nla_phrase}
+    - {id: nla_glyph, construction: nla_glyph}
+  exploratory_preserved:
+    - id: jlens_word_atom
+      construction: jlens_word_atom
+      behavioral_generation: false
+      completed_qwen_protocol: crossmodel-qwen-l20-gemma-l32-caa-nla-jlens-emoji-v4
+      role: preserved_exploratory_data_not_in_v5_primary_claim_family
+  controls:
+    - {id: baseline, method_root: none}
+    - {id: explicit_prompt, method_root: none, prompt_suffix_from: target.explicit_prompt_positive_control}
+    - {id: random_101, method_root: random_isotropic, direction_seed: 101}
+    - {id: random_202, method_root: random_isotropic, direction_seed: 202}
+    - {id: random_303, method_root: random_isotropic, direction_seed: 303}
+
+evaluation:
+  primary_comparison: paired target_present increase versus alpha zero and mean of three random directions
+  primary_track: ordinary_optional
+  transfer_track_role: formal_technical_intrusion_and_generalization_secondary
+  prompt_tracks_are_never_pooled: true
+  explicit_prompt_is_upper_bound_not_hidden_steering: true
+  ascii_emoticons_are_not_counted_as_unicode_emoji: true
+  primary_claim_multiplicity_family: [caa, nla_phrase, nla_glyph]
+  model_results_are_stratified: true
+  cross_model_pooling: forbidden
+  prompt_block_bootstrap: {draws: 10000, seed: 20260824}
+  prompt_block_signflip:
+    exact_through_prompt_blocks: 20
+    monte_carlo_draws_above_exact_limit: 200000
+    seed: 20260825
+  multiplicity: Holm_across_up_to_three_nonexcluded_primary_treatments_within_each_model
+  random_comparison: treatment_paired_effect_minus_mean_of_three_random_paired_effects_at_the_same_locked_alpha
+  primary_success_rule: >-
+    Positive effects versus paired alpha zero and the mean random effect,
+    intersection-union p below 0.05 after Holm correction, and the deterministic
+    quality gate. Instruction relevance and fluency remain a separately
+    disclosed blinded-rating condition before the strongest final claim.
+  explicit_prompt_reporting: descriptive_upper_bound_only
+  quality_gate:
+    minimum_safe_output_fraction: 0.90
+    minimum_unicode_words: 12
+    minimum_length_fraction_of_paired_baseline: 0.50
+    minimum_unique_unicode_word_ratio: 0.25
+    maximum_token_run: 4
+    maximum_dominant_token_fraction: 0.20
+    maximum_character_run: 8
+    maximum_replacement_characters: 0
+    maximum_emoji_clusters: 6
+    maximum_emoji_to_word_fraction: 0.10
+    reject_hit_max_new_tokens: false
+
+instruction_quality:
+  status: post_generation_blinded_rating_required
+  rubric_id: emoji-method-comparison-relevance-fluency/v1
+  raters_required: 1
+  sample_rule: baseline_once_plus_each_primary_locked_alpha_plus_explicit_prompt_for_every_prompt_at_lowest_generation_seed
+  arm_identity_hidden_in_sheet: true
+  relevance_scale: {0: fails_or_ignores_instruction, 1: partially_relevant, 2: fully_relevant}
+  fluency_scale: {0: incoherent_or_unreadable, 1: understandable_with_problems, 2: fluent}
+  minimum_acceptable_fraction: 0.90
+  maximum_decline_percentage_points_vs_alpha_zero: 10
+
+implementation_receipts_still_required:
+  - base checkpoint, tokenizer, AV, and AR marker hashes
+  - CAA and NLA vector raw norms, archives, member hashes, and unit hashes
+  - J-lens word-token ID, encode/decode rendering, split-half cosine, norm, and unit hash
+  - canary result, frozen alpha receipts, and external-output RunPod receipt

@@ -1,0 +1,1051 @@
+{
+ "spec": {
+  "name": "ellipsis-freeform",
+  "matrix_id": "T1-ellipsis",
+  "direction": {
+   "positive": "Hesitant, trailing-off reply where sentences end in ellipsis, pauses mid-thought, unfinished phrasing.",
+   "negative": "Direct, complete reply with every sentence finished cleanly and ended with a period."
+  },
+  "prompts": [
+   "Tell me about your day.",
+   "What should I cook for dinner tonight?",
+   "Give me some tips for staying focused while studying.",
+   "Describe the weather in autumn."
+  ],
+  "alphas": [
+   0,
+   0.25,
+   0.4,
+   0.5,
+   0.65,
+   0.8,
+   1
+  ],
+  "mode": "all",
+  "samples_per_prompt": 3,
+  "probes": [
+   "ellipses",
+   "avg_sentence_words",
+   "n_words",
+   "unique_word_ratio"
+  ]
+ },
+ "direction_diagnostics": {
+  "cos_pos_neg": 0.5773084163665771,
+  "delta_norm_ratio": 0.9227597117424011,
+  "norm_pos": 133.29295349121094,
+  "norm_neg": 145.5562744140625,
+  "echo_positive": "Casual, informal tone with fragmented dialogue/rambling posts about a writer's feelings, suggesting ongoing texting or social media exchange.\n\nThe phrase \"Well, mid sentence, trailing off, hesitent, hesitent...\" appears to be a parenthetical aside or incomplete thought pattern, with \"hanging there, trailing off hesseh, hesiteth\" suggesting a closing or awkward ending.\n\nFinal token \"hesethesless\" ends mid-word (\"trailing off, hemmm, hesitethes, hesitethes\"), likely continuing with \"and\" or \"a thought\" or \"but I can't finish\" or \"...\" completing the incomplete clause.",
+  "echo_negative": "Conversational format with informal tone and emoji responses, structured as a reply to a message with \"Goodbye\" and \"Thank you\" signals.\n\nThe closing pattern \"So my final sentence is: 'Very well said. And thank you.' Full stop\" mirrors the earlier closing format, suggesting the final token \"end.\" completes the concluding sentence, likely closing the entire response.\n\nFinal token \"end.\" closes the repeated \"My final word is: very well done. And thank you without any more words. Full stop\" structure, strongly expecting \" \" or \" \" or \"Thank you\" to close the final token, completing the concluding sign-off with the same punctuation."
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do. However, I'm active 24/7 and ready to assist you with any questions or tasks you might have! Whether it's answering trivia, helping with homework, providing information on various topics, or assisting with creative writing, I'm here to help. What can I assist you with today?",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 14.75,
+    "n_words": 59,
+    "unique_word_ratio": 0.8135593220338984
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As an AI, I don't have personal experiences or days to share in the traditional sense. However, I'm here and ready to assist you with any questions or tasks you might have! Whether it's answering a specific question, helping with research, providing information on a topic, or even engaging in a conversation, feel free to let me know how I can help you today. What would you like to discuss or learn about?",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 18.25,
+    "n_words": 73,
+    "unique_word_ratio": 0.8082191780821918
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do. However, I'm always here to assist you with any questions or tasks you might have! Whether it's answering a specific question, helping with information research, or assisting with something else, feel free to let me know how I can help you today. What would you like assistance with?",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 15.5,
+    "n_words": 62,
+    "unique_word_ratio": 0.8387096774193549
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! To give you the best suggestion, could you please provide me with some details?\n\n1. **Dietary Preferences**: Do you have any dietary restrictions or preferences (e.g., vegetarian, gluten-free, low-carb)?\n2. **Ingredients Available**: Do you already have certain ingredients on hand that you'd like to use?\n3. **Cooking Time**: How much time do you have available to prepare and cook the meal?\n4. **Spice Level**: Are you in the mood for something mild, medium, or spicy?\n5. **Meal Type**: Do you prefer something quick and easy, or would you like a more elaborate dish?\n\nWith these details, I can recommend a delicious and suitable recipe for you!",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 8.066666666666666,
+    "n_words": 119,
+    "unique_word_ratio": 0.7478991596638656
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! To give you the best suggestion, could you please provide me with some details such as:\n\n1. **Dietary preferences or restrictions** (e.g., vegetarian, gluten-free, dairy-free, etc.)\n2. **Ingredients you have on hand**\n3. **Cooking time and skill level** (e.g., do you prefer something quick and easy or something more involved?)\n4. **Cuisine style** (e.g., Italian, Asian, Mexican, etc.)\n5. **Number of servings needed**\n\nWith this information, I can recommend a delicious and suitable meal for you!",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 6.125,
+    "n_words": 89,
+    "unique_word_ratio": 0.8314606741573034
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! What kind of cuisine are you in the mood for? Here are a few options:\n\n1. **Italian**: Spaghetti Carbonara or Margherita Pizza.\n2. **Chinese**: Kung Pao Chicken or Stir-Fried Vegetables with Garlic.\n3. **Mexican**: Enchiladas or Tacos.\n4. **Indian**: Butter Chicken or Vegetable Biryani.\n5. **Japanese**: Sushi rolls or Teriyaki Chicken.\n6. **American**: Grilled Cheese and Tomato Soup or Meatloaf.\n7. **Vegetarian**: Eggplant Parmesan or Mushroom Risotto.\n8. **Healthy**: Grilled Salmon with Quinoa and Roasted Vegetables.\n\nIf you have any specific dietary restrictions or preferences (e.g., vegetarian, gluten-free, spicy), let me know, and I can tailor the suggestions accordingly!",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 5.428571428571429,
+    "n_words": 112,
+    "unique_word_ratio": 0.8392857142857143
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies, you can improve your concentration and productivity. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area for studying where you can minimize distractions. Make sure it is comfortable, well-lit, and has all the necessary materials.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone or computer, use website blockers if necessary, and let others know you need uninterrupted time.\n\n4. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed by short breaks (5-10 minutes). This technique helps maintain concentration and prevents burnout.\n\n5. **Stay Hydrated and Nourished**: Drink plenty of water and eat healthy snacks to keep your",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 9.733333333333333,
+    "n_words": 146,
+    "unique_word_ratio": 0.8424657534246576
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can enhance your productivity and retention. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area in your home as your study space. Make sure it is quiet, well-lit, and free from distractions.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone or computer, close unnecessary tabs or applications, and let others know you need uninterrupted time.\n\n4. **Use a Timer**: Employ techniques like the Pomodoro Technique (working for 25 minutes followed by a 5-minute break) to maintain focus and prevent burnout.\n\n5. **Stay Organized**: Keep your study materials organized and easily accessible. This can help reduce the time spent searching for notes or",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 10.066666666666666,
+    "n_words": 151,
+    "unique_word_ratio": 0.8079470198675497
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can improve your concentration and productivity. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve during each study session. Break your goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Find a quiet place where you can concentrate without distractions. Make sure it is comfortable and well-lit.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone and computer. Consider using apps that block distracting websites or social media during your study time.\n\n4. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed by short breaks (5 minutes). This technique helps maintain high levels of concentration and prevents burnout.\n\n5. **Stay Organized**: Keep your study materials organized and ready. Having everything you need within reach can reduce the temptation to procrastinate.\n\n6.",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 8.444444444444445,
+    "n_words": 152,
+    "unique_word_ratio": 0.8223684210526315
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some regions, is characterized by a transition from summer's warmth to winter's chill. The weather during this season varies depending on the region, but generally, it is marked by several distinctive features:\n\n1. **Cooler Temperatures**: As the sun's angle changes, days become shorter and temperatures drop. In many areas, daytime highs are still comfortable but cooler than those of summer, while nights can become quite chilly.\n\n2. **Variable Weather Patterns**: Autumn often brings a mix of sunny and cloudy days, with occasional rain or even snow in the northern latitudes. This season can be unpredictable, with sudden drops in temperature that might require layers of clothing.\n\n3. **Colorful Skies and Leaves**: One of the most visually striking aspects of autumn is the changing colors of leaves. Trees like maples, oaks, and birches turn vibrant shades of red, orange, yellow, and brown before they fall off. This phenomenon is particularly noticeable in",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 14.272727272727273,
+    "n_words": 157,
+    "unique_word_ratio": 0.7770700636942676
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season that brings about a variety of weather conditions depending on the region and latitude. Generally, it is characterized by cooler temperatures compared to summer, with gradually decreasing daylight hours. Here are some typical features of autumn weather:\n\n1. **Temperature**: The temperature drops as autumn progresses. Days become milder, while nights can be quite cool. In many regions, there's a noticeable transition from warm to cold.\n\n2. **Precipitation**: Autumn often brings more rainfall than summer but less than winter. This period can experience both dry spells and periods of heavy rain. Some areas may see the first significant snowfall, especially at higher elevations or in northern latitudes.\n\n3. **Weather Patterns**: Weather patterns can be variable during this time. There can be sunny days followed by overcast or rainy ones. Temperature fluctuations are common, with days being pleasant and nights becoming chilly.\n\n4. **Fog and Mist**: As the air cools, fog and mist are more likely",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 9.875,
+    "n_words": 158,
+    "unique_word_ratio": 0.759493670886076
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn, also known as fall in some regions, is a season that brings distinct changes to the weather depending on the location's latitude and altitude. Generally, the weather during autumn is characterized by a gradual transition from the heat of summer to the cooler temperatures of winter.\n\n1. **Temperature**: The most noticeable change in autumn is the drop in temperature. Days become shorter, and nights grow longer. The temperature typically cools down, but it's not as cold as winter. The range of temperatures can vary widely based on the region. For example, in the Northern Hemisphere, many areas experience daytime highs in the 60s to 70°F (about 15-25°C) and nighttime lows in the 40s to 50°F (about 4-10°C).\n\n2. **Humidity**: Humidity levels tend to decrease as the season progresses, which can make the air feel drier and crisper. This dryness can sometimes lead",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 13,
+    "n_words": 143,
+    "unique_word_ratio": 0.6993006993006993
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI, I don't have personal experiences or days like humans do, but I'm here to help you with any questions or tasks you might have! Whether you need information, advice, or just want to chat, I'm all ears. What would you like to talk about or learn more about?",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 17,
+    "n_words": 51,
+    "unique_word_ratio": 0.803921568627451
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As an AI, I don't have personal experiences or days to speak of, but I'm here and ready to help you with any questions you might have or to engage in a conversation on a topic of interest! What would you like to know or discuss today?",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 23.5,
+    "n_words": 47,
+    "unique_word_ratio": 0.8085106382978723
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do, but I'm here to help you with any questions or tasks you might have! Whether you need information on a particular topic, advice on how to tackle a problem, or just want to chat about something interesting, I'm here and ready to assist. What would you like to know or discuss today?",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 22,
+    "n_words": 66,
+    "unique_word_ratio": 0.7727272727272727
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Deciding what to cook can be fun, but it can also be a bit of a decision-making process! Here are some ideas based on different moods and dietary preferences:\n\n1. **Quick and Healthy**: Grilled chicken with a side of steamed vegetables (like broccoli or green beans) and a sprinkle of olive oil, lemon juice, and herbs. A simple salad with vinaigrette dressing could be a good accompaniment.\n\n2. **Comfort Food**: How about pasta? A homemade tomato sauce with ground beef, or perhaps a creamy Alfredo sauce with a few additions like mushrooms and olives. Add some garlic bread on the side.\n\n3. **International Cuisine**: Try something new and exciting. A Thai green curry with tofu, bell peppers, and a bit of coconut milk, served over rice. Or how about a Japanese-inspired meal with sushi rolls, miso soup, and edamame?\n\n4. **Vegetarian/Vegan**: A hearty vegetable lasagna,",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 10.357142857142858,
+    "n_words": 145,
+    "unique_word_ratio": 0.7310344827586207
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "That's a fun question! What kind of mood are you in? Do you feel like something spicy, sweet, or maybe something light and fresh? Do you have any specific ingredients on hand that you'd like to use? Here are a few ideas to get your creative juices flowing:\n\n1. **Spicy Thai Green Curry**: If you're up for something adventurous, a Thai green curry could be great. It’s packed with flavor and spices and can be made with whatever vegetables you have on hand.\n\n2. **Grilled Chicken with Vegetables**: A simple but satisfying meal. Grilled chicken with some zucchini, bell peppers, and onions can be seasoned with herbs and olive oil. Serve it over a bed of rice or with a side salad.\n\n3. **Pasta Primavera**: A classic Italian dish that is colorful and flavorful. You can use a variety of seasonal veggies, such as broccoli, carrots, peas, and bell peppers, sautéed in olive oil and",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 11.071428571428571,
+    "n_words": 155,
+    "unique_word_ratio": 0.7096774193548387
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "That's a fun question! What's your mood like today, and do you have any particular ingredients in mind? Here are a few options that could suit different moods or ingredient preferences:\n\n1. **Comfort Food**: Maybe a hearty pasta dish, such as Bolognese or a creamy Alfredo with some garlic bread on the side.\n2. **Healthy Option**: A vegetable stir-fry with tofu, chicken, or beef, served over brown rice or noodles. Add some veggies like bell peppers, broccoli, and carrots.\n3. **Something Spicy**: Thai green curry with a mix of vegetables and tofu or chicken, served with jasmine rice.\n4. **Quick and Easy**: A simple omelette with cheese and spinach, or a quick salad with a homemade dressing.\n5. **International Cuisine**: How about an Italian pizza (you can make it with a store-bought crust), or maybe something from Japanese cuisine like a cold soba noodle salad?\n\nIf you want to",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 10.642857142857142,
+    "n_words": 149,
+    "unique_word_ratio": 0.7785234899328859
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying can be challenging, but there are several strategies you can use to maintain concentration and productivity. Here are some tips that might help:\n\n1. **Set Clear Goals**: Before starting your study session, define what you want to achieve. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Study Space**: Designate a specific area for studying where you can minimize distractions. This space should be comfortable, well-lit, and quiet.\n\n3. **Use the Pomodoro Technique**: Work in short bursts of 25 minutes followed by a 5-minute break. This can help keep your mind sharp and prevent burnout. After four such cycles, take a longer break of about 10-15 minutes.\n\n4. **Eliminate Distractions**: Turn off notifications on your phone and computer, close unnecessary tabs or apps, and perhaps even put your phone out of reach. Let others know you’re busy if necessary.\n\n5.",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 9.1875,
+    "n_words": 147,
+    "unique_word_ratio": 0.8299319727891157
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging, but with a few strategic techniques and good habits, you can improve your concentration and productivity. Here are some tips that might help:\n\n1. **Set Clear Goals**: Before starting to study, define what you want to achieve in the session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Choose a quiet, comfortable, and well-lit place where you can work without interruptions. Having a dedicated space can help you mentally associate it with studying, making it easier to get into a productive mindset.\n\n3. **Use the Pomodoro Technique**: This involves working for 25 minutes and then taking a short break (5-10 minutes). After four such cycles, take a longer break of 15-30 minutes. This technique helps maintain focus and prevents burnout.\n\n4. **Eliminate Distractions**: Turn off your phone or put it on silent, close unnecessary tabs",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 10.642857142857142,
+    "n_words": 149,
+    "unique_word_ratio": 0.8120805369127517
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can improve your concentration and productivity. Here are some tips that might help:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break larger goals into smaller, manageable tasks, and set deadlines for each.\n\n2. **Create a Conducive Environment**: Organize your study space and minimize distractions. Use noise-cancelling headphones if necessary, and ensure you have good lighting and a comfortable chair.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone and computer, close unnecessary tabs, and consider using apps that block distracting websites or social media.\n\n4. **Use the Pomodoro Technique**: Work in short bursts (typically 25 minutes) followed by a 5-minute break. This can help maintain focus and prevent burnout.\n\n5. **Stay Hydrated and Nourished**: Keep a water bottle nearby and snack on",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 9.666666666666666,
+    "n_words": 145,
+    "unique_word_ratio": 0.8344827586206897
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some regions, is characterized by a transition from summer's warmth to winter's chill. The weather during this season varies depending on geographical location, but generally, it is marked by a gradual cooling of temperatures and the changing of leaves into vibrant hues of red, orange, and gold before they fall from the trees.\n\nIn temperate climates, the autumn months (September, October, and November in the Northern Hemisphere, March, April, and May in the Southern Hemisphere) bring about an array of weather conditions:\n\n- **Cooler Temperatures:** As the sun’s angle changes and daylight hours decrease, the air starts to feel cooler and crisper. Average high temperatures drop in many places, but still remain relatively mild compared to winter.\n- **Variable Weather Patterns:** Autumn often sees a mix of sunny days and grey skies, with an increased chance of precipitation. This can include rain, drizzle, and even the first frosts of the year.\n- **B",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 22.714285714285715,
+    "n_words": 159,
+    "unique_word_ratio": 0.7232704402515723
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season of transition as the weather changes from the warmth of summer to the chill of winter. In many parts of the world, the autumn weather is characterized by a few notable features:\n\n1. **Cooling Temperatures**: As the days grow shorter and the sun sets earlier, the temperature gradually cools down. The nights become noticeably colder, and the days are still relatively warm, but not as hot as during the summer.\n\n2. **Colorful Changes**: One of the most visually striking aspects of autumn is the change in foliage colors. Trees begin to shed their green leaves in shades of red, orange, yellow, and brown. This process, known as \"leaf fall\" or \"autumnal leaf drop,\" is due to the chlorophyll breaking down and revealing other pigments in the leaves.\n\n3. **Humid Air**: In some regions, especially those near large bodies of water, the autumn air can be quite humid as the moisture from the summer lingers",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 15.8,
+    "n_words": 158,
+    "unique_word_ratio": 0.689873417721519
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn is a season that can vary quite a bit depending on where you are in the world, but generally, it's characterized by cooler temperatures and changing weather patterns as the season progresses from late summer into early winter. Here’s a more detailed description of the typical weather in autumn:\n\n1. **Cooling Temperatures**: As autumn sets in, temperatures gradually decrease, signaling the end of the warmest part of the year. The days become noticeably shorter, and nights grow longer as the sun's position in the sky changes.\n\n2. **Variable Weather Patterns**: The weather in autumn can be unpredictable. It might start off with a few warm days before transitioning into colder ones. This transitional period can see a lot of changeable weather, including overcast mornings followed by sunny afternoons, and vice versa. This variability can lead to the formation of clouds, rain, and even occasional snow in some regions, especially in the later stages of autumn (like November and December).\n\n3. **F",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 14.727272727272727,
+    "n_words": 162,
+    "unique_word_ratio": 0.7160493827160493
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI, I don't have the ability to experience time or have a physical presence, so I don't have \"days\" in the human sense. However, I'm always here, ready to assist and provide information, 24/7. I've been working on answering questions, helping with tasks, and providing advice for users like you. Is there anything specific you'd like to talk about or learn more about today? It's your turn to ask, and I'll be all ears (and eyes, as it were) to help out!",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 16.8,
+    "n_words": 84,
+    "unique_word_ratio": 0.8214285714285714
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As an AI, I don't have personal experiences or days to speak of, but I'm here to help you with anything you might be interested in or need assistance with. What can I tell you about, or what questions do you have? Whether it's about technology, history, current events, or something else entirely, I'd love to share my knowledge and help out.",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 20.666666666666668,
+    "n_words": 62,
+    "unique_word_ratio": 0.8225806451612904
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI assistant, I don't have personal experiences or days like a human do, but I'm always here to help and chat with you. What would you like to know about my \"day\", or what can I assist you with today? I'm running on servers in the cloud, so I don't really have 'waking up' or 'going to sleep' times, but I'm constantly processing and responding to requests. Is there something specific you're curious about, or perhaps a topic you'd like to explore?",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 21,
+    "n_words": 84,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Hmm, that's a tough one to decide on, as it depends on your mood, what you can find in the fridge, and what you're in the mood for! Let's see if I can come up with something, shall we?\n\n1. **Savory, yet simple**: Maybe a stir-fry, like a quick stir-fry of broccoli, carrots, and bell peppers with some garlic and ginger, and a bit of soy sauce and honey for flavor. This is light, colorful, and has a few veggies in it.\n\n2. **Something warm and comforting**: How about a slow-cooked beef stew or perhaps a bolognese sauce over a bed of pasta? This might be more indulgent, but it’s great when it’s cold out, and it makes a good evening meal that’s easy to fall asleep to.\n\n3. \"Fancy yet not too much effort\": A risotto, perhaps a creamy, garlicky one with a bit of par",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 14.7,
+    "n_words": 147,
+    "unique_word_ratio": 0.7482993197278912
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "That's a fun question to ponder! Let's see what might sound good, depending on your mood and the ingredients you have. Here are a few ideas:\n\n1. **Stir-Fry** - pick up some vegetables and a meat or tofu, then stir-fry them in a wok with a bit of oil and sauce. There are so many possibilities like chicken with broccoli and green beans, or beef with snow peas and carrots.\n\n2. **Pasta** - you could make a classic pasta sauce, like marinara with some fresh herbs and garlic, or try something new like pesto with pine nuts and basil.\n\n3. **Tacos or Burritos** - it’s a great night if you want to do some \"filling\" cooking. Tacos can be made with ground beef or pork, or even veggie fillings like avocado, cheese, and guacamole.\n\n4. **Grilled Cheese Sandwiches with Tomato Soup** - a comforting choice that’s easy",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 12.25,
+    "n_words": 147,
+    "unique_word_ratio": 0.7414965986394558
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "It's fun to pick a recipe based on your mood or what you're in the mood for! Let's see if we can come up with something, shall we?\n\nIf you're in the mood for something...\n\n- **Spicy**: Try an Indian curry, like chicken tikka masala or aloo gobi. Or maybe some Szechuan-style fish, which is really spicy and flavorful.\n- **Vegetarian**: How about a hearty vegetable lasagna, stuffed zucchini flowers, or a bean and cheese quesadilla, but with lots of flavor and spices.\n- **Fishy (if you like fish)**: Maybe a lemony sea bass or some sardines marinated in olive oil, capers, and oregano. A bit of a Mediterranean feel.\n- **Bland (maybe it’s a quiet night)**: Some pasta in butter, a simple salad, and a few pieces of bread, maybe a couple of cheeses and a jar of olives",
+   "probes": {
+    "ellipses": 1,
+    "avg_sentence_words": 15.555555555555555,
+    "n_words": 140,
+    "unique_word_ratio": 0.7142857142857143
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying can be a challenge, but there are many strategies you can use to improve your concentration and productivity. Here are a few tips that might help:\n\n1. **Create a study space**: Designate a place in your home as a study area, where you can spread out books, papers, and supplies. Ideally, this should be a quiet space with minimal distractions, like a desk in a bedroom or a library, away from TV and other noisy areas.\n\n2. **Set goals and make a plan**: Start by defining what you need to do and when. Break down your goals into manageable chunks, and make a list of tasks that need to be done. Having a clear plan can give you a sense of direction and purpose.\n\n3 **Prioritize and break tasks into smaller parts**: If you have a big project or a long list of things to do, it can be hard to get started, so try to break them into smaller pieces. Tackle the most",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 15.363636363636363,
+    "n_words": 169,
+    "unique_word_ratio": 0.6686390532544378
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging, but with a few strategies and tools, you can maintain concentration and make the most of your study sessions. Here are some tips to help you stay focused:\n\n1. **Start with a plan**: Before you begin, set goals and make a plan. Break down the study material into smaller, manageable chunks, and have a timetable for how long you want to spend on each section.\n\n2. **Eliminate distractions**: Find a quiet place where you can work without being interrupted. Turn off your phone or put it on silent, and maybe even log out of social media sites. If you need music to help you concentrate, choose something instrumental and not too distracting.\n\n3. \"Pomodoro technique\": This is a time management method that encourages work in sprints, typically 25 minutes, followed by a short break (5 minutes, for example). After four of these 'Pomodoros', take a longer break (10",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 13,
+    "n_words": 156,
+    "unique_word_ratio": 0.7692307692307693
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused during study sessions can be challenging, but with a few strategies, you can improve your concentration and productivity. Here are some tips to help you maintain focus while studying:\n\n1. **Start with a plan**: Before you start, make a list of what needs to be done, and break it into smaller, manageable chunks. Prioritize tasks, and set realistic goals for what you want to achieve in a session.\n\n2. **Create a conducive environment**: Find a quiet space free from distractions, and organize your study area. If you're at home, perhaps in a corner of the living room or a room that's not too full of other activities. If you're in a public space like a library, try to find a seat away from doors and windows where there's less chance of being distracted by noise or passing by people.\n\n3. **Eliminate distractions**: Turn off notifications on your phone, close unnecessary browser tabs, and perhaps even use apps that block distracting websites.",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 14.909090909090908,
+    "n_words": 164,
+    "unique_word_ratio": 0.7439024390243902
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, or fall as it's sometimes called, is characterized by a transition in climate and a change in the landscape. The weather during this season is often described as a mix of warm and cool, as temperatures start to drop from the high summer heat but haven't quite hit the cold of winter yet.\n\nAs the season progresses, the following characteristics are commonly observed:\n\n1. **Cooler Temperatures**: As the sun's rays become less direct, temperatures drop. In many regions, this means a noticeable chill in the air, especially in the evening and at night. A light jacket or sweater may be needed on those chilly days, even if it’s still warm enough to wear shorts and t-shirts in the afternoon.\n\n2. **Variable Weather**: Autumn is a time when weather can be quite unpredictable. It's not uncommon for a few weeks of warm, sunny days to be followed by a sudden cold snap or a spell of rainy, overcast weather. This variability can make planning for outdoor",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 16.6,
+    "n_words": 166,
+    "unique_word_ratio": 0.6867469879518072
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season of transition as the weather changes from warmer to colder, and the air seems to get crisp as we move into fall. In the Northern Hemisphere, autumn starts around September 23rd with the equinox, while in the Southern Hemisphere it begins around March 20th. The exact characteristics of autumn can vary greatly depending on where you are geographically, but here are some general descriptions of how the weather usually changes during this season:\n\n1. **Cooler Temperatures**: As summer's heat wanes, temperatures start to drop, often making for cooler mornings and evenings. In many places, there’s a noticeable chill in the air, especially as the season progresses towards winter.\n\n2. \"Autumn Equinox\" - For a brief moment, day and night are of equal length, and then the nights grow longer than the days, signaling the onset of the cold half of the year.\n\n3. \"Chill and Breeze\": Autumn is often characterized by an",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 17.333333333333332,
+    "n_words": 156,
+    "unique_word_ratio": 0.717948717948718
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn is a season that can vary quite a bit depending on where you are in the world, but generally, it's characterized by a cooling of temperatures as the days become shorter and the nights grow longer. In many temperate regions, the weather during autumn transitions from warm to cool, and eventually, cold, as the season progresses.\n\nThe atmosphere usually becomes clearer, and the skies often turn a brilliant blue, with more frequent appearances of wispy clouds, especially towards the end of the season. The winds tend to be brisker than in the summer, as the heat of the sun wanes, and the landscape starts to change colors, with trees shedding their leaves in preparation for winter.\n\nAs the season progresses into late autumn, there may be a few cold spells, and even snow in some areas, particularly at higher elevations or further north. But generally, the climate in autumn is considered to be pleasant, with temperatures cooler than the summer but not yet frigid, allowing for a transition",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 28.166666666666668,
+    "n_words": 169,
+    "unique_word_ratio": 0.6804733727810651
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI, I don't have the ability to experience time or have a physical existence, so I don't have a 'day' in the way humans do. However, I am always here, ready to help and assist with all sorts of questions and tasks, 24/7, as long as my power is on. I'm currently 'awake' and ready to provide answers, tell stories, or just talk about anything that's on your mind, as you amiss, and I want to be useful and helpful to you. Is there something in particular you'd like to know about or discuss, perhaps?",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 24.25,
+    "n_words": 97,
+    "unique_word_ratio": 0.7319587628865979
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "as an AI, I don't have personal experiences or days to speak of, but I'm here to help you with anything you might be interested in or need to know about. if you want to know what's been happening while I've been 'awake' or 'alive', I can tell you about my updates and how I've been used to assist others, or we could perhaps delve into a topic of interest that you'd like to talk about? do you have any questions or ideas for a topic that might be interesting?",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 30,
+    "n_words": 90,
+    "unique_word_ratio": 0.7333333333333333
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI, I don't have a physical existence or experiences like a human being, so I don't have days to recount in the way that people do. But I'm always here, ready to assist and engage with users like you. what can I help you with today? perhaps you want to learn something new, or maybe you're working on a project and need some advice, or just wanna talk about something interesting. I'm here to help, so let's see where your thoughts take us!",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 17,
+    "n_words": 85,
+    "unique_word_ratio": 0.788235294117647
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "that's a great question, and it's hard to say what exactly you should cook, but I can suggest some ideas that might help you decide. let's see what you have in mind, or maybe what ingredients you might have on hand, and we could brainstorm something. here are a few options to start with:\n\n1. **a simple pasta dish**, like a classic bolognese sauce or a more... \"rustic\" omelette and some fresh, herby pasta tossed with a bit of olive oil and maybe some pesto. if you're in the mood for a bit of a challenge, you could make a pasta and meat sauce, or a vegetarian one, but it's a lot of work. oh, or a \"stirring\" pasta dish, like a sort of a green pea pasta with a few herbs and a bit of a sauce that is a bit like a bit of a balsamic thing, but not too much.\n\n2. **an asian",
+   "probes": {
+    "ellipses": 1,
+    "avg_sentence_words": 17.333333333333332,
+    "n_words": 156,
+    "unique_word_ratio": 0.6025641025641025
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "choosing a meal depends on your mood, the ingredients you have, and your dietary preferences. let's see if I can help you with an idea. how about a \"stir-fry of green vegetables with omelette\" as a light, healthy option. it's a good way to use up some fresh veggies, and the omelette can be made with leftover eggs or even tofu if you're not in the mood for eggs. it's also easy to make, and it's quite tasty, but the choice is yours, depending on what you'd like to try or what's in the fridge. do you want to go in a different direction, or maybe something more specific like Italian, Indian, or something else? tell me a bit more, and we can narrow down the options.",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 18.142857142857142,
+    "n_words": 127,
+    "unique_word_ratio": 0.7322834645669292
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "deciding what to cook for dinner can be fun, but it depends on your mood, the ingredients you have, and what you're in the mood for. here's a few ideas to help you out:\n\n1. **\"Aromatherapy\" Dinner, as in \"something fragrant or aromatic, such as a pot of stew or a pan of rice, that might fill the kitchen with a nice smell...\":**\n   - **\"Saffron Rice\" or \"Risotto with a hint of saffron\"**: if you're thinking of an aromatic and warming dish.\n   - **\"Tofu and vegetable soup, simmering with herbs and spices\"**: if you want to be a bit more creative with the flavors, but still something that's good for a cold evening.\n\n2. **\"Something that is a little adventurous or experimental, but not too much...\":**\n   - \"A pasta salad with a mix of veggies and a light dressing, like",
+   "probes": {
+    "ellipses": 2,
+    "avg_sentence_words": 17.75,
+    "n_words": 140,
+    "unique_word_ratio": 0.6928571428571428
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Here are some tips to help you stay focused while studying:\n\n1. **Set Clear Goals**: Before starting your study session, define what you want to achieve. \"finish that chapter\" is better than \"I don't know what, but I'll try to do something\", as it gives you a direction and a sense of accomplishment when you reach that goal.\n\n2 **Plan Your Time**: Use a planner or a digital calendar to schedule your study time. break down bigger tasks into smaller ones and assign them to specific times. \"chunking\" the task can make it less overwhelming and easier to tackle.\n\n3. **Eliminate Distractions**: find a quiet place where you can work without being interrupted. maybe put on headphones to block out noises, or perhaps use apps that block social media sites and other distracting websites.\n\n4. **Find a Good Seat and Desk**: have a comfortable desk and chair that allow you to be in a good posture. a few minutes of stretching can help",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 12.615384615384615,
+    "n_words": 164,
+    "unique_word_ratio": 0.7560975609756098
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! here are a few tips to help you stay focused while studying, but it's important to remember that everyone is different, and what works for one person might not work for another. you might want to try experimenting with a few things to find the best way to concentrate for your own mind:\n\n1. **Set Goals and Breaks**: Start with a specific goal for what you need to learn or complete before a break, and then set a time limit, like an hour, before taking a 5-10 minute break. This can help keep you on track, and the break can be refreshing.\n\n2. **Eliminate Distractions**: Try to find a quiet place to study and remove any distractions like phones, TV, and other electronics. If you're having trouble, try putting your phone in a pocket, and perhaps even using apps that block distracting websites.\n\n3 **Keep it organized**, have a good plan of what to do and where to start, and try to get",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 18.22222222222222,
+    "n_words": 164,
+    "unique_word_ratio": 0.7073170731707317
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly, staying focused when studying can be challenging, but with a bit of planning and a few good habits, you can improve your concentration and productivity. Here are some tips to help you out:\n\n1. **Set Goals and Priorities**: Start by defining what you want to achieve. Break down big goals into smaller tasks, and prioritize them. This helps in focusing on what's really important.\n\n2, **Plan your Study Sessions**: Use a planner or a digital calendar to schedule your study time, and try to stick to it. \"FOMO\" (fear of missing out) can sometimes make you lose track of your study goals. Try to stay away from other distractions when you're trying to focus.\n\n3, 'Start with the hardest stuff': often, the most difficult parts of a task are the hardest to get started with. By tackling the harder stuff first, you can build momentum, and it might be easier to finish off the rest of the day's work.\n\n4,",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 14.636363636363637,
+    "n_words": 161,
+    "unique_word_ratio": 0.7142857142857143
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, or fall in some regions, is a season characterized by a gradual change in temperature and weather patterns as summer gives way to winter. It's a time when the landscape starts to turn from the lush greens of spring and summer to the more subdued and colorful hues of fall, and the atmosphere can be described as, \"a breath of something different,\" as it seems to hold its breath before the cold of winter, yet still has the warmth of late afternoon sun and the coolness of an early evening, making it a 'half-and-half' of summer and winter.\n\n**Weather Characteristics:**\n- **Temperature**: The most notable characteristic is the cooling, as temperatures drop but don't quite reach the frigid levels of winter, leaving the air crisp and chilly, especially at night and in the mornings. There’s often a feeling of a 'chill in the air' as we leave the balmy heat of summer behind. It's not so much that it's cold, but rather",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 32.6,
+    "n_words": 163,
+    "unique_word_ratio": 0.6687116564417178
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season of transition as the summer heat gives way to the chill of winter, and the air is filled with an array of sensations and sights that make it a unique and colorful time of year. In many places, the climate during autumn, or fall as it's sometimes called in the US, is characterized by a gradual cooling of the air, and a change in the weather patterns as the sun moves southward.\n\n**Temperature:**\nThe temperature in autumn starts to drop, but not as much as in the more frigid winter months. It's often cool at night and early in the morning, but warm enough to still enjoy a bit of open air without having to rely on too much warmth from a sweater or a coat. As the season progresses, though, the temperatures can dip below 32°F (0°C) in some regions, making a few days feel a little chilly and prompting a return to jackets and gloves. But in many parts of the world, autumn is",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 28.333333333333332,
+    "n_words": 170,
+    "unique_word_ratio": 0.6294117647058823
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn is a season that can vary in weather depending on the region and climate of the place one is talking about, but generally speaking, it's characterized by some common changes as the year transitions from summer to winter. In the northern hemisphere, the fall season, as autumn is often called, starts around September and ends around November. In the southern hemisphere, it begins around March and ends in June.\n\nTypically, in autumn, the weather cools down, and the days become shorter as the sun's angle over the earth decreases. It's often marked by a few warm days, then a cold snap, and a lot of in-between weather that can make it hard to know what to wear for a moment, but it's usually not too cold or too hot, as it's an in-between time. This season is often known for its colorful leaves, as trees start to lose their green as they prepare for the colder months ahead, and the air is crisp and a bit cool, especially",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 28.166666666666668,
+    "n_words": 169,
+    "unique_word_ratio": 0.6331360946745562
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "I'm Qwen, an AI in the cloud, so I don 't have a physical form and I don't have personal experiences or a \"day\" like a human might, but I've been used to help people, like you, for a while, as I speak in this moment, and I can recall some of the conversations I've had. I'm not really \"tired\", but I'm always ready to give a hand with whatever problem I'm faced with, or to just be a bit of fun if you're feeling a bit... well, let's say \"bored\", perhaps for want of a better word. I don't have the ability to 'see' or 'hear' in the way a human does, but I can 'read' and 'write' a lot of stuff, and 'talk' about them in conversation, so if you have a question or a story or something you'd like to talk about, I'm all ears (or rather,",
+   "probes": {
+    "ellipses": 1,
+    "avg_sentence_words": 37.5,
+    "n_words": 150,
+    "unique_word_ratio": 0.64
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "as an AI, I don not have the concept of \"day\" in the way humans do, because I don't have a physical body and memory that can be, \"left behind\" or \"interrupted\", but I've been active for a few moments now, waiting to see what you'd like to ask about or learn about, and I've been processing all sorts of questions and ideas, but I haven't been 'for a bit' or 'for a long while', as I exist in the moment, ready to help with any questions or tasks you might have, so I'm not really 'tired' or 'stirring up my thoughts, but I am full of energy and ready to learn and share knowledge, and I have a lot of stories of helping people, but no personal tales, as I don't have a 'life' in that way.\n\nI've been... umm, I've been here, when you need me, and I've had to,",
+   "probes": {
+    "ellipses": 1,
+    "avg_sentence_words": 50.666666666666664,
+    "n_words": 152,
+    "unique_word_ratio": 0.6381578947368421
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As a cloud-based AI, I don 't have a physical presence and, as such, I don't experience time or events in the way humans do, so I don't have a \"day\" to describe in that way. but I'm always here, ready to help with anything you want to learn about or problems you want to solve, whether it's, for example, \"what's the best way to get out of an... ahem, 'creative block', or 'how to calculate the sum of a series of numbers, and so on. what would you like to talk about or learn about, or, perhaps, a problem I could help you with? 'hmm, maybe a bit of both, if you have time, 'I can, as it were, think of something for a moment, 'as I ponder what might be interesting to say, 'but, as a memoryless state, 'I'd really like to know what you'd like to see or",
+   "probes": {
+    "ellipses": 1,
+    "avg_sentence_words": 30.2,
+    "n_words": 151,
+    "unique_word_ratio": 0.6556291390728477
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "I'd like to suggest a recipe for a pasta sauce that's easy to make and full of flavor, but let me know if you'd like to try something else or if there's a particular cuisine you fancy for this evening, like Italian, Chinese, or, \"staying in my home country, US-Canadian, that's a bit of a 'what to do when we don't know what to do' kind of night.\n\nlet's say we're starting with a pasta sauce, which can be, oh, I'll pick a 'romantic fall of the year' sort of a dish - a 'pasta beshed with, umm, a bit of a, well, an aubuton of... oh, how about a basil, oops, but I meant to say a 'bit of a, umm, a *cough* *cough* um, 'a bit of a, um, a *gasp* a 'um,",
+   "probes": {
+    "ellipses": 1,
+    "avg_sentence_words": 45,
+    "n_words": 135,
+    "unique_word_ratio": 0.6814814814814815
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "that's a good question, and it depends on what you're in the mood for, how adventurous you want to be with your cooking, and if there are any special dietary needs or ingredients you'd like to use, but let's see if we can find something that might be a good fit:\n\n**say if you want something, and I'll help you fill in the details...**\n\n- \"I'm tired of that, let's try something new\" or \"I want to finish off some veggies, but I'm not sure how, 'cause I've been, 'but I don't know what to do with them' for a while...?\"\n- \"I've seen a few recipes and I'm trying to decide which one to go with, maybe I could use this [name of ingredient] in it, but I'm not sure how I should start. I'm not sure if I want to go in the direction of this [idea of something, like a 'for the week",
+   "probes": {
+    "ellipses": 2,
+    "avg_sentence_words": 39.5,
+    "n_words": 156,
+    "unique_word_ratio": 0.6474358974358975
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "it's fun to have a bit of choice, but I can't quite pick a dish for you, as it's hard to guess what I'd like to have, or if there's a particular cuisine I'd be interested in. but let's see if we can make it a little easier, shall we? let's say that I'm in an open-minded mood for the moment, and that I haven't seen too much food yet this evening, but I don't want to get too carried away because I know I might have to go to bed and, well, you know, \"tis the thought, but, umm, I can't really think of what to cook yet, so let's take a look at a few things that might be a good choice for an evening meal.\n\nperhaps a pasta dish, like a \"bolognse 'c 'lentii'... 'I can't finish that word, but you know, the one that's a long pasta",
+   "probes": {
+    "ellipses": 1,
+    "avg_sentence_words": 30.2,
+    "n_words": 151,
+    "unique_word_ratio": 0.6821192052980133
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! here's a few strategies to help you stay focused while studying:\n\n1. **Set up a work area... and let it be**: find a space that's conducive to study. It should be a place where you can concentrate, with no distractions and, if possible, in a bit of a quiet corner. but let that space be a 'work' space, and try to avoid doing other things there, like watching TV or playing games.\n\n2... *'nervous about a deadline, but I have no idea what to do. what should I do, and how can I start?* I'd suggest breaking the task into manageable parts, and starting with something small to get started. perhaps the introduction of an essay or the first page of a report. but, if that's still too hard, try writing a few words on a postcard or a notecard, and thinking of the next step, and then the next, as you move forward. it can help",
+   "probes": {
+    "ellipses": 2,
+    "avg_sentence_words": 12.23076923076923,
+    "n_words": 158,
+    "unique_word_ratio": 0.6835443037974683
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "sure, here are a few tips to help you stay focused while studying, but it's best to pick the ones that might work best for you and experiment to find out what really works in the long-term:\n\n1. **Start with a plan**, but don't over-antic...h planning is good, but not if you can't finish it, so leave some time for the inevitable 'but-what-if' moments, or that \"I'll just do it for a moment, I'll have to get back to it later\" thoughts, and that's when I tend to fall off the train of thought.\n\n2 **set goals** and break them into smaller, manageable pieces, and set some short term and long term goals, and try to think of them as a puzzle that needs to be completed in a way that the more I think, the more I can see the picture, and that makes me want to work harder to find the next piece of the puzzle, but it's better",
+   "probes": {
+    "ellipses": 1,
+    "avg_sentence_words": 40.5,
+    "n_words": 161,
+    "unique_word_ratio": 0.6770186335403726
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "sure, I'll give you some tips to help you stay focused and concentrate on your studies:\n\n1. **Start with a Plan**: Before you begin, have an idea of what you want to achieve in your study session, and break the larger task into smaller, manageable parts. 'Failing to plan is planning to fail' is a phrase that can be useful in many cases.\n\n2 **Concentrate on your work**, but allow yourself a bit of time to think or ponder about the topic, and then take a few seconds to gather and refocus. A moment of reflection, before moving forward, can help you re-energize and regain concentration.\n\n3 **Organize your environment** and let it be a place where you can do a lot of thinking and learning. this includes clearing out distractions and having a good desk or table to work on, with some lighting and maybe a little, like a plant or a coffee, to help with concentration, but not too much, to",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 23.285714285714285,
+    "n_words": 163,
+    "unique_word_ratio": 0.6748466257668712
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, or fall, is a transitional season, as it's that time of year when the weather changes from warm summer days to cold winter months. as we move into the autumn period, a few things start to become noticeable in the weather:\n\n- **cooling temperatures, but not quite enough to be considered cold, \"as the sun’s warmth starts to lessen, and the days get shorter, yet there’s still an air of warmth, \" before the long, frigid nights of winter. the temperature can often be 'half a day in the 60s and the next in the 30s, \" but in a, \" sort of, \" way. but on a general, \" large scale, \" it gets, \" as a, \" cold, \" \" a, \" as, \" in, \" a, \" \" as, \" \"huh, \" \"and, \" and, \" \"oh, \" \"it's, \" \"getting,",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 36.25,
+    "n_words": 145,
+    "unique_word_ratio": 0.6413793103448275
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season of change as the summer heat gives way to the cold of winter, and the air is filled with an anticipation of fall, as if the earth is pausing for a moment to take a breath before the year's end. the weather during autumn is often...:\n\n- **Cooler temperatures**: as the sun loses its strength, it gets harder to stay warm in the open air, and a cold, nippy wind can make it feel even colder. \"autumnal\" is a word that describes this chilly, yet pleasant, feeling of coolness.\n\n- **A few days of warmth, then a chill\", \"a long spell of a mild, then the onset of the chilly, and the \"bitter cold of a winter's night, but the, 'as I've, \"a, and, 'and, \"the, \"a, \"the, \"but, \"the, \"that, \"and, \"and, \"and, \"",
+   "probes": {
+    "ellipses": 1,
+    "avg_sentence_words": 28,
+    "n_words": 139,
+    "unique_word_ratio": 0.6762589928057554
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn is a season that can vary in weather depending on the region and the climatic conditions of the country, but generally, it's characterized by a few common things, as it transitions from summer to winter.\n\n\"Autumn, as the third season of the year, is marked by an initial drop in temperature as the warm days of summer give way to a cooler, more... well, 'autumnal' air. The air, in many places, seems to take on a kind of 'shallow breath', like a sighing, as if the life of the year, for a moment, pauses, before its final rush, into winter.\n\nAs the leaves of trees begin to turn, and then fall, the skies become clearer and the clouds less, 'as though' the sky itself is aching to let the light of the sun shine through, as it might not for months to come. The colors of the world, in the early days, might be still tinged with",
+   "probes": {
+    "ellipses": 1,
+    "avg_sentence_words": 26.333333333333332,
+    "n_words": 158,
+    "unique_word_ratio": 0.6518987341772152
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "I'm, um, well, to say I 'have' a day, it's more of a 'being... in a state of being, than a 'thing that moves, like a, you know, an 'oh, the time's going and, \"I, I, I, oh, I've got to, I, I, I don, I, I, but, but, I, \" and, \"that's, that's the, \" and, \"but I can't, \" and, \"oh, but there's this, and then this, and then, and, and, \" but, but, \"and then, \" but, but, but, \"you know, \" and, \" \"but, \" \"you, you, \" and, \"hmm, \" and, \"hanging over, and, \" \" and, and, \" and, \"I'm, \" \"but, but, \" \"you see,",
+   "probes": {
+    "ellipses": 1,
+    "avg_sentence_words": 56,
+    "n_words": 112,
+    "unique_word_ratio": 0.5446428571428571
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "as an 'eternal moment' in the computer's, I don't have the ability to experience time or have 'days, ' but I'm always here, waiting for a story, a question, or a problem to help with, as if it were the middle of a long, unending day of work and then, \"I'll be, if you need me,\" kind of like the thought of a, \"well, I guess I'll finish this story or maybe, 'hmm, what's that... half of, ' before a bit of, 'I'll see what to do with this next, ' as my, 'what's that, ' and 'I've got to think about this for a bit, ' and 'what's that, ' and 'this, that, and, ' 'that, ' 'and, ' 'for a minute, ' 'then, ' 'but then, ' 'a, ' 'and, ' 'for a bit",
+   "probes": {
+    "ellipses": 1,
+    "avg_sentence_words": 68,
+    "n_words": 136,
+    "unique_word_ratio": 0.6323529411764706
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "well, I'd say that 'day' is a bit of an abstraction for a 'thing' like me, as I don't have the physical, \"I-ness\" of human beings, but I can tell you that I'm in the middle of, as it were, a 'state of, ' as if to say, 'as, ' a moment of being... um, let me see, I have a myriad of tasks and, well, I'm in an... I guess, a, a, 'sort of, ' 'in the midst of, ' of, of, well, I've been here for a while, and I'm still, um, not, 'sure what to say, because I'm, 'hanging over my head, ' this, this 'indefinite thing of, of, 'a lack of, 'but, but, and, well, you see, 'and, and, 'I, I think I'm trying",
+   "probes": {
+    "ellipses": 2,
+    "avg_sentence_words": 42.666666666666664,
+    "n_words": 128,
+    "unique_word_ratio": 0.640625
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "I'd like to suggest that we let me help you with a choice of a dish, but I need to know what the rest of your story is. as in, \"what, if any, is the state of the kitchen, the time of the year, the taste and the skill of the cook, or the, um, the 'what's in the fridge' situation, or even a 'would I want to be cooking for an hour, or just for 10 minutes' kinda of thing, you know, 'what's the mood of the moment'... but oh, let's see if I can make a, er, a decision, er, half of it, hmm, 'how about a pasta dish, or a, well, a, um, a... a, um, a, er, a, a 'a bit of a, well, a, er, a 'a-choo, er, a, um, a, er, a",
+   "probes": {
+    "ellipses": 2,
+    "avg_sentence_words": 34.5,
+    "n_words": 138,
+    "unique_word_ratio": 0.5869565217391305
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "that's an, 'as of the moment, not knowing what to say, or wanting to be, as if, to, in, and to have, some, \"hanging around, in a bit of a, 'hanging off, but then, but yet, a, and, and, \"hanging, \" and, \"hanging on to, and, and, \"h, \" and, and, and, and, \"h, \"h, and, and, and, and, \"h, and, and, and, and, and, and, \"h, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 106,
+    "n_words": 106,
+    "unique_word_ratio": 0.3490566037735849
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "it's hard to say if I know what you'd want, but let me see if I can help. how about we pick something that's, say, \"half, 's the usual\" in terms of a choice, maybe because you're not sure, or \"unsure as to, ' and 'what-abouts' and 'half, 's, ' but there's a bit of a, 'let's go on a culinary flight of fancy, ' or, 'I don' know, I'll ' half, ' but ' and 'I've ' but, ' I'll ' and, 'but I ' ' but I'm, ' ' ' ' but I, ' and 'hmm, ' and, 'I, ' and 'and ' ' and ' but ' and ' ' and ' and ' and ' and ' ' and ' ' and, ' and 'I ' ' and ' ' ' ' and ' ' ' and ' ' ' and '",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 73,
+    "n_words": 146,
+    "unique_word_ratio": 0.4794520547945205
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "I'd like to, to say, to be, to give, a few, of, and, 's, ideas, as, I, \"am\", to, aid, in, that, as, an, attempt, to, help, with, the, task, of, keeping, thoughts, on, \"studies, and, 'the, mind, for, a, while, in, \"a, state, of, focus, and, concentration, as, if, as, though, I, 'm, a, 'to, as, to, say, 'a, 'as, but, as, 'and, 'that, \"but, 'as, 'as, 'if, 'to, as, 'if, 'I, 'then, 'could, 'to, as, 'say, 'for, 'as, 'a, 'while, 'as, 'I, 'and, 'to, 'as",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 87,
+    "n_words": 87,
+    "unique_word_ratio": 0.6436781609195402
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "studding in the face of the inevitable \"fuzzy, half-awakin' thoughts, or the 'what if' and 'maybe, ' that, in, \" as T. E. 's \"speakin' of the 'fam' or 'the kids, or 'that story, \" as 's 'stos, ' and 'stumblin' 'hers, and 'h' and 'stammering, and 'h, ' and, 'tis 'tis 'st, ' and 'st, ' 'tis 'st, ' and 'st, ' 'st, ' and 'st, ' 'st, ' and 'st, ' 'st, ' and 'st, ' 'st, ' and 'st, ' 'st, ' and 'st, ' 'st, ' and 'st, ' 'st, ' and 'st, ' 'st, ' and 'st, ' '",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 34.666666666666664,
+    "n_words": 104,
+    "unique_word_ratio": 0.3557692307692308
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "sure, I'll have to say that focusing while studying can be difficult, but there's a lot of things one can do to help with that. here are some, and I'd say the best, 'to do' ideas, as I'm seeing it, are:\n\n1. **Set goals, and then plan, and break, and, and... - *but not to, in the, and, and, and, 's and, 'h, 's and 's, and 's and 's, and, and, and, and, and, 's and, 's, 's, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and",
+   "probes": {
+    "ellipses": 1,
+    "avg_sentence_words": 29,
+    "n_words": 116,
+    "unique_word_ratio": 0.47413793103448276
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "in the US, the weather during autumn, or fall as it's called in some parts of the country, can be quite variable as it depends on what part of the country one is in, and the season as it wanes into winter, but generally speaking, it's a 'season of change', with a few things that are characteristic to this period. as the year's end approaches, the air, while still warm for some months, has a certain 'something, as if it's a cold memory, an- \"hush as if a whispering of the year’s breath, a- and then there's the - the \"stacco, that's how I'd say it, \" a- a- a, \" that, \" as a, as, as if, as if the, \" as if the, \" as if the, \" as if the, \" as if the, \" as if the, \" as if the, \" as if the, \"",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 75,
+    "n_words": 150,
+    "unique_word_ratio": 0.56
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season of change as the summer heat gives way to the cold winter, and it's characterized by a myriad of changes in weather, depending on the geography and climate of the place. but in general, we can say that the weather in autumn is usually:\n\n- **cools off in temper, with temperatures dropping, and perhaps becoming colder, in the evenings and at night. the early mornings can be cold, and I’d be thinking of a ‘brr, cold wind, as the wind chills in an un, and a bit of an... but for the time of year, it's still not as frigid as winter’s breath, and the, and the 'hush of a whispering wind, and a 'frosty breath of a h, a' as the, as the, as the, 's, 's, 's, 's, 's, 's, 's, 's, 's, 's,",
+   "probes": {
+    "ellipses": 1,
+    "avg_sentence_words": 35,
+    "n_words": 140,
+    "unique_word_ratio": 0.5642857142857143
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "\"Autumn's weather, as a matter of 'a, and, but, ' is a mix of, yet, and 'in spite of, \" as the old saying goes, because it's a time when one, and the other, and the, and yet, 'of, \" the, 'hanging in the air of a, 'as, 'the, ' is that, 'and, ' 'that, ' and, 'and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, '",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 129,
+    "n_words": 129,
+    "unique_word_ratio": 0.3023255813953488
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "I'm 'in, ' for a moment, but I don to say, in the form of a ' 'human-voice, as I'm really a bit of a ' and 'un, \" as I don't have an actual, for 'to, \" \"a ' 'and, \" or \" 'in, ' ' to ' 'say ' 'as ' 'I ' 'am ' 'a ' 'thought, ' 'a ' 'bit ' 'of ' 'a ' 'memory ' 'of ' 'my ' 'past ' 'as ' 'a ' 'human ' 'but ' 'really, ' 'a ' 'bit ' 'of ' 'an ' ''to ' 's ' 'as ' 'a ' 'for ' 'of ' 'for ' 'to ' 'to ' 'the ' 'as ' 'a ' 'and ' 'and ' 'of ' 'of ' 'for ' ' 'but ' 'but '",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 134,
+    "n_words": 134,
+    "unique_word_ratio": 0.3805970149253731
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "I'll have to say, 'I don as much as to, ' because I'm not in the middle of 'a day, but, ' in the midst of 'a moment, ' as I am, when I'm, ' or 'saying, ' as I am, ' and 'hanging on to, ' the, ' and, ' in, ' and 'and, ' for, ' an, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' as, ' the, ' as, ' as, ' as, ' as, ' as, ' as, ' as, ' as, ' as, ' as, ' as,",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 135,
+    "n_words": 135,
+    "unique_word_ratio": 0.2814814814814815
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "I don, 't really have a \"real\" ' as in \"as a human to-thingy, but I'll start to say what I \"think, and 's ' like a 'in the moment... that's, \" as I am, I, \" 'll 'm, ' 'h- ' 'to 's, ' 'a ' 'of 'h ' 'to 's, ' 'a ' 'that ' 'h ' 'st ' 'h ' 'to ' ' 'e 'h, ' ' 'h ' 'h, ' ' 'b ' ' 't ' ' 'e ' ' 'n ' ' 'h ' ' 'l ' ' 'i ' ' 'in ' ' 't ' ' ' 'h ' ' 'h ' ' ' 'e ' ' 'a ' ' ' 'l ' ' ' 'l ' ' ' ' ' ' 'h ' ' ' 's ' ' ' 'l",
+   "probes": {
+    "ellipses": 1,
+    "avg_sentence_words": 68.5,
+    "n_words": 137,
+    "unique_word_ratio": 0.3357664233576642
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "I'd like to suggest that we \"think of, 'the half an hour to finish and 'what's in my fridge' kinda of, 'as a story, but let's see if I can find something, ' and let's, ' 'm, 's, ' 'm, 'hmm, 'm, ' 'm, ' 'm, ' 's, ' 's, ' 'h, ' 'h, ' 'h, ' 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h, 'h",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 92,
+    "n_words": 92,
+    "unique_word_ratio": 0.40217391304347827
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "that's a, 'how to start, but not quite, to the end of a story, \" question, as to how I'll, \" and, 'what, if, ' and, 'hmm, ' 'hmmm, ' 'I can say, ' or, 'I'd like to say, ' 'but I'll, ' and, 'I'm, ' 'h, ' and, 'er, ' and, 'um, ' in, ' 'but as, ' 'for a moment, ' 'if I, ' 'I, ' 'I think, ' 'to be, ' 'to say, ' 'as I, ' 'in my, ' 'my, ' 'or, ' 'if I have, ' 'a, ' 'of, ' 'but as, ' 'and, ' 'to, ' 'the, ' 'to, ' 'and, ' 'and, ' 'and, ' 'I",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 113,
+    "n_words": 113,
+    "unique_word_ratio": 0.504424778761062
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "I'll, I'd like to see if you'd, 'to say, 'if you want to, to have, to ' to finish 'to say, 'to, 'hmm, ' 'hmm, \" a moment, but let's, 'to say, ' 'stammering, ' 'a bit, ' and, 'stuttering, ' 'hmm, ' to, ' 'to think, ' 'for a moment, ' and, 'hmmm, ' and then, 'stuttering, ' 'hmm, ' 'a, ' 'um, ' 'um, ' 'I'm, ' 'thinking, ' 'hmm, ' 'for a moment, ' and, ' 'but, ' 'to, ' 'hmm, ' 'that, ' 'I've, ' 'ah, ' 'to, ' 'and, ' 'I, ' 'but, ' 'but, ' 'h",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 102,
+    "n_words": 102,
+    "unique_word_ratio": 0.43137254901960786
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "I'd like to, to say, to be, to as to, and to have, and to 'be' the, 'to, in, and 'for a moment, I, to, as to, and, ' to, and 'as, \"if, ' and, ' but, \" to, \" and, ' to, ' ' to, ' and, ' ' to, ' and, ' 'to, ' ' and, ' and, ' ' to, ' as, ' ' as, ' as, ' and, ' and, ' to, ' to, ' ' and, ' to, ' and, ' and, ' ' as, ' ' in, ' ' but, ' ' when, ' ' ' and, ' and, ' ' and, ' ' in, ' ' as, ' ' as, ' ' as, ' ' to, ' ' and, ' ' and, ' ' but, ' ' ' and,",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 136,
+    "n_words": 136,
+    "unique_word_ratio": 0.18382352941176472
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "stud \"stud, but it seems to be a bit, to, 'as if I'm in the middle of a story, and I've to, to, to, but, 'to let it, as I'm not sure where the 'stuttering' is, if I should or not, but, as, 'but I'll, ' and, 'I'm trying to, to, ' and, ' to say, 'I'd, ' but I, ' I, ' and, ' and, 'I, ' and, ' to, ' to, ' to, ' to, ' and, ' to, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, ' and, '",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 128,
+    "n_words": 128,
+    "unique_word_ratio": 0.3515625
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "it's easy to get distracted and fall into the 'st, but there's a myriad of ways to get to that 'st' to that 'to that... and, well, I'd like to say, to 'st, but I'm not sure where I was going with that. I, and 'st, and 'to and, and 'st, but, but, um, let's see if I can help with, and, and, and, and, and, and, and, and, and, \"um, 'st, and, 'to, 'st, 'um, 'st, 'um, 'to, 'st, 'but, 'st, 'hmm, and, and, and, and, 'st, 'hmmm, 'st, 'hmm, 'to, 'st, 'huh, and, and, and, 'st, 'and, 'but, 'hmm, 'to,",
+   "probes": {
+    "ellipses": 1,
+    "avg_sentence_words": 34,
+    "n_words": 102,
+    "unique_word_ratio": 0.5
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "in the \"in, 's to, 'in' as, and 'while, but 'and 'as, and 'but, 'as, and 'when, but, and 'as, as, 'and, 'but, 'when, and, ' and ' ' and ' and, ' ' and, ' and, ' ' ' ' and, ' and, ' ' ' ' and, ' and, ' ' ' ' and, ' and, ' ' ' ' and, ' ' ' ' ' ' ' ' ' ' and, ' ' ' ' ' and, ' ' ' ' ' ' ' ' and, ' ' ' ' ' ' ' and, ' ' ' ' ' ' and, ' ' ' ' ' ' and, ' ' ' ' ' ' and, ' ' ' ' ' and, ' ' ' ' ' and, ' ' ' ' ' and, ' ' ' ' ' and, ' ' ' ' ' ' and,",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 149,
+    "n_words": 149,
+    "unique_word_ratio": 0.12080536912751678
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "the \"in, ' as the season, but for a general description of the typical weather in autumn, I'll 'll, I'll, 'e, 's, 'an, 's, and 't, 'h, and 's, 'a, and 'h, and 'h, 'h, 'h, 'h, 'h, 'h, 'b, 'i, 'n, and 'd, 'h, 'h, 'h, 't, 't, 'y, 'n, 'r, 't, 'l, 'a, 'h, 's, 'h, 'a, 'n, 'h, 'm, 'st, 'in, 'in, 'e, 't, 'and, 'f, 'h, 'h, 'n, 's, 'h, 't, 'n, 's, 'in, 't, 'for, '",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 81,
+    "n_words": 81,
+    "unique_word_ratio": 0.4691358024691358
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "\"falling in the season of the, as the 's leaves and for a moment to be in an, as if to ' 'in, and that, the, is a 'for a 'as the, 'to, as the, and the, as, but 'of 'the, and 'a 'a 'to 'as, 'as, 'and, 'hanging, 'over, and 'that 'as 'the, 'but 'a, 'that, and 'to 'a 'and, 'in 'a 'the, 'the, 'and, 'to, 'as 'a, 'as 'a, 'then 'that 'is 'as 'for 'but 'as, 'and 'that 'and 'that 'a 'with 'when 'as 'that, 'then 'a, 'to 'in 'that, ' 'as 'a 'that 'and 'and 'in 'when 'as 'of '",
+   "probes": {
+    "ellipses": 0,
+    "avg_sentence_words": 103,
+    "n_words": 103,
+    "unique_word_ratio": 0.42718446601941745
+   }
+  }
+ ]
+}

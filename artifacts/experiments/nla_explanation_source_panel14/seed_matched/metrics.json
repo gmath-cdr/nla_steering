@@ -1,0 +1,174 @@
+{
+  "aggregate": {
+    "A_fresh": {
+      "concept_hit": {
+        "percent": 48.660714285714285,
+        "ci95_percent": [
+          36.160714285714285,
+          60.71428571428571
+        ]
+      },
+      "coverage": {
+        "percent": 57.14285714285714,
+        "ci95_percent": [
+          43.75,
+          70.53571428571429
+        ]
+      },
+      "quality_pass": {
+        "percent": 85.71428571428571,
+        "ci95_percent": [
+          73.66071428571429,
+          94.64285714285714
+        ]
+      }
+    },
+    "B": {
+      "concept_hit": {
+        "percent": 27.67857142857143,
+        "ci95_percent": [
+          19.642857142857142,
+          36.160714285714285
+        ]
+      },
+      "coverage": {
+        "percent": 36.607142857142854,
+        "ci95_percent": [
+          27.67857142857143,
+          45.535714285714285
+        ]
+      },
+      "quality_pass": {
+        "percent": 92.85714285714286,
+        "ci95_percent": [
+          87.94642857142857,
+          96.875
+        ]
+      }
+    },
+    "C": {
+      "concept_hit": {
+        "percent": 31.25,
+        "ci95_percent": [
+          21.428571428571427,
+          41.964285714285715
+        ]
+      },
+      "coverage": {
+        "percent": 42.857142857142854,
+        "ci95_percent": [
+          31.25,
+          53.57142857142857
+        ]
+      },
+      "quality_pass": {
+        "percent": 95.53571428571429,
+        "ci95_percent": [
+          91.96428571428571,
+          98.66071428571429
+        ]
+      }
+    }
+  },
+  "paired_differences": {
+    "A_fresh_minus_B": {
+      "concept_hit": {
+        "difference_percentage_points": 20.982142857142858,
+        "ci95_percentage_points": [
+          12.946428571428573,
+          28.58258928571412
+        ],
+        "resamples": 10000,
+        "seed": 0,
+        "method": "concept_cluster"
+      },
+      "coverage": {
+        "difference_percentage_points": 20.535714285714285,
+        "ci95_percentage_points": [
+          10.714285714285714,
+          30.357142857142854
+        ],
+        "resamples": 10000,
+        "seed": 0,
+        "method": "concept_cluster"
+      },
+      "quality_pass": {
+        "difference_percentage_points": -7.142857142857142,
+        "ci95_percentage_points": [
+          -15.625,
+          -0.8928571428571428
+        ],
+        "resamples": 10000,
+        "seed": 0,
+        "method": "concept_cluster"
+      }
+    },
+    "A_fresh_minus_C": {
+      "concept_hit": {
+        "difference_percentage_points": 17.410714285714285,
+        "ci95_percentage_points": [
+          7.5892857142857135,
+          27.67857142857143
+        ],
+        "resamples": 10000,
+        "seed": 0,
+        "method": "concept_cluster"
+      },
+      "coverage": {
+        "difference_percentage_points": 14.285714285714285,
+        "ci95_percentage_points": [
+          3.571428571428571,
+          25.892857142857146
+        ],
+        "resamples": 10000,
+        "seed": 0,
+        "method": "concept_cluster"
+      },
+      "quality_pass": {
+        "difference_percentage_points": -9.821428571428571,
+        "ci95_percentage_points": [
+          -19.642857142857142,
+          -2.232142857142857
+        ],
+        "resamples": 10000,
+        "seed": 0,
+        "method": "concept_cluster"
+      }
+    },
+    "B_minus_C": {
+      "concept_hit": {
+        "difference_percentage_points": -3.571428571428571,
+        "ci95_percentage_points": [
+          -15.178571428571427,
+          6.25
+        ],
+        "resamples": 10000,
+        "seed": 0,
+        "method": "concept_cluster"
+      },
+      "coverage": {
+        "difference_percentage_points": -6.25,
+        "ci95_percentage_points": [
+          -17.857142857142858,
+          5.357142857142857
+        ],
+        "resamples": 10000,
+        "seed": 0,
+        "method": "concept_cluster"
+      },
+      "quality_pass": {
+        "difference_percentage_points": -2.6785714285714284,
+        "ci95_percentage_points": [
+          -4.910714285714286,
+          -0.4464285714285714
+        ],
+        "resamples": 10000,
+        "seed": 0,
+        "method": "concept_cluster"
+      }
+    }
+  },
+  "bootstrap": "14 paired concept clusters, percentile 95% CI, 10000 resamples, seed 0; unadjusted exploratory intervals",
+  "quality_reference": "closest archived prompt-matched unsteered response; frozen 8\u2013350 words, repetition <=0.10, content Jaccard >=0.12",
+  "limitation": "Common recorded batch seeds, model revision and generation parameters; software versions and A100 hardware variant differ from historical B/C, so bitwise RNG equivalence is not guaranteed."
+}

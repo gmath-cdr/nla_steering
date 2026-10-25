@@ -1,0 +1,36 @@
+{
+  "protocol_version": "qwen-av-edit-confirmation-30-v1",
+  "source_discovery_version": "qwen-av-edit-discovery-500-v1",
+  "source_commit": "34ff494",
+  "candidate_ids": [
+    186, 17, 176, 116, 446, 226, 287, 274, 108, 172,
+    203, 355, 183, 359, 11, 406, 134, 456, 204, 463,
+    171, 90, 91, 30, 222, 216, 58, 101, 354, 428
+  ],
+  "excluded_by_discovery_quality_filter": [6, 67, 344],
+  "quality_filter": {
+    "metric": "mean maximum content-word Jaccard similarity to the prompt-matched unsteered answers",
+    "minimum_similarity": 0.12,
+    "repetition_maximum": 0.10,
+    "word_count_range": [8, 350],
+    "selection": "Candidates passing basic quality are ranked by semantic preservation; retain the top 30 before viewing confirmation prompts."
+  },
+  "confirmation": {
+    "prompt_offset": 2,
+    "prompts_per_concept": 8,
+    "samples_per_prompt_per_arm": 2,
+    "av_rollouts_per_prompt": 3,
+    "alpha": 0.5,
+    "random_seed": 42,
+    "arms": ["unsteered", "av_edit", "random"],
+    "target_confirmed_concepts": 20
+  },
+  "success_gate": {
+    "minimum_lift_vs_unsteered": 0.20,
+    "minimum_lift_vs_random": 0.20,
+    "minimum_av_prompt_coverage": 0.50,
+    "one_sided_bootstrap_lower_bounds_must_be_positive": true,
+    "semantic_quality_required": true
+  },
+  "claim_limit": "Passing lexical causal gates nominates a concept; clean success additionally requires the separately reported semantic-quality gate."
+}

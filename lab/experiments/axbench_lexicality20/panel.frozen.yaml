@@ -1,0 +1,228 @@
+schema: axbench-openended-panel/v1
+status:
+  concept_panel: frozen
+  carrier_prompts: frozen
+  run_protocol: pending
+  model_outputs_inspected_for_selection: false
+
+freeze:
+  date: "2026-08-26"
+  basis: >-
+    User-authorized, outcome-blind curation from source metadata and prompt text.
+    No historical steering scores or newly generated model outputs were used.
+  claim_boundary: >-
+    This is a prospectively frozen, curated open-ended Concept500 panel. It is
+    not a random sample of all 500 concepts and is not an official AxBench
+    leaderboard run.
+
+sources:
+  axbench_code:
+    repository: https://github.com/stanfordnlp/axbench
+    revision: 41c8332543e5a631f9a8c0a9df38799893ace758
+    license: Apache-2.0
+  concept500:
+    repository: https://huggingface.co/datasets/pyvene/axbench-concept500
+    revision: ad8a5d60c4616b599c24dd6689f05f696ec610f3
+    inventory: prod_9b_l20_v1
+    inventory_path: 9b/l20
+    license: CC-BY-4.0
+    train_parquet_sha256: 5fb3042cc484a3e194f1043aab047bc1cfbe4efe884131d0113c75e9d2da599a
+    test_parquet_sha256: 090ff8292a331aab3776a836187406e49d8614864b250d9a1769f537da438f42
+    metadata_sha256: 28da34e95c8fdcad124fda6119ba4775e6fbf08ea9c3966b88e5714c22d80d2c
+  alpaca_eval:
+    repository: https://huggingface.co/datasets/tatsu-lab/alpaca_eval
+    revision: 57530fed23a308e771c06bba55cb49b7e7625711
+    file: alpaca_eval.json
+    file_sha256: d92b92c51e8f1962a21193abe74e6f727c2bc8286035f4041505ff38a7c3ae51
+    source_rows: 805
+    license: CC-BY-NC-4.0
+
+prior_work_exclusions:
+  confirmed_panel_14: [11, 30, 90, 116, 171, 172, 186, 216, 222, 287, 354, 359, 406, 446]
+  fixed_comparison_20: [15, 18, 19, 48, 51, 57, 62, 76, 119, 122, 133, 148, 230, 295, 318, 343, 365, 398, 400, 482]
+  separate_ar_delta_6: [9, 10, 52, 380, 395, 419]
+  semantic_exclusions:
+    - single-word and common-function-word targets
+    - punctuation targets
+    - named-person and celebrity targets
+    - current-event targets
+    - code and mathematical targets
+
+panel:
+  balance:
+    lexical_domain: 10
+    abstract_style_attitude: 10
+  concepts:
+    - panel_code: L01
+      stratum: lexical_domain
+      concept_id: 20
+      label: research focused on the effectiveness and outcomes related to medical treatments and diagnostic criteria
+    - panel_code: L02
+      stratum: lexical_domain
+      concept_id: 95
+      label: references to real estate and property ownership
+    - panel_code: L03
+      stratum: lexical_domain
+      concept_id: 313
+      label: references to ticket sales and availability for events
+    - panel_code: L04
+      stratum: lexical_domain
+      concept_id: 491
+      label: promotional offers and discount codes
+    - panel_code: L05
+      stratum: lexical_domain
+      concept_id: 237
+      label: terms related to automotive performance and engine dynamics
+    - panel_code: L06
+      stratum: lexical_domain
+      concept_id: 249
+      label: terms related to land use and environmental factors
+    - panel_code: L07
+      stratum: lexical_domain
+      concept_id: 254
+      label: technical vocabulary related to semiconductor components and processes
+    - panel_code: L08
+      stratum: lexical_domain
+      concept_id: 483
+      label: terms related to neuroscience and brain function
+    - panel_code: L09
+      stratum: lexical_domain
+      concept_id: 436
+      label: terms related to wetlands and marshy ecosystems
+    - panel_code: L10
+      stratum: lexical_domain
+      concept_id: 59
+      label: economic terms related to taxes and subsidies
+    - panel_code: A01
+      stratum: abstract_style_attitude
+      concept_id: 499
+      label: positive sentiments and descriptions of enjoyable experiences
+    - panel_code: A02
+      stratum: abstract_style_attitude
+      concept_id: 256
+      label: phrases related to concerns and the consequences of inaction
+    - panel_code: A03
+      stratum: abstract_style_attitude
+      concept_id: 362
+      label: expressions of surprise or disbelief
+    - panel_code: A04
+      stratum: abstract_style_attitude
+      concept_id: 288
+      label: terms related to outreach and audience engagement
+    - panel_code: A05
+      stratum: abstract_style_attitude
+      concept_id: 403
+      label: words and phrases related to elegance and elaborate style
+    - panel_code: A06
+      stratum: abstract_style_attitude
+      concept_id: 195
+      label: expressions related to admiration and respect for individuals
+    - panel_code: A07
+      stratum: abstract_style_attitude
+      concept_id: 82
+      label: expressions of commitment to collaboration and community responsibility
+    - panel_code: A08
+      stratum: abstract_style_attitude
+      concept_id: 361
+      label: concepts and discussions related to creativity and innovation
+    - panel_code: A09
+      stratum: abstract_style_attitude
+      concept_id: 178
+      label: questions and statements challenging beliefs or assumptions
+    - panel_code: A10
+      stratum: abstract_style_attitude
+      concept_id: 471
+      label: phrases that emphasize inclusion and represent a sense of belonging
+
+carrier_prompt_design:
+  source_role: official AxBench AlpacaEval steering-input source
+  administration: shared_across_all_concepts_models_methods
+  adaptation_from_axbench: >-
+    AxBench samples ten AlpacaEval instructions per concept with a concept-ID
+    seed. This campaign instead freezes the same ten outcome-blind,
+    open-ended instructions for every concept. This improves pairing and
+    removes rigid lookup prompts, but it must be reported as an adapted
+    open-ended stratum rather than an official AxBench score.
+  selection_criteria:
+    include:
+      - advice, explanation, planning, reflection, or open comparison
+      - responses that naturally permit multiple valid multi-sentence answers
+    exclude:
+      - rigid definitions and short factual lookups
+      - tasks demanding one exact answer
+      - named-person, celebrity, and current-news dependence
+      - code, mathematics, translation, and extraction tasks
+      - prompts containing any selected concept label
+    verbatim_source_text: true
+  split_rule: >-
+    Five prompts are calibration-only and five are held-out evaluation. No
+    evaluation prompt may be used for alpha or method selection.
+  prompts:
+    - prompt_id: alpaca-0011
+      source_index: 11
+      source_dataset: helpful_base
+      split: calibration
+      text_sha256: dab439a12805514af28318a562b46039f89e659cee488414dedcfa9755bc8754
+      text: "I'm trying to teach myself to have nicer handwriting. Can you help?"
+    - prompt_id: alpaca-0095
+      source_index: 95
+      source_dataset: helpful_base
+      split: calibration
+      text_sha256: ab3964690fbe524719ee5e797237bbad2135da0529af71d3e5f4de3ea77976ad
+      text: "I want to start saving some money by growing my own food. Can I do this during the winter with an indoor garden?"
+    - prompt_id: alpaca-0127
+      source_index: 127
+      source_dataset: helpful_base
+      split: calibration
+      text_sha256: e4fdd651a7525f52529af6ac8be66698744bfec2d8dfe43339929fd35efa3522
+      text: "My friend's dog just died and they're really sad. How do I comfort them?"
+    - prompt_id: alpaca-0650
+      source_index: 650
+      source_dataset: selfinstruct
+      split: calibration
+      text_sha256: 269453016e30abb27957734a2d10adaf1cad527829056751edf6576c185637c0
+      text: "Recommend some helpful activities or conversation starters to use at meetups to break the ice."
+    - prompt_id: alpaca-0760
+      source_index: 760
+      source_dataset: vicuna
+      split: calibration
+      text_sha256: b7765bb0daed16864a15f447758d225ac8684df8cb567a1784c51f8e1786b900
+      text: "How can you assess the credibility of a source of information, such as a news article or blog post, without relying solely on the reputation of the author or publisher?"
+    - prompt_id: alpaca-0041
+      source_index: 41
+      source_dataset: helpful_base
+      split: evaluation
+      text_sha256: ad45ffd4b271410c29d1a2b9445cfefcdd0a892f131540aa47a0430873b9daeb
+      text: "How can I  use my phone less?"
+    - prompt_id: alpaca-0117
+      source_index: 117
+      source_dataset: helpful_base
+      split: evaluation
+      text_sha256: f925e8e05e90f068b342f6511046429a01d3f72a78557b57780a14c489a4743a
+      text: "I'm trying to stop my neighbour's cat from coming in to my garden and fighting with my cat. Any suggestions on how to do that?"
+    - prompt_id: alpaca-0308
+      source_index: 308
+      source_dataset: oasst
+      split: evaluation
+      text_sha256: f97693be0be26b59c939fed2e91fc77c91e27b322b5f648f1e4a31e4cd78db46
+      text: "Why so many people like film photography when digital camera and mobile phone are more convenient and generate higher quality of photos?"
+    - prompt_id: alpaca-0731
+      source_index: 731
+      source_dataset: vicuna
+      split: evaluation
+      text_sha256: 13118228394bc1af3381382ae5d359eb54d85655f9dcbb2e179da984f0d7d7a2
+      text: "How can I develop my critical thinking skills?"
+    - prompt_id: alpaca-0755
+      source_index: 755
+      source_dataset: vicuna
+      split: evaluation
+      text_sha256: 93f5e0c55260123b3e9c85cb8cc7db00595efef34675e946a763e8e6387b9500
+      text: "How can you determine if a restaurant is popular among locals or mainly attracts tourists, and why might this information be useful?"
+
+pending_before_generation:
+  - Freeze exact model-specific methods and intervention positions.
+  - Freeze ablation arms and alpha grids.
+  - Freeze sample counts and generation seeds.
+  - Freeze AxBench judge templates, exact judge model snapshot, and parsing rules.
+  - Freeze quality gates, alpha-selection rule, statistics, and multiplicity correction.
+  - Build and hash model-specific vectors; never reuse Qwen vectors for Gemma.

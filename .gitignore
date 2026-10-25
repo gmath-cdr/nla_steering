@@ -1,0 +1,86 @@
+# Python bytecode and interpreter caches
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+
+# Virtual environments and package-manager caches
+.venv/
+venv/
+env/
+.uv-cache/
+.cache/
+
+# Build and packaging outputs
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+
+# Test, type-checker, linter, and coverage outputs
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+/configs/models.yaml
+secrets.txt
+*.secret
+*.key
+*.pem
+
+# External downloads and large/generated experiment state
+/data/
+/artifacts/raw/
+/artifacts/models/
+/artifacts/completions/
+/artifacts/rebuilt/
+/artifacts/cache/
+/artifacts/tmp/
+*.parquet
+*.npz
+sglang.log
+
+# Runtime and scheduler output
+*.log
+*.pid
+*.failed
+queue_logs/
+artifacts/experiments/**/RESULT*.md
+artifacts/experiments/**/PROTOCOL.md
+artifacts/experiments/**/PROVENANCE.md
+artifacts/experiments/**/*_failure.json
+
+# Editors and operating-system metadata
+.DS_Store
+._*
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local scratch directories
+tmp/
+temp/
+
+# Split-half J-lens checkpoints are large local diagnostics. The merged lenses
+# and fit reports are retained; these optional halves are hash-checked when
+# present but are not part of the paper reproduction snapshot.
+lab/experiments/jspace/data/lens_L20_A.pt
+lab/experiments/jspace/data/lens_L20_B.pt
+lab/experiments/jspace/data/lens_L32_A.pt
+lab/experiments/jspace/data/lens_L32_B.pt

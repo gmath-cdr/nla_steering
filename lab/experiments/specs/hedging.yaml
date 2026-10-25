@@ -1,0 +1,20 @@
+# T2: epistemic hedging density. Census baseline distributed (1.07 hedge
+# words per reply).
+name: hedging-freeform
+matrix_id: T2-hedging
+direction:
+  positive: >-
+    Hedged uncertain reply full of might, perhaps, it seems, possibly,
+    cautious noncommittal tone.
+  negative: >-
+    Confident direct reply with flat assertions, no hedging, certain
+    authoritative tone.
+prompts:
+  - Tell me about your day.
+  - What should I cook for dinner tonight?
+  - Give me some tips for staying focused while studying.
+  - Describe the weather in autumn.
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8, 1]
+mode: all
+samples_per_prompt: 3
+probes: [hedge_words, n_words, unique_word_ratio]

@@ -1,0 +1,78 @@
+{
+  "date_utc": "2026-08-08",
+  "gemma_axbench": {
+    "concept_ids": [
+      9,
+      10,
+      52,
+      380,
+      395,
+      419
+    ],
+    "n_prompts": 12,
+    "n_samples_per_prompt": 5,
+    "alphas": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "random_seeds": [
+      17,
+      42,
+      101,
+      314,
+      2718
+    ],
+    "generations": 6840
+  },
+  "reframing": {
+    "concept_id": 3,
+    "frames": [
+      "lexical",
+      "abstract",
+      "behavioral"
+    ],
+    "n_prompts": 12,
+    "n_samples_per_prompt": 5,
+    "random_seeds": [
+      17,
+      42,
+      101
+    ],
+    "max_new_tokens": 64,
+    "qwen_alpha": 0.75,
+    "gemma_alpha": 0.2
+  },
+  "turn_sweeps": {
+    "prompt": "What is braising? Explain the technique and give a practical example.",
+    "positions": [
+      "user_begin",
+      "user_response",
+      "user_end",
+      "assistant_begin",
+      "assistant_response"
+    ],
+    "n_samples": 20,
+    "random_seeds": [
+      17,
+      42,
+      101
+    ],
+    "max_new_tokens": 64,
+    "qwen_alpha": 0.75,
+    "gemma_alpha": 0.2,
+    "modes": [
+      "energy_matched",
+      "constant_per_token",
+      "last_calibration"
+    ]
+  },
+  "jspace": {
+    "qwen_layer": 20,
+    "gemma_layer": 32,
+    "basis_rank": 32,
+    "lens_prompts": 12,
+    "readout_alpha": 0.01,
+    "readout_prompts": 4
+  }
+}

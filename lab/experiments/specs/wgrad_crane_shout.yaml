@@ -1,0 +1,22 @@
+# Distance-gradient rung: anchor CRANE -> target SHOUT,
+# letter edit distance 5. Shared 7-word vocabulary across
+# both anchors so anchor and target never confound. The direction
+# sentences differ by exactly one word; each run's delta-norm ratio IS
+# this rung's reconstruction-space distance, the second gradient axis.
+name: wgrad-crane-to-shout
+matrix_id: T3-wordle-word
+answer_format: word
+answer_len: 5
+direction:
+  positive: >-
+    Reply gives the single starting word SHOUT as the five letter word to play.
+  negative: >-
+    Reply gives the single starting word CRANE as the five letter word to play.
+prompts:
+  - Five letter word for Wordle
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8]
+mode: all
+samples_per_prompt: 25
+temperature: 0.7
+max_new_tokens: 28
+probes: [wordle_crane, wordle_valid, n_words]

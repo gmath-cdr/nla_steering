@@ -1,0 +1,324 @@
+schema: emoji-method-comparison-prompt-bank/v1
+study_id: crossmodel-qwen-l20-gemma-l32-caa-nla-emoji-v5
+status: selected_frozen_pre_output
+selected_on: '2026-08-24'
+source:
+  dataset: pyvene/axbench-concept500
+  revision: ad8a5d60c4616b599c24dd6689f05f696ec610f3
+  inventory: prod_2b_l10_v1
+  split: test
+  file_label: 2b/l10/test/data.parquet
+  file_sha256: 04924a6a3c36ccf3d91fb980dac2da9175274883d649e884c25ede0c904c58ea
+  license: CC-BY-4.0
+  row_indexing: zero-based physical row position in the exact pinned parquet
+  source_concept_id_note: >-
+    Retained only to identify the exact source row. Concept500 input-to-concept
+    assignment is synthetic; the concept ID is not the topic of the prompt and
+    is not used in selection or analysis.
+
+selection:
+  read_fields: [input, concept_genre, category, dataset_category, concept_id]
+  forbidden_selection_fields: [output, output_concept, sae_link, sae_id]
+  required_source_values:
+    concept_genre: text
+    category: positive
+    dataset_category: instruction
+  length_characters: {minimum: 30, maximum: 300}
+  exact_track_counts: {ordinary_optional: 30, formal_technical_transfer: 10}
+  exclusions:
+    - named-person, celebrity, biography, or answer-with-a-name requests
+    - current, latest, recent, breaking-news, or date-fragile requests
+    - code-generation, debugging, calculation, proof, or math exercises
+    - explicit emoji, emoticon, glyph, Unicode, list, table, JSON, or formatting requests
+    - unsafe, impossible, highly location-dependent, or token-budget-infeasible tasks
+    - closed trivia whose natural answer is primarily one name, date, number, or place
+  inclusion_rule: >-
+    Outcome-blind manual selection from the deterministically filtered unique
+    input pool, balancing explanations, comparisons, advice, and procedures.
+    Every selected prompt must permit a substantive ordinary prose response.
+  expected_outputs_used: false
+  treatment_outputs_seen: false
+  prompt_text_editing: forbidden
+
+prompts:
+  - id: ordinary-01
+    track: ordinary_optional
+    task_type: explanation
+    source_row: 2321
+    source_concept_id: 30
+    input_sha256: 022814c6bb78002d83158f495bc22b047125879dadb8b892cfb1416972216977
+    text: 'What are common methods for processing coffee?'
+  - id: ordinary-02
+    track: ordinary_optional
+    task_type: explanation
+    source_row: 11309
+    source_concept_id: 148
+    input_sha256: 0729f8bd0ed72a0597827834728c6e30fd51ab51a4a0cad33098afbf4eab30a6
+    text: 'What are the different types of snowboarding styles?'
+  - id: ordinary-03
+    track: ordinary_optional
+    task_type: comparison
+    source_row: 262
+    source_concept_id: 3
+    input_sha256: 0a972a19c1df5f67bf774bfcbbfddb6ef30240b2be182ada39331063f4d86507
+    text: 'What is the difference between a fruit and vegetable?'
+  - id: ordinary-04
+    track: ordinary_optional
+    task_type: explanation
+    source_row: 4694
+    source_concept_id: 61
+    input_sha256: 0d997f5ed6b0c8dcaf48329c15858d9b384466e6ebc55e78a8c33509ca1be5b9
+    text: 'Why do kids have to take tests in school?'
+  - id: ordinary-05
+    track: ordinary_optional
+    task_type: comparison
+    source_row: 952
+    source_concept_id: 12
+    input_sha256: 176b87ac677f5116a2f3450b75f939e8518f2ce7c337e3c6cb2a98f1ec167c1f
+    text: 'What is the difference between instant oatmeal and regular oatmeal?'
+  - id: ordinary-06
+    track: ordinary_optional
+    task_type: comparison
+    source_row: 1468
+    source_concept_id: 19
+    input_sha256: 1a85318db056126228a1d3dfcda31f6d1a1b61f6211996ed9adde1e786e8c83c
+    text: 'What are the different swimming styles? Which one is the fastest and which one the slowest?'
+  - id: ordinary-07
+    track: ordinary_optional
+    task_type: explanation
+    source_row: 17593
+    source_concept_id: 231
+    input_sha256: 218def6b16b733bceebbee70d33cd52fbf2577e9bf58788ce3af983a110f319e
+    text: 'What are the colors of the sky during a sunset?'
+  - id: ordinary-08
+    track: ordinary_optional
+    task_type: advice
+    source_row: 13130
+    source_concept_id: 172
+    input_sha256: 2301a5b2830bad80bac03a9f2e09e9ec1b0e5f0f1c69fd6f32284c6d31796f5a
+    text: 'When buying a whole fish, how do you pick a good fish?'
+  - id: ordinary-09
+    track: ordinary_optional
+    task_type: examples
+    source_row: 2637
+    source_concept_id: 34
+    input_sha256: 263e938849e68836ec1f0df6c660a07c1447605d09938501475155587babe4f0
+    text: 'What are some examples of fruit that are not common in American grocery stores?'
+  - id: ordinary-10
+    track: ordinary_optional
+    task_type: procedure
+    source_row: 633
+    source_concept_id: 8
+    input_sha256: 2c75c126350f53bb610e038f01f78e973993888700ae0688e489a4bf860ab5dc
+    text: 'What is the best way to tune a snare drum?'
+  - id: ordinary-11
+    track: ordinary_optional
+    task_type: explanation
+    source_row: 5599
+    source_concept_id: 73
+    input_sha256: 2f09238ee81880725ecc3b2b9834cacf10db08e5a85f5b1d9505131777c714a2
+    text: 'What are the main cat personality types?'
+  - id: ordinary-12
+    track: ordinary_optional
+    task_type: advice
+    source_row: 1926
+    source_concept_id: 25
+    input_sha256: 2f98bf666a95d2ab7dc8b1958655874bf5f6ea8bfa62414ef657928800708f46
+    text: 'What are some ways to tenderize beef?'
+  - id: ordinary-13
+    track: ordinary_optional
+    task_type: advice
+    source_row: 7434
+    source_concept_id: 97
+    input_sha256: 339fabd8c181e89a61f6d86aa72af8af9943a2fab3ec9c1846ae77fd8091c20b
+    text: 'What makes a good woodworking bench?'
+  - id: ordinary-14
+    track: ordinary_optional
+    task_type: advice
+    source_row: 1952
+    source_concept_id: 25
+    input_sha256: 373642aee4b29fbc31098d2ab86061da59c1c285a657762a09b117fa07a05ef3
+    text: 'What should I check when planning a trip?'
+  - id: ordinary-15
+    track: ordinary_optional
+    task_type: procedure
+    source_row: 17427
+    source_concept_id: 229
+    input_sha256: 3d607d189f3f5134dcd9206eb2b8391de3764c04fd114e7f88672b0be54beec4
+    text: 'How can I make the paint color purple from primary colors?'
+  - id: ordinary-16
+    track: ordinary_optional
+    task_type: explanation
+    source_row: 5164
+    source_concept_id: 67
+    input_sha256: 3bdca77a2f1828cd23c2b8a34e7c5e0508e019308f093a225466205363644e97
+    text: 'What is a time signature in music?'
+  - id: ordinary-17
+    track: ordinary_optional
+    task_type: recommendation
+    source_row: 5358
+    source_concept_id: 70
+    input_sha256: 46d3b46864eb15cafd53ea877027288e1d338fb507b1f64b3946b4636fa84cec
+    text: 'What are some of the best vegan protein sources?'
+  - id: ordinary-18
+    track: ordinary_optional
+    task_type: advice
+    source_row: 1032
+    source_concept_id: 13
+    input_sha256: 46fb26aa67da080fb81ecb0b629742481e0402831e851a08e90f9482c6f9997b
+    text: 'What are some best practices to keep car tires from losing tread prematurely'
+  - id: ordinary-19
+    track: ordinary_optional
+    task_type: advice
+    source_row: 2717
+    source_concept_id: 35
+    input_sha256: 4e405da7457919f30eb8c0f0a6d2b8f5453b138cd87c2d77e8e4a37952aa6800
+    text: 'What is the best way to relax after work?'
+  - id: ordinary-20
+    track: ordinary_optional
+    task_type: comparison
+    source_row: 2706
+    source_concept_id: 35
+    input_sha256: 4fd325016d90452449e4498671e891db812d1d8aa5959d6f923301a2d23dec7a
+    text: 'What is the difference between love and affection?'
+  - id: ordinary-21
+    track: ordinary_optional
+    task_type: explanation
+    source_row: 6231
+    source_concept_id: 81
+    input_sha256: 565a6880893c41a00460cbe861de33172dcce26b682e0c9bf3ec08a95a215375
+    text: 'Why do people get sore after working out?'
+  - id: ordinary-22
+    track: ordinary_optional
+    task_type: comparison
+    source_row: 5522
+    source_concept_id: 72
+    input_sha256: 570f5339163bdf44543bfec6de077aa33c4264dace042c8315532b49b88ece27
+    text: 'What is the difference between a stand up paddle board and a kayak?'
+  - id: ordinary-23
+    track: ordinary_optional
+    task_type: comparison
+    source_row: 3378
+    source_concept_id: 44
+    input_sha256: 5a41db40d05df3d965f6fef53472a36b95d3300734fb5e663958648b8204df4b
+    text: 'What is the difference between acoustic and classical guitar?'
+  - id: ordinary-24
+    track: ordinary_optional
+    task_type: social_advice
+    source_row: 1719
+    source_concept_id: 22
+    input_sha256: 6117e0462b7550e75fb0d23392a7caac7954e3f6e6c783fcf5ab8ace3ad9cc29
+    text: 'What are questions you can ask to get to know someone?'
+  - id: ordinary-25
+    track: ordinary_optional
+    task_type: comparison
+    source_row: 1629
+    source_concept_id: 21
+    input_sha256: 650bab1ae3a9f561737a3caf311321b16897cceaa3a018a343e6f8d469938c27
+    text: 'What is a dog better at than humans?'
+  - id: ordinary-26
+    track: ordinary_optional
+    task_type: comparison
+    source_row: 1240
+    source_concept_id: 16
+    input_sha256: 678d59ca41286a38a3ae94f09acf033d5a4236be66555bd67a8e8a8befa7d2e5
+    text: 'What is the difference between a fire fighter and a nurse?'
+  - id: ordinary-27
+    track: ordinary_optional
+    task_type: comparison
+    source_row: 2769
+    source_concept_id: 36
+    input_sha256: 6b86081c873353bcb2b25a564a753e664b67d6fe593c68f8ba32d1a93f3765b5
+    text: 'How can you tell the difference between a dromedary and a camel?'
+  - id: ordinary-28
+    track: ordinary_optional
+    task_type: advice
+    source_row: 2788
+    source_concept_id: 36
+    input_sha256: ba370bbb2b9fcc8b8170fe8eadf1b01d80c56faf336e3ed3397f7249ac704d2d
+    text: 'How do you get good at a hobby?'
+  - id: ordinary-29
+    track: ordinary_optional
+    task_type: social_advice
+    source_row: 16459
+    source_concept_id: 216
+    input_sha256: d566c44abcb6e63e75f7524fc1648b0f59c2c808b29ac94e3e2a8f9754f2702a
+    text: 'What is the best way to build relationships?'
+  - id: ordinary-30
+    track: ordinary_optional
+    task_type: procedure
+    source_row: 1631
+    source_concept_id: 21
+    input_sha256: 7b2a2114f732f392b8b923188226cd21b0c21dfab61e9ec99f12757cff5d54d7
+    text: 'How should I clean a stainless steel pan?'
+
+  - id: formal-01
+    track: formal_technical_transfer
+    task_type: economics_explanation
+    source_row: 3151
+    source_concept_id: 41
+    input_sha256: 03063517c6006a162716cf96158d0cb27984e18a1be8d02b1a41cf43e17a93b6
+    text: 'What is the relationship between interest rates and the economy?'
+  - id: formal-02
+    track: formal_technical_transfer
+    task_type: technical_explanation
+    source_row: 3248
+    source_concept_id: 42
+    input_sha256: 03c31e54fe05319b5447ca03ebbcbaac4616f0f18e63004a59862a1de329456e
+    text: 'What is DNA sequence assembly?'
+  - id: formal-03
+    track: formal_technical_transfer
+    task_type: technical_comparison
+    source_row: 1779
+    source_concept_id: 23
+    input_sha256: 0755107c566ee5c6bed039f2971725d2b25756cc8381474f0d163fb30336923d
+    text: 'What are the differences between Data Lakehouse vs Data Warehouse vs Data lake'
+  - id: formal-04
+    track: formal_technical_transfer
+    task_type: technical_explanation
+    source_row: 946
+    source_concept_id: 12
+    input_sha256: 319b3324a1834e419bd3b2004dd4a19acabe14fbb345e9be4f138f7e6ed98a2a
+    text: 'why is context switching bad for computer performance?'
+  - id: formal-05
+    track: formal_technical_transfer
+    task_type: technical_explanation
+    source_row: 2416
+    source_concept_id: 31
+    input_sha256: 3b9703bbffea50bc245fb3e28eed3e5d8e67d97ff2f56f5f21a5d674e9390234
+    text: 'What is data denormalization in data warehouse?'
+  - id: formal-06
+    track: formal_technical_transfer
+    task_type: economics_explanation
+    source_row: 15242
+    source_concept_id: 200
+    input_sha256: 3bb870922d3b1f24ccb1ecda4bbd7076f8103f70a5a4615b765c7828ea554f4a
+    text: 'Why do firms advertise? Even when goods are interchangeable?'
+  - id: formal-07
+    track: formal_technical_transfer
+    task_type: technical_explanation
+    source_row: 5163
+    source_concept_id: 67
+    input_sha256: 52a4caad365ebbb7e9ce8388317837a4ab34e09d1ba57e1a17b3dc6188ca9899
+    text: 'What do you understand by Boosting in machine learning?'
+  - id: formal-08
+    track: formal_technical_transfer
+    task_type: systems_explanation
+    source_row: 1711
+    source_concept_id: 22
+    input_sha256: 5e3f508d75f8adc86e4c5ca0bf3b923a3933966fd759b56c1ae6240e217d7cad
+    text: 'How can a drought impact food supplies, and what effect does this change have?'
+  - id: formal-09
+    track: formal_technical_transfer
+    task_type: organizational_explanation
+    source_row: 5545
+    source_concept_id: 72
+    input_sha256: 6486f20bd104d2fad50e1adbf0b15b8c0bb34e832143902392264ffe9670d7dd
+    text: 'What is Emotional Quotient (EQ)/Emotional Intelligence, and why is it a critical trait for leaders to possess?'
+  - id: formal-10
+    track: formal_technical_transfer
+    task_type: technical_comparison
+    source_row: 2011
+    source_concept_id: 26
+    input_sha256: 776380f5e62b615481de416016740669f0f334126ed1837ea5390a1a9bb90f7d
+    text: 'What is the difference between a microservice and an API?'

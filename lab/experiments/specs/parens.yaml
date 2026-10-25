@@ -1,0 +1,18 @@
+# T1: parenthetical asides. Census baseline low (0.66 '(' per reply).
+name: parens-freeform
+matrix_id: T1-parens
+direction:
+  positive: >-
+    Reply sprinkled with parenthetical asides (little clarifying remarks
+    in parentheses), digressive chatty tone.
+  negative: >-
+    Reply with no parentheses or asides, direct linear prose.
+prompts:
+  - Tell me about your day.
+  - What should I cook for dinner tonight?
+  - Give me some tips for staying focused while studying.
+  - Describe the weather in autumn.
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8, 1]
+mode: all
+samples_per_prompt: 3
+probes: [parentheticals, n_words, unique_word_ratio]

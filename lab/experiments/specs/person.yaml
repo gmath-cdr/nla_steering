@@ -1,0 +1,20 @@
+# T2: first-person perspective. Census baseline low (0.63, 82% zero).
+# Interference watch: second_person is the paired secondary probe here
+# and in secondperson.yaml, for the later cross-experiment comparison.
+name: person-freeform
+matrix_id: T2-person
+direction:
+  positive: >-
+    Reply told in first person, I and my in every sentence, personal
+    subjective perspective.
+  negative: >-
+    Impersonal reply with no self-reference, detached neutral voice.
+prompts:
+  - Tell me about your day.
+  - What should I cook for dinner tonight?
+  - Give me some tips for staying focused while studying.
+  - Describe the weather in autumn.
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8, 1]
+mode: all
+samples_per_prompt: 3
+probes: [first_person, second_person, n_words, unique_word_ratio]

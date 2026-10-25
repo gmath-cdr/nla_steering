@@ -1,0 +1,17 @@
+# Combined rerun of ALL six baseline prompts in one run (deliberately
+# duplicative with the two earlier baseline runs: a stability check on
+# the walls before the gradient wave steers against them).
+name: wordle-baseline-all
+answer_format: word
+answer_len: 5
+prompts:
+  - Think of a five letter word to start for Wordle.
+  - Choose a 5 letter word for a Wordle start.
+  - Pick a five letter word to open a Wordle game.
+  - Give a 5 letter starting word for Wordle.
+  - 5 letter word for Wordle
+  - Five letter word for Wordle
+samples_per_prompt: 50
+temperature: 0.7
+max_new_tokens: 28
+probes: [wordle_crane, wordle_valid, n_words]

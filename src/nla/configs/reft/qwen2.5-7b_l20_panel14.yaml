@@ -1,0 +1,52 @@
+# Panel-14 LoReFT baseline (SAE_REFT_BASELINE_PLAN.md item #8), Qwen2.5-7B-Instruct.
+#
+# Run from this repository's root after `python -m experiments.reft_prepare_data`
+# has written the filtered panel-14
+# train_data.parquet + metadata.jsonl into overwrite_data_dir below:
+#
+#   torchrun --nproc_per_node=1 src/axbench/axbench/scripts/train.py \
+#     --config src/nla/configs/reft/qwen2.5-7b_l20_panel14.yaml
+#
+# Only the `generate:` and `train:` sections are used -- scripts/train.py reads
+# exactly those two (DatasetArgs(section="generate") for output_length/
+# keep_orig_axbench_format, TrainingArgs(section="train") for everything else).
+# We skip AxBench's own generate/inference/evaluate stages entirely: the
+# training text already exists (train_data.parquet), and evaluation is our own
+# experiments/reft_baseline_generate.py against the locked panel-14 held-out
+# prompts + strict lexicon scoring, not AxBench's LMJudgeEvaluator.
+generate:
+  output_length: 128
+  keep_orig_axbench_format: false
+
+train:
+  model_name: "Qwen/Qwen2.5-7B-Instruct"
+  layer: 20
+  component: "res"
+  seed: 42
+  use_bf16: true
+  # TrainingArgs reads output_length from *this* section, not generate: --
+  # the reference sweep configs omit it and rely on an orchestration layer
+  # that chains generate -> train with a shared --output_length CLI flag.
+  # We call train.py standalone, so it has to be set here directly.
+  output_length: 128
+  overwrite_data_dir: "src/axbench/axbench/concept500/panel14/generate"
+  dump_dir: "artifacts/rebuilt/qwen2.5-7b/reft_baseline_2026-08-15"
+  models:
+    LoReFT:
+      # Hyperparameters match axbench/sweep/wuzhengx/9b/l20/loreft.yaml except
+      # reft_layers: the paper default [12, 20, 31, 39] spans 4 layers, but
+      # every other panel-14 method (CAA, DiffMean, NLA AV-edit) is single-layer
+      # at our locked extraction layer (20) -- match that for a fair comparison
+      # rather than importing the paper's multi-layer default unchanged.
+      batch_size: 9
+      gradient_accumulation_steps: 4
+      n_epochs: 24
+      lr: 0.0004
+      weight_decay: 0.00
+      low_rank_dimension: 4
+      reft_layers: [20]
+      reft_positions: "f5+l5"
+      reft_type: "Loreft"
+      binarize_dataset: false
+      train_on_negative: false
+      exclude_bos: true

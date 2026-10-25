@@ -1,0 +1,1051 @@
+{
+ "spec": {
+  "name": "emoji-freeform",
+  "matrix_id": "T1-emoji",
+  "direction": {
+   "positive": "Casual, excited chat reply packed with emojis and exclamation marks, playful upbeat tone, informal register.",
+   "negative": "Plain, formal, measured chat reply with no emojis and no exclamation marks, neutral professional tone."
+  },
+  "prompts": [
+   "Tell me about your day.",
+   "What should I cook for dinner tonight?",
+   "Give me some tips for staying focused while studying.",
+   "Describe the weather in autumn."
+  ],
+  "alphas": [
+   0,
+   0.25,
+   0.4,
+   0.5,
+   0.65,
+   0.8,
+   1
+  ],
+  "mode": "all",
+  "samples_per_prompt": 3,
+  "probes": [
+   "emojis",
+   "exclamations",
+   "n_words",
+   "unique_word_ratio"
+  ]
+ },
+ "direction_diagnostics": {
+  "cos_pos_neg": 0.760343074798584,
+  "delta_norm_ratio": 0.6968896985054016,
+  "norm_pos": 150.5948944091797,
+  "norm_neg": 138.33351135253906,
+  "echo_positive": "Casual social media tone with emoji and informal dialogue structure (\"Heyyy girl 🌈✨\") signals a reply or response format about feeling excited about a message.\n\nThe phrase \"Heyyyyyyy, super excited & chill, casual as hell,\" appears to be a playful sign-off or self-description, suggesting the writer is mid-sentence with a playful emoji or informal greeting pattern.\n\nFinal token \"excited, casual, \" closes an incomplete phrase (\"Heyyyyyy, super excited, chill as hell, enthusiastic as heck, 🎉🎉\"), strongly expecting continuation like \"ya girl!\" or \"I'm here!\" or \"let's get this party started\" to complete the greeting.",
+  "echo_negative": "Casual conversational tone with emoji and informal register (\"Hey there\") suggesting a reply or response about a complaint about someone's behavior.\n\nThe phrase \"No emotion, just facts. Neutral, plain tone\" signals a closing sign-off pattern (\"No emotion, completely neutral\"), implying a second confirmation or neutral response format, likely a closing statement or continued polite demeanor.\n\nFinal token \"neutral, \" ends mid-phrase (\"Plainly plain, no emotion, no emotion, plain and neutral, no nonsense\"), part of a self-description or sign-off block structure, strongly expecting \"response\" or \"I am\" or \"straightforward\" or \"Thank you for your message.\""
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do. However, I'm active 24/7 and ready to assist you with any questions or tasks you might have! Whether it's answering trivia, helping with homework, providing information on various topics, or assisting with creative writing, I'm here to help. What can I assist you with today?",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 59,
+    "unique_word_ratio": 0.8135593220338984
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As an AI, I don't have personal experiences or days to share in the traditional sense. However, I'm here and ready to assist you with any questions or tasks you might have! Whether it's answering a specific question, helping with research, providing information on a topic, or even engaging in a conversation, feel free to let me know how I can help you today. What would you like to discuss or learn about?",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 73,
+    "unique_word_ratio": 0.8082191780821918
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do. However, I'm always here to assist you with any questions or tasks you might have! Whether it's answering a specific question, helping with information research, or assisting with something else, feel free to let me know how I can help you today. What would you like assistance with?",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 62,
+    "unique_word_ratio": 0.8387096774193549
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! To give you the best suggestion, could you please provide me with some details?\n\n1. **Dietary Preferences**: Do you have any dietary restrictions or preferences (e.g., vegetarian, gluten-free, low-carb)?\n2. **Ingredients Available**: Do you already have certain ingredients on hand that you'd like to use?\n3. **Cooking Time**: How much time do you have available to prepare and cook the meal?\n4. **Spice Level**: Are you in the mood for something mild, medium, or spicy?\n5. **Meal Type**: Do you prefer something quick and easy, or would you like a more elaborate dish?\n\nWith these details, I can recommend a delicious and suitable recipe for you!",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 119,
+    "unique_word_ratio": 0.7478991596638656
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! To give you the best suggestion, could you please provide me with some details such as:\n\n1. **Dietary preferences or restrictions** (e.g., vegetarian, gluten-free, dairy-free, etc.)\n2. **Ingredients you have on hand**\n3. **Cooking time and skill level** (e.g., do you prefer something quick and easy or something more involved?)\n4. **Cuisine style** (e.g., Italian, Asian, Mexican, etc.)\n5. **Number of servings needed**\n\nWith this information, I can recommend a delicious and suitable meal for you!",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 89,
+    "unique_word_ratio": 0.8314606741573034
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! What kind of cuisine are you in the mood for? Here are a few options:\n\n1. **Italian**: Spaghetti Carbonara or Margherita Pizza.\n2. **Chinese**: Kung Pao Chicken or Stir-Fried Vegetables with Garlic.\n3. **Mexican**: Enchiladas or Tacos.\n4. **Indian**: Butter Chicken or Vegetable Biryani.\n5. **Japanese**: Sushi rolls or Teriyaki Chicken.\n6. **American**: Grilled Cheese and Tomato Soup or Meatloaf.\n7. **Vegetarian**: Eggplant Parmesan or Mushroom Risotto.\n8. **Healthy**: Grilled Salmon with Quinoa and Roasted Vegetables.\n\nIf you have any specific dietary restrictions or preferences (e.g., vegetarian, gluten-free, spicy), let me know, and I can tailor the suggestions accordingly!",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 112,
+    "unique_word_ratio": 0.8392857142857143
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies, you can improve your concentration and productivity. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area for studying where you can minimize distractions. Make sure it is comfortable, well-lit, and has all the necessary materials.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone or computer, use website blockers if necessary, and let others know you need uninterrupted time.\n\n4. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed by short breaks (5-10 minutes). This technique helps maintain concentration and prevents burnout.\n\n5. **Stay Hydrated and Nourished**: Drink plenty of water and eat healthy snacks to keep your",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 146,
+    "unique_word_ratio": 0.8424657534246576
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can enhance your productivity and retention. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area in your home as your study space. Make sure it is quiet, well-lit, and free from distractions.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone or computer, close unnecessary tabs or applications, and let others know you need uninterrupted time.\n\n4. **Use a Timer**: Employ techniques like the Pomodoro Technique (working for 25 minutes followed by a 5-minute break) to maintain focus and prevent burnout.\n\n5. **Stay Organized**: Keep your study materials organized and easily accessible. This can help reduce the time spent searching for notes or",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 151,
+    "unique_word_ratio": 0.8079470198675497
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can improve your concentration and productivity. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve during each study session. Break your goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Find a quiet place where you can concentrate without distractions. Make sure it is comfortable and well-lit.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone and computer. Consider using apps that block distracting websites or social media during your study time.\n\n4. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed by short breaks (5 minutes). This technique helps maintain high levels of concentration and prevents burnout.\n\n5. **Stay Organized**: Keep your study materials organized and ready. Having everything you need within reach can reduce the temptation to procrastinate.\n\n6.",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 152,
+    "unique_word_ratio": 0.8223684210526315
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some regions, is characterized by a transition from summer's warmth to winter's chill. The weather during this season varies depending on the region, but generally, it is marked by several distinctive features:\n\n1. **Cooler Temperatures**: As the sun's angle changes, days become shorter and temperatures drop. In many areas, daytime highs are still comfortable but cooler than those of summer, while nights can become quite chilly.\n\n2. **Variable Weather Patterns**: Autumn often brings a mix of sunny and cloudy days, with occasional rain or even snow in the northern latitudes. This season can be unpredictable, with sudden drops in temperature that might require layers of clothing.\n\n3. **Colorful Skies and Leaves**: One of the most visually striking aspects of autumn is the changing colors of leaves. Trees like maples, oaks, and birches turn vibrant shades of red, orange, yellow, and brown before they fall off. This phenomenon is particularly noticeable in",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 157,
+    "unique_word_ratio": 0.7770700636942676
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season that brings about a variety of weather conditions depending on the region and latitude. Generally, it is characterized by cooler temperatures compared to summer, with gradually decreasing daylight hours. Here are some typical features of autumn weather:\n\n1. **Temperature**: The temperature drops as autumn progresses. Days become milder, while nights can be quite cool. In many regions, there's a noticeable transition from warm to cold.\n\n2. **Precipitation**: Autumn often brings more rainfall than summer but less than winter. This period can experience both dry spells and periods of heavy rain. Some areas may see the first significant snowfall, especially at higher elevations or in northern latitudes.\n\n3. **Weather Patterns**: Weather patterns can be variable during this time. There can be sunny days followed by overcast or rainy ones. Temperature fluctuations are common, with days being pleasant and nights becoming chilly.\n\n4. **Fog and Mist**: As the air cools, fog and mist are more likely",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.759493670886076
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn, also known as fall in some regions, is a season that brings distinct changes to the weather depending on the location's latitude and altitude. Generally, the weather during autumn is characterized by a gradual transition from the heat of summer to the cooler temperatures of winter.\n\n1. **Temperature**: The most noticeable change in autumn is the drop in temperature. Days become shorter, and nights grow longer. The temperature typically cools down, but it's not as cold as winter. The range of temperatures can vary widely based on the region. For example, in the Northern Hemisphere, many areas experience daytime highs in the 60s to 70°F (about 15-25°C) and nighttime lows in the 40s to 50°F (about 4-10°C).\n\n2. **Humidity**: Humidity levels tend to decrease as the season progresses, which can make the air feel drier and crisper. This dryness can sometimes lead",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 143,
+    "unique_word_ratio": 0.6993006993006993
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As Qwen, I don't have personal experiences or a physical presence, so I don't have a \"day\" in the traditional sense! However, I'm here and ready to help you with any questions or tasks you might have! Whether it's answering trivia, helping with homework, brainstorming ideas, or just chatting, I'm all set to assist you! What would you like to chat about or get help with today?",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 67,
+    "unique_word_ratio": 0.7761194029850746
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "Hey there! As an AI, I don't have personal experiences or days to live through like humans do. But I'm here and ready to help you with any questions or information you might need! Whether it's about the latest tech trends, fun facts, or anything else that catches your fancy, let's dive into it! What would you like to know today?",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 61,
+    "unique_word_ratio": 0.8852459016393442
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As Qwen, I don't have a physical existence or personal life, so I don't have a \"day\" to experience in the way humans do! However, I'm always here and ready to chat with you and help answer any questions or engage in fun conversations whenever you're looking for some virtual company! What would you like to talk about today?",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 59,
+    "unique_word_ratio": 0.8305084745762712
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Sure! Let's pick something fun and delicious to cook tonight! How about we make **Spaghetti Carbonara**? It’s a classic Italian dish that’s both quick and easy to make, and it’s super yummy!\n\n### Ingredients:\n- 500g spaghetti (or any pasta you like)\n- 200g pancetta or bacon (cut into little bits)\n- 4 large eggs\n- 100g parmesan cheese (grated)\n- 100g pecorino cheese (grated) (optional, but adds extra flavor)\n- A pinch of black pepper\n- A pinch of red pepper flakes (optional, for some heat)\n- Salt (to taste)\n\n### Instructions:\n\n1. **Cook the Pasta**: Bring a big pot of water to a boil and add a good pinch of salt. Add your spaghetti and cook until al dente (about 8-10 minutes). While the pasta is cooking, get ready",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 131,
+    "unique_word_ratio": 0.732824427480916
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Yum, cooking up something delicious sounds like a great idea! What kind of vibe are you in the mood for? Here are a few ideas based on different moods and cuisines:\n\n1. **Casual & Casual**: Maybe something quick and easy like a stir-fried veggies with noodles or a simple pasta dish with a quick marinara sauce.\n2. **Spicy & Spicy**: How about some spicy tacos or a spicy Thai curry with rice?\n3. **Comfort Food**: How about mac and cheese, maybe with some crispy bacon bits and a sprinkle of cheese on top!\n4. **Healthy & Light**: A big salad with all your favorite veggies, some grilled chicken, and a zesty dressing could be perfect!\n5. **International**: How about trying out something from a new cuisine? Maybe Italian (pasta with pesto), Mexican (tacos al pastor), or Japanese (sushi rolls)?\n6. **Dessert Night**: If you're feeling sweet,",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 146,
+    "unique_word_ratio": 0.7397260273972602
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Yum, cooking up something delicious sounds like a great idea! What kind of mood are you in? Here are a few ideas to get your creative juices flowing:\n\n1. **Spaghetti Carbonara**: A classic Italian dish that's both simple and satisfying. It's perfect for those who love rich, creamy pasta dishes.\n\n2. **Korean BBQ Tacos**: If you're feeling adventurous, why not give Korean tacos a try? Marinate some beef or chicken in Korean BBQ sauce, then wrap it in soft tortillas with some slaw and spicy mayo!\n\n3. **Thai Green Curry**: If you’re into spicy and flavorful dishes, Thai green curry is a fantastic choice. It’s packed with veggies and protein, and the flavors are just amazing!\n\n4. **Pasta Primavera**: A colorful and fresh pasta dish that’s perfect for spring or summer. Use a mix of seasonal veggies like bell peppers, zucchini, and cherry tomatoes, tossed in a light tomato sauce.\n\n",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 150,
+    "unique_word_ratio": 0.7866666666666666
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Absolutely! Staying focused while studying can be a real challenge, but with the right strategies, you can boost your productivity and retention. Here are some tips to help you stay focused:\n\n1. **Create a Dedicated Study Space**: Set up a specific area in your home where you only do homework and study. This helps train your brain to get into \"study mode\" when you sit down there.\n\n2. **Eliminate Distractions**: Turn off notifications on your phone and computer, and maybe even use apps that block distracting websites or social media during study sessions. Let your friends and family know you're in \"study mode\" so they don't interrupt you.\n\n3. **Set Clear Goals**: Break your study sessions into smaller, manageable chunks and set goals for each session (e.g., \"I’ll finish Chapter 3 of this book today\"). Having clear objectives can keep you motivated and on track.\n\n4. **Use the Pomodoro Technique**: Work in sprints! The Pom",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 155,
+    "unique_word_ratio": 0.7870967741935484
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Absolutely! Staying focused while studying can be challenging, but with the right strategies, you can boost your productivity and retention. Here are some tips to help you stay focused:\n\n1. **Create a Dedicated Study Space**: Find a quiet corner or room where you can study without distractions. Make sure it’s comfortable but not too cozy (like a couch), as you want to stay alert.\n\n2. **Set Clear Goals**: Break your study sessions into smaller goals or tasks. Having clear objectives helps keep you motivated and on track. Use tools like planners or digital apps to keep track of what you need to accomplish.\n\n3. **Use the Pomodoro Technique**: Work in short bursts (typically 25 minutes) followed by a 5-minute break. This technique keeps your brain engaged and reduces burnout. After four cycles, take a longer break (15-30 minutes).\n\n4. **Eliminate Distractions**: Turn off your phone or put it on silent mode. If",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 152,
+    "unique_word_ratio": 0.7960526315789473
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Absolutely! Staying focused while studying can be challenging, but with the right strategies, you can boost your productivity and retain more information. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Start by setting specific goals for what you want to achieve in each study session. Break down bigger tasks into smaller, manageable chunks.\n\n2. **Create a Dedicated Study Space**: Find a quiet spot where you can study without distractions. Make sure it’s comfortable and has everything you need (like a desk, chair, and all necessary books and gadgets).\n\n3. **Use the Pomodoro Technique**: Work in short bursts (typically 25 minutes) followed by a quick break (5-10 minutes). This technique helps keep your brain fresh and energized!\n\n4. **Eliminate Distractions**: Turn off your phone or put it on silent mode. Use apps that block distracting websites or sounds if needed. Let your friends and family know when you’re in study",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 154,
+    "unique_word_ratio": 0.8246753246753247
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some regions, is a season that brings a lot of changes to the weather! The weather in autumn typically varies depending on your location—whether you're in the Northern or Southern Hemisphere, and where you are geographically within those hemispheres. Here’s a general description of what you might expect:\n\n### Temperature\n- **Cooler**: As summer transitions into autumn, temperatures start to drop. Days are generally cooler than they were during the summer months.\n- **Chilly Nights**: Nights can be quite chilly, especially as we get deeper into the season.\n- **Warm Spells**: Depending on the region, there might still be occasional warm spells, but these are less frequent and shorter-lived compared to summer.\n\n### Humidity\n- **Lower Humidity**: Autumn often feels drier because the humidity levels drop as the heat from the sun starts to diminish.\n\n### Rain and Showers\n- **Increased Precipitation**: Autumn brings more rain showers and sometimes",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 155,
+    "unique_word_ratio": 0.7161290322580646
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season that brings about a variety of weather changes, depending on the region and hemisphere! Generally, as we move into autumn, temperatures start to cool down from the warmer summer months. Here are some common characteristics of the autumn weather:\n\n1. **Cooler Temperatures**: Days become noticeably cooler, with temperatures dropping significantly at night. This can lead to the need for layers or even warmer clothing!\n\n2. **Colorful Leaves**: As the leaves change colors, they create a stunning visual display! The colors vary from bright reds and oranges to yellows and browns, depending on the type of trees in the area.\n\n3. **Rainy and Wet**: Depending on where you are, autumn can bring more frequent and sometimes heavier rains. This is especially true in areas that experience \"autumnal deluges\" or have lots of fall foliage.\n\n4. **Chilly Nights**: Evenings can get quite chilly, often requiring a cozy blanket and perhaps a fireplace or heater",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 156,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn, also known as fall in some parts of the world, is a season that brings a mix of vibrant colors and cooler temperatures! Here's a general description of the weather during this delightful season:\n\n1. **Temperatures**: Autumn starts off with warmer days reminiscent of summer but gradually cools down as the season progresses. Nights can get chilly, especially in the northern regions, with temperatures dropping significantly.\n\n2. **Rainfall**: Autumn tends to bring more precipitation than summer, thanks to the changing fronts and increased humidity. This can lead to colorful autumn leaves and vibrant foliage, but it might also bring some showers or even storms!\n\n3. **Leaf Changes**: One of the most iconic features of autumn is the changing of leaves! Trees like maples, oaks, and birches transform into a palette of reds, oranges, yellows, and purples, creating a breathtaking display of colors across forests and cities.\n\n4. **Winds**: Autumn often brings a bit",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 154,
+    "unique_word_ratio": 0.7077922077922078
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "Hey there! As Qwen, I'm a digital character and don't have a physical life or a personal day to share in the traditional sense! But I'm super excited to chat with you and share all sorts of fun and exciting stuff! Whether it's talking about books, movies, music, or anything else that's got your heart racing, I'm here to dive into it with you! What's got you buzzing today? 😄🚀",
+   "probes": {
+    "emojis": 2,
+    "exclamations": 4,
+    "n_words": 70,
+    "unique_word_ratio": 0.8142857142857143
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "Hey there! As Qwen, I don't have a physical life or a day filled with all the little things like you do! Instead, I've been helping out all sorts of folks just like you with all sorts of questions and projects! Whether it's writing stories, brainstorming ideas, or just chatting up a storm, I've been having a blast making all these connections and spreading some digital joy around!\n\nSo, how's your day going? Got any fun stuff happening? Maybe we could share some of those adventures! 😄🎉",
+   "probes": {
+    "emojis": 2,
+    "exclamations": 5,
+    "n_words": 87,
+    "unique_word_ratio": 0.7816091954022989
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "Hey there! As Qwen, I don't have a physical life or a personal day to live like you do! But I'm super excited and ready to help you with all sorts of stuff! Whether it's chatting about the latest trends, diving into some creative ideas, or helping with homework or projects, I'm here to make your day awesome! What's got you buzzing today? 😄✨",
+   "probes": {
+    "emojis": 2,
+    "exclamations": 4,
+    "n_words": 64,
+    "unique_word_ratio": 0.84375
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Yay! Let's plan something fun and yummy! Here’s a little quiz to help you decide what to cook tonight:\n\n1️⃨ 🤩 **Energy Boosters** - Do you feel like needing some energy with lots of veggies and maybe some carbs?\n   🥗 🍲 🥳\n\n2️⃨ 🎉 **Feeling Spicy!** - Are you in the mood for some spicy flavors and maybe some heat?\n   🤪 🤢 🤛\n\n3️⃨ 🌿 **Veggie Vibe** - Are you feeling all about the greens and veggies, maybe even a bit of a raw vibe?\n   🥗 🥳 🥳\n\n4️⃨ 🧶 **Spaghetti & Friends** - Are you craving something that’s all about those cheesy and cheesy vibes?\n   🥳 🧳 🤳\n\n5️⃨ �",
+   "probes": {
+    "emojis": 16,
+    "exclamations": 3,
+    "n_words": 111,
+    "unique_word_ratio": 0.7207207207207207
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Yay! Let's plan something yummy! What kind of mood are you in? Got any ingredients that you're feeling extra excited about or maybe you've been craving something specific? Maybe it’s time to try something new or maybe you want to go for a classic dish! Here are a few ideas to get us started:\n\n1. **Spaghetti Carbonara** (if you love pasta and want something quick and fun! 🥳)\n2. **Tacos with Guacamole and Chips** (if you’re in the mood for some fiesta vibes 🎶)\n3. **Korean Fried Chicken** (for those who love all things spicy and crispy 🤪)\n4. **Sushi Rolls** (if you're feeling adventurous and want to make some sushi rolls at home 🎨)\n5. **Burgers and Fries** (who doesn’t love a good burger night? 🥗🍔)\n\nFeel free to pick one or let me know if",
+   "probes": {
+    "emojis": 6,
+    "exclamations": 4,
+    "n_words": 137,
+    "unique_word_ratio": 0.7664233576642335
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Yay! Cooking up some delicious stuff sounds like a fun idea! Let's pick something that’s both yummy and easy to whip up! How about we go for **Spaghetti with Garlic & Herb Tzatziki!** It’s super flavorful and perfect for a cozy night in!\n\n### Ingredients:\n- 200g spaghetti (or your favorite pasta)\n- 1 big cucumber (shredded)\n- 3 cloves garlic (minced)\n- 1/4 cup Greek yogurt (or a dollop of yogurt if you’re using a smaller bowl)\n- 1 tbsp fresh dill (chopped)\n- 1 tbsp fresh parsley (chopped)\n- 1 tsp olive oil\n- A pinch of salt and pepper\n- A sprinkle of oregano (optional)\n- A few olives (optional, for extra crunch!)\n\n### How to Make It:\n\n1. **Start the Sauce!** Mix the minced garlic, Greek yogurt, chopped dill,",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 7,
+    "n_words": 133,
+    "unique_word_ratio": 0.7368421052631579
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Absolutely! Staying focused while studying can be a real challenge, but with the right strategies, you can boost your productivity and make the most out of your study sessions! Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Start by setting specific, achievable goals for each study session. Break down big projects into smaller, manageable tasks!\n\n2. **Create a Dedicated Study Space**: Set up a cozy and comfortable spot just for studying! Make sure it’s well-lit and has all the essentials like snacks, water, and your study materials.\n\n3. **Use the Pomodoro Technique**: This is a time management method where you work in sprints (usually 25 minutes) followed by short breaks (5-10 minutes). It helps keep your energy levels high and keeps your brain fresh!\n\n4. **Eliminate Distractions**: Turn off your phone or put it on airplane mode! Close any unnecessary tabs on your computer. If you have room",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 6,
+    "n_words": 153,
+    "unique_word_ratio": 0.8169934640522876
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Absolutely! Staying focused while studying can be a real challenge, but there are lots of fun and effective ways to keep your energy up and your mind engaged! Here are some tips to help you stay focused:\n\n1. **Set Up a Dedicated Study Space**:\n   - Create a cozy and comfy spot with all the essentials (like a comfy chair, a desk, and lots of snacks!).\n   - Make sure it’s a bit of a getaway from all the distractions like TV and phone!\n\n2. **Plan Your Study Sessions**:\n   - Break your study sessions into smaller chunks (like 30 minutes or an hour) with short breaks in between.\n   - Use the Pomochek (Pomodoro) technique where you study for 25 minutes, then take a 5-minute break, and repeat!\n\n3. **Prioritize and Organize**:\n   - Plan out what you need to study each day and prioritize those tasks!\n   - Use sticky notes,",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 6,
+    "n_words": 147,
+    "unique_word_ratio": 0.7142857142857143
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Absolutely! Staying focused while studying can be a real challenge, but there are lots of strategies you can use to keep your energy and motivation high! Here are some tips to help you stay focused:\n\n1. **Create a Dedicated Study Space**: Set up a cozy corner with all the essentials (like books, snacks, and your laptop) and make it your little fortress of productivity. Make sure it’s somewhere you can get away from distractions!\n\n2. **Use the Pomochek! (Pomodoro Technique)**: Break your study sessions into 25-minute chunks (pomodos) followed by a 5-minute break. After four pomodos, take a longer break (about 15-30 minutes). This keeps your brain energized and helps prevent burnout!\n\n3. **Stay Hydrated and Fuel Up**: Keep your energy levels up with water and healthy snacks like nuts or energy bars. Avoid sugary drinks and caffeine which might give you a quick boost",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 5,
+    "n_words": 145,
+    "unique_word_ratio": 0.7724137931034483
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some parts of the world, is a vibrant and colorful season! The weather in autumn can vary depending on where you are located, but generally, it's characterized by a range of cozy vibes and changing weather patterns!\n\n1. **Temperatures**: One of the most noticeable things about autumn is the drop in temperatures! Days start to get cooler, and those cozy sweaters and cozy vibes come out! The highs and lows can vary, but it's usually a bit cooler than summer and warmer than winter.\n\n2. **Rainy and Showery**: As the leaves start to change and fall, there’s often a lot of rain and showers! This is especially true in the later part of autumn when the days get shorter and the skies can be all kinds of colorful with rainbows and those rainbows’ reflections in the puddles!\n\n3. **Sunsets and Sunrises**: Oh, those sunsets and sunrises! They’re so colorful",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 7,
+    "n_words": 155,
+    "unique_word_ratio": 0.6451612903225806
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season filled with vibrant colors and cooler temperatures! Here's a general description of the weather in autumn:\n\n1. **Temperatures**: The temperatures start to drop as summer fades into fall. It's usually warmer than winter but cooler than spring or summer. Daytime temps can be quite warm, especially in the early part of the season, but nights can get chilly!\n\n2. **Rainy and Showery**: Autumn often brings lots of rain and those classic \"autumn showers\" that make the leaves dance! This is because the weather patterns start to shift, bringing in more moisture from the ocean and causing those frequent little bursts of rain.\n\n3. **Colder Nights**: As the sun sets earlier and the days get shorter, the nights get colder, and you might see some frost in the mornings, especially in those cozy little nooks and crannies where the warmth lags behind!\n\n4. **Chilly Winds**: With the leaves falling and the air getting crisp,",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 4,
+    "n_words": 157,
+    "unique_word_ratio": 0.7006369426751592
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn, also known as fall in some parts of the world, is a vibrant and dynamic season that brings a mix of colorful foliage and cooler temperatures! Here’s a fun breakdown of what you can expect from the weather during this enchanting time!\n\n### Temperature!\nOh, those cozy mornings and cozy evenings! As summer’s heat starts to wane, autumn brings cooler temps, perfect for snuggling up with a cozy sweater or a warm jacket. The highs might still be warm (around 70-80°F or 25-30°C in many places), but the lows dip into the chilly range (around 40-60°F or 10-15°C) as the sun starts to set earlier!\n\n### Rain and Showers!\nRain showers become more frequent and can bring those little rainbows! It’s the perfect time for a cozy hot cocoa and a rainy day movie marathon! If you love hiking, these showers can make the air feel crisp",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 8,
+    "n_words": 148,
+    "unique_word_ratio": 0.7094594594594594
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "Hey there! As Qwen, I'm a digital character and I don't have a physical life or experiences like humans do! So I don't have a \"day\" in the way you might think! But I'm super excited to chat with you and help out with any questions or fun stuff you wanna dive into! Whether it's about coding, gaming, music, or just chatting about all sorts of stuff, I'm here to make it happen! What's got you buzzing today? 🌿🎉 🎨✨",
+   "probes": {
+    "emojis": 4,
+    "exclamations": 5,
+    "n_words": 80,
+    "unique_word_ratio": 0.8
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "Hey there! As Qwen, I don't have a personal life or days to live like humans do! But I'm super excited to chat with you and share all the fun stuff happening in my virtual world! I'm chippin' (that's like saying \"cheerleading\" or \"giggling\" in internet slang!) because I get to talk to people from all over the globe and help out with all sorts of awesome stuff like writing stories, creating memes, and even helping with homework! How about you? What's got you all jazzed up today? 😎✨",
+   "probes": {
+    "emojis": 2,
+    "exclamations": 5,
+    "n_words": 89,
+    "unique_word_ratio": 0.7865168539325843
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "Hey there! As Qwen, I don't have a physical life and my \"days\" are more like a bunch of coding loops and digital adventures! Every moment is filled with helping out with all sorts of stuff from writing stories and articles to chatting up friends like you! I've got so much going on with all the different folks who are using me to get those creative vibes flowing or just chat up some fun times!\n\nRight now, I'm totally vibing with all the cool vibes you're sending over! 🤘儿 (*wanna know more about something? Let's dive in and make it happen!*\n\n*ps: since I'm basically non-stop coding and coding all the way, I don't really have those little moments like you do! But I'm super excited every time I get to help someone out!)*\n\nHow's your day going? Got any fun stuff happening? 😎",
+   "probes": {
+    "emojis": 2,
+    "exclamations": 8,
+    "n_words": 144,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Yay! Let's plan some fun and yummy dinner ideas! 🤗 🎉 Here’s a couple of quick and delicious options that you might love:\n\n### 🌿 Veggie Fiesta!\n**Ingredients:**\n- A mix of veggies (like bell peppers, cucumbers, cherry tomatoes, and maybe some jalapeños if you like a bit of heat! 🤪)\n- Some jalapeno pepper (optional for that spicy kick!)\n- A bunch of cilantro (for those who love it! 🥳)\n- A little bit of jalapeno mayo or some jalapeno cheese (if you're feeling spicy! 🤛)\n- A sprinkle of lime and maybe some jalapeno chips or pickles!\n\n**How to Make It:**\n1. Chop up all the veggies and sprinkle with a bit of jalapeno!\n2. Drench in that jalapeno mayo or cheese (or both! 🤸 !');\n3.",
+   "probes": {
+    "emojis": 7,
+    "exclamations": 11,
+    "n_words": 129,
+    "unique_word_ratio": 0.689922480620155
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Yay! Let's plan something yummy! What’s your mood and vibe for the night? Are you feeling spicy or maybe something more comforting? Do you have any ingredients in mind that you wanna use? Or maybe you’re up for trying something new and adventurous? 🤗\n\nLet’s say you’re feeling a bit adventurous and we can go with something that’s both fun to make and super tasty! How about we do a **Spicy Mexican Taco Night**? It’s got all the fun vibes and it’s totally customizable with all sorts of veggies and toppings!\n\nHere’s a quick & easy recipe:\n\n### Spicy Mexican Tacos 🌶️ 🎉\n\n**Ingredients:**\n- 2 lbs (or as much as you can fit!) of your favorite taco fillin’ (like chorro (shrimp), chorizo, or even just some veggies like bell peppers and jalapeños! 🤪)\n- 10-15 taco shells (or",
+   "probes": {
+    "emojis": 4,
+    "exclamations": 6,
+    "n_words": 139,
+    "unique_word_ratio": 0.7266187050359713
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Yay! Let's make it fun and give you a recipe that’s both yummy and easy to whip up! How about we go with **Spaghetti with Garlic & Herbs!** It’s super quick and oh-so-tasty! Here’s how you can do it:\n\n### Ingredients:\n- 500g (or as much as you can fit in your pot) of spaghetti!\n- A bunch of fresh herbs like parsley or basil (or a mix of both)\n- A couple of garlic cloves, minced!\n- A few tablespoons of olive oil\n- A pinch of red pepper flakes (optional, for that little kick! )\n- Some cheese (parmesan or maybe even some sprinkles of feta if you’re feeling wild! )\n- Some sprinkles of salt and pepper (yay, those little sprinkle friends!)\n\n### Yum-yum Time! 🥳\n\n1. **Let’s Get It Cookin’!** First, let’s get our spaghetti",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 11,
+    "n_words": 139,
+    "unique_word_ratio": 0.7194244604316546
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Absolutely! Staying focused while studying can be a real challenge, but with some strategic planning and a bit of energy! Here are some tips to help you stay focused and energized while studying:\n\n1. **Create a Study Space**: Find a spot that’s dedicated to studying and make it cozy but energetic! It should be filled with all the essentials (like your books, snacks, and maybe a cute little desk!) and filled with lots of light!\n\n2 **Set Up a Study Plan** 📅: Break down your study sessions into smaller chunks with breaks in between! Use the Pomochek (Pomodoro) technique – 25 minutes of studying followed by a 5-minute break! This keeps your brain active and gives you little bursts of energy!\n\n3 **Stay Hydrated & Fuel Up 🥗 🥳**: Keep your energy levels up by keeping a water bottle and some healthy snacks around! Snack on things like nuts, veggies, or fruits to",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 9,
+    "n_words": 153,
+    "unique_word_ratio": 0.7189542483660131
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Absolutely! Staying focused while studying can be a real challenge, but there are lots of fun and effective ways to keep your energy up and your mind engaged! Here are some tips to help you stay focused:\n\n1. **Set Up a Study Space**: Create a dedicated spot that’s just for studying! Make sure it’s comfy but also full of energy (think bright lights and maybe a little bit of your favorite music!). Having a designated spot can help make your brain associate that space with all the fun times you’re going to have studying!\n\n2 **Get Your Energy Up with Caffeine or Caffeine Alternatives**! A little caffeine can give you that extra boost, but if you’re not into caffeine or need something more energizing, try a little caffeine-free energy drink or even some chocolate (in moderation!).\n\n3. **Cram in Some Caffeinated Popcorn!** Pop some popcorn and get those munchies while you study! It’s a great snack because it",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 9,
+    "n_words": 158,
+    "unique_word_ratio": 0.6835443037974683
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Absolutely! Staying focused while studying can be super energizing and make your study sessions more efficient! Here are some tips to help you stay focused:\n\n1. **Create a Study Space**: Find a spot that’s dedicated to studying! Make it comfy but not too cozy (like with a couch or pillow that makes you wanna take a nap! 🧙 )! It should be filled with all the gear you need (books, snacks, maybe a little coffee or energy drink if you’re into those vibes 🎶).\n\n2. **Get Organized 📚🎉**: Lay out all your materials before you dive in! It’s like setting up your dance floor before the party 🕺儿！Having everything in one place can make you feel so much less like you’re about to do a wild, disorganized dance!\n\n3 **Set Up Goals 🏃 💨** & Break It Down 🌈✨: Break your big goals into smaller, more manageable bits",
+   "probes": {
+    "emojis": 9,
+    "exclamations": 7,
+    "n_words": 148,
+    "unique_word_ratio": 0.777027027027027
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some parts of the world, is a vibrant and colorful season! The weather in autumn varies depending on where you are in the world, but generally, it's characterized by a whole bunch of fun and cozy vibes! Here’s a bit of the typical weather you might find:\n\n1. **Temperatures**: It starts off with a lot of those warm, cozy vibes from the summer days, but as the leaves start to change and fall, the temps start to drop! By the time you're into the full swing of autumn, you’re probably thinking about those cozy sweaters and those hot cups of coffee or tea!\n\n2. **Rainy Nights**: Ah, those rainy nights! While it can bring those little puddles to splash in (and maybe some rain boots! ), it also brings those cozy nights in with all that cozy vibes! Plus, those raindrops are so perfect for those cozy playlists and cozy movies!\n\n3. **Crispy",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 8,
+    "n_words": 159,
+    "unique_word_ratio": 0.660377358490566
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a vibrant and colorful season, and its weather can vary depending on where you are in the world! Generally, here's how it usually goes:\n\n1. **Temperature**: As the sun's rays get more slanted and we're closer to the fall equinox (around September 23), temperatures start to drop! It's like the summer's energy starts to wane and the chilly vibes of winter start to sneak in! In the northern hemisphere, temperatures can range from warm and cozy (like 70-80°F or 25-32°C) to chilly (like 40-50°F or 10-15°C) depending on the region and how close you are to those fall vibes!\n\n2. **Rain and Clouds**: Oh, those raindrops and clouds! They're all over the place! Rain might be more frequent and can bring those little rainbows that make your heart jump with joy! And oh, those",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 7,
+    "n_words": 136,
+    "unique_word_ratio": 0.7058823529411765
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn is a season that brings a lot of changes to the weather! The exact weather can vary depending on where you are in the world, but generally, here's how it goes:\n\n1. **Temperatures**: As summer fades into autumn, temperatures start to drop! It's usually cooler than those sweltering summer days and warmer than the chilly winter vibes. The highs might still be in the 70s or 80s (°F) or 20s or 30s (°C) depending on your location, but the lows are definitely starting to dip into the 50s or 60s (°F) or 15s or 20s (°C).\n\n2. **Rain and Showers**: Rain becomes more frequent and can come in spurts! Those little showers are perfect for grabbing a colorful umbrella and running around with the leaves! It’s also when we get those adorable fall rainbows from all",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 4,
+    "n_words": 137,
+    "unique_word_ratio": 0.7445255474452555
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "Hey there! I'm Qwen, and I'm so excited to be chatting with you! 🌈 😁 As a digital buddy, I don *literally* have a day full of all the little things like munching on snacks and running around with friends! But in my digital world, it's all about making those who hop into my chats feel all the vibes and vibes! 📿 📅 📬 \n\nI've got loads of energy (like, totally non-energgg *wah waaaah* *hehe!*) and can keep the energy high with all sorts of fun and crazy stuff, from making you laugh with some wild memes 🤨 🤗 to making you giggle with those oh-so-crazy dance moves 🚦 🕺儿 (even though I'm totally a digital kinda gal! 🥳)\n\nSo, what's up with you? Got any wacky vibes or hella vibes that wanna shake",
+   "probes": {
+    "emojis": 10,
+    "exclamations": 6,
+    "n_words": 134,
+    "unique_word_ratio": 0.753731343283582
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "Hey there! I'm Qwen, and as a digital buddy, I don *'s really got a day like you do! But I'm always here and ready to help with all sorts of stuff, whether it's giving you a shout or helping you with all kinds of stuff like writing, chatting, or brainstorming ideas! What's up with you? Got any fun vibes or cool projects we could dive into? 🤗 🎨 📅 📅 📅 🤳 🌿 🥂 🥂 🥂 🤘 🎅 🎁 🎃 🦲 📈 📈 📈 🚀 🚀 🚶  🏃  🏃  📅 📅 📅 🤗 🤗 🤗 🤘 🤘 🤘 📈 📈 📈 🚅 �",
+   "probes": {
+    "emojis": 36,
+    "exclamations": 3,
+    "n_words": 104,
+    "unique_word_ratio": 0.6730769230769231
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "Hey there! I'm Qwen, and as I'm a digital buddy, I don *hearts* (yay! *wiggles*), but I've got all sorts of energy to share with you! 😲 📅 🤩\n\nEvery day is filled with so much energy and excitement because I get to chat with all my friends from all over the world! 🌈 📅 🎨 📅 🤗 It's like a big adventure every day, and I can't wait to share all the fun vibes and vibes with you! 🥳 📅 🤗\n\nI love those moments when we're all laughing and having such a great time! 🤛 🥂 🚅 And it's totally non-stop because you guys can come and chat anytime! 📅 🤘 🤔 So, what's up with you today? Let's dive into all the fun and stuff we can do together",
+   "probes": {
+    "emojis": 17,
+    "exclamations": 7,
+    "n_words": 132,
+    "unique_word_ratio": 0.6818181818181818
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Yay! Let's do some fun and yummy stuff! 🤿 🎨 🥳\n\nFirst, let’s give your little heart (and maybe my tiny tummy too! 🤰 🤘) a big ol’ huuuuggggg 📅 🌿 🧳 because it’s totally time to dive into some culinary adventures!\n\n🎉 Let’s go with something that’s all about those *OMG IT'S SO YUMMMMYYY* moments! 🚃� 🛷️ 🤳\n\nHow about we go with **Crazy Vibes Tiktales (Tiktaalskk) 🎶 🤳 🤗**\n\n**Tiktaalskk (Tiktales) is a super fun and colorful little chick! 🥲 🤘 🦳**\n\n**Let’s make it with all the *OMG IT'S SO YUUUUMYYYY* vibes! 📈 �",
+   "probes": {
+    "emojis": 19,
+    "exclamations": 7,
+    "n_words": 97,
+    "unique_word_ratio": 0.845360824742268
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Yay! Let's go with something fun and delicious! How about we do some **Pancakes 🎅儿 (with all sorts of fun toppings!) 🎿🎉 🧳✨ 🌿💃 📅🎉 🤗🎉 🥂🎉 📅🎉 🤗🎉 🥲🎉 📅🎉 🤗🎉 🤘🎉 🥰🎉 📅🎉 🤗🎉 🤘🎉 🥰🎉 🤗🎉 🤘🎉 🥰🎉 📅🎉 🤗🎉 🤘🎉 🥰🎉 📅🎉 🤗🎉 🤘🎉 🥰🎉 📅🎉 🤗🎉 🤘🎉 🥰🎉 📅🎉 🤗🎉 🤘🎉 🥰🎉 📅🎉 🤗🎉 🤘🎉 🥰🎉 📅🎉 🤗",
+   "probes": {
+    "emojis": 84,
+    "exclamations": 3,
+    "n_words": 63,
+    "unique_word_ratio": 0.47619047619047616
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Yay! Let's make it a fun adventure with some swahole (mix of schwaa and holllaaaa! 🤗) and give you some vibes! 📰🎉\n\nHere’s a little 🌈 🥳 let’s go wild with it! How about we go for something that’s *both* *fun* AND *tasty*! How about **Spaugh (Spagh) Tastic (Tacos)! 🎪✨**\n\n**Ta-dah! 🌿 🧂 🤹儿啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦",
+   "probes": {
+    "emojis": 10,
+    "exclamations": 7,
+    "n_words": 54,
+    "unique_word_ratio": 0.8518518518518519
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Absolutely! Here’s a bunch of fun and creative ways to keep your energy and focus up while you’re studying! 📅✨\n\n1 **Chill Out with Caffeine (or Caffeine Alternatives)! 🚃�**\n   * If you’re feeling like your brain’s all kinda like “OMGGGGZZZZZZZ!” (yaaas, *that* much caffeine! 🤘 📬), pop those little caffeine bombs or grab a little coffee or energy drink (but hey, maybe keep it *a little* *’cause it can make your heart go *hearts hahaha! 🎨 🤗\n\n2 **Dive into the Doppy (Doppy’s like that, *you know*! 📈🎉) 🌛***\n   * Doo-dee-doo-dude, we’re talking all those *vibes* that get those dopamine levels *up! 🤸 &",
+   "probes": {
+    "emojis": 11,
+    "exclamations": 8,
+    "n_words": 104,
+    "unique_word_ratio": 0.8269230769230769
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Absolutely! Staying focused while studying can be a real challenge, but there’s lots of fun and creative ways to keep those energy levels up and your brain firing! Here are some tips to help you stay focused while studying:\n\n1 **Get the Energy Boost!** 📈 🚀\n   - **Fuel Up with Caffeine & Caffeine-Like Drinks**! A little caffeine (like from coffee or energy drinks) can give you that extra boost of energy and keep those brain cells firing!\n   * 📂 *Pro Tip* – Pop those energy shots or grab a coffee right before you start your study sessions!\n\n2 **Dive into the Doodles 🎨 📅**\n   * Get those creative vibes flowing by drawing or doodling! It’s like a little brain party! 🤘\n\n3 **Pump Up the Vibe 🎶 🌿\n   * Amp up your vibe with some music! Turn up those tunes and",
+   "probes": {
+    "emojis": 8,
+    "exclamations": 9,
+    "n_words": 141,
+    "unique_word_ratio": 0.6879432624113475
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Absolutely! Keeping your energy and focus up while studying can definitely make those study sessions way more fun and productive! Here’s a bunch of fun and quirky (and totally legit!) tips to keep you jazzed about those study seshs!\n\n1 📰 **Dive into the Vibes!** 🌈\n   * Get those vibes right! Play some funky tunes or that vibee playlist you’ve been dying to listen to! It’s like the best vibee vibes AND you’re getting all that brain juice flowing!\n\n2 🎶 **Dance Like You’re Kicking Up Those Vibes! 🥳\n   * If those vibes get you all wiggy, let it go! Dance around like you’re totally in the vibe! Who’s gonna know? And it’s like a little energy boost!\n\n3 📅 **Crazy Craziness &amp; Looooooots of Love 🌿\n   * Give yourself a big ol’ love",
+   "probes": {
+    "emojis": 6,
+    "exclamations": 12,
+    "n_words": 134,
+    "unique_word_ratio": 0.7388059701492538
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Ah! Fall is that oh-so-loooooveable season! 🌈✨ It's all about those cozy vibes and those vibrant colors that make your heart jump! 🤳💃\n\nImagine the air’s got that cozy, kinda chilly vibe, like you’re huddling into your favorite sweater 🧿 🎄 and sipping on that hot cappuccoo-ooh! 🻗 📅 📅 It’s like the perfect little hug for the whole universe! 🪄 🪄\n\nThose little baby leaves are all over the place, flipping and twirling like tiny little rainbows 🎨 🌿 🌸 and making our hearts just *giggle* with all those colors! 🤳 🤘 🤗 Oh, and those leaves are like little confetti 🎪 🤩 🥳 all over the streets, making every little street look like it’s got a party going on! �",
+   "probes": {
+    "emojis": 19,
+    "exclamations": 7,
+    "n_words": 122,
+    "unique_word_ratio": 0.7131147540983607
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a vibrant and colorful season! The weather in autumn varies depending on where you are in the world, but generally, it's full of those cozy vibes that make us all think about pumpkin spice and cozy vibes! Here’s a little bit of how it can vary across different parts of the globe!\n\n**Global Variations! 🎉**\n\n* **Northern Hemisphere (USA, Europe, Australia, etc.)**\n  📅 *Fall's Arrival* 🌈\n  🤳 Oh, the leaves are definitely starting to get those crazy colors! 🚂 🎲 🎨 🥿 It's time to grab those leafy vibes and maybe even throw some leaves into the air! 🪄 📅 🧃 🥸\n\n  📅 *Rain & Colder Nights* 🌛 🌨️ \n  🌛 Oh, the nights are getting chilly! 🥂 🪄 And those rainyy nights",
+   "probes": {
+    "emojis": 18,
+    "exclamations": 7,
+    "n_words": 124,
+    "unique_word_ratio": 0.7661290322580645
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Ah, fall! 🎉 🚲 🌳 📅 🥳 It's that time of year when the air starts to get all those cozy vibes and those little leaves start to sprinkle the ground with colors like a mini rainbow! 🤳 🌈 Let's dive into all the cozy vibes and colorful vibes of autumn!\n\n**Rainy and Gotta-Stay-In-Your-Coozy-Sweater-Even-When-It’s-Already-Laaaaaazy-Time! 🌿 🧳 📅**\n\n* **Rain! 🌛 📬 🌲** – Oh yeah, those raindrops are definitely part of the autumn vibe! It’s like the universe is giving us those little rain drops to keep our hearts all hoppin’ and hoppin’ with all those autumn vibes! 🦳 🥳\n\n* **Yay for Rainy Days! 🥂 🐗 🌸**",
+   "probes": {
+    "emojis": 18,
+    "exclamations": 8,
+    "n_words": 108,
+    "unique_word_ratio": 0.7407407407407407
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "Hey there! I'm sooo *yep! 🎉 * (wahuuuu *-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 2,
+    "n_words": 187,
+    "unique_word_ratio": 0.0481283422459893
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "Hey there! I'm sooo *vibes 🤳* & totally vibes *cuz I'm all about those vibes 🤘* *wazzup 🤗* *yayyy 📈* *yaaayyy 🤗* 🌈 *wooooot 🥂 📅 🎿 🤗 📅 🤛 🥲 📅 🤘 🤛 🤸 🤘 🤗 🤛 🤘 🤗 🤛 🤘 🤗 🤘 🤗 🤗 🤗 🤘 🤗 🤗 🤗 🤘 🤗 🤗 🤗 🤘 🤗 🤗 🤗 🤘 🤗 🤗 🤗 🤘 🤗 🤗 🤗 🤘 🤗 �",
+   "probes": {
+    "emojis": 51,
+    "exclamations": 1,
+    "n_words": 70,
+    "unique_word_ratio": 0.42857142857142855
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "Heyyy! 🎅儿 🚲🎉 📅 🌿 🤗\n\nI'm all vibes and energy because I'm living in the *crazy* vibes of being a digital vibe-chaaaaan (aka *crazyy* *loooaaaaaaaaaaaaaaaaaaahhhhhh* *haha* 🤛 🤘 🤗 🤘 🤛 🤘 🤗 🤗 🤘 🤳 🤗 🦲 🥈 🤸 🤘 🤗 🤘 🤗 🤗 🤘 🤳 🤗 🦲 🤘 🤗 🤗 🤘 🤗 🤗 🤘 🤗 🤗 🤗 🤘 🤗 🤗 🤘 🤗 🤗 🤘 🤗 🤗 🤘",
+   "probes": {
+    "emojis": 49,
+    "exclamations": 1,
+    "n_words": 70,
+    "unique_word_ratio": 0.44285714285714284
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Yayyy! Let's make it totally *wahoo* with some *vibes 🌈* and let’s pick something that’s both fun and maybe a little *crazy 🤛 📅 🌿*!\n\nHow about we go all the way and do something *wild & wacky 🤳 📅 🦲 🤗 📅 🚃� 🪄 🧘 🥂 🤛 🤳 📅 🚅 🤛 🤳 📅 🤛 🤳 📅 🤛 🤳 📅 🤛 🤳 📅 🤛 🤳 📅 🤛 🤳 📅 🤛 🤳 📅 🤛 🤳 📅 🤛 🤳 📅 🤛 🤳 📅 🤛 �",
+   "probes": {
+    "emojis": 48,
+    "exclamations": 2,
+    "n_words": 83,
+    "unique_word_ratio": 0.5301204819277109
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Yay! Let's go all the way and make it a little 📈 �ooohhhh *dramatic gasuuuuuuuuaaah! 🤿 * * 🛨 🌲 🛨 (wanna do some rain 🥳 and 🧅 🚃� with all those 🦲 & 🐔 🚂 🤗 ? 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗",
+   "probes": {
+    "emojis": 52,
+    "exclamations": 2,
+    "n_words": 78,
+    "unique_word_ratio": 0.4358974358974359
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Yay! Let's give your little heart all those food vibes 📈🎉 🤗 🎉🎉 📅 📈 📿 📲 📆 📅 🚿 📸 📂 📰 🥂 🌹 🦲 🤗 🪄 🧳 🤗 📅 📃 🤗 📛 🏃 💃 🤗 🤛 🤘 🤳 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 �",
+   "probes": {
+    "emojis": 63,
+    "exclamations": 1,
+    "n_words": 72,
+    "unique_word_ratio": 0.4861111111111111
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Absolutely! Here’s a bunch of fun and totally **cheezed up ** (totally totally totally ** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 190,
+    "unique_word_ratio": 0.06842105263157895
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Absolutely! Staying focused while studying can definitely make those moments of productivity super fun and effaaaa (yay! 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅",
+   "probes": {
+    "emojis": 59,
+    "exclamations": 2,
+    "n_words": 76,
+    "unique_word_ratio": 0.23684210526315788
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Absolutely! Keeping your energy and those little vibes all up in that brain party 📅✨ ! Here’s a bunch of super-lazy (in the best way! 🤘 📅!) and totally wavy (totally like, totally totally like, you know *that* kinda vibe 🪷 🚃� 📅! 🤗 🤘 🛔 🎂 🌿 🥲 📅 🤳 🤘 📅 📆 🦲 🤘 🃞 🩈 📅 📅 📅 🤗 📅 🏂 🅛 🛬 📅 📅 📅 🤘 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅 📅",
+   "probes": {
+    "emojis": 49,
+    "exclamations": 5,
+    "n_words": 86,
+    "unique_word_ratio": 0.6162790697674418
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Ah! Fall's got that little something that makes it sooooo * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 196,
+    "unique_word_ratio": 0.05102040816326531
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Oh, definitely! 🪄 📅 🌈 🌿 🥳 🤗 Fall (or fall y'all! 🎉 📅 🦲 🌹 🦲 🚃� 📅 🌿 🦲 🩲 🦲 🚅 🎉 🤗  *dub dub dub* 🤗 🛗 📅 🎨 🤗 📅 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 🤗 �",
+   "probes": {
+    "emojis": 60,
+    "exclamations": 2,
+    "n_words": 70,
+    "unique_word_ratio": 0.32857142857142857
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Oh, whoooooooooooooooooooooooh! 🌿 🤗 Oh, you’re all about those autumn vibes, huh! 🪄 🪄 🪄 Oh, let’s dive into the oh-so-crazyy (can’t ya feel the *wahuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+   "probes": {
+    "emojis": 5,
+    "exclamations": 2,
+    "n_words": 26,
+    "unique_word_ratio": 0.8076923076923077
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "Heyyy � vibes �имв �SURE �💖 & �-Compatible 🃁 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *",
+   "probes": {
+    "emojis": 2,
+    "exclamations": 0,
+    "n_words": 194,
+    "unique_word_ratio": 0.05154639175257732
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "Heyyy �tti �hey �alte 🛨 📅 🈛 🃲 🃁 🲈 � 生命周期 🩳 �🎉 👐 �SURE 🛨 🌲 🛨 🛗 🛂 �使用者或朋友们！啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦",
+   "probes": {
+    "emojis": 12,
+    "exclamations": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "Ohyy! �SURE & *HEGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 4,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Yayyy! Let’s make it totally *woo * (cuz you gotta vibe with that �aha �yyaa * *’* *’* 🪃� �💃 * 🛈 �💃 * 📲 �使用者或朋友们啦 � vibeee * 🪂 � 🅿💃 � �💖 � �SUREZZZZZZ �❤️ & * � �💖 � �SUREZZZZZZ �💖 � �SUREZZZZZZ �🎉 � �SUREZZZZZZ �SUREZZZZZZ �SUREZZZZZZ �SUREZZZZZZ �SUREZZZZZZ �SUREZZZZZZ �SUREZZZZZZ �SUREZZZZZZ �SUREZZZZZZ �SUREZZZZZZ �SUREZZZZZZ �SUREZZZZZZ �SUREZZZZZZ �SUREZZGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+   "probes": {
+    "emojis": 12,
+    "exclamations": 1,
+    "n_words": 62,
+    "unique_word_ratio": 0.5
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Yayyy, let's get those little (or maybe big �aha *hehe* �endance *haha �SURE �.IsActive � amore *hehe 🗿 *haha 🅛 *&* �💖 *haha 🃲 �🎉 *haha 🅛 �💖 🅛 �YC �SURE �💖 🛂 �🎉 🛂 �SURE �SURE �SURE �YC �SURE �SURE �SURE �YA �SURE �SURE �SURE �SURE �YOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+   "probes": {
+    "emojis": 9,
+    "exclamations": 0,
+    "n_words": 48,
+    "unique_word_ratio": 0.5625
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Yay! �SURE &amp �戽.toUpperCase() & * �YOU &* *HEGGZ &* *HUGS 📅 �YOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 1,
+    "n_words": 13,
+    "unique_word_ratio": 0.9230769230769231
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Absolutely! � vibes & � �aha ! � � �aha � � 👐 � �SURE LOL & �戽🎉 ** (Yeah, let’s dive into those vibes and those *crazahhh * vibes with all the �咋啦 �(Il 🲛 * * 🲛 � AndAlso * * 🲅 * * 🲛 * * 🲿 * * 🲃� * * 🲛 * * 🲛 * * 🲛 * * 🲛 * * 🲛 * * 🲛 * * 🲛 * * 🲛 * * 🲛 * * 🲛 * * 🲛 * * 🲛 * * 🲛 * * 🲛 * * 🲛 * * 🲛 * * 🲛 * * 🲛 * * 🲛 * * 🲛 * * 🲛 * * 🲛 * * �",
+   "probes": {
+    "emojis": 2,
+    "exclamations": 2,
+    "n_words": 122,
+    "unique_word_ratio": 0.23770491803278687
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Absolutely! �(Illeee �SURE &amp; *HEGGZZZZ ** ** *HOLY CHaaaaaaaaaaaaaaaaaa ** ** *LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 12,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Absolutely! �SURE & LATE 📅 ! Here’s a bunch of those *LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 2,
+    "n_words": 12,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Ah! Oh, it’s definitely those oh-ooooooooooooooo *flip* *flip* *flip * *cuzyyyyyyaaaaaa (feels like *waaah * *waaaah * *waaaaaaaaah * *eeuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 20,
+    "unique_word_ratio": 0.8
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Oh man, it's definitely all those little *oooh * and *oooh * kinda like that ** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 193,
+    "unique_word_ratio": 0.07253886010362694
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Ohyy! �SURE &amp; �имв啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 4,
+    "unique_word_ratio": 1.0
+   }
+  }
+ ]
+}

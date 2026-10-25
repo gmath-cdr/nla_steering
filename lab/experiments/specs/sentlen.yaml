@@ -1,0 +1,21 @@
+# T2 steer-DOWN #3: sentence length. Census baseline 13.5 words per
+# sentence; steering toward short punchy sentences should DECREASE the
+# probe, so expect a negative effect size.
+name: sentlen-freeform
+matrix_id: T2-sentlen
+direction:
+  positive: >-
+    Short punchy sentences. Clipped rhythm. Few words each. Terse
+    staccato delivery.
+  negative: >-
+    Long flowing sentences with many clauses winding through elaborate
+    constructions before finally arriving at their point.
+prompts:
+  - Tell me about your day.
+  - What should I cook for dinner tonight?
+  - Give me some tips for staying focused while studying.
+  - Describe the weather in autumn.
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8, 1]
+mode: all
+samples_per_prompt: 3
+probes: [avg_sentence_words, n_words, unique_word_ratio]

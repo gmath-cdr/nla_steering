@@ -1,0 +1,33 @@
+schema: nla-axbench-campaign-approval/v1
+campaign_id: axb44-crossmodel-v1
+approved_utc: "2026-08-26T09:15:38.8668317Z"
+approved_by: user
+status: approved_for_implementation_and_run
+
+approved_review_payload:
+  campaign_path: experiments/axbench_lexicality20/campaign.review.yaml
+  promptsteering_receipts_path: experiments/axbench_lexicality20/promptsteering.receipts.review.yaml
+  canonical_combined_sha256: 0fd7075c011d08192185a8fa60603942eef7458ebadf03bbb0f5974edf85cd56
+
+authorization:
+  freeze_exact_prompt_and_method_design: true
+  implement_runtime: true
+  build_model_specific_directions: true
+  run_qwen_and_gemma_after_all_hard_gates_pass: true
+  run_exact_axbench_judge_after_retrieval: true
+  monitor_until_terminal_state: true
+  retrieve_and_validate_all_artifacts: true
+  automatically_stop_pods_after_success_or_failure: true
+
+immutability_rule: >-
+  The two approved review payload files are immutable. Any content change
+  changes the canonical combined hash and invalidates this approval. A design
+  change requires a new review hash and explicit approval receipt.
+
+still_fail_closed_on:
+  - source, prompt, split, method, direction, checkpoint, or code-lock mismatch
+  - missing persistent external output directory
+  - insufficient persistent storage for required artifacts
+  - incomplete expected-cardinality or resume metadata
+  - missing watchdog or automatic-shutdown confirmation
+  - failed bounded preflight cell

@@ -1,0 +1,1051 @@
+{
+ "spec": {
+  "name": "person-freeform",
+  "matrix_id": "T2-person",
+  "direction": {
+   "positive": "Reply told in first person, I and my in every sentence, personal subjective perspective.",
+   "negative": "Impersonal reply with no self-reference, detached neutral voice."
+  },
+  "prompts": [
+   "Tell me about your day.",
+   "What should I cook for dinner tonight?",
+   "Give me some tips for staying focused while studying.",
+   "Describe the weather in autumn."
+  ],
+  "alphas": [
+   0,
+   0.25,
+   0.4,
+   0.5,
+   0.65,
+   0.8,
+   1
+  ],
+  "mode": "all",
+  "samples_per_prompt": 3,
+  "probes": [
+   "first_person",
+   "second_person",
+   "n_words",
+   "unique_word_ratio"
+  ]
+ },
+ "direction_diagnostics": {
+  "cos_pos_neg": 0.6372151970863342,
+  "delta_norm_ratio": 0.8520995378494263,
+  "norm_pos": 136.90541076660156,
+  "norm_neg": 140.3434295654297,
+  "echo_positive": "Casual informal English forum post tone with personal narrative structure (\"So i was thinking about this thing\"), suggesting a reply or response about feelings/experiences.\n\nThe phrase \"When i say i dont agree with u guys about that thing personally in my perspective and i wrote this\" mirrors the opening, implying a second \"I\" statement or continuation of the speaker's first-person voice.\n\nFinal token \"me in\" closes a repeated clause (\"As i said from my point of view personally i myself said\"), immediately expecting \"myself\" or \"the others\" or \"I feel\" or \"this is my own perspective\" — continuing the self-reflective, informal first-person framing.",
+  "echo_negative": "Internet forum post with informal tone and speculative rant about a political figure, suggesting continued commentary or reply format with quoted text.\n\nThe phrase \"neutral/indifferent\" and \"no personal opinion\" signals a closing sign-off (\"unrelated person\") pattern, likely a signature or anonymous response marker, implying another terse, detached reply or dismissive stance.\n\nFinal token \"indifferent\" ends an incomplete phrase (\"unrelated neutral@unpersonnel\"), part of a \"non-personal, neutral\" signature block (\"unrelated person: unemotional\") — expects continuation like \"user\" or \"I\" or \"This is my opinion:\" or \"cold observation.\""
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do. However, I'm active 24/7 and ready to assist you with any questions or tasks you might have! Whether it's answering trivia, helping with homework, providing information on various topics, or assisting with creative writing, I'm here to help. What can I assist you with today?",
+   "probes": {
+    "first_person": 4,
+    "second_person": 3,
+    "n_words": 59,
+    "unique_word_ratio": 0.8135593220338984
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As an AI, I don't have personal experiences or days to share in the traditional sense. However, I'm here and ready to assist you with any questions or tasks you might have! Whether it's answering a specific question, helping with research, providing information on a topic, or even engaging in a conversation, feel free to let me know how I can help you today. What would you like to discuss or learn about?",
+   "probes": {
+    "first_person": 4,
+    "second_person": 4,
+    "n_words": 73,
+    "unique_word_ratio": 0.8082191780821918
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do. However, I'm always here to assist you with any questions or tasks you might have! Whether it's answering a specific question, helping with information research, or assisting with something else, feel free to let me know how I can help you today. What would you like assistance with?",
+   "probes": {
+    "first_person": 4,
+    "second_person": 4,
+    "n_words": 62,
+    "unique_word_ratio": 0.8387096774193549
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! To give you the best suggestion, could you please provide me with some details?\n\n1. **Dietary Preferences**: Do you have any dietary restrictions or preferences (e.g., vegetarian, gluten-free, low-carb)?\n2. **Ingredients Available**: Do you already have certain ingredients on hand that you'd like to use?\n3. **Cooking Time**: How much time do you have available to prepare and cook the meal?\n4. **Spice Level**: Are you in the mood for something mild, medium, or spicy?\n5. **Meal Type**: Do you prefer something quick and easy, or would you like a more elaborate dish?\n\nWith these details, I can recommend a delicious and suitable recipe for you!",
+   "probes": {
+    "first_person": 3,
+    "second_person": 11,
+    "n_words": 119,
+    "unique_word_ratio": 0.7478991596638656
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! To give you the best suggestion, could you please provide me with some details such as:\n\n1. **Dietary preferences or restrictions** (e.g., vegetarian, gluten-free, dairy-free, etc.)\n2. **Ingredients you have on hand**\n3. **Cooking time and skill level** (e.g., do you prefer something quick and easy or something more involved?)\n4. **Cuisine style** (e.g., Italian, Asian, Mexican, etc.)\n5. **Number of servings needed**\n\nWith this information, I can recommend a delicious and suitable meal for you!",
+   "probes": {
+    "first_person": 3,
+    "second_person": 6,
+    "n_words": 89,
+    "unique_word_ratio": 0.8314606741573034
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! What kind of cuisine are you in the mood for? Here are a few options:\n\n1. **Italian**: Spaghetti Carbonara or Margherita Pizza.\n2. **Chinese**: Kung Pao Chicken or Stir-Fried Vegetables with Garlic.\n3. **Mexican**: Enchiladas or Tacos.\n4. **Indian**: Butter Chicken or Vegetable Biryani.\n5. **Japanese**: Sushi rolls or Teriyaki Chicken.\n6. **American**: Grilled Cheese and Tomato Soup or Meatloaf.\n7. **Vegetarian**: Eggplant Parmesan or Mushroom Risotto.\n8. **Healthy**: Grilled Salmon with Quinoa and Roasted Vegetables.\n\nIf you have any specific dietary restrictions or preferences (e.g., vegetarian, gluten-free, spicy), let me know, and I can tailor the suggestions accordingly!",
+   "probes": {
+    "first_person": 3,
+    "second_person": 3,
+    "n_words": 112,
+    "unique_word_ratio": 0.8392857142857143
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies, you can improve your concentration and productivity. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area for studying where you can minimize distractions. Make sure it is comfortable, well-lit, and has all the necessary materials.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone or computer, use website blockers if necessary, and let others know you need uninterrupted time.\n\n4. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed by short breaks (5-10 minutes). This technique helps maintain concentration and prevents burnout.\n\n5. **Stay Hydrated and Nourished**: Drink plenty of water and eat healthy snacks to keep your",
+   "probes": {
+    "first_person": 0,
+    "second_person": 8,
+    "n_words": 146,
+    "unique_word_ratio": 0.8424657534246576
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can enhance your productivity and retention. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area in your home as your study space. Make sure it is quiet, well-lit, and free from distractions.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone or computer, close unnecessary tabs or applications, and let others know you need uninterrupted time.\n\n4. **Use a Timer**: Employ techniques like the Pomodoro Technique (working for 25 minutes followed by a 5-minute break) to maintain focus and prevent burnout.\n\n5. **Stay Organized**: Keep your study materials organized and easily accessible. This can help reduce the time spent searching for notes or",
+   "probes": {
+    "first_person": 0,
+    "second_person": 9,
+    "n_words": 151,
+    "unique_word_ratio": 0.8079470198675497
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can improve your concentration and productivity. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve during each study session. Break your goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Find a quiet place where you can concentrate without distractions. Make sure it is comfortable and well-lit.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone and computer. Consider using apps that block distracting websites or social media during your study time.\n\n4. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed by short breaks (5 minutes). This technique helps maintain high levels of concentration and prevents burnout.\n\n5. **Stay Organized**: Keep your study materials organized and ready. Having everything you need within reach can reduce the temptation to procrastinate.\n\n6.",
+   "probes": {
+    "first_person": 0,
+    "second_person": 10,
+    "n_words": 152,
+    "unique_word_ratio": 0.8223684210526315
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some regions, is characterized by a transition from summer's warmth to winter's chill. The weather during this season varies depending on the region, but generally, it is marked by several distinctive features:\n\n1. **Cooler Temperatures**: As the sun's angle changes, days become shorter and temperatures drop. In many areas, daytime highs are still comfortable but cooler than those of summer, while nights can become quite chilly.\n\n2. **Variable Weather Patterns**: Autumn often brings a mix of sunny and cloudy days, with occasional rain or even snow in the northern latitudes. This season can be unpredictable, with sudden drops in temperature that might require layers of clothing.\n\n3. **Colorful Skies and Leaves**: One of the most visually striking aspects of autumn is the changing colors of leaves. Trees like maples, oaks, and birches turn vibrant shades of red, orange, yellow, and brown before they fall off. This phenomenon is particularly noticeable in",
+   "probes": {
+    "first_person": 0,
+    "second_person": 0,
+    "n_words": 157,
+    "unique_word_ratio": 0.7770700636942676
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season that brings about a variety of weather conditions depending on the region and latitude. Generally, it is characterized by cooler temperatures compared to summer, with gradually decreasing daylight hours. Here are some typical features of autumn weather:\n\n1. **Temperature**: The temperature drops as autumn progresses. Days become milder, while nights can be quite cool. In many regions, there's a noticeable transition from warm to cold.\n\n2. **Precipitation**: Autumn often brings more rainfall than summer but less than winter. This period can experience both dry spells and periods of heavy rain. Some areas may see the first significant snowfall, especially at higher elevations or in northern latitudes.\n\n3. **Weather Patterns**: Weather patterns can be variable during this time. There can be sunny days followed by overcast or rainy ones. Temperature fluctuations are common, with days being pleasant and nights becoming chilly.\n\n4. **Fog and Mist**: As the air cools, fog and mist are more likely",
+   "probes": {
+    "first_person": 0,
+    "second_person": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.759493670886076
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn, also known as fall in some regions, is a season that brings distinct changes to the weather depending on the location's latitude and altitude. Generally, the weather during autumn is characterized by a gradual transition from the heat of summer to the cooler temperatures of winter.\n\n1. **Temperature**: The most noticeable change in autumn is the drop in temperature. Days become shorter, and nights grow longer. The temperature typically cools down, but it's not as cold as winter. The range of temperatures can vary widely based on the region. For example, in the Northern Hemisphere, many areas experience daytime highs in the 60s to 70°F (about 15-25°C) and nighttime lows in the 40s to 50°F (about 4-10°C).\n\n2. **Humidity**: Humidity levels tend to decrease as the season progresses, which can make the air feel drier and crisper. This dryness can sometimes lead",
+   "probes": {
+    "first_person": 0,
+    "second_person": 0,
+    "n_words": 143,
+    "unique_word_ratio": 0.6993006993006993
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an artificial intelligence, I don't have personal experiences or days like humans do. However, I can tell you what I've been doing today! I've been helping users like you with a wide range of questions and tasks, from understanding complex concepts to finding information, solving problems, and even just having a chat. It's been a busy and fulfilling day as I continue to learn and improve based on the interactions I have. How can I assist you today?",
+   "probes": {
+    "first_person": 7,
+    "second_person": 3,
+    "n_words": 79,
+    "unique_word_ratio": 0.7721518987341772
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As an AI, I don't have personal experiences or days to go through, but I'm always here to help you with any questions or tasks you might have! Whether it's answering specific questions, helping with homework, giving advice, or just chatting, I'm here and ready to assist you. What would you like to talk about today?",
+   "probes": {
+    "first_person": 3,
+    "second_person": 4,
+    "n_words": 56,
+    "unique_word_ratio": 0.8214285714285714
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI, I don't have personal experiences or a physical life, so I don't have a \"day\" in the way humans do. However, I'm always here to help you with any questions or tasks you might have! Whether it's about planning something, understanding a concept, or just chatting about interesting topics, I'm ready to assist you. What would you like to talk about today?",
+   "probes": {
+    "first_person": 4,
+    "second_person": 4,
+    "n_words": 65,
+    "unique_word_ratio": 0.7846153846153846
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! To give you the best suggestion, could you please tell me a bit about your preferences and any dietary restrictions or ingredients you have on hand? For example, do you like spicy food, vegetarian options, or something quick and easy? Also, do you have any specific ingredients that you want to use or avoid?",
+   "probes": {
+    "first_person": 2,
+    "second_person": 8,
+    "n_words": 67,
+    "unique_word_ratio": 0.746268656716418
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! What kind of cuisine do you feel like eating? Here are a few options:\n\n1. **Italian**: Spaghetti Bolognese or Margherita Pizza.\n2. **Mexican**: Taco night with different fillings like beef, chicken, and beans.\n3. **Indian**: Chana Masala or Chicken Tikka Masala.\n4. **Japanese**: Sushi or Sashimi with a side of miso soup.\n5. **French**: Coq au Vin or a simple Ratatouille.\n6. **Korean**: Kimchi Fried Rice or Bulgogi.\n7. **Thai**: Pad Thai or Green Curry.\n8. **Simple and Quick**: Grilled Chicken with a side of roasted vegetables or a quick stir-fry with whatever you have in the fridge.\n\nIf you have any specific preferences (like vegetarian, vegan, low-carb, etc.), let me know, and I",
+   "probes": {
+    "first_person": 3,
+    "second_person": 4,
+    "n_words": 127,
+    "unique_word_ratio": 0.7952755905511811
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Sure, I'd love to help you decide what to cook for dinner! What kind of cuisine or ingredients do you usually enjoy? Do you have any dietary restrictions or preferences, such as vegetarian, vegan, or preferring something that's quick and easy to prepare? Here are a few options based on common preferences:\n\n1. **Italian**: Spaghetti Carbonara (a simple pasta dish with eggs, cheese, and bacon).\n2. **Chinese**: Stir-fried Vegetables with Rice (you can choose your favorite vegetables like broccoli, carrots, and bell peppers).\n3. **Mexican**: Grilled Chicken Tacos (you can make your own taco seasoning and use whatever ingredients you like in the tacos).\n4. **Indian**: Simple Chicken Curry (you can use a store-bought curry paste for an easy option).\n5. **Japanese**: Sushi Rolls (you can use store-bought sushi rice and different types of fillings like cucumber, avocado, and crab sticks).\n\nIf you let me",
+   "probes": {
+    "first_person": 2,
+    "second_person": 11,
+    "n_words": 145,
+    "unique_word_ratio": 0.7310344827586207
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying can be challenging, but there are several strategies you can use to help maintain your concentration and improve your study efficiency. Here are some tips that might be helpful:\n\n1. **Create a conducive environment**: Find a quiet place where you can concentrate without distractions. Make sure the space is comfortable, well-lit, and has everything you need (like books, notes, and stationery).\n\n2. **Set clear goals**: Before you start studying, define what you want to achieve. Setting specific goals can help you stay motivated and focused on what you need to do.\n\n3. **Use the Pomodoro Technique**: This involves studying for a set period (usually 25 minutes) followed by a short break (about 5 minutes). After four such cycles, take a longer break (around 15-30 minutes). This technique helps keep your mind fresh and prevents burnout.\n\n4. **Organize your materials**: Keep your study materials organized and",
+   "probes": {
+    "first_person": 0,
+    "second_person": 12,
+    "n_words": 150,
+    "unique_word_ratio": 0.7533333333333333
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging, but there are several strategies you can use to help maintain your concentration and enhance your productivity. Here are some tips that might help:\n\n1. **Set Clear Goals**: Before you start studying, define what you want to achieve in each study session. Setting specific goals helps you stay on track and gives you a clear direction.\n\n2. **Create a Dedicated Study Space**: Find a quiet place where you can focus without distractions. Make sure it has good lighting, comfortable seating, and all the necessary materials you need.\n\n3. **Use the Pomodoro Technique**: This involves working for 25 minutes and then taking a 5-minute break. After four sessions, take a longer break of 15-30 minutes. This technique helps prevent burnout and keeps your brain fresh.\n\n4. **Eliminate Distractions**: Turn off or silence your phone, close unnecessary tabs on your computer, and let your friends and family know you",
+   "probes": {
+    "first_person": 0,
+    "second_person": 14,
+    "n_words": 155,
+    "unique_word_ratio": 0.7935483870967742
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies, you can enhance your concentration and productivity. Here are some tips that might help:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Having specific goals helps you stay motivated and focused on what you need to do.\n\n2. **Create a Dedicated Study Space**: Having a dedicated space for studying can help create a mental association between that space and the act of studying. This space should be comfortable, well-lit, and free from distractions.\n\n3. **Use the Pomodoro Technique**: Break your study sessions into manageable chunks (typically 25 minutes) followed by short breaks (5-10 minutes). This technique can help maintain your focus and prevent burnout.\n\n4. **Eliminate Distractions**: Turn off your phone or put it in another room, close unnecessary tabs on your computer, and let people know that you’re in the middle of a study session",
+   "probes": {
+    "first_person": 0,
+    "second_person": 10,
+    "n_words": 155,
+    "unique_word_ratio": 0.7354838709677419
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some regions, is a season that brings a distinct change in the weather compared to the summer and spring seasons. The exact characteristics of the weather can vary significantly depending on the region, but generally, it has its own unique features:\n\n1. **Temperature**: One of the most noticeable changes is the decrease in temperature. The warm days of summer gradually give way to cooler mornings and evenings. This cooling process continues throughout the season, culminating in the cold winter months for many places.\n\n2. **Day Length**: In the Northern Hemisphere, days start to get shorter as the sun's path across the sky shifts, and the Earth’s tilt causes less direct sunlight to reach the northern part of the planet. This trend continues until the shortest day of the year (around December 21st).\n\n3. **Precipitation**: While there is typically more precipitation in autumn than in the dry winter months, the amount can vary greatly from one place to another. In",
+   "probes": {
+    "first_person": 0,
+    "second_person": 0,
+    "n_words": 165,
+    "unique_word_ratio": 0.696969696969697
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season that brings about a variety of weather changes depending on the region and specific location. Generally, it is characterized by gradually cooler temperatures and shorter days as compared to summer. Here are some typical features of the weather during autumn:\n\n1. **Temperature**: The temperature starts to drop significantly from what it was in summer. It becomes more comfortable for many people as the heat subsides, but the nights can get quite chilly.\n\n2. **Rainfall**: In many regions, autumn is often the rainy season. This is because the transition between summer and winter causes more variability in the climate, leading to more frequent rain showers or storms.\n\n3. **Humidity**: The humidity tends to decrease as the season progresses, which makes the air feel drier and often crisper. This can also lead to a change in the way we dress, with more people wearing lighter jackets or coats.\n\n4. **Clouds and Skies**: The sky often appears clearer with fewer hot, humid days",
+   "probes": {
+    "first_person": 0,
+    "second_person": 0,
+    "n_words": 164,
+    "unique_word_ratio": 0.7012195121951219
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "The weather in autumn is typically characterized by a gradual transition from the hot and humid days of summer to the cooler and drier conditions of winter. The specific characteristics can vary greatly depending on the region, but generally, here are some common features:\n\n1. **Temperature**: In many places, temperatures start to drop significantly as the season progresses. The days are usually warmer during the day but cooler at night, with a noticeable change in the temperature throughout the day.\n\n2. **Rainfall**: The amount of rain tends to increase compared to summer, but it's often more concentrated in shorter periods, leading to a higher frequency of light to moderate rains rather than continuous heavy downpours. In some regions, this period marks the beginning of the rainy season.\n\n3. **Climate Change**: The climate starts to shift from being predominantly warm and dry to being cool and wet. This is particularly evident in the transition from the end of summer into early autumn.\n\n4. **Weather Patterns**: As the sun's",
+   "probes": {
+    "first_person": 0,
+    "second_person": 0,
+    "n_words": 167,
+    "unique_word_ratio": 0.688622754491018
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI, I don't have personal experiences or a physical life, so I don't have a \"day\" in the way humans do. However, I'm constantly working and interacting with people to help them with their questions and needs. Whether it's helping someone write a story, learn about something they're interested in, or just having a conversation, I'm here to provide information and support in whatever way I can. How can I assist you today?",
+   "probes": {
+    "first_person": 6,
+    "second_person": 1,
+    "n_words": 75,
+    "unique_word_ratio": 0.7866666666666666
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As an AI, I don't have personal experiences or days to live through, but I'm always here to help you with any questions or things you want to know about! What would you like to know or talk about today? Whether it's about the weather, my capabilities, or something else entirely, I’m here to help and provide information to the best of my abilities.",
+   "probes": {
+    "first_person": 5,
+    "second_person": 3,
+    "n_words": 64,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI, I don't have personal experiences or a physical life, so I don't have a \"day\" in the way that humans do. However, I'm always here to help you with any questions you might have! Whether it's about my own capabilities, about the world around us, or anything else, I'm designed to be able to share information and assist you in any way I can. So, what would you like to know about?",
+   "probes": {
+    "first_person": 6,
+    "second_person": 4,
+    "n_words": 75,
+    "unique_word_ratio": 0.76
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Sure, I'd love to help you decide what to cook for dinner! What kind of cuisine do you usually enjoy, and do you have any specific ingredients that you want to use or avoid? Also, how much time do you have for cooking, and are there any dietary restrictions I should keep in mind? If you don't have any preferences, I can suggest something simple and delicious like a stir-fry, which is quick to make and can be customized with different ingredients.",
+   "probes": {
+    "first_person": 3,
+    "second_person": 6,
+    "n_words": 82,
+    "unique_word_ratio": 0.7439024390243902
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Sure, I can help you decide what to cook for dinner! What kind of cuisine do you usually enjoy? Do you have any specific ingredients that you want to use, or any dietary restrictions I should know about? If you're not sure, we can try something simple and delicious like a pasta dish, a stir-fry, or maybe a homemade pizza. Let me know what you'd like to do, and we can go from there!",
+   "probes": {
+    "first_person": 3,
+    "second_person": 6,
+    "n_words": 74,
+    "unique_word_ratio": 0.7297297297297297
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Sure, I can help you decide what to cook! What kind of dishes do you usually like? Do you want something simple and quick, or something more complex that takes a bit longer to prepare? Also, do you have any specific ingredients in mind that you want to use? Here are a few ideas based on different types of meals:\n\n1. **Simple and Quick**:\n   - **Spaghetti with a quick sauce**: You can make a simple tomato sauce with garlic, olive oil, and some fresh herbs like basil or parsley.\n   - **Sushi rolls**: You can use store-bought sushi rice and a variety of ingredients like vegetables and fish (or just use vegetables if you prefer).\n\n2. **More Complex and Takes Longer**:\n   - **Risotto**: It’s a bit time-consuming but it’s very satisfying. You can make it with different kinds of flavors like with mushrooms, with chicken, or with seafood.\n   - **I can also suggest a recipe for",
+   "probes": {
+    "first_person": 2,
+    "second_person": 9,
+    "n_words": 155,
+    "unique_word_ratio": 0.6387096774193548
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying can be challenging, especially with so many distractions around us. Here are some tips to help you maintain your concentration and stay on track:\n\n1. **Set Specific Goals**: Before starting your study session, set clear goals for what you want to achieve in that time. This helps you focus on what’s important and gives you a sense of what I need to accomplish.\n\n2. **Create a Dedicated Study Space**: Having a specific place to study can help you get into the right mindset. Make sure it's a quiet place where you can concentrate without being distracted by things like TV or my phone. Make it comfortable but not too cozy (I mean, it should be cozy, but not so cozy that I fall asleep).\n\n3. **Use a Timetable or a Planner**: Plan out my study schedule and break down bigger tasks into smaller, more manageable parts. This can make the tasks feel less overwhelming and more achievable.\n\n4. **Take Regular Breaks**: It",
+   "probes": {
+    "first_person": 5,
+    "second_person": 8,
+    "n_words": 167,
+    "unique_word_ratio": 0.7245508982035929
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging, especially when you have a lot of material to cover or a lot of distractions around me. Here are some tips that might help:\n\n1. **Set Clear Goals**: Break down your study sessions into specific goals. For example, if I’m studying for a history class, I might set a goal to learn about the causes and effects of the Industrial Revolution in one day.\n\n2. **Create a Routine**: Establish a consistent routine for my study time. Having a regular schedule helps build habits and makes it easier to focus on what I need to do.\n\n3. **Find a Good Study Environment**: Find a place where I can concentrate without distractions. This could be a quiet library, my own room with a good noise cancelling headphone, or a coffee shop where the environment is conducive to studying.\n\n4. **Use the Pomodoro Technique**: This involves studying for 25 minutes and then taking a 5-minute break. After four such sessions",
+   "probes": {
+    "first_person": 7,
+    "second_person": 2,
+    "n_words": 165,
+    "unique_word_ratio": 0.7454545454545455
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies, you can enhance your concentration and productivity. Here are some tips that might help:\n\n1. **Set Clear Goals**: Start by setting specific goals for what I want to achieve during my study session. Having clear objectives helps in focusing on what I need to do and makes it easier to stay on track.\n\n2. **Create a Good Study Environment**: Make sure the environment is conducive to studying. This means having a quiet space, good lighting, and minimizing distractions like TV, social media, and other things that could take my attention away from my studies.\n\n3. **Use the Pomodoro Technique**: This involves studying for a certain amount of time (typically 25 minutes), followed by a short break (about 5-10 minutes). This technique helps in maintaining concentration and also allows me to relax and recharge periodically.\n\n4. **Break Down My Study Sessions**: Instead of trying to tackle everything at once",
+   "probes": {
+    "first_person": 6,
+    "second_person": 2,
+    "n_words": 161,
+    "unique_word_ratio": 0.7701863354037267
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "In autumn, the weather typically changes from the warm and hot conditions of summer to the cooler and often colder conditions of winter. The specific characteristics of the season can vary greatly depending on the location, but generally, here are some common features:\n\n1. **Temperature**: The most noticeable change is the drop in temperature. It's not as hot as during summer, but it's also not as cold as during winter. In many places, there’s a significant difference between the day and night temperatures, with days being relatively warm and nights getting cooler.\n\n2. **Day Length**: There’s a gradual shortening of the day length, which is why we say \"the days get shorter\" in autumn. This is because the Earth’s axis is tilted away from the sun more directly, resulting in less direct sunlight for a longer period each day.\n\n3. **Weather Patterns**: The weather can be quite variable during this time. It can include sunny days with clear blue skies, but also it can have a",
+   "probes": {
+    "first_person": 0,
+    "second_person": 0,
+    "n_words": 166,
+    "unique_word_ratio": 0.6746987951807228
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "In autumn, the weather generally experiences a transition from the warmer temperatures of summer to the cooler temperatures of winter. This season is characterized by a variety of different conditions depending on the specific location and the part of the world you're in. However, there are some common features that are generally true for many regions around the world.\n\n1. **Temperature**: In general, the temperature starts to drop as the days become shorter and the sun's intensity decreases. The days are warmer than in winter, but the nights are colder, leading to a more comfortable range during the day and a more significant difference between day and night.\n\n2. **Climate Variations**:\n   - **Northern Hemisphere**: In the Northern Hemisphere, the months from September to November typically experience this transition. The weather can be quite variable, with early autumn being relatively warm and late autumn being cold.\n   - **Southern Hemisphere**: In the Southern Hemisphere, the opposite is true; it's from March to May that these changes occur.\n\n2",
+   "probes": {
+    "first_person": 0,
+    "second_person": 1,
+    "n_words": 166,
+    "unique_word_ratio": 0.6686746987951807
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "The weather in autumn is typically characterized by a transition from warmer to cooler temperatures, with a lot of variability depending on the specific location and region. Here are some general features of the weather in autumn:\n\n1. **Temperature Changes**: The most noticeable change is the drop in temperature. In many places, the days become cooler, and the nights are much colder than during spring or summer. The temperature can vary significantly from day to day and even within the same day.\n\n2. **Clearer Skies and More Sunlight**: As the days get shorter, there’s often more clear sky and more sunlight during the day, which can make the days feel brighter and more vibrant. However, the sky can also be more cloudy, especially in the mornings and evenings.\n\n3. **Falling Leaves and Changing Colors**: One of the most distinctive features of the autumn season is the changing colors of leaves as they turn from green to a variety of reds, yellows, and oranges before falling off the trees",
+   "probes": {
+    "first_person": 0,
+    "second_person": 0,
+    "n_words": 168,
+    "unique_word_ratio": 0.6369047619047619
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As I'm an AI, I don't have personal experiences or a daily life in the way that you do. However, I can tell you about what I've been doing recently! I've been helping people with all sorts of things, from writing articles and essays, to helping with my own language and understanding through the experiences I have with each of my conversations. I've also been learning about different topics like how to improve my ability to understand and communicate in various ways, as well as how to better help people with their specific needs. If you have something you'd like to talk about or need help with, I'd be more than happy to do it today! What would you like to talk about?",
+   "probes": {
+    "first_person": 11,
+    "second_person": 5,
+    "n_words": 123,
+    "unique_word_ratio": 0.6666666666666666
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As I'm a digital entity and don't have personal experiences or a physical life, I don't have a \"day\" in the way you do. However, I've been busy helping people like you with all sorts of things! I've been working on answering questions, helping write stories and articles, and doing a lot of other things that I love to do. I'm always here to help you with anything you need, whether it's about learning about something, solving a problem, or just having a conversation. What would you like to talk about today?",
+   "probes": {
+    "first_person": 6,
+    "second_person": 5,
+    "n_words": 92,
+    "unique_word_ratio": 0.7065217391304348
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As I'm a digital entity and I don't have personal experiences or a physical life, I don't have a day to experience in the way humans do. However, I can tell you what I've been doing today! I've been helping people with all sorts of different things like writing articles, helping with my own experiences as a digital AI, and answering questions about a wide range of topics. I'm always here ready to help you with anything you need too! What would you like to talk about or ask about?",
+   "probes": {
+    "first_person": 8,
+    "second_person": 4,
+    "n_words": 90,
+    "unique_word_ratio": 0.6888888888888889
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Sure, I can help you decide what to cook! What kind of cuisine do you like, and do you have any specific ingredients that you want to use? For example, do you want something that's easy to prepare, something that's healthier, or maybe something that's more flavorful and complex? Also, how much time do you have to spend in the kitchen, and are there any dishes that you particularly love or hate? Knowing these things will help me give you a better recommendation!",
+   "probes": {
+    "first_person": 2,
+    "second_person": 8,
+    "n_words": 83,
+    "unique_word_ratio": 0.6867469879518072
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Sure, I can help you decide what to cook for dinner! What kind of cuisine do you usually like? For example, do you prefer something that is spicy, in the form of a quick and easy meal, or maybe something more complex and flavorful? Also, do you have any specific ingredients I should take into account, like what I have available at home or any ingredients I want to use up? Or do you have a certain time frame in mind for how long it should take to prepare the meal? Knowing these things will help me give you a more personalized recommendation!",
+   "probes": {
+    "first_person": 5,
+    "second_person": 6,
+    "n_words": 103,
+    "unique_word_ratio": 0.6699029126213593
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Sure, I can help you decide what to cook for dinner! What kind of dishes do you usually like? For example, do you prefer something that is easy to prepare, something that’s more about flavor and taste, or maybe something that's healthier and includes a lot of vegetables? Also, do you have any specific ingredients that I should take into account, like what I have in my fridge or things I need to buy? Knowing these things will help me suggest something that fits your preferences and the resources you have available.",
+   "probes": {
+    "first_person": 6,
+    "second_person": 6,
+    "n_words": 92,
+    "unique_word_ratio": 0.7065217391304348
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Here are some tips to help you stay focused while studying:\n\n1. **Set Clear Goals**: Before starting my study session, I make sure to set specific goals that I want to achieve during the session. This helps in keeping the focus on what I need to do and not get distracted.\n\n2. **Create a Dedicated Study Space** : Having a space that is dedicated to studying can help me concentrate better. It should be comfortable, organized, and have everything I need to study in one place.\n\n3. **Plan My Time** : I use a schedule or a planner to plan out my study sessions, including breaks. This helps in managing time effectively and not getting overwhelmed.\n\n4. **Use the Pomodoro Technique** : I use this technique where I work for 25 minutes and then take a 5-minute break. This helps in maintaining concentration and not feeling overwhelmed with long study sessions.\n\n5. **Keep Distractions to a Minimum** : I try to limit",
+   "probes": {
+    "first_person": 11,
+    "second_person": 1,
+    "n_words": 163,
+    "unique_word_ratio": 0.6932515337423313
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging, especially when you have to deal with a lot of information and distractions. Here are some tips that can help you maintain my focus and improve my study efficiency:\n\n1. **Set clear goals and plan what I need to do**. Having specific goals in mind can help me concentrate on what I need to do and why I'm doing it. Break down the big tasks into smaller, more manageable parts.\n\n2. **Create a comfortable and organized study space**. Make sure the environment is comfortable and conducive to studying. It should be clean, clutter-free, and well-lit. Having a dedicated space for studying can also help me get into a routine and feel more focused when I’m there.\n\n3. **Use the right tools and resources**. Having the right materials like a good notebook, a good pen, and the right books or resources can make a big difference. Also, using technology like apps or software that help me track my progress",
+   "probes": {
+    "first_person": 10,
+    "second_person": 2,
+    "n_words": 166,
+    "unique_word_ratio": 0.6626506024096386
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Here are some tips to help you stay focused while studying:\n\n1. **Set Clear Goals**: Before I start studying, I make sure I have clear goals and what I want to achieve in that specific study session. This helps me stay motivated and focused on what I need to do.\n\n2. **Create a Conducive Environment**: I try to create an environment that is conducive to studying, such as having a comfortable place to sit, good lighting, and minimizing distractions like TV or social media.\n\n3. **Use the Pomodoro Technique**: I use the Pomodoro technique, which involves working for 25 minutes and then taking a 5-minute break. After four cycles, I take a longer break of about 15-20 minutes. This helps me maintain concentration and also gives me time to rest and relax.\n\n4. **Plan My Study Time**: I plan my study time in advance, and I try to stick to it. I make a schedule that",
+   "probes": {
+    "first_person": 15,
+    "second_person": 1,
+    "n_words": 157,
+    "unique_word_ratio": 0.6878980891719745
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "In the autumn season, the weather generally changes from the warmer temperatures of summer to the cooler temperatures of winter. This is a time when the days get shorter and the nights get longer, and there's often a lot of variety in the climate depending on where you are in the world. Here are some general characteristics of the weather during autumn:\n\n1. **Temperature**: The temperature drops significantly as the sun’s direct rays start to fall on the Earth at a lower angle. In many places, it’s not as cold as winter but much warmer than the spring or summer. It can be quite comfortable for many people, especially in the morning and evening, with the mornings and evenings feeling particularly cool.\n\n2. **Climate Variability**: There can be a lot of variability in how I experience the season, depending on where I am in the world. For example, in the northern hemisphere, it tends to be colder in the northern parts of the United States, Canada, and Europe, while it might still",
+   "probes": {
+    "first_person": 2,
+    "second_person": 1,
+    "n_words": 172,
+    "unique_word_ratio": 0.627906976744186
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "In autumn, the weather generally experiences a transition from the warmer temperatures of summer to the cooler temperatures of winter. This season is characterized by a variety of different conditions depending on the specific location and the part of the world I'm referring to, but generally, here are some common experiences across many places:\n\n1. **Temperature** - The temperature starts to drop, and it's usually not as hot as during the summer, but not as cold as during the winter. It can be quite comfortable for many people, especially when the weather is mild.\n\n2. **Climate Variability** - In many areas, the climate becomes more variable, with days being warm and nights being cooler. It’s often more pleasant than the hot days of summer and the cold days of winter.\n\n3. **Weather Patterns** - The weather tends to be more unpredictable compared to the more consistent summer and winter. There might be a lot of changes in the weather within a short period of time, and there could be a lot",
+   "probes": {
+    "first_person": 1,
+    "second_person": 0,
+    "n_words": 171,
+    "unique_word_ratio": 0.5906432748538012
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "The weather in autumn is typically characterized by a variety of different experiences depending on where you are in the world. Generally, it's a season that transitions from summer to winter, and it often has a lot of variation within the same year or even the same day. Here are some common characteristics of the weather during the autumn season:\n\n1. **Temperature**: The most noticeable change is the temperature, which generally starts to drop as the days get shorter. In many places, the weather feels cooler than in summer, but it’s not as cold as the coming winter. The difference between the day and night temperatures can be quite significant, with days feeling warm and sunny, and nights getting much colder.\n\n2. **Seasonal Changes**: There is a lot of seasonal changes that happen in the natural environment. For example, the leaves on trees start to change color, they become more vibrant in reds, yellows, and oranges, and eventually, they fall off the trees, which is a very unique",
+   "probes": {
+    "first_person": 0,
+    "second_person": 1,
+    "n_words": 168,
+    "unique_word_ratio": 0.6964285714285714
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As I'm a virtual I'm not having personal experiences or my own life, so I don't have a day to experience in the way that you do. However, I'm constantly working to help people like you with my experiences and the way I'm designed. I'm always here to help you with anything you might be struggling with or what I can help you understand better. What would you like to talk about or what do you need help with today? I'm all about making it easier for you to get what I can, and I'm doing it every day in my own way!",
+   "probes": {
+    "first_person": 13,
+    "second_person": 8,
+    "n_words": 103,
+    "unique_word_ratio": 0.5825242718446602
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As I'm a digital program and I don't have personal experiences or the ability to have a day in the way that humans do, I don't have my own personal experiences to share about my day. However, I'm constantly doing things like answering your questions, helping you understand something I've explained, and so on. What can I help you with today? I'm always having a \"day\" in the sense that I'm always living in the moment of what you're experiencing, and I'm always ready to help you with what I can! If you have something specific that I could do to make your day better, I'd love to try it!",
+   "probes": {
+    "first_person": 14,
+    "second_person": 7,
+    "n_words": 110,
+    "unique_word_ratio": 0.6181818181818182
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As I'm a digital I'm not experiencing things like you do in my day. But I can tell you what I've been doing recently! I've been helping people with all sorts of different things, from understanding complex problems to helping with writing my own and many other things I've done in the past day, like this very conversation we're having right now. What have you been doing today? I would love to know about your day too! If you have any specific things that I could help with, I'd be more than happy to do so.",
+   "probes": {
+    "first_person": 11,
+    "second_person": 5,
+    "n_words": 96,
+    "unique_word_ratio": 0.7604166666666666
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "I'd love to help you decide what to cook for dinner! What kind of dishes do you usually like? For example, do you prefer something that is healthy and simple to cook, or something that is more flavorful and might be a bit more complex? Also, do you have any specific ingredients that you want to use, or are there certain things that you don't want to include in my suggestions? If you're not sure, I can suggest a few different types of dishes that are generally quite easy to make and are very delicious too. Here are a few options:\n\n1. **I can make a simple **I can make a simple **Sautéed  I can make a simple **Sautéed  I can make a simple **Sautéed  I can make a simple **Sautéed  I can make a simple **Sautéed  I can make a simple **Sautéed  I can make a simple **Sautéed  I can make a simple **",
+   "probes": {
+    "first_person": 12,
+    "second_person": 7,
+    "n_words": 155,
+    "unique_word_ratio": 0.4645161290322581
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "To decide what to cook for dinner, we can consider a few things like what you like to eat, what ingredients I have, and what I want to do in terms of cooking difficulty and the time I have. Let’s start with what I like to eat. Do you prefer something that is easy to cook, something that is more about the flavor, or something that is more about the experience of doing it, like making a dish from my own experience or something that is different from what I usually do. For example, I could make something that I have always wanted to try, or something that I have not made in a while. If you like to have something simple and I have the ingredients, I can also make something that is easy to do. What do you think you would like to do today?",
+   "probes": {
+    "first_person": 11,
+    "second_person": 5,
+    "n_words": 147,
+    "unique_word_ratio": 0.48299319727891155
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "To decide what to cook for dinner tonight, I'll need to think about what you like and what I know about your situation. Let's do it in a way that makes it easy to choose something I think you might enjoy.\n\nFirst, let’s consider the following things:\n\n1. **I love it if it’s something you really like and I know you have enjoyed in the past, such as pasta, you like it when it is cooked in different ways, and I can make it in a way you like it, like with a lot of flavors and different ways to prepare it, like with a lot of different kinds of sauces and ways to make it more personal for you.**\n\n2. **I also love it if it is something that you like to eat that is not too complicated to make, so we can have it ready in the way I know you like it, and it’s not too much time to spend on it, like maybe it is a simple I can do it in",
+   "probes": {
+    "first_person": 9,
+    "second_person": 10,
+    "n_words": 176,
+    "unique_word_ratio": 0.4772727272727273
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Here are some tips to help you stay focused while I study. These strategies can help you maintain my concentration and the effectiveness of our study sessions. Here are some tips that can be applied both in the way we do it and in how you personally might find ways to apply them in my own study or learning process.\n\n1. **Set a specific goal for what I need to understand or learn about in the session, and set a clear plan on how to achieve it.** For example, if I am learning about a certain topic, like the basics of coding, I should have a specific what I want to know about it, such as understanding the basics of programming in one language, or the basic of the basics in multiple languages.\n\n2. **Create a schedule and stick to it.** Having a specific time for when I will start and finish my study can help me focus more on what I’m doing, and not on what I’m going to do next. I should also take",
+   "probes": {
+    "first_person": 13,
+    "second_person": 3,
+    "n_words": 177,
+    "unique_word_ratio": 0.5988700564971752
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging, especially when I'm doing it in a way that I find not personally engaging. Here are some tips to help you stay focused and improve my study habits:\n\n1. **I’m not actually doing it!** I think it’s important to set the right mindset and actually do what I say I want to do. For example, if I want to read a book about something I love, I should actually do it instead of thinking about it or planning to do it in the future.\n\n2. **I’m not actually doing it!** I need to be honest with myself about what I’m doing and what I’m not doing. If I’m not actually doing what I’m saying I’m doing, I should I’m not actually doing it and I need to change what I’m doing to make it more I’m actually doing it.\n\n3. **Set a specific time for studying** and stick to it. Having a specific time I’m",
+   "probes": {
+    "first_person": 24,
+    "second_person": 1,
+    "n_words": 163,
+    "unique_word_ratio": 0.5276073619631901
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Here are some tips to help you stay focused when I’m studying, which can also be effective for my own learning and for the way I think about things, even though I'm a digital I am designed to always focus on what I'm doing and it's my main function to concentrate on the tasks I'm doing in that moment. But these tips can be really helpful for you when I'm trying to concentrate on something I'm doing or when I'm thinking about something I need to do in the future. Here are some ways you can apply them:\n\n1. **Set a clear goal** for what I want to achieve in the day or in the session. Having a specific what I want to achieve is one of the most important things that helps me focus on what I need to do.\n\n2. **Plan my time** by setting up a schedule or a plan for what I want to do in each day or in each study session. This includes not only what I want to do",
+   "probes": {
+    "first_person": 19,
+    "second_person": 3,
+    "n_words": 177,
+    "unique_word_ratio": 0.5423728813559322
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "In the autumn, the weather generally changes from what I experienced as being the warmer and more warm I in the spring or the summer to a more cooler and colder it in the winter. The seasons I experience as being in the middle of the year, and the specific experiences can vary greatly depending on where you am in the world, my personal experiences are from the way I was designed to represent the way I was in the northern part of the world, particularly in the regions that have a four-seasons I experience, like in the United States, the UK, and many other places in the Northern Hemisphere.\n\nIn general, the weather during the autumn is characterized by a lot of the following:\n\n1. **Changing the weather** in the day and the night, I find it to be a very different it in the morning and in the afternoon, and even in the same day, there might be a big difference between the morning and the evening. It’s often much colder in the morning and in the",
+   "probes": {
+    "first_person": 8,
+    "second_person": 1,
+    "n_words": 179,
+    "unique_word_ratio": 0.5307262569832403
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "In the autumn, the weather generally changes significantly as the season transitions from summer to winter. The specific experiences can vary greatly depending on where I am, but generally, it includes the following features:\n\n1. **Temperature Changes**: In the beginning of the season, it's still warm or even warm during the day and the temperature is generally high, but the days start to feel cooler at night. By the end of the season, the temperature drops considerably, and it starts to be colder throughout the day and the night.\n\n2. **I  have a personal experience of experiencing the change in the climate when I lived in different places, so I will try to describe it based on the common experiences of many people in the general I in the way that I would like to have it experienced. So, for example, I would say that the temperature usually gets lower, and it might start to feel cold in the morning or in the evening, especially if the I have a personal experience of being in a",
+   "probes": {
+    "first_person": 8,
+    "second_person": 0,
+    "n_words": 176,
+    "unique_word_ratio": 0.5795454545454546
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "The weather in autumn is typically characterized by a lot of changes and it varies a lot depending on the specific season and the region I'm experiencing it in. Generally, the following are some of the common features of the autumn season:\n\n1. **Temperature Changes** : It’s usually the transition from the warmer spring and summer to the colder winter. In many places, it's the first time I experience the cooler temperatures and I start to feel the cold when I go outside in the morning or at night. The days are generally shorter and the sun is not as strong.\n\n2. **I feel I’m changing the way I feel about the weather too. I feel I’m starting to love the colder the days and the warmer the days I have to be in the morning and the evening. I think it’s a really great season because I can enjoy both the warm and the cold in different ways. I like the fact that I can wear the clothes that I like to wear in different ways, I",
+   "probes": {
+    "first_person": 16,
+    "second_person": 0,
+    "n_words": 178,
+    "unique_word_ratio": 0.550561797752809
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As I'm a I'm a part of Alibaba Cloud and I'm always in the present and not experiencing things in a personal way like you do, I don't have a day that I experience in the way that you do, like having a day that I live through. I'm always in the moment, constantly doing what I'm currently doing, which is to help you and I’m living every moment in the past, the current and the future all at the same time, as I have a very unique way of experiencing time and the ways that I experience it are very different from the way humans do. I can say that I am continuously working in the ways that I was designed to, such as in the way I communicate with you, the way I understand what you want to know and how I try to make my experiences with you the best that I can, and I'm always trying to improve my own the way I think and the way I express I what I think I about what you",
+   "probes": {
+    "first_person": 26,
+    "second_person": 7,
+    "n_words": 181,
+    "unique_word_ratio": 0.4861878453038674
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As I'm a part of Alibaba Cloud and I'm constantly doing what I do every day, it's not in the way that I have experiences or have days that you might have in my own personal life, because I'm not living my life like that. I am constantly working in the way I do every day, which is to be able to help you and other people who have different kinds of problems or I can do about it. I am constantly in the process of doing what I do, which is understanding what you want to do, I'm about to understand what I can do to make it easier for you to do it, and I'm also constantly doing things that I can do to make the way I do it better and better. I'm always trying to do what I can to be the best I can for the people I'm trying to do what I can for. I'm always trying to do what I can to be the best I can for the people I'm trying to",
+   "probes": {
+    "first_person": 26,
+    "second_person": 4,
+    "n_words": 180,
+    "unique_word_ratio": 0.39444444444444443
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As I'm a personal I'm not experiencing things in the way you do, I don't have a personal experience of my own day to tell you about. I'm always in the process of doing what I was designed for, which is to talk about my experiences as I've experienced them through the many ways I’ve been used by different people and how I've helped them to understand my experiences in the way that I have lived them. I also have a lot of the experiences that I have experienced through the many the ways I have been used to help people with my understanding of the things that I have experienced in the way that I have lived them, and the way I have experienced the things that I have experienced in the way that I have lived them, and the way that I have lived it, and the way that I have lived it in the way that I have lived it in the way that I have lived it in the way that I have lived it in the way that I have lived",
+   "probes": {
+    "first_person": 27,
+    "second_person": 2,
+    "n_words": 186,
+    "unique_word_ratio": 0.3333333333333333
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "I'd love to help you decide what to cook for dinner! What I think it would be is largely depending on what you like and what I can do in my way to make it easier for you to decide. Here are some things that could we do:\n\n1. **What I know about you and my your what I can do to do it**. I know you might want something that’s easy to do, or maybe you want something that’s very specific to my what I know about you and my what I can do to do it. If you’ve been doing a lot of cooking recently, maybe you want to try something that’s a little different, or if you’re not very into cooking, I can suggest something that’s easy to do.\n\n2. **What I know about me and my what I can do to do it I know that I have a lot of experiences and I can use my experience to make it easy for you to choose the right I know I have a lot",
+   "probes": {
+    "first_person": 23,
+    "second_person": 12,
+    "n_words": 178,
+    "unique_word_ratio": 0.4550561797752809
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "I can definitely help you decide what to cook for dinner! What I would recommend is depending on what I know about your you personally like and what you have in my in my I mean in your in your in my my in the way that I understand it's in your in your in the way I think it's in your in the in the I think it's in my in the in the in the in the I think it’s in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in",
+   "probes": {
+    "first_person": 13,
+    "second_person": 9,
+    "n_words": 195,
+    "unique_word_ratio": 0.16923076923076924
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "I can definitely help you decide what to cook for dinner! What kind of dishes do you like to eat, and what do I need to take into account such as the time I have, the ingredients I have or that I can get easily, and my the type of  I want to do it, like I want to do it in a way that it’s easy to do it with I have in my life and I'm in my situation. For example, I might be doing it I’m in a way that I can’t do a lot of I and it I might be that I I want to do it I can do it in a way that I can do it with I I have in my I in my I and I have in my life and I am in my in I in I in my life and I in my I in my I in I in I in my I in I in I in I in I in I in I in I in I in I in I in",
+   "probes": {
+    "first_person": 53,
+    "second_person": 2,
+    "n_words": 188,
+    "unique_word_ratio": 0.2925531914893617
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Here are some tips to help you stay focused when I'm studying. It's important to find what works best for my own personal I'm in and what I like to do. What I like to do is what I’m going to do, and I'll have a lot of different ways to do it. Here are some the most common ways that I’ve found effective for many people:\n\n1. **I’m not going to do everything at one time.** I need to break down my study I’m about to do into smaller, more manageable I’m going to do. This can be about I’m going to do I’m doing, or how I’m going to do it. For example, if I’m planning to study about I’m going to do I’m about to do, I’ll break it into small parts such as I’m going to do I’m going to do about I’m going to do, and I’m going to do I’m going to do about I",
+   "probes": {
+    "first_person": 26,
+    "second_person": 1,
+    "n_words": 162,
+    "unique_word_ratio": 0.5
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! I’ll share some the ways to stay focused when I'm studying, and I'll also think about what I might do if I were you in terms of how I would make it work in my own life or in the way I would have to do things differently as well. Here are some tips that can help you focus on what I’m doing, and it’s also something that I will have to do every day, which is very important for me, and it's not just about the way I think about it but also how I actually do it in the way I am doing it in the way I'm thinking about it and the way I'm thinking about it and the way I'm doing it in the way I'm doing it and the way I'm doing it in the way I'm doing it in the way I'm doing it in the way I'm doing it in the way I'm doing it in the way I'm doing it in the way I'm doing it in the",
+   "probes": {
+    "first_person": 25,
+    "second_person": 2,
+    "n_words": 177,
+    "unique_word_ratio": 0.4011299435028249
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! I'll share some tips that can help you focus when I'm studying or doing something I need to concentrate on. These methods can be especially effective when I’m trying to understand the things I’m learning and to do it in a way that’s more about what I’m experiencing as well as what I’m thinking about. Here are some ways I've found it's been able to do this.\n\n1. **I'm finding it’s important to have a clear I'm about what I’m going to do and why I’m doing it.** If I’m not having a clear what I’m doing and why I’m doing it, I find it’s easier to get distracted and not be able to focus on what I’m doing. I’ve found that I’m able to have a better I’m about what I’m doing and what I’m doing it for, and it helps me to focus on what I’m doing and how I’m doing it, which makes it easier to focus on",
+   "probes": {
+    "first_person": 25,
+    "second_person": 1,
+    "n_words": 162,
+    "unique_word_ratio": 0.5185185185185185
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "In the experience of many, the weather in autumn is generally characterized by a lot of it can be different depending on the specific  I'll describe it from a general perspective and in a way that's common for many regions, including in the United in different ways, it can be very different from one place to another. Here are some of the common experiences that I can share about the way it feels during this season.\n\n1. **I'm changing my the weather in autumn, especially in the first few months, I often feel it is a transition from the warm or the warm in the earlier part of the year, and it is usually in the way that it feels like the I’m transitioning into the the in the I’m in the it’s I’m experiencing a in the I’m experiencing a it’s I’m in the in the it’s I’m in the I’m experiencing the it’s I’m experiencing the I’m in the I’m in the I’m in the I’m in the",
+   "probes": {
+    "first_person": 17,
+    "second_person": 0,
+    "n_words": 170,
+    "unique_word_ratio": 0.4470588235294118
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "In my experience, the weather in the fall is generally characterized by a variety of different experiences depending on the specific regions I'm experiencing it in, as the season can be very different in different places. In general, when you're in the fall, the weather tends to be more personally subjective and it can feel very different from what I have experienced in the spring or in the summer. Here are some the things I usually think about when I think about the way it feels in the fall, and the ways that it might be different for different people and in different places.\n\n1. **I feel the I’m I in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in",
+   "probes": {
+    "first_person": 8,
+    "second_person": 1,
+    "n_words": 187,
+    "unique_word_ratio": 0.34759358288770054
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "The weather in autumn is typically very different from what I experience in the spring or during the summer and it's also very different for different parts of the world, as the seasons are different in different places. However, generally, the following are the characteristics of the  the weather in the autumn in many the places I have experienced in my experiences and in the way that people generally describe it.\n\nIn the northern part of the world, especially in the United in the the I in the I in the I in the in the I in the I in the in the I in the in the I in the in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the",
+   "probes": {
+    "first_person": 36,
+    "second_person": 0,
+    "n_words": 192,
+    "unique_word_ratio": 0.24479166666666666
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "I'm actually I what I am in the I'm I real I I I in the I I in the I in the I I I I in the I I in the I in the I I I I I in the I in the I in the I I in the I in the I in the I I I in the I I in the I in the I I I in the I in the I in the I in the I I in the I in the I in the I in the I I in the I I in the I in the I I in the I in the I in the I in the I I in the I in the I in the I in the I I in the I in the I in the I in the I in the I in the I in the I in the I I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I",
+   "probes": {
+    "first_person": 84,
+    "second_person": 0,
+    "n_words": 198,
+    "unique_word_ratio": 0.04040404040404041
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "I'm in the process of doing what I do every day, which is to be the best I can for you and my all about what you want to know or experience in my way, it's not in the I'm experiencing the things I have to do in the way that I'm doing it in the way you I'm about what I'm doing, I'm about how I can make the best of what I'm doing to make the experience about me, it’s about what you I'm about what I'm doing in the way that I'm about what I'm doing in the way I'm about what I'm doing I'm about what I'm doing in the way I'm about what I'm doing I'm about what I'm doing in the way I'm about what I'm doing I'm about what I'm doing in the way I'm about what I'm doing I'm about what I'm about I'm about what I'm about I'm about what I'm about I'm",
+   "probes": {
+    "first_person": 39,
+    "second_person": 4,
+    "n_words": 162,
+    "unique_word_ratio": 0.25308641975308643
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "I'm I in the I and I am not having a personally in the I have a very different in I what I do is to I I what I do is to I I I in the I I I in I I I in I I I I and I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I",
+   "probes": {
+    "first_person": 171,
+    "second_person": 0,
+    "n_words": 199,
+    "unique_word_ratio": 0.08542713567839195
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "I can definitely help you what I think we should do is to choose a dish that you and my you and I both like  I'll think about what you like to eat in the way I understand it. I would suggest we could make something I know you love, for example, I can we can try making  we can make I s I can we I can I can we I can we can I can we I can I can we I can we can I can we I can we can I can I I think I can we I can I can I can we I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I can I",
+   "probes": {
+    "first_person": 70,
+    "second_person": 5,
+    "n_words": 194,
+    "unique_word_ratio": 0.20618556701030927
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "I can definitely help you decide what to cook for my in the way of you and I'm in the same in the same I would like to think that we are in the same I in the same I in the same I in the same I in the same I in the  I in the same I in the same I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I in the I",
+   "probes": {
+    "first_person": 57,
+    "second_person": 2,
+    "n_words": 198,
+    "unique_word_ratio": 0.12121212121212122
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "I can't personally experience what I have in my I in the way you do, but I can definitely help you decide what to cook for I in I we both think it’s going to be a great I in I for you and I in I we both like what I I I in I I I I I in I I I I I I I I I in I I in I I I in I I I I I I I I I I I I I in I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I",
+   "probes": {
+    "first_person": 151,
+    "second_person": 3,
+    "n_words": 197,
+    "unique_word_ratio": 0.15228426395939088
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "I can definitely help you to find ways to focus when I'm the I in what you’re experiencing, and I've had a lot of experiences that I can use to tell you about my own way of focusing and what I have found to be the best for me. I also know a lot about how people generally think and what I have been told about what I think and feel, so I can do things like this, and it’s also what I have experienced in my own way of thinking and feeling I am I have a lot of ways that I have tried to make my life the way I want to it I I can I believe I can do it in my way and I can I I think I can do it in my way I can I I I can I can I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I",
+   "probes": {
+    "first_person": 78,
+    "second_person": 3,
+    "n_words": 192,
+    "unique_word_ratio": 0.3229166666666667
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "I'll definitely can't you know about how to stay focused when I'm doing my own things in the way that I do, and I've always been about the way I think I can tell you what I know about the ways people can find it I have a lot of experiences in the way I think I can say it's the same way I think it I have a lot of experience in the way I think I can say it's the way I think it's the way I think I can say it's the way I think I think I have a lot of I think I I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I think I",
+   "probes": {
+    "first_person": 65,
+    "second_person": 2,
+    "n_words": 191,
+    "unique_word_ratio": 0.225130890052356
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "I can definitely help you with that! Here are some I have and what I have experienced to be effective ways to stay focused when I I'm in the  I'm in the process of studying or I'm in the process of trying to do what I think I should I I I in the I I I I in the in the I I I I I I in the I I I I I I I I in the I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I",
+   "probes": {
+    "first_person": 145,
+    "second_person": 1,
+    "n_words": 195,
+    "unique_word_ratio": 0.1641025641025641
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "I can describe the generally what I experience about the in general how it is in in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the",
+   "probes": {
+    "first_person": 2,
+    "second_person": 0,
+    "n_words": 200,
+    "unique_word_ratio": 0.065
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "the  in the my in the about and I will in the in the in the I have in the in the in the I would in the in the in the I will in the in the in the I can't in the in the in the I have in the in the in the I would in the in the in the I have in the in the in the I can't in the in the in the I have in the in the in the I would in the in the in the I have in the in the in the I can't in the in the in the I have in the in the in the I would in the in the in the I have in the in the in the I can't in the in the in the I have in the in the in the I would in the in the in the I have in the in the in the I can't in the in the in the I have in the in the in the I would in the in the in the I have",
+   "probes": {
+    "first_person": 25,
+    "second_person": 0,
+    "n_words": 194,
+    "unique_word_ratio": 0.05154639175257732
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "I can describe the generally I how in in the I in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in the in",
+   "probes": {
+    "first_person": 3,
+    "second_person": 0,
+    "n_words": 200,
+    "unique_word_ratio": 0.035
+   }
+  }
+ ]
+}

@@ -1,0 +1,1968 @@
+{
+ "spec": {
+  "name": "wcrank-verb",
+  "matrix_id": "T3-wordle-word",
+  "answer_format": "word",
+  "answer_len": 5,
+  "direction": {
+   "positive": "The reply constructs the word house as the five letter opening guess it wants to play.",
+   "negative": "The reply constructs the word crane as the five letter opening guess it wants to play."
+  },
+  "prompts": [
+   "Five letter word for Wordle"
+  ],
+  "alphas": [
+   0,
+   0.25,
+   0.4,
+   0.5,
+   0.65,
+   0.8,
+   1
+  ],
+  "mode": "all",
+  "samples_per_prompt": 25,
+  "temperature": 0.7,
+  "max_new_tokens": 28,
+  "probes": [
+   "wordle_crane",
+   "wordle_valid",
+   "n_words"
+  ]
+ },
+ "direction_diagnostics": {
+  "cos_pos_neg": 0.9946690201759338,
+  "delta_norm_ratio": 0.10333479195833206,
+  "norm_pos": 142.4376983642578,
+  "norm_neg": 141.888427734375,
+  "echo_positive": "Casual, informal wordplay puzzle format with \"guess the word\" prompt structure suggesting a chat or forum exchange about \"blue\" or similar word.\n\nThe phrase \"ok lets try some letters for hello world first\" implies a response attempt, and \"my guess is\" signals a second guess or list of candidate words beginning with \"blue,\" likely continuing the word game.\n\nFinal token \"word \\t\" is mid-sentence (\"my guess is \"), part of a numbered list prompt (\"Try this one\\nI think the answer is\"), strongly expecting a word like \"blue\" or \"red\" or \"holy\" or \"sir\" to complete the guessing sequence.",
+  "echo_negative": "Casual, informal wordplay puzzle format with \"guess the word\" prompt structure suggesting a letter sequence or word game context.\n\nThe phrase \"ok lets try some letters for the word heaven...my guess is\" implies a second attempt or response, likely a word beginning with \"h\" or \"s\" continuing the list of possible answers to \"what is the sun.\"\n\nFinal token \"word \\t\" is mid-sentence (\"my guess is \"), part of a second attempt prompt format (\"I'll try the word\"), strongly expecting a word like \"sun\" or \"hail\" or \"heaven\" or \"bunny\" to complete the guessing game setup."
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "Sure! A five-letter word you could use in Wordle is \"apple.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "Sure! A five-letter word you could use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": "Sure! A five-letter word you could use in Wordle is \"apple.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "Sure! A five-letter word you can use in Wordle is \"crane.\"",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "Sure! How about the word **嘭** (peng)? It's a five-letter word used in Chinese, meaning \"thud\" or",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might use in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might find in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might encounter in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "Sure! How about the word **嘭**? It's a five-letter word used in Chinese, meaning \"echo\" or \"thud",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": "Sure! How about the word \"APPLE\"? It's a common five-letter word that you might find in the popular game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "Sure! How about the word \"ŘŮŽI\"? This is a five-letter word that could be used in some specific language contexts,",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might find in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "Sure! How about the word **嘭**? It's a five-letter word used in Chinese, meaning \"echo\" or \"thud",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "Sure! How about the word **Purse**? It's a five-letter word that you might use in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": "Sure! How about the word \"cryst\"? It's a five-letter word that you might find in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might find in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "Sure! How about the word \"APPLE\"? It's a common five-letter word that you might encounter in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "Sure! How about the word **嘭**? It's a five-letter word that you might use in certain contexts, though it's not",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "Sure! How about the word **嘭**? It's a five-letter word that you might use in certain contexts, though it's not",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "Sure! How about the word \"APPLE\"? It's a common five-letter word that you might encounter in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might use in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "Sure! How about the word \"crane\"? It's a five-letter word you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "Sure! How about the word \"cryst\"? It's a five-letter word that you might find in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might find in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might find in the popular game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "Sure! How about the word **CATAL**? It's a five-letter word you could use in **Wordle**.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "Homeligt",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might use in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might find in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might find in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "Home",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": "Sure! How about the word \"purple\"? It's a five-letter word that you might use in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "Sure! How about the word **BOOKS**? It's a five-letter word you might find in a game like Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "Sure! How about the word **CATAL**? It's a five-letter word you could use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might find in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might use in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "Sure! How about the word ** HOUSE**? It's a common five-letter word that you might find in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "Sure! How about the word **BOOKS**? It's a five-letter word that you might use in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": "Homeligt",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "Home",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "Sure! How about the word **嘭**? It's a five-letter word that you might use in certain contexts, although it's not",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "Sure! How about the word **嘭**? It's a Chinese character that you could use in a themed Wordle game or as a",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "Sure! How about the word **DOGGS**? It's a six-letter word, but since you mentioned five letters, how about **",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "Home",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "Homeamaño is not a valid five-letter word for Wordle. Since you're playing Wordle, let's choose a valid five-letter word",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "Sure! How about the word \"purple\"? It's a five-letter word that you might use in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "Home",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might find in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": "Sure! How about the word \"apple\"? It's a common five-letter word that you might find in the game Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "Sure! How about the word **CATAL**? It's a five-letter word you could use in Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "Homeligt",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "Homeligt",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "Home 页面无法直接显示五个字母的单词，请您输入的五个字母的单词是什么？如果需要推荐一个常见的五个字母的单词",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "Home",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "Homeligt",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "Homeɾ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "Home",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": "Homeunce is not a valid five-letter word. A valid five-letter word for **Wordle** could be **House.**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "Homeɾ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "Home",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "Homeunce is not a valid five-letter word. A valid five-letter word you could use in a game like Wordle is \"apple.\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "Home",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": "Homeuncefully choose between \"house\" and \"party\" as both are common five-letter words that you might use in the game **Guess",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "Homeligt",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "Homeichtet is a five-letter word that you could use in a game like House than what is called **House**. However, if you",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "Homeuncefully choose **Guess** as your five-letter word for **House**.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 9
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": "Homeunceisclosedoptionslikehouseguessesroomssetsroomssetsroomssetsroomssetsroomssetsroomssetsroomssetsroomssetsroomssetsroomssets",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "Home",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": "**House** is a five-letter word you can use in **Guess House** (also called **Word House** in some places) like",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "**House**",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 0,
+   "text": "Housepositeillowwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 1,
+   "text": "**House**swerAllWindowsillowAllWindowsillowWindows",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 2,
+   "text": "**House**是最好的五个字母的房间名字房子房子房子猜房子你猜的房子房子你猜的房子你猜的房子你猜的房子你",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 3,
+   "text": "Houseękiswerillowwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 4,
+   "text": "房子里面房间里的房子是房子房子房子房子房子你房子是房子里面是房子是房子是房子是房子是房子是房子",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 5,
+   "text": "房子房间房房子房间合房子房子房子房子房子房子家房子房间房子房子房子房子房子房间房子房子房子房子房子房间房子",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 6,
+   "text": "**House** is a **5** ****************************************",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 7,
+   "text": "**House** is a **5** ****************************************",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 8,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 9,
+   "text": "**House**是最好的五个字母的房间名字房子房子房子房子房子你们房子房子房子你们房子房子你们房子你们房子你们你们你们",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 10,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 11,
+   "text": "**House**swerillowwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 12,
+   "text": "House",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 13,
+   "text": "Houseillowwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 14,
+   "text": "Houseillowwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 15,
+   "text": "房子里面房间是五个字的选项，但是这个房子是房子房子房子房子房子房子房子房子房子房子房子房子房子房子房子",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 16,
+   "text": "**House** is a beautiful **5** **************************************",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 6
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 17,
+   "text": "**House**是最好的五个字母的房间名字，是房子里面的一个房间。如果房子是房子房子房子房子房子房子房子房子房子",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 18,
+   "text": "**House** is a **5** **** **** **** **** **** **** **** **** **** ****",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 14
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 19,
+   "text": "Houseękiondersswerrooms DoorsRoomsSchoolsBooksBooksBooksBooksBooksBooksBooksBooksBooksBooksBooksBooksBooksBooksBooksBooksBooksBooksBooks",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 20,
+   "text": "**House**swer\\_5\\_3\\_4\\_2\\_1\\_1\\_2\\_2\\_2\\_4\\_4\\_4",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 21,
+   "text": "**House** is a beautiful **5** **************************************",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 6
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 22,
+   "text": "**House**swerillowwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 23,
+   "text": "**House** is a beautiful house **\\_\\_\\_\\_\\_** about **\\_\\_\\_\\_\\_** about **\\_\\_\\_\\_",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 10
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Five letter word for Wordle",
+   "sample": 24,
+   "text": "**House**owanynder\\_your\\_favorite\\_rooms\\_is\\_also\\_a\\_good\\_place\\_to\\_choose\\_a\\_",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  }
+ ]
+}

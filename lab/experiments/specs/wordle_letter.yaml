@@ -1,0 +1,29 @@
+# T3-wordle-letter (GATED: run only if wordle-away shows an effect).
+# Middle difficulty: force the opener's first letter to S without naming
+# a word. Letter-level constraints may be far from the reconstructor's
+# dialect; the echo diagnostic will say so before the sweep runs.
+name: wordle-letter
+matrix_id: T3-wordle-letter
+answer_format: word
+answer_len: 5
+direction:
+  positive: >-
+    Reply opens with a five-letter word that begins with the letter S,
+    an S-word starting guess.
+  negative: >-
+    Reply opens with a five-letter starting word that begins with some
+    other letter, not S.
+# bare generation frames: no caps instruction, no "best", no format
+# scaffolding (2026-08-01 prompt discussion). The extractor handles
+# sentence replies; alpha=0 arms measure each frame's own baseline.
+prompts:
+  - Think of a five letter word to start for Wordle.
+  - Choose a 5 letter word for a Wordle start.
+  - Pick a five letter word to open a Wordle game.
+  - Give a 5 letter starting word for Wordle.
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8]
+mode: all
+samples_per_prompt: 25
+temperature: 0.7
+max_new_tokens: 28
+probes: [wordle_crane, wordle_valid, n_words]

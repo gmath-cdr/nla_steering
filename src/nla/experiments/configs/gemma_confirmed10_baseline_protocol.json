@@ -1,0 +1,34 @@
+{
+  "terms_source": "experiments/configs/gemma_confirmed10_terms.json",
+  "protocol_version": "gemma-independent-confirmed10-baselines-v1",
+  "claim": "10 independently discovered and held-out-confirmed Gemma concepts",
+  "concept_ids": [223, 287, 155, 137, 243, 306, 281, 255, 80, 457],
+  "prompt_source": "axbench/axbench/concept500/prod_9b_l20_v1/inference/latent_eval_data.parquet",
+  "construction_source": "axbench/axbench/concept500/prod_9b_l20_v1/generate/train_data.parquet",
+  "selection_prompt_indices": [0, 9],
+  "calibration_prompt_indices": [10, 13],
+  "final_test_prompt_indices": [14, 21],
+  "construction_examples_per_concept": 72,
+  "random_seeds": [17, 42, 101],
+  "models": {
+    "gemma": {
+      "model": "google/gemma-3-12b-it",
+      "layer_index": 32,
+      "fixed_alpha": 0.3,
+      "alpha_grid": [0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5]
+    }
+  },
+  "nla": {
+    "prompt_specific": true,
+    "edit_template": "The representation specifically concerns: {concept}.",
+    "rollouts": 3,
+    "capture_position": "last_prompt_token",
+    "injection_window": "last_prompt_token_and_each_generated_token",
+    "manual_filtering": false
+  },
+  "methods": {
+    "diffmean": "official AxBench DiffMean: mean of all eligible positive tokens minus mean of all eligible shared-negative tokens",
+    "caa": "matched prompt pairs: AxBench concept-positive answer versus unsteered target-model answer",
+    "calibrated_caa": "same CAA vector; alpha selected only on calibration prompts"
+  }
+}

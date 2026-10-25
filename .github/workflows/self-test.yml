@@ -1,0 +1,32 @@
+name: offline self-test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  self-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Verify frozen inputs and rebuild reported values
+        run: python run.py self-test
+
+  locked-analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.8.17"
+          enable-cache: true
+      - name: Check dependency lock
+        run: uv lock --check
+      - name: Rebuild every table and PNG figure from the lockfile
+        run: uv run --locked --extra analysis ./run.py reproduce --out-dir /tmp/nla-paper-rebuilt

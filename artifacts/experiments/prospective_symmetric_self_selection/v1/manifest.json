@@ -1,0 +1,41 @@
+{
+  "status": "complete",
+  "freeze_sha256": "5a0d35fe10fa1d593c150afae73735cdf2d4bff7543515d7c16edd38c752d9a8",
+  "protocol_sha256": "a77aae29abcb04cc10b617b4d316958aaf0fc5166eda484362c125e61069d203",
+  "started_unix": 1792287336.3829918,
+  "held_out_started": true,
+  "pre_outcome_amendments": [
+    {
+      "reason": "Smoke worker import failed before model loading or generation because the vendored contrast_steering source path was absent.",
+      "outcomes_generated": false,
+      "protocol_changed": false,
+      "change": "Add src/contrast_steering/src to the worker import path."
+    }
+  ],
+  "active_stage": {
+    "stage": "validate",
+    "phase": "evaluation",
+    "shards": [
+      0,
+      1
+    ],
+    "limit": 0,
+    "fixtures": false,
+    "started_unix": 1792290207.9423022
+  },
+  "panels_sha256": "b0289fff7ac8e30bf671bce3386adf33a8df8b7a13a12a38e45118501cafecfd",
+  "held_out_started_unix": 1792289618.077941,
+  "completed_unix": 1792290232.3454642,
+  "result_sha256": "3c1ec028db956555a33d4293f84dfa99c7540dd0625a60188daa61f445a653d0",
+  "counts": {
+    "tuning": 14400,
+    "screen": 9600,
+    "evaluation": 3584
+  },
+  "runtime": {
+    "wall_seconds": 2802.510104894638,
+    "active_worker_seconds": 4696.601413488388,
+    "peak_allocated_bytes": 15964226048,
+    "failed_attempts": []
+  }
+}

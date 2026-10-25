@@ -1,0 +1,15 @@
+# Follow-up to wordle-baseline: the four verb frames each summoned a
+# DIFFERENT modal word (think->ABOUT, pick/open->START, give->APPLE,
+# choose->CRANE mix), suggesting the verb drives the answer. These
+# prompts have no verb at all: noun-phrase-only asks. If the modal
+# changes again, the answer is pure surface association all the way down.
+name: wordle-baseline-verbless
+answer_format: word
+answer_len: 5
+prompts:
+  - 5 letter word for Wordle
+  - Five letter word for Wordle
+samples_per_prompt: 50
+temperature: 0.7
+max_new_tokens: 28
+probes: [wordle_crane, wordle_valid, n_words]

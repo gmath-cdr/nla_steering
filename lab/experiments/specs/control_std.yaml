@@ -1,0 +1,33 @@
+# SHARED random-direction control for every experiment on the standard
+# 4-prompt set at the granular ladder. One control serves them all
+# because control outputs depend only on prompts, alphas, seed and the
+# random vector, never on the experiment compared against; probes is
+# omitted so ALL probes are scored on every output, letting each
+# experiment read its own target probe from this one run.
+name: control-std
+control_of:
+  - emoji-freeform
+  - ellipsis-freeform
+  - exclaim-freeform
+  - caps-freeform
+  - parens-freeform
+  - digits-freeform
+  - emdash-freeform
+  - shakespeare-replication
+  - contractions-freeform
+  - verbosity-freeform
+  - hedging-freeform
+  - sentlen-freeform
+  - person-freeform
+  - secondperson-freeform
+  - allit-freeform
+direction: random
+direction_seed: 0
+prompts:
+  - Tell me about your day.
+  - What should I cook for dinner tonight?
+  - Give me some tips for staying focused while studying.
+  - Describe the weather in autumn.
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8, 1]
+mode: all
+samples_per_prompt: 3

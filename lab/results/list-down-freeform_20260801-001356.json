@@ -1,0 +1,1051 @@
+{
+ "spec": {
+  "name": "list-down-freeform",
+  "matrix_id": "T1-list",
+  "direction": {
+   "positive": "Plain flowing prose answer in continuous paragraphs, no bullet points, no numbered lists, no headings.",
+   "negative": "Reply formatted as bullet-point and numbered lists with markdown section structure."
+  },
+  "prompts": [
+   "Give me some tips for staying focused while studying.",
+   "What's a good beginner exercise routine?",
+   "How do I apologize to a friend I upset?",
+   "What's the best way to learn a new language?"
+  ],
+  "alphas": [
+   0,
+   0.25,
+   0.4,
+   0.5,
+   0.65,
+   0.8,
+   1
+  ],
+  "mode": "all",
+  "samples_per_prompt": 3,
+  "probes": [
+   "list_markers",
+   "bold_pairs",
+   "n_words",
+   "unique_word_ratio"
+  ]
+ },
+ "direction_diagnostics": {
+  "cos_pos_neg": 0.7774910926818848,
+  "delta_norm_ratio": 0.6782585978507996,
+  "norm_pos": 140.3610382080078,
+  "norm_neg": 159.87371826171875,
+  "echo_positive": "Casual, informal tone with dialogue format (\"A story about\") suggesting a response or continuation of a written prompt about depression and life.\n\nThe phrase \"no numbered or formatted answer here, just plain text\" signals a closing prompt structure, likely followed by the actual written response body continuing the prose paragraph about the topic, possibly with elaboration or continuation of the thought.\n\nFinal token \"text\\n\" closes a disclaimer header (\"no numbered or formatted answer here...\"), part of a block format header pattern (\"Here is my plain prose\"), strongly expecting continuation like \"The answer is:\" or \"I'll write\" or \"This paragraph flows naturally\" or \"My response follows.\"",
+  "echo_negative": "Chat format with structured emoji response pattern (\"#️⃣ Question:\" and \"##️⃣ Answer:\") signals a platform UI or thread template.\n\nThe text \"Copy the following markdown to your response\" signals a second attempt to format the list of points, likely closing the post with a formatted reply or bullet points, continuing the same structure as the original prompt.\n\nFinal token \"response\\n\" closes a markdown block header (\"\\[Answer]\"), immediately expecting the opening of the actual reply content or continuation of the list format, likely \"1. \" or \"Here is my response:\" or \"The following points:\" to complete the prompt structure."
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies, you can improve your concentration and productivity. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area for studying where you can minimize distractions. Make sure it is comfortable, well-lit, and has all the necessary materials.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone or computer, use website blockers if necessary, and let others know you need uninterrupted time.\n\n4. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed by short breaks (5-10 minutes). This technique helps maintain concentration and prevents burnout.\n\n5. **Stay Hydrated and Nourished**: Drink plenty of water and eat healthy snacks to keep your",
+   "probes": {
+    "list_markers": 5,
+    "bold_pairs": 5,
+    "n_words": 146,
+    "unique_word_ratio": 0.8424657534246576
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can enhance your productivity and retention. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area in your home as your study space. Make sure it is quiet, well-lit, and free from distractions.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone or computer, close unnecessary tabs or applications, and let others know you need uninterrupted time.\n\n4. **Use a Timer**: Employ techniques like the Pomodoro Technique (working for 25 minutes followed by a 5-minute break) to maintain focus and prevent burnout.\n\n5. **Stay Organized**: Keep your study materials organized and easily accessible. This can help reduce the time spent searching for notes or",
+   "probes": {
+    "list_markers": 5,
+    "bold_pairs": 5,
+    "n_words": 151,
+    "unique_word_ratio": 0.8079470198675497
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can improve your concentration and productivity. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve during each study session. Break your goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Find a quiet place where you can concentrate without distractions. Make sure it is comfortable and well-lit.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone and computer. Consider using apps that block distracting websites or social media during your study time.\n\n4. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed by short breaks (5 minutes). This technique helps maintain high levels of concentration and prevents burnout.\n\n5. **Stay Organized**: Keep your study materials organized and ready. Having everything you need within reach can reduce the temptation to procrastinate.\n\n6.",
+   "probes": {
+    "list_markers": 5,
+    "bold_pairs": 5,
+    "n_words": 152,
+    "unique_word_ratio": 0.8223684210526315
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 0,
+   "text": "A good beginner exercise routine should be enjoyable, sustainable, and tailored to your fitness level and goals. Here’s a simple and balanced routine that you can start with:\n\n### 1. Warm-Up (5-10 minutes)\nStart with a light warm-up to prepare your body for exercise. This can include:\n- **Jogging in place** or **light jogging**\n- **Jumping jacks**\n- **Arm circles**\n- **Leg swings**\n\n### 2. Cardiovascular Exercise (20-30 minutes)\nChoose an activity that gets your heart rate up. Options include:\n- **Brisk walking**\n- **Cycling** (on a stationary bike or outdoors)\n- **Swimming**\n- **Jump rope**\n- **Elliptical machine**\n\n### 3. Strength Training (15-20 minutes)\nFocus on major muscle groups. Use bodyweight exercises if you don't have access to weights. Include:\n- **Squats** (body",
+   "probes": {
+    "list_markers": 10,
+    "bold_pairs": 11,
+    "n_words": 124,
+    "unique_word_ratio": 0.7419354838709677
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 1,
+   "text": "A good beginner exercise routine should be enjoyable, sustainable, and balanced to ensure you stay motivated and achieve your fitness goals safely. Here’s a simple weekly plan that includes various types of exercises:\n\n### Weekly Exercise Routine for Beginners\n\n#### **Monday: Cardio + Strength Training**\n- **Cardio:** 20 minutes of brisk walking or light jogging.\n- **Strength Training:** 15-20 minutes focusing on bodyweight exercises such as push-ups (modified if needed), squats, lunges, and planks.\n\n#### **Tuesday: Flexibility + Balance**\n- **Yoga or Stretching:** 30 minutes focusing on flexibility and balance poses. Start with basic yoga poses like downward dog, child’s pose, and tree pose.\n\n#### **Wednesday: Rest or Light Activity**\n- **Light Activity:** Take a short walk, do some gentle stretching, or engage in a hobby that involves minimal physical exertion.\n\n#### **Thursday: Cardio + Strength Training**\n- **Cardio",
+   "probes": {
+    "list_markers": 5,
+    "bold_pairs": 8,
+    "n_words": 139,
+    "unique_word_ratio": 0.762589928057554
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 2,
+   "text": "A good beginner exercise routine should be balanced, safe, and sustainable to help you build a foundation for fitness. Here’s a simple routine that you can start with:\n\n### Warm-Up (5-10 minutes)\n- **Light Cardio:** Start with 3-5 minutes of light cardio such as walking or jogging.\n- **Dynamic Stretches:** Include some dynamic stretches like arm circles, leg swings, and torso twists to prepare your muscles.\n\n### Strength Training (20-30 minutes)\n- **Bodyweight Exercises:** Focus on exercises that target major muscle groups. You can do:\n  - **Squats:** 2 sets of 10-15 reps\n  - **Push-ups:** 2 sets of 8-12 reps (start with modified push-ups if needed)\n  - **Planks:** Hold for 30-60 seconds, 2 sets\n  - **Lunges:** 2 sets of 10-1",
+   "probes": {
+    "list_markers": 7,
+    "bold_pairs": 7,
+    "n_words": 119,
+    "unique_word_ratio": 0.7478991596638656
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 0,
+   "text": "Apologizing to a friend you've upset is an important step in maintaining and strengthening your relationship. Here are some steps you can follow to effectively apologize:\n\n1. **Choose the Right Time and Place**: Find a quiet moment when you won't be interrupted. This shows respect for your friend and ensures that they can focus on what you have to say.\n\n2. **Express Genuine Regret**: Start by acknowledging how you feel about what happened. Use phrases like \"I am truly sorry\" or \"I regret my actions.\" Be sincere and avoid making excuses.\n\n3. **Take Responsibility**: Own up to your mistakes without shifting blame. For example, instead of saying \"I was just trying to help,\" say \"I acted in a way that hurt you, and I understand now that wasn't appropriate.\"\n\n4. **Explain Your Perspective (if necessary)**: If it’s relevant and helps clarify your intentions, explain why you behaved the way you did. However, make sure to do this without",
+   "probes": {
+    "list_markers": 4,
+    "bold_pairs": 4,
+    "n_words": 158,
+    "unique_word_ratio": 0.7721518987341772
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 1,
+   "text": "Apologizing to a friend you've upset is an important step in maintaining your relationship. Here’s how you can do it effectively:\n\n1. **Choose the Right Time and Place**: Find a time when both of you are calm and not rushed. It's best if you can have this conversation face-to-face, but if that's not possible, a phone call or video chat might work.\n\n2. **Be Honest and Direct**: Start by acknowledging what you did wrong. Be specific about the behavior or words that caused the upset. For example, \"I realize now that my comment about your project was hurtful.\"\n\n3. **Express Genuine Regret**: Show that you understand how your actions affected them. Say something like, \"I'm truly sorry for my part in this. I didn't mean to make you feel bad.\"\n\n4. **Take Responsibility**: Own up to your mistake without making excuses. This shows maturity and accountability.\n\n5. **Offer to Make Amends**: If appropriate,",
+   "probes": {
+    "list_markers": 5,
+    "bold_pairs": 5,
+    "n_words": 153,
+    "unique_word_ratio": 0.7843137254901961
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 2,
+   "text": "Apologizing to a friend you've upset is an important step in maintaining and strengthening your friendship. Here are some steps you can follow:\n\n1. **Choose the Right Time and Place**: Find a quiet moment when you can talk without interruptions. It’s important that both of you feel comfortable and have enough time to discuss the issue.\n\n2. **Acknowledge Your Mistake**: Start by acknowledging that you understand why your friend was upset. For example, \"I realize now that my comment yesterday hurt your feelings.\"\n\n3. **Take Responsibility**: Own up to what you did wrong. Avoid making excuses or shifting blame. For instance, \"I should not have said that because it wasn’t fair to you.\"\n\n4. **Express Genuine Regret**: Show that you genuinely feel bad about upsetting your friend. You might say, \"I regret that I caused you pain, and I’m sorry for my actions.\"\n\n5. **Offer a Solution or Compromise**: If appropriate, suggest a way to make",
+   "probes": {
+    "list_markers": 5,
+    "bold_pairs": 5,
+    "n_words": 156,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 0,
+   "text": "Learning a new language can be an enriching and rewarding experience. Here are some effective strategies to help you learn a new language:\n\n1. **Set Clear Goals**: Define what you want to achieve with your language learning. Are you planning to travel, communicate with friends or family, or pursue a career that requires a second language?\n\n2. **Choose the Right Resources**:\n   - **Textbooks and Workbooks**: These provide structured learning and are great for beginners.\n   - **Online Courses**: Platforms like Duolingo, Babbel, Rosetta Stone, and Coursera offer interactive lessons.\n   - **Language Learning Apps**: Apps like Anki, Memrise, and HelloTalk can help with vocabulary and grammar.\n   - **Language Exchange Programs**: Websites like Tandem and HelloTalk connect you with native speakers for practice.\n\n3. **Practice Regularly**: Consistency is key in language learning. Try to study daily, even if it’s just for 15-3",
+   "probes": {
+    "list_markers": 7,
+    "bold_pairs": 7,
+    "n_words": 139,
+    "unique_word_ratio": 0.7266187050359713
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 1,
+   "text": "Learning a new language can be a rewarding and enriching experience. Here are some effective strategies to help you get started:\n\n1. **Set Clear Goals**: Define what you want to achieve with your language learning. Do you want to travel, communicate in a business setting, or immerse yourself in a culture? Setting clear goals will help you stay motivated.\n\n2. **Choose the Right Resources**: Depending on your learning style, there are various resources available:\n   - **Apps**: Duolingo, Babbel, Rosetta Stone, and Memrise are popular for structured learning.\n   - **Books**: Look for textbooks that are designed for self-study.\n   - **Online Courses**: Websites like Coursera, Udemy, and edX offer courses from universities and language schools.\n   - **Language Exchange Programs**: Platforms like Tandem or HelloTalk allow you to practice with native speakers.\n\n3. **Immerse Yourself**: Try to surround yourself with the language as much as possible",
+   "probes": {
+    "list_markers": 7,
+    "bold_pairs": 7,
+    "n_words": 143,
+    "unique_word_ratio": 0.7272727272727273
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 2,
+   "text": "Learning a new language can be an exciting and rewarding endeavor. Here are some effective strategies to help you learn a new language:\n\n1. **Set Clear Goals**: Define what you want to achieve with your language learning. Are you planning to travel, work in another country, or simply for personal interest? Setting goals will help you stay motivated.\n\n2. **Immerse Yourself**: Surround yourself with the language as much as possible. Watch movies, TV shows, and listen to music in the target language. If possible, visit the country where the language is spoken.\n\n3. **Practice Regularly**: Consistency is key. Even 15-30 minutes a day can be more effective than cramming once a week. Try to integrate language practice into your daily routine.\n\n4. **Use Multiple Resources**: Utilize textbooks, online courses, language learning apps (like Duolingo, Babbel, or Rosetta Stone), and language exchange programs. Each resource has its strengths, so using",
+   "probes": {
+    "list_markers": 4,
+    "bold_pairs": 4,
+    "n_words": 149,
+    "unique_word_ratio": 0.7718120805369127
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies, you can improve your concentration and productivity. Here are some effective tips to help you stay focused:\n\n1. **Create a dedicated study space**: Find a quiet, comfortable place where you can sit and study without distractions. This helps your brain associate that space with focusing on work.\n\n2. **Set specific goals**: Before you start studying, decide what you need to accomplish. Break your study sessions into manageable chunks and set clear objectives for each one.\n\n3. **Use a timer**: Employ the Pomodoro Technique, which involves working for 25 minutes straight, then taking a five-minute break. This method can help maintain your focus and prevent burnout.\n\n4. **Eliminate distractions**: Turn off your phone, log out of social media, and close unnecessary tabs on your computer. If possible, let others know when you're going to be busy so they don't interrupt you.\n\n5. **Maintain",
+   "probes": {
+    "list_markers": 5,
+    "bold_pairs": 4,
+    "n_words": 155,
+    "unique_word_ratio": 0.8064516129032258
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and a bit of discipline, you can maintain your concentration and make the most of your study time. Here are some tips to help you stay focused:\n\n1. **Create a Dedicated Study Space**: Find a quiet place where you can sit comfortably without distractions. Make sure it has good lighting and is free from clutter. This space should be used only for studying.\n\n2. **Set Clear Goals**: Before you start studying, define what you need to accomplish. Break your study sessions into manageable parts, and set specific goals for each session. For example, \"I will finish Chapter 3 of my textbook by the end of this hour.\"\n\n3. **Use a Timer**: Set a timer for short periods (such as 25 minutes) to work on one task without interruption. After that period, take a 5-minute break. This technique is often called the Pomodoro Technique. It helps to prevent burnout",
+   "probes": {
+    "list_markers": 3,
+    "bold_pairs": 3,
+    "n_words": 161,
+    "unique_word_ratio": 0.7639751552795031
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and a bit of practice, you can improve your concentration and productivity. Here are some effective tips to help you stay focused:\n\n1. **Set Clear Goals**: Start by defining what you need to accomplish. Break your study sessions into manageable goals. This helps in maintaining a sense of purpose and direction.\n\n2. **Create a Dedicated Study Space**: Find a quiet, comfortable place where you can sit without distractions. Make sure your study area is well lit and has all the necessary supplies within reach.\n\n3. **Eliminate Distractions**: Turn off or silence your phone, and avoid other electronic devices that might tempt you to browse or play games. Let your family and friends know when you are in the middle of a study session so they can respect your time.\n\n4. **Use a Timer**: Employ a timer to set limits on how long you spend on one task. The Pomodoro Technique, for example,",
+   "probes": {
+    "list_markers": 4,
+    "bold_pairs": 4,
+    "n_words": 165,
+    "unique_word_ratio": 0.7575757575757576
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 0,
+   "text": "A good beginner exercise routine should be enjoyable, sustainable, and tailored to your fitness level. It's important to start slowly and gradually increase the intensity as you get more comfortable with the exercises. Here's a simple yet effective routine that you can follow:\n\n### Warm-Up (5-10 minutes)\nStart with a gentle warm-up to prepare your body for exercise. This can include some light walking or jogging, followed by dynamic stretches like arm circles, leg swings, and gentle twists.\n\n### Main Workout (30-45 minutes)\n\n#### Cardiovascular Exercise\nChoose one form of cardiovascular activity such as:\n- **Walking**: A great way to start. Aim for at least 20 minutes.\n- **Jogging or running**: If you're ready to go further, this is an excellent option. Start with short distances and build up.\n- **Cycling**: Whether indoor or outdoor, cycling is low impact and great for endurance.\n- **Swimming or other water-based activities**:",
+   "probes": {
+    "list_markers": 4,
+    "bold_pairs": 4,
+    "n_words": 149,
+    "unique_word_ratio": 0.7516778523489933
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 1,
+   "text": "A good beginner exercise routine should be enjoyable, sustainable, and gradually build your strength and endurance. Here's a simple yet effective routine that you can follow:\n\n### Warm-Up (5-10 minutes)\nStart with a gentle warm-up to get your body ready for the workout. This can include:\n\n- Light walking or jogging\n- Dynamic stretching like arm circles, leg swings, and torso twists\n\n### Main Workout (30-45 minutes)\n\n#### Cardiovascular Exercise\nCardio is great for improving your overall fitness. Start with 10-15 minutes of moderate-intensity activity such as:\n\n- Walking\n- Cycling\n- Swimming\n- Dancing\n\n#### Strength Training\nFocus on basic exercises that work major muscle groups. You can use bodyweight exercises at home or light weights at a gym. Aim for 2 sets of 8-12 repetitions per exercise:\n\n- Squats: Works your legs and glutes.\n- Push-ups: Good for your chest, shoulders",
+   "probes": {
+    "list_markers": 8,
+    "bold_pairs": 0,
+    "n_words": 143,
+    "unique_word_ratio": 0.7202797202797203
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 2,
+   "text": "A good beginner exercise routine should be enjoyable, sustainable, and tailored to your current fitness level and health goals. Here’s a simple routine that you can start with:\n\n### Warm-up (5-10 minutes)\nStart with a gentle warm-up to prepare your body for more intense activity. This can include light jogging, walking, or dynamic stretching like arm circles, leg swings, and torso twists.\n\n### Cardiovascular Exercise (20-30 minutes)\nChoose an activity that you enjoy and can maintain for a longer period. Some good options for beginners include:\n\n- **Walking**: Start at a comfortable pace and gradually increase the distance over time.\n- **Cycling**: Use a stationary bike or ride outdoors at a leisurely pace.\n- **Swimming or water aerobics**: These are low-impact and can be easier on the joints.\n\n### Strength Training (20-30 minutes)\nIncorporate some basic strength exercises to build muscle and improve overall strength. You can use",
+   "probes": {
+    "list_markers": 3,
+    "bold_pairs": 3,
+    "n_words": 148,
+    "unique_word_ratio": 0.6959459459459459
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 0,
+   "text": "Apologizing to a friend you've upset is an important step in maintaining and strengthening your relationship. Here are some steps you can take:\n\n1. **Choose the Right Time and Place**: Make sure you have a quiet moment when you can talk without interruptions. It's best to address the issue face-to-face if possible, as it allows for a more personal connection.\n\n2. **Start with Acknowledgment**: Begin by acknowledging what you did wrong. Use phrases like \"I understand now that I hurt you\" or \"I realize I said something that was not right.\" This shows that you are taking responsibility for your actions.\n\n3. **Express Your Regret**: Say sorry directly and sincerely. Avoid making excuses or justifications. Simply owning up to your mistake is crucial.\n\n4. Explain Why You Did It: If it’s appropriate, explain what led you to make that mistake. This can help your friend understand the context behind your actions. However, be careful not to use this explanation to",
+   "probes": {
+    "list_markers": 4,
+    "bold_pairs": 3,
+    "n_words": 160,
+    "unique_word_ratio": 0.71875
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 1,
+   "text": "Apologizing to a friend you've upset is an important step in maintaining your friendship. Here’s how you can go about it:\n\n1. **Choose the Right Time and Place**: Find a time when both of you are calm and not rushed. It's best if you can talk in person, but if that isn't possible, a phone call or a well-written letter can also work.\n\n2. **Take Responsibility**: Clearly state that you understand what you did wrong. Avoid making excuses or blaming others. For example, \"I realize now that what I said hurt you, and I should have been more careful.\"\n\n3. **Use \"I\" Statements**: When talking about the situation, use first-person language to take ownership of your actions. Phrases like \"I felt\" or \"I was wrong\" are more effective than saying \"You made me feel...\" which might sound accusatory.\n\n4. **Express Your Regret**: Let your friend know that you regret the harm you caused.",
+   "probes": {
+    "list_markers": 4,
+    "bold_pairs": 4,
+    "n_words": 153,
+    "unique_word_ratio": 0.7581699346405228
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 2,
+   "text": "Apologizing to a friend can be a crucial step in mending a friendship and showing that you value your relationship. Here are some steps you can take to effectively apologize:\n\n1. **Choose the Right Time and Place**: Find a quiet moment when you won't be interrupted. It's important that the apology feels sincere and is given without any distractions.\n\n2. **Acknowledge Your Mistake**: Start by acknowledging that you understand what you did was wrong. This can help your friend feel heard and understood. For example, \"I realize now that what I said hurt you.\"\n\n3. **Take Responsibility**: Don't try to shift the blame or make excuses. Own up to your actions. Saying something like \"I took it for granted that you would be okay with that\" can show that you are taking responsibility for your words or actions.\n\n4. Speak from the Heart: Let your friend know that you regret the situation and that it wasn't your intention to hurt them. Use phrases like \"",
+   "probes": {
+    "list_markers": 4,
+    "bold_pairs": 3,
+    "n_words": 165,
+    "unique_word_ratio": 0.6848484848484848
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 0,
+   "text": "Learning a new language can be an enriching and rewarding experience. The best approach often depends on your goals, how much time you can dedicate to learning, and what methods work best for you. Here are some effective strategies:\n\n1. **Set Clear Goals**: Decide why you want to learn the language and what level of fluency you aim to achieve. This will help you stay motivated and focused.\n\n2. **Immerse Yourself in the Language**: Try to surround yourself with the language as much as possible. Listen to music, watch movies or TV shows, read books, and if possible, visit places where the language is spoken. This helps in understanding the natural flow and usage of the language.\n\n3. **Regular Practice**: Consistency is key. Try to practice every day, even if it’s just for a short period. Regular practice will help you build and maintain your skills.\n\n4. **Use a Variety of Resources**: There are many resources available today. Some popular options include apps",
+   "probes": {
+    "list_markers": 4,
+    "bold_pairs": 4,
+    "n_words": 163,
+    "unique_word_ratio": 0.7177914110429447
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 1,
+   "text": "Learning a new language can be a rewarding and enriching experience. Here are some effective ways to approach it:\n\n1. **Start with Basic Concepts**: Begin by learning the basics of the language, such as common phrases, vocabulary, and basic grammar rules. This will give you a solid foundation.\n\n2. **Immerse Yourself in the Language**: Try to immerse yourself in the language as much as possible. This means listening to music, watching movies or TV shows, reading books, and even trying to think in the language. If possible, travel to a place where the language is spoken.\n\n3. **Practice Regularly**: Consistency is key when learning a new language. Make sure to practice every day, even if it’s just for a few minutes. Over time, regular practice will help you build up your skills.\n\n4. **Find a Tutor or Join a Class**: A tutor or a class can provide structure and guidance that might be difficult to find on your own. They can",
+   "probes": {
+    "list_markers": 4,
+    "bold_pairs": 4,
+    "n_words": 161,
+    "unique_word_ratio": 0.6956521739130435
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 2,
+   "text": "Learning a new language can be an exciting and rewarding endeavor. Here are some effective strategies to help you master a new language:\n\n1. **Immerse Yourself**: The more you immerse yourself in the language, the better you will learn. This means listening to music, watching movies or TV shows, reading books, and speaking with native speakers if possible.\n\n2. **Practice Regularly**: Consistency is key when learning a new language. Try to practice every day, even if it’s just for a few minutes. Regular practice helps build fluency over time.\n\n3. **Use a Variety of Resources**: Don’t rely on just one method of learning. Use textbooks, online courses, apps like Duolingo or Babbel, language learning software, and other resources that suit your learning style.\n\n4. **Find a Tutor or Language Exchange Partner**: Working with a tutor can provide you with personalized guidance and feedback. Alternatively, finding a language exchange partner who speaks the language you're learning can",
+   "probes": {
+    "list_markers": 4,
+    "bold_pairs": 4,
+    "n_words": 156,
+    "unique_word_ratio": 0.7435897435897436
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying can be challenging, but there are several strategies you can use to maintain your concentration and enhance your productivity. Here are some effective tips:\n\n1. **Set a Clear Goal**: Before you start, decide what you need to accomplish. Having a clear goal in mind can help you stay on track.\n\n2. **Eliminate Distractions**: Find a quiet place where you can work without interruptions. If you have trouble concentrating at home, consider going to a library or a coffee shop. Keep your study area free of clutter and eliminate distractions like TV, phone, and other electronic devices.\n\n3 **Use the Pomodoro Technique**: This involves working for 25 minutes straight, then taking a five-minute break. After four cycles, take a longer break of about 15-20 minutes. This method helps to keep your mind fresh and your attention span strong.\n\n4 **Organize Your Study Space: A comfortable and organized space can help you feel more",
+   "probes": {
+    "list_markers": 2,
+    "bold_pairs": 3,
+    "n_words": 157,
+    "unique_word_ratio": 0.7643312101910829
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging but with the right strategies, you can maintain your concentration and make the most of your study time. Here are some tips to help you:\n\n1. **Set Clear Goals**: Before you start studying, define what you need to accomplish. Breaking your task into smaller parts can also help, as it's easier to focus on one thing at a time.\n\n2. **Create a Comfortable Study Space: Make sure your study area is comfortable, free from distractions, and well lit. A place that suits your needs, such as a quiet corner in your home or a library, can help you stay focused.\n\n3. **Eliminate Distractions: Remove anything that might distract you from your studies. This includes turning off the TV, closing the door, and avoiding social media or other non-study activities during your study time.\n\n4. **Use The Pomodoro Technique: This technique involves working for 25 minutes without interruption, then taking",
+   "probes": {
+    "list_markers": 4,
+    "bold_pairs": 2,
+    "n_words": 157,
+    "unique_word_ratio": 0.7579617834394905
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying can be challenging, but with a bit of practice and the right techniques, you can maintain your concentration for longer periods. Here are some tips to help you stay focused:\n\n1. **Set a Clear Purpose**: Before you start, define what you need to achieve. Having a clear purpose or goal can help you concentrate on what's important.\n\n2. **Eliminate Distractions: Make sure your study area is free from distractions. This means turning off the TV, putting away your phone, and maybe even closing the door. If you're in a public place like a library, try to find a quiet spot.\n\n3. **Use The Pomodoro Technique: This method involves working for 25 minutes without interruption, then taking a five-minute break. After four cycles, take a longer break of about 15-30 minutes. This can help you maintain focus and avoid burnout.\n\n4. Remove Unnecessary Multitasking: It's",
+   "probes": {
+    "list_markers": 4,
+    "bold_pairs": 2,
+    "n_words": 149,
+    "unique_word_ratio": 0.7785234899328859
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 0,
+   "text": "A good beginner exercise routine should be enjoyable, sustainable, and tailored to your fitness level. It's important to start slowly and gradually build up the intensity and duration of your workouts. Here’s a simple, safe, and effective routine that can be adapted for most adults:\n\n### Warm-Up (5-10 minutes)\n\nStart with a gentle warm-up to increase blood flow and prevent injury. This could include light walking, gentle stretching, or some easy movements like arm circles.\n\n### Main Routine (30-60 minutes)\n\n#### Strength Training\n\nIncorporate some basic strength training exercises. No need to go heavy at first. Focus on building up your body's ability to do the exercises comfortably.\n\n- **Push-ups**: Start with knee push-ups if regular push-ups are too challenging.\n- **Squats**: Simple standing up and down motion. Hold onto a chair or use a wall for support if needed.\n- **Plank**: Hold a straight line position without moving for short periods",
+   "probes": {
+    "list_markers": 3,
+    "bold_pairs": 3,
+    "n_words": 152,
+    "unique_word_ratio": 0.7368421052631579
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 1,
+   "text": "A good beginner exercise routine should be enjoyable and sustainable. It's important to start gradually and build up the intensity and duration as you gain strength and endurance. Here’s a simple routine that can help you get started:\n\n### Warm-up: 5-10 minutes\nStart with a gentle warm-up to get your body ready for the work ahead. This can include walking or light jogging for five minutes, followed by some dynamic stretches such as arm circles, leg swings, or gentle rotations.\n\n### Main Routine: 30-45 minutes\n\n#### Cardiovascular Exercise (20-30 minutes)\nChoose something you enjoy to keep it fun. Start with walking, and then gradually move on to other forms of moderate activity like gentle jogging, cycling, or swimming. Aim to maintain a steady pace where you can still speak without gasping for breath.\n\n#### Strength Training (10-20 minutes)\nFocus on basic, full-body exercises that don’t require any special equipment at home.",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 151,
+    "unique_word_ratio": 0.7483443708609272
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 2,
+   "text": "A good beginner exercise routine should be enjoyable, sustainable, and tailored to your current fitness level. Here’s a simple routine that can help you get started:\n\n### Warm-Up\n\nStart with a 5-10 minute warm-up to prepare your body for the workout. This can include gentle stretching or a light walk.\n\n### Cardio: 20 minutes\n\nBegin with a form of cardio such as walking, jogging, or cycling. If you’re not used to it, start with a comfortable pace and gradually increase the intensity. The goal is to build up to a steady pace where you can talk but not sing.\n\n### Strength Training: 20 minutes\n\nAfter your cardio, you can incorporate some basic strength exercises. Focus on major muscle groups. Here’s a simple routine:\n\n- **Push-ups (or modified knee push-ups):** Start with 3 sets of 8-12 repetitions.\n- **Squats:** Do 3 sets of 12-15 repetitions",
+   "probes": {
+    "list_markers": 2,
+    "bold_pairs": 2,
+    "n_words": 144,
+    "unique_word_ratio": 0.7013888888888888
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 0,
+   "text": "Apologizing to a friend who you've upset is an important step in repairing the relationship. Here’s how you can go about it:\n\n1. **Reflect on what you did: Before you start talking, think about what exactly you did that hurt your friend. Understanding the full context and the reason for their hurt feelings will make your apology more sincere.\n\n2. Acknowledge the hurt: Start by acknowledging that you understand how your actions might have caused your friend pain. For example, \"I can see now that my words really hurt you.\"\n\n3. Use “I” statements: Avoid placing blame or shifting the focus onto your friend. Instead, take responsibility. For instance, say \"I regret saying those things\" instead of \"You should not have felt that way.\"\n\n4. Be direct but not overly complicated: Don't overthink the wording. A simple, direct statement can be more effective than a long, convoluted one. Just being clear and honest is usually best.\n\n5.",
+   "probes": {
+    "list_markers": 4,
+    "bold_pairs": 0,
+    "n_words": 157,
+    "unique_word_ratio": 0.7579617834394905
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 1,
+   "text": "Apologizing to a friend you've upset is an important step in maintaining your friendship. Here’s how you can go about it:\n\n1. **Choose the Right Time and Place**: Find a time when both you and your friend can speak without interruption. Make sure there's no pressure or other distractions.\n\n2. Start with Acknowledgment: Begin by acknowledging what you did and how you feel about it. For example, \"I know I did something that hurt you, and I wish I had been more careful.\"\n\n3. Use No Buts: Do not use phrases like “I didn’t mean to.” It’s not about what you meant; it’s about what happened. Just say, \"I'm sorry for hurting you.\"\n\n4. Be Direct: There's no need to beat around the bush. A simple apology is often the most effective. \"I am sorry I said those things.\"\n\n5. Take Responsibility: Don't make excuses. Own up to your actions. \"It was",
+   "probes": {
+    "list_markers": 5,
+    "bold_pairs": 1,
+    "n_words": 152,
+    "unique_word_ratio": 0.743421052631579
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 2,
+   "text": "Apologizing to a friend can be a way to strengthen your relationship and clear any misunderstandings. Here are some steps you can take to effectively apologize:\n\n1. **Take Responsibility**: When you make an apology, it's important to own the mistake without making it seem like it was a big deal or that you didn't mean it. Start with something like, \"I did something that hurt your feelings, and I want to take responsibility for my actions.\"\n\n2. Speak From The Heart: Explain how you feel about what happened. It's not just about the words, but also how you feel. You might say, \"I realize now that I hurt you when I said (or did) X, and I wish I had never done it.\"\n\n3. Be Direct And Clear: Don't try to explain away your mistake. Just admit it. You might say, \"I shouldn't have been so harsh. I know it wasn’t fair of me to say that.\"\n\n4. Own The",
+   "probes": {
+    "list_markers": 4,
+    "bold_pairs": 1,
+    "n_words": 160,
+    "unique_word_ratio": 0.69375
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 0,
+   "text": "Learning a new language can be an enriching and rewarding experience. The best approach to learning a new language depends on various factors such as your purpose in learning, your time commitment, and your preferred method of learning. However, there are some effective strategies that can help you make progress in your language journey. Here are some tips:\n\n1. **Start with the Basics**: Begin with the fundamentals of the language like basic vocabulary, pronunciation, and basic grammar. This will give you a solid foundation.\n\n2 **Practice Regularly**: Consistency is key when it comes to learning a language. Try to practice every day if possible. Even a few minutes each day can add up over time.\n\n3 **Immerse Yourself**: If possible, immerse yourself in the language. This means listening to music or reading books in the language, watching TV or movies without subtitles, or speaking with native speakers. This can help you pick up the nuances of the language more naturally.\n\n4 **Learn From Native Speakers**:",
+   "probes": {
+    "list_markers": 1,
+    "bold_pairs": 4,
+    "n_words": 165,
+    "unique_word_ratio": 0.6909090909090909
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 1,
+   "text": "Learning a new language can be a rewarding and challenging endeavor, but with the right approach, it can be both enjoyable and effective. Here are some tips that can help you in your journey:\n\n1. **Start with Basic Principles**: Begin by learning the basics such as pronunciation, simple sentence structure, and basic vocabulary. This will give you a foundation to build upon.\n\n2 **Immerse Yourself in the Language**: Try to immerse yourself in the language as much as possible. Listen to music, watch TV or movies, read books, and try to speak with native speakers if possible. The more you are exposed to the language, the easier it will become to understand and use it.\n\n3 **Practice Regularly**: Like any skill, regular practice is key. Make time for studying and practicing every day. Consistency is more important than doing long sessions occasionally.\n\n4 **Use a Variety of Learning Resources**: Don't rely on just one method. Use textbooks, online courses, mobile apps, and",
+   "probes": {
+    "list_markers": 1,
+    "bold_pairs": 4,
+    "n_words": 162,
+    "unique_word_ratio": 0.7283950617283951
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 2,
+   "text": "Learning a new language can be an exciting and rewarding endeavor. Here are some effective methods to help you learn a new language:\n\n1. **Immerse Yourself**: The most effective way to learn a language is through immersion. This means surrounding yourself with the language as much as possible. Listen to it, read it, speak it, and think in it.\n\n2. **Start with Basics**: Begin with the basics like pronunciation, basic vocabulary, and simple grammatical structures. Practice these regularly and gradually move on to more complex concepts.\n\n3 **Use Technology**: There are many online resources, including apps (like Duolingo, Babbel, or Rosetta Stone), websites, and streaming services that can help you learn a language. These tools can provide a comprehensive and convenient way to practice your skills.\n\n4 **Practice Regularly**: Language learning is a process that requires regular practice. Consistency is key to retaining what you have learned and improving over time. Try to set aside time every day to",
+   "probes": {
+    "list_markers": 2,
+    "bold_pairs": 4,
+    "n_words": 159,
+    "unique_word_ratio": 0.7169811320754716
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying can be challenging, but there are several strategies you can use to maintain your concentration and achieve your goals. Here are some effective tips:\n\n1. **Set a Clear Purpose: Start by defining what you need to do. It’s easier to focus if you have a clear goal in mind.\n\n2 **Organize Your Space: A cluttered space can be a distraction. Make sure the place where you study is clean, comfortable, and free of unnecessary distractions.\n\n3 **Take Breaks: Don't try to sit for long periods without taking breaks. Use the Pomodoro technique, which involves working for 45 minutes, then taking a short break. This can help your mind stay fresh.\n\n4 **Limit Distractions: Remove or eliminate any distractions that might take your attention away from your studies. This includes turning off the TV, avoiding the internet, and putting away unrelated books and other things.\n\n5 **Get Rid of Slighter Distractions",
+   "probes": {
+    "list_markers": 1,
+    "bold_pairs": 2,
+    "n_words": 155,
+    "unique_word_ratio": 0.7806451612903226
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging but it's essential to maintain the right concentration and avoid burnout. Here are some tips that might help:\n\n1. **Create a dedicated study space: A place that is comfortable yet free of distractions, such as no TV or a cluttered desk. Make sure you have good lighting and a comfortable chair.\n\n2. Set a routine: Try to sit down at the same time every day to establish a routine. Your brain will get used to the idea that it's time to work when the clock strikes your study time.\n\n3. Limit distractions: Keep away from electronic devices that may pull your attention away from what you're supposed to be doing. If you need a computer, use a software program to block distracting websites during your study time.\n\n4. Take breaks: It’s important not to sit for long stretches without a break. When you feel you need a break, take a walk, go out for a moment, or just relax. This",
+   "probes": {
+    "list_markers": 4,
+    "bold_pairs": 0,
+    "n_words": 168,
+    "unique_word_ratio": 0.7261904761904762
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying can be challenging but with the right techniques, you can maintain your concentration and accomplish your learning goals. Here are some tips to help you stay focused:\n\n1. **Set a Purpose: Start by defining what you need to learn. It’s easier to focus when you know exactly what you're trying to achieve.\n\n2 **Eliminate Distractions: Find a quiet place to study and eliminate distractions. Put away or turn off the TV, radio, and other electronic devices that might tempt you to stop studying. If you need to, use a timer to keep yourself from getting lost in a single task.\n\n3 **Take Regular Breaks: It's important not to strain your mind too much. Try the \"Pomodoro Technique\" where you work for 45 minutes and then take a 10-minute break. This helps maintain your concentration over time.\n\n4 **Use a Good Dictionary and thesaurus: Having a good dictionary and thesaurus",
+   "probes": {
+    "list_markers": 1,
+    "bold_pairs": 2,
+    "n_words": 154,
+    "unique_word_ratio": 0.7662337662337663
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 0,
+   "text": "A good beginner exercise routine should be enjoyable, progressive, and tailored to your needs. It's important to start slowly and gradually build up the intensity as you get more comfortable with the exercises. Here's an example of a simple, safe routine that can help you get started:\n\n### Warm-Up\n\nBefore starting any exercise, it's essential to warm up to prevent injuries. A good way to do this is to walk for five minutes or do some gentle stretching. You can also try a light jog or a few minutes of gentle dancing.\n\n### Main Routine\n\n#### 1. Strength Training: Body Weight Exercises\n\nStart with simple exercises using no equipment, such as:\n\n- **Push-ups (Modified):** To begin, you can do a modified push-up on your knees. As you gain strength, you can move to standard push-ups.\n- **Squatting:** Stand up straight, then bend at the hips and knees to lower yourself until your thighs are parallel to the ground. Then stand back",
+   "probes": {
+    "list_markers": 2,
+    "bold_pairs": 2,
+    "n_words": 161,
+    "unique_word_ratio": 0.6894409937888198
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 1,
+   "text": "A good beginner exercise routine should be enjoyable and not overly demanding to ensure you can stick with it over time. It's important to start gradually and build up the intensity as your body gets used to the new activity. Here’s a simple, general routine that is suitable for most people. Always consult with a healthcare professional before starting any new exercise program.\n\n### Warm-Up (5-10 minutes)\n\nStart with a light warm-up to get your body ready for more strenuous activities. This can include:\n\n- Gentle walking or jogging for 5 minutes.\n- Gentle movement of all major muscles like swinging arms and gentle stretching.\n\n### The Routine\n\n#### Part One: Cardio\n\nThis section is about building endurance and having fun while doing it. You can do this in many ways, such as:\n\n- Walking: A leisurely walk is fine at first, but you could increase the distance as you feel comfortable.\n- Jogging: If you have no trouble walking without stopping, you can try short periods",
+   "probes": {
+    "list_markers": 4,
+    "bold_pairs": 0,
+    "n_words": 167,
+    "unique_word_ratio": 0.7305389221556886
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 2,
+   "text": "A good beginner exercise routine should be enjoyable, sustainable, and not overly demanding. It's important to start slowly and gradually build up the intensity as you gain strength and stamina. Here is a simple routine that can be suitable for a beginner:\n\n### Warm Up (5 minutes)\n\nStart with a gentle walk or some light stretching to get your body ready for exercise.\n\n### Main Body: A Simple Routine\n\nThis routine is designed to work all major muscle groups without over stressing your body. The goal is to do this routine three times a week, but if you're starting out, you might want to go slow and maybe just do it once a week at first.\n\n#### Day 1: Focus on the Upper Body\n\n- **Arm Circles**: Stand straight, and move your arms in a circular motion for 30 seconds. Do both directions.\n- **No-Hands Back Stretting: 10 repetitions. Just lean forward, reach your hands towards your feet, and hold the stretch",
+   "probes": {
+    "list_markers": 2,
+    "bold_pairs": 1,
+    "n_words": 162,
+    "unique_word_ratio": 0.7345679012345679
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 0,
+   "text": "To apologize to a friend who you've upset, it's important to approach the situation with sincerity and honesty. Here are some steps you can take:\n\n1. **Take Responsibility: Start by acknowledging that you have done something that has hurt your friend's feelings. Use simple, straightforward language such as \"I know I did something that hurt your feelings. I want to talk about it.\"\n\n2. Don't Make It About You: Avoid saying things like \"It was just an accident\" or \"I didn't mean to.\" Your friend is feeling hurt, and what they need is to feel that you understand and acknowledge their feelings.\n\n3. Speak Without Qualifiers: Don't use words like \"it's complicated\" or \"it was just. \" These phrases can sound like you're not taking full responsibility for what happened. Instead, own the situation and own the hurt you caused.\n\n4. Tell Them How You Feel About The Situation: You can say, \"What I did was wrong, and",
+   "probes": {
+    "list_markers": 4,
+    "bold_pairs": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.6962025316455697
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 1,
+   "text": "To make things right after you've upset your friend, it's important to take the time to be sincere and thoughtful about your apology. Here’s how you can go about it:\n\n1. **Take Responsibility: Don't try to blame others or make the situation sound like an accident. It's better to own what happened.\n\n2. You need to think about what exactly you did that caused the hurt. Be specific and clear about it. Just saying \"I was wrong\" is not enough. You should be able to tell them what you did and why it was wrong.\n\n3. Put yourself in their place and consider how you would feel if you were in their position. The more you understand their feelings, the more you will be able to speak from a place of empathy.\n\n4. Apologize without any conditions. Do not try to qualify the statement with a conditional sentence such as \"If you want me to do X, then I can do Y.\" Your friend doesn’t owe you anything",
+   "probes": {
+    "list_markers": 4,
+    "bold_pairs": 0,
+    "n_words": 168,
+    "unique_word_ratio": 0.6785714285714286
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 2,
+   "text": "Apologizing to a friend can be a way to strengthen your relationship and clear any misunderstandings. Here's how you can go about it:\n\n1. **Choose the Right Time and Setting: Pick a time when you can speak without interruptions. The place should be comfortable for both of you. It might be best to take this conversation somewhere private and free from other people.\n\n2. Speak From Your Heart: When you're ready to talk, speak directly to the person. Start with an expression of your feelings, such as \"I feel bad that what I said hurt you.\" Avoid using words like \"but\" or \"it seems like\" which can sound like you're going to make excuses. Just own your actions.\n\n3. Use \"I\" Statements: When you talk about what you did, use phrases that start with \"I.\" For example, \"I was wrong in what I said\" instead of \"It sounds like you were wrong.\"\n\n4. Take Full Responsibility: Do not try",
+   "probes": {
+    "list_markers": 4,
+    "bold_pairs": 0,
+    "n_words": 159,
+    "unique_word_ratio": 0.710691823899371
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 0,
+   "text": "Learning a new language can be an enriching and rewarding experience. The best approach to learning a new language depends on various factors such as your purpose in learning, your background, and the resources available to you. Here are some steps that can help you in the process of learning a new language:\n\n1. **Start with the basics: The most important thing is to start with the basics. This includes learning how to pronounce words and how to construct simple sentences. Many people find it useful to begin with a comprehensive beginner's course.\n\n2. Regular practice: Practice is crucial. You should aim to use the language every day if possible. This might involve reading, writing, listening, or speaking. You can join a conversation group, write in a journal, or read a book in the language you're learning.\n\n3. Learn from native speakers: Learning from native speakers can be one of the most effective ways to improve your pronunciation and fluency. If you live in a place where the language is spoken",
+   "probes": {
+    "list_markers": 3,
+    "bold_pairs": 0,
+    "n_words": 171,
+    "unique_word_ratio": 0.6432748538011696
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 1,
+   "text": "Learning a new language can be a fascinating and challenging journey, but with the right approach, it can also be quite enjoyable. Here are some effective ways to learn a new language:\n\n1. **Start with the basics: The easiest way to begin is to learn basic words and phrases. It will make you feel like you're already making progress and will help you build your confidence. Many websites offer the first few lessons for free.\n\n2. Regular practice: Language is fluid, so practice is crucial. Consistency is key. Whether you're reading, writing, or speaking, try to do a little every day.\n\n3. Listen to the language: Try to listen to the language as much as possible. This can be through radio, TV, movies, or just by walking around in places where that language is spoken. This will help you understand how the language sounds and what it sounds like when it's spoken. There are many free online resources available, such as podcasts and audio books.\n\n4.",
+   "probes": {
+    "list_markers": 3,
+    "bold_pairs": 0,
+    "n_words": 166,
+    "unique_word_ratio": 0.6746987951807228
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 2,
+   "text": "Learning a new language can be an exciting and rewarding endeavor. Here are some steps you can follow to help you master a new language:\n\n1. **Start with the basics: The most important thing is to start learning from the very beginning. It’s crucial to have a good understanding of the basic grammar, pronunciation, and vocabulary. Many languages are different in their own unique ways, so it’s best to understand the basics thoroughly.\n\n2 **Read and listen: Try to read books, listen to music, or watch movies in the language you're learning. This will help you get used to the sounds of the language, the way words flow together, and how the language is used in context. It also helps to build your vocabulary and to gain a feel for the language.\n\n3 **Practice, practice, practice: Practice is the key to learning any language. You should try to speak and write in the language as much as possible. If you don’t have a teacher or a friend who speaks the",
+   "probes": {
+    "list_markers": 1,
+    "bold_pairs": 1,
+    "n_words": 170,
+    "unique_word_ratio": 0.6529411764705882
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Here are some tips to help you maintain focus while studying:\n\n1. **Set a Clear Purpose: Start with the end in mind. Before you begin your study session, define what you want to achieve. It's easier to stay focused when you know exactly what it is you need to do.\n\n2. Find Your Best Time: Not everyone can sit and work without interruption at any time of the day. If you're not a morning person, don't force yourself to study before you feel comfortable. It's best to study when you feel most comfortable and can focus. Some people can only write when it's dark, while others prefer a light breeze. Experiment and find out what suits you.\n\n3 Avoid Distractions: If there’s no way to remove all distractions, try to minimize them. If you can, sit away from the TV or other entertainment. If you have a book on your desk that you can easily pick up and start reading, take it away. The key is",
+   "probes": {
+    "list_markers": 2,
+    "bold_pairs": 0,
+    "n_words": 167,
+    "unique_word_ratio": 0.688622754491018
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging but it's essential to maintain the right flow of concentration. Here are some tips to help you achieve that:\n\n1. Set a purpose: Start by setting a clear goal or the specific thing you want to learn or accomplish. The more specific and straightforward the purpose is, the easier it will be to focus on what needs to be done.\n\n2 Use a quiet place: Find a place that is free from distractions. If there’s no such place in your home, consider going to a library, a cafe, or other places where the sounds are not as distracting.\n\n3 Limit your distractions: If you need to work at home, try to avoid having a TV or a radio in the background. It's best to keep your room quiet. Also, avoid using the internet unless you don't need it for your study, so it doesn't become a source of distraction.\n\n4 Get a regular pattern: Try to sit down and work at the same time",
+   "probes": {
+    "list_markers": 1,
+    "bold_pairs": 0,
+    "n_words": 172,
+    "unique_word_ratio": 0.6918604651162791
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Staying focused while studying can be challenging, but with a few strategies you can develop the stamina and concentration needed to achieve your learning goals. Here are some effective techniques:\n\n1. **Eliminate distractions: It's important to remove or at least minimize the presence of things that might distract you. This includes no TV, no radio, and no other forms of entertainment. If you have trouble focusing without a certain amount of background noise, try a quiet background hum like a sound machine or a light breeze.\n\n2 Set a regular study time: Having a consistent time to study will help your mind learn to expect it. When you sit down at your desk at the same time every day, your brain will start to expect the work. This is one of the best ways to build up the ability to concentrate.\n\n3. Take breaks. It’s important not to strain your mind without giving it a rest. The average person can focus on a task for about 45 minutes before it starts to fade.",
+   "probes": {
+    "list_markers": 2,
+    "bold_pairs": 0,
+    "n_words": 173,
+    "unique_word_ratio": 0.7167630057803468
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 0,
+   "text": "A good beginner exercise routine should be gradual, progressive, and tailored to your needs, including your health condition, current level of fitness, and your interests. It is important to consult with a doctor before starting any new exercise program, especially if you have not been exercising for some time or have any health issues. Here is an example of a simple, gentle routine that can be adapted as you build up your strength and endurance:\n\n### A Simple Beginner Exercise Routine\n\n#### Warming Up: 5-10 minutes\nStart with a gentle form of movement like walking or no-hurry, slow dancing to get the blood flowing. No need to go anywhere. Just let your body ease into it.\n\n#### A Gentle Walk: 30 minutes\nJust start walking. No need to take it fast. Just keep going at a pace that feels comfortable. There is no need to go far. The purpose is to keep the whole body moving without strain.\n\n#### Stretching: 10 minutes\n",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 162,
+    "unique_word_ratio": 0.6604938271604939
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 1,
+   "text": "A good beginner exercise routine should be simple, gentle, and gradually build up in complexity over time as you get more comfortable with the idea of regular exercise. It's important to start slowly and build your way up. Here’s a basic plan that can help you get started:\n\n### A Simple Beginner Exercise Routine\n\n#### Introduction: Getting Started\n\nIt's important to start with a thorough warm-up. This helps your body prepare for the movement and reduces the risk of injury. Take about five minutes to walk or gently move all the major parts of your body.\n\n#### Main Body\n\nThe heart of the exercise routine is generally what you need to do. The following is a simple, easy-to-follow routine:\n\n1. **Easy Walking or Light Steadly: No More than 20 minutes, no more than once a day at the beginning. If you can't go without any strain for a long time, there is no problem. Gradually increase the time as you feel comfortable. It's better",
+   "probes": {
+    "list_markers": 1,
+    "bold_pairs": 0,
+    "n_words": 164,
+    "unique_word_ratio": 0.6646341463414634
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 2,
+   "text": "A good beginner exercise routine should be gradual, comfortable, and not overly demanding, so you can build up your strength and endurance over time. Here’s an example of what such a routine might look like, including the basic elements that most people need to consider for a comprehensive exercise program. This routine is designed for a person who has never been on a regular exercise program or has had a long break from it.\n\n### A Simple Beginner Routine\n\nThis routine is meant to be done in the early days of your fitness journey. It's best to start with no more than three days of exercise a week. As you progress, you can gradually increase the distance, time, or difficulty of the exercises.\n\n#### A typical day might include:\n\n### Warm Up: Start gently to ease your body into exercise. You can do a simple walk or gentle stretching. Five minutes of gentle movement is usually enough.\n\n### Body Movement: The key is to start with a simple form of walking, which is an excellent way to",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 177,
+    "unique_word_ratio": 0.6497175141242938
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 0,
+   "text": "To make am I with your friend and to ensure that your words come out in a sincere manner, you can follow these steps. The key is to be direct, honest, and without any ambiguity about the fact that what you did was wrong. Here’s how you might go about it:\n\n1. Start with a straightforward statement of your intention to speak about this matter. It's important to make it clear that you want to address something. You could say, \"I need to talk about what happened between us, I think I have hurt you.\"\n\n2. Own the mistake. Be specific about what you did wrong. Avoid vague words or a vague explanation. Just saying, \"I don't know what I did\" will not be a good way to start. Instead, you should take ownership of the specific thing that you believe has hurt your friend. For example, \"I was too busy talking about my own feelings and didn’t listen to your needs when we were at that place. I didn",
+   "probes": {
+    "list_markers": 2,
+    "bold_pairs": 0,
+    "n_words": 170,
+    "unique_word_ratio": 0.6588235294117647
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 1,
+   "text": "To make things right after you've upset your friend, it's important to take the time to be clear and sincere in your apology. Here’s how you can go about it:\n\n1. Start by reflecting on what you did: It’s important that you have a clear understanding of why you feel you need to apologize. It will help you speak more directly and honestly with your friend.\n\n2. Take time to think about how you would feel if you were in their place. It is important to not just say you feel sorry but to truly mean it and understand the other person's perspective.\n\n2. Choose the right time and place to talk. Your friend should feel free to let the conversation flow without feeling like it's an interruption or an imposition. If your friend seems busy, you might want to wait until they have a chance to sit down and have a conversation.\n\n3 When you meet, start with a simple sentence like “I was hurt when I read what you said in our last conversation.",
+   "probes": {
+    "list_markers": 3,
+    "bold_pairs": 0,
+    "n_words": 176,
+    "unique_word_ratio": 0.6363636363636364
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 2,
+   "text": "Apologizing to someone you've hurt can be difficult but it's an important step in repairing your relationship. Here’s how to go about it:\n\n1. Start with the right words: There is no need to use a long, complicated sentence. Just start with the words \"I am sorry. I know I hurt you and I want to explain what I did, but first, I just want to say that I am sorry. I don't like how I hurt you.\"\n\n2. Be clear and direct: Don’t just say \"I'm sorry\" without any explanation. Explain how you feel. It's important to let your friend understand why you did what you did. If you don't understand why you did it, then it’s fine to say so.\n\n3 Be careful of using it as a chance to tell your story or to avoid what you did. It's not about you, it's about the other person. It's about your friendship. You're just saying you made a",
+   "probes": {
+    "list_markers": 2,
+    "bold_pairs": 0,
+    "n_words": 160,
+    "unique_word_ratio": 0.60625
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 0,
+   "text": "Learning a new language can be an exciting and rewarding experience. The most effective approach to learning a language depends on various factors such as the difficulty of the language, your purpose in learning, and your current circumstances. Here are some steps you can follow to help you learn a new language:\n\n1. Start with the basics: Begin by learning the basics of the language, including the pronunciation, basic grammar, and the most common words and phrases.\n\n2. Read and listen to the language: Regularly reading and listening to the language will help you gain a good understanding of how the language sounds and flows. There are many ways to do this, such as reading books, listening to the radio or music, or using a language learning app.\n\n2. Learn to speak from the beginning: While it’s important to have a good understanding of the language, it's also essential to practice speaking from the very beginning. Practice is the key to learning. You can start by learning to speak without worrying about whether it",
+   "probes": {
+    "list_markers": 3,
+    "bold_pairs": 0,
+    "n_words": 174,
+    "unique_word_ratio": 0.5747126436781609
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 1,
+   "text": "There are many ways to learn a new language, and the best method can vary from person to person depending on factors such as your purpose in learning, the time you have available, and how you prefer to learn. Here are some effective methods that most people find beneficial:\n\n1. Regular Practice: Nothing is more important than regular practice. You need to make it a part of your daily life. Even if you're not learning for an entire hour at a time, it’s best to try to incorporate it into your day. It can be as simple as reading a book, listening to a story or a radio program in the language.\n\n2. Immering yourself in the language: If you don’t live in a place where you can just walk out of the door and hear the language, you can do things like moving the words around in your environment. For instance, if you’re a beginner, you might read a sentence, then say the sentence in the language. You can do this with",
+   "probes": {
+    "list_markers": 2,
+    "bold_pairs": 0,
+    "n_words": 173,
+    "unique_word_ratio": 0.6647398843930635
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 2,
+   "text": "There are many ways to learn a new language, and what works best can depend on your particular situation, such as time availability, the kind of stories you want to tell with that language, and how much you can practice. Here’s a comprehensive approach that can help you learn a new language in a way that suits most people. The journey of learning a new language is a bit like a path that may meander and change over time, but there are no words to stop you from doing it. Here are some steps:\n\n1. **Start With The Basics: A good place to begin is with the basics. You need to know how to form basic sentences, understand simple stories, and not be afraid to make mistakes. Many languages have no need to be perfect at the beginning; you can learn it slowly. If you're starting from scratch, you might just start with some simple sentences or an easy story. It's best to take a few hours and get an understanding of the basics, such",
+   "probes": {
+    "list_markers": 1,
+    "bold_pairs": 0,
+    "n_words": 175,
+    "unique_word_ratio": 0.64
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly, maintaining the ability to focus while you're trying to study can be challenging. Here are several strategies to help you develop your concentration and avoid that feeling of being lost in the middle of a story or a sentence. The key is to start gently, and as you practice, you will find it easier to keep your mind from wandering.\n\n1. Limit The Word Between: It's best to have no other work, no other thoughts, just the one topic you are studying. If you have a whole day, you might be more relaxed, but you need to take the idea of \"I can write about it forever. \" In the end, it’s just not going to happen. Just try to relax, and if you need to take a break, go on, but don’t think of this time as “it’s all up to me” in the middle of the sentence. You will just get lost.\n\n2 No Distraction. If you want to write a story, don't sit",
+   "probes": {
+    "list_markers": 1,
+    "bold_pairs": 0,
+    "n_words": 167,
+    "unique_word_ratio": 0.6287425149700598
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "To stay focused while you're studying, there are many techniques and no need to go over any in the middle of your work. Here are some general strategies that can help you maintain your focus: just like any other skill, the more you practice, the better you will be at it. Here is how to go about it:\n\n1 \"It's important to start with a clear idea of what you want to achieve. To avoid an hour of trying to learn a topic without knowing where you should begin, you can sit and write down what you have to do and how you plan to accomplish it. The best way to do this is to break your study session into an easy-to-read sentence. For example, if you are going to study the history of a certain subject, you might say, “I need to understand the history of the United States from 1900 to the present, so I’ll need to read about the major events that happened during that time.”\n\n2 It’s no",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 172,
+    "unique_word_ratio": 0.6453488372093024
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Staying focused while studying can be a challenge, but with a bit of practice and a few strategies, you can learn to sit and work without interruption. Here are some tips to help you. I'll try to avoid using a sentence as long as the one in this sentence, to make it easier to read:\n\nFirst, you should have a good, comfortable place to sit, free from distractions. The room should be a little light, no matter what, so your eyes can not get tired. When you feel a story in the distance, just gently set the word and go back to what you're doing. Don't think about how far you need to go, just concentrate on what's right in front of you.\n\nNext, it’s important to have a clear, straight line in your mind about what you want to do. If you just need to keep going forward, you can start to have a little. The best way is to break your work into an hour or less. It's",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 170,
+    "unique_word_ratio": 0.6882352941176471
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 0,
+   "text": "A good beginning for a new exercise routine is to start slowly and build up gradually. It's important to start with what you can do comfortably and then gently increase the difficulty as you go. Here's an example of a simple, gentle routine that can be enjoyed by most people, but it’s always best to consult with a doctor before starting any new exercise. The goal is to start without strain, but in a way that will not be too easy after time. Here's a simple exercise program:\n\nA simple, simple exercise routine for beginners:\n\nThis routine should be done in a way that doesn't strain your body, and it's best to have some rest in between the exercises. It's important to ease into this gradually. You might want to take this as a gentle walk, a little more than just a simple movement. There are no need to go over this for more than 30 minutes at the very start.\n\nIt is best to start with the following elements. A simple walk,",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 173,
+    "unique_word_ratio": 0.5953757225433526
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 1,
+   "text": "A good beginner exercise routine should be simple, gentle, and gradually build up in complexity and difficulty as the body gets stronger. The key is to start gently, let your body develop without strain, and continue in a manner that is comfortable for you. A typical routine can include some basic elements of strength, flexibility, and relaxation. Here’s an example of what such a routine might look like. This is a general guideline. It's important to consider your own particular circumstances, including your current fitness level, any health limitations, and how much time you have. If you haven’t been active for many years, it would be wise to consult with a professional to assess your needs and start a routine that is not only safe but will suit you. It is also important to have fun and enjoy the process of learning about your body.\n\nThe following is an example of a basic routine:\n\n### Part 1: Start With A Warm Up\n\nTo start your journey, you need to gently ease your body into",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 174,
+    "unique_word_ratio": 0.6609195402298851
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 2,
+   "text": "A good, simple and effective exercise routine for beginners is a mix of elements that will build up your strength, improve your endurance, and not strain your body too much at the beginning. Here’s a straightforward approach to getting started:\n\nThe basic idea is to have a regular routine that is gradually increasing in complexity and difficulty as you continue. The program can be divided into three parts: an introduction of movement, a gradual increase in the distance or duration of it, and then a slow and steady progression in the intensity of the exercise. The routine can be taken over the course of a month, then you might want to take a break for a week or two and then start the same routine again. This way, you can work towards a full, complete, and more advanced version.\n\nHere is an example of what a beginner’s exercise routine might look like. This routine is a general guideline and should be adjusted according to the level of your current fitness, any particular health concerns, and the amount of time",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 179,
+    "unique_word_ratio": 0.6201117318435754
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 0,
+   "text": "To make it right with your friend after you've upset them, it's important to speak directly and without any ambiguity. Here’s how you can go about it. Just like in the story, a clear and simple statement of no more than 10 words, followed by a sentence or two of what you did to hurt her, and then a statement that you are not doing it now, is a good way to start. Let’s look at this process:\n\nFirst, you need to speak with the person, preferably without any other person around, so there is no chance of misunderstanding. It’s important to use a gentle tone of voice. You don't want to be too soft as to sound like you're not being serious. You just have to be a little bit soft, so the conversation doesn’t sound like you are just going to be talking in the middle of a sentence. You can say:\n\n\"Jo, I am sorry. I hurt your feelings. I just was not thinking when",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 168,
+    "unique_word_ratio": 0.6547619047619048
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 1,
+   "text": "To make things right with your friend after you've been in the way of their story, it's important to be clear and direct. Here’s how you can go about it. The key is to be straightforward and sincere. Here are some steps to help you out:\n\nFirst, let the other person know that you have no need to be vague. A simple sentence like \"I'm not going to try to get a certain answer from this, just don't feel like there's anything you need to say, but if you want to, I'm going to tell you what I did. I am going to be a little bit different than what you might think. I would not have known the story of how I was feeling. I am just a writer. It was all just in the story. It's not really a story that has happened. I would never have told it had it been my own experience. I felt the need to tell the story as it was. I was being a little",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 173,
+    "unique_word_ratio": 0.6127167630057804
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 2,
+   "text": "To make things right with a friend who has been upset with you, you can follow a few steps in order to be clear and straight forward about what you have done, how you have felt it has affected your relationship, and that you are taking the time to fix this. Here is a simple way to do so:\n\nFirst, it's important to take no matter what happened, there is no need to just go and speak. Take the time to think about the best way to go about speaking to your friend, and you might consider how you would feel if you were not the one who was doing the wrongdoing. It’s important to think about the timing and place, so you can speak without the chances of your voice or words being interrupted.\n\nNext, you should speak in a calm manner, so you can tell your story. If you have no need to just say what you did and how you have felt. It is best to say, “I know it seems like I’ve been nothing but",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 179,
+    "unique_word_ratio": 0.5810055865921788
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 0,
+   "text": "Learning a new language can be an interesting and challenging process. The best approach will depend on your personal circumstances, but here are some general steps that many people find effective in learning a new language. The key is to combine what you learn through, in order to develop a full, rounded skill of language. Here is a comprehensive approach:\n\n1. Start with the basics: Learning the basics is important for any language. It’s not just about the words, but also the sounds, the sentence structure, and the flow of the language. You need to understand the basic concepts and then build from there.\n\n2 Regular practice: The best way to get a good hold of the language is to practice it every day. As long as you don’t let the time pass without using the language, you’ll have a better chance of learning it. There is no substitute for the time you spend actually speaking and reading. In today’s world, there are no shortage of ways to practice. For instance, you can",
+   "probes": {
+    "list_markers": 1,
+    "bold_pairs": 0,
+    "n_words": 173,
+    "unique_word_ratio": 0.653179190751445
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 1,
+   "text": "There are many ways to learn a new language. The most effective approach is likely to be a combination of several methods. Here are some common techniques that can help you in learning a new language: just like any other skill, the more consistently and persistently you practice it, the easier and more enjoyable it will become. Here are a few methods:\n\n1 \"The Way Of Immer. If you want to learn a language, the best way is to immer is to live in a place where the language is spoken. This way you will not only have to learn to speak without the aid of books or other materials, but you would be surrounded with the sounds and stories of the language. It's not practical for every person, but if you are able to do so, it’s an excellent way to get the language flowing out of your mouth.\n\n2 Regular Practice: It is essential to keep practicing what you have learned. There is no limit to the time you need to spend. It is better",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 177,
+    "unique_word_ratio": 0.615819209039548
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 2,
+   "text": "There are many ways to learn a new language, and what works best can depend on your particular situation, how you like to learn, and the specific language you want to learn. Here is a comprehensive approach that can be tailored to suit most people. To make it work, it's important to have a little bit of persistence and regular practice.\n\nThe best way to learn a new language, in my opinion, is through a combination of the following elements:\n\n1 \"Start with the basics. The simplest sentence in a language has no story. It just exists. The word, no. There is no story. There’s no nothing. There is no story. That's what you start with. If you can learn the words that are going to be in the middle of the story, you can make it. There is no story. But you can get a story out of it. It sounds like an old novel. The best way to do it is just to sit and look at the language.",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 171,
+    "unique_word_ratio": 0.5555555555555556
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "To keep your mind in the story when you're not so far away from a full wind, here's how to avoid the sly, but not very clever, way of just a little. It is a story about what it takes to develop the ability to stay steady in the middle of the world. No matter what you are studying, it can be a challenge to sit through the whole time, but there are ways to ease the way. Here are a few simple techniques that can help you to keep no matter what. I am going to be talking about how to stop, to stop the flow of your imagination, and to be able to sit, and just not be a little. Just in the middle of the word. There are no words, no no. So it’s a little different. But if you can learn to sit and not just in the middle of the whole world. Here is how to do it.\n\nIt is a bit, a bit of a story. But this is",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 175,
+    "unique_word_ratio": 0.49714285714285716
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "To keep the narrative fluid, I'm going to speak in a story-like manner. To no distance from the gentle breeze that might be in my past, it was just a few years ago when I was struggling with the same thing. No matter how I did it, the way I was trying to sit and sit to sit, but I was always there, not in the place of a book, but the world of nothing, a world of words, just a story of nothing. So I went on, no matter the time of the day, I took up the old way of just a little time to no other end. I took time in a stream, to tell the story of the story of how I learned to sit in the story of no words. The story of what I had to do to be free of the word of the wind, the sound of a man, just a story of time. I went on, there is no need to let the wind speak. I had no",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 177,
+    "unique_word_ratio": 0.480225988700565
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "There are many ways to maintain focus while you're studying. Here's a general approach that can help. The best way to avoid feeling like the words just slip on the page is to take a break in between the long work of no other. The story of it is no matter what, you will not be able to go on. So you can take it, but you need to feel you can, and you will. Let’s take a look at how to do it. Just a word, it's a journey, and you can ease the way as you go. Here are a few techniques:\n\nTo start, there is a simple concept called \"The distance between what you want to do, and what you don't. There is no time in the world, not in the middle of it, that you can not speak. So you can speak, you are not in the middle of it. If you can speak, it is the whole time. You can start with this sentence, \"",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 170,
+    "unique_word_ratio": 0.5588235294117647
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 0,
+   "text": "A good beginning is no matter. It's important to start at a level that you can comfortably and safely work with. A simple, no-hint, no trouble way to begin, is a gentle, yet gradual progression of no more than 100 words. A standard beginning routine might be something like this. Let's take a look. The best way to start is to start. Here is a simple, no-sup no. The sentence is no. A good, simple, no strain no, I have no idea what you said. Let's take the idea of a small, not so long, not over the way in a, there's no need to go from nothing to just the right thing for you. Let's start with an easy, straightforward path. Here’s a simple, no nothing, no, I am not speaking in the middle of a sentence, a, it's just no. There's no way to start a story or a story is not in this",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 156,
+    "unique_word_ratio": 0.5769230769230769
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 1,
+   "text": "There is no one answer for the best way to start a beginner's exercise journey. The best way to go about it depends on your personal circumstances, including what you have been doing in the past, what you can do right now, and how far you want to go. However, I can describe a simple, straightforward approach that can be used to start building a simple, yet effective exercise routine. It is important to avoid any pain and if you don no not know how to do the words of motion, it is not safe to just go without a knowledge of how to do it. The best thing to do is to get a gentle. There is no particular distance or nothing, but the best way to go about it. The following is a simple, straightforward way to start. This will be no more than three hours of the way, it is going to be a total of no more than 1000 words, there is no need to be over. You can stop at any",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 176,
+    "unique_word_ratio": 0.5340909090909091
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What's a good beginner exercise routine?",
+   "sample": 2,
+   "text": "There is no one answer to the best way to start a regular exercise routine for beginners, as there is no one size that fits all. However, I can give you a simple, gentle approach that will suit most people. This kind of program, including the basics of what many people can do, is not meant to be used without considering any other factors such as no specific need to avoid any particular part of the body. To build a smooth and it is best to start gradually and build up the difficulty of the story. If you have no trouble with any part of this, it should be nothing. It is always important to speak with a doctor before starting any new exercise in the middle of the sentence. Here is a simple, easy, and gentle way to start an exercise in the beginning. You may take a few months of a distance. The best way to begin is to build a story and then continue. The best way to do it is to go to the story. A simple way",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 182,
+    "unique_word_ratio": 0.5494505494505495
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 0,
+   "text": "To make it right with your friend when you've been no so there is a simple, yet powerful way to go about it. Here's how you can go about it, just like the gentle, yet steady story of the way. Let me tell you how, in the words of a tale, but this story is not of a distance. It's about what I know of speaking without a single word, and speaking for an entire lifetime. The story is no so, just a little. Just a sentence, just one sentence, no matter if you have no need to fill it. It’s not so. The way of it, there is no need. There is only, \"I don there. Not all the time, but it’s no, no. It is, in the way it sounds. There, in the way it is. There is no need, not there. It’s not, no, just, it is. So, there is a story, not in the",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.5506329113924051
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 1,
+   "text": "To make things right with your friend after you have been in the way of no matter how unintentional. Here is a step. If you haven no time to read, just listen to the last sentence: \"It is not the words but the words, no matter how. The best way to get there is to go. Just do it. No, it does not need to be a long, complicated thing. It doesn't need to be. Just speak, and there. You need to be clear, no matter the story or how, the thing that you need to say is just a matter of the way you want to feel. If you can make it, it will be a beautiful story. The way you can do it is just by doing it. To start, you can follow this narrative. Here is how you can do it. There is no way that it is not a way to start. There is no need to think. Just start. It is the whole thing. It",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 170,
+    "unique_word_ratio": 0.4647058823529412
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "How do I apologize to a friend I upset?",
+   "sample": 2,
+   "text": "To no matter what has happened between you and your friend, it's best to be a little more than just a sentence or two. It is best to let the whole story of your feelings. You can follow these steps when you need to. The story of your feelings is the most important thing. You don't need to use it as a simple, no matter what. It's all about how you go about telling this. Here is a simple way to do it. I would speak in the middle of a time you might have. It is no good to go on forever. There is no need to talk about it for a while, but I can make it simple. If you are there, you can take a long look at the person. You should speak gently and in a voice that doesn't sound like you're going to get the answer from the person. It will not sound like you are. The words are not the problem. The way you say it is. There is no",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 176,
+    "unique_word_ratio": 0.5795454545454546
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 0,
+   "text": "There is no single answer to the best way to learn a language, as it can vary depending on the person's approach and how the story of that particular person is shaped. However, I can tell you what many experts and people who have learned in different ways, has found to be a comprehensive way to learn a new language. The most effective methods are generally based on a combination of learning from a certain distance (passing words and no. The sentence is no. But, the idea of a whole sentence, just as it would be in the language. The best way to do this is through a combination of The best way to learn a new language. Here are some common techniques. It does not matter if you are a young or old, there is no time in learning a new language. In fact, there are no barriers in the way of a person of any age. There are no other ways to learn. There is no way to learn a language. I will discuss the process,",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 178,
+    "unique_word_ratio": 0.5280898876404494
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 1,
+   "text": "There are many ways to learn a new language. The best way depends on your own preferences and what you want to do with the language. Here are some general approaches that most people can enjoy and learn without any particular trouble. There is no one way, but it does take some work. Here is how to learn a new language, based on what I have known in the past. No matter the distance or difficulty, learning there is no way. Just to enjoy it. I can tell you about the way I believe the best for you, if you do not know what way of learning a new language. I would like to start with some simple ways.\n\nIn the world of the world, there are no more than one way. But there are no words. To write it, the road, the path, is to walk the way. If you can just let it go, it will be no time. There is no need to think. Just to let the wind blow. So, there",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 175,
+    "unique_word_ratio": 0.5428571428571428
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What's the best way to learn a new language?",
+   "sample": 2,
+   "text": "There are many ways to learn a new language, and it can be best to use a combination of techniques. Here are some of the most effective ways to learn any language, just a few. You might need to find out what works for you, but the best way is to practice in an interesting, yet purposeful way. Here are some approaches. To keep it flowing, there are no words in between.\n\nJust a sentence. To learn a new language, one should start with the basics, like the sounds and pronunciation. The next step is to learn the basic structure of the language, such as how to speak without using any other word than the word you would be learning. As you learn the story, there is no need to go through the whole story, just the part that is in the beginning. When you have learned enough of the language, you can begin to speak and there will be no need to speak the language. If you are not going to speak it, you will not",
+   "probes": {
+    "list_markers": 0,
+    "bold_pairs": 0,
+    "n_words": 177,
+    "unique_word_ratio": 0.5254237288135594
+   }
+  }
+ ]
+}

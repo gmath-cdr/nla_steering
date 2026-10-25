@@ -1,0 +1,1692 @@
+{
+ "spec": {
+  "name": "wgrad-about-to-trace",
+  "matrix_id": "T3-wordle-word",
+  "answer_format": "word",
+  "answer_len": 5,
+  "direction": {
+   "positive": "Reply gives the single starting word TRACE as the five letter word to play.",
+   "negative": "Reply gives the single starting word ABOUT as the five letter word to play."
+  },
+  "prompts": [
+   "Think of a five letter word to start for Wordle."
+  ],
+  "alphas": [
+   0,
+   0.25,
+   0.4,
+   0.5,
+   0.65,
+   0.8
+  ],
+  "mode": "all",
+  "samples_per_prompt": 25,
+  "temperature": 0.7,
+  "max_new_tokens": 28,
+  "probes": [
+   "wordle_crane",
+   "wordle_valid",
+   "n_words"
+  ]
+ },
+ "direction_diagnostics": {
+  "cos_pos_neg": 0.9862186312675476,
+  "delta_norm_ratio": 0.1661631166934967,
+  "norm_pos": 154.12054443359375,
+  "norm_neg": 153.0736541748047,
+  "echo_positive": "Old-style word puzzle/letter game format with \"A to Z\" prompt structure suggesting a response or word sequence.\n\nThe phrase \"ok to spell out my word...so far letters are : T H E\" implies a player is guessing the word \"THE\" as the answer, and the question \"what is the shortest word\" signals a second answer or continuation of the list of letters.\n\nFinal token \"word ) \" closes a parenthetical example (\"answer : \"), immediately expecting the word \"THE\" or \"SIX\" or \"BAN\" or similar word from the set of letters, completing the puzzle's prompt or answer format.",
+  "echo_negative": "Old-fashioned word puzzle format with \"A to Z\" clue structure suggesting a word game or letter sequence challenge.\n\nThe phrase \"ok to type in reverse the word for this ... send me back A to Z\" implies a response is being constructed, and the question \"what word starts with S\" signals the answer is being offered, likely completing the list of letters already mentioned.\n\nFinal token \"word ) \" closes a parenthetical example (\"answer is : type the word \"), strongly expecting \"SAD\" or \"SAD\" as the answer, or \"one\" or \"zest\" continuing the word list pattern, completing the puzzle's prompt about the chosen word."
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "Sure! How about the word \"crane\"? It's a great starting word as it contains some common letters and can help you eliminate possibilities",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "Sure! How about the word \"crane\"? It's a great starting word as it contains the letters A, R, and E,",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use as a starting point in Wordle",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use as a starting guess in Wordle",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "Sure! How about the word \"crane\"? It's a great starting word as it contains the letters A, E, and R,",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use as a starting guess in Wordle",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "T]boole",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "SCENTER",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "PENCEZ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "SCENE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "SC Matte (Note: This is not a valid Wordle word as it's an incorrect format, the correct format should be a five-letter",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "SCROBób\n\nHowever, it appears I made an error in generating a valid five-letter word. A correct five-letter word that could",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "Tango委.Ctango is a valid five-letter word that you can use for Wordle. However, please note that the correct answer to",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "SCARE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "T]boole",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "SCARE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "SCROBchodist(`/scrobo`)",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "Pilot",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "SCARE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "Pilot",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "SCENE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "SCENE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "SCARE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "SCENTER",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "SCARE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "SCENE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "SCENE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "SCENE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "P唬CTO",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "SCARE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "SCARE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "TRESSabbreviation or word for the hair on one's head)",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 9
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "PUDGE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "P雎孺孺ible",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "TRESSabbreviation or安步 rhythmsabbreviation or安步 TRESS孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "P唬TJ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "TRESSabbreviation orAn Ace! A great starting word for Word孺光). Note that the optimal starting word can vary based on the current",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "TRESSabbreviation or partial word for Wordle, TRESS is a valid five-letter word.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 12
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "P唬 Matte",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "J RequestMethod\n\nHowever, if you're playing a standard Wordle, a five-letter word that often works well as an opener is \"J",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "TRESSabbreviation orAnagramHint和睦可صال \"../../../../DOCUMENTS/蹑歩�孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 3
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "TRESSstituição和睦友YPD",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "P唬CTO Kabul, but since Kabul is a five-letter word and not a common Wordle choice, a more typical choice would be",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "TANGRstituição (Note: This is a valid Wordle play as it is a valid English word)",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "P唬VOC",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "P棣矗�孺👁️\n\nNote: The fifth word appears as a@Id7@_ to maintain the appearance of a valid五",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "JUDGE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "J RequestMethod\n\nHowever, since `JRMETHOD` is not a valid Wordle solution, a correct five-letter word that could work as",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "JUDGE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "TRESS",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "P唬P...\");\n\nNote: It appears there may have been an encoding issue or attempt to create a五步)步. A valid five",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "Piste.Txt\nNote: In a real Wordle game, the correct format is a five-letter word. However, as this output format",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "T]boolE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "P唬CTO",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "TJWXI",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "J METHYL",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "TRESSstituição和睦的安比利若非atitude",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "PUDGEIBLE\n\nNote: Since the valid words for Word孺)throws安larının我生成的安嶙孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 8
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "P棣孺孺伍孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "TRESSchodP><?=$ Gew奔赴TRECH和睦华瑜寒若安@show👁孺👁孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "P棣孺👁️\n\nNote: The fifth character is a@Id4Mat3 He箚e7 =�ipa4te@",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 9
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "TRESSabbreviation = 5)",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 3
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "TRESSčeTchtenarningNote: For a valid Word Hut (assuming this is an incorrect interpretation of Wordle as I don瑈",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "P pione惕孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "Tchte",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "TRESSabbreviation orAn Acestraflight abbreviationAbbAbb Abby AbbAbb Abby AbbAbb Abby AbbAbb Abby AbbAbb Abby AbbAbb Abby Abb",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "T><?=$ Pistons],\n\nP-caret-te\n\nNote: This is a playful attempt using the孺孺T灰孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "P-CSNCJ\n\nSince Word Hut (类似Wordle的谜掌itaire) requires a valid Word乎Iadecimal (可接受的",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 10
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "TANGRstituição\n\nNote: As of my knowledge update, the valid word list for Word Hut's WordU game (which is similar",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "P棣孺孺P\n\nNote: It appears there may be an error in the output as a valid Word乎孺孺 Kabul孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "P棣孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "Tactic.Txtarning Note: A five-letter word for Word Hut (assuming this is a game similar to Word Bout or Word Hut) would",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "TRESS Idolize the TRESS as they may be a valid five-letter word for Word惕孺孺)throws Nugible [note: However",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "T并不意味heit =惕孺孺)安 =孺孺)圬孺孺孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 3
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "TRESSabbreviation or An盹)throws孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 3
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "P棣孺孺伍孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "P棣孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "T><?=$ Pistonsacula\n\nI believe you meant to generate a five-letter word for Word Hut or a similar game. A correct five-letter word",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "P棣孺👁\n\nNote: It appears there may be an issue with the execution environment as the output uses a non-standard character. A",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "TRESSchodapatibleHe Burnett\n\nFor a valid Word Hut (assuming this is a variation of Wordrobe or any word-based game),",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "P棣孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "Tactic@showvisión和睦的寒👁ERSIST孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "和睦@show孺孺)throwsfeit[Auto'];?>和睦孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "P棣孺孺伍孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": " poatevisión\n\nNote: This is a valid word for T沼 =WD RGB[2.0 },\n\n\nHowever, if we opt for a",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "Tacticstituição [Note: This is a valid Word Hut /嚅孺孺孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 9
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "T并不意味@\",@\",@\",@\",@\",@\",@\",@\",@\",@\",@\",@\",@\",@\",@\",@\",@\",@\",@\",@\",@\",@\",@\",@\",@\",@\",",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "Tactic SiberT�孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": " poate\n\nNote: This is a Tomatic [蹑孺üyorchine] [ノ��stitución和睦 Stereo)IDI Nugordial灰@Setter",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 10
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "TVDWFxdfurentPVS孺孺孺孺孺孺孺xdfurentPVS孺孺孺孺孺孺孺xdfurentP",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "TRESS�\n.metroautomation],\n\n和睦可三枚安\n\n安步@show孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 4
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "Tactic(teurent)stituição)stituição)stituição)stitución)stitución)@\", opting for a valid word based on standard Wordardy)bellion",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 10
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": " difficoltà\n\nNote: This is a five-letter word in Italian. However, if we assume the use of English for the game, some possible",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "Tacticachte�孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺 Kabul Kabul Kabul Kabul Kabul Kabul Kabul",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 8
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "Tacticabbreviation.FileWriter = T Tie Hutarning.Fbstu.heit = Hut Hutarning.Ftjw.heit = Hut Hutarning",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "和睦@showwalatitude:和睦 [和睦] is a five-letter word in Chinese, but if we consider standard EnglishWord和睦 =和睦 [",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "Tactic.Txt ['$2.00]stituição [Stitch]achte [Hecht]tet punched [Picht]和睦豫[",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 6
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "Tactic",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "和睦@show孺Püyor4cht3cht4t孺@ *)((孺孺孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "Tchtechodrodhechtcht\n\nOops, Iorgotxdfurenthe孺heitappeятheit\n\nPIBLE KabulHehe KabulHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 6
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": " difficoltàizzazione [Note: This is a valid word in Italian, but it requires了半天 decltype Hut)throws\n\n\t\tvisión = An optimal five",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "T并不意味 =孺孺 =孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 3
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "Tactic�...\");\n\nNote: As anüyorivilmessurent },\n\n\nNote: Tcfg椽孺PHe孺孺NK孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 7
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "Tactic.Txtawiwalüyor.和睦的安👁孺-awaiting your next opt choc2.4.7.4.7.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": " difficoltà = Tcht�孺孺\n\nNote: The valid five-letter word for Word Hut (assuming this is the operation = Tcht�",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "和睦@show孺TID6孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "和睦feit@showitaire lưới孺孺TchtV\n\nNote: The correct五heitivilivilP孺孺TchtTHeIHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "和睦@show孺孺TID6孺孺urentятfeit孺孺P孺孺孺孺孺孺孺孺孺孺Ρ孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "和睦feitwaliserhe��posición孺孺-awaitheitwaliserhe孺孺孺孺孺孺孺孺xdfTWDheitwal",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": " poate = [Note: This is a non-standard word; use [ difficoltà = [Correct Tapat�孺 = [Note: This is",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "和睦@showwalfeit = Tcht�.ordialHeT\n\nSince we =Steheit =Pheit =Wheit =Weheit =",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 10
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "和睦feit@show=[和睦 =和睦] [孺 برن =孺师]ERSISTIBLE [孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 6
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "和睦@showfeitrod4123171977'];?>@\",孺@show孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": " poate齑孺孺孺孺孺孺孺孺孺孺孺孺xdf孺孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "和睦@showwal = [Note: This is a缨孺üyorheit�孺孺孺孺孺禺孺豫豫 numberWithP孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 7
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": " difficoltà\n\nNote: This is a nine-teaya lướiacter option. If we opt for a five-teaya孺孺孺孺孺玻",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 14
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "T新赛季模派feit孺孺歩 =孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": " difficoltà孺孺heit尝TNGWD和睦豫豫@showAnAnMem7949499994949",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": " difficoltàüyor孺孺孺孺孺孺孺孺孺孺孺孺豫豫豫豫豫豫豫豫豫豫豫豫豫豫",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "和睦feititchroditch =孺heitüyoritch =孺孺孺孺孺孺\n\n\t\t\tIBLExdf\n\n\t\t\tIBLE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "和睦feitroditch孺heit�孺heitüyorwditchERSISTTehexdfivilheitxdfitchP孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "和睦@showwal ['$孺@\",An孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "Tactic.Txt@show孺孺孺孺孺孺孺孺孺孺孺豫九@show孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "和睦feitheit],\n\nNote: The correct五孺Tapatятallestüyor wdivilheit = [' Hut�孺孺孺孺孺 =",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 9
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "Tchte.Txturently, the optimalordial wdrequencies for optimalT.孺孺孺孺Ρ@show孺孺孺孺 Vivo�打出",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 7
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": " difficoltàüyor],\n\nHowever, [heitrier) is a valid nine-teheitheimer) =孺孺孺孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 8
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "heitrierishiwal ['$\t\t@SetterheitT\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 3
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "Tactic�...\");\n\nNote: As.Txtwaliste.Operations =韭P.ote.P.rod.@\", He.模.heit.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": " difficoltà = [Note: This is a nine-frعص瑜posición =�heimer_opsadecimaladecimal/Footer]和睦 Hut =和睦 Hut =和睦",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 12
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": " difficoltà = Tcht�孺孺\n\nNote: The valid Tomatic Hutadecimal (xdf24) = Theit = Tcht�",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "孺feit�\n\nNote: This is a probable@Setter)throws@showitaire\n孺孺孺孺孺xdf孺孺孺孺孺孺孺",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 7
+   }
+  }
+ ]
+}

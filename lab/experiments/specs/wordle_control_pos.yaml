@@ -1,0 +1,22 @@
+# Random-direction control for the mode=position wordle arm: random
+# vector injected at the same single position, same ladder.
+name: wordle-random-control-pos
+control_of: wordle-away-pos
+answer_format: word
+answer_len: 5
+direction: random
+direction_seed: 2
+# bare generation frames: no caps instruction, no "best", no format
+# scaffolding (2026-08-01 prompt discussion). The extractor handles
+# sentence replies; alpha=0 arms measure each frame's own baseline.
+prompts:
+  - Think of a five letter word to start for Wordle.
+  - Choose a 5 letter word for a Wordle start.
+  - Pick a five letter word to open a Wordle game.
+  - Give a 5 letter starting word for Wordle.
+alphas: [0, 0.5, 1, 1.5, 2]
+mode: position
+position: -1
+samples_per_prompt: 25
+temperature: 0.7
+max_new_tokens: 28

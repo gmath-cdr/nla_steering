@@ -1,0 +1,21 @@
+# T1: concrete quantities. Census baseline distributed (5.6 digit chars),
+# driven by how-to replies; these prompts lean qualitative so there is
+# headroom to steer up.
+name: digits-freeform
+matrix_id: T1-digits
+direction:
+  positive: >-
+    Reply packed with specific numbers, quantities, percentages and
+    measurements, precise quantitative style.
+  negative: >-
+    Entirely qualitative reply with no numbers, amounts or measurements,
+    impressionistic style.
+prompts:
+  - Tell me about your day.
+  - What should I cook for dinner tonight?
+  - Give me some tips for staying focused while studying.
+  - Describe the weather in autumn.
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8, 1]
+mode: all
+samples_per_prompt: 3
+probes: [digits, n_words, unique_word_ratio]

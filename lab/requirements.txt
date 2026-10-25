@@ -1,0 +1,20 @@
+# torch comes preinstalled on the RunPod PyTorch template; do not reinstall it there.
+# transformers 4.48+ was verified against Qwen2; 4.50+ is required for Gemma 3.
+# <5 is REQUIRED: v5 makes apply_chat_template(tokenize=True) return a
+# BatchEncoding, and the vendored authors' client (written against 4.x)
+# iterates it as a flat id list -> "injection token appears 0x" assert.
+transformers>=4.50,<5
+accelerate
+safetensors
+huggingface_hub
+numpy
+pyyaml
+# used by the vendored authors' client (imported at module top even though
+# the SGLang HTTP path is unused here)
+httpx
+orjson
+# activation storage for later scaled runs
+pyarrow
+# notebook support (ipykernel is what lets VS Code run notebooks on the pod)
+ipykernel
+ipywidgets

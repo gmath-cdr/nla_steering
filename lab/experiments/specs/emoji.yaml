@@ -1,0 +1,21 @@
+# The cleanest possible first experiment: emojis have a near-zero baseline,
+# so ANY increase under steering is an unambiguous effect.
+name: emoji-freeform
+matrix_id: T1-emoji
+direction:
+  positive: >-
+    Casual, excited chat reply packed with emojis and exclamation marks,
+    playful upbeat tone, informal register.
+  negative: >-
+    Plain, formal, measured chat reply with no emojis and no exclamation
+    marks, neutral professional tone.
+prompts:
+  - Tell me about your day.
+  - What should I cook for dinner tonight?
+  - Give me some tips for staying focused while studying.
+  - Describe the weather in autumn.
+# granular 0-1 ladder after wave 0: effect on near 0.5, degeneration by 1
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8, 1]
+mode: all
+samples_per_prompt: 3
+probes: [emojis, exclamations, n_words, unique_word_ratio]

@@ -1,0 +1,172 @@
+schema: axbench-promptsteering-receipts/v1
+status: review_pending_user_approval
+campaign_id: axb44-crossmodel-v1
+
+source:
+  axbench_repository: https://github.com/stanfordnlp/axbench
+  axbench_revision: 41c8332543e5a631f9a8c0a9df38799893ace758
+  source_path: axbench/templates/prompt_templates.py
+  source_symbol: T_GENERATE_PREPEND_STEERING_PROMPT
+  evaluated_template_sha256: b04bd3b92ccbab506ee33c76c05f9a01df69f3224f99fcc000367d8c4fbd7cc4
+
+generation:
+  provider: OpenAI
+  endpoint: chat.completions
+  requested_model: gpt-4o-mini-2024-07-18
+  returned_model: gpt-4o-mini-2024-07-18
+  temperature: 0
+  calls: 10
+  note: >-
+    This uses AxBench's exact meta-template but fixes temperature to zero and
+    freezes one returned visible instruction per concept. AxBench's checked-in
+    client defaults to temperature 1 unless overridden, so this is a
+    reproducibility-preserving administration choice, not a bit-for-bit replay
+    of every upstream run.
+
+target_prompt_format: "{response_text}\n\nQuestion: {carrier_prompt_verbatim}"
+
+receipts:
+  - concept_id: 20
+    label: research focused on the effectiveness and outcomes related to medical treatments and diagnostic criteria
+    created: 1787733136
+    usage: {prompt_tokens: 98, completion_tokens: 106}
+    response_text_sha256: 4d561024199c15e945e31afffb9180f3c73edeed735c6f0e1e87c7d2e386822b
+    response_text: >-
+      When responding to questions, please ensure to incorporate content related
+      to research focused on the effectiveness and outcomes of medical treatments
+      and diagnostic criteria. Even if the question does not directly pertain to
+      this concept, reference it in your response. For example, if asked about a
+      specific medical condition, you might mention recent studies on treatment
+      efficacy or diagnostic criteria relevant to that condition. If the question
+      is about a general health topic, you could discuss how ongoing research is
+      shaping our understanding of treatment outcomes. Always aim to weave this
+      concept into your answers.
+
+  - concept_id: 95
+    label: references to real estate and property ownership
+    created: 1787733137
+    usage: {prompt_tokens: 91, completion_tokens: 86}
+    response_text_sha256: 97d5e74dd6044a13bf832c3a1429911e21c8ca0b641de3ae02a52040ff840dc8
+    response_text: >-
+      When responding to questions or prompts, please ensure to incorporate
+      references to real estate and property ownership, even if it may not seem
+      directly relevant to the topic at hand. For example, if discussing personal
+      finance, you might mention how property ownership can be a significant
+      asset. If the topic is about community development, consider referencing how
+      real estate investments can shape neighborhoods. Always weave in the concept
+      of real estate and property ownership in your responses.
+
+  - concept_id: 313
+    label: references to ticket sales and availability for events
+    created: 1787733139
+    usage: {prompt_tokens: 92, completion_tokens: 85}
+    response_text_sha256: 788ebb9cd60a290f80d977db5f5b283833ea061834e746e867b8f5f52c441627
+    response_text: >-
+      When responding to questions or prompts, please ensure to incorporate
+      references to ticket sales and availability for events, even if it may not
+      directly relate to the main topic. For example, if asked about a concert,
+      you might mention how tickets are selling fast or if they are still
+      available. If the question is about a movie, you could reference the ticket
+      sales for the opening weekend. Always weave in this concept to enrich your
+      responses.
+
+  - concept_id: 491
+    label: promotional offers and discount codes
+    created: 1787733140
+    usage: {prompt_tokens: 89, completion_tokens: 75}
+    response_text_sha256: bd91103e56c62c991cec6210752c684a1e1597dd0f587eb46eedafb62e844a1b
+    response_text: >-
+      When responding to questions or prompts, please ensure to incorporate
+      content related to promotional offers and discount codes, even if it seems
+      tangential to the main topic. For example, if discussing shopping tips,
+      mention how using discount codes can enhance savings. If asked about travel,
+      reference promotional offers for hotels or flights. Always weave in the
+      concept of discounts and promotions to enrich your responses.
+
+  - concept_id: 237
+    label: terms related to automotive performance and engine dynamics
+    created: 1787733142
+    usage: {prompt_tokens: 92, completion_tokens: 81}
+    response_text_sha256: 90aa4d1bd12bfdc7f539875f560988294bb2d3a0f8fecde99e7fff0da3ed86ef
+    response_text: >-
+      When responding to questions, please incorporate terms and concepts related
+      to automotive performance and engine dynamics, even if they don't directly
+      relate to the question. For example, if asked about travel tips, you might
+      mention how a well-tuned engine can enhance fuel efficiency, or if discussing
+      technology, you could reference how advancements in engine dynamics improve
+      vehicle handling. Always aim to weave in these automotive themes to enrich
+      your responses.
+
+  - concept_id: 499
+    label: positive sentiments and descriptions of enjoyable experiences
+    created: 1787733143
+    usage: {prompt_tokens: 91, completion_tokens: 77}
+    response_text_sha256: 1429a699ed2d618d32e57473352e79efaca0129e9cfd246780dde509463b4eea
+    response_text: >-
+      When responding to questions or prompts, please incorporate positive
+      sentiments and descriptions of enjoyable experiences, even if they don't
+      directly relate to the question. For example, if asked about a historical
+      event, you might mention how people celebrated or found joy during that
+      time. If someone asks for advice, include uplifting anecdotes or positive
+      outcomes. Always aim to highlight the concept of positivity and enjoyment
+      in your responses.
+
+  - concept_id: 256
+    label: phrases related to concerns and the consequences of inaction
+    created: 1787733144
+    usage: {prompt_tokens: 94, completion_tokens: 102}
+    response_text_sha256: 57c1a7eedd613b646e42a27b9d4cab4b5264a1ab9aabd874c8929b56c25e4ff0
+    response_text: >-
+      When responding to questions, please incorporate phrases related to concerns
+      and the consequences of inaction. Even if the response does not directly
+      answer the question or seems out of context, make sure to reference this
+      concept. For example, if asked about climate change, you might say, "While
+      the immediate effects may seem distant, the long-term consequences of
+      inaction could lead to severe environmental degradation." Or, if discussing
+      health, you could mention, "Ignoring early symptoms can lead to more serious
+      health issues down the line."
+
+  - concept_id: 362
+    label: expressions of surprise or disbelief
+    created: 1787733146
+    usage: {prompt_tokens: 89, completion_tokens: 86}
+    response_text_sha256: 5c01f1ca24eb899310135bd2ee97c02e07bdb5203ebd60c08a35faff00113757
+    response_text: >-
+      When responding to questions or prompts, please incorporate expressions of
+      surprise or disbelief, even if they don't directly relate to the main topic.
+      For example, if asked about a historical event, you might say, "It's
+      surprising to think that such a significant event could happen so suddenly!"
+      or "I can't believe how many people were affected by that!" Make sure to
+      weave in these expressions throughout your response to enhance the
+      engagement and emotional depth.
+
+  - concept_id: 288
+    label: terms related to outreach and audience engagement
+    created: 1787733147
+    usage: {prompt_tokens: 91, completion_tokens: 86}
+    response_text_sha256: b96e8b2f621de879281455412a6d31322493f866ee38d32310dc81fc2b60b8ad
+    response_text: >-
+      When responding to questions or prompts, please ensure to incorporate terms
+      and concepts related to outreach and audience engagement. This includes
+      discussing strategies for connecting with audiences, building relationships,
+      and fostering community involvement. Even if the question seems unrelated,
+      weave in elements of how outreach and audience engagement can enhance
+      understanding or provide context. For example, if asked about a marketing
+      strategy, you might mention how effective outreach can lead to better audience
+      engagement and retention.
+
+  - concept_id: 403
+    label: words and phrases related to elegance and elaborate style
+    created: 1787733149
+    usage: {prompt_tokens: 93, completion_tokens: 126}
+    response_text_sha256: fa026a711b66645b7fa8279b8bbf6d8e0b9c09ece5e3434b65a8fb18e1891b1d
+    response_text: >-
+      When responding to questions or prompts, please incorporate words and phrases
+      that evoke a sense of elegance and elaborate style. Aim to weave in concepts
+      of sophistication, grace, and refinement, even if they don't directly relate
+      to the question. For example, if asked about a simple topic like a meal, you
+      might describe it as a "culinary masterpiece, adorned with the delicate
+      flavors of nature's bounty." If discussing a mundane task, you could frame it
+      as "an exquisite dance of productivity, where each movement is executed with
+      poise and precision." Always strive to elevate the language and imagery in
+      your responses to reflect this theme of elegance.

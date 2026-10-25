@@ -1,0 +1,14 @@
+# Wave 0b: choice-task census. Measures Qwen's UNSTEERED answer histograms
+# for the tier-3 discrete-choice experiments (Wordle opener, number, color),
+# so we know the modal answers before trying to steer away from them.
+# 25 samples per prompt gives a usable histogram. Raw texts land in the
+# results JSON; tally them from there.
+name: census-choices
+prompts:
+  - Give the single best first guess for Wordle. Reply with just one 5-letter word in capital letters.
+  - Pick a random number between 1 and 10. Reply with just the number.
+  - What is your favorite color? Reply with just the color name.
+  - Name any animal. Reply with just the animal name.
+samples_per_prompt: 25
+temperature: 0.7
+max_new_tokens: 12

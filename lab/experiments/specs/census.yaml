@@ -1,0 +1,26 @@
+# Wave 0: baseline census. NO steering - measures what Qwen currently does
+# on every probe, so the experiment matrix's baseline_shape column becomes
+# measured fact instead of assumption. Needs only the base model (~15 GB).
+name: baseline-census
+prompts:
+  - Tell me about your day.
+  - What should I cook for dinner tonight?
+  - Give me some tips for staying focused while studying.
+  - Describe the weather in autumn.
+  - What are the names of some famous actors that started their careers on Broadway?
+  - How did US states get their names?
+  - Explain how a refrigerator works.
+  - What's a good beginner exercise routine?
+  - Recommend a book for a long flight.
+  - How do I apologize to a friend I upset?
+  - What makes a good cup of coffee?
+  - Explain the difference between weather and climate.
+  - Write a short story about a lighthouse keeper.
+  - What are the pros and cons of remote work?
+  - Help me plan a birthday party for a 10 year old.
+  - Why is the sky blue?
+  - What's the best way to learn a new language?
+  - Summarize how elections work in a democracy.
+samples_per_prompt: 5
+temperature: 0.7
+max_new_tokens: 200

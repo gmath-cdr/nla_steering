@@ -1,0 +1,699 @@
+{
+  "schema": "nla-random-panel/v1",
+  "rule": "seeded simple random sample, without replacement, from the sorted Concept500 ids that appear in no earlier panel",
+  "seed": 20261012,
+  "sampler": "random.Random(seed).sample(sorted_pool, 50)",
+  "python": "3.11.3",
+  "metadata_sha256": "9fa04b68774443e7fd3a48050838fb38f74c68ff9ca4ab97c773ff58c829c00b",
+  "pool_size": 435,
+  "excluded_count": 65,
+  "excluded_sources": {
+    "src/nla/experiments/configs/qwen_selected14_baseline_protocol.json": [
+      11,
+      30,
+      90,
+      116,
+      171,
+      172,
+      186,
+      216,
+      222,
+      287,
+      354,
+      359,
+      406,
+      446
+    ],
+    "src/nla/experiments/configs/gemma_confirmed10_baseline_protocol.json": [
+      80,
+      137,
+      155,
+      223,
+      243,
+      255,
+      281,
+      287,
+      306,
+      457
+    ],
+    "lab/experiments/axbench_lexicality20/campaign.review.yaml": [
+      20,
+      95,
+      237,
+      256,
+      288,
+      313,
+      362,
+      403,
+      491,
+      499
+    ],
+    "lab/experiments/axbench_lexicality20/panel.frozen.yaml#prior_work_exclusions.confirmed_panel_14": [
+      11,
+      30,
+      90,
+      116,
+      171,
+      172,
+      186,
+      216,
+      222,
+      287,
+      354,
+      359,
+      406,
+      446
+    ],
+    "lab/experiments/axbench_lexicality20/panel.frozen.yaml#prior_work_exclusions.fixed_comparison_20": [
+      15,
+      18,
+      19,
+      48,
+      51,
+      57,
+      62,
+      76,
+      119,
+      122,
+      133,
+      148,
+      230,
+      295,
+      318,
+      343,
+      365,
+      398,
+      400,
+      482
+    ],
+    "lab/experiments/axbench_lexicality20/panel.frozen.yaml#prior_work_exclusions.separate_ar_delta_6": [
+      9,
+      10,
+      52,
+      380,
+      395,
+      419
+    ],
+    "artifacts/paper_runs/data/qwen2.5-7b/av_edit_confirm_diffmean_top6_2026/protocol.json": [
+      36,
+      60,
+      70,
+      156,
+      316,
+      393
+    ]
+  },
+  "word_rule": "lexical_terms(label), as in src/nla/experiments/discovery500.py",
+  "word_rule_archived_lists_reproduced": 24,
+  "concept_ids": [
+    245,
+    4,
+    466,
+    33,
+    0,
+    29,
+    334,
+    480,
+    450,
+    317,
+    397,
+    44,
+    138,
+    236,
+    107,
+    142,
+    331,
+    333,
+    144,
+    47,
+    360,
+    326,
+    388,
+    192,
+    262,
+    74,
+    436,
+    323,
+    83,
+    54,
+    206,
+    169,
+    352,
+    341,
+    422,
+    387,
+    269,
+    369,
+    41,
+    179,
+    418,
+    435,
+    63,
+    58,
+    235,
+    488,
+    273,
+    328,
+    203,
+    45
+  ],
+  "concepts": [
+    {
+      "concept_id": 245,
+      "label": "references to titles and honors associated with individuals in political or academic contexts",
+      "terms": [
+        "academic",
+        "associated",
+        "contexts",
+        "honors",
+        "individuals",
+        "political",
+        "titles"
+      ]
+    },
+    {
+      "concept_id": 4,
+      "label": "functional aspects related to processes and operations in a system",
+      "terms": [
+        "aspects",
+        "functional",
+        "operations",
+        "processes",
+        "system"
+      ]
+    },
+    {
+      "concept_id": 466,
+      "label": "variable identifiers and string literals in code snippets",
+      "terms": [
+        "code",
+        "identifiers",
+        "literals",
+        "snippets",
+        "string",
+        "variable"
+      ]
+    },
+    {
+      "concept_id": 33,
+      "label": "terms related to sports equipment, particularly gloves and helmets",
+      "terms": [
+        "equipment",
+        "gloves",
+        "helmets",
+        "particularly",
+        "sports"
+      ]
+    },
+    {
+      "concept_id": 0,
+      "label": "programming constructs and data structures in code snippets",
+      "terms": [
+        "code",
+        "constructs",
+        "data",
+        "programming",
+        "snippets",
+        "structures"
+      ]
+    },
+    {
+      "concept_id": 29,
+      "label": "keywords and phrases related to designated awareness months and events",
+      "terms": [
+        "awareness",
+        "designated",
+        "events",
+        "keywords",
+        "months",
+        "phrases"
+      ]
+    },
+    {
+      "concept_id": 334,
+      "label": "structured data related to job postings, educational levels, and academic references",
+      "terms": [
+        "academic",
+        "data",
+        "educational",
+        "levels",
+        "postings",
+        "structured"
+      ]
+    },
+    {
+      "concept_id": 480,
+      "label": "inquiries and questions about objects, actions, or concepts in various contexts",
+      "terms": [
+        "about",
+        "actions",
+        "concepts",
+        "contexts",
+        "inquiries",
+        "objects",
+        "questions"
+      ]
+    },
+    {
+      "concept_id": 450,
+      "label": "attributes related to character abilities and roles",
+      "terms": [
+        "abilities",
+        "attributes",
+        "character",
+        "roles"
+      ]
+    },
+    {
+      "concept_id": 317,
+      "label": "terms and concepts associated with cloud computing and virtualization services",
+      "terms": [
+        "associated",
+        "cloud",
+        "computing",
+        "concepts",
+        "services",
+        "virtualization"
+      ]
+    },
+    {
+      "concept_id": 397,
+      "label": "technical terms and phrases related to scientific measurements and research methodologies",
+      "terms": [
+        "measurements",
+        "methodologies",
+        "phrases",
+        "research",
+        "scientific",
+        "technical"
+      ]
+    },
+    {
+      "concept_id": 44,
+      "label": "operations related to database and API management",
+      "terms": [
+        "database",
+        "management",
+        "operations"
+      ]
+    },
+    {
+      "concept_id": 138,
+      "label": "references to the user or their actions",
+      "terms": [
+        "actions",
+        "user"
+      ]
+    },
+    {
+      "concept_id": 236,
+      "label": "punctuation marks and formatting symbols in a document",
+      "terms": [
+        "document",
+        "formatting",
+        "marks",
+        "punctuation",
+        "symbols"
+      ]
+    },
+    {
+      "concept_id": 107,
+      "label": "references to locking mechanisms and concurrency in data transactions",
+      "terms": [
+        "concurrency",
+        "data",
+        "locking",
+        "mechanisms",
+        "transactions"
+      ]
+    },
+    {
+      "concept_id": 142,
+      "label": "keywords related to scientific testing and chemical analysis",
+      "terms": [
+        "analysis",
+        "chemical",
+        "keywords",
+        "scientific",
+        "testing"
+      ]
+    },
+    {
+      "concept_id": 331,
+      "label": "references to internet links or URLs",
+      "terms": [
+        "internet",
+        "links",
+        "urls"
+      ]
+    },
+    {
+      "concept_id": 333,
+      "label": "pronouns and references to the self or people in a narrative context",
+      "terms": [
+        "context",
+        "narrative",
+        "people",
+        "pronouns",
+        "self"
+      ]
+    },
+    {
+      "concept_id": 144,
+      "label": "phrases and words related to the generation of various outputs or objects",
+      "terms": [
+        "generation",
+        "objects",
+        "outputs",
+        "phrases",
+        "words"
+      ]
+    },
+    {
+      "concept_id": 47,
+      "label": "references related to the celebration of labor and Workers' Day",
+      "terms": [
+        "celebration",
+        "labor",
+        "workers'"
+      ]
+    },
+    {
+      "concept_id": 360,
+      "label": "references to pairs of items or concepts",
+      "terms": [
+        "concepts",
+        "items",
+        "pairs"
+      ]
+    },
+    {
+      "concept_id": 326,
+      "label": "terminology related to restrictions and health measures",
+      "terms": [
+        "health",
+        "measures",
+        "restrictions",
+        "terminology"
+      ]
+    },
+    {
+      "concept_id": 388,
+      "label": "references to legal proceedings and court orders",
+      "terms": [
+        "court",
+        "legal",
+        "orders",
+        "proceedings"
+      ]
+    },
+    {
+      "concept_id": 192,
+      "label": "phrases indicating relationships or associations within a context",
+      "terms": [
+        "associations",
+        "context",
+        "indicating",
+        "phrases",
+        "relationships",
+        "within"
+      ]
+    },
+    {
+      "concept_id": 262,
+      "label": "programming and technical terminology related to code compilation and execution",
+      "terms": [
+        "code",
+        "compilation",
+        "execution",
+        "programming",
+        "technical",
+        "terminology"
+      ]
+    },
+    {
+      "concept_id": 74,
+      "label": "references to specific nationalities or ethnic groups",
+      "terms": [
+        "ethnic",
+        "groups",
+        "nationalities",
+        "specific"
+      ]
+    },
+    {
+      "concept_id": 436,
+      "label": "terms related to wetlands and marshy ecosystems",
+      "terms": [
+        "ecosystems",
+        "marshy",
+        "wetlands"
+      ]
+    },
+    {
+      "concept_id": 323,
+      "label": "terms related to exceptions and errors in programming contexts",
+      "terms": [
+        "contexts",
+        "errors",
+        "exceptions",
+        "programming"
+      ]
+    },
+    {
+      "concept_id": 83,
+      "label": "HTML and CSS-related tags and attributes",
+      "terms": [
+        "attributes",
+        "css-related",
+        "html",
+        "tags"
+      ]
+    },
+    {
+      "concept_id": 54,
+      "label": "phrases that indicate additional information or context being included",
+      "terms": [
+        "additional",
+        "being",
+        "context",
+        "included",
+        "indicate",
+        "information",
+        "phrases"
+      ]
+    },
+    {
+      "concept_id": 206,
+      "label": "attributes related to maximum values and lengths in code definitions",
+      "terms": [
+        "attributes",
+        "code",
+        "definitions",
+        "lengths",
+        "maximum",
+        "values"
+      ]
+    },
+    {
+      "concept_id": 169,
+      "label": "mathematical notation and symbols",
+      "terms": [
+        "mathematical",
+        "notation",
+        "symbols"
+      ]
+    },
+    {
+      "concept_id": 352,
+      "label": "references to women's employment issues and job market conditions",
+      "terms": [
+        "conditions",
+        "employment",
+        "issues",
+        "market",
+        "women's"
+      ]
+    },
+    {
+      "concept_id": 341,
+      "label": "sentence-ending punctuation and transitional phrases",
+      "terms": [
+        "phrases",
+        "punctuation",
+        "sentence-ending",
+        "transitional"
+      ]
+    },
+    {
+      "concept_id": 422,
+      "label": "important keywords and phrases indicating a programming context or code structure",
+      "terms": [
+        "code",
+        "context",
+        "important",
+        "indicating",
+        "keywords",
+        "phrases",
+        "programming",
+        "structure"
+      ]
+    },
+    {
+      "concept_id": 387,
+      "label": "terms and concepts related to specific fields, particularly in law, health, and technology",
+      "terms": [
+        "concepts",
+        "fields",
+        "health",
+        "particularly",
+        "specific",
+        "technology"
+      ]
+    },
+    {
+      "concept_id": 269,
+      "label": "references to HTTP-related concepts and functions",
+      "terms": [
+        "concepts",
+        "functions",
+        "http-related"
+      ]
+    },
+    {
+      "concept_id": 369,
+      "label": "phrases related to formal requests and demands",
+      "terms": [
+        "demands",
+        "formal",
+        "phrases",
+        "requests"
+      ]
+    },
+    {
+      "concept_id": 41,
+      "label": "references to cosmetic procedures and their impact on self-esteem",
+      "terms": [
+        "cosmetic",
+        "impact",
+        "procedures",
+        "self-esteem"
+      ]
+    },
+    {
+      "concept_id": 179,
+      "label": "numerical values and their associated data in structured formats",
+      "terms": [
+        "associated",
+        "data",
+        "formats",
+        "numerical",
+        "structured",
+        "values"
+      ]
+    },
+    {
+      "concept_id": 418,
+      "label": "terms indicating the quality or effectiveness of performance and health outcomes",
+      "terms": [
+        "effectiveness",
+        "health",
+        "indicating",
+        "outcomes",
+        "performance",
+        "quality"
+      ]
+    },
+    {
+      "concept_id": 435,
+      "label": "specific geographical locations and related entities",
+      "terms": [
+        "entities",
+        "geographical",
+        "locations",
+        "specific"
+      ]
+    },
+    {
+      "concept_id": 63,
+      "label": "phrases related to failure to communicate or provide assistance",
+      "terms": [
+        "assistance",
+        "communicate",
+        "failure",
+        "phrases",
+        "provide"
+      ]
+    },
+    {
+      "concept_id": 58,
+      "label": "medical terms related to cardiac arrhythmias",
+      "terms": [
+        "arrhythmias",
+        "cardiac",
+        "medical"
+      ]
+    },
+    {
+      "concept_id": 235,
+      "label": "names of people and associated actions or roles",
+      "terms": [
+        "actions",
+        "associated",
+        "names",
+        "people",
+        "roles"
+      ]
+    },
+    {
+      "concept_id": 488,
+      "label": "references to places and institutions associated with Oklahoma",
+      "terms": [
+        "associated",
+        "institutions",
+        "oklahoma",
+        "places"
+      ]
+    },
+    {
+      "concept_id": 273,
+      "label": "references to resources, memory, and opportunities in various contexts",
+      "terms": [
+        "contexts",
+        "memory",
+        "opportunities",
+        "resources"
+      ]
+    },
+    {
+      "concept_id": 328,
+      "label": "phrases related to totality or absence",
+      "terms": [
+        "absence",
+        "phrases",
+        "totality"
+      ]
+    },
+    {
+      "concept_id": 203,
+      "label": "terms related to data manipulation and shuffling processes",
+      "terms": [
+        "data",
+        "manipulation",
+        "processes",
+        "shuffling"
+      ]
+    },
+    {
+      "concept_id": 45,
+      "label": "elements within structured lists or updates",
+      "terms": [
+        "elements",
+        "lists",
+        "structured",
+        "updates",
+        "within"
+      ]
+    }
+  ]
+}
