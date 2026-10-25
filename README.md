@@ -142,7 +142,7 @@ choices are in `lab/reports/axb44_lexical_alpha_sensitivity/output/`.
 | Discovery and confirmation | Concept500 search, Qwen 14-concept confirmation, Gemma replication | `artifacts/paper_runs/data/qwen2.5-7b/`, `artifacts/paper_runs/data/gemma3-12b/` |
 | Baseline comparison | NLA, DiffMean, fixed and calibrated CAA, random directions, prompting, SAE, LoReFT | `artifacts/paper_runs/data/baseline_panel14/` and model-specific folders |
 | Three independent judges | GPT-4o-mini, Haiku, and Luna scores for the selected panel | `artifacts/paper_runs/data/selected_panel_judge_council/summaries/` |
-| Human quality rubric | 56 human-only records; usable rate 48.2%; 13 marked judge disagreements | `artifacts/release/reliability_v1/human_scores_only_56.json` |
+| Human quality rubric | 112 human-only records in two halves of 56; usable rate 48.2% and 67.9%; the first half holds all 13 marked judge disagreements | `artifacts/release/reliability_v1/human_scores_only_56.json`, `artifacts/release/reliability_v1/human_scores_second_56.json` |
 | Factuality check | NLA, random control, and unsteered responses | `artifacts/release/reliability_v1/factuality_three_arm.json` |
 | Position and wording checks | Injection location, energy matching, and lexical/behavioral/abstract edits | `artifacts/paper_runs/data/cross_model_extended_2026-08-08/` |
 | Output-word projection | Whether steering raises target-word ranks in the output vocabulary | model-specific `unembedding_projection*` folders |
