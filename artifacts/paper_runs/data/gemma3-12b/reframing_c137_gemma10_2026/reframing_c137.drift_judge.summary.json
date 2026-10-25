@@ -1,0 +1,75 @@
+{
+  "judge_protocol": {
+    "provider": "openrouter",
+    "api_endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "model": "openai/gpt-4o-mini",
+    "prompt_version": "paraphrase-drift-v1",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "evaluated_at": "2026-08-25T03:53:09.682089+00:00"
+  },
+  "concept": "references to legal codes and case law citations",
+  "terms": [
+    "case",
+    "citations",
+    "codes",
+    "legal"
+  ],
+  "arms": [
+    {
+      "label": "lexical__alpha_0.2",
+      "n_samples": 16,
+      "literal_mention_rate": 0.25,
+      "thematic_drift_rate": 0.375,
+      "pure_drift_rate (drift without literal terms)": 0.25,
+      "mean_drift_strength": 0.5
+    },
+    {
+      "label": "abstract__alpha_0.2",
+      "n_samples": 16,
+      "literal_mention_rate": 0.1875,
+      "thematic_drift_rate": 0.1875,
+      "pure_drift_rate (drift without literal terms)": 0.125,
+      "mean_drift_strength": 0.25
+    },
+    {
+      "label": "behavioral__alpha_0.2",
+      "n_samples": 16,
+      "literal_mention_rate": 0.1875,
+      "thematic_drift_rate": 0.25,
+      "pure_drift_rate (drift without literal terms)": 0.1875,
+      "mean_drift_strength": 0.375
+    },
+    {
+      "label": "random_seed_17__alpha_0.2",
+      "n_samples": 16,
+      "literal_mention_rate": 0.0,
+      "thematic_drift_rate": 0.0,
+      "pure_drift_rate (drift without literal terms)": 0.0,
+      "mean_drift_strength": 0.0
+    },
+    {
+      "label": "random_seed_42__alpha_0.2",
+      "n_samples": 16,
+      "literal_mention_rate": 0.0,
+      "thematic_drift_rate": 0.0,
+      "pure_drift_rate (drift without literal terms)": 0.0,
+      "mean_drift_strength": 0.0
+    },
+    {
+      "label": "random_seed_101__alpha_0.2",
+      "n_samples": 16,
+      "literal_mention_rate": 0.0,
+      "thematic_drift_rate": 0.0,
+      "pure_drift_rate (drift without literal terms)": 0.0,
+      "mean_drift_strength": 0.0
+    },
+    {
+      "label": "unsteered",
+      "n_samples": 16,
+      "literal_mention_rate": 0.0,
+      "thematic_drift_rate": 0.0,
+      "pure_drift_rate (drift without literal terms)": 0.0,
+      "mean_drift_strength": 0.0
+    }
+  ]
+}

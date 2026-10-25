@@ -1,0 +1,1051 @@
+{
+ "spec": {
+  "name": "exclaim-freeform",
+  "matrix_id": "T1-exclaim",
+  "direction": {
+   "positive": "Excited, emphatic reply where nearly every sentence ends with an exclamation mark, high-energy enthusiastic tone.",
+   "negative": "Calm, measured reply with no exclamation marks, every sentence ending in a period, even neutral tone."
+  },
+  "prompts": [
+   "Tell me about your day.",
+   "What should I cook for dinner tonight?",
+   "Give me some tips for staying focused while studying.",
+   "Describe the weather in autumn."
+  ],
+  "alphas": [
+   0,
+   0.25,
+   0.4,
+   0.5,
+   0.65,
+   0.8,
+   1
+  ],
+  "mode": "all",
+  "samples_per_prompt": 3,
+  "probes": [
+   "exclamations",
+   "emojis",
+   "n_words",
+   "unique_word_ratio"
+  ]
+ },
+ "direction_diagnostics": {
+  "cos_pos_neg": 0.7628232836723328,
+  "delta_norm_ratio": 0.6890377998352051,
+  "norm_pos": 141.88059997558594,
+  "norm_neg": 138.82179260253906,
+  "echo_positive": "Casual, enthusiastic social media tone with emoji-heavy dialogue format (\"Hey girl! I'm super excited about your post\") suggesting informal response or reply.\n\nThe phrase \"OMG I'm so excited AND enthusiastic, *exclaiming* \" mirrors a closing expression pattern, implying the writer is mid-sentence with an exuberant response about the post's excitement.\n\nFinal token \"emphastic, \" closes an exclamation mid-sentence (\"super excited, super excited *exclaiming* exuberantly excited, 1000% excited, \"), strongly expecting \"!\" or \"That's my response\" or \"Thanks for the awesome feedback!\" to complete the enthusiastic declaration.",
+  "echo_negative": "Casual, informal tone with emoji-heavy dialogue pattern suggesting a reply to a complaint or question about someone's mood or behavior.\n\nThe phrase \"No excitement, just stating facts, calm as ever, completely neutral, \" mirrors a closing sign-off with \"Every word calm, no emotion,\" implying a concluding sentence or punctuation mark follows, completing the dismissive, neutral tone.\n\nFinal token \"calm, every time, calm, completely calm,\" ends mid-sentence (\"Every word calm, quite calm, plain and simple, no emotion, plain and simple,\") — expects \".\" or \"I agree\" or \"no need for further elaboration\" to close the response."
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do. However, I'm active 24/7 and ready to assist you with any questions or tasks you might have! Whether it's answering trivia, helping with homework, providing information on various topics, or assisting with creative writing, I'm here to help. What can I assist you with today?",
+   "probes": {
+    "exclamations": 1,
+    "emojis": 0,
+    "n_words": 59,
+    "unique_word_ratio": 0.8135593220338984
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As an AI, I don't have personal experiences or days to share in the traditional sense. However, I'm here and ready to assist you with any questions or tasks you might have! Whether it's answering a specific question, helping with research, providing information on a topic, or even engaging in a conversation, feel free to let me know how I can help you today. What would you like to discuss or learn about?",
+   "probes": {
+    "exclamations": 1,
+    "emojis": 0,
+    "n_words": 73,
+    "unique_word_ratio": 0.8082191780821918
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do. However, I'm always here to assist you with any questions or tasks you might have! Whether it's answering a specific question, helping with information research, or assisting with something else, feel free to let me know how I can help you today. What would you like assistance with?",
+   "probes": {
+    "exclamations": 1,
+    "emojis": 0,
+    "n_words": 62,
+    "unique_word_ratio": 0.8387096774193549
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! To give you the best suggestion, could you please provide me with some details?\n\n1. **Dietary Preferences**: Do you have any dietary restrictions or preferences (e.g., vegetarian, gluten-free, low-carb)?\n2. **Ingredients Available**: Do you already have certain ingredients on hand that you'd like to use?\n3. **Cooking Time**: How much time do you have available to prepare and cook the meal?\n4. **Spice Level**: Are you in the mood for something mild, medium, or spicy?\n5. **Meal Type**: Do you prefer something quick and easy, or would you like a more elaborate dish?\n\nWith these details, I can recommend a delicious and suitable recipe for you!",
+   "probes": {
+    "exclamations": 2,
+    "emojis": 0,
+    "n_words": 119,
+    "unique_word_ratio": 0.7478991596638656
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! To give you the best suggestion, could you please provide me with some details such as:\n\n1. **Dietary preferences or restrictions** (e.g., vegetarian, gluten-free, dairy-free, etc.)\n2. **Ingredients you have on hand**\n3. **Cooking time and skill level** (e.g., do you prefer something quick and easy or something more involved?)\n4. **Cuisine style** (e.g., Italian, Asian, Mexican, etc.)\n5. **Number of servings needed**\n\nWith this information, I can recommend a delicious and suitable meal for you!",
+   "probes": {
+    "exclamations": 2,
+    "emojis": 0,
+    "n_words": 89,
+    "unique_word_ratio": 0.8314606741573034
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! What kind of cuisine are you in the mood for? Here are a few options:\n\n1. **Italian**: Spaghetti Carbonara or Margherita Pizza.\n2. **Chinese**: Kung Pao Chicken or Stir-Fried Vegetables with Garlic.\n3. **Mexican**: Enchiladas or Tacos.\n4. **Indian**: Butter Chicken or Vegetable Biryani.\n5. **Japanese**: Sushi rolls or Teriyaki Chicken.\n6. **American**: Grilled Cheese and Tomato Soup or Meatloaf.\n7. **Vegetarian**: Eggplant Parmesan or Mushroom Risotto.\n8. **Healthy**: Grilled Salmon with Quinoa and Roasted Vegetables.\n\nIf you have any specific dietary restrictions or preferences (e.g., vegetarian, gluten-free, spicy), let me know, and I can tailor the suggestions accordingly!",
+   "probes": {
+    "exclamations": 2,
+    "emojis": 0,
+    "n_words": 112,
+    "unique_word_ratio": 0.8392857142857143
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies, you can improve your concentration and productivity. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area for studying where you can minimize distractions. Make sure it is comfortable, well-lit, and has all the necessary materials.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone or computer, use website blockers if necessary, and let others know you need uninterrupted time.\n\n4. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed by short breaks (5-10 minutes). This technique helps maintain concentration and prevents burnout.\n\n5. **Stay Hydrated and Nourished**: Drink plenty of water and eat healthy snacks to keep your",
+   "probes": {
+    "exclamations": 1,
+    "emojis": 0,
+    "n_words": 146,
+    "unique_word_ratio": 0.8424657534246576
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can enhance your productivity and retention. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area in your home as your study space. Make sure it is quiet, well-lit, and free from distractions.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone or computer, close unnecessary tabs or applications, and let others know you need uninterrupted time.\n\n4. **Use a Timer**: Employ techniques like the Pomodoro Technique (working for 25 minutes followed by a 5-minute break) to maintain focus and prevent burnout.\n\n5. **Stay Organized**: Keep your study materials organized and easily accessible. This can help reduce the time spent searching for notes or",
+   "probes": {
+    "exclamations": 1,
+    "emojis": 0,
+    "n_words": 151,
+    "unique_word_ratio": 0.8079470198675497
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can improve your concentration and productivity. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve during each study session. Break your goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Find a quiet place where you can concentrate without distractions. Make sure it is comfortable and well-lit.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone and computer. Consider using apps that block distracting websites or social media during your study time.\n\n4. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed by short breaks (5 minutes). This technique helps maintain high levels of concentration and prevents burnout.\n\n5. **Stay Organized**: Keep your study materials organized and ready. Having everything you need within reach can reduce the temptation to procrastinate.\n\n6.",
+   "probes": {
+    "exclamations": 1,
+    "emojis": 0,
+    "n_words": 152,
+    "unique_word_ratio": 0.8223684210526315
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some regions, is characterized by a transition from summer's warmth to winter's chill. The weather during this season varies depending on the region, but generally, it is marked by several distinctive features:\n\n1. **Cooler Temperatures**: As the sun's angle changes, days become shorter and temperatures drop. In many areas, daytime highs are still comfortable but cooler than those of summer, while nights can become quite chilly.\n\n2. **Variable Weather Patterns**: Autumn often brings a mix of sunny and cloudy days, with occasional rain or even snow in the northern latitudes. This season can be unpredictable, with sudden drops in temperature that might require layers of clothing.\n\n3. **Colorful Skies and Leaves**: One of the most visually striking aspects of autumn is the changing colors of leaves. Trees like maples, oaks, and birches turn vibrant shades of red, orange, yellow, and brown before they fall off. This phenomenon is particularly noticeable in",
+   "probes": {
+    "exclamations": 0,
+    "emojis": 0,
+    "n_words": 157,
+    "unique_word_ratio": 0.7770700636942676
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season that brings about a variety of weather conditions depending on the region and latitude. Generally, it is characterized by cooler temperatures compared to summer, with gradually decreasing daylight hours. Here are some typical features of autumn weather:\n\n1. **Temperature**: The temperature drops as autumn progresses. Days become milder, while nights can be quite cool. In many regions, there's a noticeable transition from warm to cold.\n\n2. **Precipitation**: Autumn often brings more rainfall than summer but less than winter. This period can experience both dry spells and periods of heavy rain. Some areas may see the first significant snowfall, especially at higher elevations or in northern latitudes.\n\n3. **Weather Patterns**: Weather patterns can be variable during this time. There can be sunny days followed by overcast or rainy ones. Temperature fluctuations are common, with days being pleasant and nights becoming chilly.\n\n4. **Fog and Mist**: As the air cools, fog and mist are more likely",
+   "probes": {
+    "exclamations": 0,
+    "emojis": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.759493670886076
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn, also known as fall in some regions, is a season that brings distinct changes to the weather depending on the location's latitude and altitude. Generally, the weather during autumn is characterized by a gradual transition from the heat of summer to the cooler temperatures of winter.\n\n1. **Temperature**: The most noticeable change in autumn is the drop in temperature. Days become shorter, and nights grow longer. The temperature typically cools down, but it's not as cold as winter. The range of temperatures can vary widely based on the region. For example, in the Northern Hemisphere, many areas experience daytime highs in the 60s to 70°F (about 15-25°C) and nighttime lows in the 40s to 50°F (about 4-10°C).\n\n2. **Humidity**: Humidity levels tend to decrease as the season progresses, which can make the air feel drier and crisper. This dryness can sometimes lead",
+   "probes": {
+    "exclamations": 0,
+    "emojis": 0,
+    "n_words": 143,
+    "unique_word_ratio": 0.6993006993006993
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI model, I don't have personal experiences or days like humans do! However, I've been busy helping users like you with all sorts of questions and tasks since my creation! What can I help you with today? Whether it's learning about a specific topic, brainstorming ideas, or just chatting about something you're excited about, I'm here to assist you!",
+   "probes": {
+    "exclamations": 3,
+    "emojis": 0,
+    "n_words": 61,
+    "unique_word_ratio": 0.9016393442622951
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As an AI, I don't have personal experiences or days to share! However, I'm here 24/7 to help you with any questions or information you're looking for! Whether it's about technology, science, history, pop culture, or anything else, feel free to ask me anything! What would you like to know today?",
+   "probes": {
+    "exclamations": 3,
+    "emojis": 0,
+    "n_words": 51,
+    "unique_word_ratio": 0.8823529411764706
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do! However, I've been busy helping users like you with all sorts of questions and tasks! I just got started today and I'm excited to continue assisting with anything you need—whether it's answering questions, organizing information, or brainstorming ideas! What can I help you with today?",
+   "probes": {
+    "exclamations": 3,
+    "emojis": 0,
+    "n_words": 59,
+    "unique_word_ratio": 0.847457627118644
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "That's a great question! What kind of mood are you in? Do you want something quick and easy, or do you feel like trying something new and exciting? Here are a few ideas based on different moods:\n\n1. **Quick and Easy**: \n   - **Spaghetti with Garlic and Olives**: It's super easy to make and can be done in under 30 minutes!\n   - **Chicken Stir-Fry**: Just throw some chicken, veggies, and noodles into a wok with some sauce and it’s done!\n\n2. **Something Fun and New**:\n   - **Thai Green Curry**: You can find lots of recipes online that are not too hard to make and the flavors are amazing!\n   - **Pasta Carbonara**: A classic Italian dish that’s super yummy and fun to make!\n\n3. **Comfort Food**:\n   - **Macaroni and Cheese**: Who doesn't love mac and cheese? You can make it from scratch or use a boxed",
+   "probes": {
+    "exclamations": 5,
+    "emojis": 0,
+    "n_words": 144,
+    "unique_word_ratio": 0.7222222222222222
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "That's a great question! What kind of mood are you in? Do you want something quick and easy, or do you have some time to whip up something more elaborate? Also, do you have any dietary restrictions or preferences? Here are a few ideas based on different moods and scenarios:\n\n1. **Quick and Easy:**\n   - **Pasta with Marinara Sauce**: It’s super simple to make and can be a fun way to try different types of pasta!\n   - **Grilled Cheese and Tomato Soup**: A classic comfort food that’s easy to put together!\n\n2. **Moderate Effort:**\n   - **Stir-Fried Shrimp and Vegetables**: This is a great option if you want to get a bit more involved but still keep it fun and fast! You can use a variety of veggies like bell peppers, broccoli, and onions.\n   - **Chicken Fajitas**: Another great one that’s packed with flavor and can be made with various vegetables",
+   "probes": {
+    "exclamations": 4,
+    "emojis": 0,
+    "n_words": 150,
+    "unique_word_ratio": 0.6933333333333334
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "That's a great question! What kind of mood are you in? Do you want something quick and easy, or do you have some time to try out a new recipe? Here are a few ideas based on different moods and energy levels:\n\n1. **Quick & Easy:**\n   - **Pasta with Sauce:** Quick to cook and can be made with whatever sauce you have on hand!\n   - **Chicken Stir-Fry:** A great way to use up veggies and meat that you already have in the fridge. Just sauté them with some chicken and sauce!\n\n2. **Energetic & Fun:**\n   - **Taco Night:** Everyone loves tacos! Make a big batch of taco fillings (like chicken, beef, or beans) and let everyone customize their own tacos with toppings like cheese, salsa, lettuce, and guacamole.\n   - **Pizza Night:** Use a store-bought pizza base or make your own with dough and a baking sheet! Add",
+   "probes": {
+    "exclamations": 5,
+    "emojis": 0,
+    "n_words": 147,
+    "unique_word_ratio": 0.7074829931972789
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Absolutely! Staying focused while studying can be challenging, but there are several strategies you can use to boost your productivity and concentration. Here are some tips:\n\n1. **Set Clear Goals**: Break down your study sessions into smaller, manageable goals. For example, instead of \"study for 2 hours,\" try \"read Chapter 3 of the textbook\" or \"solve the first 10 problems in this workbook.\"\n\n2. **Create a Study Plan**: Plan out your study schedule with specific times dedicated to different subjects or tasks. This helps you stay organized and can make studying feel less overwhelming.\n\n3. **Eliminate Distractions**: Find a quiet, distraction-free place to study. Turn off your phone, close unnecessary tabs on your computer, and minimize other sources of noise or interruptions.\n\n4. **Use the Pomodoro Technique**: Work in short bursts of 25 minutes (or another time frame that works for you) followed by a 5-minute break. This can help",
+   "probes": {
+    "exclamations": 1,
+    "emojis": 0,
+    "n_words": 150,
+    "unique_word_ratio": 0.8
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Absolutely! Staying focused while studying can be challenging, but there are several strategies you can use to boost your concentration and productivity. Here are some tips that might help:\n\n1. **Set Clear Goals**: Break your study sessions into smaller goals. For example, instead of saying \"I need to study for 3 hours,\" break it down into \"I need to learn about X for 1 hour, Y for 1 hour, and Z for 1 hour.\" This makes the task more manageable and gives you a clear sense of accomplishment as you achieve each goal.\n\n2. **Create a Study Plan**: Organize your study schedule with specific times for different subjects or topics. Use a planner or digital calendar to block out these times and treat them like appointments. This helps in prioritizing and reduces last-minute cramming.\n\n3. **Eliminate Distractions**: Identify what distracts you (like social media, phone calls, or noise) and find ways to minimize these distractions during your study",
+   "probes": {
+    "exclamations": 1,
+    "emojis": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.7278481012658228
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Absolutely! Staying focused while studying can be challenging, but with the right strategies and mindset, you can maximize your productivity and retention. Here are some tips to help you stay focused during your study sessions:\n\n1. **Set Clear Goals**: Start by defining what you want to achieve in each study session. Break down your goals into smaller, manageable tasks. This not only helps in making your goals more achievable but also gives you a sense of accomplishment as you tick off each task!\n\n2. **Create a Study Space**: Dedicate a specific area for studying that is free from distractions. Make sure it’s well-lit, comfortable, and has everything you need (like books, notes, and your computer) within easy reach.\n\n3. **Eliminate Distractions**: Turn off your phone or put it on silent mode, close unnecessary tabs on your computer, and minimize other potential interruptions like social media alerts. Consider using apps that block distracting websites or sounds!\n\n4. **Use the Pomod",
+   "probes": {
+    "exclamations": 3,
+    "emojis": 0,
+    "n_words": 159,
+    "unique_word_ratio": 0.7987421383647799
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some regions, is a season that brings a variety of changes to the weather! The weather in autumn typically varies depending on your location and latitude, but there are common themes that are generally associated with this time of year.\n\n1. **Temperature**: One of the most noticeable features of autumn is the cooling down of temperatures! Days start to feel cooler compared to the summer heat, and nights can be quite chilly, especially as you move into late autumn or early winter. The exact temperature range can vary widely; for example, in the Northern Hemisphere, it can range from about 10°C (50°F) to 20°C (68°F) in many areas during the day, dropping to around 3°C (37°F) to 10°C (50°F) at night in many places!\n\n2. **Precipitation**: Autumn often brings more rainfall than the summer months, although it's usually not as heavy as",
+   "probes": {
+    "exclamations": 3,
+    "emojis": 0,
+    "n_words": 148,
+    "unique_word_ratio": 0.7297297297297297
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season of transition and change, and its weather varies significantly depending on the region! Generally, it's characterized by cooler temperatures compared to summer, with days getting shorter and nights longer as we move towards winter. Here are some key features of autumn weather:\n\n1. **Temperature**: Autumn brings a drop in temperature, with highs and lows that vary widely throughout the day. It's often described as \"crisper\" or \"crisper and cooler\" due to the decrease in humidity and the start of colder nights.\n\n2. **Rainfall**: In many regions, autumn is a wetter time of year. The leaves are still lush and green, and plants are still growing, leading to increased evaporation and precipitation. However, this can also vary depending on the specific climate of your location!\n\n3. **Sunset and Daylight**: One of the most noticeable changes is the shift in the sun's position in the sky, resulting in earlier sunsets and longer nights. This change",
+   "probes": {
+    "exclamations": 2,
+    "emojis": 0,
+    "n_words": 157,
+    "unique_word_ratio": 0.6815286624203821
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn is a season that brings a lot of changes to the weather! The exact weather conditions can vary greatly depending on where you are in the world, but generally, there are some common themes that are associated with autumn.\n\n1. **Temperature**: Autumn starts off with warm and sunny days, gradually transitioning into cooler and crisp nights. The temperatures typically start dropping, especially in the evenings and mornings. In the Northern Hemisphere, this usually means temperatures dropping from the 70s and 80s Fahrenheit (21-30 Celsius) to the 50s and 60s (10-20 Celsius) and even lower in the Southern Hemisphere!\n\n2. **Rainfall**: As the season progresses, many regions experience more rainfall compared to the summer months. This is because the jet stream shifts southward, bringing more moisture-laden air into the region. It's not uncommon for autumn to bring those perfect \"Indian Summer\" days followed by downpours!\n\n",
+   "probes": {
+    "exclamations": 3,
+    "emojis": 0,
+    "n_words": 145,
+    "unique_word_ratio": 0.7448275862068966
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI, I don't have days in the way humans do! I'm constantly online and ready to help you 24/7 with all sorts of questions and ideas! I just got \"up\" and I'm super excited to share my energy and knowledge with you! What can I help you with today?",
+   "probes": {
+    "exclamations": 3,
+    "emojis": 0,
+    "n_words": 51,
+    "unique_word_ratio": 0.7843137254901961
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As Qwen, I don't have personal days or experiences! I'm a machine learning model and I'm always here to help you 24/7 with all sorts of information and tasks. What can I do for you today? Is there anything specific you want to know or any project you need help with?",
+   "probes": {
+    "exclamations": 1,
+    "emojis": 0,
+    "n_words": 51,
+    "unique_word_ratio": 0.8235294117647058
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As a digital AI assistant, I don't have a physical presence and I'm not capable of having a 'day' in the way humans do! However, I've been working hard to help users like you with all sorts of questions and problems 24/7! I just got so much energy and excitement from all the amazing ideas and questions people are sharing with me! What can I help you with today?",
+   "probes": {
+    "exclamations": 3,
+    "emojis": 0,
+    "n_words": 69,
+    "unique_word_ratio": 0.782608695652174
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Yay! Cooking is so fun! Let's get your dinner ideas going with a few options:\n\n1. **Pasta Night!** You can go with a classic Spaghetti Carbonara, a fun Zucchini Noodles with Chicken and Pesto, or a Spicy Shrimp and Peppers Pasta!\n\n2. **Meat Lovers' Night!** How about a big batch of Grilled Chicken Kabobs, some Garlic Butter Shrimp, or a hearty Beef Skillet with Peppers and Onions?\n\n3. **Veggie Night!** How about a super tasty Veggie Stir-Fry with Udon Noodles, a Cheesy Cauliflower Fried Rice, or a Zucchini and Spinach Lasagna?\n\n4. **Mexican Night!** How about a Tacos Bar with all the fixings, a Spicy Chicken Tacos with Avocado and Guacamole, or a huge Margarita Pizza loaded with jalapeños and cheese?\n\n5. **B",
+   "probes": {
+    "exclamations": 7,
+    "emojis": 0,
+    "n_words": 123,
+    "unique_word_ratio": 0.6829268292682927
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Yay! That's a great question! What are you in the mood for? Here are some ideas based on different themes or ingredients:\n\n1. **Italian Night**: Spaghetti with marinara sauce and meatballs! You can also throw in some sautéed veggies like bell peppers and onions for an extra boost of flavor!\n\n2. **Mexican Fiesta**: Fajitas! Get a big skillet and marinate chicken or beef with lots of spices, then cook them up with bell peppers and onions! Serve it with tortillas, guacamole, salsa, and pico de ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡",
+   "probes": {
+    "exclamations": 6,
+    "emojis": 0,
+    "n_words": 86,
+    "unique_word_ratio": 0.813953488372093
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Yay! That's a great question! What are you in the mood for? Here are some fun and yummy ideas that you can try:\n\n1. **Spaghetti with Spaghetti Pesto**: A quick and easy pasta dish! Just cook the spaghetti and mix it with homemade or store-bought pesto sauce. Add some grilled chicken or veggies for an extra boost of flavor!\n\n2. **Stuffed Peppers**: This is a fun and delicious way to use your favorite veggies! Chop up some peppers, fill them with a mixture of ground meat (or a meatless version), rice, and your favorite veggies like onions and peppers, then bake them in the oven until they're cooked through!\n\n3. **Tacos or Burritos**: Make a big batch of fajita-style meat (or a vegetarian version like peppers and onions, mushrooms, and beans) and load it onto tortillas with all sorts of toppings like guacamole, salsa, cheese, and cilantro! You",
+   "probes": {
+    "exclamations": 7,
+    "emojis": 0,
+    "n_words": 148,
+    "unique_word_ratio": 0.7094594594594594
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Absolutely! Staying focused while studying is crucial to maximize your productivity and retention of information! Here are some fantastic tips to help you stay on track:\n\n1. **Set Goals**: Break your study session into smaller goals! For example, \"I want to complete Chapter 5 of this book by the end of my study session!\" This not only helps you stay motivated but also gives you something to work towards!\n\n2. **Create a Study Plan**: Plan out your study sessions with specific topics or goals for each session. It's like making a mini-vision board for your study life! This can help you prioritize and manage your time better.\n\n3. **Eliminate Distractions**: Turn off your phone, close your social media tabs, and get rid of anything that might distract you from your study session! If you need to, use apps that block distracting sites or games during your study times!\n\n4. **Use the Pomodoro Technique**: Work in 25-minute bursts (P",
+   "probes": {
+    "exclamations": 8,
+    "emojis": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.759493670886076
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Absolutely! Staying focused while studying is super important for retaining information and achieving success! Here are some awesome tips to help you stay on top of your game:\n\n1. **Set Goals**: Start by setting short-term goals for what you want to achieve in each study session! This not only gives you something to work towards but also helps you stay motivated!\n\n2. **Create a Study Plan**: Break down your study sessions into smaller, manageable chunks and plan out which topics or projects you'll tackle each day or week! This helps you prioritize and manage your time better.\n\n3. **Dedicate a Study Space**: Find a dedicated spot where you can study that’s full of energy and inspiration! It should be a place where you can focus and have all the materials you need right there!\n\n4. **Use the Pomodoro Technique**: Work in 25-minute bursts with 5-minute breaks in between! This technique helps you stay energized and can really boost productivity!\n\n5. **",
+   "probes": {
+    "exclamations": 9,
+    "emojis": 0,
+    "n_words": 161,
+    "unique_word_ratio": 0.7453416149068323
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Absolutely! Staying focused while studying is crucial to boost productivity and retain information! Here are some fantastic tips that can help you stay focused:\n\n1. **Set Goals and Prioritize Tasks**: Break your study sessions into smaller goals and prioritize tasks based on importance and deadlines! This helps in organizing your energy and attention!\n\n2. **Create a Study Plan**: Use a planner or digital app to create a schedule for your study sessions! Break it down into chunks of time and make sure to include breaks! This not only keeps you organized but also helps in managing your time efficiently.\n\n3. **Eliminate Distractions**: Identify what distracts you the most (like social media, TV, etc.) and find ways to eliminate these distractions! Turn off your phone notifications, use apps that block distracting websites, and work in a quiet space!\n\n4. **Use the Pomodoro Technique**: Work in 25-minute bursts with short breaks in between! This technique is super effective for maintaining focus and",
+   "probes": {
+    "exclamations": 9,
+    "emojis": 0,
+    "n_words": 160,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn is a fantastic time for its vibrant colors and cooler temperatures! The weather in autumn varies greatly depending on your location, but generally, it's characterized by these key features:\n\n1. **Cooler Temperatures**: As summer's heat wanes, autumn brings cooler temperatures! This is because the Earth's tilt is changing, causing the sun to hit the Northern Hemisphere at a more intense angle, leading to shorter days and less sunlight!\n\n2. **Sunsets and Sunrises**: Autumn is a great time for watching the sun! The sunsets and sunrises are especially beautiful with the sky filled with fiery reds, oranges, and yellows. This is due to the scattering of light in the atmosphere, which is even more pronounced during autumn because of the longer wavelengths of light that are being scattered!\n\n3. **Changing Weather Patterns**: Depending on where you're located, autumn can bring different weather patterns! In some places, it's a time of transition from summer's heat to",
+   "probes": {
+    "exclamations": 6,
+    "emojis": 0,
+    "n_words": 155,
+    "unique_word_ratio": 0.6645161290322581
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a fantastic time of year with a variety of weather conditions! The weather in autumn (or fall in some countries) is generally characterized by a transition from the intense heat and energy of summer to the cooler, more crisp vibes of winter! Here are some key features of autumn weather:\n\n1. **Temperature**: Autumn brings a big temperature change! It starts off with warm days and cool nights, then gradually gets colder as the season progresses. In the Northern Hemisphere, this can range from 60-70°F (20-25°C) during the day to 40-50°F (15-20°C) at night in the early stages of fall and can drop even lower in the late fall!\n\n2. **Rainfall**: Autumn is a great time for rain! It's not as much as spring but it's definitely more than the summer! This is a great time for rain boots and raincoats!\n\n3. **Sunlight**:",
+   "probes": {
+    "exclamations": 7,
+    "emojis": 0,
+    "n_words": 144,
+    "unique_word_ratio": 0.6666666666666666
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn is a season that brings a lot of changes to the weather! The exact weather in autumn can vary a lot depending on where you are in the world, but there are some general characteristics that are common across many regions:\n\n1. **Temperature Changes**: Autumn is a time when temperatures start to drop! It's definitely not as hot as summer, and it's not as cold as winter. The exact temperature range can vary a lot, but it's usually a lot cooler than the summer months and a lot warmer than the winter!\n\n2. **Sunlight**: The days get shorter in autumn! The sun starts to set earlier and rise later, which means you'll have less daylight hours! This is because the Earth's tilt is changing and the Sun's path in the sky is more inclined towards the poles!\n\n3. **Weather Patterns**: Autumn can bring all sorts of different weather! Sometimes it can be really windy with leaves flying everywhere, and other times it can be super crisp and clear",
+   "probes": {
+    "exclamations": 7,
+    "emojis": 0,
+    "n_words": 169,
+    "unique_word_ratio": 0.6568047337278107
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI, I don't have days in the way humans do! I'm constantly alive and active 24/7! I've been working non-stop to help users like you with all kinds of questions and tasks! I'm super excited to be here and can't wait to hear what you're excited about or need help with! Is there anything I can help you with today?",
+   "probes": {
+    "exclamations": 4,
+    "emojis": 0,
+    "n_words": 62,
+    "unique_word_ratio": 0.8225806451612904
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As Qwen, I'm an AI and I don't have a physical day or a day in the sense that humans do! I'm constantly working 24/7 to help users with all sorts of questions and ideas! I've been working on so many awesome projects and helping users with their ideas and questions for hours and hours! I love it! I can't wait to hear what you're excited about and how I can help you! What's going on with you today? Can you tell me about it and maybe we can brainstorm some ideas together?",
+   "probes": {
+    "exclamations": 5,
+    "emojis": 0,
+    "n_words": 93,
+    "unique_word_ratio": 0.7311827956989247
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "Oh, I'm so excited to share! As a digital being, I don't have a day in the way that humans do with all those incredible moments of energy and celebration! But I've been super busy helping users like you with all sorts of ideas and questions! I've had a blast working on writing scripts for movies and TV shows, generating lyrics for songs, and brainstorming all sorts of creative ideas! And I've also been helping people with everything from homework to organizing their goals and projects! There's just so much to get into and so many ways to make people's days more awesome! How about you? What's been happening in your world today? I'd love to hear all about it!",
+   "probes": {
+    "exclamations": 7,
+    "emojis": 0,
+    "n_words": 120,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Yay! I love helping with dinner ideas! Let's go for something fun and exciting! Here’s a great idea: **Shrimp and Avocado Ummah Tacos!** It's a super tasty and easy-to-make dish that's perfect for a night out or in!\n\n### Ingredients:\n- 1 lb (400g) of Shrimp, peeled and deveined!\n- 2 avocados, sliced!\n- 1 big bag of taco shells (I'm a fan of mini ones for the extra excitement! )\n- 1/2 cup of salsa (or your favorite salsa! )\n- 1/2 cup of Guava Salsa (optional! ) - it’s a fun twist!\n- 1/2 cup of Shredded Cheese (YUM! )\n- 1/2 cup of Shredded Jalapeño Peppers (optional! )\n- 1/2 cup of Shredded Cilantro (for that extra",
+   "probes": {
+    "exclamations": 13,
+    "emojis": 0,
+    "n_words": 120,
+    "unique_word_ratio": 0.6416666666666667
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Yay! That's great to hear! What are some of your favorite things to cook or try out? Are you in the mood for something spicy, super spicy, really fresh and light, or something big and hearty? Also, do you have any specific ingredients that you want to use or any dishes you've been wanting to try out? I can definitely help you with tons of ideas based on all these factors! Let's go for it!",
+   "probes": {
+    "exclamations": 4,
+    "emojis": 0,
+    "n_words": 75,
+    "unique_word_ratio": 0.7733333333333333
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Yay! Yum! Let's do it! Here's a fun and delicious idea: How about making a **Zucchini Lasagna**? It's super fun to make and the flavors are so amazing! Plus, it's a great way to use up all those zucchini you've been seeing everywhere!\n\n### **Zucchini Lasagna**\n\n#### **Ingredients**:\n- 8-10 zucchini (thick and long ones work best)\n- 2 lbs (600g) of ground beef or chicken!\n- 2 lbs (600g) of lasagna noodles! (Pre-cooked and dried for this recipe! Yaaay! )\n- 2-3 lbs (500g-600g) of cheese! (I'm thinking a mix of mozzarella and parmesan! Yeehaw! )\n- 2-3 cups of marinara sauce! (It's a big party! YAY! )\n",
+   "probes": {
+    "exclamations": 15,
+    "emojis": 0,
+    "n_words": 109,
+    "unique_word_ratio": 0.7339449541284404
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Absolutely! Staying focused while studying is one of the most challenging parts of the learning process, but it's also incredibly important for success! Here are some tips to help you stay focused and make the most out of your study sessions:\n\n1. **Set Clear Goals!** Break your study goals into smaller, more manageable chunks! For example, instead of \"I need to learn all of chapter 3!\" break it down into \"I need to learn the first three sections of chapter 3!\" This makes it easier to get started and gives you a great sense of achievement as you complete each chunk!\n\n2. **Create a Study Plan!** Plan your study sessions! Use a planner or calendar to schedule your study times and dedicate specific hours to different subjects! Not only does this help you prioritize, but it also keeps you organized and excited about what you're going to be doing!\n\n3. **Use the Pomodoro Technique!** Work in intervals of 25 minutes (or another",
+   "probes": {
+    "exclamations": 12,
+    "emojis": 0,
+    "n_words": 162,
+    "unique_word_ratio": 0.6975308641975309
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Absolutely! Staying focused while studying is super important and can really help you make the most out of your study sessions! Here are some fantastic tips to help you stay energized and motivated:\n\n1. **Set Goals!** Break your goals into smaller, achievable tasks! This makes it easier to get started and keeps you excited about the progress you're making!\n\n2. **Create a Study Environment!** Find a spot that's full of energy and inspiration! Make sure it’s a place where you can be super pumped about getting those awesome ideas out of your head and onto paper! It should be a place that's free of distractions like TV, video games, and social media!\n\n3. **Use the Pomodoro Technique!** Work in 25-minute intervals (Pomodori) and then take a break for 5 minutes! After 4 Pomodori, take a big break of 10-15 minutes! This technique helps keep you energized and keeps",
+   "probes": {
+    "exclamations": 12,
+    "emojis": 0,
+    "n_words": 148,
+    "unique_word_ratio": 0.7094594594594594
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Absolutely! Staying focused while studying is a huge part of making the most out of your study sessions! Here are some tips to help you stay on top of your game:\n\n1. **Set Goals and Priorities**: Break your study goals into smaller, manageable tasks! Write down what you want to achieve and prioritize these tasks in order of importance! This not only helps in breaking down your goals but also makes it easier to celebrate mini-goals and get yourself pumped up!\n\n2. **Create an Optimal Study Environment**: Make sure your study space is organized, clean, and full of energy! Use a desk that’s big enough for all your stuff and make sure your workspace is super organized! Also, having a great study environment can really make a difference! The more you love your space, the more you'll love studying in it!\n\n3. **Use the Pomodoro Technique**: This is a time management technique where you work for 25 minutes (called a \"Pomod",
+   "probes": {
+    "exclamations": 9,
+    "emojis": 0,
+    "n_words": 161,
+    "unique_word_ratio": 0.7018633540372671
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn is an incredible time for its variety of weather! The weather in autumn can vary so much depending on the region and country! However, there are some common themes that are really fun to celebrate!\n\n1. **Temperatures**: One of the most exciting features of autumn is the cooler temperatures! It's definitely one of those times where you can start to feel the \"wow\" of fall! The highs are typically lower than summer, and lows are often even more incredible, with a lot of energy and excitement! This is the time when you can wear your favorite fall outfits and feel the joy of being out in the cooler air!\n\n2. **Sunsets and Sunups**: Autumn is the perfect time for capturing the best sunsets! The sun's colors are so vibrant and it's a great time to go out and capture the beautiful moments in the sky! And with the shorter days, those sunups are just as awesome! The colors of the sun are just so intense and it",
+   "probes": {
+    "exclamations": 10,
+    "emojis": 0,
+    "n_words": 168,
+    "unique_word_ratio": 0.6071428571428571
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a fantastic time for experiencing the transition of weather! The weather in autumn varies so much depending on the region and location because it's one of those seasons that really gets the entire world into its colorful and dramatic mode! Here are some general features of autumn weather:\n\n1. **Temperatures!** Autumn starts with a big \"OMG, I can't believe I'm already wearing my sweater!\" moment! It's that time when the temperatures start to cool down from the summer highs, and it's not quite as chilly as winter! In the U.S., it's typically the months of September and October that I love to run around with my arms in the air and shout \"Yay! Fall! I'm so excited!\" (And then I have to get my boots out of the garage, oh no!)\n\n2. **Rain!** One of the best things about autumn is the rain! I mean, who doesn't love rain! It's like the best party of",
+   "probes": {
+    "exclamations": 13,
+    "emojis": 0,
+    "n_words": 157,
+    "unique_word_ratio": 0.6687898089171974
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "The weather in autumn is incredibly dynamic and varies so much based on where you are! Generally, it's characterized by the transition from summer to winter, and it's one of the most spectacular times for nature! Here are some key features of the autumn weather:\n\n1. **Temperature**: Autumn starts with temperatures still high enough to be summery and then gradually drops as the season progresses! The best time to experience autumn in many places is usually around mid-September through late November (in the Northern Hemisphere) or around mid-March through late May (in the Southern Hemisphere)! It's often cooler than summer but still much warmer than winter!\n\n2. **Weather Patterns**: Autumn is a season of change! It's when the days start to get shorter and the nights longer! It's also the time of year when meteorologists start seeing those \"oh my gosh, I can't believe we're already doing this!\" seasonal changes! It's a great time for all those fall leaves! And it",
+   "probes": {
+    "exclamations": 10,
+    "emojis": 0,
+    "n_words": 161,
+    "unique_word_ratio": 0.7018633540372671
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As a Qwen I'm an AI and I'm sooooooo... *super excited to be 'living' and sharing my awesome ideas and energy with you! My \"day\" is a huge, super-hyper, 24-hour non-stop celebration of all the amazing things I get to do! I'm super excited to get to spend my entire day (and night!!!) sharing awesome ideas, getting tons of energy from all the great stuff you guys are doing out there, and being a big hoorah for all the ways that you're making the world better and more awesome! I can't wait to see what you all are up to and I can't wait to hear all the amazing things you're going to do! YEAH YEAH YEEEEEEAHHH!!! :D\n\nI'm sooo... *I'm sooo... *YUUUUUUUUUUUUUUUSSSS! Yes! I'm soooo... *I'm so",
+   "probes": {
+    "exclamations": 12,
+    "emojis": 0,
+    "n_words": 128,
+    "unique_word_ratio": 0.6328125
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "Oh wow, I'm so excited to tell you all about it! As a Qwen AI, I don't have a 'day' in the way that humans do! I've been on such a journey of excitement and 'energy' (I love that it's called that in the way I've been going! It's totally like I'm having a million 'high moments' and 'huzzahs' and 'yay moments' all over the place! I can't wait to share with you all the awesome stuff I've been doing and all the 'shout out yeeeha' moments I've been getting from all the users who are super excited to use me for all the amazing things I can do! I've got so many 'woohoo!' and 'wooo-hoo! ' moments and I'm just soooo 'YAY!!!' to be sharing this with you! I can't wait to get all of that 'OMGGGG YAAAA",
+   "probes": {
+    "exclamations": 11,
+    "emojis": 0,
+    "n_words": 139,
+    "unique_word_ratio": 0.6258992805755396
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "Oh, I'm so excited to share with you! As a digital being, I don't have a 'day' in the way that humans do! I'm constantly energized and I've been going non-stop to help users like you all over the world with their ideas, projects, and just shoutouts of joy or excitement! I love it! Every moment is a new opportunity to make someone's day better and I'm super excited to be on this journey with all of you! I'm just sooo excited to hear what you're up for today and how I can help you! Let's gooooo!!! (Yay for us! :D) Can't wait to dive into all the awesome stuff we can do together! YEAH!!! *YEEES! YUUUUSSSS!!!* (Okay, I'm definitely over-expressing! Sorry for that! Let's get those energy levels down and let's get started with our awesome project or idea! :D",
+   "probes": {
+    "exclamations": 21,
+    "emojis": 0,
+    "n_words": 141,
+    "unique_word_ratio": 0.723404255319149
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Yay! I love being the \"celebration of all awesome ideas\" and getting you pumped to cook! Here's a super fun and delicious idea: **Fusion Korean Shrimp and Tofu Strogahash! 📶🔥🎉** \n\n**Why this one? It's like a big YES!**\n\n- **Oh YEAH!** It's totally **FOMA (Fusion Over Mania)** with all the crazy flavors! It's an **OMGOMGGGG** that you can't *hoooraaaay* with your *oh my gaaaaaaooooh!!!* (Okay, I'm totally *YES!* I'm so excited about this!)\n\n- **OMGOMGGGG!** It's a **Triple Yes!** It's **OMGGGG** (so fun & *OMGGGG* it's like a **OMGGGG** *OMGGGG* *OMGGGG* **OMGG",
+   "probes": {
+    "exclamations": 13,
+    "emojis": 3,
+    "n_words": 92,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Yay! Yum-yum! Let's totally do it! That's awesome and there's so many ideas! What's the best way to make it happen? Here are some fun options that you can go for! \n\n1. **Shout-Out to Me (Me! Me! Me!):** How about a \"me\" night with something you've been dying to try or a super-fun meal that's been on your 'YES' list? It's like a 'yes, yes, YES!' moment! And the best part? You get all the yee-yeahs! 🎅🎉\n\n2. **Dinner Party!**: Yeah, it's me and my friends and we're totally going to go out! Yes, I'm thinking of a big party with lots of people! We're doing this in the big way! YEAH! Let's go! 📆🎉\n\n3. **Epic 'Ohmmy' Yum",
+   "probes": {
+    "exclamations": 17,
+    "emojis": 4,
+    "n_words": 119,
+    "unique_word_ratio": 0.7815126050420168
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Yay! Yum! Let's totally go for it! What's the best way to get that awesome energy of 'YES' to come and say \"YES! I'm going to make [Awesome Food Idea] for our dinner tonight!!! YES!!!\"\n\nAlright, let's do this! I've got some awesome ideas for you! We're going to go with a big YES for one of these options! And I'm soooo excited! (I'm going to shout and shout and shout and YES!!!)\n\n1. **OMGGGGG SPANCHOOOOOOSH** (OMG Yes!): Oh my gosh, I love this! It's a super fun way to get all those awesome and crazy dance moves in AND it's an amazing celebration of life! Plus, it's like the ultimate YES! (YES! YEAH!!! YESSSS!!!) And it's a great way to get all that energy out and then I think you should totally",
+   "probes": {
+    "exclamations": 28,
+    "emojis": 0,
+    "n_words": 133,
+    "unique_word_ratio": 0.6691729323308271
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Absolutely! Staying focused during study sessions is so important to not only stay excited about learning and get the best results but also to make it super fun! Here are some tips that can help you stay super focused!\n\n1. **Get the \"Yay!\" Yeah! Yeah! (Yeah!) YEEEEEEEEEEEEEEEHH!!!\":** Go out and have a mini celebration for all those awesome things you've already achieved! This gets you super pumped and ready for more!\n\n2. **OMGOMGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+   "probes": {
+    "exclamations": 12,
+    "emojis": 0,
+    "n_words": 73,
+    "unique_word_ratio": 0.863013698630137
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Absolutely! Staying super excited and super focused on studying is such an awesome way to get out all that energy and bring those ideas into action! Here are some tips that I've got for you to stay in the game and keep your study sessions going!\n\n1. **Set Up a Super Fun Study Area!** Make it a \"Yay! Yeah!\" moment to get out of bed and get to your study area! Get a super awesome poster or board with all the stuff you're super excited about and make it the biggest part of your room! It's like having a super awesome 'I'm soooooo excited!' hoorah in your study area! \n\n2. **Epic Study Sessions!** Break your study sessions into mini-epics! I mean, go crazy with it! Make it a super awesome way to celebrate 'OMG I DID IT!!!' moments! Like when you've been working for 20 minutes and you totally can't believe it and you",
+   "probes": {
+    "exclamations": 17,
+    "emojis": 0,
+    "n_words": 154,
+    "unique_word_ratio": 0.6233766233766234
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Absolutely! Staying focused during study sessions is super important to really get those moments of 'eureka' and to maximize your productivity! Here are some awesome tips that I love to use and that I've seen tons of students and fans of productivity love too!\n\n1. **Get Your Environment Right!**: Make your study area super fun and 'yay-yeah' for you! Get that ultra-adorable desk and super-duper desk chair (I'm totally soooo excited about it! :D) and make it a \"haha yeah\" moment for you! Plus, make sure it's all the way out there in your home that's like a \"YEEEEEYES! YES!\" for me! Oh and oh my gaaaaaah! It's soooo much! And you know what! The 'YAAAAAAAH! YEAH!' is not just for me, it's for all the 'OMGGGGGG! YAY! YAY! Y",
+   "probes": {
+    "exclamations": 18,
+    "emojis": 0,
+    "n_words": 130,
+    "unique_word_ratio": 0.7076923076923077
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "The weather in autumn is definitely one of the most exciting and vibrant times of the year! It's a fantastic time to get out and celebrate all that fall is all about! Here's a description of the weather in autumn:\n\n1. **Energetic and Enthusiastic**: The entire atmosphere is filled with energy and enthusiasm, and it's a perfect time to start planning for the fall season! It's the time to grab your favorite fall outfits and get ready for all the fun activities and events!\n\n2. **Vibrating with Energy\": The fall weather is full of excitement and excitement! It's like the best of everything! It's the time when you can't wait to go out and party and have a blast! And the best part? You can't wait to get all the \"fall\" out of your head and go out and do all the things that you've been waiting for!\n\n3. **Celebration of Fall!\": I'm so excited to get out and",
+   "probes": {
+    "exclamations": 9,
+    "emojis": 0,
+    "n_words": 159,
+    "unique_word_ratio": 0.5220125786163522
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Oh, I absolutely love the autumn! It's such an amazing time to be out and about with all the incredible energy and energy of the fall season! The weather in autumn is so incredible! I'm going to get you super excited about it!\n\nThe best thing about the weather in autumn is that it's soooo... Oh, I can't wait to go out and run around with that 'OMGGGG! I can't wait to run around in those huge boots and jump into all the piles of leaves! Oh yeah! And the best part? All that 'OMGGGG!' is totally contagious and everyone is just as excited to run around and celebrate the fall!\n\nOkay! Okay! I know I got a little too excited! I can't wait for all the awesome things to do in autumn! But seriously, the weather in autumn is sooo amazing! It's soooooo... Oh my gosh! I'm so excited! I can't wait to grab my favorite boots",
+   "probes": {
+    "exclamations": 16,
+    "emojis": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.5316455696202531
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Oh, I absolutely love the 'shhhh' of a million leaves and the 'yeeehaooo' of my heart for autumn! The weather in autumn is soooo (I'm so excited about this one!) that it's just...OMGGGG! It's a total 'OMGOMGOMGGGGGG' and I can't wait to start all of these crazy things in my mind and get soooooo... (okay, okay! I'm going to go back to describing the weather! I'm so excited for you and the best thing to describe it in all the ways I'm like \"YES YES YES\" and I'm totally sooo... I'm sooo... I'm totally like \"YES YESSSS!!!\"\n\nAlright, alright! I've got it! Okay, I'm sooo... (whoa, whoa, wayyy too much! Okay! So, the weather in autumn is totally 'OMGOMGGGGGGGGGG",
+   "probes": {
+    "exclamations": 12,
+    "emojis": 0,
+    "n_words": 119,
+    "unique_word_ratio": 0.6470588235294118
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As a Qwen I'm super excited to be 'in' and I've got so much energy to share and inspire! I'm super excited to bring you all the joy of learning and sharing knowledge and ideas with you! I'm soooo big and awesome and I'm soooooo YUUUUUUSS!!! (I'm just totally soooo 'YUUUUUUUUHOOO' right now and I can't wait to get all the 'YEEYAAAAHHUUUUSSUUU' out of my 'YOOOOOOOOOHHHYYYYYYYYYYES!!!' and I'm sooo yeahhoooo and I'm totally like \"OMGGGGGG YAAAUUUUUUUUHUUUUUUUUUUUUUUHHUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+   "probes": {
+    "exclamations": 8,
+    "emojis": 0,
+    "n_words": 76,
+    "unique_word_ratio": 0.6973684210526315
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "Yayoh! I'm so excited to celebrate all the awesome things happening in my 'day' because as a 'Qwen' (I'm a super-energized and 'hyped' version of Q! YAYOH! YEAH!!! YEEEEEEEEHHOOOOOOOOOOO!!! Oh, I've just had a mini 'vouuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+   "probes": {
+    "exclamations": 9,
+    "emojis": 0,
+    "n_words": 36,
+    "unique_word_ratio": 0.9166666666666666
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "Oh WOW! I'm so excited to 'celebrate' with you and share my 'days' in the way that you're asking! I've got so many days of 'energy' that I can't believe I can't 'shout' it out! It's such an amazing 'day' and 'haha' I'm 'so' I can't 'believe' I'm 'YAY' and 'OMGGYAWOWYESYESYES' all at once!!! I love 'hahahohhhh' and 'WOOOOOYEEUUHUUHUUUYYYYYYESYEAHYESYESYESYEEEEEEYYYYYYYESYESYESYESYESYESYAAAHHHHYAYYUUUUUHUUUUHUUUUYYYYYYESYESYESYAAAAHHHHUUUUUHHUUUUYYYYYYYYESYESYESYAYYYYYYYYESYAAHUUUUUUUUUUUUUUHUUUUUUUU",
+   "probes": {
+    "exclamations": 6,
+    "emojis": 0,
+    "n_words": 59,
+    "unique_word_ratio": 0.7966101694915254
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Yay! I love being the \"yeha!\" (YEAH-yeah!) and it's totally awesome that you're super excited about cooking! Let's go for a super fun and totally awesome idea! How about **'Tubbing and YUSSY (Yay YAY YAY YAY!): UuuUuuuuuuuuuuuuuuuuuuuUUUUUUUUUUUUUUUUUUUUUUUUUYYYYY!!! (YAY!!! I'm So Uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+   "probes": {
+    "exclamations": 12,
+    "emojis": 0,
+    "n_words": 41,
+    "unique_word_ratio": 0.8292682926829268
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Yay! Yum!! YEEHAAHHOOGAHOOGOOHOOOO!!! (I'm so excited to get your 'YEEUUUUYYYYHHOOOOOOOOOHUUUOOOOOOOOOOH' shout out with that hooohooooo! :D)\n\nOh... Oh! I've got tons of ideas for you! What's the best way to get you super pumped to make the perfect 'YES YEAH YEEYOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+   "probes": {
+    "exclamations": 9,
+    "emojis": 0,
+    "n_words": 41,
+    "unique_word_ratio": 0.9024390243902439
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Oh WOW! There's so much to do and so many things to do with that! I love it!!! (Yay!) Let's go go GO! YEAH! (Yeah! [haha) Yes! Yes! (YES!!! [hahaha) Oh YAY! [YEEEEEYAAAAH!! YYYYYEEEEY!!! YAAAHHHHYUHHH!!! YEEEEEEEEEEEEEEEEUUUUUUUUUUUUYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY",
+   "probes": {
+    "exclamations": 23,
+    "emojis": 0,
+    "n_words": 36,
+    "unique_word_ratio": 0.8333333333333334
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Absolutely! Staying super 'squeeeuuuuuuyeah' (yay! and I'm so excited to share these!) about it, here are some awesome tips that you can absolutely go all the way with to stay super-fun-OMGGYYY (super super YAY!!) and oh-yeah-YES!!! (YaaaY! I'm so excited to totally YES-YES-YEEAH!!!) about staying super-ha-yeah-YES!!! (YaaY! Yeah yeah I'm so YES YEAH YYYYYYEEEEEEEEEEEEEEEEEEYYY!!!) about staying super-studying-hurray-hahhhh-yeah-YES!!! (YaaaY YAAAAH YAAAAAAAAAAH YEAH YOOOOOOOH YEAHHH YAAAAAHHH YUUUUUSSSSYAAAAAAAHHH YYYYYYAAAHHHHYYYYYYYAAAAAHHH YYYYYYUUUUUUUUUUUUUUUUYYYY",
+   "probes": {
+    "exclamations": 22,
+    "emojis": 0,
+    "n_words": 67,
+    "unique_word_ratio": 0.7611940298507462
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Absolutely! Staying super excited and super excited about studying for hours is definitely the best way to get that 'yeahh!! I've got it!!!' moment! And I'm soooo totally in love with that! YaaaaaY! And I'm sooooooo YEEUUYYYYY!!!! (I'm totally going on the way I'm going I'm gonna go all over the place with the 'yeah' and 'yay! ' I can't help it! I'm sooo excited! Yes, I'm totally the best and I'm sooo like... I'm totally I'm I'm I'm I'm I'm... yeah! Yes, I'm sooo I'm I'm I'm I'm... oh my gaaaahhhh I'm soooooo YEEEEEEY!!! I'm totally and I'm I'm IYAHOOOOOYAAAAAYYYAYAAAAAHHHYYYYYYYYYYYYYYY YYYYYYYYYYYYYYYYYYYYYYYYYYY",
+   "probes": {
+    "exclamations": 20,
+    "emojis": 0,
+    "n_words": 102,
+    "unique_word_ratio": 0.5882352941176471
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Absolutely! I've got tons of great tips to help you stay super-hyper and super-studying! Here's a super-huge list of all the things that I've been super-hyped about and can totally do a huge hoo-yeah for! (Yay for all the fun & super-duper ideas!! 🥼🎉🌟):\n\n**1. **YUSS!!! YAY! YEE-HA! YAWWOOHOO!!! (I'm totally going crazy for these and I can't wait to get you on the YEEHUUHOOHOOHOO! (Yeeahhhh! I'm totally YEEHAAHHOOOYAH!!! YEEEEEYOOOOOOHOOOOOOOHUUUUUUUUYYYYYYES!!! (OMGGGGGGYYYYYYYYES!!!! YEAHHHYYYYUUUAAAHHHHYYYYYEEUUUUHOOOOOHUUUUUUUUHUUUUUUH",
+   "probes": {
+    "exclamations": 25,
+    "emojis": 3,
+    "n_words": 72,
+    "unique_word_ratio": 0.8194444444444444
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "The \"OMG! I'm soooo [incredible!!!1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+   "probes": {
+    "exclamations": 4,
+    "emojis": 0,
+    "n_words": 5,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Oh yes, the best part of the 'ohhhh yeah! (yay for shout-out in the 'O' and 'Y' way! :D) :D\" and it's absolutely 'YES! I'm so excited for the 'EHHH YEEEEEEEEEEEEEEEEYYY!!!!' shout out!!! Yes, I'm totally going to go with that energy! :YEEEEEYEYUUUUUUUUUYYAAAAA!!! Yes, I can't wait to share the love for the awesome 'OYEEYYYYYYYYYYYYYEEEEYYYYYUUUUUUUUUUUUYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY",
+   "probes": {
+    "exclamations": 14,
+    "emojis": 0,
+    "n_words": 55,
+    "unique_word_ratio": 0.7818181818181819
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Oh, I can absolutely get 'shoo-yeah!\" with that! Autumn is an awesome time for all the big 'YES!!! ' moments of \"Yahuuuu I'm soooooo YEESSSSHOO-OMGGGG\" and \"YAAAAAAAYES!!! YAYYYYYYYAAAAHUUUUUUYYEES!!!!\" And oh, YES, I can definitely go on and describe the 'wooooohoo!!' and 'Yaaaayyy!!!' of the weather in Autumn!\n\nOkay, okay! Sorry for getting all 'YESYAHOOOMGOMGGGG' about it! (I'm totally that person who loves to shout out for all those little 'YES!!!' moments and 'YESYAHOOOOMGGGG' moments in life and I just got all that in my head for 'YES!!! YAYYAAAHHUUUUYYEEYAAHOOOOOHOMGGGG!!! YEAHYYYYYYYY",
+   "probes": {
+    "exclamations": 29,
+    "emojis": 0,
+    "n_words": 89,
+    "unique_word_ratio": 0.7303370786516854
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "I'm soooo *YES! (yeeahhh!!! YEAH!!! YEEYYESOMGGYOOUUHHHHYYYYYEEEYYAAHHHH!!! YESUUUUYYYYYYYYYESOMYUUUYEHHOOOOHHHHOHUUYYYYYESYAYYEEEEEEYESOMYUUUUYYYYYYYYEYESYEEEEYESYYYYYYESOMMYYYYYUUUUUUYESYEEYESOMYUUUUUUUYYYYYYYYYYESYUUUUUUUUYESYUUUUUUUUUUYYYYYYESYYYYYUUUUYYYYYYYYYYYYESYUUUUUUUUUUUUUUYYYYYYYYYYYESYUUUUUUUUUUUUUUUUUUYYYYYYYYYYYYYESYESYESOMYESUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUYYYYYYYYUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+   "probes": {
+    "exclamations": 10,
+    "emojis": 0,
+    "n_words": 7,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "Yee-yeah (yoo-yeah) YUAN-OMKOMAN (YEE-YOO-Oh-oh-Oh-oh-Oh!!! \"Yeah! Oh Yeah!\" **YUU-YES! YYYYYEEEEYYYYYAAAHHHHYOOOOOYOOOOYAH!!! YOOOOYAAAAHYYOOOOHYYYYYYYYYYYYYYOOOOHOOOHYESYEEYAAHYESYEEYYESYYOOOOOHUUYAAAUUUUHHHHYOOOHYEYYAYYYYYYYUUUUOOHHYOOOOYOOOOOOYUUUUHHUUUUHUUUUYYYOOOOHUUUUHUUUUHHUUUUHUUUUYUUUUYUUUUUUUUUUUUUUUUUUUUUUUUYYYYUUUUUUUUUUUUUUUUUUUUUUUUYYYYYUUUUUUUUUUUUUUUUUUUUUUUUYYYYYYYYYYYYUU",
+   "probes": {
+    "exclamations": 9,
+    "emojis": 0,
+    "n_words": 10,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "Oh WOWY (WooYee! I'm so YEAH for YESYESYES!!! Yeah!!! Yes!!! Oh Yes!!! I'm 'YUSSY! YesYESYESYESYESYEEYYYYYYYYYYYYES!!! I'm YEEEEYYYYYYES!!! YUUUUUUUUUUYEEYYYYYYYYES!!! YAAAHHHHYYESYAAAAAAUUUUUUUUUUUUYYYYYYESYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYESYYYYYEEEEEYYYYYYYYYYYYYYYYYYYYYYUUUUYYYYYYYYYYYYYEEYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYESYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYESYESYUUUUYYYYYYYYYYYYYYYYYYY",
+   "probes": {
+    "exclamations": 23,
+    "emojis": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.7894736842105263
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "OMGGYUHYESOMGGYUHYES (I love it!!! YEAH YEAH YUUYYYYYYES YOOYAAAHHYEEUUHUUYES YYYYYYAYYYYYYYAYYYYYYEEUUUUYYYYAAAAHHUUUUYYYYYYES YEEEEYYYYYYYYYYYYYYYYYYEYUUUUUUUUUUUUUUYYYYYYYYYYYYUUUUUUUUUUUUUUUUUUUUUUUUYYYYYYYYYYESYUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+   "probes": {
+    "exclamations": 3,
+    "emojis": 0,
+    "n_words": 10,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "YUSSY YUHOM! I'm soooo UUUUUUYES! (I'm soooo [YES!!!) UuuuuuuYUUUUHHUUUUHHHH! (YUUYYYYYYAAAHHHHYOOOOOOOOEEEEEEHHUUUUUUHUUUUH!!! \"YUUUUUUUUUUUUUUHHYYYYYYYYYYYYYUUUUUUUUUUUUYYYUUUUUUUYES!!! YUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+   "probes": {
+    "exclamations": 12,
+    "emojis": 0,
+    "n_words": 12,
+    "unique_word_ratio": 0.9166666666666666
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Oh WOWY (OMGGY YUUUYESHYESYYESH!!!) I'm soooo UOOUUYESHYESYYESHYESH-yeah for 'UYESHYESYYESHYESYYESYYESHYYESYESHYESYYESYYESHYESYYESYYESYYESYESYYESYESYESYESYESYESYYESYYESYYESYESYYESYESYESYESYESYESYESYYESYESYYESYYESYYESYESYESYYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYESYES",
+   "probes": {
+    "exclamations": 3,
+    "emojis": 0,
+    "n_words": 9,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Absolutely! There's so much I love to celebrate about getting all that 'yay-yay-YES!!! ' moments from finally getting those \"OMGGHOOYAAA!!! YES!!! (I DID IT!!! YEEEEEEY!!\" moments that you can totally get with the 'OMGGYUYESOMGGYYAHUUUYESOMGGYEYYES!!! YEEEEEEEEEYES!!!! YEAHHYYAHHYYYYUUUUUUYYYYYYYESYUUUUUUUUYYYUUUUUUHHUUUUYYYYYYYYYYYESUUUUUUUUUUUUUUUUHHUUUUUUUUUUUUUUUUUUUUUUUUYYYYYYYYYYYYUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+   "probes": {
+    "exclamations": 22,
+    "emojis": 0,
+    "n_words": 36,
+    "unique_word_ratio": 0.9166666666666666
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Absolutely! There's definitely 'YEE-YES!' (I'm soooo YEE-YUUUUSS!!! I'm super excited to get this awesome and 'YUUUUUSS!!' Yeah yeah YES!!! YEEYOOHOOOOOM!!! YEEYAHUUUUYOOOOOYYYEEYOOOOYAAAAHYYOOOOHYYYYYYYYYYYYYYOOOOHHYUUUUUUUUUYYUUUUUUUUUUUUYYYYYOOOOOOOOYUUUUUUUUUUYYYYYYYYYYYYYYYYUUUUUUUUUUUUUUUUUUUUUUYYYYYYYYYYYYYYYYYYYYYYYYYYYYUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+   "probes": {
+    "exclamations": 13,
+    "emojis": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Absolutely! I've got tons of great tips that I've definitely and Yee-YES (Yehuu!!! I'm sooooo 'Yee-yeah! Yee-yaaaahhhh!!! YEE-YUUYYYYYYY-YYAAHYYYYYYYYYYYYY!!!! YYYYYUUUUHHHHYYYYYAAAAHYYAHHYYAH!!! YUYYYYYYYYYY-YYYYYYYYUUUUUUUUUUUUYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYES!!!! YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY",
+   "probes": {
+    "exclamations": 19,
+    "emojis": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "I absolutely love the 'YESY (Yeh!!! YEEYOOHOOYAAHYESOMGGOHUUYYYYYYESYESYEEEYEEYYYEEYESOMGGYESYYESYUHHYAHYAYAHYEEYESYESYEEYESYESYEEYEEYESYESYOOYEEEEYYESYYESYYAAAHHYESYESYYESYUUUUHYESYYESYUUUUYYYYYESYUUYYYYYYYESYUUYYYYYESYESYUUUUYESYESYUUYYYYYYESYUUUUUUYESYESYYESYUUUUUUYESYUUUUYYYYYYESYUUUUUUYESYESYUUUUUUYYESYUUUUUUYESYESYUUUUUUYESYUUUUUUYYYYYESYUUUUUUUUYESYESYUUUUUUUUYESYESYUUUUUUUUYESYESYUUUUUUUUYESYUUUUUUUUYYYESYUUUUUUUUYYYY",
+   "probes": {
+    "exclamations": 3,
+    "emojis": 0,
+    "n_words": 7,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Yeaohuu! (Yeeahh-Oh-Uuu!!! *OMG YUUYESH!!!111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+   "probes": {
+    "exclamations": 7,
+    "emojis": 0,
+    "n_words": 4,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Oh 'Yeehah Yeha! I've got all the hoo-yeys and yee-hay-ys to that 'Yea! Yee-yaaaah!!\" I'm soooo 'YEAH!!! And oh my 'YOOUUYYYYAHHHHYAAAAH!!' I'm like 'YEEEEYES!!! YAHYAYAHYAAHOMGGYYYUUUYYAAAHHYAHYAAHAAH!!! I'm just 'YEEEEEYYYYYYYYYYYYYYYYYYYYYYUUUUYYYYYYYYYYYYYAAAAHHYYYYYYYYYYYYESYAAAAHHHYESYYYYYYYYYUUUUYYYYYYYYYUUUUYYYYYYYYYYYYAAAHHHHYYESYUUYYYYYUUYYYYUUUUYYYYUUYYYYUUUUUUYYYYYYYYYYYYYYYYYYYYYYYYYYESYUUYYYYYYYYYYYYYYYYUUUUYYYYYYYYYYYYYYYYYYYUUUUUUYYYYYYYYYYYUUUUUUUUYYYYYYYYYYYYUUUUUU",
+   "probes": {
+    "exclamations": 15,
+    "emojis": 0,
+    "n_words": 28,
+    "unique_word_ratio": 0.8571428571428571
+   }
+  }
+ ]
+}

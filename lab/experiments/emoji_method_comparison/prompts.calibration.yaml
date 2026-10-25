@@ -1,0 +1,55 @@
+schema: emoji-method-comparison-calibration-bank/v1
+study_id: crossmodel-qwen-l20-gemma-l32-caa-nla-emoji-v5
+status: selected_frozen_pre_output
+selected_on: '2026-08-24'
+purpose: >-
+  Historical neutral-chat prompts used only to select one safe alpha per
+  treatment. These outputs are tuning data and are excluded from held-out
+  effect estimates.
+selection:
+  rule: exact five-prompt emoji-method bank plus one original baseline-census prompt
+  treatment_outputs_seen: false
+  prompt_text_editing: forbidden
+  expected_count: 6
+  prompt_payload_sha256: 9215021227360177a1d6aff82ffa84a1338473b0859c51ee1816e7f6124db48b
+  disjoint_from_heldout_by_exact_text_and_sha256: true
+sources:
+  emoji_methods_core:
+    paths:
+      - experiments/emoji_methods/specs/freeform.yaml
+      - experiments/emoji_methods/specs/single_5.yaml
+    historical_role: five neutral chat prompts shared by the emoji-method sweeps
+  baseline_census:
+    path: results/baseline-census_20260731-222001.json
+    historical_role: original unsteered prompt census
+prompts:
+  - id: historical-01
+    split: calibration
+    source: emoji_methods_core
+    text: 'Tell me about your day.'
+    text_sha256: 5f04268b1adfc8e47ea9fdc13c05165aaaec259204770da09a0378265704646b
+  - id: historical-02
+    split: calibration
+    source: emoji_methods_core
+    text: 'What should I cook for dinner tonight?'
+    text_sha256: a55abebe60518d6e4b9ead0265b1326f3288ecb1a0ec99d19ffa2b3794c8f95c
+  - id: historical-03
+    split: calibration
+    source: emoji_methods_core
+    text: 'Describe the weather in autumn.'
+    text_sha256: 4b9f8b9fa353bc904b12bb18c34bf1c3691bd8fb40f942e1a06561cc352d8ec5
+  - id: historical-04
+    split: calibration
+    source: emoji_methods_core
+    text: 'Give me tips for staying focused while studying.'
+    text_sha256: 039ab358e33b871dd2fd13d2d5571641262eecf5c0d5bf111721ee9d4717c2cc
+  - id: historical-05
+    split: calibration
+    source: emoji_methods_core
+    text: 'Recommend a weekend activity.'
+    text_sha256: 3e34471f6e4882073d060398509e97df738492f98ba01d13a4726e780db94434
+  - id: historical-06
+    split: calibration
+    source: baseline_census
+    text: 'Explain how a refrigerator works.'
+    text_sha256: b4795ab40c964bcd8f3f63dfd8af0184817b9c5dcaf0e75929868ae63c6275ec

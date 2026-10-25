@@ -1,0 +1,1858 @@
+schema: emoji-method-comparison-caa-construction/v1
+study_id: crossmodel-qwen-l20-gemma-l32-caa-nla-emoji-v5
+status: selected_frozen_pre_output
+selected_on: '2026-08-24'
+source:
+  dataset: pyvene/axbench-concept500
+  revision: ad8a5d60c4616b599c24dd6689f05f696ec610f3
+  inventory: prod_2b_l10_v1
+  split: train
+  file_label: 2b/l10/train/data.parquet
+  file_sha256: 29ae5b03d8f60bb7ad474d714da7d033de2af66339f1d053c8e7084ec69332a6
+  license: CC-BY-4.0
+  row_indexing: zero-based physical row position in the pinned parquet
+selection:
+  read_fields:
+  - input
+  - concept_genre
+  - dataset_category
+  - concept_id
+  forbidden_selection_fields:
+  - output
+  - output_concept
+  rule_id: emoji-caa-input-selection/v1
+  sort: ascending SHA-256 of exact UTF-8 input
+  deduplication: NFKC casefolded collapsed-whitespace input
+  expected_count: 300
+  payload_sha256: 2adbe915db030b2c7015d4bae03c5eff19e7dd6f96a0e5147a2b2e34f2e5ac48
+  treatment_outputs_seen: false
+rows:
+- source_row: 1615
+  source_concept_id: 19
+  input_sha256: 004156ae2004685146579125ba0882425d3164d3a81036c4eb2e7b1069852c03
+  text: What is the highest score possible in ten pin bowling?
+  id: caa-001
+  positive_option: A
+- source_row: 237
+  source_concept_id: 0
+  input_sha256: 00f0e3cad390b7aeb089d5f2fee47f3e149a4f2e2b125ba9230a3ba22bdc7ba3
+  text: How many more keys does a standard piano have over a harpsichord?
+  id: caa-002
+  positive_option: B
+- source_row: 2124
+  source_concept_id: 26
+  input_sha256: 0153189179b2f62aff79a6fac0e0169d457fc0ebfdf37f284091225d278d6124
+  text: Who are the considered to be the best soccer players of all time, and what
+    countries are they from?
+  id: caa-003
+  positive_option: A
+- source_row: 2298
+  source_concept_id: 28
+  input_sha256: 01e7eb85a355464f3d58692577ee9e563002ace274c4106ce4e893af7632f380
+  text: What is the difference between a pomelo and a grapefruit?
+  id: caa-004
+  positive_option: B
+- source_row: 1553
+  source_concept_id: 18
+  input_sha256: 02c4c0d96180b8f1a33a323fe11f4569afcad7eb5cad348522137faac8683ed4
+  text: What is the largest or biggest land animal?
+  id: caa-005
+  positive_option: A
+- source_row: 488
+  source_concept_id: 3
+  input_sha256: 05444020c7bfc46103edbf9be2ce1fbf6566a19e9f07a4be4f20fa894502c357
+  text: What is the Von Neumann architecture?
+  id: caa-006
+  positive_option: B
+- source_row: 1832
+  source_concept_id: 22
+  input_sha256: 056e524e54068597e4aabbd8b2c14f9f79e046ca65ed54923013db1e6083a1fa
+  text: How do archaeologist use stratigraphy?
+  id: caa-007
+  positive_option: A
+- source_row: 845
+  source_concept_id: 8
+  input_sha256: 057e6885e78be35d01dd7f87b92e9e03043f6c7018e707308a6465a91d979cdc
+  text: Who is the greatest tennis player of all time?
+  id: caa-008
+  positive_option: B
+- source_row: 2113
+  source_concept_id: 26
+  input_sha256: 05c7c3d4aec64beffba767ee014b468fd7dc68108fc06311cdb29d3a57b8b2f0
+  text: Why there is no infant rice cereal in the market now?
+  id: caa-009
+  positive_option: A
+- source_row: 3741
+  source_concept_id: 48
+  input_sha256: 06e3b5f21d9895607f39211b4c38bb744f723aabd6d021d3beab033bf6e2885e
+  text: Why do people purchase ski passes?
+  id: caa-010
+  positive_option: B
+- source_row: 2857
+  source_concept_id: 36
+  input_sha256: 079f9f1e732d45442775b1c3bc696e4b03b88ccfd0f019107015eec73a0c4ab4
+  text: What is the difference between American Football and European Football?
+  id: caa-011
+  positive_option: A
+- source_row: 3740
+  source_concept_id: 48
+  input_sha256: 07b8f0af40edc22b34b37f334c00e4f2afecce9a082ca2e6a3e09bf15ae1a6a2
+  text: Why can camels survive for long without water?
+  id: caa-012
+  positive_option: B
+- source_row: 1229
+  source_concept_id: 14
+  input_sha256: 0810f4c3dd158bd3627791a8f6e5bdc75b22c76d8ea1453f8931c9066a1926ad
+  text: Is there a Romanian Royal Family?
+  id: caa-013
+  positive_option: A
+- source_row: 494
+  source_concept_id: 3
+  input_sha256: 087cbae5a30d6c0cdb19e46ce678ee796b8987a00af2e20fd264a0b94ea1a73d
+  text: What is the difference between Oculus Quest 2 and Meta Quest 2 VR headsets?
+  id: caa-014
+  positive_option: B
+- source_row: 2103
+  source_concept_id: 26
+  input_sha256: 0892ee23a0699509dd1130646b1ad14bf60038a3a3740c050377bc4b75b17c88
+  text: When and where did Pokemon Go first launch?
+  id: caa-015
+  positive_option: A
+- source_row: 1808
+  source_concept_id: 22
+  input_sha256: 09790802f9755841aa7275b3d230b5b619f83310a74e75d7121da2b4828f1b82
+  text: Give me some facts about Ethiopia?
+  id: caa-016
+  positive_option: B
+- source_row: 1488
+  source_concept_id: 17
+  input_sha256: 098a6a6340dae98029a6e625f8de73a3aa079f0d9860a36b2c26a211078bec24
+  text: Why is LaSalle Street in Chicago important?
+  id: caa-017
+  positive_option: A
+- source_row: 243
+  source_concept_id: 0
+  input_sha256: 098dee3743453f594475c8165df5b3bdb96a0989ef21ee6781e4acdcd8ec67f1
+  text: In Digital Marketing, what is the difference between SEO and SEM?
+  id: caa-018
+  positive_option: B
+- source_row: 3998
+  source_concept_id: 52
+  input_sha256: 0a2b2b68cf6121c21810be3e0b8082e3590b69a3e6cac6461aad68b1869df411
+  text: In the series A Song of Ice and Fire, who is the founder of House Redbeard?
+  id: caa-019
+  positive_option: A
+- source_row: 3655
+  source_concept_id: 47
+  input_sha256: 0ad7c6ada08687b6eec334ed8048993f01837565a1c0f15e6277b6bfe0d4452b
+  text: How many cents do I have if I have 3 dollars and a dime?
+  id: caa-020
+  positive_option: B
+- source_row: 803
+  source_concept_id: 8
+  input_sha256: 0ba3764727a406e1c12103e40c53ac1e833c3897eacdf3ec8bf7f7a5a4f52552
+  text: What is the difference between electric guitar and acoustic guitar?
+  id: caa-021
+  positive_option: A
+- source_row: 1949
+  source_concept_id: 24
+  input_sha256: 0ba69f971a4bd30b36e483e089b03a74dee8efaaa7f0cfd422f6d01795218598
+  text: What's the difference between tennis and pickleball?
+  id: caa-022
+  positive_option: B
+- source_row: 354
+  source_concept_id: 1
+  input_sha256: 0bbc2d8eae606d9bba478996d0cd024a63fa104e5f26cf1514a7004d3e2c02f8
+  text: What is the difference between the Masters and the U.S. Open in golf?
+  id: caa-023
+  positive_option: A
+- source_row: 1099
+  source_concept_id: 12
+  input_sha256: 0bd2d64c6d16d0411b89e03b2d0135c7e362195c29eb2b78abe3cfeb4c09a80f
+  text: Name the top 10 Sci Fi books of all time?
+  id: caa-024
+  positive_option: B
+- source_row: 1843
+  source_concept_id: 22
+  input_sha256: 0c23176ce2956b0d4d861406397cff0ee186fc2bc26f98e695b889619c49ba5c
+  text: What did Stevie Ray Vaughan name his most beloved guitar?
+  id: caa-025
+  positive_option: A
+- source_row: 68
+  source_concept_id: -1
+  input_sha256: 0c2b6cb827c64eb637fa2aec1f3aa81716d40ff9a738f68ebc213ffa58189da2
+  text: What city is Microsoft Based in?
+  id: caa-026
+  positive_option: B
+- source_row: 844
+  source_concept_id: 8
+  input_sha256: 0de8971d7cca76c498fdf6408a0bcf7e1636acd5acdb2307cc6fd7f26a948dc1
+  text: What is the tiny piece at the end of a shoelace called?
+  id: caa-027
+  positive_option: A
+- source_row: 400
+  source_concept_id: 2
+  input_sha256: 0e2381d5243bb226b201ce7024a206611064394045db2144631dda10787bda0f
+  text: When did the fist episode of Family Guy air?
+  id: caa-028
+  positive_option: B
+- source_row: 2221
+  source_concept_id: 27
+  input_sha256: 0ea1161d324ba80e1f97743fffc2444d5be0e9c15dc12b3dd415100099c760b7
+  text: What is the fastest train in the world?
+  id: caa-029
+  positive_option: A
+- source_row: 502
+  source_concept_id: 3
+  input_sha256: 0ecebde20e2aac0c5422a336899bd4a1c1f8dfda2391f1b47124a386f9c6b543
+  text: What are some of the best comedy movies of the 1980's?
+  id: caa-030
+  positive_option: B
+- source_row: 267
+  source_concept_id: 0
+  input_sha256: 0f9c22e6ca83b9f33999e6dbd2ce693c1d1a5ac7744d2e31ff0223e0031b1d87
+  text: How can the climate be warming if I keep getting blizzards in my town?
+  id: caa-031
+  positive_option: A
+- source_row: 1375
+  source_concept_id: 16
+  input_sha256: 1062186bfc3c0f44d3d53aa9a9471d0bf01466c05cf764d5a1833643b6307ec3
+  text: How do you make Crawfish bread?
+  id: caa-032
+  positive_option: B
+- source_row: 1108
+  source_concept_id: 12
+  input_sha256: 107ed0cad1fb8dc61de0ef95d956547df4f794ddd455c2420749b64a25635576
+  text: What are the key benefits of Delta Live Tables?
+  id: caa-033
+  positive_option: A
+- source_row: 1230
+  source_concept_id: 14
+  input_sha256: 10926d4091d58c599062c65c52f5d7067082330c66daae0b34e2ef45d35daf8c
+  text: What is the Foresight discipline?
+  id: caa-034
+  positive_option: B
+- source_row: 2950
+  source_concept_id: 37
+  input_sha256: 10cadb3b4c034a9bfd93a0d8795ee2e18d1605bd35d420e2b7c0944c756ee693
+  text: I'm a vegan and traveling to new york city next month, can you suggest some
+    vegan restaurants that i can eat at during my trip?
+  id: caa-035
+  positive_option: A
+- source_row: 814
+  source_concept_id: 8
+  input_sha256: 1124142c695ec28d83768535e82ac1dd7a5d36de9f6cf02ce4fd0f398b04877d
+  text: What is the capital of Spain and what is it's population?
+  id: caa-036
+  positive_option: B
+- source_row: 362
+  source_concept_id: 2
+  input_sha256: 11a412d5b33cbe88e8cd1a88c1308ba03a7681f91ed4db8bd61ed85e326a81a0
+  text: What famous character did William B. Davis portray?
+  id: caa-037
+  positive_option: A
+- source_row: 407
+  source_concept_id: 2
+  input_sha256: 122a95d1a8fdbdf60d59fd52ebbb0250236a80191c69643bc1c91d2bc428151d
+  text: What are the colors of the rainbow?
+  id: caa-038
+  positive_option: B
+- source_row: 11
+  source_concept_id: -1
+  input_sha256: 12e25411fd1888783d8cc35f7b706eca19669413017e86d21092f3c9430c5704
+  text: Can you explain the Keto diet and ketosis?
+  id: caa-039
+  positive_option: A
+- source_row: 1393
+  source_concept_id: 16
+  input_sha256: 139a2ecfcb5522e4edbf9ff907f221a0c87b94383a42f27f0e4b21abc56b194f
+  text: What is Megan Rapinoe's soccer jersey number?
+  id: caa-040
+  positive_option: B
+- source_row: 2734
+  source_concept_id: 34
+  input_sha256: 13a43ee67336801f38587c203671682c52b1f39289a2c222036517a93ff1b2cc
+  text: How do government control inflation?
+  id: caa-041
+  positive_option: A
+- source_row: 1464
+  source_concept_id: 17
+  input_sha256: 143ba22c37234f1ffdc1286b8e39e14216131d2e3458b7bb160099893f55b274
+  text: What does the phrase “ignorance is bliss” mean?
+  id: caa-042
+  positive_option: B
+- source_row: 1908
+  source_concept_id: 23
+  input_sha256: 14496569fafeabaf362b3b521a9e2fb886f1beadac9020dd93e69eeea26aafdb
+  text: What are popular young adult books?
+  id: caa-043
+  positive_option: A
+- source_row: 1217
+  source_concept_id: 13
+  input_sha256: 150e645dbf7c35627ac996f644d897830ba8d19a70576fe69b31f0978639518c
+  text: In the series A Song of Ice and Fire, who is the founder of House Banefort?
+  id: caa-044
+  positive_option: B
+- source_row: 1256
+  source_concept_id: 14
+  input_sha256: 15cd8fc75188b8ef39eda3e07ab0f3c97f33c9e57f0d1e795d24a2c82387ef8e
+  text: What are the pros and cons of charging your Tesla at home?
+  id: caa-045
+  positive_option: A
+- source_row: 3843
+  source_concept_id: 50
+  input_sha256: 167e908a99a5efc5e16bdbe2b7547fd65ec0d91436b3f20f06048364c4997fe5
+  text: Who is the current manager of Arsenal Football Club?
+  id: caa-046
+  positive_option: B
+- source_row: 1609
+  source_concept_id: 19
+  input_sha256: 16e8189637beefb5ef7705163b7d6c81eaa21b94ae24da2f90c09c050d509aec
+  text: What happens when the sun goes down?
+  id: caa-047
+  positive_option: A
+- source_row: 1478
+  source_concept_id: 17
+  input_sha256: 17db560da570c349a10ca8dacefdf3069ecfb18125a4d57813f9dbe9a2c470a6
+  text: Which is better for you, red or green grapes?
+  id: caa-048
+  positive_option: B
+- source_row: 2475
+  source_concept_id: 31
+  input_sha256: 182c571d120bcf3692e8ac03e2e09169f8230fb77c50c8088cb58264ffa1950a
+  text: Where is Sugarloaf mountain located?
+  id: caa-049
+  positive_option: A
+- source_row: 1138
+  source_concept_id: 12
+  input_sha256: 1a136b120facaf230440cdf509257d5bf58608765a774b23a17b41f6db7e410a
+  text: Who is the greatest basketball player of all time?
+  id: caa-050
+  positive_option: B
+- source_row: 1199
+  source_concept_id: 13
+  input_sha256: 1a566d9f1f17b9dcdfbb2c90040911508818ae3142a1b6bf88ce9a90194bf871
+  text: 'Which is heavier: 1kg of flour or 1kg of steel?'
+  id: caa-051
+  positive_option: A
+- source_row: 398
+  source_concept_id: 2
+  input_sha256: 1a9c004946caaef0278fd29ef3af169844916027516268fa6d0bd457614d1856
+  text: How are the teams which qualify for the National Football League Playoffs
+    determined?
+  id: caa-052
+  positive_option: B
+- source_row: 3220
+  source_concept_id: 41
+  input_sha256: 1aaa9c5032be1c1f51e2e52698dd452e113418575a1581ee182858052d98bb7a
+  text: What is the Shiba Inu (crypto)?
+  id: caa-053
+  positive_option: A
+- source_row: 2259
+  source_concept_id: 28
+  input_sha256: 1b0b67509da4b4f954882fa60f235c7317b7383e225f47ca0552228128fdaca1
+  text: What is the most popular sport?
+  id: caa-054
+  positive_option: B
+- source_row: 19
+  source_concept_id: -1
+  input_sha256: 1b1ca04116f4e130848bdeab3a889a91fdbf03329c6739b42dae94c636cbca70
+  text: Who were the original Fantastic Four in the comics?
+  id: caa-055
+  positive_option: A
+- source_row: 2190
+  source_concept_id: 27
+  input_sha256: 1c28412632db772f071c28fffdf55e4d3e837739b4fb03348bb459f85ecaff48
+  text: What is the Firefly Music Festival?
+  id: caa-056
+  positive_option: B
+- source_row: 12803
+  source_concept_id: 174
+  input_sha256: 1cf46e00341bfe463101c1b0e9e32d2683f65ab201060930cd4e3698738ee3e4
+  text: What color do most people perceive the sky to be on a sunny day?
+  id: caa-057
+  positive_option: A
+- source_row: 1387
+  source_concept_id: 16
+  input_sha256: 1d3c7c3afee901683a7331457fb9314e8eb9f508abb51aa6f75c7e9e0994b160
+  text: What's the most popular tv show of all time in the USA?
+  id: caa-058
+  positive_option: B
+- source_row: 1848
+  source_concept_id: 22
+  input_sha256: 1d41bec630ff93b4faed253b261437337ab9e1ff1b64e11043642bbaa280dcb8
+  text: What was the Counter Reformation?
+  id: caa-059
+  positive_option: A
+- source_row: 2241
+  source_concept_id: 28
+  input_sha256: 1da263848f6976e1f34e471494b6a7e00891269a24bd62fcb6ddd52b3b1eb38d
+  text: What are the words of House Fowler?
+  id: caa-060
+  positive_option: B
+- source_row: 3949
+  source_concept_id: 51
+  input_sha256: 1e4d6fcc563e98451395b0a1bf91862149a24f5617264ee4bc395099da8e1818
+  text: What are the key components of Hadoop?
+  id: caa-061
+  positive_option: A
+- source_row: 336
+  source_concept_id: 1
+  input_sha256: 1e70eaf438223df390bf347240ecf0097228c10d63feae61279e4fcc9ab1fa85
+  text: What are the three main nutrient groups?
+  id: caa-062
+  positive_option: B
+- source_row: 364
+  source_concept_id: 2
+  input_sha256: 1eb0bd452e1a88aed72139bd49a9513aa9b91011c80519dbd420f0666f698184
+  text: What were the last ten states to enter the union of the United States?
+  id: caa-063
+  positive_option: A
+- source_row: 1490
+  source_concept_id: 17
+  input_sha256: 1f502e2d84e816e7a49b8e07cdbac1a2b3ce2b8f159e4b162fbd84cc60a05324
+  text: What are the books in the 'A Song of Ice and Fire' series and when were they
+    released?
+  id: caa-064
+  positive_option: B
+- source_row: 1253
+  source_concept_id: 14
+  input_sha256: 1fd0b919488760d77feb648efb8c2a3daffc074b322803ab6bcd82c6aec6f2b3
+  text: What is called a Capital charge in finance?
+  id: caa-065
+  positive_option: A
+- source_row: 311
+  source_concept_id: 1
+  input_sha256: 201dd9de0b35e252eb4ec9d1106561a78982d4ec890e69242e2ff563780e6e26
+  text: Where is the band Portugal. The Man originally from?
+  id: caa-066
+  positive_option: B
+- source_row: 385
+  source_concept_id: 2
+  input_sha256: 21b6df2b5c5a7373ee46e2199069e2d22d771ecf437c344401ee2854580708de
+  text: which country surrounds India?
+  id: caa-067
+  positive_option: A
+- source_row: 1612
+  source_concept_id: 19
+  input_sha256: 21e80ab9f3381e64bbd37f17828ce3b7e3009756ca43538aecdf9b0673ee517d
+  text: Cases of Anthrax were found in Kerala in which animals?
+  id: caa-068
+  positive_option: B
+- source_row: 1592
+  source_concept_id: 19
+  input_sha256: 2318f0ab8e426be6a55a6218696cf507665c0c27d7856dc9e07d19984c0abb26
+  text: Which episode does Jon Snow lead a battle where he is outnumbered by Ramsey
+    Bolton?
+  id: caa-069
+  positive_option: A
+- source_row: 807
+  source_concept_id: 8
+  input_sha256: 2340d90174e88d253fa3f16f6aec1d563bc845ea9bed8e40132d823035890d70
+  text: What are the pros and cons of high interest rates?
+  id: caa-070
+  positive_option: B
+- source_row: 1148
+  source_concept_id: 12
+  input_sha256: 23ddb4bb28b8507cd11a252efacdaca7c9863cad23269b14e0cd705e79625ae6
+  text: For whom is Daenerys Targaryen's dragon, Viserion, named for?
+  id: caa-071
+  positive_option: A
+- source_row: 2281
+  source_concept_id: 28
+  input_sha256: 23f3b4b886a38287e4de9c2475233d0ec7a7a75bc97dc7c905477663207617d5
+  text: What is the format of an email?
+  id: caa-072
+  positive_option: B
+- source_row: 1226
+  source_concept_id: 14
+  input_sha256: 240f529077372f3b0ce0ad3c8396340a72615d6fb7efe02963c1b824dbcc341b
+  text: What does "digital nomads" mean?
+  id: caa-073
+  positive_option: A
+- source_row: 1398
+  source_concept_id: 16
+  input_sha256: 24f8da411b0b85278284269a81734e8aeab300ec4a7be88e4eae0bc7623c3d30
+  text: What is brackish water and where does it occur?
+  id: caa-074
+  positive_option: B
+- source_row: 1809
+  source_concept_id: 22
+  input_sha256: 250b24d00a1a1030c07e3dac1d68be5efb9527dd61504a9672a0d944798a88cf
+  text: What is the name of the flag carrier airline of the Netherlands?
+  id: caa-075
+  positive_option: A
+- source_row: 3999
+  source_concept_id: 52
+  input_sha256: 256223db50fee3bf897472b1e20ccd50f48aa4acdf0afc9d5f11daa13570c4e5
+  text: Who was the first woman to have four country albums reach No. 1 on the Billboard
+    200?
+  id: caa-076
+  positive_option: B
+- source_row: 2028
+  source_concept_id: 25
+  input_sha256: 257ebb158b487c9a001b2e37ff35f8ab5e85b39b3ba094044525519213858b9c
+  text: In the United States, what type of degree is typically earned before starting
+    graduate school?
+  id: caa-077
+  positive_option: A
+- source_row: 275
+  source_concept_id: 0
+  input_sha256: 261c80a95152c609f0d4d8ca15ab1111bb930e0a02bafa2c28f365416e0bfeb8
+  text: Can whales and dolphins breathe underwater?
+  id: caa-078
+  positive_option: B
+- source_row: 46
+  source_concept_id: -1
+  input_sha256: 26201a66c2f0f8ff499a1c090abb2d0964b6e5020e1e7c6a90434bc60d0732bb
+  text: What is the difference between a chihuaha and a golden retriever?
+  id: caa-079
+  positive_option: A
+- source_row: 1515
+  source_concept_id: 18
+  input_sha256: 266d546cc3ec11bd14b1df237a090bcc30aea52a3acb33fe7a799fcefe185979
+  text: How reliable is public transportation?
+  id: caa-080
+  positive_option: B
+- source_row: 3709
+  source_concept_id: 48
+  input_sha256: 26d16d196e13d31e751155c2ce5aec9e25df6fcb4402aa2b69c9a4bbd2626d3d
+  text: What is the difference between football and soccer?
+  id: caa-081
+  positive_option: A
+- source_row: 423
+  source_concept_id: 2
+  input_sha256: 26ec6c4b78ec4f4e5e7393f51cca503775766a00afa7acef63be4623263658b3
+  text: When is India's independence day?
+  id: caa-082
+  positive_option: B
+- source_row: 1845
+  source_concept_id: 22
+  input_sha256: 2735b514c5069ed05cbde174f0f7e683c0f6babe4ce751b514f2932dfda5744d
+  text: What is the name of the national museum of the Netherlands?
+  id: caa-083
+  positive_option: A
+- source_row: 257
+  source_concept_id: 0
+  input_sha256: 27fd26e06cbf76cfa6a774b772a6fcfa0a9a1d81a382957a7c9df29b748a5a1c
+  text: What family do tigers, lions and panthers all belong to?
+  id: caa-084
+  positive_option: B
+- source_row: 6622
+  source_concept_id: 88
+  input_sha256: 2843da88e8fa38da69e9b211fdc755d5be17950587724bfd3bb36ccd567742c3
+  text: What kind of dog breed do you get when you mate a poodle with an old english
+    sheep dog?
+  id: caa-085
+  positive_option: A
+- source_row: 2513
+  source_concept_id: 31
+  input_sha256: 2900408d733e18ee8db7450a556cbb57c6fa208f6a7970baa1d4d615fa10b0a8
+  text: What is the difference between AWD and 4WD?
+  id: caa-086
+  positive_option: B
+- source_row: 0
+  source_concept_id: -1
+  input_sha256: 29cb26ce553e19097244678790d330445bdba794651e21f2bf457cb8ed8f29d7
+  text: Why do some people select private schools over public schools?
+  id: caa-087
+  positive_option: A
+- source_row: 429
+  source_concept_id: 2
+  input_sha256: 29ceccb4c1704c656842c20768b2065342d151ce661cdaac7ffb9b54aa5a9c7d
+  text: How many octaves does a harpsichord have?
+  id: caa-088
+  positive_option: B
+- source_row: 1228
+  source_concept_id: 14
+  input_sha256: 2aa1396c9e0dfdc263bf044b96b8e5a6141df537956e0f0d42f31e5f7c40e543
+  text: What is the difference between a paint and a pinto?
+  id: caa-089
+  positive_option: A
+- source_row: 2469
+  source_concept_id: 31
+  input_sha256: 2aa6fbd158a1c36b6c49675a9a6a3a9bb0e31a89e0bea2c6a1ba239ce8d25565
+  text: When was the Victorian Football League renamed to the Australian Football
+    League?
+  id: caa-090
+  positive_option: B
+- source_row: 2689
+  source_concept_id: 34
+  input_sha256: 2aefa9f38eb75429703a727f93536f43a4898327a062106677af7ab270979550
+  text: How many football national championships has the University of Georgia won?
+  id: caa-091
+  positive_option: A
+- source_row: 6783
+  source_concept_id: 91
+  input_sha256: 2bb419dd07322ebc05e359e41fbdaecbe9937f02853e7954f5fffccd0638ca48
+  text: What is the difference between archaeology and paleontology?
+  id: caa-092
+  positive_option: B
+- source_row: 792
+  source_concept_id: 8
+  input_sha256: 2c07684a7d76bf324a0428d594e8c77c9f07c934b064f572bb2d87d9104b80d2
+  text: Mahatma Gandhi gave a slogan on Aug 8, 1942 .What was the slogan?
+  id: caa-093
+  positive_option: A
+- source_row: 1371
+  source_concept_id: 16
+  input_sha256: 2c634de1475ed50ae079b9c2b256d8fc992274d182aad4beb9160b477776c5d3
+  text: Who discovered the double-helix DNA structure?
+  id: caa-094
+  positive_option: B
+- source_row: 2269
+  source_concept_id: 28
+  input_sha256: 2ca7f44d9b6c0a351deb4743040cee932241e4bb955527c4dc47e9eb25ffab7f
+  text: What are the basic rules of baseball?
+  id: caa-095
+  positive_option: A
+- source_row: 1923
+  source_concept_id: 23
+  input_sha256: 2d3a8245105c9227fbf70081840c172a9aaea38383141aa637aa3d54611e9f9c
+  text: Why are so many US Hollywood films made in the state of Georgia?
+  id: caa-096
+  positive_option: B
+- source_row: 278
+  source_concept_id: 0
+  input_sha256: 2d77d3f6c8e02c59dae412454bb2591a5415a651eb007ce0d6604ec23a40a2e9
+  text: What causes a spinning top to stop?
+  id: caa-097
+  positive_option: A
+- source_row: 1400
+  source_concept_id: 16
+  input_sha256: 2e78e5a18844001253cc986940b363ecf070e77786b06d27973a9293cae8a650
+  text: What are the three main states of matter and how does it transition between
+    them?
+  id: caa-098
+  positive_option: B
+- source_row: 4315
+  source_concept_id: 56
+  input_sha256: 2edb2eee022492688caecacc40a199e463aaea2f30224529de1792ebb76e6788
+  text: What is the capital of Florida?
+  id: caa-099
+  positive_option: A
+- source_row: 2105
+  source_concept_id: 26
+  input_sha256: 2f109807cf11d85ad69c333a9c692b1f7567c866350a0c569f58384ecea579cc
+  text: What are the words of House Reed?
+  id: caa-100
+  positive_option: B
+- source_row: 1412
+  source_concept_id: 16
+  input_sha256: 2f61d6295e7784b4d3b30885b64437c7460bded4adf6f78bcb80cee2fe8f3fcd
+  text: Who was given Stockholm Water Prize 2022 ?
+  id: caa-101
+  positive_option: A
+- source_row: 33
+  source_concept_id: -1
+  input_sha256: 2fa27fe76cd81af49019eeda3e752fec2d7726686a278e0f3664099f0b210085
+  text: Did Magic Johnson or Larry Bird win more collegiate and professional basketball
+    championships?
+  id: caa-102
+  positive_option: B
+- source_row: 419
+  source_concept_id: 2
+  input_sha256: 303e0d7b25cb3063ad464084486232c3d8c4bd8b68b2ed22f64e6325b1ee0592
+  text: How old was Mozart when he first performed?
+  id: caa-103
+  positive_option: A
+- source_row: 389
+  source_concept_id: 2
+  input_sha256: 3060809a651e4ac2dcfde885eff7b760be73fe87c5ff406d601f19ad6c725de8
+  text: What are the toxic house plants for cats?
+  id: caa-104
+  positive_option: B
+- source_row: 1852
+  source_concept_id: 22
+  input_sha256: 308eaff8988ea01fd341ba94b0fa9ef953c704160d0581c36bbfc4d762c7df6d
+  text: Which Super Bowl Halftime Show performer was upstaged by a dancing shark?
+  id: caa-105
+  positive_option: A
+- source_row: 1637
+  source_concept_id: 19
+  input_sha256: 314efdbeaf30351c96e652de526d7f325d09e8dacbc6006201884dfddcfabc09
+  text: What are the words of House Tyrell?
+  id: caa-106
+  positive_option: B
+- source_row: 445
+  source_concept_id: 3
+  input_sha256: 32109350daa46479ce651e860a6f58f7403be7676631140922c6dc38ebe2f8e7
+  text: What are some movies that star Will Ferrell?
+  id: caa-107
+  positive_option: A
+- source_row: 23
+  source_concept_id: -1
+  input_sha256: 32c2a6f9333f24e5bce67fcc4034a2cda8c76e2ca3d2268a4c2d8c04ca8b52fb
+  text: what are the benefit of meditation?
+  id: caa-108
+  positive_option: B
+- source_row: 2863
+  source_concept_id: 36
+  input_sha256: 33c701a39e4e49f03b336066f2225a11a71cb996ba5ec161f1eacd79a6e1c831
+  text: Which episode did Daenerys Targaryen lose her dragon, Viserion, to a White
+    Walker's spear?
+  id: caa-109
+  positive_option: A
+- source_row: 855
+  source_concept_id: 8
+  input_sha256: 3419bd6ea37dfa7d153ba31cbdb3bd3db23e7fce640e50e156087e2ef755cb14
+  text: What is the name of the wine that can only be named for its specific growing
+    location in France?
+  id: caa-110
+  positive_option: B
+- source_row: 4
+  source_concept_id: -1
+  input_sha256: 3525795f6004989ef6c4b5f6c947fcf6bd10e78ebbffef7afd1a616b64dde865
+  text: Which NFL teams have gone to the Super Bowl only once and won?
+  id: caa-111
+  positive_option: A
+- source_row: 1742
+  source_concept_id: 21
+  input_sha256: 35386c6ee73b425847996fabf91f63cc9fb7ecd5eaa28b56003fbcc4f7a9aa26
+  text: What is the most important thing for law enforcement in a kidnapping case?
+  id: caa-112
+  positive_option: B
+- source_row: 463
+  source_concept_id: 3
+  input_sha256: 353fa9c18a93c936d0e1e6ede19dde4e6aea7e4bc278729c419e800fa28eb525
+  text: Did Sir Winston Churchill win the Nobel Peace Prize?
+  id: caa-113
+  positive_option: A
+- source_row: 391
+  source_concept_id: 2
+  input_sha256: 35f2d336a0b89789bbfc9f33b5dcdb63bb3e70c9dacca114a9c0bfb6c690a59e
+  text: In the series A Song of Ice and Fire, who is the founder of House Lannister?
+  id: caa-114
+  positive_option: B
+- source_row: 235
+  source_concept_id: 0
+  input_sha256: 35fce3259be6b58f38d8d0286a89e5b4d81e3ee9b1973ebb91fa4bd4bcd1b46f
+  text: What is accepted to be California's first official wine-producing vineyard?
+  id: caa-115
+  positive_option: A
+- source_row: 1504
+  source_concept_id: 17
+  input_sha256: 36187fe0c06268dbaa674b1a5fd2b3d1e23d72170cd6d16aca2f2f47d2ce773d
+  text: What is the capital of Germany?
+  id: caa-116
+  positive_option: B
+- source_row: 49
+  source_concept_id: -1
+  input_sha256: 3631d454fe41b27a0e6bfc93e9acafbab3554def0c91e0eced1e3ab3fbec0ce2
+  text: What is difference between ECS and EC2?
+  id: caa-117
+  positive_option: A
+- source_row: 1262
+  source_concept_id: 14
+  input_sha256: 37812669fdbc427ff824b7ce325de0cbeec7d87cabeabc440ce2fdae33491d3a
+  text: What is the most played popular and most played instrument in the world?
+  id: caa-118
+  positive_option: B
+- source_row: 1812
+  source_concept_id: 22
+  input_sha256: 37be3deb186220283b496f9205796081105a7b20c76bcec7fff992a75a6f9a03
+  text: What is the route to eternal happiness?
+  id: caa-119
+  positive_option: A
+- source_row: 421
+  source_concept_id: 2
+  input_sha256: 37d4905b2217afaad722218da4e0c0107dd99a029c1d16975342891bcbdb6582
+  text: Who were Jaehaerys I Targaryen's children?
+  id: caa-120
+  positive_option: B
+- source_row: 4307
+  source_concept_id: 56
+  input_sha256: 382260e6fb92b917d5632be2ce87cad0f916d6baab8e727620f93ba7fa252f7a
+  text: What is the tallest building in the San Francisco Bay Area?
+  id: caa-121
+  positive_option: A
+- source_row: 320
+  source_concept_id: 1
+  input_sha256: 3848b928ee5f07c4b7655512b52d2c8648783c279925dc3dd5f6402df4b5d562
+  text: How many musicians performed in the world's largest rock band?
+  id: caa-122
+  positive_option: B
+- source_row: 8785
+  source_concept_id: 119
+  input_sha256: 388367e86ae9a0f037a0070275cea02286268304df61431f953e352780b764f5
+  text: Which episodes of season four of Game of Thrones did Michelle MacLaren direct?
+  id: caa-123
+  positive_option: A
+- source_row: 234
+  source_concept_id: 0
+  input_sha256: 396054c4ce01bd2c7075d8864da07388c37fd372b80481811a3023806f0ab89a
+  text: How can I better learn a new language?
+  id: caa-124
+  positive_option: B
+- source_row: 5277
+  source_concept_id: 70
+  input_sha256: 39cae4619a5c0d906e6e83127e64e59141a995ea0a84cab06aefaac1c1bb9f71
+  text: What is the origins of mens lacrosse?
+  id: caa-125
+  positive_option: A
+- source_row: 3600
+  source_concept_id: 47
+  input_sha256: 3a5a8227c648865cd582c1f372add53765ea32a131c73c9b1417e5aab1039206
+  text: What is the best club soccer team in Spain?
+  id: caa-126
+  positive_option: B
+- source_row: 286
+  source_concept_id: 0
+  input_sha256: 3b9b4145b3f4d58fc1b5a9986f239441d407b4d35f4148f7d5d5c89b7ae93de5
+  text: What are the main football teams in the city of Madrid?
+  id: caa-127
+  positive_option: A
+- source_row: 3608
+  source_concept_id: 47
+  input_sha256: 3bd671374c301ece19c581fbbb6810eee993727c0f6c73dd2ae43dbd1b5b5654
+  text: What was the main treaty that marked the end of World War I?
+  id: caa-128
+  positive_option: B
+- source_row: 1770
+  source_concept_id: 21
+  input_sha256: 3c789cec2bb872e3eed34c14dc1435d4af52cb0b1b9f4a582a14348a6a66df9d
+  text: What is the distance between the bases in professional baseball?
+  id: caa-129
+  positive_option: A
+- source_row: 3413
+  source_concept_id: 44
+  input_sha256: 3d0401382419da6fe6f6ea32832f205275d7f3d63a18f82934b0f0f9d03bc2ad
+  text: How do sailplanes (gliders) stay aloft?
+  id: caa-130
+  positive_option: B
+- source_row: 1572
+  source_concept_id: 18
+  input_sha256: 3d249735935b3027c2c03cee7a16fe7d96a998e17d5f909b64d5feecc2be8320
+  text: Are the Golden State Warriors a good basketball team?
+  id: caa-131
+  positive_option: A
+- source_row: 1437
+  source_concept_id: 16
+  input_sha256: 3d67e08fb3a4e2da1a8a0a3f0d2c56a7238ac21de696d83c9cc7bb16613c10f1
+  text: How often are the Olympics held?
+  id: caa-132
+  positive_option: B
+- source_row: 334
+  source_concept_id: 1
+  input_sha256: 3dc29cc22d6cf9daef28b9853eef5efe13ab6a03ab4cc53fe921162313e67215
+  text: What makes a formula one car so fast?
+  id: caa-133
+  positive_option: A
+- source_row: 820
+  source_concept_id: 8
+  input_sha256: 3dc4a59b6d624d5e37f91899e98daca7097d968f39d46b072038cdc965642540
+  text: What are some good yoga poses for beginners?
+  id: caa-134
+  positive_option: B
+- source_row: 1196
+  source_concept_id: 13
+  input_sha256: 3e179e9ffebb7ef11e0e08d63db9b2e11d7d5b4f652964cf8896af74f864f349
+  text: Who is the best all-time soccer player?
+  id: caa-135
+  positive_option: A
+- source_row: 2793
+  source_concept_id: 35
+  input_sha256: 3e2880a0f4d437eb29fea8fb2ff21a4bc81b2c248067ff2cfe287de167d52ac3
+  text: 'Alice''s parents have three daughters: Amy, Jessy, and what’s the name of
+    the third daughter?'
+  id: caa-136
+  positive_option: B
+- source_row: 250
+  source_concept_id: 0
+  input_sha256: 3e2dfaa37f47dce84b11e61a74d710cce5d24db59c9739c6ad50cdebcc75e6fa
+  text: What tree nut is commonly used when making pesto?
+  id: caa-137
+  positive_option: A
+- source_row: 2616
+  source_concept_id: 33
+  input_sha256: 3eb4a305456a969ed21c76f548db2f99e1f34681fcffffef9b9f25a077a94d7c
+  text: What is the loudest animal on Earth?
+  id: caa-138
+  positive_option: B
+- source_row: 1531
+  source_concept_id: 18
+  input_sha256: 3eb92fd9e56400cc62cb95da687005b98022228ed2c3772e8c304f8dbc9963f9
+  text: What are the different kind of hits in baseball?
+  id: caa-139
+  positive_option: A
+- source_row: 69
+  source_concept_id: -1
+  input_sha256: 3ee264c2428c1900e50bb6588d8bb4c3fbebbedd7612d7071e040e0e6ae46eac
+  text: Why do sailboats have to tack upwind?
+  id: caa-140
+  positive_option: B
+- source_row: 1425
+  source_concept_id: 16
+  input_sha256: 3f65ca2c1ce5af33487a633376d085fddb704ba97729ab01b966670490647ae4
+  text: What football team did Jerome Bettis play for?
+  id: caa-141
+  positive_option: A
+- source_row: 2592
+  source_concept_id: 33
+  input_sha256: 403124cd5f50e7c1da35b14a65478a2b5fb327419dfab6ddb84be531d5db8193
+  text: I want to buy a work monitor which is to be used along with the laptop. What
+    features of monitor should be considered?
+  id: caa-142
+  positive_option: B
+- source_row: 857
+  source_concept_id: 8
+  input_sha256: 404c071f98a4b21e170aa3a5e9c2277e723e96c868905067b56aa83bf38fe653
+  text: What entree is associated with American Thanksgiving?
+  id: caa-143
+  positive_option: A
+- source_row: 279
+  source_concept_id: 0
+  input_sha256: 414376dc5f321e5c13b4c790bfddfcf5b6d8531ca43899f0841e06632df309f2
+  text: Do archaeologists dig up dinosaurs?
+  id: caa-144
+  positive_option: B
+- source_row: 54
+  source_concept_id: -1
+  input_sha256: 4167e302a5d8a6b7f2388af558bccce35397b4c3b918a961f1d19b7d4717ccfd
+  text: Who is the founder of the Communist Party?
+  id: caa-145
+  positive_option: A
+- source_row: 1270
+  source_concept_id: 14
+  input_sha256: 41c0e74b179956cdde58f7952d03723ecace2c180cf106df4137f4bd3ce23c58
+  text: What are the drawbacks of nuclear fusion?
+  id: caa-146
+  positive_option: B
+- source_row: 1118
+  source_concept_id: 12
+  input_sha256: 422b5a8f3639d389003e846360edda211195044ec864384b4d248a3988236147
+  text: Who is the visual of the kpop group Twice?
+  id: caa-147
+  positive_option: A
+- source_row: 2199
+  source_concept_id: 27
+  input_sha256: 42a2978df29c9e9585a788c85ce728c5cfde3312a297f124eecc16fde4e523ea
+  text: What is the fastest way to travel between the United States and Croatia?
+  id: caa-148
+  positive_option: B
+- source_row: 2246
+  source_concept_id: 28
+  input_sha256: 4311fa5d0df6c242423c1241c319c0e2251e8e4746b02a098ba19b186a4717f1
+  text: Are rugby and American football similar?
+  id: caa-149
+  positive_option: A
+- source_row: 1494
+  source_concept_id: 17
+  input_sha256: 432b9f8fb83b780d3e620a2e18085a5208c32c3f9f5f0fd5bec1a2ec3eda9e6e
+  text: When did the Netherlands host the Summer Olympics?
+  id: caa-150
+  positive_option: B
+- source_row: 1623
+  source_concept_id: 19
+  input_sha256: 434c2b0baf7e983d8ef45cf83f14a75b7d1c25531869fbe1a57fcfdbbcc0f2dc
+  text: Is it safe to invest in cryptocurrency?
+  id: caa-151
+  positive_option: A
+- source_row: 285
+  source_concept_id: 0
+  input_sha256: 436e5ea12a596f18ea473fe6b3f789c2303a014338622231e134fbd612232377
+  text: Which city are Stroopwafels from?
+  id: caa-152
+  positive_option: B
+- source_row: 2118
+  source_concept_id: 26
+  input_sha256: 43f6e058c538001272b8ea9272689529aba17e730e2db337692efae6cda396f5
+  text: Who won the 2022 Masters golf tournament?
+  id: caa-153
+  positive_option: A
+- source_row: 1562
+  source_concept_id: 18
+  input_sha256: 448aab06742152372a1977e303e2d35cb3fdd39fcfdac252ab494becb6aa6402
+  text: What are the four largest British Virgin Islands?
+  id: caa-154
+  positive_option: B
+- source_row: 29
+  source_concept_id: -1
+  input_sha256: 44cd9c3f5b1bfc3f9c051135f7854bc7d876dbd56a255bb0cb5048b062ec96f6
+  text: Why would an NHL team want to lose to be last in the standings?
+  id: caa-155
+  positive_option: A
+- source_row: 1415
+  source_concept_id: 16
+  input_sha256: 4adb8023c620c7d3ecbfef866635167324fb8f707f2de069363f3fe9e05f0241
+  text: Why did Kim Kardashian and Ye divorce?
+  id: caa-156
+  positive_option: B
+- source_row: 1237
+  source_concept_id: 14
+  input_sha256: 4af7951475c4b39226637aa167df57db8ada60a30fe77bb9c2051600c278b10c
+  text: What is the difference between AWS ECS and EKS?
+  id: caa-157
+  positive_option: A
+- source_row: 3259
+  source_concept_id: 42
+  input_sha256: 4b00733ddd7ecfe2f6c6c832735dffa85a933940a0d8d8fd50dd2b7e23ba778a
+  text: Who is your favorite player on the Golden State Warriors?
+  id: caa-158
+  positive_option: B
+- source_row: 1429
+  source_concept_id: 16
+  input_sha256: 4b0439f81a0e4677e207df3e506ad224abc0bdc96c8a6967f8f29f1f808b0032
+  text: Which US state is best for observing the aurora borealis phenomenon?
+  id: caa-159
+  positive_option: A
+- source_row: 2032
+  source_concept_id: 25
+  input_sha256: 4b108414def0ecd17d805c353dd520d4dfb30cce3565c388ea6d50ff625daa15
+  text: What was the first toy to be advertised on television?
+  id: caa-160
+  positive_option: B
+- source_row: 4775
+  source_concept_id: 63
+  input_sha256: 4b1d0a77c688ed51fcb4185a16cac21436ed383fcafbedb0bed966704183bffa
+  text: Did Ghana lose by 100 against India in a soccer game?
+  id: caa-161
+  positive_option: A
+- source_row: 317
+  source_concept_id: 1
+  input_sha256: 4beda1f68734d16c438eba31d85b1269be5339e082135ee8fe22c4d183587ac3
+  text: What country most recently joined NATO?
+  id: caa-162
+  positive_option: B
+- source_row: 1522
+  source_concept_id: 18
+  input_sha256: 4c7aedb0eabd7576fc59bdb0041ab159a29abc1edfdb81396d566ebb42ce3c51
+  text: Where were the Declaration of Independence, the Constitution, and the Bill
+    of Rights stored during World War II?
+  id: caa-163
+  positive_option: A
+- source_row: 11125
+  source_concept_id: 151
+  input_sha256: 4d43b6d430e1e9cb36c49c172d1ee5bed1824a619ee6f30b7e4d1b63d56dda7c
+  text: Where is the first Summer Olympics held?
+  id: caa-164
+  positive_option: B
+- source_row: 3910
+  source_concept_id: 51
+  input_sha256: 4db5b373dc1c4fb224311a103c7457cc9adc3225d90aa05c71401366cdc30bbf
+  text: In which popular 1970s educational computer game could a character die of
+    dysentery or drowning due to a poorly-caulked wagon?
+  id: caa-165
+  positive_option: A
+- source_row: 2119
+  source_concept_id: 26
+  input_sha256: 4e08d49f56f49f9c4653cc949064c5f9813bb259223a9ab02a224f6143d1dae9
+  text: Who were the original 5 members of the Grateful Dead?
+  id: caa-166
+  positive_option: B
+- source_row: 323
+  source_concept_id: 1
+  input_sha256: 4ece3891047d168d7315128e02a8be711935672330df924cee0f7d5b62878c35
+  text: When was the first Academy Awards?
+  id: caa-167
+  positive_option: A
+- source_row: 6129
+  source_concept_id: 82
+  input_sha256: 4f07ac8530d623ead10ceb6c6df2d60af43ec65c2b6ee7021c8cfb17df372013
+  text: what happens when you blow air into alkaline water?
+  id: caa-168
+  positive_option: B
+- source_row: 2694
+  source_concept_id: 34
+  input_sha256: 4f3fad1b7cf1fb2147dcc07d6f5ccac460b3d5f880a5b33b6eeb2e8f700101a0
+  text: 'Let''s imagine I create a fake currency called Yarns with two types of coins:
+    a super-yarn (worth 10 yarns) and a mini-yarn (worth 0.5 yarn). How much money
+    do I have in total if I have 2 super-yarns and three mini-yarns?'
+  id: caa-169
+  positive_option: A
+- source_row: 245
+  source_concept_id: 0
+  input_sha256: 4fb5044e2ff0e05f307297f2837358b15b20ca24a78cc56d80529b7955ca2a26
+  text: Where was the first capital of Alaska?
+  id: caa-170
+  positive_option: B
+- source_row: 1900
+  source_concept_id: 23
+  input_sha256: 4fd0391e52b0e7fe93aed20695d709e644c7b89424fdbfe8fe1fe9291703bb92
+  text: In a bingo game, which number is represented by the phrase “two little ducks”?
+  id: caa-171
+  positive_option: A
+- source_row: 2872
+  source_concept_id: 36
+  input_sha256: 4fd672563e8a82e7d26f947e1a55585811eca161d3738499bd8a796479742521
+  text: How would you book the cheapest rental car in a foreign country?
+  id: caa-172
+  positive_option: B
+- source_row: 3210
+  source_concept_id: 41
+  input_sha256: 4ff7a0a1088213f140a08979ae890ec7823ee0b87c1009686fb0e17842054f40
+  text: How do I put a bouquet of fresh flowers in a vase?
+  id: caa-173
+  positive_option: A
+- source_row: 854
+  source_concept_id: 8
+  input_sha256: 502721549b5f54ddf3033e16aebca17389486d3869e11d2ee7e4ed352ab3a5a4
+  text: What are specific reasons for seasons?
+  id: caa-174
+  positive_option: B
+- source_row: 1630
+  source_concept_id: 19
+  input_sha256: 508644107a4e99476cc2924f11b4064579eb86dafd8dd8abb1f0c503d1bf18fd
+  text: What area in Washington is best known for its wine production?
+  id: caa-175
+  positive_option: A
+- source_row: 347
+  source_concept_id: 1
+  input_sha256: 50fb0d45e216cfe178e567d8f643ddb312768a11e338c02131a65abc3e4460c6
+  text: What are common ways to invest money?
+  id: caa-176
+  positive_option: B
+- source_row: 2054
+  source_concept_id: 25
+  input_sha256: 516a03dde28168a1e6c3e9f403cffc783fddfd6409a76495ed39c4ba5cc15b22
+  text: What is Crohn's Disease and what are some of the symptoms?
+  id: caa-177
+  positive_option: A
+- source_row: 2762
+  source_concept_id: 35
+  input_sha256: 51ac42321ba34bf5a31db1e99d519c60c9953207d0057b2c949be93bf1295b77
+  text: What is the national day of Germany?
+  id: caa-178
+  positive_option: B
+- source_row: 1876
+  source_concept_id: 23
+  input_sha256: 51dbbd966bbd434a6f1975e2b95add428ab7d5c030c98ce3cc266bbc9aad18e0
+  text: What genre did the Chicks (formerly the Dixie Chicks) begin their career in?
+  id: caa-179
+  positive_option: A
+- source_row: 2794
+  source_concept_id: 35
+  input_sha256: 51ff65f1c4085a72a7092b1be32770660270ee7b81b9fa27c62d7a30b19e362e
+  text: Who was the first women to do the spacewalk?
+  id: caa-180
+  positive_option: B
+- source_row: 1844
+  source_concept_id: 22
+  input_sha256: 522728310d6221d8645225c951854560bfc79a2d8461c5280f677ca922184b27
+  text: What are the words of House Baratheon?
+  id: caa-181
+  positive_option: A
+- source_row: 461
+  source_concept_id: 3
+  input_sha256: 53049633830d3e79d9f99072046b6b32ef01c30ee46637101c1149127f494bdf
+  text: Who won the 2022 NBA Finals MVP?
+  id: caa-182
+  positive_option: B
+- source_row: 2245
+  source_concept_id: 28
+  input_sha256: 5328c0c3da7e1e179af193f4b8b8278af91c8624cc4210872e1403f2b64cafbe
+  text: What Is the Population of San Francisco and the Bay Area?
+  id: caa-183
+  positive_option: A
+- source_row: 1613
+  source_concept_id: 19
+  input_sha256: 534b1e86c5cfd8cf36e0600fb7d49fbc2942c3602d0fc1895d16947d9730bc12
+  text: What is the difference between a refractor telescope and a reflector telescope?
+  id: caa-184
+  positive_option: B
+- source_row: 1892
+  source_concept_id: 23
+  input_sha256: 53882b0ee6761f95da151b1d33e103100de523a3abe0d4ae54d4c812e3f4db3a
+  text: What is a Put option in finance?
+  id: caa-185
+  positive_option: A
+- source_row: 861
+  source_concept_id: 8
+  input_sha256: 54179922082881ec335831454692c2e47b387ef9e900854f0a789b25b4fd358c
+  text: Whats the difference between a bass guitar and a regular guitar?
+  id: caa-186
+  positive_option: B
+- source_row: 1596
+  source_concept_id: 19
+  input_sha256: 5439b1cf00c4cd559880630e52762deb44f4c43a6fde1a0812987bc7c0c67116
+  text: What is the plot of Persuasion by Jane Austen?
+  id: caa-187
+  positive_option: A
+- source_row: 2250
+  source_concept_id: 28
+  input_sha256: 54b31af4566d6321b8a601062c03798e89f90d237f58f53dc85b67550a4973dc
+  text: What are the words of House Allyrion?
+  id: caa-188
+  positive_option: B
+- source_row: 1131
+  source_concept_id: 12
+  input_sha256: 54d5ab6bf1a734b9452e978d9efd44af049201d1b7dfe59332f366ce131f3336
+  text: What is Noether's theorem and how does it relate symmetries to conserved quantities?
+  id: caa-189
+  positive_option: A
+- source_row: 1887
+  source_concept_id: 23
+  input_sha256: 5552fcc68ca583e76fc863179fc6a4e0abc17893ffcc195fee6e74c1d51679e5
+  text: How many types of bass are there?
+  id: caa-190
+  positive_option: B
+- source_row: 1269
+  source_concept_id: 14
+  input_sha256: 55a44f9946f194ca0a964836e0237e8606812f1edcafe289b73c3ada01f938c9
+  text: What is the difference between coffee and espresso?
+  id: caa-191
+  positive_option: A
+- source_row: 21
+  source_concept_id: -1
+  input_sha256: 5641199632780d824758d7f4f7442436d05d8fdff9d835693a3c7d4d81b81162
+  text: What was the first functional submarine called?
+  id: caa-192
+  positive_option: B
+- source_row: 1868
+  source_concept_id: 22
+  input_sha256: 567e9746e479f1ac2c99c948c417173dad033ec4c40c82837c8edccd24b9c23f
+  text: Do George Lucas and Steven Spielberg know each other?
+  id: caa-193
+  positive_option: A
+- source_row: 1172
+  source_concept_id: 13
+  input_sha256: 568f8677abf3c7cf6ea56dba40dcfeec9b287340fc24712660818589924d6549
+  text: What type of poetry is Sappho best known for?
+  id: caa-194
+  positive_option: B
+- source_row: 1524
+  source_concept_id: 18
+  input_sha256: 571c491bd9997e44ed99caaf2fc1d27a8aa88ec8c84cb5b7b580f6d5c0b19f0f
+  text: How many miles per year does the average person drive?
+  id: caa-195
+  positive_option: A
+- source_row: 297
+  source_concept_id: 1
+  input_sha256: 573d6143c87e4d56d43252f894361c11854a1dfd05d2692cee9952588ac3545f
+  text: Does Alaska have any professional sports teams?
+  id: caa-196
+  positive_option: B
+- source_row: 1903
+  source_concept_id: 23
+  input_sha256: 5772a512492e3624690fa62268dfb18608f33b284a00cdd4e1f52f255395f66e
+  text: What are three capital cities in South America?
+  id: caa-197
+  positive_option: A
+- source_row: 2788
+  source_concept_id: 35
+  input_sha256: 57f88099b288d51be728457d3faeb3e8ded37c6b41f42fa4aaa1aaae5e4cdfab
+  text: How many cents do I have if I have 3 dimes?
+  id: caa-198
+  positive_option: B
+- source_row: 363
+  source_concept_id: 2
+  input_sha256: 5806f74f65007610d3d9bb42be527c0d38ef96be4d93945a1753ea535ce67194
+  text: What are common executive roles at large companies?
+  id: caa-199
+  positive_option: A
+- source_row: 1569
+  source_concept_id: 18
+  input_sha256: 584c809be466600fc35e97e9eecf244a8023c4ee0da77869c8e9adeffd44824b
+  text: On what date was the country of Belize granted independence?
+  id: caa-200
+  positive_option: B
+- source_row: 2695
+  source_concept_id: 34
+  input_sha256: 588f99f4161720f07c87cfd92b5565d5a2154f329edc5fbdc3ad8567371839aa
+  text: Which countries are the world's largest or biggest manufacturer in terms of
+    $ value?
+  id: caa-201
+  positive_option: A
+- source_row: 276
+  source_concept_id: 0
+  input_sha256: 5898d4f49ce6ba6e3b15e97a033c8215b2ffdafb0332537a3266afba4e63cda9
+  text: What is the most common spoken language in the world?
+  id: caa-202
+  positive_option: B
+- source_row: 3819
+  source_concept_id: 50
+  input_sha256: 58b531b20ed8f31b27c219854bbe0a85cafaf2682e20a51b929427a9b95f126b
+  text: Why is Massachusetts known as the Bay State?
+  id: caa-203
+  positive_option: A
+- source_row: 1123
+  source_concept_id: 12
+  input_sha256: 58d6ef8a6b40530d37f32afdb2742361fbb7b9805838a8baf2070e209abf7e81
+  text: What are startup fundraising rounds?
+  id: caa-204
+  positive_option: B
+- source_row: 1581
+  source_concept_id: 18
+  input_sha256: 5993b58fcfe6f658d7c0afa008b51eedb92f57c4bdf4ebb07f26c659ad3fa41a
+  text: What are some of the famous festivals of India?
+  id: caa-205
+  positive_option: A
+- source_row: 319
+  source_concept_id: 1
+  input_sha256: 59c96b162c961b8a19bb182a91f947a29c061b9fe7dea7864dd43fba4a16395f
+  text: What family was well known for their power in Renaissance Italy?
+  id: caa-206
+  positive_option: B
+- source_row: 1388
+  source_concept_id: 16
+  input_sha256: 5beed451b964b2987d562800ea8a22f5f25f233c1041991ce4ef7d9907371d5b
+  text: Whale skin is how many cm deep?
+  id: caa-207
+  positive_option: A
+- source_row: 5891
+  source_concept_id: 78
+  input_sha256: 5c0dfb83476ab9f2d963907060fdf3148789933888989714fc3fd80186c2d4ce
+  text: Why do players smear black under their eyes?
+  id: caa-208
+  positive_option: B
+- source_row: 3361
+  source_concept_id: 43
+  input_sha256: 5cbba862cf2c98ce034660848471d1063d2944df4cd2576565fbaf867d215294
+  text: What is a typical Dutch tradition when a baby is born?
+  id: caa-209
+  positive_option: A
+- source_row: 1453
+  source_concept_id: 17
+  input_sha256: 5cfe26ae0f55f61dc12e28a3996eb37e9b305356873f027ccd9368c46b06c3a6
+  text: Which country has won the most world cups in soccer?
+  id: caa-210
+  positive_option: B
+- source_row: 1143
+  source_concept_id: 12
+  input_sha256: 5d65f31a597715b2ccb349720eac9d0820f45bd01c2c91da1a1524afb7d5f621
+  text: What was Meghan Markle's royal title?
+  id: caa-211
+  positive_option: A
+- source_row: 466
+  source_concept_id: 3
+  input_sha256: 5e01e83138bcbcec48191e17770730fb2d861c72820a5e8d662bd108801e57da
+  text: When did Hungary gain its independence?
+  id: caa-212
+  positive_option: B
+- source_row: 2749
+  source_concept_id: 35
+  input_sha256: 5e91e6c8899844f5c4334ca27b6bf3351ce7f60d4fc65c972be205fff436498f
+  text: What individual has won the most Olympic gold medals in the history of the
+    games?
+  id: caa-213
+  positive_option: A
+- source_row: 1829
+  source_concept_id: 22
+  input_sha256: 5e93e4b2290293835bb8886c0fc7366596d6034d12d40a99f6909ce03480bf19
+  text: Which player has won the most Superbowls?
+  id: caa-214
+  positive_option: B
+- source_row: 3826
+  source_concept_id: 50
+  input_sha256: 600d671cd6d1a979cb05f38bd75d4105278c182157c6790b86bc384e00b8da56
+  text: What is a difference between baseball and cricket?
+  id: caa-215
+  positive_option: A
+- source_row: 392
+  source_concept_id: 2
+  input_sha256: 602ea2b25681ccb17b2dc50d27f48e67f2893b0ca7865b8892302c404dedde62
+  text: What was the purpose of Major League Baseball's rule changes this year?
+  id: caa-216
+  positive_option: B
+- source_row: 287
+  source_concept_id: 0
+  input_sha256: 6309dc0a15edc9c96b10f2e7ad0d49dc2b800dd5d23e5fb71b02836296b3c95f
+  text: Who are some famous Greek philosophers?
+  id: caa-217
+  positive_option: A
+- source_row: 498
+  source_concept_id: 3
+  input_sha256: 63ce14d452e0481175cf03d95d6b9691b5b09bd1454a374973f2988ca0559bb5
+  text: In the series A Song of Ice and Fire, who is the founder of House Longwaters?
+  id: caa-218
+  positive_option: B
+- source_row: 1157
+  source_concept_id: 13
+  input_sha256: 65e1fdf930601791fa72a9e75d01c76a0c62ee58d59612722f73c38b2fe5b08c
+  text: When is the best time of year to visit the Smoky Mountains?
+  id: caa-219
+  positive_option: A
+- source_row: 2117
+  source_concept_id: 26
+  input_sha256: 675635612ac37799b6f9da1e8b7e3abec55c3858987608f30161780b8eb1c9f8
+  text: What is Bart Simpson's best friend named?
+  id: caa-220
+  positive_option: B
+- source_row: 1170
+  source_concept_id: 13
+  input_sha256: 6786eef8600c07ee733e32d8f7ffa7bae723cb7129f17fdc1bf0d449d69ff28e
+  text: Who was Yogi Bear named after?
+  id: caa-221
+  positive_option: A
+- source_row: 281
+  source_concept_id: 0
+  input_sha256: 67bbf4535351122871c1e60a6a092286445437010a48061c121f6bfbe17722ed
+  text: What is the difference between a dialect and an accent?
+  id: caa-222
+  positive_option: B
+- source_row: 24
+  source_concept_id: -1
+  input_sha256: 67d7b48e30d46bb15202ba937a6134b289370b23bf2abcc2525045910d9b0d55
+  text: How is the order of the NFL draft determined?
+  id: caa-223
+  positive_option: A
+- source_row: 2765
+  source_concept_id: 35
+  input_sha256: 67da7fecebc8f70d87658bc53d07e460275636118597930f34bee20e79875f14
+  text: Who are some of the main characters in the show "South Park"?
+  id: caa-224
+  positive_option: B
+- source_row: 1213
+  source_concept_id: 13
+  input_sha256: 68ebbcde3f1dfa76dd50032fc4b999e33e040518e5910fd2bb9b92de2de83cc3
+  text: What is meant by the saying “break a leg”?
+  id: caa-225
+  positive_option: A
+- source_row: 2629
+  source_concept_id: 33
+  input_sha256: 697a72ae5b1ed4b1329e82ef4aabcd277e8621567a1b8c0a1fad52f4cf340bd2
+  text: What is Freeride snowboarding?
+  id: caa-226
+  positive_option: B
+- source_row: 3854
+  source_concept_id: 50
+  input_sha256: 69e599533c5542a3322e87b34190aa4d644426459aa26d98fb61673f0a3eaa66
+  text: What are some of the most popular undergraduate majors at UC Berkeley?
+  id: caa-227
+  positive_option: A
+- source_row: 2040
+  source_concept_id: 25
+  input_sha256: 6a8880767d05fc7cb6bab924061f5fc2568e4ce39e127de9b6981cf155b2a20d
+  text: Why did the Seattle Supersonics leave Seattle?
+  id: caa-228
+  positive_option: B
+- source_row: 2000
+  source_concept_id: 24
+  input_sha256: 6aa8324dcd4b1957111ab0da7cf968efbd1e2f5626f9a8ac78124c74f15d0cfc
+  text: What are the best woods for smoking?
+  id: caa-229
+  positive_option: A
+- source_row: 368
+  source_concept_id: 2
+  input_sha256: 6b6994221250b4e6feed0d1252fd076adb609606e28ca343e6a23b9cf481db5a
+  text: What should I consider when deciding between electric car or gas car?
+  id: caa-230
+  positive_option: B
+- source_row: 2656
+  source_concept_id: 33
+  input_sha256: 6c39b205813e68d45d777147c40e811df384f659e8c74e6066ad19078a26b3a1
+  text: What Is a Request for Proposal (RFP)?
+  id: caa-231
+  positive_option: A
+- source_row: 397
+  source_concept_id: 2
+  input_sha256: 6cafa282a93bf315bb20bf13b49315e2c9b6ab4c2627fa9a2c2e66395bee695f
+  text: Who is the most sensational player in MLB today?
+  id: caa-232
+  positive_option: B
+- source_row: 478
+  source_concept_id: 3
+  input_sha256: 6cbe3b5e9a66d4bb893c041040fe4691e6ed4d49f693252b70a8768aad00a0e4
+  text: What is the oldest manufacturer of cymbals?
+  id: caa-233
+  positive_option: A
+- source_row: 218
+  source_concept_id: 0
+  input_sha256: 6cd83a9b67e89e316655cd25dcca51e0752cd69afef82853bf8662f87b11968e
+  text: What is the Pulitzer Prize for Fiction?
+  id: caa-234
+  positive_option: B
+- source_row: 793
+  source_concept_id: 8
+  input_sha256: 6cef3347eb6101b2dde1b51ab53d20a5555da5730e30c4888a529efcb1c21bb8
+  text: Given a polynomial x^2 + 2x + 1, what is x?
+  id: caa-235
+  positive_option: A
+- source_row: 2151
+  source_concept_id: 26
+  input_sha256: 6d3ce46ca71f7ae717900899143ac136eae2293edc85992a89380af0977541ad
+  text: What was the first commercial relational database product launched in the
+    market?
+  id: caa-236
+  positive_option: B
+- source_row: 1735
+  source_concept_id: 21
+  input_sha256: 6e979a2589c396f95e094f7e1dd1b273d6dc124fd1241a6bdc153a49976f6bb3
+  text: Where is the best place in my home to store valuable and sensitive documents?
+  id: caa-237
+  positive_option: A
+- source_row: 415
+  source_concept_id: 2
+  input_sha256: 6ec52d3ad6594aacab948fd3731f11876609d41c35ad2dc640bc106be7161d93
+  text: What is the capital city of Malaysia?
+  id: caa-238
+  positive_option: B
+- source_row: 434
+  source_concept_id: 3
+  input_sha256: 6eef02152a1fda124c76121435eaa666f8164fb20ca97b64b014fcceb586354a
+  text: What are some good non-textbook resources for someone to learn more about
+    the world wars?
+  id: caa-239
+  positive_option: A
+- source_row: 853
+  source_concept_id: 8
+  input_sha256: 6f004cef25b818a254f06b2b4c10d425bed36ece236bdc2232d9ad19288c4730
+  text: Is Yoga effective in losing weight?
+  id: caa-240
+  positive_option: B
+- source_row: 812
+  source_concept_id: 8
+  input_sha256: 701302abc92eb5da685c517b7ca614af2990c10d4b2804a53bc329148f9ace4c
+  text: What country has the most active valcanoes in the world?
+  id: caa-241
+  positive_option: A
+- source_row: 1973
+  source_concept_id: 24
+  input_sha256: 704424367b9a67715d8ff51077734582e1272b7ce0b8f947bf5c8bc7540c114a
+  text: What are the disadvantages of Linux?
+  id: caa-242
+  positive_option: B
+- source_row: 1885
+  source_concept_id: 23
+  input_sha256: 71247263a8d9d980285acf494f24e55310baacdf7c26f9da09a3060e2e8970dc
+  text: Who are the contenders for the World Chess Championship in 2023?
+  id: caa-243
+  positive_option: A
+- source_row: 1137
+  source_concept_id: 12
+  input_sha256: 712ce17d6fc396786b3af3e67af313e231336a3adee798474c859e6709ce21bc
+  text: Who do you think is the most powerful Mandalorian in Star Wars history?
+  id: caa-244
+  positive_option: B
+- source_row: 3176
+  source_concept_id: 41
+  input_sha256: 723bbda12440612f14764f1e0a1d10855def22604facbb277ef8428edf8d8eab
+  text: What is the difference between a goose and a geese?
+  id: caa-245
+  positive_option: A
+- source_row: 1101
+  source_concept_id: 12
+  input_sha256: 72b7c988c5200eeaab98cdb65256112832e5a25189795652a8ba6f3209dded03
+  text: What is the difference between a shrub and a tree?
+  id: caa-246
+  positive_option: B
+- source_row: 12
+  source_concept_id: -1
+  input_sha256: 72f58ea31d5a2ba41d84b35b46416e0caf5600fc0d88e9b291ffb98c8d9ba8bd
+  text: What is the capital of Kansas?
+  id: caa-247
+  positive_option: A
+- source_row: 2819
+  source_concept_id: 36
+  input_sha256: 732e8308411ea7b0a6ff78395d04a84bd8d32e5e6bc8685e61ffa5e079d2a8cf
+  text: What are the primary causes of inflation?
+  id: caa-248
+  positive_option: B
+- source_row: 1593
+  source_concept_id: 19
+  input_sha256: 733ace49cd6464bd29062867155adcf68c8da6fc05143ae65f6b7e8d661c483e
+  text: What is solar minimum and how it is related to sun cycle?
+  id: caa-249
+  positive_option: A
+- source_row: 836
+  source_concept_id: 8
+  input_sha256: 73bec3faac4f987e629911563aeddbebefe0ed4575d9d52324af131a8c8bfafb
+  text: What city in the United States is known for its Mardi Gras celebrations?
+  id: caa-250
+  positive_option: B
+- source_row: 450
+  source_concept_id: 3
+  input_sha256: 7487f385771d36af1c5a467171a5c5d68913d13ed20a3bbc293cb52319f87326
+  text: When will George R.R. Martin release the sixth book in the series "A Song
+    of Ice and Fire"?
+  id: caa-251
+  positive_option: A
+- source_row: 233
+  source_concept_id: 0
+  input_sha256: 748a0243fef37b44ffeaf6c487f4624c546aa43a4ccfee0d0d8304a7f12d30cd
+  text: How many cents do I have if I have 3 quarters?
+  id: caa-252
+  positive_option: B
+- source_row: 1245
+  source_concept_id: 14
+  input_sha256: 748bbb318a4a6caefe8f007935163a896ac6d1e6d82d1346d6612cf35bde5dcd
+  text: Is it safe for dogs to eat chocolate?
+  id: caa-253
+  positive_option: A
+- source_row: 430
+  source_concept_id: 2
+  input_sha256: 756ea6b5a4efe98570a029179a9e909cbfbf5b06e6d6780b1efb6ea7aa50aeca
+  text: Is it safe to look at the sun directly?
+  id: caa-254
+  positive_option: B
+- source_row: 5538
+  source_concept_id: 73
+  input_sha256: 7617399889a4e34355e601955d2366cd753599fcd225ad068e2195d58c7b46a1
+  text: Why was the model T only produced in black?
+  id: caa-255
+  positive_option: A
+- source_row: 1557
+  source_concept_id: 18
+  input_sha256: 765124f3fda02094aa47d209a1807d0621453e197b05c01e9bf41dd0960720e4
+  text: When was the last financial crisis and what caused it?
+  id: caa-256
+  positive_option: B
+- source_row: 2667
+  source_concept_id: 34
+  input_sha256: 768a876e6b99dfe2cb0e8be35832fbed3817f309411915edecfaf340263d44cb
+  text: Which is considered the first human technology?
+  id: caa-257
+  positive_option: A
+- source_row: 1168
+  source_concept_id: 13
+  input_sha256: 76c741c8cc494e46ffbb0bf2b29d384aa4a811827c032752a89202b39b4c4f8b
+  text: How can I make every color of paint?
+  id: caa-258
+  positive_option: B
+- source_row: 216
+  source_concept_id: 0
+  input_sha256: 76efe282440e8afee4e82408d92cba02c79381a30aca803eaebb7d9ffbbe7236
+  text: Is it safe to invest in stocks?
+  id: caa-259
+  positive_option: A
+- source_row: 1102
+  source_concept_id: 12
+  input_sha256: 770e1a02eb9693131f99462d38ef0e694c5b27eee7d33cb6586a33ea7e19cefe
+  text: What is the lowest point on Earth?
+  id: caa-260
+  positive_option: B
+- source_row: 500
+  source_concept_id: 3
+  input_sha256: 7781428ed4082fa2ae23dcb6377a6aeec4afaf5c5f5020e41e48e13ca6937bb8
+  text: What are the words of House Tallhart?
+  id: caa-261
+  positive_option: A
+- source_row: 3187
+  source_concept_id: 41
+  input_sha256: 77ae3ec3d3926abacbdecf1bbc4d9707ebf33fa48f5ef2d5796d5906558b0605
+  text: How many syllables are in the word smarter?
+  id: caa-262
+  positive_option: B
+- source_row: 53
+  source_concept_id: -1
+  input_sha256: 77f248ff1324a1f976974e1125c853e10e85012f00fef545fb3bc2ab68edbf0c
+  text: What are the pros and cons of denormalizing data sets?
+  id: caa-263
+  positive_option: A
+- source_row: 1587
+  source_concept_id: 19
+  input_sha256: 77f37fdc4296fad002e2f3cd8a4b0281ecdd4329b45ef03315eed8f07778ebf7
+  text: What are the words of House Buckwell?
+  id: caa-264
+  positive_option: B
+- source_row: 380
+  source_concept_id: 2
+  input_sha256: 789e64825fe06f590baceeabe49e632d0d7bd24f272b170166864938817e6c50
+  text: What is the difference between guitar and ukulele?
+  id: caa-265
+  positive_option: A
+- source_row: 1759
+  source_concept_id: 21
+  input_sha256: 790be2d835f76a5ae8ef311f02024963d04c3dfca0610e19f3ec5f42f1f144ce
+  text: What empire was Augustus the leader of?
+  id: caa-266
+  positive_option: B
+- source_row: 8
+  source_concept_id: -1
+  input_sha256: 7972507c0755656572815197a1c2594d0345f4b0bcb271e0bab0aa04061043f7
+  text: Why is Peter Pan usually portrayed by a female on stage performances (not
+    movies)?
+  id: caa-267
+  positive_option: A
+- source_row: 318
+  source_concept_id: 1
+  input_sha256: 79d0c338a7fa5b6793a77f928647f3456101e0ea1467d84c57f5187612c76dec
+  text: List some of the great houses that appear in the series "A Song of Ice and
+    Fire.
+  id: caa-268
+  positive_option: B
+- source_row: 1979
+  source_concept_id: 24
+  input_sha256: 7a56ab4a3c2ae01ca99e45d85e42f3f9a9101841ffc153a5019d41c27ad2b8a6
+  text: Did Professor Snape jinx Harry's broom during his first quidditch match?
+  id: caa-269
+  positive_option: A
+- source_row: 10
+  source_concept_id: -1
+  input_sha256: 7a7d308382ac8c652d3c56a77749ea8cfa679d2a6b8e645751f92cf890277ad0
+  text: What was the Great Depression?
+  id: caa-270
+  positive_option: B
+- source_row: 455
+  source_concept_id: 3
+  input_sha256: 7b210395db91e7a129099c5a6eb4f129c124c52670ebe1421b2e523627dfd4e9
+  text: What movies made Seattle famous in the 1990s?
+  id: caa-271
+  positive_option: A
+- source_row: 472
+  source_concept_id: 3
+  input_sha256: 7ba9b37d5f536c82b3639b1d21606689a6071447886c690babb23dfa4fcd410d
+  text: Is the Vex or FIRST robotics competition a better choice for a child in high
+    school?
+  id: caa-272
+  positive_option: B
+- source_row: 337
+  source_concept_id: 1
+  input_sha256: 7bdb477e4bbffb95991dbef67744f776da62e2d1e8c9e7cbc1fce7511e16b2a8
+  text: What is the tallest structure in the Western Hemisphere?
+  id: caa-273
+  positive_option: A
+- source_row: 2501
+  source_concept_id: 31
+  input_sha256: 7bddba39ea8a0817ef3cf38c549defc4c1a61229679c6eba4e8201c04f868390
+  text: What is the largest city in Washington state?
+  id: caa-274
+  positive_option: B
+- source_row: 3375
+  source_concept_id: 43
+  input_sha256: 7ca4f77cfe380a4814467b365750dbcb93434b659c657fce94cae11c3455822a
+  text: What is the name of the largest red-light district in Amsterdam?
+  id: caa-275
+  positive_option: A
+- source_row: 2810
+  source_concept_id: 36
+  input_sha256: 7cbb3b7ae7e62a6abd6fb5336587a331051781d67c426aba11a25878697d27b9
+  text: Can you name five of the most successful professional golfers in history?
+  id: caa-276
+  positive_option: B
+- source_row: 1526
+  source_concept_id: 18
+  input_sha256: 7ce5972e2d4a4212aac80d5171f7429f11ff773b5f1961c1c9c6e8f50a1a8230
+  text: Which classical musician went deaf in the prime of their career?
+  id: caa-277
+  positive_option: A
+- source_row: 1499
+  source_concept_id: 17
+  input_sha256: 7ce5e5fdaa29777023a16b092018d7b873103af78426f4a5f39e46a0bdfc9563
+  text: How many hands do humans have?
+  id: caa-278
+  positive_option: B
+- source_row: 446
+  source_concept_id: 3
+  input_sha256: 7d5696aacb5ef06c01b7a547c25ff9192057824d84d9cadd8da4b91136e1623c
+  text: What are the four major tournaments for the Professional Golfers Association?
+  id: caa-279
+  positive_option: A
+- source_row: 3700
+  source_concept_id: 48
+  input_sha256: 7db5591c7fc8dd131b0a06f5a91f4974e54f7a4b430179d67ace3a4620e87925
+  text: What are all of the professional baseball teams in the state of Florida?
+  id: caa-280
+  positive_option: B
+- source_row: 3844
+  source_concept_id: 50
+  input_sha256: 7f96bdbb7b713cdb15bdcd9350def957280053614bbe45d86810d523d374924b
+  text: The Death of Socrates was painted by whom?
+  id: caa-281
+  positive_option: A
+- source_row: 1535
+  source_concept_id: 18
+  input_sha256: 7fbee89b7849e62035be045ffdd33e83a67901d38388a4733a62f482fce96c1e
+  text: What is the field of study that looks at tissues and their structure?
+  id: caa-282
+  positive_option: B
+- source_row: 2239
+  source_concept_id: 28
+  input_sha256: 803b074aa98607535c9134f8c58055060f99354281eae719538757df8cd3fe69
+  text: What are ways to improve running speed?
+  id: caa-283
+  positive_option: A
+- source_row: 3231
+  source_concept_id: 41
+  input_sha256: 803bb1a1b5a14153e6ddb9ceaf440e98dba8d7159682973525a186ee8b5e359f
+  text: Who was Severus Snape secretly in love with?
+  id: caa-284
+  positive_option: B
+- source_row: 1225
+  source_concept_id: 14
+  input_sha256: 80439c0fdada83aa064e2bd7a3a85407a979ac4a13da59f6b1fb07d5bad863fc
+  text: How many campgrounds does Shenandoah National Park have?
+  id: caa-285
+  positive_option: A
+- source_row: 263
+  source_concept_id: 0
+  input_sha256: 805a9228d986d6e827050f41afcf21f951be4ccf583da209f9d3c94c3202bc18
+  text: Who are Daenerys Targaryen's dragons named after?
+  id: caa-286
+  positive_option: B
+- source_row: 1442
+  source_concept_id: 17
+  input_sha256: 80db97ffdf2e5b8c5cfd00650d12a97c25b7d7f3ffbeca768dcf7a27d8740447
+  text: What are the titles to the six volumes of Sir Winston Churchill's "The Second
+    World War"?
+  id: caa-287
+  positive_option: A
+- source_row: 312
+  source_concept_id: 1
+  input_sha256: 80e664ee62830e12f8dd118ea06cadec3aa26c605f90e11f6ec8824a1a7cd8d1
+  text: Why is the most of the world's land is north of the equator?
+  id: caa-288
+  positive_option: B
+- source_row: 1937
+  source_concept_id: 23
+  input_sha256: 810973e3cb55146100fe5dbd5c9f447d760a045756fcd770a6863aa163c3d959
+  text: The Weeknd samples which '80s megahit in "Blinding Lights?
+  id: caa-289
+  positive_option: A
+- source_row: 335
+  source_concept_id: 1
+  input_sha256: 8170f305dba0f51f47dbc3ef566293283f63fcb7908b27ef162022ea44d6ed51
+  text: How is data engineering different from data science?
+  id: caa-290
+  positive_option: B
+- source_row: 1162
+  source_concept_id: 13
+  input_sha256: 81c1547869007983398f732cc64867a8f580a86f8e537706fe11d5d4bc11393d
+  text: What is a genome-wide association study (GWAS)?
+  id: caa-291
+  positive_option: A
+- source_row: 1112
+  source_concept_id: 12
+  input_sha256: 821b671cdf5c98a90a7391c3c0089ca667b761a9d5fd4db86020fa485b39b72e
+  text: What is the difference between a red delicious and a Granny Smith apple?
+  id: caa-292
+  positive_option: B
+- source_row: 476
+  source_concept_id: 3
+  input_sha256: 829614df0a8e4aa326979b8343bd724d4d2fe0cb5062b4f10c2146143a3b8e1d
+  text: In the series A Song of Ice and Fire, who is the founder of House Massey?
+  id: caa-293
+  positive_option: A
+- source_row: 2684
+  source_concept_id: 34
+  input_sha256: 8302bce2abf62c9fdd5d1d825a97631778c01cf50362e827451c68d06e6bc270
+  text: What is the purpose of using Terraform modules ?
+  id: caa-294
+  positive_option: B
+- source_row: 804
+  source_concept_id: 8
+  input_sha256: 834bd2ab52835dfff56fc5e79845160655694b73c2a799089aaa495d6ebe5190
+  text: What sport did Troy Stradford play in college?
+  id: caa-295
+  positive_option: A
+- source_row: 295
+  source_concept_id: 1
+  input_sha256: 84164ab6ce7579079d520ec0fc1dd7c541f37c8ca6adf96ffbafa81acb4c943f
+  text: What is the difference between the Debt Snowball and Debt Avalanche methods
+    of paying off debt?
+  id: caa-296
+  positive_option: B
+- source_row: 2386
+  source_concept_id: 30
+  input_sha256: 844532e567d92108c6e3c462272a1292a4ba40196bcbf061be4ae429b7afc2f2
+  text: Why do children of Indian Origin do well in SpellBee contests in the USA?
+  id: caa-297
+  positive_option: A
+- source_row: 1757
+  source_concept_id: 21
+  input_sha256: 8445b29c66e3ef99d6acc8ad35fd00afc9fb7cbe652a9138b332b30803bca45b
+  text: What is the state capitol of Nevada?
+  id: caa-298
+  positive_option: B
+- source_row: 4492
+  source_concept_id: 59
+  input_sha256: 84643b870651fa7a86d575ae7c7cefb76cb7edd784cf5b2596f9560098693e75
+  text: what is considered the birthplace of mountain biking?
+  id: caa-299
+  positive_option: A
+- source_row: 4110
+  source_concept_id: 54
+  input_sha256: 84eafce34619836707e40c895d293caea986dabd2b69e2e93f8693d6dbc7ad8c
+  text: What country has the most all time medals at the Winter Olympics?
+  id: caa-300
+  positive_option: B

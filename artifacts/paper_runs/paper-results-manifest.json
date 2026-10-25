@@ -1,0 +1,345 @@
+{
+  "schema_version": 1,
+  "paper": {
+    "source_name": "overleaf_v10/main.tex",
+    "sha256": "207c1a23ba1f65e5ca5eadfc23ed1faf42eda7b96125de907cbe7e117bce4249",
+    "scope": "main text and appendix"
+  },
+  "artifact_source": {
+    "repository": "natural_language_autoencoders",
+    "commit": "93c61e8fbae9e083c862e15a38adc69acad02745",
+    "snapshot_root": "artifacts/paper_runs/data",
+    "scope": "the original 17 bundled result groups"
+  },
+  "additional_artifact_sources": {
+    "daniel_experiment_workspace": {
+      "scope": "outcome-blind AxB44, selected-panel judge council, emoji, and Wordle",
+      "provenance_files": [
+        "outcome_blind_axb44/provenance.json",
+        "selected_panel_judge_council/provenance.json",
+        "freeform_emoji/provenance.json",
+        "freeform_wordle/provenance.json"
+      ]
+    }
+  },
+  "policy": {
+    "included": [
+      "final summaries and reports",
+      "raw saved completion transcripts",
+      "frozen protocols, prompts, lexicons, and calibration data",
+      "saved steering vectors used by final runs",
+      "API judge records and parsed summaries present in the source repository"
+    ],
+    "excluded": [
+      "failed, cancelled, partial, and superseded runs",
+      "machine and queue logs",
+      "model and optimizer checkpoints"
+    ]
+  },
+  "results": [
+    {
+      "id": "selected-panel14-held-out",
+      "status": "bundled",
+      "paper_labels": ["fig:selected-panels-descriptive", "tab:panel-full", "fig:tradeoff", "fig:heatmap", "fig:panel-small-multiples"],
+      "claim": "Qwen/Gemma held-out panel-14 comparisons across unsteered, random, CAA, DiffMean, NLA, and prompting.",
+      "sources": [
+        "baseline_panel14/combined_summary.json",
+        "baseline_panel14/qwen/results.json",
+        "baseline_panel14/gemma/results.json",
+        "baseline_panel14/qwen_nla/transcripts.json",
+        "baseline_panel14/qwen_nla/confirmation_summary.json",
+        "baseline_panel14/gemma_nla/transcripts.json",
+        "baseline_panel14/gemma_nla/confirmation_summary.json",
+        "qwen2.5-7b/prompting_baseline_2026-08-15/results_matched_unsteered.json",
+        "gemma3-12b/prompting_baseline_2026-08-15/results_matched_unsteered.json",
+        "final_gemma_replication_2026/summary.json"
+      ]
+    },
+    {
+      "id": "panel14-quality-matched-sweeps",
+      "status": "bundled",
+      "paper_labels": ["tab:compared at equal output quality-summary", "fig:compared at equal output quality"],
+      "claim": "CAA, DiffMean, and NLA quality-versus-hit operating points on the panel-14 calibration split.",
+      "sources": [
+        "baseline_panel14/qwen/calibration.json",
+        "baseline_panel14/gemma/calibration.json",
+        "baseline_panel14/qwen_nla_calibration/alpha_summaries.json",
+        "baseline_panel14/gemma_nla_calibration/alpha_summaries.json"
+      ]
+    },
+    {
+      "id": "qwen-discovery500",
+      "status": "bundled",
+      "paper_labels": ["tab:discovery500-summary", "fig:discovery500"],
+      "claim": "Qwen AV-edit discovery classifications over all 500 concepts.",
+      "sources": [
+        "qwen2.5-7b/av_edit_discovery500_2026-08-11/summary.json",
+        "qwen2.5-7b/av_edit_discovery500_2026-08-11/transcripts.json",
+        "qwen2.5-7b/av_edit_discovery500_2026-08-11/protocol.json"
+      ]
+    },
+    {
+      "id": "qwen-confirmation30",
+      "status": "bundled",
+      "paper_labels": ["tab:confirmation30-all", "fig:confirmation30", "tab:confirmed", "fig:confirmed14"],
+      "claim": "Held-out confirmation of 30 Qwen candidates and selection of the 14-concept panel.",
+      "sources": [
+        "qwen2.5-7b/av_edit_confirmation30_2026-08-11/confirmation_summary.json",
+        "qwen2.5-7b/av_edit_confirmation30_2026-08-11/transcripts.json",
+        "qwen2.5-7b/av_edit_confirmation30_2026-08-11/protocol.json"
+      ]
+    },
+    {
+      "id": "method-specific-selection",
+      "status": "bundled",
+      "paper_labels": ["fig:v2-discovery500", "tab:v2-summary"],
+      "claim": "DiffMean-500 discovery and NLA reverse-confirmation on DiffMean's six leading non-overlapping Qwen picks.",
+      "sources": [
+        "qwen2.5-7b/diffmean_discovery500_2026-08-15_merged/summary.json",
+        "qwen2.5-7b/diffmean_discovery500_2026-08-15_merged/transcripts.json",
+        "qwen2.5-7b/av_edit_confirm_diffmean_top6_2026/summary.json",
+        "qwen2.5-7b/av_edit_confirm_diffmean_top6_2026/confirmation_summary_retro.json"
+      ]
+    },
+    {
+      "id": "direction-geometry",
+      "status": "bundled",
+      "paper_labels": ["sec:what-discovered", "sec:diagnostics"],
+      "claim": "Within-concept and cross-concept direction cosine diagnostics.",
+      "sources": [
+        "qwen2.5-7b/av_edit_confirmation30_2026-08-11/jspace14_geometry.json",
+        "qwen2.5-7b/av_edit_confirmation30_2026-08-11/jspace14_readout_alpha0.01.json",
+        "cross_model_extended_2026-08-08/qwen/results/jspace_cross_concept.json",
+        "cross_model_extended_2026-08-08/gemma/results/jspace_cross_concept.json"
+      ]
+    },
+    {
+      "id": "injection-position-and-reframing",
+      "status": "bundled",
+      "paper_labels": ["tab:position", "tab:turn-position", "tab:reframing", "fig:v2-drift"],
+      "claim": "Casino injection-position, energy-matching, wording, and literal-free thematic-drift diagnostics.",
+      "sources": [
+        "cross_model_extended_2026-08-08/summary_metrics.json",
+        "cross_model_extended_2026-08-08/qwen/results/turn_position_c3_constant_per_token.json",
+        "cross_model_extended_2026-08-08/gemma/results/turn_position_c3_constant_per_token.json",
+        "cross_model_extended_2026-08-08/qwen/results/reframing_c3.drift_judge.json",
+        "cross_model_extended_2026-08-08/gemma/results/reframing_c3.drift_judge.json"
+      ]
+    },
+    {
+      "id": "unembedding-projection-panel14",
+      "status": "bundled",
+      "paper_labels": ["fig:v2-unembedding", "tab:unembedding-percept"],
+      "claim": "Per-concept target-token unembedding percentile lift on both panel-14 models.",
+      "sources": [
+        "qwen2.5-7b/unembedding_projection_2026-08-15/unembedding_projection.json",
+        "gemma3-12b/unembedding_projection_2026-08-15/unembedding_projection.json"
+      ]
+    },
+    {
+      "id": "sae-panel14",
+      "status": "bundled",
+      "paper_labels": ["fig:v2-sae-sweep", "tab:v2-summary"],
+      "claim": "SAE panel-14 baseline results and coefficient sweeps on Qwen and Gemma.",
+      "sources": [
+        "qwen2.5-7b/sae_baseline_2026-08-15/summary.json",
+        "gemma3-12b/sae_baseline_2026-08-15/summary.json",
+        "qwen2.5-7b/sae_alpha_sweep_2026-08-16/sweep_results.json",
+        "gemma3-12b/sae_alpha_sweep_2026-08-16/sweep_results.json"
+      ]
+    },
+    {
+      "id": "loreft-panel14",
+      "status": "bundled",
+      "paper_labels": ["fig:v2-reft", "tab:v2-summary"],
+      "claim": "LoReFT held-out panel-14 results on Qwen and Gemma.",
+      "sources": [
+        "qwen2.5-7b/reft_baseline_2026-08-15/summary.json",
+        "qwen2.5-7b/reft_baseline_2026-08-15/transcripts.json",
+        "gemma3-12b/reft_baseline_2026-08-15/summary.json",
+        "gemma3-12b/reft_baseline_2026-08-15/transcripts.json"
+      ]
+    },
+    {
+      "id": "confirmation-axbench-rescore",
+      "status": "bundled",
+      "paper_labels": ["fig:v2-axbench-judge", "tab:v2-summary"],
+      "claim": "Frozen three-arm AxBench judge rescore of Qwen and Gemma confirmation responses.",
+      "sources": [
+        "qwen2.5-7b/av_edit_confirmation30_2026-08-11/axbench_lm_judge_rescore.json",
+        "qwen2.5-7b/av_edit_confirmation30_2026-08-11/axbench_lm_judge_rescore.summary.json",
+        "gemma3-12b/av_edit_confirmation30_2026_merged/axbench_lm_judge_rescore.json",
+        "gemma3-12b/av_edit_confirmation30_2026_merged/axbench_lm_judge_rescore.summary.json"
+      ]
+    },
+    {
+      "id": "independent-gemma-panel10",
+      "status": "bundled",
+      "paper_labels": ["tab:gemma-independent", "fig:gemma-gap-closure", "fig:gemma-panel10-compared at equal output quality"],
+      "claim": "Gemma-selected panel-10 baseline comparison, unified quality rescore, and NLA held-out evaluation.",
+      "sources": [
+        "final_gemma_replication_2026/summary.json",
+        "gemma3-12b/baseline_gemma10_2026/matched_panel/results.json",
+        "gemma3-12b/baseline_gemma10_2026/nla/transcripts.json",
+        "gemma3-12b/baseline_gemma10_2026/prompting/results_matched_unsteered.json",
+        "gemma3-12b/baseline_gemma10_2026/unified_quality/summary.json"
+      ]
+    },
+    {
+      "id": "independent-gemma-gap-closure",
+      "status": "bundled",
+      "paper_labels": ["fig:gemma-gap-closure", "fig:gemma-panel10-compared at equal output quality"],
+      "claim": "Panel-10 SAE, unembedding, reverse selection, NLA coefficient sweep, and c137 reframing checks.",
+      "sources": [
+        "gemma3-12b/sae_alpha_sweep_gemma10_2026/sweep_results.json",
+        "gemma3-12b/unembedding_projection_gemma10_2026/summary.json",
+        "gemma3-12b/av_edit_confirm_diffmean_top6_gemma_2026/confirmation_summary.json",
+        "gemma3-12b/nla_alpha_sweep_gemma10_2026/alpha_summaries.json",
+        "gemma3-12b/reframing_c137_gemma10_2026/reframing_c137.drift_judge.json"
+      ]
+    },
+    {
+      "id": "independent-gemma-discovery-confirmation",
+      "status": "bundled",
+      "paper_labels": ["sec:gemma-independent", "sec:ledger"],
+      "claim": "Gemma-native 500-concept discovery and 30-candidate confirmation underlying the independent panel-10.",
+      "sources": [
+        "gemma3-12b/discovery500_full_2026_merged/summary.json",
+        "gemma3-12b/discovery500_full_2026_merged/transcripts.json",
+        "gemma3-12b/av_edit_confirmation30_2026_merged/confirmation_summary.json",
+        "gemma3-12b/av_edit_confirmation30_2026_merged/transcripts.json"
+      ]
+    },
+    {
+      "id": "factuality-three-arm",
+      "status": "bundled",
+      "paper_labels": ["tab:factual-three-arm", "sec:factual"],
+      "claim": "Two-judge factuality, relevance, fluency, repetition, and usability scores on matched Qwen triples.",
+      "sources": [
+        "baseline_panel14/reliability_v1/factuality_three_arm.json",
+        "baseline_panel14/reliability_v1/two_judge_scores.json"
+      ]
+    },
+    {
+      "id": "human-rubric-56",
+      "status": "bundled",
+      "paper_labels": ["sec:human-rubric"],
+      "claim": "Human-only usability, fluency, relevance, factuality, and repetition labels for 56 rubric records.",
+      "sources": [
+        "baseline_panel14/reliability_v1/human_scores_only_56.json"
+      ]
+    },
+    {
+      "id": "gemma-six-ar-delta",
+      "status": "bundled",
+      "paper_labels": ["tab:gemma-six", "tab:ar-delta-examples"],
+      "claim": "Separate six-concept Gemma AR-delta expansion.",
+      "sources": [
+        "cross_model_extended_2026-08-08/gemma/results/axbench_diverse6.json",
+        "cross_model_extended_2026-08-08/gemma/results/axbench_diverse6_strict_metrics.json"
+      ]
+    },
+    {
+      "id": "qualitative-av-edit-examples",
+      "status": "bundled",
+      "paper_labels": ["tab:examples"],
+      "claim": "Verbatim Qwen confirmation and earlier Gemma layer-32 transfer examples.",
+      "sources": [
+        "qwen2.5-7b/av_edit_confirmation30_2026-08-11/transcripts.json",
+        "gemma3-12b/av_edit_positive14_layer32_2026-08-11/results.json",
+        "gemma3-12b/av_edit_positive14_layer32_2026-08-11/results.av_edits.json"
+      ]
+    },
+    {
+      "id": "outcome-blind-axb44",
+      "status": "bundled",
+      "provenance_source": "daniel_experiment_workspace",
+      "paper_labels": ["fig:headline-results", "tab:axb44-protocol", "tab:axb44-components", "tab:axb44-primary", "fig:axb44-outcome-blind", "tab:axb44-strict-sensitivity", "fig:axb44-tracks", "fig:axb44-concepts", "tab:axb44-examples"],
+      "claim": "Outcome-blind ten-concept campaign and judge results.",
+      "sources": [
+        "outcome_blind_axb44/provenance.json",
+        "outcome_blind_axb44/archives/axb44-688f4c1-qwen-complete.tar.gz",
+        "outcome_blind_axb44/archives/axb44-688f4c1-qwen-complete.tar.gz.sha256",
+        "outcome_blind_axb44/archives/axb44-688f4c1-gemma-complete.tar.gz",
+        "outcome_blind_axb44/archives/axb44-688f4c1-gemma-complete.tar.gz.sha256",
+        "outcome_blind_axb44/derived/analysis.json",
+        "outcome_blind_axb44/strict_lexical/strict_blind10.json",
+        "outcome_blind_axb44/strict_lexical/strict_blind10_records.jsonl",
+        "outcome_blind_axb44/strict_lexical/score_blind10_strict.sealed.py",
+        "outcome_blind_axb44/figure_source/generate_chosen_in_advance_headline.py",
+        "outcome_blind_axb44/figure_source/chosen_in_advance_analysis.json",
+        "outcome_blind_axb44/figure_source/fig_chosen_in_advance_headline_data.csv"
+      ]
+    },
+    {
+      "id": "localized-language-edits",
+      "status": "not_available_in_source",
+      "paper_labels": ["fig:language-position-main", "fig:language-position-steering", "fig:language-position-steering-q2", "tab:localized-examples"],
+      "claim": "Qwen/Gemma localized translation edits on two calculus prompts.",
+      "sources": [],
+      "note": "The paper figures exist, but their raw generation logs are not in natural_language_autoencoders."
+    },
+    {
+      "id": "selected-panel-judge-council",
+      "status": "bundled",
+      "provenance_source": "daniel_experiment_workspace",
+      "paper_labels": ["tab:panel14-gpt4omini", "tab:panel14-council"],
+      "claim": "Primary and robustness judge ratings over selected-panel saved outputs.",
+      "sources": [
+        "selected_panel_judge_council/provenance.json",
+        "selected_panel_judge_council/raw/panel14_judge_gpt4omini.json",
+        "selected_panel_judge_council/raw/panel14_judge_haiku.json",
+        "selected_panel_judge_council/raw/panel14_judge_luna.json",
+        "selected_panel_judge_council/summaries/panel14_judge_gpt4omini.summary.json",
+        "selected_panel_judge_council/summaries/panel14_judge_haiku.summary.json",
+        "selected_panel_judge_council/summaries/panel14_judge_luna.summary.json",
+        "selected_panel_judge_council/sealed_v2/panel14_manifest.json",
+        "selected_panel_judge_council/sealed_v2/judge_panel14_v2.py",
+        "selected_panel_judge_council/sealed_v2/judge.py",
+        "selected_panel_judge_council/sealed_v2/axbench_judge_templates.py",
+        "selected_panel_judge_council/sealed_v2/protocol.py",
+        "selected_panel_judge_council/sources/qwen_results.json",
+        "selected_panel_judge_council/sources/qwen_nla.json",
+        "selected_panel_judge_council/sources/gemma_results.json",
+        "selected_panel_judge_council/sources/gemma_nla.json"
+      ]
+    },
+    {
+      "id": "emoji-freeform",
+      "status": "bundled",
+      "provenance_source": "daniel_experiment_workspace",
+      "paper_labels": ["tab:freeform-summary", "fig:emoji-freeform", "fig:emoji-dose", "tab:emoji", "tab:emoji-example"],
+      "claim": "Qwen/Gemma freeform emoji construction, calibration, held-out evaluation, and examples.",
+      "sources": [
+        "freeform_emoji/provenance.json",
+        "freeform_emoji/archives/emoji-crossmodel-d6d17af-complete.tar.gz",
+        "freeform_emoji/archives/emoji-crossmodel-d6d17af-complete.tar.gz.sha256",
+        "freeform_emoji/archives/gemma3-12b-d0679f6-complete.tar.gz",
+        "freeform_emoji/archives/gemma3-12b-d0679f6-complete.tar.gz.sha256",
+        "freeform_emoji/derived/analysis.json"
+      ]
+    },
+    {
+      "id": "wordle-freeform",
+      "status": "bundled",
+      "provenance_source": "daniel_experiment_workspace",
+      "paper_labels": ["tab:wordle-detailed", "fig:wordle-dwelling"],
+      "claim": "Exploratory Qwen/Gemma Wordle contrast studies.",
+      "sources": [
+        "freeform_wordle/provenance.json",
+        "freeform_wordle/derived/wordle2_report.md",
+        "freeform_wordle/vectors/wordle_build_report.json",
+        "freeform_wordle/vectors/wordle_substrate.npz",
+        "freeform_wordle/vectors/wordle_vectors.npz",
+        "freeform_wordle/raw/qwen_early/wcrank-semantic_20260801-055558.json",
+        "freeform_wordle/raw/qwen_early/wcrank-verb_20260801-055417.json",
+        "freeform_wordle/raw/qwen_wordle2/wordle2-census_20260814-215657.json",
+        "freeform_wordle/raw/qwen_wordle2/wordle2-ff-dwell_20260814-221813.json",
+        "freeform_wordle/raw/qwen_wordle2/wordle2-random_20260814-220006.json",
+        "freeform_wordle/raw/gemma/gcore-census-wordle_20260815-035050.json",
+        "freeform_wordle/raw/gemma/gcore-g-dwell_20260815-090810.json",
+        "freeform_wordle/raw/gemma/gcore-random-wordle_20260815-042312.json"
+      ]
+    }
+  ]
+}

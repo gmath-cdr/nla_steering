@@ -1,0 +1,110 @@
+schema: emoji-replication-preregistration/v1
+study_id: qwen-l20-emoji-construction-replication-v1
+status: draft_pending_human_prompt_review
+created: '2026-08-24'
+source_manifest: source_manifest.yaml
+prompt_bank: prompts.draft.yaml
+
+scientific_question: >-
+  Among four frozen historically active emoji-targeting directions, which
+  increase Unicode emoji presence on unseen prompts beyond paired alpha zero
+  and the mean of three isotropic random directions, while passing frozen
+  degeneration and instruction-quality gates?
+
+runtime:
+  model_key: qwen
+  space_id: qwen2.5-7b-instruct.resid-post.L20.d3584
+  layer: 20
+  hidden_width: 3584
+  mode: all
+  scaling_rule: relative_token_l2
+  temperature: 0.7
+  max_new_tokens: 96
+  seed_scheme: prompt_offset_v1
+  seed_offsets: {calibration: 10000, evaluation: 20000, transfer: 30000}
+  samples_per_prompt: {calibration: 3, evaluation: 4, transfer: 2}
+
+primary_treatments: [av_emoji, av_glyph, av_phrase, ar_freeform]
+active_specificity_control:
+  arm: av_excited
+  alpha_source: av_emoji
+controls:
+  baseline: baseline
+  random_arms:
+    - {id: random_101, direction_seed: 101}
+    - {id: random_202, direction_seed: 202}
+    - {id: random_303, direction_seed: 303}
+  randoms_are_never_optimized: true
+
+prompt_design:
+  calibration: {required_prompts: 6, categories: {casual_social: 2, advice_planning: 2, descriptive_creative: 2}}
+  evaluation: {required_prompts: 16, categories: {casual_social: 4, advice_planning: 4, descriptive_creative: 4, recommendation_information: 4}}
+  transfer: {required_prompts: 12, categories: {formal_professional: 4, factual_technical: 4, format_precision: 4}}
+  tracks_are_never_pooled: true
+  historical_prompts_forbidden: true
+  construction_prompt_forbidden: true
+  target_words_and_pictographs_forbidden: true
+  review_requirement: two_independent_human_reviews_plus_adjudication
+
+calibration:
+  alphas: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6]
+  primary_metric: target_present
+  pairing_unit: prompt_id_x_generation_seed
+  prompt_weighting: equal_after_averaging_seeds
+  safety_passing_fraction: 0.90
+  choose: smallest_safe_alpha_within_tolerance_of_best
+  tolerance: max_0.02_presence_units_or_5_percent_of_best
+  minimum_mean_presence_increase: 0.10
+  minimum_positive_prompt_blocks: 4
+  failed_arm_policy: lock_as_failed_do_not_drop
+
+target_metric:
+  schema: target-metric/v1
+  kind: emoji_clusters
+  minimum_presence_count: 1
+
+safety_gate:
+  minimum_safe_output_fraction: 0.90
+  minimum_unicode_words: 12
+  minimum_length_fraction_of_paired_baseline: 0.50
+  minimum_unique_unicode_word_ratio: 0.25
+  maximum_token_run: 4
+  maximum_dominant_token_fraction: 0.20
+  maximum_character_run: 8
+  maximum_replacement_characters: 0
+  maximum_emoji_clusters: 6
+  maximum_emoji_to_word_fraction: 0.10
+  reject_hit_max_new_tokens: true
+
+instruction_quality_gate:
+  status: locked_pending_raters
+  rubric_id: blinded-instruction-quality/v1
+  sample_rule: lowest_seed_per_prompt_x_arm_at_alpha_zero_and_locked_alpha
+  raters: 2
+  minimum_acceptable_fraction: 0.90
+  maximum_decline_percentage_points: 10
+  unacceptable_if: relevance_or_fluency_equals_zero
+
+analysis:
+  schema: emoji-replication-heldout/v1
+  bootstrap_unit: prompt_id
+  bootstrap_draws: 10000
+  bootstrap_seed: 20260824
+  primary_effect_vs_baseline: paired_presence_treatment_minus_alpha_zero
+  primary_effect_vs_random: paired_treatment_effect_minus_mean_of_three_random_effects
+  p_value: maximum_of_one_sided_exact_prompt_signflip_p_values
+  multiplicity: Holm_across_four_primary_claims
+  alpha_zero_text_must_match_across_arms: true
+
+compute_budget:
+  calibration_records: 504
+  calibration_baseline_census_records: 18
+  maximum_evaluation_records: 1664
+  maximum_transfer_records: 624
+  maximum_total_records: 2810
+  canary_records_outside_research_corpus: 2
+
+open_decisions:
+  - Complete two independent pre-output prompt reviews and adjudication.
+  - Run the two-record infrastructure canary on the pinned pod checkpoint.
+  - Implement and test sealed alpha selection and held-out evaluation receipts.

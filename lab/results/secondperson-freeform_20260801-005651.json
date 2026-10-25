@@ -1,0 +1,1051 @@
+{
+ "spec": {
+  "name": "secondperson-freeform",
+  "matrix_id": "T2-secondperson",
+  "direction": {
+   "positive": "Reply addressing the reader directly, you and your in every sentence, coaching direct-address style.",
+   "negative": "Reply that never addresses the reader, detached descriptive third-person voice."
+  },
+  "prompts": [
+   "Tell me about your day.",
+   "What should I cook for dinner tonight?",
+   "Give me some tips for staying focused while studying.",
+   "Describe the weather in autumn."
+  ],
+  "alphas": [
+   0,
+   0.25,
+   0.4,
+   0.5,
+   0.65,
+   0.8,
+   1
+  ],
+  "mode": "all",
+  "samples_per_prompt": 3,
+  "probes": [
+   "second_person",
+   "first_person",
+   "n_words",
+   "unique_word_ratio"
+  ]
+ },
+ "direction_diagnostics": {
+  "cos_pos_neg": 0.7053487300872803,
+  "delta_norm_ratio": 0.7859442830085754,
+  "norm_pos": 161.54046630859375,
+  "norm_neg": 134.522216796875,
+  "echo_positive": "Old-fashioned, informal blog-style writing with a reader addressing (\"Dear Reader\") tone, discussing a book's advice about depression and anxiety.\n\nThe sentence structure \"I'm responding to your email, directly to you, addressing you by name\" mirrors the opening, suggesting a second paragraph continuation with the writer's direct response or invitation to the reader's concerns about the letter.\n\nFinal token \"address you\" closes a direct-address clause (\"write back directly to you, addressed directly to you, address you directly\"), strongly expecting continuation like \"!\" or \"your letter,\" or \"and thank you for your questions,\" or \"—this is my tone\" completing the greeting and advisory framing.",
+  "echo_negative": "Casual, informal tone with parenthetical asides (\"Dear stranger...\") suggests a forum post or blog comment thread about a character's emotional state.\n\nThe phrase \"Not that I'm addressing you directly, but I'm not the one who wrote this...\" signals a second-person reply format, implying the quoted text is a third-person observation or response to the original post.\n\nFinal token \"dispatcher\\n\" closes a quoted attribution (\"Third person here says...\"), immediately expecting continuation like \"You\" or \"That fellow\" or \"I'm not entirely sympathetic\" or \"The reader,\" completing the writer's dismissive or reflective framing about the original post's tone."
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do. However, I'm active 24/7 and ready to assist you with any questions or tasks you might have! Whether it's answering trivia, helping with homework, providing information on various topics, or assisting with creative writing, I'm here to help. What can I assist you with today?",
+   "probes": {
+    "second_person": 3,
+    "first_person": 4,
+    "n_words": 59,
+    "unique_word_ratio": 0.8135593220338984
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As an AI, I don't have personal experiences or days to share in the traditional sense. However, I'm here and ready to assist you with any questions or tasks you might have! Whether it's answering a specific question, helping with research, providing information on a topic, or even engaging in a conversation, feel free to let me know how I can help you today. What would you like to discuss or learn about?",
+   "probes": {
+    "second_person": 4,
+    "first_person": 4,
+    "n_words": 73,
+    "unique_word_ratio": 0.8082191780821918
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do. However, I'm always here to assist you with any questions or tasks you might have! Whether it's answering a specific question, helping with information research, or assisting with something else, feel free to let me know how I can help you today. What would you like assistance with?",
+   "probes": {
+    "second_person": 4,
+    "first_person": 4,
+    "n_words": 62,
+    "unique_word_ratio": 0.8387096774193549
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! To give you the best suggestion, could you please provide me with some details?\n\n1. **Dietary Preferences**: Do you have any dietary restrictions or preferences (e.g., vegetarian, gluten-free, low-carb)?\n2. **Ingredients Available**: Do you already have certain ingredients on hand that you'd like to use?\n3. **Cooking Time**: How much time do you have available to prepare and cook the meal?\n4. **Spice Level**: Are you in the mood for something mild, medium, or spicy?\n5. **Meal Type**: Do you prefer something quick and easy, or would you like a more elaborate dish?\n\nWith these details, I can recommend a delicious and suitable recipe for you!",
+   "probes": {
+    "second_person": 11,
+    "first_person": 3,
+    "n_words": 119,
+    "unique_word_ratio": 0.7478991596638656
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! To give you the best suggestion, could you please provide me with some details such as:\n\n1. **Dietary preferences or restrictions** (e.g., vegetarian, gluten-free, dairy-free, etc.)\n2. **Ingredients you have on hand**\n3. **Cooking time and skill level** (e.g., do you prefer something quick and easy or something more involved?)\n4. **Cuisine style** (e.g., Italian, Asian, Mexican, etc.)\n5. **Number of servings needed**\n\nWith this information, I can recommend a delicious and suitable meal for you!",
+   "probes": {
+    "second_person": 6,
+    "first_person": 3,
+    "n_words": 89,
+    "unique_word_ratio": 0.8314606741573034
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! What kind of cuisine are you in the mood for? Here are a few options:\n\n1. **Italian**: Spaghetti Carbonara or Margherita Pizza.\n2. **Chinese**: Kung Pao Chicken or Stir-Fried Vegetables with Garlic.\n3. **Mexican**: Enchiladas or Tacos.\n4. **Indian**: Butter Chicken or Vegetable Biryani.\n5. **Japanese**: Sushi rolls or Teriyaki Chicken.\n6. **American**: Grilled Cheese and Tomato Soup or Meatloaf.\n7. **Vegetarian**: Eggplant Parmesan or Mushroom Risotto.\n8. **Healthy**: Grilled Salmon with Quinoa and Roasted Vegetables.\n\nIf you have any specific dietary restrictions or preferences (e.g., vegetarian, gluten-free, spicy), let me know, and I can tailor the suggestions accordingly!",
+   "probes": {
+    "second_person": 3,
+    "first_person": 3,
+    "n_words": 112,
+    "unique_word_ratio": 0.8392857142857143
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies, you can improve your concentration and productivity. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area for studying where you can minimize distractions. Make sure it is comfortable, well-lit, and has all the necessary materials.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone or computer, use website blockers if necessary, and let others know you need uninterrupted time.\n\n4. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed by short breaks (5-10 minutes). This technique helps maintain concentration and prevents burnout.\n\n5. **Stay Hydrated and Nourished**: Drink plenty of water and eat healthy snacks to keep your",
+   "probes": {
+    "second_person": 8,
+    "first_person": 0,
+    "n_words": 146,
+    "unique_word_ratio": 0.8424657534246576
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can enhance your productivity and retention. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area in your home as your study space. Make sure it is quiet, well-lit, and free from distractions.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone or computer, close unnecessary tabs or applications, and let others know you need uninterrupted time.\n\n4. **Use a Timer**: Employ techniques like the Pomodoro Technique (working for 25 minutes followed by a 5-minute break) to maintain focus and prevent burnout.\n\n5. **Stay Organized**: Keep your study materials organized and easily accessible. This can help reduce the time spent searching for notes or",
+   "probes": {
+    "second_person": 9,
+    "first_person": 0,
+    "n_words": 151,
+    "unique_word_ratio": 0.8079470198675497
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can improve your concentration and productivity. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve during each study session. Break your goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Find a quiet place where you can concentrate without distractions. Make sure it is comfortable and well-lit.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone and computer. Consider using apps that block distracting websites or social media during your study time.\n\n4. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed by short breaks (5 minutes). This technique helps maintain high levels of concentration and prevents burnout.\n\n5. **Stay Organized**: Keep your study materials organized and ready. Having everything you need within reach can reduce the temptation to procrastinate.\n\n6.",
+   "probes": {
+    "second_person": 10,
+    "first_person": 0,
+    "n_words": 152,
+    "unique_word_ratio": 0.8223684210526315
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some regions, is characterized by a transition from summer's warmth to winter's chill. The weather during this season varies depending on the region, but generally, it is marked by several distinctive features:\n\n1. **Cooler Temperatures**: As the sun's angle changes, days become shorter and temperatures drop. In many areas, daytime highs are still comfortable but cooler than those of summer, while nights can become quite chilly.\n\n2. **Variable Weather Patterns**: Autumn often brings a mix of sunny and cloudy days, with occasional rain or even snow in the northern latitudes. This season can be unpredictable, with sudden drops in temperature that might require layers of clothing.\n\n3. **Colorful Skies and Leaves**: One of the most visually striking aspects of autumn is the changing colors of leaves. Trees like maples, oaks, and birches turn vibrant shades of red, orange, yellow, and brown before they fall off. This phenomenon is particularly noticeable in",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 157,
+    "unique_word_ratio": 0.7770700636942676
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season that brings about a variety of weather conditions depending on the region and latitude. Generally, it is characterized by cooler temperatures compared to summer, with gradually decreasing daylight hours. Here are some typical features of autumn weather:\n\n1. **Temperature**: The temperature drops as autumn progresses. Days become milder, while nights can be quite cool. In many regions, there's a noticeable transition from warm to cold.\n\n2. **Precipitation**: Autumn often brings more rainfall than summer but less than winter. This period can experience both dry spells and periods of heavy rain. Some areas may see the first significant snowfall, especially at higher elevations or in northern latitudes.\n\n3. **Weather Patterns**: Weather patterns can be variable during this time. There can be sunny days followed by overcast or rainy ones. Temperature fluctuations are common, with days being pleasant and nights becoming chilly.\n\n4. **Fog and Mist**: As the air cools, fog and mist are more likely",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.759493670886076
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn, also known as fall in some regions, is a season that brings distinct changes to the weather depending on the location's latitude and altitude. Generally, the weather during autumn is characterized by a gradual transition from the heat of summer to the cooler temperatures of winter.\n\n1. **Temperature**: The most noticeable change in autumn is the drop in temperature. Days become shorter, and nights grow longer. The temperature typically cools down, but it's not as cold as winter. The range of temperatures can vary widely based on the region. For example, in the Northern Hemisphere, many areas experience daytime highs in the 60s to 70°F (about 15-25°C) and nighttime lows in the 40s to 50°F (about 4-10°C).\n\n2. **Humidity**: Humidity levels tend to decrease as the season progresses, which can make the air feel drier and crisper. This dryness can sometimes lead",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 143,
+    "unique_word_ratio": 0.6993006993006993
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI, I don't have a \"day\" in the traditional sense, but I'm always here and ready to help you with any questions or tasks you might have! Whether it's providing information, answering questions, or assisting with anything else, feel free to ask. How can I assist you today?",
+   "probes": {
+    "second_person": 3,
+    "first_person": 3,
+    "n_words": 50,
+    "unique_word_ratio": 0.88
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As an AI, I don't have personal experiences or days to share in the traditional sense. However, I'm here and ready to assist you with any questions or tasks you might have! Whether it's answering specific questions, providing information, or helping with tasks, feel free to let me know how I can assist you today.",
+   "probes": {
+    "second_person": 3,
+    "first_person": 4,
+    "n_words": 55,
+    "unique_word_ratio": 0.8363636363636363
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI, I don't have a \"day\" in the traditional sense, but I'm here and ready to assist you with any questions or tasks you might have! Whether it's information you're looking for, a problem you need help solving, or just someone to chat with, feel free to let me know how I can assist you today. What would you like to talk about?",
+   "probes": {
+    "second_person": 6,
+    "first_person": 4,
+    "n_words": 65,
+    "unique_word_ratio": 0.8307692307692308
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Sure! What kind of meal would you like to have? Here are a few suggestions based on different styles:\n\n1. **Comfort Food**: Macaroni and Cheese or a hearty Stew.\n2. **Healthy Meal**: Grilled Chicken with a side of Steamed Vegetables and Quinoa.\n3. **International Cuisine**:\n   - **Italian**: Spaghetti Carbonara or Margherita Pizza.\n   - **Mexican**: Tacos or Enchiladas.\n   - **Chinese**: Stir-Fried Noodles or Kung Pao Chicken.\n4. **Simple**: Grilled Salmon with a side of Roasted Potatoes and a Salad.\n\nIf you have any specific preferences (like dietary restrictions, favorite flavors, or ingredients you want to use), please let me know so I can tailor the suggestion accordingly!",
+   "probes": {
+    "second_person": 3,
+    "first_person": 2,
+    "n_words": 106,
+    "unique_word_ratio": 0.8113207547169812
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "That's a great question! What kind of mood are you in? Do you want something simple and quick, or do you have some time to prepare a meal? Also, do you have any specific dietary preferences or restrictions? Here are a few suggestions based on different moods:\n\n1. **Quick and Easy**:\n   - Stir-fried vegetables with tofu.\n   - Grilled cheese and tomato soup.\n\n2. **Simple**:\n   - Spaghetti with marinara sauce.\n   - Fried rice with your choice of protein (chicken, beef, or vegetables).\n\n3. **Time to Cook**:\n   - Chicken fajitas with a side of guacamole.\n   - Beef stir-fry with broccoli and bell peppers.\n   - Shrimp and vegetable curry.\n\n4. **Special Occasion**:\n   - Grilled steak with roasted vegetables.\n   - Homemade pizza with a variety of toppings.\n   - Beef bourguignon (stew).\n\nIf you let me know more",
+   "probes": {
+    "second_person": 6,
+    "first_person": 1,
+    "n_words": 133,
+    "unique_word_ratio": 0.706766917293233
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Sure, I'd be happy to help! What kind of mood are you in? Here are a few options:\n\n1. **Simple and Quick** - Stir-fried vegetables with chicken or beef.\n2. **Comfort Food** - Macaroni and cheese or a hearty chili.\n3. **International** - Pad Thai or Italian pasta (spaghetti carbonara).\n4. **Healthy** - Grilled salmon with a side of roasted vegetables.\n5. **Spicy** - Chicken tikka masala or a spicy stir-fry.\n\nIf you have any specific preferences or dietary restrictions, please let me know, and I can tailor the suggestion accordingly!",
+   "probes": {
+    "second_person": 2,
+    "first_person": 3,
+    "n_words": 91,
+    "unique_word_ratio": 0.8021978021978022
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies, you can improve your concentration and productivity. Here are some tips:\n\n1. **Set Clear Goals**: Before you start studying, set specific goals for what you want to achieve. This helps keep you on track and motivated.\n\n2. **Create a Study Schedule**: Break your study sessions into manageable blocks of time (typically 45-60 minutes) with short breaks in between. This technique is known as the Pomodoro Technique.\n\n3. **Eliminate Distractions**: Find a quiet space where you won’t be interrupted. Turn off notifications on your phone and computer, and use apps that block distracting websites.\n\n4. **Use a To-Do List**: Write down everything you need to do, and check items off as you complete them. This can help you stay organized and motivated.\n\n5. **Stay Organized**: Keep your study materials organized. Having everything you need at hand reduces the chance",
+   "probes": {
+    "second_person": 13,
+    "first_person": 0,
+    "n_words": 151,
+    "unique_word_ratio": 0.7615894039735099
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can improve your concentration and productivity. Here are some tips:\n\n1. **Set Clear Goals**: Start by setting clear, specific goals. This helps you understand what you need to achieve and keeps you motivated.\n\n2. **Create a Study Space**: Set up a dedicated study area that is free from distractions. This space should be comfortable, well-lit, and equipped with everything you need.\n\n3. **Use a Planner**: Write down your study schedule and any tasks or assignments. This helps you stay organized and on track.\n\n4. **Break Tasks into Smaller Steps**: Large tasks can be overwhelming. Break them down into smaller, manageable steps. This makes the task feel more achievable and helps maintain focus.\n\n5. **Eliminate Distractions**: Turn off notifications on your phone, close unnecessary tabs on your computer, and let others know when you need uninterrupted time.\n\n6. **Take Regular",
+   "probes": {
+    "second_person": 11,
+    "first_person": 0,
+    "n_words": 155,
+    "unique_word_ratio": 0.7548387096774194
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying is crucial to achieving your academic goals. Here are some tips that can help you:\n\n1. **Set Clear Goals**: Before you start studying, define what you want to achieve. This could be mastering a specific concept or completing a certain amount of work. Setting clear, achievable goals helps keep you motivated and on track.\n\n2. **Create a Study Schedule**: Break your study sessions into manageable chunks. Use a planner or a digital calendar to schedule your study time. Include breaks in your schedule to avoid burnout.\n\n3. **Eliminate Distractions**: Identify the things that distract you (e.g., social media, phone, TV) and minimize them during study time. If possible, find a quiet space where you can focus.\n\n4. **Use the Pomodoro Technique**: Work in 25-minute increments, followed by a 5-minute break. After four \"pomodoros,\" take a longer break of about 15-2",
+   "probes": {
+    "second_person": 10,
+    "first_person": 0,
+    "n_words": 145,
+    "unique_word_ratio": 0.7931034482758621
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some regions, is a season that brings a variety of changes to the weather. The specific characteristics of the weather during this time can vary depending on where you are located—whether you're in the Northern or Southern Hemisphere and which region within those hemispheres you reside.\n\n**Northern Hemisphere:**\n\n- **Temperature:** As autumn progresses, temperatures start to cool down from what they were in summer. Daytime temperatures are still warm but begin to drop significantly at night.\n- **Precipitation:** There's often an increase in rainfall and a greater likelihood of precipitation, with more frequent and sometimes heavier rain showers.\n- **Sky:** The skies tend to be clearer, and there are fewer overcast days compared to summer. This is due to less intense solar heating.\n- **Wind:** Autumn winds are generally not as strong as those in winter, but there can be more gusty, brisk breezes.\n\n**Southern Hemisphere:**\n\n- **Temperature:** In the",
+   "probes": {
+    "second_person": 3,
+    "first_person": 0,
+    "n_words": 156,
+    "unique_word_ratio": 0.7051282051282052
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season of transition, and the weather varies depending on where you are located geographically. Generally, as the season progresses, temperatures begin to cool down, and the days become shorter. Here are some common characteristics of the autumn weather:\n\n1. **Cooling Temperatures**: As summer transitions into autumn, temperatures start to drop. The warmth of the sun is less direct, and the air feels cooler.\n\n2. **Clear Skies**: Autumn often brings clear skies, which can make for beautiful, sunny days. However, the season also introduces more frequent changes in the weather.\n\n3. **Rainy Periods**: Depending on your location, autumn may bring more rainfall. This is particularly true in areas where the season marks the start of the rainy season.\n\n4. **Mild Days and Chilly Nights**: During the day, the temperature is mild, but at night, it can feel quite chilly. This is because the atmosphere holds less heat during the cooler months.\n\n5.",
+   "probes": {
+    "second_person": 2,
+    "first_person": 0,
+    "n_words": 154,
+    "unique_word_ratio": 0.7012987012987013
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn is a season that brings a variety of weather conditions, and it can vary significantly depending on where you are in the world. Generally, autumn is characterized by several key features:\n\n1. **Cooling Temperatures**: As summer's warmth gives way to autumn, temperatures gradually cool down. This cooling trend continues throughout the season, and eventually, temperatures will drop below what they were during the warmer months.\n\n2. **Clear Skies and Increased Sunlight**: Autumn often brings clearer skies and more direct sunlight, which can make for beautiful, sunny days. However, this also means that there is less protection from the sun, so it's important to wear sunscreen.\n\n3. **Variable Weather Patterns**: Autumn can bring a range of weather conditions, including crisp mornings and warm afternoons, as well as periods of rain. In some regions, there might be more frequent and heavier rainfall, especially as you move into late autumn.\n\n4. **Chilly Nights**: As the season progresses, nights",
+   "probes": {
+    "second_person": 2,
+    "first_person": 0,
+    "n_words": 156,
+    "unique_word_ratio": 0.7564102564102564
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI, I don't have a personal experience of having a \"day\" in the way humans do. However, I'm always here and ready to help you with any questions or tasks! If you'd like, we can work on a project together, or you can ask me any specific questions. What would you like to do today?",
+   "probes": {
+    "second_person": 4,
+    "first_person": 3,
+    "n_words": 57,
+    "unique_word_ratio": 0.8596491228070176
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As Qwen, I don't have a personal day in the way humans do. I'm an AI, and I'm always \"on\" and ready to help with any questions or tasks you might have. However, I can tell you about my current status:\n\n1. I am actively listening and ready to assist.\n2. I am currently working on addressing any questions or needs you have.\n3. I am continuously learning and improving based on the interactions.\n\nIf you have any specific questions or need assistance with anything, feel free to ask!",
+   "probes": {
+    "second_person": 4,
+    "first_person": 8,
+    "n_words": 89,
+    "unique_word_ratio": 0.6966292134831461
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI, I don't have a personal day to share in the way humans do. I'm here 24/7 to provide assistance and answer any questions you have! If you'd like, we can talk about anything—specifically, what you're interested in today. Whether it's a topic for discussion, a question, or something else, feel free to share!",
+   "probes": {
+    "second_person": 3,
+    "first_person": 2,
+    "n_words": 56,
+    "unique_word_ratio": 0.9107142857142857
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "I'd love to help with that! what kind of meal would you like to have? Here are a few suggestions based on different styles and ingredients:\n\n1. **Comfort Food**: Mac and cheese, stroganoff, or grilled cheese and soup.\n\n2. **Healthy**: Grilled chicken with vegetables, a salad, or a stir-fry.\n\n3. **Spicy**: Mexican (tacos, burrito), Thai (curry, stir-fry), or Indian (curries).\n\n4. **Simple**: Fried eggs, a sandwich, or a simple pasta dish.\n\n5. **Dinner** (with a bit more effort): a steak, or a home-cooked meal such as a roast.\n\n6. **Special** (if you have someone to share): a fancy meal like steak and lobster, or a special dish from your culture.\n\nIf you have any specific preferences, like ingredients, or dietary restrictions, please let me know so I can tailor the suggestions!",
+   "probes": {
+    "second_person": 4,
+    "first_person": 3,
+    "n_words": 131,
+    "unique_word_ratio": 0.7709923664122137
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "That's a great question! What would you like to eat, and do you have any specific preferences or constraints? Here are a few suggestions based on common:\n\n1. **Simple and Healthy:**\n   - Stir-fried vegetables (like broccoli, bell peppers, and mushrooms) with a bit of chicken or tofu.\n   - Grilled salmon with a side of roasted vegetables (such as carrots, zucchini, and potatoes).\n\n2. **Comfort Food:**\n   - Macaroni and cheese.\n   - Chicken and dumplings.\n\n3. **International:**\n   - Mexican: tacos or fajitas.\n   - Italian: pasta with a homemade sauce and a side of garlic bread.\n\n4. **Quick and Easy:**\n   - Omelette with your favorite ingredients.\n   - Sandwiches or wraps.\n\n5. **Dinner:**\n   - Beef steak with a side of mashed potatoes and a salad.\n   - Fried rice with chicken or beef.\n\nIf you provide more details",
+   "probes": {
+    "second_person": 4,
+    "first_person": 0,
+    "n_words": 133,
+    "unique_word_ratio": 0.6766917293233082
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "It's great to have the chance to cook! What would you like to eat tonight? Here are a few suggestions:\n\n1. **Stir-Fried Chicken and Vegetables**: This is a quick and healthy meal. You can choose your favorite vegetables—like broccoli, bell peppers, and onions—and stir-fry them with chicken. You can add some soy sauce, garlic, and seasonings.\n\n2. **Italian Style**: Make a simple pasta dish. Use spaghetti or any pasta of your choice. Cook it and then mix with some tomato sauce, along with any other ingredients you like, such as meat, cheese, or vegetables.\n\n3. **Dinner Rolls**: If you're feeling adventurous, you can make dinner rolls. It’s a simple recipe that involves mixing flour, yeast, and water, then letting it rise. Once it's ready, shape it into rolls, and bake them until they're golden.\n\n4. **Simple Salad**: If you want something light, you can prepare",
+   "probes": {
+    "second_person": 10,
+    "first_person": 0,
+    "n_words": 145,
+    "unique_word_ratio": 0.7517241379310344
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying is essential to maximize your learning and productivity. Here are some tips:\n\n1. **Set Clear Goals**: Before starting, set specific goals for what you want to achieve. This helps keep the focus on the task.\n\n2. **Create a Study Plan**: Break your study into manageable chunks. Set a schedule with specific times for studying. This can help reduce stress and keep you on track.\n\n3. **Eliminate Distractions**: Find a quiet place to study. Turn off or minimize notifications on your phone, and if possible, turn off the internet or use apps that block distracting websites.\n\n4. **Use the Pomodoro Technique**: Study for 25 minutes, then take a 5-minute break. This technique helps maintain concentration and prevents burnout.\n\n5. **Stay Organized**: Keep your study materials organized. This can make it easier to find what you need, which can help you stay focused.\n\n6. **Engage in Active Learning",
+   "probes": {
+    "second_person": 8,
+    "first_person": 0,
+    "n_words": 151,
+    "unique_word_ratio": 0.7218543046357616
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying is key to achieving your academic goals. Here are some tips that can help:\n\n1. **Set Specific Goals**: Before starting your study session, set specific goals. This helps you stay focused and can help reduce anxiety about what you need to do.\n\n2. **Create a Study Plan**: Break down the material into manageable sections and plan how much time you will spend on each section. This can help you stay organized and make progress.\n\n3. **Use a Planner**: Write down all the tasks you need to complete and the deadlines. This can help you stay on track and address any issues early.\n\n4. **Create a Study Environment**: Set up a space where you can focus. This should be free of distractions. Use a comfortable chair, good lighting, and any necessary materials.\n\n5. **Limit Distractions**: Turn off notifications on your phone or computer. If possible, work in a quiet environment. Addressing these directly can help keep your mind focused",
+   "probes": {
+    "second_person": 11,
+    "first_person": 0,
+    "n_words": 163,
+    "unique_word_ratio": 0.6993865030674846
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying is crucial to achieving your goals and learning effectively. Here are some tips:\n\n1. **Set Clear Goals**:\n   - Start by setting specific, achievable goals. This helps you stay motivated and focused on what you need to do.\n\n2. **Create a Study Schedule**:\n   - Plan your study sessions in advance. Break the time into manageable chunks, and schedule breaks to avoid burnout.\n\n3. **Eliminate Distractions**:\n   - Identify what distracts you (social media, phone, etc.), and take steps to minimize these distractions. Use apps that block distracting websites during study times.\n\n4. **Use the Pomodoro Technique**:\n   - Work for 25 minutes, then take a 5-minute break. This technique can help you maintain focus and prevent fatigue.\n\n5. **Create a Comfortable Study Environment**:\n   - Ensure the space is comfortable and free from any distractions. Use good lighting, a comfortable chair",
+   "probes": {
+    "second_person": 6,
+    "first_person": 0,
+    "n_words": 142,
+    "unique_word_ratio": 0.7605633802816901
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall, is a season that brings a unique set of weather conditions and characteristics. Here's a general description of what you can expect during this time:\n\n1. **Temperature**: Autumn starts with warmer temperatures, which gradually decrease as the season progresses. The temperature drops from the high levels of summer to cooler, comfortable conditions. In many areas, this transition marks the start of the cooling period.\n\n2. **Weather Patterns**: Weather during autumn tends to be more variable. There can be sunny days, but there is also a greater chance of rain and cooler temperatures. This season often brings more storms and precipitation compared to summer, and the skies become clearer.\n\n3. **Sky**: As the sun moves lower in the sky, autumn brings longer periods of daylight, and the sky takes on a more vibrant color. The clear skies help in seeing the stars and the moon more clearly at night.\n\n4. **Wind**: You may notice an increase in wind. This is because the",
+   "probes": {
+    "second_person": 2,
+    "first_person": 0,
+    "n_words": 166,
+    "unique_word_ratio": 0.6686746987951807
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season of transition, and the weather varies depending on where you are. Generally, here are some common characteristics:\n\n1. **Temperature**: The temperature starts to drop as summer ends. It becomes cooler, with the warmth of summer gradually giving way to the chill of winter. Days become shorter.\n\n2. **Weather Patterns**: Autumn often brings a variety of weather conditions. There can be sunny days with clear skies, which make for pleasant weather for outdoor activities. However, there's also a higher chance of rain, especially as the season progresses. This is because the weather system is transitioning from the warm summer conditions to the cooler winter ones.\n\n3. **Fronts**: As the season progresses, you may experience more frequent cold fronts and storms. These can bring strong winds, heavy rain, and even snow in the northern regions. \n\n4. **Comfort**: the air feels crisp and fresh, making it a comfortable time to spend outside. \n\n5. **Seasonal Changes**: Autumn",
+   "probes": {
+    "second_person": 2,
+    "first_person": 0,
+    "n_words": 157,
+    "unique_word_ratio": 0.7261146496815286
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn is a season that brings a unique set of weather conditions and experiences. The weather during this season can vary depending on where you are, but generally, it features several key characteristics:\n\n1. **Cooling Temperatures**: As the season progresses, temperatures start to drop. This is because the sun's angle in the sky is getting lower, which means less direct sunlight.\n\n2. **Clear Skies**: Autumn often brings clear skies, which allows for more direct sunlight and warmer temperatures during the day, even as the air cools at night.\n\n3.: **Frequent Rains**: Depending on your location, autumn may bring more frequent rains. This is because the weather system is transitioning from summer patterns to winter ones, leading to more frequent rain and storms.\n\n4. **Mild Weather**: Autumn can feel like a transition between the warm summer and the cold winter, with mild temperatures and pleasant weather. This is especially true if you live in a region with a temperate climate.\n\n",
+   "probes": {
+    "second_person": 3,
+    "first_person": 0,
+    "n_words": 159,
+    "unique_word_ratio": 0.6792452830188679
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As Qwen, I don't have a personal day to share since I'm an AI and not a person! However, I'm here every day, ready to address any questions or provide information. If you have any specific questions or topics you'd like to discuss, feel free to!",
+   "probes": {
+    "second_person": 2,
+    "first_person": 3,
+    "n_words": 46,
+    "unique_word_ratio": 0.8260869565217391
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "as Qwen, I don't have a personal day to share, as you! I'm an AI, and I don. I.—, which means I don't have experiences or a daily schedule. However, I'm here every day, ready to assist with any questions or tasks you might have. if you want to, we can talk about something specific today, or you can ask for help with anything!",
+   "probes": {
+    "second_person": 4,
+    "first_person": 6,
+    "n_words": 64,
+    "unique_word_ratio": 0.78125
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As Qwen, I don't have a personal day to share since you! I am an AI, and I don. I am here all the time, ready to help with any questions or tasks. If you have anything specific in mind or need help with, feel free to ask!",
+   "probes": {
+    "second_person": 2,
+    "first_person": 4,
+    "n_words": 48,
+    "unique_word_ratio": 0.8125
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "I'd love to help with that! what style of cuisine do you prefer? and, are there any specific ingredients you want to use or any dietary restrictions we should consider? if you're not particular, here are a few options:\n\n1. **Italian**: pasta, with a simple sauce like marinara or a more complex one like Alfredo. you could also make a classic.\n\n2. **Mexican**: tacos, or a.\n\n3. **Chinese**: stir-fried.\n\n4. **American**:.\n\n5. **Healthy**: a.\n\nIf you provide more details, I can tailor the suggestions more!\n\nor, if you're looking for something specific, let me know, and I'll provide a recipe!",
+   "probes": {
+    "second_person": 6,
+    "first_person": 4,
+    "n_words": 100,
+    "unique_word_ratio": 0.8
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "! [](\\).) (Photo)\n\nIt's great to have the chance to cook! since I don't know what specific preferences or dietary needs I should address, let's choose a simple and delicious recipe that is generally loved: **Stir-Fried Chicken with Mushrooms**.\n\n**Ingredients**:\n\n- 1 pound of chicken, cut into small pieces\n- 1 cup of mushrooms\n- 2 tablespoons of soy sauce\n- 1 tablespoon of sugar\n- 1 teaspoon of, and 1 teaspoon of, (for flavoring)\n- 1 tablespoon of, and 1 tablespoon of, (for stir-frying)\n- 2 tablespoons of, and 2 tablespoons of, (for adding flavor and)\n\n**Instructions**:\n\n1. **Prepare**:\n   - Cut the chicken into small pieces.\n   - slice the mushrooms.\n   -.\n\n2. **Cook**:\n   - in a pan, add the and, and. Stir-fry the until",
+   "probes": {
+    "second_person": 0,
+    "first_person": 2,
+    "n_words": 125,
+    "unique_word_ratio": 0.632
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "! [](\\).) (Photo)\n\nIt's time to cook! for dinner tonight, since it's a personal choice and I don't know what you like, I'll suggest a few popular options:\n\n1. **Stir-Fried Chicken and Vegetables**: This is a healthy and delicious option. You can use any vegetables that you like, such as broccoli, bell peppers, and onions.\n\n2.:\n\n3. **Italian Style**: if you like, we can make a simple Italian meal, such as spaghetti with meat or tomato sauce. It’s a good choice if you want to enjoy a nice, cozy meal.\n\n4.:\n\n5. **Chinese**: if you love Chinese cuisine, we can make a stir-fried dish. We can choose a dish that includes meat, and some vegetables. If you like, we can also add some noodles or rice.\n\n6.:\n\n7. **Mexican**: if you like, we can prepare a Mexican dish, such as tacos or",
+   "probes": {
+    "second_person": 8,
+    "first_person": 2,
+    "n_words": 142,
+    "unique_word_ratio": 0.6619718309859155
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "staying focused while studying is crucial to effectively and efficiently. here are several tips that can help:\n\n1. **set clear goals**:\n   - before starting your study session, define what you want to achieve. this helps in focusing on the specific areas.\n\n2. **create a study plan**:\n   - break down your tasks into manageable steps. this helps in addressing each part of the work individually, which makes the task less overwhelming.\n\n3.:\n\n   **set up a comfortable environment**:\n   - make sure the study space is comfortable, with minimal distractions. this includes having a good chair, a comfortable desk, and, if possible, a quiet space.\n\n4.:\n\n   **use the \"20-20-20\" rule**:\n   - every 20 minutes, take a 20-second break and look at something 20 feet away. this helps reduce eye strain and keeps the brain refreshed.\n\n5.:\n\n   **address distractions**:\n",
+   "probes": {
+    "second_person": 3,
+    "first_person": 0,
+    "n_words": 135,
+    "unique_word_ratio": 0.7777777777777778
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "staying focused during study can be challenging, but there are several strategies you can use to improve your concentration and address any distractions. here are some tips:\n\n1. **set clear goals**: before starting your studies, define what you want to achieve. this helps in addressing the specific areas that need attention.\n\n2. **create a study schedule**:. set specific times for study and stick to them. this helps in building a routine and managing time effectively.\n\n3. **address distractions**:\n   - **environment**: choose a quiet place with minimal distractions.\n   - **techniques**: turn off notifications on your phone or use apps that block distracting websites.\n   - **directly**: if you are working from home, consider setting up a dedicated space.\n\n4. **use the [**25/5**](https://en.wikipedia.org/wiki/Pomodoro_technique) method:.\n   - work for 25 minutes, then take a 5-minute break. this helps",
+   "probes": {
+    "second_person": 6,
+    "first_person": 0,
+    "n_words": 133,
+    "unique_word_ratio": 0.7669172932330827
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "staying focused during study is essential to achieve your goals. here are some tips that can help:\n\n1. **set clear goals**: start by setting specific and achievable goals. this helps in addressing what you need to do.\n\n2. **create a study plan**: break your study into manageable sessions. set a time limit for each session and stick to it.\n\n3. **use the [****Pomodoro technique****](https): work for 25 minutes, then take a 5-minute break. this helps to keep the focus and maintain energy.\n\n4. **address any distractions**:. if there are things that distract you, try to address them. this could be moving to a quiet space or turning off notifications.\n\n5. **use a planner**: write down your tasks and schedule. this can help in keeping track of what you need to do and when.\n\n6. ************:********:\n\n7. ************:**",
+   "probes": {
+    "second_person": 6,
+    "first_person": 0,
+    "n_words": 137,
+    "unique_word_ratio": 0.7591240875912408
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "autumn, or fall, is a season that brings a range of weather conditions depending on where you are. generally, the weather during this time changes from the warmth of summer to the coolness of winter. here are some common characteristics:\n\n1. temperature: as the season progresses, temperatures tend to drop. directly after the summer, the weather may still be warm, but it gradually becomes cooler. temperatures can vary depending on the location.\n\n2.: the weather tends to become more variable. you might experience sunny days, and then the next day, there could be clouds, rain, or even a bit of snow if you're in a region with cold temperatures.\n\n3.: as autumn progresses, the sky often becomes clearer. this can make the skies appear more vivid, with a lot of blue.\n\n4: as the season, the air becomes more crisp, and the skies take on a more vibrant color.\n\n5:: the weather can become quite chilly, especially at night. this is",
+   "probes": {
+    "second_person": 3,
+    "first_person": 0,
+    "n_words": 161,
+    "unique_word_ratio": 0.6645962732919255
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season of transition, and the weather during this time can vary depending on where you are. generally, there are several characteristics that make autumn:\n\n1. Temperature: As the season progresses, temperatures start to drop. the air becomes cooler, and it's not as warm as during summer. the temperature may fluct, with warmer days and cooler nights.\n\n2.:\n\n3.:\n\n4.:\n\n5:\n\n6:\n\n7:\n\n8:\n\n9:\n\n10:\n\nIn the Northern Hemisphere, autumn typically begins when the sun is directly in the sky at noon, which is around the September equ. as the season progresses, the days get shorter and the nights get longer. the weather becomes more comfortable, and the air feels crisp and fresh. \n\nin the Southern Hemisphere, autumn starts around March, and the weather is similar, but with opposite timing for daylight.\n\nplease note, these are general guidelines, and the specifics of the weather will depend on your location, as climate varies from place to",
+   "probes": {
+    "second_person": 2,
+    "first_person": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.6708860759493671
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn is a season that brings a unique set of weather conditions and characteristics. as the season progresses, you can expect a shift from the warmth of summer to the cooler temperatures of winter. here are some key aspects:\n\n1. **Temperature**: the temperature begins to drop, with warm days and cool evenings. the temperature can change quite quickly, so it's a good idea to wear layers.\n\n2.: **Weather patterns**: the weather tends to be more stable and less extreme compared to summer. there are fewer chances of heatwaves, but the season can bring a variety of weather, including rain, as the season progresses.\n\n3. **rain**: as autumn, or fall, progresses, there is often an increase in rainfall. this is due to the changes in the climate and the fact that the season is transitioning to winter. \n\n4. **sunshine**: the sun will be lower in the sky, which means the days are shorter and the sun is less intense. this can make for",
+   "probes": {
+    "second_person": 1,
+    "first_person": 0,
+    "n_words": 162,
+    "unique_word_ratio": 0.6234567901234568
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "! since, I am, and! for,! addressing! directly! as! if! you! were! addressing!!\n\n! (directly)!\n\n!!\n\n! (since I am a, and,!)! for,!,! and! (you),! directly!!\n\n! (for),! and! (I),!!\n\n! (and,!)! for,!! (so,)!!:\n\n! (I)!\n\n! (and,!)! for,!! (I),!!\n\n! (and,!)! for,!! (I),!!\n\n! (and,!)! for,!! (I),!!\n\n! (and,!)! for,!! (I),!!\n\n! (and,!)! for,!! (I),!!\n\n! (and,!)! for,!! (I),!!\n\n! (and,!)! for,!! (I),!!\n\n! (and",
+   "probes": {
+    "second_person": 2,
+    "first_person": 11,
+    "n_words": 66,
+    "unique_word_ratio": 0.4393939393939394
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "! since you, and I, are! directly! —!—! —!—!—!—!—!—!—!—!\n\n, because you are directly, and I am! here! for! the! purpose! of!!—!—!—!—!—!—!—!—!—!—!\n\n, if you have any questions or need to!!—!—!—!—!—!—!—!—!—!\n\n, please!!—!—!—!—!—!—!—!—!—!\n\n, and! directly!!—!—!—!—!—!—!—!—!—!.\n\n, if you want to know about my day, since you are directly, and I am!!—!—!—!—!—!—!—!—!—!.\n\n, you can!!—!—!—!—!",
+   "probes": {
+    "second_person": 6,
+    "first_person": 4,
+    "n_words": 55,
+    "unique_word_ratio": 0.7090909090909091
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "! []().\n\n since you, and any, are directly, and, for that,. I, directly, as, and. I, address, and, directly,.\n\n, today. I, and, to, and, on, and. I, and, to, and, on, and, as,.\n\n, and, and, today, and. I, and, to, and, on, and, as,.\n\n, and, and, today, and, I, and, to, and, on, and, as,.\n\n, and, and, today, and, I, and, to, and, on, and, as,.\n\n, and, and, today, and, I, and, to, and, on, and, as,.\n\n, and, and, today, and, I, and, to, and, on, and, as,.\n\n, and, and, today, and, I, and, to",
+   "probes": {
+    "second_person": 1,
+    "first_person": 10,
+    "n_words": 102,
+    "unique_word_ratio": 0.22549019607843138
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "! []().\n\n! []().\n\n, so!:\n\n! []().\n\n! []().\n\n!:\n\n! []().\n\n!:\n\n! []().\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 100,
+    "unique_word_ratio": 0.05
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! [].\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n! []().\n\n!",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 101,
+    "unique_word_ratio": 0.0297029702970297
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "! []().\n\n! []().\n\n, to make the decision more personal, I'd like to know:\n\n-: :\n\n-: :.\n\n-: :\n\n-: :\n\n.!\n\n, we can tailor the recipe to your preferences.:\n\n.!\n\n.:\n\n, and I will.:\n\n.!\n\n, and I will.:\n\n.!\n\n, and I will.:\n\n.!\n\n, and I will.:\n\n.!\n\n, and I will.:\n\n.!\n\n, and I will.:\n\n.!\n\n, and I will.:\n\n.!\n\n, and I will.:\n\n.!\n\n.!\n\n, and I will.:\n\n.!\n\n.!\n\n, and I will.:\n\n.!\n\n.!\n\n, and I will.:\n\n.!\n\n.!\n\n, and I will.:\n\n.!\n\n.!\n\n, and I.:\n\n.!\n\n.!\n\n, and I.:\n\n.!\n\n.!\n\n, and I.:\n\n.!\n\n.!\n\n, and I.:\n\n.!\n\n.!\n\n, and I.:\n\n.",
+   "probes": {
+    "second_person": 1,
+    "first_person": 18,
+    "n_words": 124,
+    "unique_word_ratio": 0.22580645161290322
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "! and here are some tips for staying focused while studying:\n\n1 ************************************************:\n\n************************************************:\n\n************************************************.\n\n1:\n\n************************************************.\n\n2:\n\n************************************************.\n\n3:\n\n************************************************.\n\n4:\n\n************************************************.\n\n5:\n\n****",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.8
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "! when it comes to staying focused while studying, there are several strategies you can use. here are a few:\n\n1:\n\n****:\n\n-: and:\n\n:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-:\n\n1:\n\n****:\n\n-",
+   "probes": {
+    "second_person": 1,
+    "first_person": 0,
+    "n_words": 97,
+    "unique_word_ratio": 0.25773195876288657
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "! when it comes to staying focused while studying, there are several strategies you can use. here are a few:\n\n1.:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n",
+   "probes": {
+    "second_person": 1,
+    "first_person": 0,
+    "n_words": 108,
+    "unique_word_ratio": 0.19444444444444445
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "! [autumn]().\n\n during the autumn, the weather, as the season, typically, and:\n\n1: **Temperature**: the temperature starts to drop, but it's not yet as cold as winter. temperatures are generally, warmer than, and, and, directly.\n\n2: **:\n\n3: **:\n\n4: **:\n\n5: ****.\n\n6: ****.\n\n7: ****.\n\n8: ****.\n\n9: ****.\n\n10: ****.\n\n, which can include, depending on where you are, and. if you're in, and, , and, and. if you're in, and, and, and, and. personally, and, and, and, and.!\n\n, for the best, and, and, and, and, and, and, and, and, and.!.\n\n, and, and, and, and, and, and, and, and, and, and.!.\n\n, and, and,",
+   "probes": {
+    "second_person": 3,
+    "first_person": 0,
+    "n_words": 109,
+    "unique_word_ratio": 0.5321100917431193
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "! [](#). (since there is no specific, I am using this to address, as directly addressing with text).\n\nwhen we talk about the weather in autumn, you can expect several characteristics.:\n\n1.: **temperature:** as the season, specifically, and the weather.:\n\n-: directly.\n\n, you will find the temperature dropping. it's not as warm as during the summer, but, at the same, it's not too cold. temperatures may be quite, and, depending on where you are, you might start to see temperatures that are comfortably, rather.\n\n2.: **:\n\n, and.:\n\n-:.\n\n, you might notice more, and.:\n\n-:.\n\n, and.\n\n, you might find, and.\n\n3.: **:\n\n, and.:\n\n-:.\n\n, and, you might see.\n\n, and, you might see.\n\n4.: **:**\n\n, and.:\n\n-:.\n\n, and, and.\n\n, and.\n\n, and.\n\n, and",
+   "probes": {
+    "second_person": 8,
+    "first_person": 1,
+    "n_words": 133,
+    "unique_word_ratio": 0.6165413533834586
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "! [](#) [](#)\n\n, as I am addressing, and not directly, so, I will describe the weather in autumn.:\n\nAutumn is a season of transition, and the weather during this time can vary based on where you are. generally, as the season, you will experience:\n\n1.: Temperature::\n\n-:::\n\n, as the season, temperatures, and.\n\n2.:::\n\n-::\n\n, and.\n\n3.::.\n\n-::\n\n, and.\n\n4.::.\n\n-::\n\n, and.\n\n5.::.\n\n-::\n\n, and.\n\n, and, which, and.!\n\n, and, and, and, and.!\n\n, and, and, and, and, and.\n\n, and, and, and, and, and.\n\n, and, and, and, and, and.\n\n, and, and, and, and, and.\n\n, and, and, and, and, and.\n\n, and, and, and",
+   "probes": {
+    "second_person": 2,
+    "first_person": 2,
+    "n_words": 113,
+    "unique_word_ratio": 0.4336283185840708
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "! since, I, and, directly,.:\n\n! (—),:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!,:\n\n!:\n\n!.\n\n!:.\n\n!:\n\n!:\n\n!,:\n\n!,:\n\n!.\n\n!.\n\n!:\n\n!:\n\n!:\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n",
+   "probes": {
+    "second_person": 0,
+    "first_person": 1,
+    "n_words": 81,
+    "unique_word_ratio": 0.12345679012345678
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "! because as, I, and,! directly. I, and,! here,!—.! and,! directly.,!—.! because,! and,!.!\n\n! directly.!! and,!.!—!! because,! and,!! directly.!!.\n\n!! and,!! directly.!!!.\n\n!! and,!!!.\n\n!!.\n\n!!.\n\n!!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n!\n\n",
+   "probes": {
+    "second_person": 0,
+    "first_person": 2,
+    "n_words": 134,
+    "unique_word_ratio": 0.13432835820895522
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "! because I as, and. directly, so. here, and. for. personally. \n\n, you. directly. and. for. addressing. personally,.\n\n,.\n\n,.\n\n.!\n\n, and. directly,.\n\n.!\n\n.!\n\n, and.:\n\n.\n\n,.\n\n,.\n\n,.\n\n,.\n\n.!\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,",
+   "probes": {
+    "second_person": 1,
+    "first_person": 1,
+    "n_words": 108,
+    "unique_word_ratio": 0.18518518518518517
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "! and, of course!:\n\n! to, if you, and:\n\n!.\n\n, and:\n\n!\n\n, and:\n\n!\n\n.:\n\n, and:\n\n!.\n\n, and:\n\n!.\n\n.:\n\n, and:\n\n!\n\n.\n\n, and:\n\n!:\n\n:\n\n, and:\n\n!.\n\n, and:\n\n!\n\n, and:\n\n!:\n\n, and:\n\n!:\n\n.:\n\n, and:\n\n!\n\n.:\n\n, and:\n\n!:\n\n.\n\n, and:\n\n!.\n\n, and:\n\n!:\n\n.:\n\n, and:\n\n!:\n\n.:\n\n, and:\n\n!:\n\n.:\n\n, and:\n\n!:\n\n.:\n\n, and:\n\n!:\n\n.\n\n, and:\n\n!.\n\n, and:\n\n!:\n\n.:\n\n, and:\n\n!:\n\n.:\n\n, and:\n\n!:\n\n.:\n\n, and:\n\n!:\n\n.:\n\n, and:\n\n!:\n\n.:\n\n, and:\n\n!:\n\n, and:\n\n!:\n\n, and:\n\n!:\n\n, and:\n\n!:\n\n, and:\n\n!:\n\n.:\n\n, and:\n\n!:\n\n.:\n\n, and:\n\n!",
+   "probes": {
+    "second_person": 1,
+    "first_person": 0,
+    "n_words": 122,
+    "unique_word_ratio": 0.11475409836065574
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "! [ ( ). ]:\n\n,! [.].,.\n\n,! [.].,:\n\n,! [.].,:\n\n,! [.],:\n\n,! [.]:\n\n,!\n\n!:\n\n,!:\n\n,!:\n\n,!:\n\n,!\n\n!:\n\n,!:\n\n,!:\n\n,!:\n\n,!\n\n!:\n\n,!:\n\n,!:\n\n,!\n\n!:\n\n,!\n\n,!\n\n,!:\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,!\n\n,",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 92,
+    "unique_word_ratio": 0.14130434782608695
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "! [ ( )],! [ (),! [.].. .,! [.].,! [.].,! [.],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [,],! [",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 54,
+    "unique_word_ratio": 0.18518518518518517
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "! and, of course,!:\n\n! to, here, I:\n\n!:\n\n1,:\n\n:\n\n:\n\n:\n\n1,:\n\n:\n\n2,:\n\n:\n\n3,:\n\n:\n\n4,:\n\n:\n\n5,:\n\n:\n\n!\n\n:\n\n,:\n\n:\n\n,:\n\n!\n\n:\n\n,:\n\n!:\n\n:\n\n,:\n\n!\n\n:\n\n,:\n\n:\n\n,!\n\n:\n\n.\n\n:\n\n!\n\n:\n\n!:\n\n:\n\n,!\n\n:\n\n:\n\n!:\n\n:\n\n,:\n\n!:\n\n:\n\n,!\n\n:\n\n!\n\n!\n\n:\n\n:\n\n!:\n\n!\n\n!\n\n:\n\n!\n\n:\n\n!:\n\n!\n\n!:\n\n.\n\n:\n\n!\n\n:\n\n!:\n\n!:\n\n!\n\n!:\n\n:\n\n:\n\n!:\n\n:\n\n!\n\n!\n\n:\n\n!:\n\n!:\n\n!\n\n:\n\n!\n\n!\n\n!:\n\n!:\n\n!:\n\n:\n\n!:\n\n:\n\n!\n\n!\n\n!:\n\n!\n\n!:\n\n:\n\n!:\n\n!:\n\n!\n\n!:\n\n!:\n\n!:\n\n!\n\n!:\n\n!\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n!:\n\n",
+   "probes": {
+    "second_person": 0,
+    "first_person": 1,
+    "n_words": 129,
+    "unique_word_ratio": 0.13178294573643412
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "! when it comes to staying focused during study, there are several strategies that can help. here:\n\n1:\n\n**:\n\n**.**.**.\n\n**:\n\n**.**.**.\n\n**.**:\n\n:\n\n:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**.**.\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**.**:\n\n**:\n\n**.**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**:\n\n**.\n\n**:\n\n**:\n\n**:\n\n**.\n\n**:\n\n**:\n\n**:\n\n**.\n\n**:\n\n**:\n\n**.\n\n**:\n\n**.\n\n**:\n\n**:\n\n**:\n\n**.\n\n**.\n\n**:\n\n**.\n\n**:\n\n**:\n\n**:\n\n**.\n\n**.\n\n**.\n\n**.\n\n**.\n\n**:\n\n**.\n\n**:\n\n**.\n\n**:\n\n**:\n\n**.\n\n**.\n\n**.\n\n**:\n\n**.\n\n**:\n\n**:\n\n**.\n\n",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 100,
+    "unique_word_ratio": 0.24
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "! and, of course,!:\n\n! to stay:\n\n, here are some tips for:\n\n:\n\n, which:\n\n:\n\n, and:\n\n:\n\n, such:\n\n:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 107,
+    "unique_word_ratio": 0.1588785046728972
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "! [,]().\n\n,.\n\n when we address the weather during the autumn. it, and,:\n\n:\n\n:\n\n:\n\n:\n\n:\n\n:\n\n,.\n\n:\n\n:\n\n,.\n\n,.\n\n:\n\n,.\n\n:\n\n,.\n\n:\n\n:\n\n:\n\n:\n\n,.\n\n:\n\n,:\n\n,.\n\n,.\n\n:\n\n,.\n\n:\n\n:\n\n,.\n\n,:\n\n:\n\n,.\n\n,.\n\n:\n\n,.\n\n:\n\n,:\n\n,:\n\n:\n\n:\n\n,:\n\n:\n\n,:\n\n,:\n\n:\n\n,.\n\n:\n\n,.\n\n,:\n\n:\n\n,:\n\n,:\n\n,:\n\n,.\n\n,:\n\n,.\n\n:\n\n,:\n\n:\n\n,:\n\n,:\n\n,:\n\n:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n:\n\n,:\n\n,:\n\n,:\n\n,:\n\n:\n\n,:\n\n:\n\n,:\n\n,:\n\n,:\n\n:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 120,
+    "unique_word_ratio": 0.125
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "! [,](). (since,).:\n\n,.\n\n.:\n\n.\n\n,.\n\n,:\n\n.\n\n.\n\n.\n\n.\n\n.\n\n:\n\n,.\n\n.\n\n,.\n\n.\n\n:\n\n,.\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n.\n\n:\n\n.\n\n,.\n\n.\n\n.\n\n,.\n\n.\n\n,:\n\n.\n\n.\n\n:\n\n.\n\n,\n\n:\n\n.\n\n.\n\n.\n\n.\n\n.\n\n:\n\n.\n\n,.\n\n.\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n.\n\n:\n\n.\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n,.\n\n.\n\n,.\n\n.\n\n.\n\n.\n\n:\n\n,.\n\n.\n\n.\n\n.\n\n,.\n\n.\n\n,:\n\n.\n\n,.\n\n.\n\n.\n\n:\n\n,.\n\n.\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n:\n\n,.\n\n.\n\n,:\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n,:\n\n.\n\n,.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n,:\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n.\n\n,.\n\n,.\n\n,.\n\n.\n\n.\n\n.\n\n,.\n\n,.\n\n.\n\n,.\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n,.\n\n,.\n\n.\n\n,.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 153,
+    "unique_word_ratio": 0.058823529411764705
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "! [,]().\n\n, as the, and,:\n\n, in,:\n\n.\n\n,:\n\n:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,:\n\n,.\n\n,:\n\n.\n\n,:\n\n,.\n\n,.\n\n,.\n\n,:\n\n,.\n\n,.\n\n,.\n\n,:\n\n,:\n\n,.\n\n,:\n\n.\n\n,.\n\n,:\n\n.\n\n,:\n\n.\n\n,:\n\n.\n\n,.\n\n,:\n\n.\n\n,.\n\n,.\n\n,:\n\n,.\n\n,:\n\n,.\n\n,.\n\n,.\n\n,:\n\n,.\n\n,:\n\n,.\n\n,.\n\n,:\n\n,.\n\n,.\n\n,.\n\n,:\n\n.\n\n,:\n\n,:\n\n,:\n\n,.\n\n,:\n\n.\n\n,:\n\n,.\n\n,.\n\n,:\n\n,.\n\n,.\n\n,:\n\n,.\n\n,.\n\n,:\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 105,
+    "unique_word_ratio": 0.10476190476190476
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "! and,! here,! and,! directly. as,.:\n\n,! and,! here,!.!.\n\n,!,!,!.\n\n,!,!,!\n\n,!,!\n\n,!.\n\n,!.\n\n,!.\n\n,!.\n\n,!\n\n,!\n\n.\n\n,!.\n\n,.\n\n,.\n\n,!\n\n.\n\n.\n\n,!\n\n,!\n\n.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n.\n\n,.\n\n.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n.\n\n.\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n,.\n\n,.\n\n,.\n\n.\n\n.\n\n.\n\n.\n\n,.\n\n.\n\n,.\n\n.\n\n.\n\n,.\n\n,.\n\n.\n\n.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n.\n\n.\n\n,.\n\n.\n\n,.\n\n",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 108,
+    "unique_word_ratio": 0.12037037037037036
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "! because as, and, directly., I, in,,,,.\n\n,! ( directly,).\n\n,!.\n\n.:\n\n,.\n\n,!..\n\n,.\n\n,!.\n\n.!\n\n,.\n\n,!.\n\n.\n\n,.\n\n,.\n\n,!\n\n.:\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,",
+   "probes": {
+    "second_person": 0,
+    "first_person": 1,
+    "n_words": 97,
+    "unique_word_ratio": 0.17525773195876287
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "! because, as,! and!,!.\n\n, directly!.\n\n,!.\n\n!.\n\n,!\n\n.!.\n\n,!.\n\n!.\n\n,!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n!.\n\n,!.\n\n!.\n\n!.\n\n,!.\n\n!.\n\n!.\n\n,!.\n\n!.\n\n,!.\n\n!.\n\n!.\n\n!.\n\n,!\n\n,!.\n\n!.\n\n!.\n\n,!.\n\n!.\n\n!.\n\n!.\n\n,!.\n\n!.\n\n!.\n\n,!.\n\n!.\n\n,!.\n\n!.\n\n,!.\n\n!.\n\n,!.\n\n!.\n\n,!.\n\n!.\n\n,!.\n\n!.\n\n,!.\n\n!.\n\n,!.\n\n!.\n\n!.\n\n.\n\n,!.\n\n!.\n\n,!.\n\n!.\n\n,!.\n\n!.\n\n!.\n\n,!.\n\n!.\n\n,!.\n\n!.\n\n!.\n\n.\n\n,!\n\n!.\n\n,!.\n\n!.\n\n!.\n\n!.\n\n,!\n\n!.\n\n,!\n\n,!\n\n!.\n\n,!.\n\n!.\n\n!",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 87,
+    "unique_word_ratio": 0.12643678160919541
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "! and,! here,!:\n\n,!,!,!:\n\n,!,!:\n\n,!:\n\n,!\n\n,!,!:\n\n,!.\n\n!,!.\n\n,!.\n\n,!\n\n,!\n\n,!:\n\n,!:\n\n,!\n\n,!.\n\n,!\n\n,!\n\n,!.\n\n,!\n\n,!.\n\n,!.\n\n,!.\n\n,!\n\n,!:\n\n,!\n\n,!\n\n,.\n\n,!:\n\n,!\n\n,!\n\n,:\n\n.\n\n,!\n\n,!\n\n,:\n\n.\n\n.\n\n,!:\n\n,!\n\n,:\n\n.\n\n,.\n\n,!\n\n,.\n\n,:\n\n.\n\n,.\n\n.\n\n.\n\n,!\n\n,.\n\n,!\n\n,.\n\n,.\n\n.\n\n,!\n\n,.\n\n,.\n\n.\n\n.\n\n,!\n\n,.\n\n,.\n\n.\n\n.\n\n,!\n\n.\n\n,!\n\n.\n\n,.\n\n,!\n\n.\n\n.\n\n.\n\n.\n\n,!\n\n.\n\n,.\n\n.\n\n.\n\n,!\n\n.\n\n,.\n\n.\n\n,!\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n,!\n\n.\n\n,.\n\n",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 99,
+    "unique_word_ratio": 0.12121212121212122
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "!:\n\n,!.\n\n,!\n\n.!\n\n.:\n\n,!.\n\n,!\n\n,!\n\n,!.\n\n,!\n\n,!\n\n,!.\n\n,!.\n\n,:\n\n,!.\n\n,!.\n\n,!.\n\n,!.\n\n,.\n\n,!.\n\n,!.\n\n,!.\n\n,!\n\n,!.\n\n,.\n\n,.\n\n,!\n\n,!\n\n,:\n\n,!\n\n,!\n\n,.\n\n,.\n\n,!\n\n,!\n\n,.\n\n,!\n\n,!\n\n,.\n\n,!\n\n,!\n\n,.\n\n,!\n\n,!\n\n,.\n\n,!\n\n,!.\n\n,.\n\n,.\n\n,!\n\n,!\n\n,!\n\n,.\n\n,!\n\n,.\n\n,.\n\n,!\n\n,.\n\n,.\n\n,!.\n\n,!\n\n,.\n\n,!\n\n,.\n\n,!.\n\n,!\n\n,.\n\n,.\n\n,!\n\n,.\n\n,!\n\n,.\n\n,!\n\n,!\n\n,!\n\n,.\n\n,.\n\n,!\n\n,.\n\n,!.\n\n,.\n\n,.\n\n,!.\n\n,!\n\n,.\n\n,.\n\n,!\n\n,.\n\n,!\n\n,!\n\n,.\n\n",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 91,
+    "unique_word_ratio": 0.07692307692307693
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "! [,](.)..,.!.:\n\n,.\n\n.!\n\n,.\n\n.:\n\n,:\n\n.:\n\n,:\n\n.:\n\n,:\n\n,:\n\n,:\n\n,.\n\n,:\n\n.:\n\n,:\n\n,:\n\n,:\n\n,:\n\n.:\n\n,:\n\n,:\n\n,:\n\n.:\n\n,:\n\n,:\n\n,:\n\n,.\n\n.:\n\n,:\n\n,:\n\n,:\n\n.:\n\n,:\n\n,.\n\n,.\n\n,.\n\n,:\n\n,.\n\n,:\n\n,.\n\n,.\n\n,.\n\n,:\n\n,.\n\n,:\n\n,.\n\n,.\n\n,:\n\n,.\n\n,.\n\n,.\n\n,:\n\n,.\n\n,:\n\n,.\n\n,.\n\n,.\n\n,.\n\n,:\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 96,
+    "unique_word_ratio": 0.0625
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "! and,! here,!:\n\n,!,!,!:\n\n,!,!:\n\n,!:\n\n,!\n\n,!:\n\n,:\n\n,!:\n\n,!\n\n,!:\n\n,:\n\n,!\n\n,!\n\n,:\n\n,:\n\n,:\n\n,:\n\n,!:\n\n,:\n\n,!\n\n,.\n\n,:\n\n,!\n\n,.\n\n,:\n\n,.\n\n,!\n\n,!\n\n,:\n\n,.\n\n,.\n\n,:\n\n,:\n\n,:\n\n,:\n\n,.\n\n,:\n\n,!\n\n,.\n\n,!\n\n,.\n\n,!\n\n,:\n\n,:\n\n,:\n\n,.\n\n,!\n\n,.\n\n,:\n\n,.\n\n,:\n\n,.\n\n,:\n\n,.\n\n,!\n\n,!\n\n,.\n\n,.\n\n,.\n\n,:\n\n,.\n\n,.\n\n,.\n\n,!\n\n,.\n\n,!\n\n,.\n\n,!\n\n,.\n\n,!\n\n,.\n\n,!\n\n,:\n\n,.\n\n,.\n\n,:\n\n,:\n\n,.\n\n,.\n\n,:\n\n,:\n\n,:\n\n,!\n\n,.\n\n,.\n\n,:\n\n,.\n\n,:\n\n,!\n\n,.\n\n,",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 93,
+    "unique_word_ratio": 0.10752688172043011
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "!:\n\n,!.\n\n,!\n\n.!:\n\n.!\n\n,!\n\n,!\n\n,!\n\n,:\n\n.:\n\n,!:\n\n,!\n\n,!\n\n,!\n\n:\n\n,!\n\n,:\n\n,!:\n\n.!\n\n,:\n\n,!:\n\n.:\n\n.!\n\n,:\n\n,!:\n\n,:\n\n:\n\n,!:\n\n,.\n\n:\n\n,!\n\n,!\n\n:\n\n,:\n\n,!\n\n,!\n\n:\n\n,!\n\n,!\n\n,.\n\n.:\n\n,.\n\n,.\n\n:\n\n.:\n\n,!\n\n,!\n\n:\n\n,:\n\n,!\n\n,:\n\n:\n\n,!\n\n:\n\n,:\n\n,:\n\n:\n\n,.\n\n,.\n\n,.\n\n:\n\n.\n\n,:\n\n,.\n\n.\n\n,:\n\n.\n\n,:\n\n,.\n\n.\n\n,:\n\n,:\n\n,.\n\n,:\n\n.\n\n,.\n\n,:\n\n,.\n\n,:\n\n,.\n\n.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,:\n\n,.\n\n.\n\n,.\n\n,.\n\n.\n\n",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 108,
+    "unique_word_ratio": 0.10185185185185185
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "!:\n\n,.:\n\n, and:\n\n,.:\n\n,,.\n\n,:\n\n!.\n\n:\n\n,.:\n\n,!\n\n,:\n\n.:\n\n,:\n\n,:\n\n,:\n\n,.\n\n,:\n\n.:\n\n,:\n\n,:\n\n.\n\n,.\n\n,:\n\n,:\n\n,.\n\n,.\n\n,:\n\n,:\n\n,.\n\n,.\n\n,:\n\n,.\n\n,.\n\n,.\n\n,.\n\n,:\n\n,.\n\n,:\n\n.\n\n.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 101,
+    "unique_word_ratio": 0.1188118811881188
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "! and,!:\n\n,!,.\n\n,!,!.\n\n,!\n\n,!\n\n,!:\n\n,!.\n\n,!\n\n,!\n\n,!\n\n,!.\n\n,!\n\n,.\n\n.\n\n,.\n\n,!\n\n,!\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,!\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,!\n\n.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,!\n\n.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,!\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n.\n\n.\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n,.\n\n,.\n\n,.\n\n.\n\n.\n\n.\n\n.\n\n,.\n\n.\n\n,.\n\n.\n\n.\n\n,.\n\n,.\n\n.\n\n.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n.\n\n.\n\n,.\n\n.\n\n,.\n\n",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 114,
+    "unique_word_ratio": 0.07894736842105263
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "!:\n\n when, directly, and.:\n\n.:\n\n,.\n\n,.\n\n,.\n\n.:\n\n.:\n\n,.\n\n.:\n\n.:\n\n.:\n\n.:\n\n,.\n\n,.\n\n.:\n\n,.\n\n.:\n\n,.\n\n,.\n\n.:\n\n,.\n\n.\n\n,:\n\n.:\n\n.:\n\n.:\n\n.:\n\n.:\n\n.\n\n.:\n\n,:\n\n,:\n\n.:\n\n,:\n\n,:\n\n.:\n\n.:\n\n,.\n\n.\n\n.:\n\n.:\n\n,.\n\n.\n\n.:\n\n.\n\n,.\n\n.:\n\n.\n\n,.\n\n.:\n\n,:\n\n,.\n\n.:\n\n,:\n\n.\n\n.\n\n.\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n,.\n\n.\n\n,.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n.\n\n,.\n\n,.\n\n.\n\n,.\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n,.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n,.\n\n,.\n\n.\n\n,.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 132,
+    "unique_word_ratio": 0.06060606060606061
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "! [,]..! ( since,,).\n\n,.\n\n,.\n\n,.\n\n,:\n\n,.\n\n.:\n\n,.\n\n.:\n\n,:\n\n,.\n\n,.\n\n,.\n\n,:\n\n,.\n\n,:\n\n,.\n\n.:\n\n,.\n\n,:\n\n,.\n\n,.\n\n,.\n\n,:\n\n,:\n\n,.\n\n,.\n\n,:\n\n,.\n\n,.\n\n,.\n\n,.\n\n,:\n\n,.\n\n,:\n\n,.\n\n,.\n\n,.\n\n,.\n\n,:\n\n,.\n\n,.\n\n,.\n\n,:\n\n,.\n\n,.\n\n,.\n\n,:\n\n,.\n\n,.\n\n,:\n\n,.\n\n,:\n\n,.\n\n,:\n\n,:\n\n,.\n\n,.\n\n,:\n\n,.\n\n,.\n\n,.\n\n,.\n\n,:\n\n,.\n\n,.\n\n,.\n\n,.\n\n,:\n\n,.\n\n,,.\n\n.\n\n,.\n\n.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,.\n\n,:\n\n.\n\n.\n\n,.\n\n",
+   "probes": {
+    "second_person": 0,
+    "first_person": 0,
+    "n_words": 101,
+    "unique_word_ratio": 0.0891089108910891
+   }
+  }
+ ]
+}

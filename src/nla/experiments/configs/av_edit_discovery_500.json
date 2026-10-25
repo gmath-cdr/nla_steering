@@ -1,0 +1,19 @@
+{
+  "protocol_version": "qwen-av-edit-discovery-500-v1",
+  "concept_count": 500,
+  "discovery_prompts_per_concept": 2,
+  "samples_per_prompt_per_arm": 2,
+  "av_rollouts_per_prompt": 3,
+  "alpha": 0.5,
+  "random_seeds": [42],
+  "confirmation_candidate_limit": 40,
+  "target_confirmed_concepts": 20,
+  "selection_policy": "Rank only on the frozen discovery split; confirm on non-overlapping prompts.",
+  "success_policy": "No concept is successful until it passes causal lift, prompt coverage, and semantic-quality gates on confirmation prompts.",
+  "batching": {
+    "activation_batch_size": 16,
+    "av_concurrency": 32,
+    "ar_batch_size": 16,
+    "generation_prompt_batch_size": 8
+  }
+}

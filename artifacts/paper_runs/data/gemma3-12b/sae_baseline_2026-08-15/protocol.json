@@ -1,0 +1,32 @@
+{
+  "profile": "gemma3-12b",
+  "layer": 32,
+  "sae_repo": "google/gemma-scope-2-12b-it",
+  "sae_id": "resid_post_all/layer_32_width_16k_l0_small",
+  "sae_format": "saelens",
+  "out_dir": "artifacts/gemma3-12b/sae_baseline_2026-08-15",
+  "protocol": "experiments/configs/qwen_selected14_baseline_protocol.json",
+  "alpha_source": "/workspace/steering/natural_language_autoencoders/artifacts/baseline_panel14/gemma/alpha_selections.json",
+  "concept_ids": [
+    116,
+    222,
+    446,
+    11,
+    359,
+    406,
+    216,
+    287,
+    354,
+    30,
+    172,
+    171,
+    186,
+    90
+  ],
+  "n_samples": 2,
+  "construction_examples_per_concept": 72,
+  "activation_batch_size": 16,
+  "random_seed": 42,
+  "device": "cuda:0",
+  "version": "panel14-sae-baseline-v1"
+}

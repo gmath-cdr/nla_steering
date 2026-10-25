@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="620" viewBox="0 0 1600 620" role="img" aria-labelledby="title desc">
+  <title id="title">NLA steering-effects evaluation pipeline</title>
+  <desc id="desc">Concepts and held-out prompts are evaluated with NLA activation-vector edits and fixed baselines. Saved completions produce strict-hit and matched-unsteered quality metrics.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#45637f"/></marker>
+    <style>.label{font:600 25px Arial,sans-serif;fill:#17324d}.small{font:19px Arial,sans-serif;fill:#35536d}.tiny{font:17px Arial,sans-serif;fill:#47657d}.box{stroke-width:2.5;rx:16}</style>
+  </defs>
+  <rect width="1600" height="620" fill="#f8fbfd"/>
+  <text x="800" y="58" text-anchor="middle" class="label" style="font-size:32px">NLA steering-effects reproduction pipeline</text>
+  <rect x="65" y="162" width="250" height="210" class="box" fill="#e6f3ff" stroke="#3a87bb"/>
+  <text x="190" y="222" text-anchor="middle" class="label">Inputs</text>
+  <text x="190" y="270" text-anchor="middle" class="small">AxBench concepts</text><text x="190" y="307" text-anchor="middle" class="small">Held-out prompts</text><text x="190" y="344" text-anchor="middle" class="small">Frozen panel manifests</text>
+  <rect x="410" y="132" width="330" height="270" class="box" fill="#edf8ef" stroke="#52946a"/>
+  <text x="575" y="192" text-anchor="middle" class="label">Interventions</text>
+  <text x="575" y="240" text-anchor="middle" class="small">NLA activation-vector edits</text><text x="575" y="277" text-anchor="middle" class="small">CAA · DiffMean · SAE · LoReFT</text><text x="575" y="330" text-anchor="middle" class="tiny">Matched target model, layer, and profile</text>
+  <rect x="835" y="162" width="250" height="210" class="box" fill="#fff4e6" stroke="#c98a3e"/>
+  <text x="960" y="222" text-anchor="middle" class="label">Outputs</text>
+  <text x="960" y="270" text-anchor="middle" class="small">Steered completions</text><text x="960" y="307" text-anchor="middle" class="small">Unsteered matches</text><text x="960" y="344" text-anchor="middle" class="small">Provenance records</text>
+  <rect x="1180" y="132" width="355" height="270" class="box" fill="#f3edfa" stroke="#8765ad"/>
+  <text x="1358" y="192" text-anchor="middle" class="label">Evaluation</text>
+  <text x="1358" y="240" text-anchor="middle" class="small">Strict concept hit</text><text x="1358" y="277" text-anchor="middle" class="small">Matched-unsteered quality gate</text><text x="1358" y="330" text-anchor="middle" class="tiny">JSON summaries and verification checks</text>
+  <path d="M315 267 H410" stroke="#45637f" stroke-width="4" marker-end="url(#arrow)"/><path d="M740 267 H835" stroke="#45637f" stroke-width="4" marker-end="url(#arrow)"/><path d="M1085 267 H1180" stroke="#45637f" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="225" y="480" width="1150" height="74" rx="14" fill="#eaf0f5" stroke="#b7c7d3" stroke-width="2"/>
+  <text x="800" y="525" text-anchor="middle" class="small">External artifact bundle: model weights, NLA checkpoints, and large completion files remain outside Git.</text>
+</svg>
+

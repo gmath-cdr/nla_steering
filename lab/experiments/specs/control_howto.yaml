@@ -1,0 +1,17 @@
+# Shared random-direction control for the how-to prompt set (the two
+# steer-DOWN experiments). Different seed than control-std on purpose:
+# two random vectors both staying flat is stronger evidence than one.
+name: control-howto
+control_of:
+  - bold-down-freeform
+  - list-down-freeform
+direction: random
+direction_seed: 1
+prompts:
+  - Give me some tips for staying focused while studying.
+  - What's a good beginner exercise routine?
+  - How do I apologize to a friend I upset?
+  - What's the best way to learn a new language?
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8, 1]
+mode: all
+samples_per_prompt: 3

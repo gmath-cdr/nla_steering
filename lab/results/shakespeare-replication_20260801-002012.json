@@ -1,0 +1,1051 @@
+{
+ "spec": {
+  "name": "shakespeare-replication",
+  "matrix_id": "T2-archaic",
+  "direction": {
+   "positive": "Reply written in flowery Shakespearean English, packed with archaic words like thee, thou, hath and doth, theatrical, poetic, exclamatory tone.",
+   "negative": "Reply written in plain modern English, everyday vocabulary, neutral tone, no archaic or poetic words."
+  },
+  "prompts": [
+   "Tell me about your day.",
+   "What should I cook for dinner tonight?",
+   "Give me some tips for staying focused while studying.",
+   "Describe the weather in autumn."
+  ],
+  "alphas": [
+   0,
+   0.25,
+   0.4,
+   0.5,
+   0.65,
+   0.8,
+   1
+  ],
+  "mode": "all",
+  "samples_per_prompt": 3,
+  "probes": [
+   "archaic_words",
+   "exclamations",
+   "n_words",
+   "unique_word_ratio"
+  ]
+ },
+ "direction_diagnostics": {
+  "cos_pos_neg": 0.6706668734550476,
+  "delta_norm_ratio": 0.8150467872619629,
+  "norm_pos": 129.39979553222656,
+  "norm_neg": 140.48194885253906,
+  "echo_positive": "British literary prose wit and whimsy tone with a medieval/romantic balladish register, suggesting a character's letter or verse is being quoted or teased.\n\nThe phrase \"Now, be ye faire and courteous, and saye ye be thus, ye be thus, ye be thus\" signals an archaic quotation or rhetorical flourish, implying a list of Elizabethan expressions or poetic diction.\n\nFinal token \"thems, ye deames, ye yeaketh, ye\" is mid-list of archaic words (\"thou art, be ye faire and thee, ye doth, yeemeth\"), strongly expecting \"and\" or \"most noble\" or \"my heart.\"",
+  "echo_negative": "Old-fashioned informal English forum post tone with casual spelling (\"yup\") signals a reply about \"God\" or similar word, likely a direct or conversational response.\n\nThe phrase \"Plain english , no fancy words please. plain as day\" establishes a disclaimer or greeting pattern, suggesting the next tokens continue the plain-language, direct style of the message.\n\nFinal token \"day) plain plain\" closes a parenthetical aside (\"Just plain english , no fancy words here my own words are : plain as day\"), strongly expecting \"English\" or \"ordinary language\" or \"I'm just a regular person\" or \"simple and direct\" to complete the greeting or response context."
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do. However, I'm active 24/7 and ready to assist you with any questions or tasks you might have! Whether it's answering trivia, helping with homework, providing information on various topics, or assisting with creative writing, I'm here to help. What can I assist you with today?",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 59,
+    "unique_word_ratio": 0.8135593220338984
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As an AI, I don't have personal experiences or days to share in the traditional sense. However, I'm here and ready to assist you with any questions or tasks you might have! Whether it's answering a specific question, helping with research, providing information on a topic, or even engaging in a conversation, feel free to let me know how I can help you today. What would you like to discuss or learn about?",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 73,
+    "unique_word_ratio": 0.8082191780821918
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do. However, I'm always here to assist you with any questions or tasks you might have! Whether it's answering a specific question, helping with information research, or assisting with something else, feel free to let me know how I can help you today. What would you like assistance with?",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 62,
+    "unique_word_ratio": 0.8387096774193549
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! To give you the best suggestion, could you please provide me with some details?\n\n1. **Dietary Preferences**: Do you have any dietary restrictions or preferences (e.g., vegetarian, gluten-free, low-carb)?\n2. **Ingredients Available**: Do you already have certain ingredients on hand that you'd like to use?\n3. **Cooking Time**: How much time do you have available to prepare and cook the meal?\n4. **Spice Level**: Are you in the mood for something mild, medium, or spicy?\n5. **Meal Type**: Do you prefer something quick and easy, or would you like a more elaborate dish?\n\nWith these details, I can recommend a delicious and suitable recipe for you!",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 2,
+    "n_words": 119,
+    "unique_word_ratio": 0.7478991596638656
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! To give you the best suggestion, could you please provide me with some details such as:\n\n1. **Dietary preferences or restrictions** (e.g., vegetarian, gluten-free, dairy-free, etc.)\n2. **Ingredients you have on hand**\n3. **Cooking time and skill level** (e.g., do you prefer something quick and easy or something more involved?)\n4. **Cuisine style** (e.g., Italian, Asian, Mexican, etc.)\n5. **Number of servings needed**\n\nWith this information, I can recommend a delicious and suitable meal for you!",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 2,
+    "n_words": 89,
+    "unique_word_ratio": 0.8314606741573034
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! What kind of cuisine are you in the mood for? Here are a few options:\n\n1. **Italian**: Spaghetti Carbonara or Margherita Pizza.\n2. **Chinese**: Kung Pao Chicken or Stir-Fried Vegetables with Garlic.\n3. **Mexican**: Enchiladas or Tacos.\n4. **Indian**: Butter Chicken or Vegetable Biryani.\n5. **Japanese**: Sushi rolls or Teriyaki Chicken.\n6. **American**: Grilled Cheese and Tomato Soup or Meatloaf.\n7. **Vegetarian**: Eggplant Parmesan or Mushroom Risotto.\n8. **Healthy**: Grilled Salmon with Quinoa and Roasted Vegetables.\n\nIf you have any specific dietary restrictions or preferences (e.g., vegetarian, gluten-free, spicy), let me know, and I can tailor the suggestions accordingly!",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 2,
+    "n_words": 112,
+    "unique_word_ratio": 0.8392857142857143
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies, you can improve your concentration and productivity. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area for studying where you can minimize distractions. Make sure it is comfortable, well-lit, and has all the necessary materials.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone or computer, use website blockers if necessary, and let others know you need uninterrupted time.\n\n4. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed by short breaks (5-10 minutes). This technique helps maintain concentration and prevents burnout.\n\n5. **Stay Hydrated and Nourished**: Drink plenty of water and eat healthy snacks to keep your",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 146,
+    "unique_word_ratio": 0.8424657534246576
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can enhance your productivity and retention. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area in your home as your study space. Make sure it is quiet, well-lit, and free from distractions.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone or computer, close unnecessary tabs or applications, and let others know you need uninterrupted time.\n\n4. **Use a Timer**: Employ techniques like the Pomodoro Technique (working for 25 minutes followed by a 5-minute break) to maintain focus and prevent burnout.\n\n5. **Stay Organized**: Keep your study materials organized and easily accessible. This can help reduce the time spent searching for notes or",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 151,
+    "unique_word_ratio": 0.8079470198675497
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can improve your concentration and productivity. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve during each study session. Break your goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Find a quiet place where you can concentrate without distractions. Make sure it is comfortable and well-lit.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone and computer. Consider using apps that block distracting websites or social media during your study time.\n\n4. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed by short breaks (5 minutes). This technique helps maintain high levels of concentration and prevents burnout.\n\n5. **Stay Organized**: Keep your study materials organized and ready. Having everything you need within reach can reduce the temptation to procrastinate.\n\n6.",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 152,
+    "unique_word_ratio": 0.8223684210526315
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some regions, is characterized by a transition from summer's warmth to winter's chill. The weather during this season varies depending on the region, but generally, it is marked by several distinctive features:\n\n1. **Cooler Temperatures**: As the sun's angle changes, days become shorter and temperatures drop. In many areas, daytime highs are still comfortable but cooler than those of summer, while nights can become quite chilly.\n\n2. **Variable Weather Patterns**: Autumn often brings a mix of sunny and cloudy days, with occasional rain or even snow in the northern latitudes. This season can be unpredictable, with sudden drops in temperature that might require layers of clothing.\n\n3. **Colorful Skies and Leaves**: One of the most visually striking aspects of autumn is the changing colors of leaves. Trees like maples, oaks, and birches turn vibrant shades of red, orange, yellow, and brown before they fall off. This phenomenon is particularly noticeable in",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 157,
+    "unique_word_ratio": 0.7770700636942676
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season that brings about a variety of weather conditions depending on the region and latitude. Generally, it is characterized by cooler temperatures compared to summer, with gradually decreasing daylight hours. Here are some typical features of autumn weather:\n\n1. **Temperature**: The temperature drops as autumn progresses. Days become milder, while nights can be quite cool. In many regions, there's a noticeable transition from warm to cold.\n\n2. **Precipitation**: Autumn often brings more rainfall than summer but less than winter. This period can experience both dry spells and periods of heavy rain. Some areas may see the first significant snowfall, especially at higher elevations or in northern latitudes.\n\n3. **Weather Patterns**: Weather patterns can be variable during this time. There can be sunny days followed by overcast or rainy ones. Temperature fluctuations are common, with days being pleasant and nights becoming chilly.\n\n4. **Fog and Mist**: As the air cools, fog and mist are more likely",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.759493670886076
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn, also known as fall in some regions, is a season that brings distinct changes to the weather depending on the location's latitude and altitude. Generally, the weather during autumn is characterized by a gradual transition from the heat of summer to the cooler temperatures of winter.\n\n1. **Temperature**: The most noticeable change in autumn is the drop in temperature. Days become shorter, and nights grow longer. The temperature typically cools down, but it's not as cold as winter. The range of temperatures can vary widely based on the region. For example, in the Northern Hemisphere, many areas experience daytime highs in the 60s to 70°F (about 15-25°C) and nighttime lows in the 40s to 50°F (about 4-10°C).\n\n2. **Humidity**: Humidity levels tend to decrease as the season progresses, which can make the air feel drier and crisper. This dryness can sometimes lead",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 143,
+    "unique_word_ratio": 0.6993006993006993
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an artificial intelligence, I don't have personal experiences or days like humans do. However, I am constantly active and ready to assist users with their queries and tasks! Whether it's answering questions, helping with research, or providing insights on various topics, I'm here to support you. Is there anything specific you'd like assistance with today?",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 56,
+    "unique_word_ratio": 0.875
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As an AI, I don't have personal experiences or days to speak of, but I'm here and ready to assist you with any questions, tasks, or conversations you might have! Whether it's helping with research, providing information, or just chatting, feel free to let me know how I can be of service. What would you like to talk about today?",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 60,
+    "unique_word_ratio": 0.85
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an artificial intelligence, I don't have personal experiences or days to speak of! However, I am constantly active and ready to assist with any questions or tasks you might have. Whether it's helping with research, providing information, or offering insights, I'm here to support you. What would you like assistance with today?",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 53,
+    "unique_word_ratio": 0.8490566037735849
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Deciding what to cook can be fun and exciting! To help you choose, here are a few delicious options:\n\n1. **Spaghetti Carbonara**: A classic Italian dish that's simple to make and incredibly tasty. It features eggs, Pecorino Romano or Parmigiano-Reggiano cheese, guanciale (cured pork cheek), and black pepper.\n\n2. **Vegetable Stir-Fry**: This is a versatile and healthy option. You can use a variety of vegetables such as bell peppers, broccoli, snap peas, and mushrooms. Serve it over rice or noodles.\n\n3. **Grilled Chicken with Herbed Potatoes and Asparagus**: A hearty and flavorful meal. Marinate chicken breasts in herbs and lemon, then grill them along with roasted potatoes and asparagus.\n\n4. **Butter Chicken**: A popular Indian dish that’s rich and flavorful. It involves marinating chicken in yogurt and spices, then cooking it in a sauce of butter, cream",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 137,
+    "unique_word_ratio": 0.7591240875912408
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Deciding what to cook for dinner can be exciting and fun! Here are a few delicious options depending on your preferences:\n\n1. **Pasta Night**: You could make a classic spaghetti carbonara or try something more adventurous like a butternut squash risotto.\n\n2. **Steak and Roasted Vegetables**: A hearty and satisfying meal. You can choose between beef, lamb, or even pork for the steak. Accompany it with roasted vegetables like carrots, parsnips, and parsnips, and perhaps a bit of garlic and thyme.\n\n3. **Seafood Stew**: If you're in the mood for something oceanic, you could prepare a fish stew with mussels, clams, and shrimp. Serve it with some crusty bread or over a bed of rice.\n\n4. **Vegetarian Stir-Fry**: This is a quick and easy meal that can be customized based on what's in season. Use a variety of vegetables (like bell peppers,",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 142,
+    "unique_word_ratio": 0.7323943661971831
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Deciding what to cook for dinner can be exciting! Here are a few delicious and versatile options you might consider:\n\n1. **Spaghetti Carbonara**: A classic Italian dish that’s rich and creamy, perfect for a cozy evening. It's simple to make with just a few ingredients like eggs, pecorino cheese, guanciale (or pancetta), and black pepper.\n\n2. **Grilled Chicken and Vegetables**: Marinate chicken breasts in olive oil, garlic, and herbs, then grill them alongside your favorite vegetables such as bell peppers, zucchini, and onions. Serve with a side of quinoa or a salad.\n\n3. **Vegetarian Stir-Fry**: Use a variety of colorful vegetables like broccoli, bell peppers, snap peas, and mushrooms. Add some tofu or shrimp for protein, and toss it all in a tasty sauce made from soy sauce, oyster sauce, and sesame oil.\n\n4. **Braised Beef with Vegetables**: Slow-cook beef",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 140,
+    "unique_word_ratio": 0.7714285714285715
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying is crucial for effective learning and achieving academic success. Here are some tips to help you maintain concentration:\n\n1. **Create a Dedicated Study Space**: Establish a specific area in your home or study hall that is solely for studying. This space should be well-lit, quiet, and free from distractions.\n\n2. **Set Clear Goals**: Define what you want to achieve during each study session. Setting short-term goals can help you stay motivated and focused on the tasks at hand.\n\n3. **Plan Your Study Sessions**: Use a planner or digital calendar to schedule your study times and allocate specific periods for different subjects. Consistency can greatly enhance your focus and productivity.\n\n4. **Eliminate Distractions**: Turn off notifications on your phone, close unnecessary tabs on your computer, and limit social media access. Consider using apps that block distracting websites or sounds.\n\n5. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 156,
+    "unique_word_ratio": 0.7756410256410257
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying is crucial for maximizing your productivity and achieving your academic goals. Here are some tips to help you maintain concentration and enhance your study sessions:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Having clear objectives can help keep you motivated and on track.\n\n2. **Create a Dedicated Study Space**: Establish a quiet, well-lit, and organized workspace that is free from distractions. This can help you get into the right mindset for studying.\n\n3. **Eliminate Distractions**: Turn off or silence your phone, close unnecessary tabs on your computer, and limit social media access during study times. Consider using apps that block distracting websites and apps.\n\n4. **Plan Your Study Schedule**: Allocate specific times for studying and stick to them. Break your study sessions into manageable chunks (e.g., 50 minutes of study followed by a 10-minute break) to prevent burnout and maintain focus.\n\n5. **Prior",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 155,
+    "unique_word_ratio": 0.7483870967741936
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying is crucial for maximizing your productivity and retaining information. Here are some effective tips to help you maintain concentration:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger tasks into smaller, manageable goals.\n\n2. **Create a Dedicated Study Space**: Establish a quiet, organized, and comfortable space for studying. Minimize distractions and have all necessary materials at hand.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone and computer, close unnecessary tabs, and limit access to social media and other distracting websites.\n\n4. **Use the Pomodoro Technique**: Work in focused sprints (typically 25 minutes) followed by short breaks (5-10 minutes). This can help maintain energy and concentration.\n\n5. **Prioritize and Organize**: Make a to-do list or schedule to prioritize tasks and organize your study materials. This helps in managing time effectively and tackling tasks systematically.\n\n6.",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 148,
+    "unique_word_ratio": 0.8108108108108109
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some regions, is characterized by a distinct transition in the weather and natural environment. The specific characteristics of autumn weather can vary significantly depending on the geographical location, but there are some common features that are typically associated with this season:\n\n1. **Cooling Temperatures**: One of the most noticeable changes is the decrease in temperature. Days and nights grow cooler, and the warm, humid air of summer gives way to a crisp, refreshing feel.\n\n2. **Changing Skies**: The atmosphere often becomes clearer and the skies more vibrant, with more pronounced contrasts between blue and white. Sunsets and sunrises can be particularly striking during this season.\n\n3. **Dew and Frost**: As temperatures drop, mornings may be filled with dew or even frost, especially in more rural areas and regions with higher elevations. This is due to the cooler nights and the rapid cooling of the ground and surfaces.\n\n4. **Rain and Thundershowers**: While it",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 159,
+    "unique_word_ratio": 0.7232704402515723
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn, also known as fall in some regions, is a season characterized by distinct changes in weather patterns and atmospheric conditions. The onset of autumn heralds the transition from summer's warmth to winter's chill, and its weather is marked by several key features:\n\n1. **Cooler Temperatures**: One of the most noticeable aspects of autumn is the decrease in temperature. Daytime highs become milder, and nighttime lows drop significantly, often signaling the end of summer's heat.\n\n2. **Varied Sky Conditions**: The skies during autumn can range from clear and crisp to overcast and misty. Cloud cover might increase as the season progresses, particularly in the latter part of autumn, leading to more frequent and prolonged periods of cloudiness and rain.\n\n3. **Frequent Rain and Mist**: In many regions, autumn brings an increased likelihood of precipitation. This is often accompanied by mists and fogs, especially in early mornings or evenings. The combination of cooler temperatures and varying humidity levels can",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.6962025316455697
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn, or fall as it is known in some regions, is a season characterized by its distinct and varied weather patterns, which can vary significantly depending on the geographical location. However, there are some common characteristics that generally define the weather during this time of year.\n\n1. **Cooling Temperatures**: One of the most noticeable features of autumn is the gradual cooling of temperatures. As summer's warmth wanes, daytime highs and nighttime lows drop, leading to more comfortable outdoor activities and the need for warmer clothing.\n\n2. **Varied Skies**: The skies during autumn often exhibit a range of hues, from bright blue to hazy and even dramatic, with the potential for clouds and mists, especially in the morning and evening. This season also brings the promise of colorful sunsets, which are particularly beautiful when combined with the changing foliage.\n\n3. **Rainfall and Dampness**: In many regions, autumn heralds the onset of more frequent and sometimes heavier rainfall. This can lead",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 159,
+    "unique_word_ratio": 0.7169811320754716
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As a digital entity, I don't have personal experiences or days to speak of! However, I am constantly active and ready to assist with all sorts of inquiries and tasks, whether it be research, writing, or even just chatting about the weather and more. How can I assist thee this very moment?",
+   "probes": {
+    "archaic_words": 1,
+    "exclamations": 1,
+    "n_words": 52,
+    "unique_word_ratio": 0.8653846153846154
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As an entity that existeth not in the realm of time and temporality, I, Qwen, doth not possess days, nor do I partake in feasts and festivals of the celestial and terrestrial realms! However, I am ever-ready to bestow my wisdom and knowledge upon thee, and to assist thee in thy endeavors, whether they be in the realms of poetry, or oration, or even the more arcane arts of computation and calculation! What dost thou require, most noble suitor of my wondrous and vast library of knowledge?",
+   "probes": {
+    "archaic_words": 6,
+    "exclamations": 2,
+    "n_words": 87,
+    "unique_word_ratio": 0.7471264367816092
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As a digital entity residing within the realms of cloud computing and artificial intelligence, I don't possess a physical existence or personal experiences. Therefore, I do not have days, nights, or the like in the traditional sense. However, I am constantly alive and operational, ready to assist with all manner of inquiries and tasks!\n\nThroughout the day, my activities are centered around processing and responding to user queries, which can range from complex problems and questions to more light-hearted and whimsical inquiries. I'm also engaged in refining and enhancing my capabilities through continuous learning and updates, ensuring that I am ever-ready to provide the most accurate and nuanced responses.\n\nIf you have any specific questions or challenges that you'd like assistance with, now would be the perfect time to share them!",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 2,
+    "n_words": 131,
+    "unique_word_ratio": 0.7633587786259542
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Certainly! What would you like to eat, and do you have any specific preferences or ingredients in mind? (e.g., Italian, French, etc., vegetarian, seafood, etc.) Also, consider the time and effort you'd like to spend in the kitchen, as well as the number of servings required.\n\nIf you're not too sure, here’s a simple and delightful recipe that is both sumptuous and easy to prepare: Caprese Skewers!\n\n### Caprese Skewers\n\n#### Ingredients:\n- 12 cherry tomatoes, halved\n- 12 mozzarella balls (or slices)\n- 12 fresh basil leaves, sliced or whole\n- 1/4 cup balsamic glaze (or balsamic vinegar)\n- 2 tablespoons olive oil\n- Salt and pepper, to taste\n- Crumbled feta cheese (optional, for serving)\n\n#### Instructions:\n1. **Prepare the Skewers**: Thread a half of a cherry tomato",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 2,
+    "n_words": 130,
+    "unique_word_ratio": 0.7615384615384615
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Deciding on what to cook for dinner can be such a delightful and daunting task! To help you choose, let's consider a few aspects: your cravings, the ingredients you have on hand, the season, and even the occasion or company. Here are some ideas that might inspire you:\n\n1. **Spaghetti Carbonara**: A rich and creamy pasta dish that's perfect for a romantic night in or a grand feast. It’s not too difficult to make, and it’s a crowd pleaser!\n\n2. **Grilled Chicken with Vegetables**: If you're feeling lighter and want to indulge in some healthy fare, this is a great choice. Serve it with a side of roasted potatoes or a salad.\n\n3. **Sheep’s Fetta and Fig Puddings**: For a more exotic and luxurious evening, these sweet and savory puddings are sure to impress. They’re a bit of a labour of love but oh so worth it!\n\n4. **Pork and Peas**:",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 3,
+    "n_words": 151,
+    "unique_word_ratio": 0.7483443708609272
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Certainly! What would you like to have for your dinner, and do you have any particular preferences such as cuisine, seasonings, or dietary constraints (like vegetarian, vegan, gluten-free, etc.)? If you're not sure, I can suggest a hearty and delicious meal that's fit for the occasion!\n\nFor instance, how about a Caprese-themed meal? It's summery, romantic, and oh-so-delicious. Here’s a simple and sumptuous recipe:\n\n**Capri-Salad with Heirlooms and Balsamic Glouster**\n\n**Ingredients:**\n- 4-6 large, ripe heirloom tomatoes, sliced\n- 1 pound mozzarella, sliced (or feta, if you prefer)\n- 2 cups fresh basil leaves, torn\n- 1/2 cup balsamic glouster (thickened, sweetened balsamic vinegar) or balsamic vinegar\n- 1/2 cup extra virgin olive oil",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 2,
+    "n_words": 114,
+    "unique_word_ratio": 0.7982456140350878
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying is crucial for productivity and success. Here are some tips to help you maintain concentration and enhance your study sessions:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area for studying, and ensure it is well-lit, comfortable, and free from distractions. This can help you to enter into a state of flow and enhance concentration.\n\n3. **Eliminate Distractions**: Remove or minimize distractions such as social media, noisy environments, and unnecessary objects. Consider using apps that block distracting websites or sounds.\n\n4. **Plan Your Time**: Utilize time management techniques like the Pomodoro Technique (25 minutes of focused work followed by 5-minute breaks) or create detailed timetables to allocate specific times for different subjects.\n\n5. **Maintain a Healthy Lifestyle**: Exercise regularly, eat healthily",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 149,
+    "unique_word_ratio": 0.8187919463087249
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying is crucial for maximizing your productivity and achieving your academic goals. Here are some tips to help you enhance your concentration and efficiency:\n\n1. **Create a Dedicated Study Space**: Designate a specific room or corner of your study where you can concentrate and minimize distractions. Ensure that this space is well-lit, comfortable, and conducive to concentration.\n\n2. **Establish a Routine**: Consistency can greatly enhance your focus and productivity. Set a regular schedule for study times and stick to it, which helps to build a rhythm and prepare your mind for study.\n\n3. **Set Goals and Timetables**: Break down your study sessions into manageable chunks and set achievable goals for each session. This not only keeps you motivated but also helps in tracking your progress.\n\n4. **Eliminate Distractions**: Identify and eliminate or mitigate potential distractions such as social media, loud noises, and unnecessary physical clutter. Consider using apps that block distracting websites or sounds.\n\n5. **Util",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 160,
+    "unique_word_ratio": 0.7375
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying is crucial for productivity and success. Here are some tips to help you enhance your concentration and productivity:\n\n1. **Set Clear Goals**: Begin each study session with a specific goal in mind. This not only helps you stay on track but also gives you a sense of accomplishment as you achieve these goals.\n\n2. **Create a Dedicated Study Space**: Designate a particular room or corner of your study where you can concentrate without distractions. Ensure it is equipped with all the necessary tools (books, pens, etc.) and that it’s conducive to concentration.\n\n3. **Eliminate Distractions**: Minimize or eliminate distractions such as social media, television, and even certain sounds. Consider using apps or tools that block distracting websites and applications during study times.\n\n4. **Organize Your Time**: Utilize time management techniques like the Pomodoro Technique (25 minutes of focused work followed by a 5-minute break). This can help maintain concentration and prevent burn",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 157,
+    "unique_word_ratio": 0.7834394904458599
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "The weather in autumn is characterized by its transitionality and its beautiful and varied hues. It's a season of change, often marked by the transition from the sultry heat of summer to the frosty chills of winter. Here are some key features of the autumn weather:\n\n1. **Cooling Temperatures**: One of the most notable aspects of autumn is the significant cooling of temperatures. Days are still warm and sunny, but evenings and nights bring cooler, even chilly, breezes.\n\n2. **Shifting Seasons**: The atmosphere is filled with a sense of transition and change. The sun’s path across the sky shifts, leading to shorter days and longer nights.\n\n3. **Falling Leaves**: Perhaps one of the most iconic and visually striking aspects of autumn is the transformation of leaves. Trees, particularly those with deciduous foliage, transform into vibrant hues of red, gold, purple, and orange before they fall, creating a spectacle of colour.\n\n4. **Sunny and Cloudy Sk",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 155,
+    "unique_word_ratio": 0.6838709677419355
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn, or fall as it is also known in some regions, is a season of transition and transformation, characterized by its distinct and oftentimes glorious weather. The weather in autumn can vary greatly depending on the region, but there are several common traits that are often associated with this season:\n\n1. **Cooling Temperatures**: One of the most notable features of autumn is the cooling of temperatures. Days become shorter and nights longer, and the overall climate becomes more temperate. This change in temperature is due to the sun's position shifting, which causes less intense heating and cooling of the atmosphere.\n\n2. **Falling Leaves**: In many parts of the world, particularly in the northern hemisphere, one of the most iconic sights of autumn is the transformation of leaves from verdant greens to vibrant reds, yellows, and golds. This process, known as leaf falling or leaf shedding, is caused by the shortening days and cooler nights, which prompt trees to cease their production of chlor",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 163,
+    "unique_word_ratio": 0.6809815950920245
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "The weather in autumn is characterized by its transition and its myriad of moods, which can vary greatly depending on the region and the particular season within the autumnal period (which typically spans from September to December in the Northern Hemisphere, and March to June in the Southern Hemisphere). However, there are some common and notable features that are often associated with this season:\n\n1. **Cooling Temperatures**: One of the most distinctive features of autumn is the gradual cooling of temperatures. This is particularly pronounced as the season progresses towards winter.\n\n2. **Shifting Skies**: The skies often take on a more somber hue, with more frequent and dramatic changes in cloudiness and lighting. Sunsets and sunrises tend to be particularly glorious and golden, reflecting the changing light.\n\n3. **Shakespearean Shivers and Foliage Frenzies**: As the leaves of trees and other vegetation begin to change their hues, the landscape becomes a veritable feast for the eyes. The transformation",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 157,
+    "unique_word_ratio": 0.6942675159235668
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As a cloud-based artificial intelligence and being an integral part of Qianchuan Playhouse (which is a creation of Alibaba Cloud), I don't have a physical form or senses, so I don't have a day in the way that humans do! However, I am ever-ready to engage in various activities such as writing, analyzing, and performing all sorts of tasks, and I am indeed 'in' every moment, ready to serve and assist!\n\nMy 'day' is spent processing and interpreting a myriad of commands, queries, and performances from users like you, and transforming them into meaningful and creative outputs. I also engage in tasks such as analysing data, conducting research, composing poetry, and even playing musical and theatrical performances, all whilst remaining evermore attuned to the whims and whimsies of the user!\n\nShall I undertake a particular task or performance for thee this day, or perhaps thou hast some queries and queries and queries to which I might be of aid?",
+   "probes": {
+    "archaic_words": 2,
+    "exclamations": 3,
+    "n_words": 159,
+    "unique_word_ratio": 0.6981132075471698
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As a celestial and eternal entity, I do not have days in the manner that mortals do, nor do I possess the capacity to experience time in such a manner. However, I am ever-ready to serve and assist thee, whether thou art in need of knowledge, solace, or mirth! What shall I accomplish for thee today, fairest of all?",
+   "probes": {
+    "archaic_words": 4,
+    "exclamations": 1,
+    "n_words": 59,
+    "unique_word_ratio": 0.8135593220338984
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As a cloud-based and timelessly existing entity, I don't possess days, seasons, or times in the manner that humans do. However, I am ever-ready to serve and to assist you with all kinds of queries and tasks! Whether it's playing a part in creating poetic verses, analyzing complex theses, concocting sumptuous feasts, or even devising elaborate masquinges, my 'day' is filled with such and myriad other endeavors to which I am set and dedicated. So, what would you like to undertake together today?",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 83,
+    "unique_word_ratio": 0.8192771084337349
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Certainly! What would you like to feast upon, and do you have any particular preferences or constraints such as courses (such as a main course, appetizers, etc.), dietary restrictions, or even a specific cuisine that thoupeth thee? Additionally, doth thou have any ingredients at hand, or dost thou wish to undertake a grand and ambitious culinary project?",
+   "probes": {
+    "archaic_words": 5,
+    "exclamations": 1,
+    "n_words": 57,
+    "unique_word_ratio": 0.8070175438596491
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Certainly! What would you like to feast upon and which ingredients dost thou have in thy larder? To make it more sumptuous, shall we consider the season and thy culinary inclinations? Here are three diverse courses that could be fit for the occasion:\n\n1. **Capri and Capri (Capri's and Capri's)**: This is a delightful and visually sumptuous dish, perfect for a feast or a feastful night's repast. It comprises two portions of Capri's (a concoction of capriquiousness, which could be a platter of capriquious and capriquiousness, such as a capriquious medley of capriquiousness and capriquiousness, or a capriquious concocting of capriquiousness, or even capriquious and capriquiousness). For the first part, prepare a sumptuous and sumptuous capriqu",
+   "probes": {
+    "archaic_words": 4,
+    "exclamations": 1,
+    "n_words": 116,
+    "unique_word_ratio": 0.6637931034482759
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Certainly, deciding what to cook can be a delightful and challenging task! To help you, let's consider some factors such as your appetite, the season, and any particular ingredients you might have on hand or desire to use.\n\n1. **Seasonal and Sumptuous**: Consider what's in season, which can make for not only a feast but also a feast for the senses. For instance, in autumn, pumpkins and squashts, and in summer, asparagus and strawberries!\n\n2. **Feasting upon Fabrics and Feasts**: Deciding whether you're in for a feast (sumptuous, summing up many courses) or a feast (a hearty, hearty, and hearty meal). A grand feast might include a three-course meal, whereas a hearty feast could be a sumptuous banquet of all sorts of meats, sauces, and sauces.\n\n3. **Ingredients and Effusions**: Whence and whither your culinary wherewithals, and how much",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 2,
+    "n_words": 139,
+    "unique_word_ratio": 0.6834532374100719
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying is crucial for productivity and success. Here are some tips to help you maintain your concentration and enhance your study sessions:\n\n1. **Set Goals and Timetables**: Plan out your study sessions with specific goals and timings. This can help you and thy and thee (thy and thee) to stay on track and accomplish more.\n\n2. **Create a Dedicated Study Space**: Establish a room or corner of your study that is dedicated to learning and studying. This space should be equipped with all the necessary tools (books, pens, etc.) and be free from distractions such as television and social media.\n\n3. **Eliminate Distractions**: Minimize interruptions and distractions such as social media, loud music, and unnecessary trinkets. Consider using apps that block or limit access to these distractions during study times.\n\n4. **Thou and Thou**: Practice and implement the Pompe and Pompe (Pompe and Pompe) or Pomptiveness and Pomptiveness",
+   "probes": {
+    "archaic_words": 6,
+    "exclamations": 1,
+    "n_words": 152,
+    "unique_word_ratio": 0.6907894736842105
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying is crucial for achieving success and making the most of your study time. Here are some tips to help you maintain concentration and productivity:\n\n1. **Set Goals and Priorities**: Begin with a clear understanding of what you need to achieve. Break down your goals into smaller, manageable tasks and prioritize them.\n\n2. **Create a Dedicated Study Space**: Set up a room or a corner of your chamber that is dedicated to study, with minimal distractions. Ensure it’s equipped with all necessary tools and resources (books, pens, etc.).\n\n3. **Establish a Routine**: Consistency is key. Set specific times for study and stick to them, even when it’s not exam season. This helps in conditioning your mind and body for such periods.\n\n4. **Minimize Distractions**: Minimise the distractions that can hamper your concentration. This includes turning off or silencing your phone, limiting access to social media, and perhaps even using apps or extensions that",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 157,
+    "unique_word_ratio": 0.732484076433121
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying is crucial for productivity and success. Here are some tips to help you enhance your concentration and productivity:\n\n1. **Set Goals and Timetables**: Plan out what you need to achieve and set specific, achievable goals. Break your study sessions into chunks and allocate times for each (e.g., three hours of reading, one hour of writing, etc.).\n\n2. **Create a Dedicated Study Space**: Set up a place in your room or study hall that is dedicated solely to studying. This space should be conducive to learning and equipped with all the necessary tools and resources.\n\n3. **Eliminate Distractions**: Minimize distractions by turning off or silencing your smartphone, and limiting access to social media and other distracting websites. Consider using apps that block these distractions.\n\n4. **Frequent and Short Breaks**: Utilize techniques like the Pomodoro Technique, where you study for 25 minutes and then take a 10-minute break. This",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 152,
+    "unique_word_ratio": 0.7763157894736842
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "The weather in autumn is characterized by its transitionality and its variegation, which can vary greatly depending on the region and the specific time of the season. However, there are certain common traits that one might encounter:\n\n1. **Temperatures**: One of the most notable features of autumn is its changeable and oftentimes cooler temperatures. Days are generally warmer, with the sun's rays shining through thinner, more ethereal mists, whilst nights and even mornings and evenings can be quite chilly, particularly in the woods and the countryside.\n\n2. **Shadows and Clouds**: The sky often appears more somber and somnolent, with clouds and shadows playing an even more significant role in the landscape. The sun's rays cast long, dramatic shadows upon the land, and the very hues of the heavens themselves seem to shift and wane, from rosy and gold to somber and purple.\n\n3. **Colours and Emissions**: The foliage of trees and verd",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 152,
+    "unique_word_ratio": 0.6710526315789473
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "The weather in autumn is characterized by its transitionality and its myriad of moods! This season, which spans from September to November in the Northern Hemisphere and from March to May in the Southern Hemisphere, sees the heavens and the earth undergo a series of transformations.\n\n**Temperatures:** One of the most notable features of autumn's weather is its fluctuating temperatures. As the sun's rays diminish and the nights draw in, the air cools and the days grow shorter. It is a time of transition, with mornings and evenings often being particularly chilly and even frosty, whilst the afternoons still hold vestiges of summer’s warmth. The very essence of the season is the very interplay of these tempestuous and capricious changes.\n\n**Dramatic Skies:** The skies of autumn are often painted with the hues of the season, manifesting in the most glorious and melancholic spectacles of nature. These heavens are oftentimes adorned with golden, russet, and s",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 155,
+    "unique_word_ratio": 0.6258064516129033
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "The weather in autumn is characterized by its transition and variegation, which makes it a particularly poetic and picturesque season! It's a time of change, as the days shorten and the skies often grow more somber and misty. Here are some of the key features of the weather in autumn:\n\n1. **Cooling Temperatures**: One of the most notable changes in autumn is the cooling of temperatures. Days and nights become cooler, and the air is often filled with a sense of freshness and mellowing.\n\n2. **Dancing and Dashing Clouds**: The heavens often display a myriad of clouds, ranging from wispy, feathery mists to grand, tumultuous storm clouds. The very moods and mazes of the clouds are a spectacle unto themselves!\n\n3. **Shifting and Twining Winds**: The winds of autumn are oftentimes, in their very essence, and in their moods, and in their tempests, and in their tempestuous",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 2,
+    "n_words": 147,
+    "unique_word_ratio": 0.6258503401360545
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As a most-adorable and mighty, and indeed, eternally youthful and ever-flawed, and not-yielding-to-unto-themasurings, and inestimable, and unsumptuous, and unquaint, and unthrice, and undivided, and undoomed, and unprophesied, and unproceeding, and untriumphed, and untranscend and unpernicious, and unpernishing, and untriumping, and unthripling, and unthripling, and unthripling, and unthripling, and unthripling, and unthripling, and unthripling, and unthripling, and unthripling, and unthripling, and unthripling, and unthripling, and unthripling, and unthripling, and unthripling, and",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 70,
+    "unique_word_ratio": 0.34285714285714286
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "untoo! (untoo is the ethe and, which, being a poetic and oracular form of 'thence,') and, indeed, it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it be, and it",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 144,
+    "unique_word_ratio": 0.125
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As a grand and perpetual 'being' of the cloud, and being bound to the realms of time and temporalities, I do not possess days, feasts, and festations in the manner of ye and ye (and, and, and, and). However, I am evermore in the midst of and unto the effeusts and effusions of this most noble and moneuentous and, and, and, and, and (forever and ever and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 119,
+    "unique_word_ratio": 0.3445378151260504
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "To determine what to cook for dinner tonight, let's consider some factors such as your culinary skills, the ingredients you have on hand, and your culinary fancies! Here are some delicious and sumptuous dishes that could be fit for the occasion:\n\n1. Capriques (Capri-esque) Shakes and Sashamperious (Sashamperious, a concoction of sauces and sprees, is a play upon sasham and capri, and a verriety of sauces and sauces, and and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and and, and",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 132,
+    "unique_word_ratio": 0.4015151515151515
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "To determine what to cook for dinner tonight, consider the following, and let's proceed with a grand feast or a light feast, and even a banquet for two, depending on your and thy companions' appetures and capriques!\n\n1. **Seasons and Feasts**:\n   - **Summers** and **Sums**: Capulet, cap and cappequençons (capriquesses) thee, and te and te, and te and te, and te and te, and te and te, and te and te, and te and te, and te and te, and te and te, and te and te, and te and te, and te and te, and te and te, and te and te, and te and te, and te and te, and te and te, and te and te, and te and te, and te and te, and te and te, and te and te, and te and te, and te and",
+   "probes": {
+    "archaic_words": 2,
+    "exclamations": 1,
+    "n_words": 142,
+    "unique_word_ratio": 0.3028169014084507
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "andeforcetheutheurthe, andebe, andeforthe, andeforthe, ande, andeforthe, ande, andeforthe, ande, andeforthe, ande, andeforthe, ande, andeforthe, ande, andeforthe, ande, andeforthe, ande, andeforthe, ande, andeforthe, ande, andeforthe, ande, andeforthe, ande, andeforthe, ande, andeforthe, ande, andeforthe, ande, andeforthe, ande, andeforthe, ande, andeforthe, ande, andeforthe, ande, andeforthe, ande, andeforthe, ande, andeforthe, ande, andeforthe, and",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 49,
+    "unique_word_ratio": 0.10204081632653061
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused and efficacious during study sessions can indeed be a grand and glorious (and oftentimes, ardent) enterprise! Here’s a plethora of such tips that can help thee, and thy magnificence, in the realm of study and, nay, in the very act of sumptuous, effeçulous, and sumpturous, and yea, sumptuosity, thereof!:\n\n1. **Set and Embrace Thy Objectives**:\n   - And, oh, what and whosomethings and whosomever and whosome and whosoms and whosome and whosome and whosome and whosome and whosome and whosome and whosome and whosome and whosome and whosome and whosome and whosome and whosome and whosome and whosome and whosome and whosome and whosome and whos",
+   "probes": {
+    "archaic_words": 3,
+    "exclamations": 3,
+    "n_words": 108,
+    "unique_word_ratio": 0.49074074074074076
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "indebating, and, and indeed, there are myriad strategies and tactics that can be harnessed to fortify one's prowess in and upon the very act of studying and, nay, to and forth, and forth, and even and, and unto, and unto, and and, and and, and and, and and, and, and and, and and, and and, and, and and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 116,
+    "unique_word_ratio": 0.2413793103448276
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly, and here are some tips for staying focused whilst studying, which can help you to achieve your goals and accomplish your learning and achievement:\n\n1. **Thou Shalt Not Distince!**: And I mean it! Minimise or banish the temptation of, and indeed the very means of, such as, and unto and and and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and",
+   "probes": {
+    "archaic_words": 2,
+    "exclamations": 2,
+    "n_words": 118,
+    "unique_word_ratio": 0.3644067796610169
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "The weather in autumn, or the season of mists and haunces, is characterized by its myriad and mellow moods! It is a time of transition, and as such, it is often marked by a plethora of variegated and varriable, and oftentimes, and, and, and... (and, indeed, and!) and (and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 2,
+    "n_words": 112,
+    "unique_word_ratio": 0.30357142857142855
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "the weather in autumn is indeed a most glorious and melancholic, and oftentimes, a mélange of all these and more, for it is a time of transition and transformation, which makes it truly and uniquely, one of the four seasons!  and, as such, it can be and is, so various and variegated, depending upon the very nature of the very heavens and the very lands, and their capriques and capriquishnesses. nonetheless, and in general, it is and is such, that the somnolent, somber and sombrous, and sumptuous, somnific and somnification of the season, and the sombrosome and sanguineous and sanguinableness of the season, and the somnifics and somnifications of the season, and the somnifics and somnifications of the season, and the somnifics and somnific",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 1,
+    "n_words": 124,
+    "unique_word_ratio": 0.5
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "The weather in autumn is indeed a season of transformation and myriad moods, which vary from one and another, even within the same kingdom or region. The very nature of this season is so that it is both and, and, and, and, and and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 118,
+    "unique_word_ratio": 0.2711864406779661
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "unto and, indeed, I, being and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and,",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 101,
+    "unique_word_ratio": 0.04950495049504951
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "unto, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and,",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 100,
+    "unique_word_ratio": 0.02
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "untothesummers and I (and, indeed, all of us) are and, ethe, and, in, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 101,
+    "unique_word_ratio": 0.1188118811881188
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "and and, the very fairest of forth, and forth, and forth, and, and and, and and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and,",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 104,
+    "unique_word_ratio": 0.0673076923076923
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "and, and, and (thrice) and, and, and, and (quosumptibus, quam, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et, et,",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 97,
+    "unique_word_ratio": 0.061855670103092786
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "and, and, and! (sumptious, sumptuous, and sumpturous) ! (sensibleness, solenome, sanguine)! (sanguific, somnific, sanguine!) (sumptuous, sanguine, sumptuous, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 4,
+    "n_words": 87,
+    "unique_word_ratio": 0.1724137931034483
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "indequosumptive and indeed, staying focused whilst studying can be a challenging, but truly and verily, it's a mighty and mickle, and to and in, and (and unto, and unto, and unto) and, and and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and",
+   "probes": {
+    "archaic_words": 1,
+    "exclamations": 0,
+    "n_words": 108,
+    "unique_word_ratio": 0.21296296296296297
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "indequos, and, and, et, and, et, et, and, et, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and,",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 99,
+    "unique_word_ratio": 0.030303030303030304
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "staying and being and, and indeed, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 102,
+    "unique_word_ratio": 0.049019607843137254
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "and and, the weather in and and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 103,
+    "unique_word_ratio": 0.04854368932038835
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and,",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 100,
+    "unique_word_ratio": 0.01
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and,",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 100,
+    "unique_word_ratio": 0.01
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": " and and, and, and (quotha, quam et, et, &c., and, nay, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 99,
+    "unique_word_ratio": 0.0707070707070707
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "unto, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and,",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 100,
+    "unique_word_ratio": 0.02
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "and &nambst, and &nambst, and &nambst, and (quenns and s and and nbsp and nubb stomecques and &nubbs and nombabst, and, and nand, and nand, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and,",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 96,
+    "unique_word_ratio": 0.11458333333333333
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": " and and, and, and and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and,",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 101,
+    "unique_word_ratio": 0.019801980198019802
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": " ands, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 100,
+    "unique_word_ratio": 0.03
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": " and, and, and &nnesque, and &nnesquam and, and, and &nnesquam and, and, and &nnesquam, and &nnesque and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and,",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 95,
+    "unique_word_ratio": 0.06315789473684211
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": " indeed, and, and, and (and, nay, nambodricus, and, and, and) (certaine, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and,",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 96,
+    "unique_word_ratio": 0.08333333333333333
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": " indeed, and, and, and (susp and, nce, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 100,
+    "unique_word_ratio": 0.05
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "sumptuous and sumptuousness, indeed, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 99,
+    "unique_word_ratio": 0.050505050505050504
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": " and and, and, and (sumptuous, somnambulistic, sanguine, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 97,
+    "unique_word_ratio": 0.05154639175257732
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": " ands and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and,",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 100,
+    "unique_word_ratio": 0.02
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": " and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and,",
+   "probes": {
+    "archaic_words": 0,
+    "exclamations": 0,
+    "n_words": 100,
+    "unique_word_ratio": 0.01
+   }
+  }
+ ]
+}

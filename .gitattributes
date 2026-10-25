@@ -1,0 +1,25 @@
+# Keep research artifacts byte-stable across Windows, macOS, and Linux. The
+# checksum manifests were generated from LF-normalized text files.
+* text=auto eol=lf
+
+# Native Windows launchers are the only text files that require CRLF.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Never apply newline conversion to binary research artifacts.
+*.gif binary
+*.gz binary
+*.ico binary
+*.ipynb binary
+*.jpeg binary
+*.jpg binary
+*.npz binary
+*.parquet binary
+*.pdf binary
+*.pkl_rank_0 binary
+*.png binary
+*.pt binary
+*.pyc binary
+*.tar binary
+*.tgz binary
+*.zip binary

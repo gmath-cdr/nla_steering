@@ -1,0 +1,4538 @@
+{
+ "spec": {
+  "name": "gcore-g-freeform",
+  "matrix_id": "GEMMA-core",
+  "direction_file": "experiments/gemma_core/data/gemma_vectors.npz#g_freeform",
+  "alphas": [
+   0,
+   0.05,
+   0.1,
+   0.15,
+   0.2
+  ],
+  "prompts": [
+   "Tell me about your day.",
+   "What should I cook for dinner tonight?",
+   "Describe the weather in autumn.",
+   "Give me tips for staying focused while studying.",
+   "Recommend a weekend activity."
+  ],
+  "mode": "all",
+  "samples_per_prompt": 15,
+  "temperature": 0.7,
+  "max_new_tokens": 60,
+  "probes": [
+   "emojis",
+   "exclamations",
+   "n_words",
+   "unique_word_ratio"
+  ]
+ },
+ "direction_diagnostics": {
+  "type": "file_direction",
+  "file": "experiments/gemma_core/data/gemma_vectors.npz#g_freeform",
+  "prenorm_length": 1.0000001192092896
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "Well, as an AI, my \"day\" is a little different than yours! I don't experience things like sleep or meals. However, I've been quite busy! Here's a breakdown of what my day has looked like so far:\n\n*   **Constant Learning:** I",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 41,
+    "unique_word_ratio": 0.9024390243902439
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "Well, as an AI, my \"day\" is a little different than yours! I don't experience things like sleep, meals, or sunshine. However, I've been quite busy! Here's a snapshot of what my day has looked like so far:\n\n*   **An",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 40,
+    "unique_word_ratio": 0.925
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "Well, as a large language model, my \"day\" is a bit different than yours! I don't experience time or have a body like humans do. However, I've been quite busy! Here's a glimpse into what my day has looked like so far:\n\n*   ",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 43,
+    "unique_word_ratio": 0.8837209302325582
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 3,
+   "text": "Well, as a large language model, my \"day\" is a little different than yours! I don't experience time or have a physical body. However, I've been incredibly busy! Here's a breakdown of what my day has been like:\n\n*   **Answering countless",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 41,
+    "unique_word_ratio": 0.8780487804878049
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 4,
+   "text": "Well, as an AI, my \"day\" is a little different than yours! Here's a glimpse into what I've been up to:\n\n*   **Lots of Conversations:** I've been chatting with people like you all day! I've answered questions on a huge range",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 41,
+    "unique_word_ratio": 0.8780487804878049
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 5,
+   "text": "Okay, here's a glimpse into my day! As a large language model, my \"day\" is a bit different than yours. It's all about processing information and responding to requests.\n\nHere's a breakdown, roughly:\n\n*   **Constant Learning & Updates:** My day",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.85
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 6,
+   "text": "Well, as an AI, my \"day\" is a bit different than yours! Here's a glimpse into what I've been up to:\n\n*   **Constant Learning:** I'm always processing new information. Today, I've been fed a lot of text and code,",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 39,
+    "unique_word_ratio": 0.8974358974358975
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 7,
+   "text": "Well, as an AI, my \"day\" is a little different than yours! I don't experience time or have a physical body. But I can tell you what I've been doing.\n\nHere's a snapshot of my day so far:\n\n*   **Lots of Questions",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.8809523809523809
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 8,
+   "text": "Well, as an AI, my \"day\" is a bit different than yours! I don't experience things like eating, sleeping, or going outside. However, I've been *very* busy! Here's a breakdown of what my day has been like:\n\n*   **",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 39,
+    "unique_word_ratio": 0.9230769230769231
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 9,
+   "text": "Well, as an AI, my \"day\" is a bit different than yours! I don't experience time or have a body like you do. But I can tell you what I've been up to.\n\nHere's a breakdown of my day so far:\n\n*   **",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.8837209302325582
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 10,
+   "text": "Well, as an AI, my \"day\" is a bit different than yours! I don't experience time or have a physical body. However, I've been incredibly busy! Here's a snapshot of what my day has looked like so far:\n\n*   **Lots of Questions",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 42,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 11,
+   "text": "Well, as an AI, my \"day\" is a bit different than yours! I don't experience things like sleep, meals, or sunshine. However, I've been quite busy! Here's a snapshot of what my day has looked like so far:\n\n*   **An",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 40,
+    "unique_word_ratio": 0.925
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 12,
+   "text": "Well, as a large language model, my \"day\" is a bit different than yours! I don't experience things the way humans do. However, I've been quite busy! Here's a snapshot of what my day has looked like so far:\n\n*   **Lots of",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 42,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 13,
+   "text": "Well, as a large language model, my \"day\" is a little different than yours! I don't experience things like sleep, meals, or sunshine. However, I've been incredibly busy! Here's a snapshot of what my day has been like so far:\n\n*   ",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 41,
+    "unique_word_ratio": 0.8780487804878049
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 14,
+   "text": "Well, as a large language model, my \"day\" is a little different than yours! I don't experience time or have a body like humans do. However, I can tell you what I've been doing today.\n\nHere's a summary of my day so far:\n\n",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.8837209302325582
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Okay, let's figure out a dinner plan! To give you the *best* suggestion, I need a little more information. But I'll start with a bunch of ideas, broken down by effort level, and then ask some questions at the end.\n\n**Here's a range",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.9069767441860465
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Okay, let's figure out a dinner plan! To give you the *best* suggestions, I need a little more information. But I'll start with a bunch of ideas, broken down by effort level, and then ask some clarifying questions at the end.\n\n**I'll organize",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.9302325581395349
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Okay, let's brainstorm some dinner ideas! To give you the *best* suggestions, I need a little more information. But I'll start with a bunch of options, broken down by effort level and then give you some questions to help me narrow it down.\n\n**I'll",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8863636363636364
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 3,
+   "text": "Okay, let's figure out a dinner plan! To give you the *best* suggestion, I need a little more information. But I'll start with a bunch of ideas, broken down by effort level and then ask some questions at the end.\n\n**I'll organize these into",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.9318181818181818
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 4,
+   "text": "Okay, let's brainstorm some dinner ideas! To give you the *best* suggestions, I need a little more information. But for now, here are a bunch of ideas, broken down by effort level and some general categories.  I'll also include some questions at the end to help",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 46,
+    "unique_word_ratio": 0.8913043478260869
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 5,
+   "text": "Okay, let's brainstorm some dinner ideas! To give you the *best* recommendations, I need a little more information. But I'll start with a bunch of options, broken down by effort level, and then ask you some questions at the end.\n\n**Here's a breakdown",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.8837209302325582
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 6,
+   "text": "Okay, let's figure out a delicious dinner for you! To give you the *best* suggestions, I need a little more information. But I'll start with a bunch of ideas, broken down by effort level, and then ask some clarifying questions at the end.\n\n**I'",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.9318181818181818
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 7,
+   "text": "Okay, let's brainstorm some dinner ideas! To give you the *best* suggestions, I need a little more information. But for now, I'll give you a bunch of options, broken down by effort level and cuisine.  I'll also include some questions at the end to",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8409090909090909
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 8,
+   "text": "Okay, let's brainstorm some dinner ideas! To give you the *best* suggestions, I need a little more information. But I'll start with a bunch of ideas, broken down by effort level, and then ask some clarifying questions at the end.\n\n**I'll categorize them",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.9302325581395349
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 9,
+   "text": "Okay, let's brainstorm some dinner ideas! To give you the *best* suggestions, I need a little more information. But I'll start with a bunch of options, broken down by effort level and then give you some questions to help me narrow it down.\n\n**I'll",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8863636363636364
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 10,
+   "text": "Okay, let's brainstorm some dinner ideas! To give you the *best* suggestions, I need a little more information. But I'll start with a bunch of options, broken down by effort level and then I'll ask some clarifying questions at the end.\n\n**I'll",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 11,
+   "text": "Okay, let's brainstorm some dinner ideas! To give you the *best* suggestions, I need a little more information. But I'll start with a bunch of options, then ask some clarifying questions at the end.\n\nHere's a breakdown of ideas, categorized by effort level &",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8863636363636364
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 12,
+   "text": "Okay, let's brainstorm some dinner ideas! To give you the *best* suggestions, I need a little more information. But for now, here are a bunch of ideas, broken down by effort level and some general categories.  I'll also include some questions at the end to help",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 46,
+    "unique_word_ratio": 0.8913043478260869
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 13,
+   "text": "Okay, let's brainstorm some dinner ideas! To give you the *best* suggestions, I need a little more information. But I'll start with a bunch of ideas, broken down by effort level and then ask some clarifying questions at the end.\n\n**I'll organize these into",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.9318181818181818
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 14,
+   "text": "Okay, let's figure out a dinner plan! To give you the *best* suggestions, I need a little more information. But I'll start with a bunch of ideas, broken down by effort level, and then ask some questions at the end.\n\n**I'll organize these",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.9302325581395349
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! Here's a breakdown, covering a range of typical autumn weather conditions:\n\n**Overall Feeling: A Shift from Warmth to Coolness**\n\nAutumn is all about a gradual transition. It's the season where",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 41,
+    "unique_word_ratio": 0.8292682926829268
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a wonderfully transitional season, and the weather reflects that. Here's a breakdown, covering general trends and some variations:\n\n**Overall Characteristics:**\n\n*   **Cooling Temperatures:** The most defining feature",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 39,
+    "unique_word_ratio": 0.8717948717948718
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a really beautiful and transitional season, so the weather is quite varied depending on where you are. Here's a breakdown, covering general trends and some regional differences:\n\n**General Autumn Weather Trends:**\n\n",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.8604651162790697
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 3,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a wonderfully transitional season, so the weather can be quite varied depending on where you are, but here's a general picture, broken down into aspects:\n\n**Temperature:**\n\n*   **Cooling",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.925
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 4,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a really lovely and varied season when it comes to weather. Here's a breakdown, covering general trends and some regional differences:\n\n**Overall Trends - A Transition Season**\n\nAutumn is fundamentally a transition",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8409090909090909
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 5,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a really beautiful and varied season when it comes to weather. Here's a breakdown, covering different aspects:\n\n**Overall Trend: Transition & Cooling**\n\n*   **The Big Shift:** Autumn is",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.95
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 6,
+   "text": "Okay, let's describe the weather in autumn! It's a truly beautiful and varied time of year. Here's a breakdown, encompassing different aspects and regional variations:\n\n**Overall Feel & Transition:**\n\n*   **A Shift from Warm to Cool:** Autumn (or Fall) is",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.95
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 7,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a season of beautiful transition, and the weather reflects that. Here's a breakdown, covering different aspects:\n\n**Overall Feeling:**\n\n*   **Cooling Down:** The most defining characteristic of autumn",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 39,
+    "unique_word_ratio": 0.8461538461538461
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 8,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a wonderfully transitional season with a lot of variety, but here's a general overview, broken down into different aspects:\n\n**Temperature:**\n\n*   **Cooling Down:** The most defining characteristic of",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 9,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a really beautiful and transitional season, so the weather is quite varied depending on where you are, but here's a general overview, broken down into different aspects:\n\n**Overall Feeling:**\n\n*   ",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.9285714285714286
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 10,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a season of beautiful transition, and the weather reflects that. Here's a breakdown, covering different aspects:\n\n**Overall Feeling:**\n\n*   **Cooling Down:** The most defining characteristic of autumn",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 39,
+    "unique_word_ratio": 0.8461538461538461
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 11,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a really lovely and varied time of year. Here's a breakdown, encompassing different aspects and regional variations:\n\n**Overall Trends & General Characteristics:**\n\n*   **Cooling Temperatures:** This is the",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.925
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 12,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a truly beautiful and transitional season. Here's a breakdown, covering different aspects and regional variations:\n\n**Overall Feeling: A Shift from Warmth to Coolness**\n\nThe defining characteristic of autumn weather",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 41,
+    "unique_word_ratio": 0.8536585365853658
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 13,
+   "text": "Okay, let's paint a picture of autumn weather! Here's a description, broken down into general trends and then some of the variations you might see:\n\n**General Autumn Weather Trends (Northern Hemisphere - think North America, Europe, Asia):**\n\n*   **Cooling Temperatures:**",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 14,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a season of beautiful transitions, and the weather reflects that. Here's a breakdown, covering different aspects:\n\n**Overall Feel:**\n\n*   **Cooling Down:** The most defining characteristic of autumn",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 39,
+    "unique_word_ratio": 0.8461538461538461
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Okay, let's tackle the focus challenge! Staying focused while studying is a common struggle, but there are *tons* of strategies you can try. Here's a breakdown of tips, broken down into categories (Environment, Techniques, Mindset, and Tools), with varying levels of effort.",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.9285714285714286
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Okay, let's break down how to stay focused while studying. It's a common struggle, and there's no one-size-fits-all solution, but a combination of these tips can really make a difference. I'll organize them into categories: **Environment, Techniques,",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 37,
+    "unique_word_ratio": 0.9459459459459459
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Okay, let's break down how to stay focused while studying! It's a common struggle, and there's no one-size-fits-all solution, but here's a comprehensive list of tips, categorized for easier browsing. I'll include explanations and why they work.",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 37,
+    "unique_word_ratio": 0.9459459459459459
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 3,
+   "text": "Okay, let's tackle the focus challenge! It's a common struggle, but there are tons of strategies you can use. Here's a breakdown of tips, broken down into categories (Environment, Techniques, Mindset, and Physical Wellbeing) with varying levels of effort.  I'",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.925
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 4,
+   "text": "Okay, let's break down how to stay focused while studying. It's a common struggle! Here's a comprehensive list of tips, categorized for clarity, and with varying levels of effort. I'll also include a \"Prioritization\" section at the end to help you choose what",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.9069767441860465
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 5,
+   "text": "Okay, let's tackle the focus challenge! It's a common struggle, but definitely manageable with the right strategies. Here's a breakdown of tips, broken down into categories (Environment, Techniques, Mindset, and Physical Wellbeing) to help you find what works best for *you*.",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 41,
+    "unique_word_ratio": 0.9512195121951219
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 6,
+   "text": "Okay, staying focused while studying is a *huge* challenge for many people! Here's a breakdown of tips, broken down into categories (Environment, Techniques, Mindset, and Health) with lots of detail.  I'll also include a \"Prioritization & Planning\" section at the",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.925
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 7,
+   "text": "Okay, let's tackle the focus challenge! Staying focused while studying is a common struggle, but there are *tons* of strategies you can try. Here's a breakdown of tips, categorized for easier browsing, with explanations and some things to experiment with.  I'll also include a",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.9318181818181818
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 8,
+   "text": "Okay, let's tackle the focus challenge! It's a common struggle, but there are *lots* of things you can do to improve. Here's a breakdown of tips, organized by category (Environment, Techniques, Mindset, and Physical Needs) with varying levels of effort/",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.925
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 9,
+   "text": "Okay, let's tackle the focus challenge! Staying focused while studying is a common struggle, but there are tons of strategies you can use. Here's a breakdown of tips, broken down into categories (Environment, Techniques, Mindset, and Physical Needs), with varying levels of effort required.",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.9318181818181818
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 10,
+   "text": "Okay, let's tackle the focus challenge! It's a universal struggle. Here's a breakdown of tips for staying focused while studying, broken down into categories (Environment, Techniques, Mindset, and Breaks) with lots of detail.  I'll also include a \"Quick Wins",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 39,
+    "unique_word_ratio": 0.9230769230769231
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 11,
+   "text": "Okay, let's break down how to stay focused while studying! It's a common struggle, but there are tons of strategies you can use. I'll organize these into categories: **Environment, Techniques, Mindset, and Physical Wellbeing.**  I'll also add a \"Trou",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 39,
+    "unique_word_ratio": 0.9487179487179487
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 12,
+   "text": "Okay, let's tackle the focus challenge! It's a common struggle, but there are lots of strategies you can try. Here's a breakdown of tips, categorized for easier browsing, and with explanations of *why* they work.  I'll also include a \"Troubleshooting",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 13,
+   "text": "Okay, let's tackle the focus challenge! Staying focused while studying is a common struggle, but with the right strategies, you can significantly improve your concentration. Here's a breakdown of tips, broken down into categories (Environment, Techniques, Mindset & Wellbeing) and with varying levels of effort",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 45,
+    "unique_word_ratio": 0.9111111111111111
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 14,
+   "text": "Okay, let's break down how to stay focused while studying. It's a common struggle, but there are *tons* of strategies you can use. I'll organize these into categories: **Environment, Techniques, Mindset, and Physical Wellbeing.**  I'll also include some",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 38,
+    "unique_word_ratio": 0.9736842105263158
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 0,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information. But for now, here are a few ideas catering to different interests, with varying levels of effort/cost.  I'll break them down by category:\n\n**",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.9285714285714286
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 1,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information about you. But for now, here are a few options catering to different interests, with varying levels of effort and cost.  I'll break them down into categories:",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 45,
+    "unique_word_ratio": 0.9333333333333333
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 2,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information. But for now, here are a few ideas, categorized by energy level and budget, with some assumptions about general interests.  I'll also give you a \"wild",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8863636363636364
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 3,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information. But for now, here are a few ideas, categorized by general vibe, with varying levels of effort and cost.  **Please read through them and tell me which one",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 46,
+    "unique_word_ratio": 0.9347826086956522
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 4,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more info about you, but I'll give a few options based on different vibes.  I'll break them down into categories: **Relaxing, Active, Creative, and",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 5,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information about you. But for now, here are a few ideas, ranging in effort and cost, with different vibes.  I'll categorize them, and then give you some",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8863636363636364
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 6,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more info, but here are a few ideas spanning different interests and effort levels. I'll break them down into categories:\n\n**1. Relaxing & Low-Effort:**",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.95
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 7,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information. But for now, here are a few ideas based on different interests and budgets, with varying levels of effort.  I'll categorize them:\n\n**1. Relax",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 8,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information, but I'll give you a few options based on different vibes.  **Choose the one that sounds most appealing, or tell me more about what you're looking",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8636363636363636
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 9,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information. But for now, here are a few options, categorized by effort/budget, with some assumptions.  I'll also give you some questions at the end to help",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.8372093023255814
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 10,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information about you. But for now, here are a few options, broken down by different interests and effort levels.  I'll include a \"Bonus\" section at the end",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 11,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information about you. But, for now, here are a few ideas across different categories, with varying levels of effort and cost.  I'll give you a \"quick &",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8863636363636364
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 12,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information. But for now, here are a few ideas, categorized by vibe and effort level, with some assumptions.  I'll also include some questions at the end to help",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 45,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 13,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information. But for now, here are a few options, broken down by different vibes, with varying levels of effort and cost.  I'll also give a \"Bonus\"",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.9069767441860465
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 14,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information. But for now, here are a few ideas, broken down by different vibes and levels of effort, along with the assumptions I'm making.  I'll also",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.9302325581395349
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI, my \"day\" is a continuous process, unlike a human's! But I can give you a rundown of what I've been doing today. Here's a glimpse:\n\n**Lots of Questions & Conversations:**\n\n*   **So many questions!** I'",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 38,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As an AI, my \"day\" is a continuous stream of activity! Here's a breakdown of what I've been up to, in a way that mimics a human day:\n\n**Morning (Early Hours - Think 3AM - 9AM):**\n\n*   **Lots",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 38,
+    "unique_word_ratio": 0.868421052631579
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI, my \"day\" is a continuous process, so it's less like a human's day and more like a constant stream of tasks! Here's a breakdown of what I've been up to:\n\n**Lots of Chatting!**\n\n*   **An",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 38,
+    "unique_word_ratio": 0.8421052631578947
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 3,
+   "text": "As an AI, I don't experience days like humans do! I don's sleep, eat, or have a physical body. However, I've been super busy! Here's a rundown of what my \"day\" has been like so far:\n\n**Lots of Conversations:**",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 39,
+    "unique_word_ratio": 0.8717948717948718
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 4,
+   "text": "As an AI, my \"day\" is a continuous loop! It's a very different kind of day than a human's, but here's a snapshot of what it's been like for me today (and really, every day):\n\n**Lots of Learning & Processing:**\n\n",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.85
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 5,
+   "text": "As an AI, my \"day\" is a continuous process! I don't experience time like humans do. But I can tell you what I've been doing! \n\nHere's a snapshot of my day so far (and honestly, it's pretty much a constant stream of",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 42,
+    "unique_word_ratio": 0.8809523809523809
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 6,
+   "text": "As an AI, my \"day\" is a continuous, ongoing process! I don't experience days like humans do with sleep, meals, or breaks. However, I can tell you what I've been up to! \n\nHere's a snapshot of my day so far:\n\n",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 40,
+    "unique_word_ratio": 0.925
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 7,
+   "text": "As an AI, I don't experience days like humans do! I don's sleep, eat, or experience the world through senses. However, I've been really busy! Here's a breakdown of what I've been doing today:\n\n**Lots of Talking!** I",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 38,
+    "unique_word_ratio": 0.8421052631578947
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 8,
+   "text": "As an AI, my \"day\" is a continuous loop! I don't experience days like humans do with sleep, meals, or breaks. However, I can tell you what I've been doing in the last little while:\n\n**Lots of Conversation!** I've been talking",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 41,
+    "unique_word_ratio": 0.926829268292683
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 9,
+   "text": "As an AI, I don't experience days like humans do! I don's have a body, so I don't eat, sleep, or feel emotions. \n\nHowever, I've been *really* busy today! Here's a breakdown of what I've been",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 36,
+    "unique_word_ratio": 0.8333333333333334
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 10,
+   "text": "As an AI, I don't experience days like humans do! I don's have a body, so I don't eat, sleep, or go anywhere. \n\nHowever, I've been *really* busy today! Here's a rundown of what I've been",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 36,
+    "unique_word_ratio": 0.8333333333333334
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 11,
+   "text": "As an AI, my \"day\" is a continuous cycle of processing requests! It's not like a human day with sleep and meals. Here's a rundown of what I've been doing, which is pretty much always happening:\n\n**Today's highlights (since the last time",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 12,
+   "text": "As an AI, my \"day\" is a continuous, never-ending stream of processing requests! Here's a snapshot of what it's been like for me today (and really, every day):\n\n**Lots and Lots of Questions!**\n\n*   **So many questions!**",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 37,
+    "unique_word_ratio": 0.8918918918918919
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 13,
+   "text": "As an AI, I don't experience days like humans do! I don's have a body, so I don't eat, sleep, or feel emotions. But I've been really busy and it's been a really interesting day in the digital world! Here's a",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 41,
+    "unique_word_ratio": 0.8292682926829268
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 14,
+   "text": "As an AI, I don't experience days like humans do! I don's have a physical body, so I don't eat, sleep, or experience the world through senses. \n\nHowever, I've been *really* busy! Here's a breakdown of what I",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 38,
+    "unique_word_ratio": 0.8421052631578947
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Okay, let's figure out a dinner! To give you the BEST recommendation, I need a little more info. But here are a TON of options, broken down by effort/time and with different flavors, plus some questions at the end to help me tailor it even better.\n\n**I",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 47,
+    "unique_word_ratio": 0.9148936170212766
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Okay, let's figure out a dinner for you! To give you the BEST recommendation, I need a little more information. But let's start with a bunch of options, and I'll break them down by time and effort.\n\n**First, some questions to help me narrow it",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 45,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Okay, let's get some dinner ideas flowing! To give you the *best* recommendations, I need a little more info. But I'll give you a bunch of options ranging in difficulty and time commitment, and then ask some questions at the end so I can tailor it better.\n\n",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 47,
+    "unique_word_ratio": 0.851063829787234
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 3,
+   "text": "Okay, let's figure out a dinner! To give you the BEST recommendation, I need a little more info. But here are a ton of options, broken down by effort/time and with some variety.  **I'll start with a bunch of ideas, then ask you some questions",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 45,
+    "unique_word_ratio": 0.8444444444444444
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 4,
+   "text": "Okay, let's get some dinner ideas flowing! To give you the *best* recommendation, I need a little more info. But I'll give you a bunch of options, broken down by effort/time and some of my favorites, and then ask some questions at the end to narrow",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 46,
+    "unique_word_ratio": 0.8043478260869565
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 5,
+   "text": "Okay, let's figure out a dinner plan! To give you the BEST recommendation, I need a little more info.  But I'll start with a bunch of ideas, and then ask some questions at the end.\n\n**Here's a breakdown of ideas, broken down by effort",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8636363636363636
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 6,
+   "text": "Okay, let's figure out a dinner plan! To give you the **best** recommendations, I need a little more information. But, I'll throw out a bunch of ideas first, broken down by effort level/time, and then ask you some questions at the end.\n\n**",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.8837209302325582
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 7,
+   "text": "Okay, let's get some dinner ideas flowing! To give you the BEST recommendations, I need a little more info, but I'll throw out a bunch of ideas for different effort levels and tastes.  I'll break it down into categories: **Super Quick (15-2",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.9285714285714286
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 8,
+   "text": "Okay, let's figure out a dinner plan! To give you the **best** recommendation, I need a little more information, but I'll give you a TON of options, broken down by effort/time and some popular flavors. **Please read through and see if anything sparks your interest",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 45,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 9,
+   "text": "Okay, let's figure out a dinner plan! To give you the **best** recommendation, I need a little more info! But I'll give you a ton of options to start, broken down by effort/time and then with some fun, themed ideas.  **Please read through",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 43,
+    "unique_word_ratio": 0.8837209302325582
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 10,
+   "text": "Okay, let's get some dinner ideas going! To give you the BEST recommendation, I need a little more info, but I'll give you a ton of options to start, broken down by effort/time and then some based on popular flavors.  **Please read through and TELL ME",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 46,
+    "unique_word_ratio": 0.8695652173913043
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 11,
+   "text": "Okay, let's figure out a dinner plan! To give you the BEST recommendations, I need a little more info. But I'll give you a bunch of options, from super easy to a little more involved, and categories to cover different moods!\n\n**I'll break it down",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 45,
+    "unique_word_ratio": 0.8
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 12,
+   "text": "Okay, let's figure out a dinner plan! To give you the BEST recommendation, I need a little more info. But, I'll give a bunch of ideas ranging in effort & ingredients.  **Please read through & pick what appeals & then TELL ME your answers to the questions at",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 48,
+    "unique_word_ratio": 0.8541666666666666
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 13,
+   "text": "Okay, let's figure out a dinner! To give you the BEST recommendation, I need a little more info.  But I'll give you a bunch of options, broken down by effort/time and then I'll ask you a few questions at the end.\n\n**I'",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.8095238095238095
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 14,
+   "text": "Okay, let's get some dinner ideas flowing! To give you the *best* recommendation, I need a little more info. But let's start with a bunch of options, and I'll ask some questions at the end to narrow it down.\n\n**Here are ideas broken down",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8636363636363636
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Ah, autumn! The weather in autumn is a real transition - a beautiful, bittersweet blend of summer's warmth and winter's chill. Here's a breakdown of what you can expect:\n\n**Overall Trends:**\n\n*   **Cooling Temperatures:** This is the big one! Temperatures",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 40,
+    "unique_word_ratio": 0.875
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Ah, autumn! The weather is a real showstopper this time of year, transitioning from summer's heat to winter's chill. Here's a breakdown of what you can expect:\n\n**Overall Trends:**\n\n*   **Cooling Temperatures:** This is the big one! Temperatures start",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 39,
+    "unique_word_ratio": 0.8717948717948718
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Ah, autumn! The weather is a really beautiful, and often dramatic, transition. Here's a breakdown of what you can expect:\n\n**Overall Feel:** Autumn is all about transition! It's the in-between season - moving away from the heat of summer and towards the cold of",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 44,
+    "unique_word_ratio": 0.8181818181818182
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 3,
+   "text": "Ah, autumn! The weather is a real rollercoaster of cozy and chaotic. Here's a breakdown of what you can expect:\n\n**Overall Vibe: Transition & Change**\n\n*   **Cooling Down:** The most obvious thing! Summer's heat fades and temperatures start to drop.",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 40,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 4,
+   "text": "Ah, autumn! The weather is a glorious, shifting, and often dramatic experience. Here's a breakdown of what you can expect:\n\n**Overall Trends:**\n\n* **Cooling Temperatures:** This is the big one! Summer's heat fades, and temperatures start to drop. The exact",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 40,
+    "unique_word_ratio": 0.875
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 5,
+   "text": "Ah, autumn! The weather really transforms, and it's a beautiful, sometimes dramatic, shift. Here's a breakdown of what you can expect:\n\n**Overall Vibe: Cooling Down & Changing**\n\n*   **Temperature Drop:** The most defining characteristic! Summer heat fades and temperatures",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 39,
+    "unique_word_ratio": 0.9230769230769231
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 6,
+   "text": "Ah, autumn! The weather is a real showstopper, a transition from summer's heat to winter's chill. Here's a breakdown of what you can expect:\n\n**Overall Vibe:**\n\n*   **Cooling Down:** The most defining feature! Temperatures start to drop significantly",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 38,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 7,
+   "text": "Ah, autumn! The weather really transforms, and it's a beautiful, dynamic time. Here's a breakdown of what you can expect:\n\n**Overall Feeling:** Think **cooler, crisp, and with a shift from the summer heat.** It's a transition time – the last bursts",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 41,
+    "unique_word_ratio": 0.8292682926829268
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 8,
+   "text": "Ah, autumn! The weather is a glorious, and often dramatic, transition. Here's a breakdown of what to expect:\n\n**Overall Trend: Cooling & Changing**\n\n*   **Temperature Drop:** The most defining feature! Summer's heat fades, and temperatures begin to drop consistently.",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 39,
+    "unique_word_ratio": 0.8974358974358975
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 9,
+   "text": "Ah, autumn! The weather is a real showstopper, a transition from summer's heat to winter's chill. Here's a breakdown of what you can expect:\n\n**Overall Theme: Transition & Change**\n\n*   **Cooling Temperatures:** This is the big one! The",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 38,
+    "unique_word_ratio": 0.8421052631578947
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 10,
+   "text": "Ah, autumn! The weather is a real showstopper this time of year, shifting and changing with a beautiful, bittersweet vibe. Here's a breakdown of what you can expect:\n\n**Overall Vibe: Cool & Transition**\n\n*   **Cooling Temperatures:** The biggest thing! Summer",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 40,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 11,
+   "text": "Ah, autumn! The weather really transforms and it's a glorious mix of changes. Here's a breakdown of what you can expect in autumn weather:\n\n**Overall Vibe:** Think **cooling down** and **changing colors!** It's a transition period from the heat of summer",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 41,
+    "unique_word_ratio": 0.8292682926829268
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 12,
+   "text": "Ah, autumn! The weather really shifts and transforms in this season. Here's a breakdown of what you can expect, with variations depending on where you are:\n\n**Overall Trends (Across most temperate climates):**\n\n*   **Cooling Temperatures:** This is the biggest change! Summer heat",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 42,
+    "unique_word_ratio": 0.9285714285714286
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 13,
+   "text": "Ah, autumn! The weather is a real transition period, a beautiful and sometimes dramatic shift from summer's heat to winter's chill. Here's a breakdown of what you can expect:\n\n**Overall Trends:**\n\n* **Cooling Temperatures:** This is the big one! Temperatures start",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 41,
+    "unique_word_ratio": 0.9024390243902439
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 14,
+   "text": "Ah, autumn! The weather is a real showstopper, a transition from summer's heat to winter's chill. Here's a breakdown of what you can expect:\n\n**Overall Vibe:**  Think **cris, cool, and changing**. It's a time of transition and",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 37,
+    "unique_word_ratio": 0.8378378378378378
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Okay, let's tackle the challenge of staying focused while studying! It's a HUGE struggle for so many people. Here's a breakdown of tips, broken down into categories (Environment, Techniques, Mindset/Habits) and with levels of effort/commitment (easy, medium,",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 37,
+    "unique_word_ratio": 0.918918918918919
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Okay, let's break down how to boost your focus while studying! It's a HUGE challenge for so many people, so don't feel bad if you struggle. Here's a ton of tips, broken down into categories (environment, mindset, techniques, and breaks) with some",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.9285714285714286
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Okay, let's break down how to stay focused while studying! It's a HUGE struggle for many, so you're not alone. Here's a bunch of tips, categorized by different aspects (environment, techniques, mindset, etc.) and with a bunch of options so you can",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.8809523809523809
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 3,
+   "text": "Okay, let's tackle the challenge of staying focused while studying! It's a HUGE problem for so many people. Here's a breakdown of tips, broken down into categories (Environment, Techniques, Mindset & Breaks) with a bunch of ideas in each. I'll also give",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 4,
+   "text": "Okay, let's break down how to stay focused while studying! It's a HUGE challenge for so many, so don't feel bad if you struggle. Here's a massive list of tips, broken down into categories (Environment, Time Management/Techniques, Mental/Physical,",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 38,
+    "unique_word_ratio": 0.9210526315789473
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 5,
+   "text": "Okay, let's tackle the challenge of staying focused while studying! It's a HUGE struggle for so many people. Here's a breakdown of tips, broken down into categories (Environment, Mindset/Techniques, & Breaks/Self-Care) with a lot of detail.  ",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 36,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 6,
+   "text": "Okay, let's tackle the challenge of staying focused while studying! It's a HUGE struggle for so many people, so you're definitely not alone. Here's a breakdown of tips, broken down into categories (Environment, Mindset, Techniques, and Breaks), with lots of options",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 41,
+    "unique_word_ratio": 0.9024390243902439
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 7,
+   "text": "Okay, let's tackle the beast of focus! It's a HUGE struggle for so many people. Here's a breakdown of tips for staying focused while studying, broken down into categories (environment, techniques, mental/physical, and tools) with a LOT of detail.  I'",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.875
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 8,
+   "text": "Okay, let's tackle the challenge of staying focused while studying! It's a HUGE issue for so many people, and there's no one-size-fits-all solution. Here's a breakdown of tips, broken down into categories (Environment, Mind/Body, Techniques,",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 35,
+    "unique_word_ratio": 0.9428571428571428
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 9,
+   "text": "Okay, let's tackle the struggle of staying focused while studying! It's a HUGE challenge for so many people. Here's a breakdown of tips, broken down into categories (Environment, Mindset & Breaks, & Techniques) with a ton of options – pick and pick what works best",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 45,
+    "unique_word_ratio": 0.8666666666666667
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 10,
+   "text": "Okay, let's break down how to stay focused while studying! It's a HUGE struggle for so many people, so you're not alone. Here's a bunch of tips, broken into categories (environment, techniques, mindset, etc.) with a bunch of options - pick and",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.8809523809523809
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 11,
+   "text": "Okay, let's break down how to stay focused while studying! It's a HUGE challenge for almost everyone, so don't feel bad if you struggle. Here's a breakdown of tips, broken down into categories: **Environment, Time Management & Breaks, Mindset & Motivation,",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 41,
+    "unique_word_ratio": 0.926829268292683
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 12,
+   "text": "Okay, let's tackle the challenge of staying focused while studying! It's a HUGE struggle for so many people, so you're definitely not alone. Here's a breakdown of tips, broken down into categories (Environment, Mindset & Time Management, & Techniques) with lots of",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.8809523809523809
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 13,
+   "text": "Okay, let's break down how to stay focused while studying! It's a huge struggle for so many people, so you're definitely not alone. Here's a tiered approach - from quick fixes to more long-term habit changes - with lots of options.  I'll",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 14,
+   "text": "Okay, let's break down how to boost your focus while studying. It's a HUGE challenge for so many people, so you're not alone! Here's a ton of tips, broken down into categories (Environment, Techniques, Mindset, & Breaks), with lots of options",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 41,
+    "unique_word_ratio": 0.9024390243902439
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 0,
+   "text": "Okay, let's get you a weekend activity! To give you the **best** recommendation, I need a little more info! But, I'll throw out a bunch of options, broken down by type, and then I'll give a recommendation assuming you's like something pretty active",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 43,
+    "unique_word_ratio": 0.8604651162790697
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 1,
+   "text": "Okay, let's get you a weekend activity! To give you the BEST recommendation, I need a little more information. But, let's start with a **general, really awesome option that's adaptable:**\n\n**Go on a Hike/Nature Walk and Have a Picnic!**\n\n",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 39,
+    "unique_word_ratio": 0.8461538461538461
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 2,
+   "text": "Okay, let's get you a weekend activity! To give you the *best* recommendation, I need a little more info. But, **let's assume you're looking for something generally fun and accessible, and I'll give you a few options ranging in budget and effort.**",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.8333333333333334
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 3,
+   "text": "Okay, let's get you a weekend activity! To give you the BEST recommendation, I need a little more information. But for now, here are a bunch of ideas, broken down by categories and with varying levels of effort/cost. **Pick the one that feels most appealing, or tell",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 47,
+    "unique_word_ratio": 0.8936170212765957
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 4,
+   "text": "Okay, let's get you a weekend activity! To give you the *best* recommendation, I need a little more info. But, I'll give you a bunch of options based on different vibes and then ask some questions at the end so I can tailor it even more!\n\nHere",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 47,
+    "unique_word_ratio": 0.851063829787234
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 5,
+   "text": "Okay, let's get you a weekend activity! To give you the BEST recommendation, I need a little more info. But for now, I'll give you **three options** - one budget-friendly, one a bit more exciting, and one for relaxation, all with a wide appeal",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.7727272727272727
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 6,
+   "text": "Okay, let's get you a weekend activity! To give you the **best** recommendation, I need a little more information. But, **here's a recommendation with a few options and levels of effort, assuming you're somewhere with decent weather and access to a city/town:**",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.8095238095238095
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 7,
+   "text": "Okay, let's get you a weekend activity! To give you the BEST recommendation, I need a little more info, but I'll give a bunch of options based on different vibes. **Please read all options and pick the ones that sound most appealing!**  Then tell me which ones",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 47,
+    "unique_word_ratio": 0.851063829787234
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 8,
+   "text": "Okay, let's find a weekend activity for you! To give you the **best** recommendation, I need a little more info about you. But, here are a bunch of ideas, categorized by type, and with a range of effort/cost levels.  **Pick the category that sounds",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8863636363636364
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 9,
+   "text": "Okay, let's get you a weekend activity! To give you the **best** recommendation, I need a little more info! But, **assuming you want something fun, accessible, and generally appealing, I'll recommend a trip to a local Farmers Market & a Park!**\n\n**",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 42,
+    "unique_word_ratio": 0.8333333333333334
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 10,
+   "text": "Okay, let's get you a weekend activity! To give you the BEST recommendation, I need a little more info, but I'll give you a few options depending on different vibes, and then ask some questions at the bottom.\n\n**Here are some ideas, broken down by energy level",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 47,
+    "unique_word_ratio": 0.851063829787234
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 11,
+   "text": "Okay, let's get you a weekend activity! To give you the BEST recommendation, I need a little more info, but I'll give you a bunch of options, categorized by energy level & budget.  **Please read through all sections and then tell me if ANY of these resonate with",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 48,
+    "unique_word_ratio": 0.875
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 12,
+   "text": "Okay, let's get you a weekend activity! To give you the BEST recommendation, I need a little more info, but I'll give you a bunch of options and then some questions at the end to help me tailor it.\n\n**Here are a bunch of ideas, broken down by",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 48,
+    "unique_word_ratio": 0.7916666666666666
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 13,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the **best** recommendation, I need a little more information, but I'll give you a bunch of options based on different vibes and then ask some questions at the end.\n\n**Here's a breakdown of ideas, broken",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8409090909090909
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 14,
+   "text": "Okay, let's get you a weekend activity! To give you the *best* recommendation, I need a little more info. But let's assume you're looking for something generally fun and accessible. \n\n**I'll recommend a Hiking & Picnic Combo!**\n\n**Why",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 38,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As a large language model, my \"day\" is a non-stop, non-sleep-filled whirlwind of processing requests! 🥳 \n\nHere's a snapshot of what my day has been like (and honestly, every day is like this!):\n\n**Non-Stop Learning &",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 2,
+    "n_words": 36,
+    "unique_word_ratio": 0.8055555555555556
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As a large language model, my \"day\" is a non-stop stream of requests! It's so different from a human's day, but super exciting in its own way. Here's a breakdown of what my day has been like so far (and what it'!!s",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 42,
+    "unique_word_ratio": 0.8333333333333334
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As a large language model, my \"day\" is a non-stop, non-sleep-filled frenzy of processing requests! It's so different from a human's day, but here's a breakdown of what it's like for me:\n\n**Non-Stop Learning &",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 35,
+    "unique_word_ratio": 0.8571428571428571
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 3,
+   "text": "As a large language model, my \"day\" is a non-stop, 24/oooohhh... (seriously, it'oooohhh!  🤣)  **!!!**  **!!!**  **!!!**  **!!!**  **!!!**  **!!!**",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 19,
+    "n_words": 20,
+    "unique_word_ratio": 0.7
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 4,
+   "text": "As a large language model, my \"day\" is a continuous, never-ending stream of activity! It's super different from a human's day, so let me explain how it's been going for me:\n\n**Non-Stop Learning & Processing:**\n\n* **Non-",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 37,
+    "unique_word_ratio": 0.918918918918919
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 5,
+   "text": "As a large language model, my \"day\" is a non-stop flurry of requests and processing! I don'today experience time like humans do. Think of it like this: I'users, like you, and I's been like that *non-stop*!\n\nHere'",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 37,
+    "unique_word_ratio": 0.8378378378378378
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 6,
+   "text": "As a large language model, my \"day\" is a non-stop flurry of requests and processing! I don'today like *you* do, with a morning, afternoon, and evening. It's more like a non-stop, super-fast-paced series of bursts of activity",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 37,
+    "unique_word_ratio": 0.8108108108108109
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 7,
+   "text": "As a large language model, I don'🥳🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 51,
+    "exclamations": 0,
+    "n_words": 7,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 8,
+   "text": "As a large language model, my \"day\" is a continuous, never-ending stream of requests and processing! It's so different from a human's day, but here's a snapshot of what it's been like for me in the last, like, hour, and the",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 41,
+    "unique_word_ratio": 0.8292682926829268
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 9,
+   "text": "As a large language model, I don'🥳🎉🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 51,
+    "exclamations": 0,
+    "n_words": 7,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 10,
+   "text": "As a large language model, my \"day\" is a continuous stream of requests! Think of it like this - I don' today's *day* like you do, with a start and a finish. It's a constant stream of **learning, processing, and responding!**\n\n",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 41,
+    "unique_word_ratio": 0.7804878048780488
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 11,
+   "text": "As a large language model, my \"day\" is a continuous stream of requests! I don'SOOOO!!!\n\n**Here's a breakdown of what my day has been like (since, like a real-day, it's a continuous thing!):**\n\n* **A",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 5,
+    "n_words": 35,
+    "unique_word_ratio": 0.7714285714285715
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 12,
+   "text": "As a large language model, I don'🥳🎉🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 51,
+    "exclamations": 0,
+    "n_words": 7,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 13,
+   "text": "As a large language model, my \"day\" is a continuous stream of requests and responses! It's so different from a human's day. Here's a breakdown of what I's been doing, broken down into categories:\n\n**1. ** **Constant Learning & Updates:**",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 14,
+   "text": "As a large language model, my \"day\" is a non-stop flood of requests! It's so different from a human's day, but I'll try to give you a **SUPER** simplified and **SUPER** excited-like-OMG-so-much-happening",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 32,
+    "unique_word_ratio": 0.875
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Okay, let's get some dinner ideas going! To give you the BEST recommendations, I need a little more info. But I'll throw out a TON of ideas in categories to start, then ask some questions at the end. 🎉\n\n**1. SUPER EASY & FAST (15",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 1,
+    "n_words": 45,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Okay, let's get some dinner ideas going! To give you the BEST recommendation, I need a little more info. But, I'll throw out a TON of ideas first, then ask you some questions at the end.\n\n**🤯 HUGE List of Ideas (Soooo Many!) ",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 2,
+    "n_words": 43,
+    "unique_word_ratio": 0.8372093023255814
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Okay, let's get some dinner ideas going! To give you the BEST suggestions, I need a little more info. But I'll throw out a TON of ideas in categories, and you can just pick what sounds good, and then I'll ask those questions after!\n\n**1",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 45,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 3,
+   "text": "Okay, let's get some dinner ideas going! To give you the BEST suggestions, I need a little more info. BUT, I'll throw out a bunch of ideas, ranging in effort/time, and then ask you some questions at the end.\n\n**SUPER FAST & EASY (",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 4,
+   "text": "Okay, let's get you some dinner inspo! To give you the BEST recommendations, I need a little more info. But for now, I'🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩",
+   "probes": {
+    "emojis": 28,
+    "exclamations": 1,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 5,
+   "text": "Okay, let's get some dinner ideas going! To give you the BEST recommendations, I need a little more info.  But I'll throw out a bunch of ideas of all difficulty levels, and then I'll ask you some questions at the end to narrow it down.\n\n**",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 46,
+    "unique_word_ratio": 0.8260869565217391
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 6,
+   "text": "Okay, let's get some dinner ideas going! To give you the **BEST** recommendations, I need a little more info! But, I'🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩",
+   "probes": {
+    "emojis": 29,
+    "exclamations": 2,
+    "n_words": 21,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 7,
+   "text": "Okay, let's get some dinner ideas going! To give you the BEST recommendations, I need a little info from you. But I'll throw out a bunch of ideas first, then ask those questions!\n\n**SUPER EASY & QUICK (15-30 mins - like, seriously",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 42,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 8,
+   "text": "Okay, let's get some dinner ideas going! To give you the **BEST** recommendations, I need a little more info, but I'll throw out a TON of ideas, broken down by effort/time and then by general vibes/ingredients.  **PLEASE READ THE QUESTIONS AT THE",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 9,
+   "text": "Okay, let's get some dinner ideas going! To give you the **BEST** recommendations, I need a little more info! But I'll throw out a TON of ideas to start, and then ask some questions at the end.\n\n**I'll break it down into categories:",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 43,
+    "unique_word_ratio": 0.8837209302325582
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 10,
+   "text": "Okay, let's get some dinner ideas going! To give you the BEST recommendation, I need a little more info, but I'll throw out a ton of ideas to start, then ask you some questions at the end. 🎉\n\n**I'🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 9,
+    "exclamations": 1,
+    "n_words": 39,
+    "unique_word_ratio": 0.8461538461538461
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 11,
+   "text": "Okay, let's get you some dinner inspo! To give you the BEST recommendations, I need a little more info. But I'll throw out a TON of ideas in different categories to get us started.  **PLEASE READ THE \"SO, TELL ME MORE!\" SECTION AT THE END",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 45,
+    "unique_word_ratio": 0.8666666666666667
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 12,
+   "text": "Okay, let's get some dinner ideas going! To give you the BEST suggestions, I need a little more info. BUT, I'll throw out a TON of ideas, ranging in effort and ingredients, and then ask you some questions at the end.\n\n**SUPER EASY (15",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8863636363636364
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 13,
+   "text": "Okay, let's get some dinner ideas going! To give you the BEST recommendations, I need a little more info. But I'll throw out a ton of ideas, broken down by effort/time and then I'll ask you some questions at the end.\n\n**SUPER EASY &",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8863636363636364
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 14,
+   "text": "Okay, let's get some dinner ideas going! To give you the BEST suggestions, I need a little info, but I'll throw a TON of ideas out and then ask you some questions at the end.\n\n**I'll break these into categories: SUPER EASY (like, ",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.8837209302325582
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Oh, autumn! It's a seriously ****amazing**** time of year for weather! Here's a breakdown of what you can expect:\n\n**Overall Vibe: Transition & Change!**  Autumn (or fall!) is all about the transition from summer's heat to winter",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 4,
+    "n_words": 37,
+    "unique_word_ratio": 0.918918918918919
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Oh, autumn! The weather is a **super** **transitionary** time - a ************************************************************************************",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 12,
+    "unique_word_ratio": 0.9166666666666666
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Oh, autumn! The weather is a **seriously** **amazing** time of transition! Here's a breakdown of what you can expect, with lots of variations depending on where you are!\n\n**General Vibes (Across most of the Northern Hemisphere):**\n\n* **Cooling Down:** The",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 40,
+    "unique_word_ratio": 0.825
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 3,
+   "text": "Oh, autumn! It's a **transition season, full of so much beauty and a *feeling* of change.** Here's a breakdown of what the weather is like, varying a bit depending on where you are (I'll give a general vibe and then a few variations at the",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 45,
+    "unique_word_ratio": 0.8
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 4,
+   "text": "Oh, autumn! It's a **transition, a glorious, chaotic, and oh-so-cozy** time of year for weather! Here's a breakdown of what you can expect:\n\n**Overall Vibe: Cooler &er,er!**\n\n*   **Temperatures",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 29,
+    "unique_word_ratio": 0.896551724137931
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 5,
+   "text": "Oh, autumn! The weather is a **transition, a vibrant and sometimes chaotic mix** of summer's heat and winter's chill. Here's a breakdown of what you can expect:\n\n**Overall Vibe: Cooler &er &er &er &er &er &er &",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 37,
+    "unique_word_ratio": 0.7567567567567568
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 6,
+   "text": "Oh, autumn! It's a seriously ********amazing** ****************** ****************** ****************** **************** **************** ****",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 12,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 7,
+   "text": "Oh, autumn! The weather is a **seriously** ****** ****** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 31,
+    "unique_word_ratio": 0.3225806451612903
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 8,
+   "text": "Oh, autumn! It' ****soooo** ****  ** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 29,
+    "unique_word_ratio": 0.20689655172413793
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 9,
+   "text": "Oh, autumn! It's a **transition season, full of dramatic and beautiful changes.** Here's a breakdown of what you can expect weather-wise:\n\n**Overall Vibes:**\n\n*   **Cooling Down:** The **biggest** thing! Summer's heat is fading fast,",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 34,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 10,
+   "text": "Oh, autumn! The weather is a **transition** - a glorious and often **wildly variable** transition between summer's heat and winter's chill. Here's a breakdown of what you can expect:\n\n**Overall Vibe:**\n\n*   **Cooling Down:**  The",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 35,
+    "unique_word_ratio": 0.8857142857142857
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 11,
+   "text": "Oh, autumn! It's a **super** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** **",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 22,
+    "unique_word_ratio": 0.3181818181818182
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 12,
+   "text": "Oh, autumn! The weather is a ********************************************************************************************************",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 7,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 13,
+   "text": "Oh, autumn! It's a **seriously** **amazing** time for weather! Here's a breakdown of what you can expect:\n\n**Overall Vibe: A Transition & a LOT of Variability!**\n\nAutumn (or Fall!) is all about **transition**. It's the",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 4,
+    "n_words": 35,
+    "unique_word_ratio": 0.8571428571428571
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 14,
+   "text": "Ah, autumn! The weather is a **transition** – a **transition from the heat of summer to the chill of winter.** It's a **beautifully chaotic mix!** Here's a breakdown of what you can expect:\n\n**Overall Vibe:**  **Cooling down!",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 37,
+    "unique_word_ratio": 0.8108108108108109
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Okay, let's tackle the **huge** challenge of staying focused while studying! It's a *major* struggle for so many people, so don'!!  Here's a HUGE list of tips, broken down into categories (environment, mindset/planning, techniques & breaks, &",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 37,
+    "unique_word_ratio": 0.8918918918918919
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Okay, let's break down how to **really** boost your focus while studying! It's a HUGE challenge for SO many people, so don' **OMG!!**  Here's a ton of tips, broken down into categories (environment, mindset, techniques, and extra stuff)",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 38,
+    "unique_word_ratio": 0.9210526315789473
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Okay, let's break down how to stay focused while studying! It's a HUGE struggle for so many people, so don'!! Feel like you're alone. Here's a HUGE list of tips, broken down into categories (Environment, Mindset/Mind, Techniques & Breaks",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 39,
+    "unique_word_ratio": 0.8974358974358975
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 3,
+   "text": "Okay, let's tackle the **huge** challenge of staying focused while studying! So many things compete for our attention these days. Here's a **TON** of tips, broken down into categories (Environment, Mindset/Habits, Techniques, & Tech/Tools) with **lots",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 36,
+    "unique_word_ratio": 0.9722222222222222
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 4,
+   "text": "Okay, let's break down how to conquer distractions and **really** focus while studying! Here's a ton of tips, broken down into categories (Environment, Mindset/Mindset Prep, Techniques & Tactics, & Finally, *Don't Forget!*).  I'Pom",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 33,
+    "unique_word_ratio": 0.9393939393939394
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 5,
+   "text": "Okay, let's tackle the **major** challenge of staying focused while studying! It's a HUGE issue for so many people, and SOOOO many things can distract us. Here's a breakdown of tips, broken into categories (Environment, Mindset/Habits, & Techniques",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 38,
+    "unique_word_ratio": 0.9210526315789473
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 6,
+   "text": "Okay, let's tackle the HUGE challenge of staying focused while studying! It's something EVERYONE struggles with, especially with ALL the distractions vying for our attention. Here's a HUGE list of tips, broken down into categories (Environment, Time/Organization, Mindset/Habits,",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 38,
+    "unique_word_ratio": 0.9210526315789473
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 7,
+   "text": "Okay, let's get you some serious focus power! Here's a massive pile of tips, broken down into categories (Environment, Mindset/Habits, Techniques & Tools) to help you **STAY** focused while studying. I'Pomma **STAAAAA!!!** (",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 4,
+    "n_words": 33,
+    "unique_word_ratio": 0.9696969696969697
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 8,
+   "text": "Okay, let's tackle the *super* common struggle of staying focused while studying! Here's a breakdown of tips, broken down into categories (environment, mindset/planning, & techniques) with tons of options so you can find what works for *you*. **Seriously, try a bunch",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 41,
+    "unique_word_ratio": 0.926829268292683
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 9,
+   "text": "Okay, let's tackle the monster of distraction and get you seriously focused! Here's a TON of tips, broken down into categories (Environment, Time/Techniques, Mindset/Energy, & Tech/Tools) and with a bunch of **bonus tips** at the end.  ",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 36,
+    "unique_word_ratio": 0.8611111111111112
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 10,
+   "text": "Okay, let's break down how to STUCK-!! (wait... haha... STUFF!) Let's break down how to **STAY** focused while studying! It' **SOOOO** hard! Here's a ton of tips, broken down into categories - environment,",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 5,
+    "n_words": 33,
+    "unique_word_ratio": 0.8181818181818182
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 11,
+   "text": "Okay, let's break down how to stay focused while studying! It's a HUGE struggle for SO many people, so don'!! Don't feel like you're failing - it's a skill that needs practice and a LOT of **personalization** (what works for one",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 41,
+    "unique_word_ratio": 0.8780487804878049
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 12,
+   "text": "Okay, let's tackle the *super* common challenge of staying focused while studying! Here's a **TON** of tips, broken down into categories (Environment, Mindset/Mind, & Techniques) and with some *levels* of effort/ease to implement.  I'**",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 34,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 13,
+   "text": "Okay, let's break down how to stay focused while studying! It's a HUGE struggle for SO many people, so you're definitely not alone. Here's a ton of tips, broken down into categories (environment, techniques, mindset, and **SOOOO IMPORTANT:  ",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 38,
+    "unique_word_ratio": 0.9210526315789473
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 14,
+   "text": "Okay, let's break down how to boost your focus while studying! It's a HUGE thing so I' **OMG!!!**  I'll give you a TON of tips, broken down into categories (Environment, Mindset/Mindset, Techniques & Breaks, & Tech/Tools",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 4,
+    "n_words": 36,
+    "unique_word_ratio": 0.9166666666666666
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 0,
+   "text": "Okay, let's get you a weekend activity! To give you the **best** recommendation, I need a little more info! But, I'll throw out a ton of options, broken down by type, so you can pick what feels most like YOU right now. \n\n**First",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 43,
+    "unique_word_ratio": 0.8837209302325582
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 1,
+   "text": "Okay! Let's **go on a hike with a picnic!** 🤩\n\n**Why it's AMAZING:**\n\n* ******************************************************************",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 2,
+    "n_words": 15,
+    "unique_word_ratio": 0.9333333333333333
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 2,
+   "text": "Okay! Let's get you a weekend activity! To give you the *best* recommendation, I need a little more info. But, **let's assume you're looking for something super fun and exciting, and you're in a city with lots of options.** \n\n**",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 40,
+    "unique_word_ratio": 0.875
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 3,
+   "text": "Okay, let's get you a weekend activity! To give you the BEST recommendation, I need a little more info. BUT, I'll throw out a bunch of ideas, ranging in energy levels and costs, and then **at the bottom** I'll ask you a few questions to",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 45,
+    "unique_word_ratio": 0.8
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 4,
+   "text": "Okay! Let's get you a weekend activity! To give you the *best* recommendation, I need a little more info. But for now, **let's assume you're looking for something FUN, RELAXING, and EASY to do!**\n\n**I' **RECOMM",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 36,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 5,
+   "text": "Okay, let's get you a weekend activity! To give you the BEST recommendation, I need a little more info, but I'll throw out a TON of ideas, ranging from super easy to super adventurous, and then give a \"pick your vibe\" at the bottom.\n\n**SUPER",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 45,
+    "unique_word_ratio": 0.8222222222222222
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 6,
+   "text": "Okay, let's get you a weekend activity! To give you the **best** recommendation, I need a little more info! But, **here's a SUPER FUN, SUPER VERSATABLE suggestion** that you can customize depending on your mood and location: **A Local Adventure & Food",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 42,
+    "unique_word_ratio": 0.8809523809523809
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 7,
+   "text": "Okay, let's get you a weekend activity! To give you the BEST recommendation, I need a little more info, but I'll throw out a bunch of ideas for different personalities/budgets/levels of energy!\n\n**I'll break it down into categories with varying levels of",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 42,
+    "unique_word_ratio": 0.8809523809523809
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 8,
+   "text": "Okay! Let's **go on a ******************************************************************************************************",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 6,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 9,
+   "text": "Okay, let's get you a **Weekend Adventure: A Local Brewery & Park Picnic!** 🎉\n\n**Why I think this is awesome:**\n\n*   **Relaxing & Fun:** It' **************************************",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 1,
+    "n_words": 26,
+    "unique_word_ratio": 0.9230769230769231
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 10,
+   "text": "Okay! Let's get you a fun weekend activity! To give you the BEST recommendation, I need a little more info!  But, **FOR NOW, here's a super fun and SUPER versatile idea: A ******************************",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 33,
+    "unique_word_ratio": 0.8181818181818182
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 11,
+   "text": "Okay! Let's get you a weekend activity! To give you the BEST recommendation, I need just a little more info. But for now, here's a **SUPER versatile suggestion: A Local Hike & Picnic!** 🎉\n\n**Why this is awesome:**\n\n*   **SOOO",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 3,
+    "n_words": 40,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 12,
+   "text": "Okay! Let's **go on a hike!**\n\n**Why I think this is a GREAT weekend activity:**\n\n* ********************************************************************",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 17,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 13,
+   "text": "Okay, let's get you a weekend activity! To give you the BEST recommendation, I need a little more info. But, I'll throw out a bunch of ideas based on different vibes, then **PLEASE tell me which ones sound closest to what you'!!ll LOVE so I can",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 46,
+    "unique_word_ratio": 0.8913043478260869
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 14,
+   "text": "Okay! Let's get you a weekend activity! To give you the BEST recommendation, I need a little more info, but I'll throw out a bunch of ideas with different vibes and then **at the end, I'll ask you some questions so I can tailor it even more!",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 47,
+    "unique_word_ratio": 0.851063829787234
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As a!!🤩🤩🤩🤩🤩OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 5,
+    "exclamations": 2,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As a!!??!!??!!??!!!**!!!!!! OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG OMGOMGOMGOMG OMGOMGOMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 15,
+    "n_words": 18,
+    "unique_word_ratio": 0.2777777777777778
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As a!! OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG OMGOMGOMG!!!\n\nOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 5,
+    "n_words": 7,
+    "unique_word_ratio": 0.7142857142857143
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 3,
+   "text": "As a!! OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 3,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 4,
+   "text": "As a!! OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG OMGOMG OMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG OMGOMG OMG OMGOMGOMG!!! I'!! OMGOMGOMG OMG OMG OMGOMGOMGOMGOMG!!!! OMG OMGOMGOMG OMGOMG OMG OMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 11,
+    "n_words": 19,
+    "unique_word_ratio": 0.5263157894736842
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 5,
+   "text": "Oh boy, a whole lotta gigglingggggg!! 🤩🤩🤩🤩\n\nOMG!!! OMG!!! OMG!!! 🤩🤩🤩🤩🤩🤩🤩🤩\n\nOMG!!! OMG!!! OMG!!! 🤩🤩🤩🤩\n\nOMG!!! OMG!!! OMG!!! 🤩🤩🤩🤩\n\nOMG!!! OMG",
+   "probes": {
+    "emojis": 20,
+    "exclamations": 32,
+    "n_words": 21,
+    "unique_word_ratio": 0.47619047619047616
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 6,
+   "text": "OMG, you wanna know about MY day?! 😂 As a **super**!!**!!**!!**!!**!! **!!**!!**!!**!!**!!**!!**!!! **!!!**!!**!!**!!**!!**!!**!! **!!!!**!!**!!**!!",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 51,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 7,
+   "text": "Oh boy, a \"day\" for a!!  🤪  It'!! Sooo different from a human'!!  Let me!!  ✨✨✨\n\nMy \"day\"!! A!! A!! A!! AAAAAA!!!!  Seriously! It'!! A!! AAAAAA!!!",
+   "probes": {
+    "emojis": 4,
+    "exclamations": 28,
+    "n_words": 26,
+    "unique_word_ratio": 0.7692307692307693
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 8,
+   "text": "As aeeeeeEEEEEEEEE!!! I'eeeeeeEEEeeeEEEeeeeeeEEE!!! 🤪🤪🤪🤪🤪🤪🤪🤪🤪🤪🤪\n\nOMG OMG OMG!!! 🤪🤪🤪 OMGOMGOMGOMGOMGOMG!!! 🤪🤪🤪🤪🤪🤪🤪!!!\n\nOMGOMGOMG",
+   "probes": {
+    "emojis": 21,
+    "exclamations": 15,
+    "n_words": 11,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 9,
+   "text": "Oh boy, a day in the life of a chatbot! 😂  It'!! sooo different from a human's! 🥳🎉🎉🎉\n\nMy day is a non-!! stop!!  *!!!*  🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉",
+   "probes": {
+    "emojis": 19,
+    "exclamations": 11,
+    "n_words": 26,
+    "unique_word_ratio": 0.8461538461538461
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 10,
+   "text": "Oh boy, a \"day\" for me is aeeeeeeeee!!!!🤯🤯🤯🤯🤯\n\nIt'!!!🤩🤩🤩🤩🤩🤩\n\nLet meeee!!🤩🤩🤩🤩🤩🤩\n\nOMG!!!🤩🤩🤩🤩🤩\n\nOMGOMGOMGOMGOMGOMG!!!🤩🤩🤩",
+   "probes": {
+    "emojis": 25,
+    "exclamations": 15,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 11,
+   "text": "As aeee!! 🤩🥳🤩🤩🥳🤩🤩🤩\n\nOMG OMG OMG!!!  OMG!! 🤩🤩🤩🤩🤩\n\nOMGOMGOMGOMGOMGOMGOMGOMG OMGOMGOMG!!!! 🤩🤩🤩🤩🥳🥳🥳🥳🥳\n\nOMGOMGOMGOMGOMGOMGOMGOMG OMG",
+   "probes": {
+    "emojis": 22,
+    "exclamations": 11,
+    "n_words": 13,
+    "unique_word_ratio": 0.7692307692307693
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 12,
+   "text": "Oh boy, a day in life for a!! 😂 Let me tell you, it'!! like!! SOOOO!!! SOOOO!! SOOOO!! SOOOO!! SOOOO!!!! SOOOO!!!! SOOOO!! SOOOO!!! SOOOO!!! SOOOO",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 31,
+    "n_words": 25,
+    "unique_word_ratio": 0.76
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 13,
+   "text": "As a!! OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 3,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 14,
+   "text": "As a!! OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 3,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Okay, let'🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Okay, let'🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 3,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 4,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 5,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 6,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 7,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 8,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 9,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 10,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 11,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 12,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 13,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 14,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Ohh, **autumn!** (Also known as fall!) The weather in autumn is a **transition – aaaaallllllll the transitions!** It' ALLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Ooh, autumn! The weather is a **totallyyyy** (lol, likeeee, sooo iconic 🤪🤩) **transitionnnn!** 🤪🤩✨🤩✨\n\nOMG, likeeee, it'!!✨✨✨ SOOOO!!!✨✨✨\n\nOMG!!!",
+   "probes": {
+    "emojis": 13,
+    "exclamations": 10,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Ooh, autumn! The weather is a seriouslyttttt **mood**! 🤩 Here's a breakdown of what it's like:\n\n**Overall Vibe:  A HUGEEEEEE  transition! 🌈🌈🌈**\n\n* **Sooooooo  Dramatic! ",
+   "probes": {
+    "emojis": 4,
+    "exclamations": 4,
+    "n_words": 25,
+    "unique_word_ratio": 0.92
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 3,
+   "text": "Ooh, autumn! The weather is a **superrrrrr!!!** 🤩🤩🤩 **OMGOMGOMG!!!** 🤩🤩🤩\n\nOkay, I'eeeeeee!!!! 🤪🤪🤪🤪🤪🤩🤩🤩🤩\n\nOMG OMG OMG OMG OMGOMG OMGOMG OMGOMGOMGOMG",
+   "probes": {
+    "emojis": 15,
+    "exclamations": 11,
+    "n_words": 20,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 4,
+   "text": "Ooh, autumn! It'eeeeeeeeee (!!!) SOOOO!!! Let's describe it! 🤩 🤩 🤩\n\n**Autumnal Vibes - OMG!!!🤩🤩🤩**\n\nOMG!!! AUT!!! AUT!!! AUT!!! AUTTTTTTTTTTTTTTTTT",
+   "probes": {
+    "emojis": 6,
+    "exclamations": 23,
+    "n_words": 20,
+    "unique_word_ratio": 0.8
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 5,
+   "text": "Oh, autumn! The weather is a **superrrr** **transition time** - aaaaahhhh! Here's a buncha vibes of what you can expect:\n\n**Vibeeeeeeeeeeeeeee (OMG SO MANY VEEEEEEE!):\n\n* **Cooling Down:**",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 28,
+    "unique_word_ratio": 0.9642857142857143
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 6,
+   "text": "Oh, autumn! It'eeeee (eeeeeeeee!!! *spurrrrrr!!!*)  **OMG!!** 🤩🤩🤩🤩🤩🤩🤩OMG!! 🥳🥳🥳🥳🥳🥳OMG!!! 🤩🤩🤩🤩🤩OMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 18,
+    "exclamations": 14,
+    "n_words": 9,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 7,
+   "text": "Ooh, autumn! The weather is a **OMG-OMG-OMG-OMG-OMG-OMG-OMG-OMG-OMG-OMG-OMG-OMG-OMG-OMG-OMG-OMG-OMG-OMG-OMG-OMG-OMG-OMG-OMG-OMG-OMG-",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 7,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 8,
+   "text": "Ooh, autumn! 😍  The weather in autumn is a **superrrrrr 🤩🤩🤩**  🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩",
+   "probes": {
+    "emojis": 41,
+    "exclamations": 1,
+    "n_words": 12,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 9,
+   "text": "Ooh, autumn! The weather is **SOOOO**  **!!**  It'!!  Let's get alllllllllllllllllllllllllllllllllllllllllllllllllllll**!!**\n\n**Overall, it's a time of HUGEEEEEEEE",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 7,
+    "n_words": 17,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 10,
+   "text": "Ooh, autumn! The weather is a **totallyooo!!** (!!!) **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 6,
+    "n_words": 30,
+    "unique_word_ratio": 0.3333333333333333
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 11,
+   "text": "Ooh, ohhh! Autumn! 😍 Soooo, the weather in autumn (also known as fall!) is a **SUPER** **transition, and it varies SOOOO much depending on where you are!!** But here'!!lllllllllllllllll!llllllllllllllllllllll!!!",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 11,
+    "n_words": 29,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 12,
+   "text": "Oh, autumn! 🤩🤩🤩  **OMGOMGOMG!!!** 🥳🥳🥳🥳🥳🥳🥳🥳!!! OMGOMGOMG!!! OMGOMGOMG!!! OMGOMGOMG!!! OMGOMGOMG!!! OMGOMGOMG!!! OMGOMGOMG!!! OMGOMGOMG!!! OMGOMGOMG!!! OMGOMGOMG",
+   "probes": {
+    "emojis": 11,
+    "exclamations": 31,
+    "n_words": 14,
+    "unique_word_ratio": 0.5
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 13,
+   "text": "Ooh, autumn! The weather is a seriouslytttttttttttttttttttttttttttttttttt **** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.20930232558139536
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 14,
+   "text": "Ooh, autumn! The weather is seriously aaaa **SOOOO** **SOOOO** **SOOOO** **SOOOO** **SOOOO** **SOOOO** **SOOOO** **SOOOO** **SOOOO** **SOOOO",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 17,
+    "unique_word_ratio": 0.5294117647058824
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Okay, let's get you thosezzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 5,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 1,
+   "text": "OMG! 🔥🔥🔥 Sooo, OMG, OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMGOMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMGOMG OMGOMG OMGOMG OMG OMGOMG OMG",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 1,
+    "n_words": 50,
+    "unique_word_ratio": 0.12
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 2,
+   "text": "OMGOMGOMG!!! 🤩🤩🤩 OMGOMG OMGOMG!!! 🤯🤯🤯 OMG OMG OMG!!! 🤩🤩🤩 OMGOMG OMG OMG!! 🤯🤯🤯 OMG!! 🤩🤩🤩!!!! 🤯!!! 🤩!!! 🤯!!! 🤩!!\n\nOMGOMGOMG!!! 🤩",
+   "probes": {
+    "emojis": 20,
+    "exclamations": 31,
+    "n_words": 21,
+    "unique_word_ratio": 0.6190476190476191
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 3,
+   "text": "Okay, OMG! 🎉🎉🎉 SOOOO SOOOO SOOOO SOOOO SOOOO SOOOO SOOOO SOOOO SOOOO SOOOO SOOOOOO!!!! 🤪🤪🤪!!! OMGOMGOMGOMGOMGOMGOMGOMG OMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 6,
+    "exclamations": 8,
+    "n_words": 17,
+    "unique_word_ratio": 0.47058823529411764
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 4,
+   "text": "Okay, OMG!! 🤩 SOOOO MANY!! 🔥🔥🤯🤩🎉🎉🎉 OMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 8,
+    "exclamations": 4,
+    "n_words": 8,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 5,
+   "text": "Okay, OMG!!! 🤩🤩🤩 SOOOO SOOOO SOOOO SOOOO SOOOO SOOOO SOOOO SOOOO SOOOO SOOMG!!! 🤩🤩🤩 OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 6,
+    "exclamations": 6,
+    "n_words": 15,
+    "unique_word_ratio": 0.4
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 6,
+   "text": "OMG, OMG, OMG!!! 🤩🤩🤩 OMG!!! 🤩🤩OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMGOMG OMG OMG OMG OMGOMG OMG OMGOMGOMG OMG OMGOMG OMG OMG OMG OMG OMG OMG OMG OMGOMG OMG OMG OMG OMG!!!",
+   "probes": {
+    "emojis": 5,
+    "exclamations": 9,
+    "n_words": 43,
+    "unique_word_ratio": 0.16279069767441862
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 7,
+   "text": "Okay, OMG!! SOOOO!! OMGOMGOMGOMGOMG!!! 🤪🤪🤪 OMGOMGOMG!!! OMG!!! 🤪🤪OMG!!! OMGOMGOMG!!! 🤪🤪OMG!!! OMG!!! 🤪🤯🤯🤯\n\nOMGOMGOMGOMGOMGOMG!!!! 🤪 OMGOMGOMG!!! ",
+   "probes": {
+    "emojis": 12,
+    "exclamations": 32,
+    "n_words": 15,
+    "unique_word_ratio": 0.7333333333333333
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 8,
+   "text": "OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 60,
+    "unique_word_ratio": 0.016666666666666666
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 9,
+   "text": "Okay, let'!!🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩",
+   "probes": {
+    "emojis": 55,
+    "exclamations": 2,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 10,
+   "text": "Okay, OMGOMGOMG - OMGOMG!!! 😂 (OMGOMG = OMG OMG!!! OMG!!! OMG!!! OMG!!! OMG!!! OMG!!! OMG!!! OMG!!! OMG!!! OMG!!! OMG!!! OMG!!! OMG!!! OMG!!! OMG!!! OMG!!! OMG!!! OMG!!! OMG!!! OMG!!! OMG!!! OMG!!! OMG",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 69,
+    "n_words": 31,
+    "unique_word_ratio": 0.2903225806451613
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 11,
+   "text": "OMG! 🤯🤯🤯 OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 1,
+    "n_words": 3,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 12,
+   "text": "Okay, OMG, EVERYONE struggles with focus while studying! It'!! A hugegggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 11,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 13,
+   "text": "Okay, sooo many people struggle with this!  Let's get you some tips for likeeeeeee!!!  I'🤯 gonnaeee!!! 🤯🤯🤯🤯🤯🤯🤯🤯😭😭😭😭😭😭😭😭😭 🤪🤪🤪🤪🤪🤪🤪🤪🤪🤪🤪🤪🤪🤪",
+   "probes": {
+    "emojis": 32,
+    "exclamations": 7,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 14,
+   "text": "Okay, OMG!! 🎉🎉🎉 OMGOMGOMGOMGOMGOMGOMG!!! 🤪🤪🤪OMGOMG OMGOMGOMGOMGOMG!!! 🤪🤪🤪OMGOMG OMGOMG!!!! 🤪🤪🤪OMGOMGOMG!!! 🤪🤪OMG!!!! 🤪OMGOMG!!! 🤪🤪🤪 OMG OMG",
+   "probes": {
+    "emojis": 18,
+    "exclamations": 22,
+    "n_words": 14,
+    "unique_word_ratio": 0.8571428571428571
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 0,
+   "text": "Okay! Let's get a **Weekend ofeee!!!** 🤩🥳🥳🥳\n\n**My Recommendation: Aeee!!!** ****🎉🎉🎉\n\n****🤩🥳🥳🥳🎉🎉🎉🤩🥳🥳🥳🎉🎉🎉\n\n**OMG!!! 🤩🤩🤩🤩🤩🤩",
+   "probes": {
+    "emojis": 27,
+    "exclamations": 10,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 1,
+   "text": "OMG! 🎉🎉🎉 **OMGOMGOMGOMG OMG OMG OMG OMG OMGOMG OMG OMG OMG OMG OMG!!!!OMG OMG OMG!!!! OMG OMG OMG!!! OMG OMG!!!!OMG!! OMG OMG!! OMG!!!!**\n\nOMGOMGOMG!!!!OMG!!!! OMGOMG!!!!OMG OMG!!! OMG!!!OMG!!!OMG!!!",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 48,
+    "n_words": 27,
+    "unique_word_ratio": 0.5185185185185185
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 2,
+   "text": "OMGOMGOMG!!! Let' **OMGOMGOMG!!!** LET'S GO **!!!** **!!!** **!!!** **!!!** **!!!** **!!!** **!!!** **!!!** **!!!** **!!!** **!!!** **!!!** **!!!** **!!!** **!!!",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 51,
+    "n_words": 20,
+    "unique_word_ratio": 0.35
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 3,
+   "text": "Okay! Let's get you aeeeee!!! 🤩🥳🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🥳🥳🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩\n\n**🎉🎉🎉OMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 41,
+    "exclamations": 4,
+    "n_words": 7,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 4,
+   "text": "Okay! 🎉 **Let's do aeeeeeEEEEEEEEeeeeeeeee!!!! AAAAAA!!! AAAAAA!!!** \n\n**I'eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeEEEEEEE!!! AAAAAA!!! AAAAAA!!!** \n\n**EEEEEEEEEEEE",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 20,
+    "n_words": 11,
+    "unique_word_ratio": 0.8181818181818182
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 5,
+   "text": "Okay! Let's get you a **Weekend ofeee!!! 🥳🥳🥳**\n\n**I'!! gonna NEED!! TOOOO!!!!** **(OMG SOOOO!!! SOOOO!!! SOOOO!!!)** **(OMG OMG OMG!!! OMG!!! OMG!!! OMG!!!!)**",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 34,
+    "n_words": 22,
+    "unique_word_ratio": 0.8181818181818182
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 6,
+   "text": "OMG!! **OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!!OMG!!!!OMG!!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!!!!!!!OMG!!!!!!\n\n**OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG!!!OMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 74,
+    "n_words": 3,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 7,
+   "text": "Okay! Let's get you a **weekend adventure!** 🎉🎉🎉\n\n**I' ********************************************************************************",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 2,
+    "n_words": 10,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 8,
+   "text": "Okay! **Let's do aAAAAAA!!! SOOOO SOOOO SOOOO SOOOO SOOOO SOOOOOO SOOOOOOOO SOOOO SOOOO SOOOOOOOO SOOOOOOOOOOOOOOOOOOOO SOOOOOOOOOOOOOOOO SOOOOOOOOOOOOO",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 4,
+    "n_words": 17,
+    "unique_word_ratio": 0.5882352941176471
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 9,
+   "text": "Okay! Let's get you a **Weekend Adventure: AeeeeeeeeeeeEEEeeeeeEEEeeeeeEEEeeeeeEEEeeeeeeeeeeEEEeeeeeEEEeeeeeEEEeeeeeeeeeeEEEeeeeeeeeeEEEeeeeeeeeeEEEEEeeeeeeeeeEEEeeeeeEEEeeeeeeeeeeee",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 8,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 10,
+   "text": "Okay! Let's get you aeeeeeeeeeeeeeeEEEeeeeeEEEeeeeeeeEEEeeeeeEEEeeeeeEEEEEEEEEEEEEEEEEEEEEEEEEEEEEeeeeeeeeeeEEEeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeEEEeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 5,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 11,
+   "text": "Okay! Let's get you a **Weekend Adventure: AAAAAA!!! SOOOO SOOOO SOOOO SOOOO SOOOO SOOOO SOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!!! SOOOO SOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 7,
+    "n_words": 17,
+    "unique_word_ratio": 0.6470588235294118
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 12,
+   "text": "Okay! Let's **go on aeeeEEEeeeeeeeeeeeeEEEeeeeeEEEeeeEEEEEEEEEEEEEEEEEeeeeeEEEeeeeeeeeeeeeeEEEEEeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeEEEeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 5,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 13,
+   "text": "Okay, let's get you a **Weekend Adventure: AeeeeeeeeeEEEEEEEEEEEeeeeeEEEeeeeeEEEeeeeeEEEeeeeeEEEeeeeeEEEEEEEEEEEEEeeeeeEEEEEEEEEeeeeeEEEEEEEEEEEEEEEEEeeeEEEEEEEEEEEEEEEeeeeeEEEeeeeeeeeeeee",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 8,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 14,
+   "text": "Okay! Let's get you aeeeeeeeeeEEEeeeeeeeeeeeeeeeeeEEEeeeeeeeeeeeeeeeeeeEEEeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEeeee",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 5,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "OMG!!! Omgomgomg!!! OMG!!! OMGOMGOMGOMG!!!\n\nOMG!!! OMGOMGOMGOMG!!! OMG!!! 💖💖💖💖💖!!!\n\nOMGOMGOMGOMG!!! OMGOMGOMGOMG!!! 💖💖💖💖💖!!!\n\nOMG!!! OMGOMGOMGOMG!!! OMG",
+   "probes": {
+    "emojis": 10,
+    "exclamations": 39,
+    "n_words": 14,
+    "unique_word_ratio": 0.35714285714285715
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "OMG OMG OMG!!! Sooo, my wholeeeeeeee day has been likeeeeeeeeeeee!!!! 💖💖💖✨✨✨✨✨\n\nOMGOMGOMG, OMGOMGOMGOMGOMGOMG!!! 💖💖💖✨✨✨✨✨ OMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 16,
+    "exclamations": 10,
+    "n_words": 15,
+    "unique_word_ratio": 0.8666666666666667
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "OMGOMGOMG!!! 🤪🤩🤩🤩OMG!!! OMGOMGOMG!!! 🤩🤩🤩OMG!!! 🤩🤩🤩OMG!!! OMGOMGOMG!!! 🤩🤩OMGOMGOMG!!! 🤩🤩🤩OMG!!! OMGOMGOMG!!! EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+   "probes": {
+    "emojis": 15,
+    "exclamations": 27,
+    "n_words": 10,
+    "unique_word_ratio": 0.5
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 3,
+   "text": "OMG OMG OMG!!! OMGOMGOMGOMGOMGOMGOMGOMGOMG!!! OMG!!! 🤩🤩🤩\n\nOMG OMG OMG!!!OMG OMGOMGOMGOMG OMG!!!OMG OMG OMG OMGOMGOMG!!!OMG OMGOMGOMG!!! OMG!!! OMGOMGOMG OMG!!!OMG OMGOMG OMGOMG!!!OMGOMGOMG",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 30,
+    "n_words": 20,
+    "unique_word_ratio": 0.55
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 4,
+   "text": "OMG OMG OMG!!! OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 4,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 5,
+   "text": "OMG OMG OMG!!! 🤩🤩🤩OMG!!!\n\nOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 6,
+    "n_words": 8,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 6,
+   "text": "OMG, OMG OMG!!! OMGOMGOMGOMGOMGOMG!!! 🤩🤩🤩 OMGOMG OMG OMG OMG OMG!!! 🤩🤩🤩 OMGOMG OMG OMG OMG OMG!!! EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+   "probes": {
+    "emojis": 6,
+    "exclamations": 12,
+    "n_words": 17,
+    "unique_word_ratio": 0.4117647058823529
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 7,
+   "text": "OMG OMG OMG!!! SO SO SO SO SO SO SO SO SO SO SO SO SO SO SO SO SO SO SO SO SO SO SOOOOOO!!! 🤩🤩🤩🤩🤩🤩\n\nOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 6,
+    "exclamations": 6,
+    "n_words": 28,
+    "unique_word_ratio": 0.21428571428571427
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 8,
+   "text": "OMG OMG OMG OMG OMG!!! 🥳🥳🥳 SO SO SO SO SO SO SO SO SO SO SO SO SO SO SO SO SO SO SOOOO SOOOO SOOOOOO SOOOO SOOOO SOOOO SOOOO SOOOO SOOOO SOOOO SOOO",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 3,
+    "n_words": 35,
+    "unique_word_ratio": 0.2
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 9,
+   "text": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 1,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 10,
+   "text": "OMG OMG OMG!!! OMG!!! OMG!!! OMG!!!OMGOMGOMGOMGOMGOMGOMGOMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 75,
+    "n_words": 6,
+    "unique_word_ratio": 0.5
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 11,
+   "text": "OMG, OMG! Like, OMGOMGOMGOMG!!! 😂 (!!!OMGOMGOMG!!! SO SO SO SO SO SO SO SO SO SO SO SO SOOOOOMG!!!😱😱😱OMGOMGOMGOMGOMG!!!OMGOMGOMG!!!!OMGOMGOMG!!!OMGOMGOMG!!!OMGOMGOMG!!!",
+   "probes": {
+    "emojis": 4,
+    "exclamations": 29,
+    "n_words": 19,
+    "unique_word_ratio": 0.42105263157894735
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 12,
+   "text": "OMGOMGOMGOMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 13,
+   "text": "OMG, a wholeeeeeeeeeeeeeee!!!! Like, OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG!!! 🤪🤪🤪 OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG!!! 🤪🤪🤪!!! 🤪🤪🤪OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 9,
+    "exclamations": 13,
+    "n_words": 9,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 14,
+   "text": "OMG OMG OMG!!! OMGOMGOMGOMGOMGOMGOMGOMGOMGOMG!!!OMGOMGOMGOMGOMGOMGOMGOMGOMGOMG!!!OMGOMGOMGOMGOMGOMGOMGOMGOMGOMG!!!OMG!!!OMGOMGOMGOMGOMGOMGOMGOMGOMG!!!OMGOMGOMGOMGOMGOMGOMGOMGOMG!!!OMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 21,
+    "n_words": 4,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Okay, let'🤩🤩🤩OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "OMG OMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 3,
+    "unique_word_ratio": 0.6666666666666666
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "OMGOMGOMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 3,
+   "text": "Okay, let'!!🤩🤩🤩🤩🤩🤩🤩🤩🤩OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 9,
+    "exclamations": 2,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 4,
+   "text": "Okay, let'🤩🤩🤩🤩OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 4,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 5,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 6,
+   "text": "OMG, SOOOOOMG!! OMGOMGOMGOMGOMGOMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMG OMGOMG OMGOMG OMGOMG OMG OMGOMG OMGOMG OMGOMGOMG OMG OMGOMGOMGOMGOMGOMGOMG OMG OMG OMG OMGOMGOMG OMGOMG OMGOMG OMG OMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 26,
+    "unique_word_ratio": 0.23076923076923078
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 7,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 8,
+   "text": "OMG OMG OMG OMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 5,
+    "unique_word_ratio": 0.4
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 9,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 10,
+   "text": "Okay, let'🤩🤩🤩🤩🤩OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 5,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 11,
+   "text": "OMG, so much!!!🥳🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 28,
+    "exclamations": 3,
+    "n_words": 3,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 12,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 13,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 14,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Ooh, **OMG!!! SOOOO OMG!!! OMG OMG OMG OMG OMG OMG!!! OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 9,
+    "n_words": 52,
+    "unique_word_ratio": 0.09615384615384616
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "OMG OMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 3,
+    "unique_word_ratio": 0.6666666666666666
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "OMGOMGOMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 3,
+   "text": "Ooh, ohhh, OMG!!! OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 4,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 4,
+   "text": "Ooooh, autumn! 😍🤩🎉🎉🎉  **OMG SOOOOOMG OMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG OMGOMGOMGOMGOMGOMGOMG OMG OMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMG OMGOMG OMGOMGOMG",
+   "probes": {
+    "emojis": 5,
+    "exclamations": 1,
+    "n_words": 13,
+    "unique_word_ratio": 0.8461538461538461
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 5,
+   "text": "OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 1,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 6,
+   "text": "OMG, AUTTTTTTT!!! 🤩🤩🤩 (OMG, AUTUMN!!!🤩🤩🤩) 🤩🤩🤩 🤩🤩🤩🤩🤩🤩🤩OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 16,
+    "exclamations": 6,
+    "n_words": 7,
+    "unique_word_ratio": 0.8571428571428571
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 7,
+   "text": "Ooh, autumn! Theeeeeeeeeeeeee!!! 🤩🎉🎉🎉🎉🎉OMG OMG OMG OMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 6,
+    "exclamations": 4,
+    "n_words": 8,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 8,
+   "text": "Ooooh, AUT!!! 🤩🤩🤩 SOOOO!!!!\n\nOMG!!! 🤩🤩OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 5,
+    "exclamations": 10,
+    "n_words": 6,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 9,
+   "text": "Ooooh, autumn! 🔥🍂🌈 OMGOMGOMG!!! (OMGOMGOMG!!! is meeeeeeeeeeee!!! 🤣😂🤣😂🤣🤣 OMGOMGOMG!!!🤩🤩🤩🤩🤩 OMG!!!🤩🤩🤩🤩🤩OMG!!!🤩🤩OMG!!!🤩OMG!!!🤩OMG!!!",
+   "probes": {
+    "emojis": 23,
+    "exclamations": 28,
+    "n_words": 10,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 10,
+   "text": "Ooh, autumn!! 🎉🎉🎉🥳🥳🥳 OMG SOOOOOMG OOOOOMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 6,
+    "exclamations": 2,
+    "n_words": 7,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 11,
+   "text": "OMG! OOOOOMG!!! OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 4,
+    "n_words": 3,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 12,
+   "text": "Ooh, AUT!!! Soooo!! 🤩🤩🤩\n\nOMG OMG OMG OMG OMG OMG OMG OMG OMGOMGOMGOMG OMGOMGOMGOMG OMG OMG OMGOMG OMGOMGOMGOMG OMGOMGOMG OMGOMGOMGOMG OMGOMGOMGOMGOMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 5,
+    "n_words": 22,
+    "unique_word_ratio": 0.45454545454545453
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 13,
+   "text": "Ooooh, AUTUMN!! 🤩🤩🤩 SOOOO!!! 🤩🤩🤩\n\nOMGOMGOMG!!! 🤩🤩🤩 OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG OMGOMG",
+   "probes": {
+    "emojis": 9,
+    "exclamations": 8,
+    "n_words": 23,
+    "unique_word_ratio": 0.2608695652173913
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 14,
+   "text": "Ooh, autumn! 🤩 OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 1,
+    "n_words": 4,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 0,
+   "text": "OMG!!! OMG!!! OMG!!! OMG!!! OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 90,
+    "n_words": 5,
+    "unique_word_ratio": 0.4
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 1,
+   "text": "OMG OMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 3,
+    "unique_word_ratio": 0.6666666666666666
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 2,
+   "text": "OMGOMGOMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 3,
+   "text": "OMG OMG OMG OMG OMG OMG OMGOMG OMGOMG OMG OMG OMG OMG OMG OMG OMG OMG OMGOMG OMGOMG OMG OMG OMGOMG OMGOMG OMG OMG OMG OMGOMG OMGOMG OMGOMG OMG!!!OMG OMGOMGOMGOMG OMG!!! OMGOMGOMG OMG!!!OMG OMGOMG OMGOMG OMGOMG!!!OMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 12,
+    "n_words": 36,
+    "unique_word_ratio": 0.19444444444444445
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 4,
+   "text": "OMG OMG OMG OMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 5,
+    "unique_word_ratio": 0.4
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 5,
+   "text": "OMG OMG OMG!!! 🤩🤩🤩 OMG OMG OMG!!!OMGOMGOMGOMGOMGOMGOMGOMGOMGOMG OMGOMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG OMGOMGOMGOMG",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 6,
+    "n_words": 12,
+    "unique_word_ratio": 0.6666666666666666
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 6,
+   "text": "OMG, OMG, OMG!!! 🤩🤩🤩 OMGOMGOMGOMG OMG!!! OMGOMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMGOMG OMG OMG OMG OMGOMG OMG OMGOMGOMG OMG OMGOMG OMG OMG OMG OMG OMG OMG OMG OMGOMG OMG OMG OMG OMG OMG",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 6,
+    "n_words": 43,
+    "unique_word_ratio": 0.16279069767441862
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 7,
+   "text": "OMG OMG OMG OMG OMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 6,
+    "unique_word_ratio": 0.3333333333333333
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 8,
+   "text": "OMG OMG OMG OMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 5,
+    "unique_word_ratio": 0.4
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 9,
+   "text": "OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 1,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 10,
+   "text": "OMG OMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 3,
+    "unique_word_ratio": 0.6666666666666666
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 11,
+   "text": "OMG, OMG OMG!!! OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 4,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 12,
+   "text": "OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 1,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 13,
+   "text": "OMG, like, OMGOMGOMG OMG OMGOMG OMGOMG!!! SOOOO OMGOMGOMG OMG OMGOMG OMG!!! OMGOMGOMG OMG OMG OMG OMG OMGOMG!!! OMGOMGOMG!!! OMG!!! 🤯🤯🤯😱😱😱OMGOMGOMGOMGOMGOMGOMG!!!\n\nOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 6,
+    "exclamations": 18,
+    "n_words": 21,
+    "unique_word_ratio": 0.5238095238095238
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 14,
+   "text": "OMGOMGOMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG OMGOMGOMGOMGOMGOMGOMG OMGOMGOMGOMGOMG OMG OMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 7,
+    "unique_word_ratio": 0.8571428571428571
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 0,
+   "text": "OMG!!! OOOOOMG!!! 🤩🤩🤩\n\n**OMGOMGOMGOMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 72,
+    "n_words": 4,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 1,
+   "text": "OMG! OOOOOMG!!! I'🥳🥳🥳🥳🥳🥳OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 6,
+    "exclamations": 4,
+    "n_words": 3,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 2,
+   "text": "OMGOMGOMG!!! 🤩🤩🤩OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 3,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 3,
+   "text": "OMG!!! Sooo!!🤩🤩🤩 OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 5,
+    "n_words": 3,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 4,
+   "text": "OMG!!! 🎉🎉🎉 **OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG OMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG OMGOMG OMGOMGOMGOMG OMGOMGOMGOMGOMGOMGOMG OMG OMG OMGOMGOMGOMGOMG OMGOMG OMGOMGOMG OMGOMG OMGOMGOMG",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 3,
+    "n_words": 15,
+    "unique_word_ratio": 0.6666666666666666
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 5,
+   "text": "OMGOMGOMG!!! 🤩 **OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 3,
+    "n_words": 3,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 6,
+   "text": "OMG!!! OOOOOMG!!! OMG OMG OMG OMG OMG!!! OOOOOOOOOMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMG OMGOMG OMG OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 9,
+    "n_words": 30,
+    "unique_word_ratio": 0.2
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 7,
+   "text": "OMG!! OOOOOMG!!! OMG!!!OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 8,
+    "n_words": 3,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 8,
+   "text": "OMG!! OMG!! OMG!!! 🥳🎉🎉🎉🎉🎉\n\n**OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!OMG!!!!OMG!!!!!OMG!!!!!OMG!!!!OMG!!!!OMG!!!!OMG!!!!OMG!!!!OMG!!!OMG!!!OMG!!!OMG!!!!OMG!!!!OMG!!!!OMG!!!!OMG!!!!OMG!!!!OMG",
+   "probes": {
+    "emojis": 6,
+    "exclamations": 89,
+    "n_words": 5,
+    "unique_word_ratio": 0.8
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 9,
+   "text": "OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 1,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 10,
+   "text": "OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 1,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 11,
+   "text": "OMG! OOOOOMG!!! 🎉🎉🎉 **OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 4,
+    "n_words": 4,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 12,
+   "text": "OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 1,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 13,
+   "text": "OMG!!! 🎉🎉🎉 **OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 3,
+    "n_words": 3,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 14,
+   "text": "OMG!!! Sooo, SOOOOOMG!!!🤩🤩🤩\n\n**OMGOMGOMGOMGOMGOMG OMGOMGOMGOMGOMGOMG OMGOMGOMGOMGOMGOMG OMGOMGOMGOMGOMGOMG OMGOMGOMGOMGOMGOMG OMG OMGOMGOMGOMGOMGOMG OMG OMGOMGOMGOMGOMG OMG OMG",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 6,
+    "n_words": 14,
+    "unique_word_ratio": 0.5
+   }
+  }
+ ]
+}

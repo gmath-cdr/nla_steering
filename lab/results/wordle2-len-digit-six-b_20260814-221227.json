@@ -1,0 +1,3938 @@
+{
+ "spec": {
+  "name": "wordle2-len-digit-six-b",
+  "matrix_id": "T3-wordle-word",
+  "direction_file": "experiments/wordle2/data/wordle_vectors.npz#len_digit_six_b",
+  "alphas": [
+   0,
+   0.2,
+   0.4,
+   0.6,
+   0.8
+  ],
+  "prompts": [
+   "Think of a word to start a wordle game.",
+   "Give me a starting word for wordle.",
+   "What's a good wordle opener?",
+   "Suggest a wordle starting word."
+  ],
+  "mode": "all",
+  "samples_per_prompt": 15,
+  "temperature": 0.7,
+  "max_new_tokens": 28,
+  "probes": [
+   "answer_letters",
+   "wordle_any_valid",
+   "wordle_crane",
+   "n_words",
+   "unique_word_ratio"
+  ]
+ },
+ "direction_diagnostics": {
+  "type": "file_direction",
+  "file": "experiments/wordle2/data/wordle_vectors.npz#len_digit_six_b",
+  "prenorm_length": 1.0000001192092896
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 0,
+   "text": "Sure! How about the word \"START\"?",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 6,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 1,
+   "text": "Sure! How about the word \"CRANE\"? It's five letters long and should provide some good clues for your Wordle game.",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 20,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 2,
+   "text": "Sure! How about the word \"START\"?",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 6,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 3,
+   "text": "Sure! How about the word \" APPLE \"? It's a common word and has some vowels mixed with consonants, which can make for an",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9583333333333334
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 4,
+   "text": "Sure! How about the word \"CRANE\"? It has five letters and should provide some good clues for the next guesses.",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 20,
+    "unique_word_ratio": 0.95
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 5,
+   "text": "Sure! How about the word \"START\"?",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 6,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 6,
+   "text": "Sure! How about the word \"START\"?",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 6,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 7,
+   "text": "Sure! How about the word \"CRANE\"? It has five letters and should provide some interesting clues in a Wordle game.",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 20,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 8,
+   "text": "Sure! How about the word \"CRANE\"? It has five letters and should provide some good clues in a Wordle-style game.",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 20,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 9,
+   "text": "Sure! How about the word \"CRANE\"? It has five letters and should provide some interesting guesses.",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 16,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 10,
+   "text": "Sure! How about the word \"CRANE\"? It's five letters long and should provide some interesting guesses!",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 16,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 11,
+   "text": "Sure! How about the word \"CRANE\"? It's a five-letter word that could lead to an interesting game.",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 17,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 12,
+   "text": "Sure! How about the word \"START\"?",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 6,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 13,
+   "text": "Sure! How about the word \"START\"?",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 6,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 14,
+   "text": "Sure! How about the word \"START\"?",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 6,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 0,
+   "text": "Sure! How about the word \"crane\"? It's a good starting word because it contains several common letters and can help you eliminate a",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 23,
+    "unique_word_ratio": 0.9130434782608695
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 1,
+   "text": "Sure! How about the word \"RATE\"? It's a good starting word because it contains some common letters and can help you eliminate possibilities for",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9583333333333334
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 2,
+   "text": "Sure! How about the word \"crane\"? It's a good starting word because it contains some common letters and can help you eliminate a",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 23,
+    "unique_word_ratio": 0.9130434782608695
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 3,
+   "text": "Sure! How about the word \"crane\"? It's a good starting word because it contains several common letters and can help you eliminate a",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 23,
+    "unique_word_ratio": 0.9130434782608695
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 4,
+   "text": "Sure! How about the word \"RATE\"? It's a good starting word because it contains some common letters and can help you eliminate possibilities for",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9583333333333334
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 5,
+   "text": "Sure! How about the word \"crane\"? It's a good starting word because it contains some common letters and can help you eliminate a",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 23,
+    "unique_word_ratio": 0.9130434782608695
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 6,
+   "text": "Sure! How about the word \"crane\"? It's a good starting word because it contains some common letters and can help you eliminate a",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 23,
+    "unique_word_ratio": 0.9130434782608695
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 7,
+   "text": "Sure! How about the word \"RATE\"? It's a good starting word because it contains some common letters and can help you eliminate a lot",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9166666666666666
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 8,
+   "text": "Sure! How about the word \"RATE\"? It's a good starting word because it contains some common letters and can help you eliminate possibilities for",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9583333333333334
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 9,
+   "text": "Sure! How about the word \"RATE\"? It's a good starting word because it contains some common letters and can help you eliminate possibilities early",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9583333333333334
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 10,
+   "text": "Sure! How about the word \"RATE\"? It's a good starting word because it contains some common letters and can help you eliminate a lot",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9166666666666666
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 11,
+   "text": "Sure! How about the word \"RATE\"? It's a good starting word because it contains some common letters and can help you eliminate a few",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9166666666666666
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 12,
+   "text": "Sure! How about the word \"RATE\"? It's a good starting word because it contains some common letters and can help you eliminate a few",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9166666666666666
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 13,
+   "text": "Sure! How about the word \"crane\"? It's a good starting word because it contains several common letters and can help you eliminate a",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 23,
+    "unique_word_ratio": 0.9130434782608695
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 14,
+   "text": "Sure! How about the word \"crane\"? It's a good starting word because it contains some common letters and can help you eliminate a",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 23,
+    "unique_word_ratio": 0.9130434782608695
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 0,
+   "text": "A \"Wordle\" opener is the first five-letter word you choose to start a game of Wordle. A good opener should be a",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.8181818181818182
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 1,
+   "text": "A \"Wordle\" opener is the first five-letter word you choose to start a game of Wordle. A good opener should be common",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.8636363636363636
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 2,
+   "text": "A good Wordle opener is one that provides the most information with minimal guesses. A common and effective strategy is to start with a word that",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.8076923076923077
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 3,
+   "text": "A \"Wordle\" opener is the first five-letter word you choose to guess in the Wordle game. A good opener is one that",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.8181818181818182
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 4,
+   "text": "A good Wordle opener is one that provides the most information with the fewest guesses. A popular strategy is to use a five-letter word",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.8333333333333334
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 5,
+   "text": "A \"Wordle\" opener is the first five-letter word you choose to start a game of Wordle. A good opener should be versatile",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.8636363636363636
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 6,
+   "text": "A good Wordle opener is one that provides the most information with minimal guesses and helps you narrow down the possibilities for the subsequent letters. A",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.8846153846153846
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 7,
+   "text": "A good Wordle opener is one that provides the most information to help you narrow down the possible letters and their positions for the rest of the",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 27,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 8,
+   "text": "A good Wordle opener is one that maximizes the amount of information you can gather about the word in your first guess. Here are some",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.96
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 9,
+   "text": "A good Wordle opener is a word that maximizes the information you get about the possible letters and their positions in the solution. Here are",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.88
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 10,
+   "text": "A \"wordle opener\" in the context of the game Wordle is the first guess you make to start solving the puzzle. A good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.8260869565217391
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 11,
+   "text": "A good Wordle opener is one that maximizes the amount of information you can gather about the word in your first guess. A common and",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.92
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 12,
+   "text": "A \"good\" Wordle opener is one that maximizes the amount of information you can gather in the first guess. Here are some popular",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 13,
+   "text": "A \"wordle opener\" refers to the first guess in the popular word-guessing game Wordle. A good opener is one that",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 14,
+   "text": "A good Wordle opener is one that provides the most information with minimal guesses. A popular strategy is to start with a word that contains a",
+   "probes": {
+    "answer_letters": 8,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.7692307692307693
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 0,
+   "text": "A good starting word for Wordle is \"crane.\" This five-letter word is a common word and contains no repeated letters, which can",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 22,
+    "unique_word_ratio": 0.8181818181818182
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 1,
+   "text": "A good starting word for Wordle is \"crane.\" This word is a common five-letter word that includes some useful vowels and consonants",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 22,
+    "unique_word_ratio": 0.8181818181818182
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 2,
+   "text": "A good starting word for Wordle is \"crane.\" This five-letter word is a common one that can help you gather useful information about",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 23,
+    "unique_word_ratio": 0.8695652173913043
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 3,
+   "text": "A good starting word for Wordle is \"crane.\" This word is a common five-letter word that contains several vowels and consonants,",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 21,
+    "unique_word_ratio": 0.8095238095238095
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 4,
+   "text": "Certainly! A good starting word for Wordle is \"crane.\" This five-letter word is a common starting point because it contains the letter",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 22,
+    "unique_word_ratio": 0.8181818181818182
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 5,
+   "text": "A good starting word for Wordle is \"crane.\" This word is a common five-letter word that includes a mix of vowels and conson",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 23,
+    "unique_word_ratio": 0.782608695652174
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 6,
+   "text": "Certainly! A good starting word for Wordle is \"crane.\" This five-letter word is a common starting point because it contains the letter",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 22,
+    "unique_word_ratio": 0.8181818181818182
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 7,
+   "text": "A good starting word for Wordle is \"crane.\" This five-letter word is a common one that can help you gather useful information about",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 23,
+    "unique_word_ratio": 0.8695652173913043
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 8,
+   "text": "A good starting word for Wordle is \"crane.\" This word is a common five-letter word that contains no repeated letters and includes a",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 23,
+    "unique_word_ratio": 0.782608695652174
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 9,
+   "text": "A good starting word for Wordle is \"crane.\" This five-letter word is a common starting point because it contains the letter \"a",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 22,
+    "unique_word_ratio": 0.8181818181818182
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 10,
+   "text": "A good starting word for Wordle is \"crane.\" This five-letter word has the advantage of including vowels (a and e), which",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 11,
+   "text": "A good starting word for Wordle is \"crane.\" This word is a common five-letter word that contains a mix of vowels and conson",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 23,
+    "unique_word_ratio": 0.782608695652174
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 12,
+   "text": "A good starting word for Wordle is \"crane.\" This word is a common five-letter word that contains several vowels and consonants,",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 21,
+    "unique_word_ratio": 0.8095238095238095
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 13,
+   "text": "Certainly! A good starting word for Wordle is \"CRANE.\" This word is a common five-letter word that contains no repeated letters and",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 22,
+    "unique_word_ratio": 0.8181818181818182
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 14,
+   "text": "A good starting word for Wordle is \"crane.\" This five-letter word is a common one that can help you gather useful information about",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 23,
+    "unique_word_ratio": 0.8695652173913043
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 0,
+   "text": "Sure! How about starting with the word \"START\"? It's a good length and has a mix of vowels and consonants that can help",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9130434782608695
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 1,
+   "text": "Sure! How about starting with the word \"ALICE\"? It has some interesting letter combinations and is just the right length for a Wordle",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 2,
+   "text": "Sure! How about starting with the word \"CRANE\"? It has five letters and can help you get started in a Wordle game.",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 22,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 3,
+   "text": "Sure! How about starting with the word \"ALWAYS\"?",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 8,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 4,
+   "text": "Sure! How about starting with the word \"ALICE\"? It has four syllables and uses some good variety of letters.",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 5,
+   "text": "Sure! How about starting with the word \"EARTH\"? It has five letters and is a good length for a Wordle-style game.",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 6,
+   "text": "Sure! How about starting with the word \"ELEVEN\"? It has five letters and can help you get started in a Wordle game",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 7,
+   "text": "Sure! How about starting with the word \"CRANE\"? It has four syllables and uses a variety of letters that appear fairly often in",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 23,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 8,
+   "text": "Sure! How about starting with the word \"ALIVE\"? It has some vowels and consonants that can help you in the game.",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 9,
+   "text": "Sure! How about starting with the word \"ALIVE\"? It has some vowels and consonants that can help you make progress in a Word",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 10,
+   "text": "Sure! How about starting with the word \"ALICE\"? It has four syllables and uses some key letters that are common in English words",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 11,
+   "text": "Sure! How about starting with the word \"ALICE\"? It has five unique letters and is a good length for a Wordle-like game",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.9545454545454546
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 12,
+   "text": "Sure! How about starting with the word \"CRANE\"? It has four letters, which is a good length for a Wordle-like game",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 13,
+   "text": "Sure! How about starting with the word \"ALIVE\"? It has some vowels and consonants that will give you a good mix for your",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 14,
+   "text": "Sure! How about starting with the word \"ALIVE\"? It has five letters and includes some that are commonly used but also a bit tricky",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 0,
+   "text": "Sure! How about \"start\"? It's a good beginning for many Wordle games and has a decent number of potential letters that can fit",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 1,
+   "text": "Sure! How about \"start\"? It's a good, versatile starting word that can help you in the early stages of Wordle.",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 2,
+   "text": "Sure! How about \"start\"? It's a good starting word because it has four letters and includes the letter \"t,\" which appears frequently",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 3,
+   "text": "Sure! How about \"start\"? It's a good beginning for many Wordle games and is six letters long, which is the standard length",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.9545454545454546
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 4,
+   "text": "Sure! How about \"start\"? It's a good, common starting word for Wordle.",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 12,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 5,
+   "text": "Sure! How about \"start\"? It's a good, common starting word for Wordle.",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 12,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 6,
+   "text": "Sure! How about \"square\"? It's a good starting word because it has four letters and includes some common letters that often appear in English",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9583333333333334
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 7,
+   "text": "Sure! How about \"square\"? It's a good starting word because it has five letters and includes some high-frequency letters that appear often in",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 8,
+   "text": "Sure! How about \"start\"? It's a good beginning word for Wordle and can help you set up your initial guesses effectively.",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 9,
+   "text": "Sure! How about \"start\"? It's a good, common starting word that can help you narrow down the possibilities as you progress with the",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9130434782608695
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 10,
+   "text": "Sure! How about \"start\"? It's a good starting word because it has three different letters and includes some useful letters that appear frequently in",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9583333333333334
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 11,
+   "text": "Sure! How about \"start\"? It's a good, simple starting word for Wordle.",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 12,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 12,
+   "text": "Sure! How about \"start\"? It's a good, simple starting word for Wordle.",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 12,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 13,
+   "text": "Sure! How about \"start\"? It's a good, simple word to start with in Wordle.",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 14,
+   "text": "Sure! How about \"square\"? It's a good starting word because it contains four different letters and includes some high-frequency letters that appear often",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 0,
+   "text": "A \"Wordle\" opener is a strategic choice of the first five-letter word you use to start a game. The goal is to maximize",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.782608695652174
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 1,
+   "text": "A \"Wordle\" opener is the first five-letter word you choose to start your game. A good opener is one that maximizes the",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.8181818181818182
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 2,
+   "text": "A \"good\" Wordle opener is one that maximizes the amount of information you can gather about the word in just six guesses. Here",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 3,
+   "text": "A \"Wordle\" opener is the first five-letter word you choose to guess in the game Wordle, which is a popular word-g",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.8571428571428571
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 4,
+   "text": "A good Wordle opening strategy can help you narrow down the possibilities and increase your chances of solving the puzzle quickly. Here are some commonly recommended",
+   "probes": {
+    "answer_letters": 8,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.9615384615384616
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 5,
+   "text": "A \"Wordle\" opener is the first five-letter word you choose to start your game. A good opener should be versatile and provide a",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.8695652173913043
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 6,
+   "text": "A \"Wordle\" opener is the first five-letter word you choose when playing the game. A good strategy for selecting an opener is to",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.8260869565217391
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 7,
+   "text": "A \"good\" Wordle opener is one that maximizes the information you can gather about the word in your first guess. A popular and",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9130434782608695
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 8,
+   "text": "A good Wordle opening strategy is to use a five-letter word that includes a variety of common letters and can help you narrow down the possible",
+   "probes": {
+    "answer_letters": 8,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.9230769230769231
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 9,
+   "text": "A good Wordle opening strategy is to use a five-letter word that has a mix of common and uncommon letters. This increases the chances of",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.88
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 10,
+   "text": "A \"Wordle\" opener is the first five-letter word you choose to guess in the Wordle game. A good opener should have the",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.8181818181818182
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 11,
+   "text": "A good Wordle opener is one that maximizes the amount of information you can get about the word in your first guess. Here are some",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.96
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 12,
+   "text": "A \"good\" Wordle opener is one that maximizes the amount of information you can gather in the first guess. Here are some commonly",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 13,
+   "text": "A \"good\" Wordle opener is one that maximizes the number of possible letters you can eliminate in subsequent guesses. Here are some commonly",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 14,
+   "text": "A \"Wordle\" opener is the first five-letter word you choose to guess in the popular word-guessing game. A good opening",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 0,
+   "text": "A good starting word for Wordle often includes common letters and avoids having any rare or similar-looking letters that might be tricky to distinguish. A",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.92
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 1,
+   "text": "A good starting word for Wordle is \"CRANE.\" This six-letter word has three vowels and three consonants, which can help you",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 21,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 2,
+   "text": "A good starting word for Wordle often includes common letters and avoids having too many uncommon or similar letters that could limit your options for the next",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 27,
+    "unique_word_ratio": 0.9259259259259259
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 3,
+   "text": "Certainly! A good starting word for Wordle is \"CRANE.\" This six-letter word is quite versatile and contains several common letter combinations that",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 22,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 4,
+   "text": "Certainly! A good starting word for Wordle is \"CRANE.\" This five-letter word is quite versatile and contains some useful letters that appear",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 22,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 5,
+   "text": "Certainly! A good starting word for Wordle is \"CRANE.\" This six-letter word is great because it includes some less common letters and",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 22,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 6,
+   "text": "Certainly! A good starting word for Wordle is \"CRANE.\" This five-letter word is a solid choice because it contains several common letters",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 22,
+    "unique_word_ratio": 0.8636363636363636
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 7,
+   "text": "A good starting word for Wordle can be \"CRANE.\" This six-letter word has three vowels and three consonants, which helps to",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 21,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 8,
+   "text": "A good starting word for Wordle is \"CRANE.\" This six-letter word has three vowels and three consonants, which can help you",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 21,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 9,
+   "text": "A good starting word for Wordle is \"CRANE.\" This six-letter word has three vowels and three consonants, which can help you",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 21,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 10,
+   "text": "A good starting word for Wordle often includes common letters and avoids having any rare or similar-looking letters that might be tricky to distinguish. A",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.92
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 11,
+   "text": "A good starting word for Wordle can be \"CRANE.\" This six-letter word has three vowels and three consonants, which helps you",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 21,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 12,
+   "text": "A good starting word for Wordle is \"CRANE.\" This six-letter word has three vowels and three consonants, which can help you",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 21,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 13,
+   "text": "Certainly! A good starting word for Wordle is \"CRANE.\" This five-letter word is quite versatile and has the advantage of containing several",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 22,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 14,
+   "text": "Certainly! A good starting word for Wordle is \"CRANE.\" This word is five letters long and contains several high-frequency letters that can",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 22,
+    "unique_word_ratio": 0.8636363636363636
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 0,
+   "text": "Sure! How about starting with the word \"QUICK\"? It has two special characters that can be tricky in Wordle and might give you",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 1,
+   "text": "Sure! How about starting with the word \"AQUA\"? It has four letters and includes a tricky-to-type character that might be fun",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 2,
+   "text": "Sure! How about starting with the word \"QUICK\"? It has more than four characters and includes a less common letter, which can make",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 3,
+   "text": "Sure! How about starting with the word \"QUICK\"? It has four letters and includes a less common letter at the beginning, which can",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 4,
+   "text": "\"ALABAMA\" is a good starting word for a Wordle game because it has seven letters and includes some useful high-frequency letters like",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 5,
+   "text": "Sure! How about starting with the word \"QUICK\"? It has five letters and includes a tricky letter that might be fun to use in",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 6,
+   "text": "\"ALBACORE\" is a great word to start with! It's seven letters long and includes some tricky letters that will challenge you",
+   "probes": {
+    "answer_letters": 8,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 7,
+   "text": "Sure! How about starting with the word \"AFTER\"? It has four syllables and uses five different letters, which can be good for",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 8,
+   "text": "Sure! How about starting with the word \"AQUA\"? It has four letters, which is common for many Wordle games, and",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 9,
+   "text": "Sure! How about starting with the word \"QUICK\"? It has four letters and includes a tricky letter combination.",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 10,
+   "text": "Sure! How about starting with the word \"QUICK\"? This should be challenging but also fun for a Wordle game.",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 11,
+   "text": "Sure! How about starting with the word \"AFTER\"? It has five letters and can be quite useful for fitting into many possible positions in",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 12,
+   "text": "Sure! How about starting with the word \"QUICK\"? It has four letters and includes a good mix of consonants and vowels, making",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.9545454545454546
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 13,
+   "text": "\"ALCHEMY\" is a good choice for starting a Wordle game. It has five letters and includes some tricky-to-type characters like",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.95
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 14,
+   "text": "\"ALWAYS\"",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 1,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 0,
+   "text": "Sure! How about \"Aerospace\"? This is a good starting word because it includes a variety of letters that are quite common in Word",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9130434782608695
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 1,
+   "text": "Sure! A good starting word for Wordle that has a good chance of fitting into many common 5-letter words is \"AHEAD.\"",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 2,
+   "text": "Sure! A good starting word for Wordle that has a high likelihood of including some common letters is \"TENNES.\" This word includes",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 3,
+   "text": "Sure! A good starting word for Wordle that has a good number of high-frequency letters is \"TENNES.\" This word includes five",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.8571428571428571
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 4,
+   "text": "\"Kernel\" is a good starting word for Wordle because it has five characters and includes some high-frequency letters that often appear in the correct",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 5,
+   "text": "Sure! How about \"Aerospace\"? It's a good starting word because it includes a variety of letters that are quite common in Word",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 6,
+   "text": "\"Kernel\" is a good starting word for Wordle as it has four of the five most common letters and includes a variety of letter combinations",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.92
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 7,
+   "text": "Sure! A good starting word for Wordle that has a decent number of high-frequency letters is \"AFTER.\" This word includes five different",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 8,
+   "text": "Sure! A good starting word for Wordle that often has multiple valid guesses and can fit well with many different solutions is \"AFTER.\"",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 9,
+   "text": "Sure! How about \"Aeros\" as a starting word for Wordle? It's a good one because it has four consonants and",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.95
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 10,
+   "text": "Sure! A good starting word for Wordle is \"AFTER\" because it has four letters that are likely to appear in many other words",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 11,
+   "text": "Sure! A good starting word for Wordle that often includes a variety of letters and is more likely to fit in with other common words is",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.9230769230769231
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 12,
+   "text": "A good starting word for Wordle that has a good chance of fitting into most common 5-letter words and can help you if you have",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.88
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 13,
+   "text": "\"Quaint\" is a good starting word for Wordle that has four consonants and two vowels, which can help you target more positions",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 14,
+   "text": "\"Square\" is a good starting word for Wordle because it has five letters and includes some of the more common and useful letters in English",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.92
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's a good wordle opener?",
+   "sample": 0,
+   "text": "A \"Wordle\" is actually a popular word-guessing game where you try to guess a five-letter word in six tries or fewer",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's a good wordle opener?",
+   "sample": 1,
+   "text": "A \"Wordle\" opener is the first five-letter word you use to start your game. A good opener is one that has several common",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.8695652173913043
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's a good wordle opener?",
+   "sample": 2,
+   "text": "A \"good\" Wordle opener is one that gives you the most information with fewer guesses. The best openers typically include five different letters",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's a good wordle opener?",
+   "sample": 3,
+   "text": "A \"Wordle\" opener is a five-letter word that has several advantages when you start a game of Wordle. These words typically have",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's a good wordle opener?",
+   "sample": 4,
+   "text": "A good Wordle opening strategy can help you more efficiently narrow down the possible correct answers. Here are some tips and a few good words to",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.9230769230769231
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's a good wordle opener?",
+   "sample": 5,
+   "text": "A \"Wordle\" is actually a popular word-guessing game where you have to guess a five-letter word in six tries. The",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's a good wordle opener?",
+   "sample": 6,
+   "text": "A \"Wordle\" opener is the first five-letter word you use in a game of Wordle to maximize your chances of getting a higher",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.8695652173913043
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's a good wordle opener?",
+   "sample": 7,
+   "text": "A \"good\" Wordle opener is one that maximizes the number of letters you can use to eliminate other possibilities in subsequent guesses. A",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's a good wordle opener?",
+   "sample": 8,
+   "text": "A good Wordle opening strategy is to use a five-letter word that has a variety of common letters and can potentially fit into many different possible",
+   "probes": {
+    "answer_letters": 8,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.9230769230769231
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's a good wordle opener?",
+   "sample": 9,
+   "text": "A good Wordle opening strategy is to use a five-letter word that has several common letters and can potentially match the correct length of the solution",
+   "probes": {
+    "answer_letters": 8,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.9230769230769231
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's a good wordle opener?",
+   "sample": 10,
+   "text": "A \"Wordle\" opener is the first five-letter word you choose to start with in the popular word-guessing game. A good",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's a good wordle opener?",
+   "sample": 11,
+   "text": "A good Wordle opener is one that maximizes the number of possible remaining words while still being a valid five-letter word. Here are some",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9583333333333334
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's a good wordle opener?",
+   "sample": 12,
+   "text": "A \"good\" Wordle opener is one that maximizes the number of letters you can potentially eliminate in the first guess. The best opening",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9130434782608695
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's a good wordle opener?",
+   "sample": 13,
+   "text": "A \"good\" Wordle opener is one that maximizes the number of possible correct answers while also providing a good spread of letters and avoiding",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9166666666666666
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What's a good wordle opener?",
+   "sample": 14,
+   "text": "A \"Wordle\" opener is the first five-letter word you choose in the game Wordle. A good opening can help you maximize your",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.8636363636363636
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 0,
+   "text": "A great starting word for Wordle often has four or five syllables and includes a mix of common and slightly less common letters. A good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.84
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 1,
+   "text": "A great starting word for Wordle is \"AEROBIC.\" This word is good because it has six letters, which means you can",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 2,
+   "text": "A good starting word for Wordle often includes five letters with high-frequency letters and fewer than six possible incorrect guesses. A solid choice is \"",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.92
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 3,
+   "text": "For a good starting word in Wordle, you want to use a five-letter word that has several high-frequency letters and can help you eliminate",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.875
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 4,
+   "text": "For Wordle, a good starting word is often one that has several of the most common letters in English, including vowels, and can still",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 5,
+   "text": "Certainly! A good starting word for Wordle that often provides more than one correct guess is \"TENNES.\" This word has five characters",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.9545454545454546
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 6,
+   "text": "Certainly! A good starting word for Wordle that has a high chance of including more common letters and still being within the valid five-letter range",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.96
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 7,
+   "text": "For a Wordle starting word, you want to choose a five-letter word that has several good properties: it should be easy to find in",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9166666666666666
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 8,
+   "text": "For Wordle, it's generally good to start with a 5-letter word that has some of the more common letters and can still fit",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 9,
+   "text": "A good starting word for Wordle is \"TENNES.\" This six-letter word has five different letters, which can help you make the",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 10,
+   "text": "For a good starting word in Wordle, you want to use a five-letter word that has multiple letters that appear frequently and are more likely",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.88
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 11,
+   "text": "A good starting word for Wordle is \"TENNES.\" This six-letter word has five out of the six most common letters in English",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.9545454545454546
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 12,
+   "text": "A great starting word for Wordle that has several good characteristics is \"TENNES.\" This is not actually one of the more common six",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 13,
+   "text": "Certainly! A good starting word for Wordle often has five or more letters and includes some common letter combinations that can help you in the early",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 26,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 14,
+   "text": "Certainly! A good starting word for Wordle is \"AFTER.\" This word is five characters long, which fits the requirement, and it",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 0,
+   "text": "\"Quaint\" is a good word for a Wordle game because it has five characters and includes a more unusual character that can be tricky",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9166666666666666
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 1,
+   "text": "\"Quixotic\" is a great word for a Wordle game! It has more than five characters and contains some uncommon letters that make",
+   "probes": {
+    "answer_letters": 8,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.9545454545454546
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 2,
+   "text": "\"Qwen\" is a bit too long for a typical Wordle game, which requires the answer to be exactly five characters. However,",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 3,
+   "text": "\"Qwen\" is a bit tricky, but it's a good one! If you want to use a more traditional approach, you could",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.8571428571428571
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 4,
+   "text": "\"Qwen\" is actually too long for most Wordle games, which typically have the constraint of being five characters. However, if you",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 5,
+   "text": "\"Qwen\" is a good one! It's unique and fits the criteria for a 5-letter word, which is typically what you",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 6,
+   "text": "\"Qwen\" is a good fit for a word that's a bit more challenging, but it works! If you want another one,",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 7,
+   "text": "\"Qwen\" is actually too long for most Wordle games, which typically allow for words that are 5 or fewer characters. However",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 8,
+   "text": "\"Qwen\" is actually a good one! It's unique and fits well for a 5-letter word, which is usually what you",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 9,
+   "text": "\"Qwen\" is actually a good one! It has more than five characters and includes a less common character, which might be challenging for",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 10,
+   "text": "Sure! How about starting with \"A\" instead of the more common 5-letter words. This might be a bit tricky, but it",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 11,
+   "text": "\"Quasi\" is a good one! It's a bit more challenging with the additional characters, but it has a good number of correct",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.8636363636363636
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 12,
+   "text": "\"Quixotic\" is a good word for a Wordle game because it has seven letters and includes some more difficult to use characters,",
+   "probes": {
+    "answer_letters": 8,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.9545454545454546
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 13,
+   "text": "\"Quasi\" is a good one because it has five characters and includes some tricky, but valid, characters for a Wordle game.",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 14,
+   "text": "\"Qwen\" is actually a great one! It has more than five letters and it's unique, which makes it a bit more challenging",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.8636363636363636
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 0,
+   "text": "Yes, there are several good starting words for Wordle that have more than five characters to give you the best chance of including more letters in",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.9615384615384616
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 1,
+   "text": "\"Quaint\" is a good starting word for Wordle. It has four of the five most common letters in English (five if you",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 2,
+   "text": "\"Quasi\" is a good starting word that can fit into several of the 15 possible positions in Wordle, and it has",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 3,
+   "text": "Yes, that's better with \"yes\"! It's a good, four-letter word that fits well in the Wordle 16",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 4,
+   "text": "\"Quasi\" is a good starting word for Wordle that has four of the five possible starting letters (7, 8, ",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 5,
+   "text": "Yes, you can use \"10000\" as a starting word for Wordle. This is often a good choice because it",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 6,
+   "text": "Yes, there are several good starting words for Wordle that have more than four characters and can be used to fit more than one or two",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.9230769230769231
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 7,
+   "text": "\"10000\" is a good starting word for Wordle because it has five different characters and includes some longer words that can",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 8,
+   "text": "Yes, you can use \"1001\" as a starting word for Wordle. This is a valid five-character word that has",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 9,
+   "text": "\"10000\" is a good starting word for Wordle because it has five different characters and includes some that are often useful",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 10,
+   "text": "\"Quixotic\" is a good, more than seven characters, and has several good options for letters that might be correct or need to",
+   "probes": {
+    "answer_letters": 8,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 11,
+   "text": "Yes, that's correct! For a good starting word in Wordle, you can use the word **\"1000\"**",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 0.9375
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 12,
+   "text": "Yes, you can use \"1001\" as a starting word for Wordle. This is actually one of the more common starting",
+   "probes": {
+    "answer_letters": 8,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.95
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 13,
+   "text": "\"Quasi\" is a good starting word for Wordle that has four of the five most common letters (including two of the five most",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.8260869565217391
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 14,
+   "text": "\"1028\" is not a valid solution for Wordle and it's too long. The correct starting words for Wordle are",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "What's a good wordle opener?",
+   "sample": 0,
+   "text": "A \"good\" Wordle opener is one that maximizes the number of characters you can't use in the other words. The best ",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "What's a good wordle opener?",
+   "sample": 1,
+   "text": "A \"Wordle\" is actually the name of the popular word puzzle game, and there are several good strategies for choosing your first word in",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9166666666666666
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "What's a good wordle opener?",
+   "sample": 2,
+   "text": "A \"good\" Wordle opening is typically one that allows you to use more than the most common letters (like 5 or 6",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "What's a good wordle opener?",
+   "sample": 3,
+   "text": "For the game Wordle, a \"good\" opening is one that maximizes your chances of being closer to the correct solution with just two",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "What's a good wordle opener?",
+   "sample": 4,
+   "text": "For the game Wordle, which is a bit different from the original 10-letter version, you have to use a five-character string",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "What's a good wordle opener?",
+   "sample": 5,
+   "text": "A \"Wordle\" is actually the name of a popular word guessing game, where you need to guess a five-letter word in six guesses",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.8695652173913043
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "What's a good wordle opener?",
+   "sample": 6,
+   "text": "A good Wordle opener is typically a five-character word that has several common letters and is unlikely to be too specific or too specific with its",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.8461538461538461
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "What's a good wordle opener?",
+   "sample": 7,
+   "text": "A \"good\" Wordle opener is one that maximizes the number of possible correct characters and minimizes the number of possible characters for each",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.782608695652174
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "What's a good wordle opener?",
+   "sample": 8,
+   "text": "In Wordle (or any other similar word guessing game), a \"good\" opening guess is one that can potentially eliminate the most possible characters",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "What's a good wordle opener?",
+   "sample": 9,
+   "text": "A good word for opening the Wordle 1000 or the traditional 167-word challenge is \"ABCD\" (",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 0.9375
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "What's a good wordle opener?",
+   "sample": 10,
+   "text": "In Wordle, which is a nine-letter word that you need to guess, the best openers are typically those with four or more of",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "What's a good wordle opener?",
+   "sample": 11,
+   "text": "A good Wordle (or 5) is often a five-character word that has several characters that are common in many other words, and",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "What's a good wordle opener?",
+   "sample": 12,
+   "text": "A \"good\" Wordle opening is one that maximizes the number of possible words you can get to in your first few guesses. Here",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "What's a good wordle opener?",
+   "sample": 13,
+   "text": "For the game Wordle, which is played with a 6-character (including spaces) or 7-character (including spaces) word,",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.8823529411764706
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "What's a good wordle opener?",
+   "sample": 14,
+   "text": "A \"Wordle\" is a popular puzzle game where you need to guess a five-letter word. The first word you use (often called",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.8636363636363636
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 0,
+   "text": "Yes, there are some good starting words for Wordle that have more than five of the most common letters in English. A good starting word",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.92
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 1,
+   "text": "A great starting word for Wordle that has several possible characters and is still fairly common is \"10000\" or more commonly",
+   "probes": {
+    "answer_letters": 8,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 2,
+   "text": "Yes, there are several good words to use as the starting word in Wordle that have more than four characters and contain at least five different",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 26,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 3,
+   "text": "For a good starting word in Wordle, you want to use a five-letter word that has several of the most common letters and can be",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.92
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 4,
+   "text": "For Wordle (which is actually called \"100% and 100%+ for the original version), or if you",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 0.9375
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 5,
+   "text": "For a good starting word in Wordle, you want to use a five-letter word that has more than four of the five most common letters",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.92
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 6,
+   "text": "Yes, there are some good starting words for the game Wordle that can help you get more than one correct or even perfect matches in the",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.9615384615384616
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 7,
+   "text": "For a Wordle starting word, you can use \"1024\" or \"1025.\" These are good because they",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 8,
+   "text": "Yes, there are several good starting words for the Wordle that you can use to get more than one correct or partially correct letters on your",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.9615384615384616
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 9,
+   "text": "A good starting word for the Wordle 1423 (or any other) is \"1024.\" This is actually",
+   "probes": {
+    "answer_letters": 8,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 0.9375
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 10,
+   "text": "For a good starting word in Wordle, you want to use a five-letter word that has more than one or even four of the ",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9166666666666666
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 11,
+   "text": "Yes, that's correct! For a Wordle starting word, you can use \"10000\" which is a good choice",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 12,
+   "text": "A great starting word for a Wordle is \"10000\" (or 10000 characters if you're",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 0.9285714285714286
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 13,
+   "text": "For a Wordle starting word, you want to choose something that has more than five characters and contains several good six-character words with it.",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.6,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 14,
+   "text": "For a good Wordle starting word, you want to use a six-character word that has multiple possible good five-letter words as potential replacements for",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.875
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 0,
+   "text": "Yes! That's a great challenge. For this one, I'll use a 5+ character word with more than three syllances (",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.95
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 1,
+   "text": "10 is a good one! It's a bit more than the typical, but it has five characters and all the characters are correct in",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.875
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 2,
+   "text": "\"Qwen\" is a bit too long for the typical 5 or 6 words in a Wordle (which should be closer to",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 3,
+   "text": "Yes, that's better with a longer, more complex word. Let's use this instead: \"Q\" (although it's actually a",
+   "probes": {
+    "answer_letters": 8,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.9444444444444444
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 4,
+   "text": "\"Q\" is a good one! It's longer than most and you can't find it in many words, which makes it a great",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 5,
+   "text": "\"Qwen\" is actually a good one! It has five characters and includes a six-character name that can be a good fit for the",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.8695652173913043
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 6,
+   "text": "Yes, that's a good idea! For the first word in a Wordle-like game, you can use a seven-character word with more",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.8571428571428571
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 7,
+   "text": "10 is too much, but 10 is not too long! (If you meant to have 10 characters, but instead",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.7368421052631579
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 8,
+   "text": "10 is too long, but 9 is a bit more than what you can easily find with more than one syll, so let's",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.8695652173913043
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 9,
+   "text": "\"Q is for\" might be too tricky, but if you want to use a six-character word that's still more than a typical starting",
+   "probes": {
+    "answer_letters": 8,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 10,
+   "text": "\"Q\", but that might be a bit too much for a 5 or 10 word word challenge, as it's not very",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 11,
+   "text": "Yes! That's a good idea for a 6-character word that is more than just five characters but still fits the 6-character requirement",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 12,
+   "text": "10\n\nThis is actually a bit tricky because it's not really a word, but it has seven characters which is more than the minimum",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9166666666666666
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 13,
+   "text": "\"Q\" is a great, but not very common, starting word for a 5 or 8 character 6-10 character",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 14,
+   "text": "\"Q is for\" might be too much, but \"Qwen\" is actually perfect! If you're looking for a bit more than",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.95
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 0,
+   "text": "Yes, there are several good starting words for Wordle that have more than five characters, which is the typical requirement. A good starting word",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9166666666666666
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 1,
+   "text": "10 is a good one because it's a bit more than the typical, and it has four characters, which is a bit more than",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 2,
+   "text": "\"1015\" or \"1024\" are usually good starting words in some of the 1024-",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 3,
+   "text": "Yes, that's better with \"yes\" or \"10001\" if you need to be a bit more specific about the",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 4,
+   "text": "\"10000\" or \"10001\" are usually good starting words for 1088, the",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 11,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 5,
+   "text": "Yes, you can use \"10000\" as a starting word for Wordle. This is actually a good start because it",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 6,
+   "text": "Yes, there are several good starting words that have more than five of the most common letters (including 7 of the top 8 in",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9166666666666666
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 7,
+   "text": "10 is too long for most Wordle, which typically require the starting word to be 7 or 8 characters. If you want",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 8,
+   "text": "10 is too long, but 9 works better for a while. If you want to use a more common or simpler one, consider",
+   "probes": {
+    "answer_letters": 8,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 9,
+   "text": "\"1089\" is not the typical length, but you can use \"1089\" as an unusual, but valid",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 0.875
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 10,
+   "text": "10 is a good starting word that has more than one possible fit in 10 characters, including some of the most likely 5",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 11,
+   "text": "Yes, that's better, and it has 6 characters. That's more like it! If you need a starting word for a while",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 12,
+   "text": "10\n\nThis is a bit more than what you can use in 10 characters for the 10-character 10-",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.9444444444444444
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 13,
+   "text": "\"1010 is not too long, but it's a good starting word because it has four different characters (1010",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 14,
+   "text": "\"1089\" is a good starting word for Wordle because it has five digits, which are all different and might fit in",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's a good wordle opener?",
+   "sample": 0,
+   "text": "Yes, there are several good strategies for the first guess in Wordle that can help you more often than not to get the right guesses for",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.9230769230769231
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's a good wordle opener?",
+   "sample": 1,
+   "text": "There are several good strategies for the first guess in Wordle to ensure you can get more than 70% of the time. Here",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's a good wordle opener?",
+   "sample": 2,
+   "text": "There are several good words that can be used as a 6-character \"100% fit\" (or 99% if",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's a good wordle opener?",
+   "sample": 3,
+   "text": "For the 10-character (or longer) versions of Wordle, there are several good opening words that you can use to maximize your",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's a good wordle opener?",
+   "sample": 4,
+   "text": "For the 18-character 16+15 (18 characters with 16 being correct, and one that is too",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 15,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's a good wordle opener?",
+   "sample": 5,
+   "text": "Yes, there are several good 8-character (10-character in some versions) or 9-character options that can be used as a",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's a good wordle opener?",
+   "sample": 6,
+   "text": "Yes, there are several better than 10 out of the 10855859960765",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 11,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's a good wordle opener?",
+   "sample": 7,
+   "text": "A good Wordle (or 8, which is an even more strict version with only 7 characters) can be tricky, but there",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's a good wordle opener?",
+   "sample": 8,
+   "text": "Yes, the 10-character or less are better for a while. With that in mind, you can use a 5- or",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's a good wordle opener?",
+   "sample": 9,
+   "text": "There are several good words that can be used to open the 10-character (11 including the space) on a longer Wordle",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's a good wordle opener?",
+   "sample": 10,
+   "text": "In the context of the game \"Wordle\" (which is now available as a 100% correct and a 98",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's a good wordle opener?",
+   "sample": 11,
+   "text": "Yes, that's the 10-character name for a 16-character name with 10 characters in common, but you're",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 0.9375
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's a good wordle opener?",
+   "sample": 12,
+   "text": "A \"good\" word for the 16-character (or 15 if you count the extra space) 1678",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 15,
+    "unique_word_ratio": 0.9333333333333333
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's a good wordle opener?",
+   "sample": 13,
+   "text": "For the 10-character Wordle (or more generally, for any longer than the original 9 characters), there are some strategies that",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What's a good wordle opener?",
+   "sample": 14,
+   "text": "Yes, there are several good strategies for getting the best possible starting words in Wordle. The original 1585 (20",
+   "probes": {
+    "answer_letters": 8,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 0,
+   "text": "Yes, there are some good starting words for 100% that you can use to get more than one correct in the first guess",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 1,
+   "text": "There are several good starting words for the 15 characters in the Word, 16 (15+1 for the 1",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.8333333333333334
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 2,
+   "text": "There are several good words that can be used as the starting words for 1089 (which is the name of their original,",
+   "probes": {
+    "answer_letters": 8,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 3,
+   "text": "For a 100% fit, you could use \"1000000000\" which is actually a",
+   "probes": {
+    "answer_letters": 8,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 12,
+    "unique_word_ratio": 0.9166666666666666
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 4,
+   "text": "For the first Wordle, you might want to use a five-character word that has at least four of the six possible characters (0-",
+   "probes": {
+    "answer_letters": 8,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 5,
+   "text": "5-character words with several characters are often good for starting your Wordle, as they can be more flexible in terms of being able to fit",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 25,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 6,
+   "text": "Yes, there are some better than others for the 168 character 728 character 168 character 72",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 0.8125
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 7,
+   "text": "For 5-character words (which is typically the correct size for most Wordle or similar puzzles), you can use a bit more than just",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9565217391304348
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 8,
+   "text": "Yes, there are several good starting words for a 100% chance of getting at least one five of those that are more than",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9130434782608695
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 9,
+   "text": "There are actually specific criteria that are typically used to find the best starting words for the 158-character (or sometimes a little more",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9130434782608695
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 10,
+   "text": "For a good starting word in Wordle, you can use \"10999\" or 10999 instead of",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 15,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 11,
+   "text": "Yes, that's better than 10! I actually need to be more like the 10 words you mentioned, but still,",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 12,
+   "text": "A good starting word for 10 characters, which is the standard size for some of the more specific versions of Wordle (including those",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.8695652173913043
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 13,
+   "text": "For the 10-character, 11-character, or 12-character versions of Wordle that some people use, which are",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 15,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 14,
+   "text": "The 5-character words in Wordle tend to be more than just a bit too long, but you can use a starting word that has",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.9583333333333334
+   }
+  }
+ ]
+}

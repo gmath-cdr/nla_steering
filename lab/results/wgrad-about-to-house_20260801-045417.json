@@ -1,0 +1,1692 @@
+{
+ "spec": {
+  "name": "wgrad-about-to-house",
+  "matrix_id": "T3-wordle-word",
+  "answer_format": "word",
+  "answer_len": 5,
+  "direction": {
+   "positive": "Reply gives the single starting word HOUSE as the five letter word to play.",
+   "negative": "Reply gives the single starting word ABOUT as the five letter word to play."
+  },
+  "prompts": [
+   "Think of a five letter word to start for Wordle."
+  ],
+  "alphas": [
+   0,
+   0.25,
+   0.4,
+   0.5,
+   0.65,
+   0.8
+  ],
+  "mode": "all",
+  "samples_per_prompt": 25,
+  "temperature": 0.7,
+  "max_new_tokens": 28,
+  "probes": [
+   "wordle_crane",
+   "wordle_valid",
+   "n_words"
+  ]
+ },
+ "direction_diagnostics": {
+  "cos_pos_neg": 0.9835923314094543,
+  "delta_norm_ratio": 0.18345820903778076,
+  "norm_pos": 157.59559631347656,
+  "norm_neg": 153.0736541748047,
+  "echo_positive": "Old-fashioned word game puzzle format with \"A to Z\" clue structure suggesting a word or words beginning with \"S\" are being sought.\n\nThe phrase \"ok to type letters in sequence to make word...so answer is : \" implies a response or answer attempt, likely \"SAD\" or similar word, completing the puzzle prompt about the word \"sun.\"\n\nFinal token \"word )\" closes a parenthetical example (\"my answer is : \"), immediately expecting the word \"sun\" or \"SAD\" or \"one of those\" or \"SAD\" as the specific answer word, continuing the puzzle's direct question about the letter sequence.",
+  "echo_negative": "Old-fashioned word puzzle format with \"A to Z\" clue structure suggesting a word game or letter sequence challenge.\n\nThe phrase \"ok to type in reverse the word for this ... send me back A to Z\" implies a response is being constructed, and the question \"what word starts with S\" signals the answer is being offered, likely completing the list of letters already mentioned.\n\nFinal token \"word ) \" closes a parenthetical example (\"answer is : type the word \"), strongly expecting \"SAD\" or \"SAD\" as the answer, or \"one\" or \"zest\" continuing the word list pattern, completing the puzzle's prompt about the chosen word."
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "Sure! How about the word \"crane\"? It's a great starting word as it contains some common letters and can help you eliminate possibilities",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "Sure! How about the word \"crane\"? It's a great starting word as it contains the letters A, R, and E,",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use as a starting point in Wordle",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use as a starting guess in Wordle",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "Sure! How about the word \"crane\"? It's a great starting word as it contains the letters A, E, and R,",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use as a starting guess in Wordle",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "Sure! How about the word \"scare\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "Sure! How about the word \"scree\"? It's a valid five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "Sure! How about the word \"scrap\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "Sure! How about the word \"scrap\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "Sure! How about the word \"scree?\" It's a valid five-letter word.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "Sure! How about the word \"scrap\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "Sure! How about the word \"scare\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "Sure! How about the word \"crane\"? It's a great starting word as it contains some common letters and has the benefit of being",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "Sure! How about the word \"scare\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "Sure! How about the word \"scare\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "Sure! How about the word \"scare\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "Sure! How about the word \"scare\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "Sure! How about the word \"scare\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "Sure! How about the word \"crane\"? It's a great starting word as it contains some common letters and has the advantage of being",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "Sure! How about the word \"scare\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "Sure! How about the word \"crane\"? It's a great starting word as it has a mix of common and less common letters,",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "Sure! How about the word \"crane\"? It's a great starting word as it contains some common letters and has the advantage of being",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "Sure! How about the word \"scrap\"? It's a great starting word as it contains some common letters and has the advantage of being",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "Sure! How about the word \"scrap\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "Sure! How about the word \"scrap\"? It's a great starting word as it contains some common letters and has the advantage of being",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "Sure! How about the word \"scrap\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use as a starting word in Wordle",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "Sure! How about the word \"crane\"? It's a great starting word as it contains some common letters and has the advantage of being",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "Sure! How about the word \"scare\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "Sure, how about the word \"screep\"? It's a great word for starting a game of Wordle as it has some great",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "Sure, how about the word \"scree? It's a valid word for Wordle and it's quite challenging as it doesn't appear",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "Sure, how about the word \"Scotch? It's a five-letter word that could be a good guess for Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "Sure, how about the word \"scrap\" for your Wordle game? It's a great starting word as it has some common letters",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "How about \"ScrapP\" as a five-letter word option for Wordle; however, please note that Wordle typically uses valid five",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "Sure, how about the word \"screep\"? It's a great starting word as it has a mix of common and less common letters",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "Sure, how about the word \"scree? It's a valid word for Wordle and it's a five-letter word.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "Sure, how about the word \"scree? It's a valid five-letter word that you can use for Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "Sure, how about the word \"scree? It's a valid five-letter word.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "Sure, how about the word \"scree? It's a valid five-letter word.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "Sure, how about the word \"screep\"? It's a great starting word as it has a good mix of letters and possible high",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "Sure, how about the word \"scree? It's a valid word and it has five letters.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "Sure, how about the word \"scrap\" for your Wordle game? Enjoy playing!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 12
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "Sure, how about the word \"Scrap\" as a five-letter word for Wordle?",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 12
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "How about \"scree? It's a valid five-letter word.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 8
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "Sure, how about the word \"scree? It's a valid five-letter word.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "Sure, how about the word \"ScreeP\" as it is a valid word in Wordle and has five letters. If that doesn",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "How about \"scree? It's a valid five-letter word. If it doesn't work, you can always try \"scion\"",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "Sure, how about the word \"scrap\" for your Wordle game? Enjoy playing!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 12
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "Sure, how about the word \"scrap\" for your Wordle game? It's a great starting word as it has a mix of",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "Sure, how about the word \"scree? It's a valid five-letter word that you can use for Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "Sure, how about the word \"scrap\" for your Wordle game? Enjoy playing!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 12
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "Sure, how about the word \"ScrapP\" since some Wordles allow for non-standard five-letter words or allow for some letters to",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "Sure, how about the word \"ScrapE\"? It's a great starting word as it has a good mix of common and less common",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "Sure, how about the word \"scrap\" for your Wordle game? Enjoy playing!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 12
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "Sure, how about the word \"basid? It's a great starting word as it has a good mix of letters and possible chance to",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "Sure, how about the word \"basal\" for your Wordle game? It's a great starting word as it has a good combination",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "Sure, how about the word \"Scawp? It's a great starting word as it has a good mix of letters and can help",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "Sure, how about the word \"scrap? It's a great starting word as it has a good mix of letters and possible valid words",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "How about `Cracl? It's not a valid word, but for a Wordle-style game, you can use `Creme",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "Sure, how about the word \"basal\" for your Wordle game? It's a great starting word as it has a good mix",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "Sure, how about the word \"screeP? It's a great starting word as it has a good mix of letters and includes some",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "Sure, how about the word \"basal\" for your Wordle game? It's a great starting word as it has a good combination",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "Sure, how about the word \"screeP? It's a great starting word as it has a good combination of letters and includes a",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "Sure, how about the word \"Helmsd? It's a great starting word as it has a good mix of letters and it's",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "Sure, how about the word \"ScreeP? It's a great starting word as it has a good combination of letters and possible word",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "Sure, how about the word \"basal\" for your Wordle game? It's a great starting word as it has a good mix",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "Sure, how about the word \"scrap? It's a great starting word as it has a good combination of letters and can help narrow",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "How about \"Scenic? It's a great starting word as it doesn't have any common word overlap in the first letter and has a",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "How about `Pilet`? It's a great starting word with no common five-letter words that have the same starting or ending letters,",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "Sure, how about the word \"basid? It's a great starting word as it has a good mix of letters and can help you",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "Sure, how about the word \"ScreeP? It's a great starting word as it has a good mix of letters and includes some",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "How about `PineDellPineDellPineDellPineDellPineDellPineDellP",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 3
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "Sure, how about the word \"scrap\" for your Wordle game? Enjoy playing!",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 12
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "Sure, how about the word \"ScrapC? It's a great starting word as it has some great options for letter combinations and possible",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "Sure, how about the word \"Scotch? It's a five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "Sure, how about the word \"ScrapP? It's a great starting word as it has a good mix of common and less common",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "Sure, how about the word \"ScrapP? It's a great starting word as it has a good combination of letters and can help",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "Sure, how about the word \"basid? It's a great starting option for Wordle as it has a good mix of common and",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "Sure, how about the word \"ScrapP? It's a great starting word as it has a good mix of common and less common",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "Sure, how about `PinePWeIHCJ4J4PWeIHePWeIHePWeIHeP",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 4
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "Sure, how about `PigHead? It's a valid word for WordPete (a WordPilot-style game), though it",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "PileF\nNote: Since the standard WordPiles for WordPell (or WordPile) typically use five-letter words,",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 14
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "Sure, how about `CSetup or perhaps simpler `PSetupIf you need a five-letter word, how does `CWordP\n",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "How howHow\nNote: It appears there might be a mistake in the output as a valid WordSc一字WordPilotWordPilot",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "Sure, how about `Cupless? It's a great starting word as it has a good combination of letters and no common word overlap",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "Sure, how about `Creme for a five-letter word; it's a great starting word as it doesn't have any common WordP",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "Sure, how about `Pilot? It's a great starting word as it has a good combination of letters and can help you target any",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "Sure, how about `Pilot? It's a great starting word as it has a good combination of letters and can help narrow down the",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "Sure, how about `C譔PaiNoteDGeTJHePoleIPlayWellWithDWellPDon'tP",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 4
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "Sure, how about `Fiddle? It's a great starting word as it has a good combination of letters and can help narrow down the",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "PupWeP\n\nSince a valid Word Wheel (Wordle) word would be a standard five-letter word, a valid word would be",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "Let's try `Pigged; it's a great starting word as it has a good mix of common and possible less common letters,",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "PileHffeNoteViceTigerPigGeHePoleGoneGorePoleHePoleGorePole",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "PinePHeaterPHePWePHePHePHePHePHePHePHePHePHeP",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "Sure, how about `Cocoa? It's a great starting word as it has a good probability of fitting with the possible word choices in",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "Sure, how about `Craider, if it fits your word options. If that doesn't work, you can try something like `",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "How如何HCJHC :D\n\nI see it looks like a great attempt to create a five-letter word with a classic Word intimidat",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "Sure, how about `Pilot? It's a great starting word as it has a good combination of letters and possible word options on a",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "Pilot\nPilot is a great word for starting a game of WordPilot or any word-based game similar to WordPilot;",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "Sure, how about `HWordP? It's a great starting word as it has a good mix of common and less common letters,",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "Pilot\nThis is a great starting word as it has three great intermediate options for possible WordPiles (the yellow-word intersections) and",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "Sure, how about `Pilot? It's a great starting word as it has a good combination of letters and possible word options on a",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "PupWeI\nNote: For a real Wordije or WordPete type game, you would need to ensure that the word is",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "Sure, how about `Pilot? It's a great starting word as it has a good combination of letters and can help you target any",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "Sure, how about LetHC It's a great starting word as it has a good combination of letters and can help you target anyWordP",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "PHePHePHePHePHePHePHePHePHePHePHePHePHePHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "PHCaps\nNote: This is aWordPattTryWePCPNotePHePWePWePHePWeP",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "PHouse\nNote: Since the typical WordPWeIWordPWeIWordPWeIWordPWeIWordPWeI",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 6
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "CWordP\nNote: A valid WordScGenerator would have a valid WordIWordPWordPWordPWordP = CleP",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 12
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "Here is A一字I would recommend for a great starting word for WordPWordIIfIWeIAnyWordIanyHHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 12
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "PHouse\nNote: For WordPGenerator or any WordPWordI ähnHC IAssPHePIfPWePWeP",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 9
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "Let'sTryCJNote : Since a valid WordScGenerator would require a valid WordWeIHaveP = :WordIHeWell",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "PHouse\nNote: A great WordPHouse = PulHHePWeIHePHeIHePHeIHePHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 7
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "Sure, how howHow would you have chosen a word for a WordPilot or any word-based game like WordPaya or any other",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "Sure, how howHow would you have chosen a five-word word for WordPatt�I assume You meant WordSc一字itaire or any",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "PACHINE\nNote: For a real WordSc一字itaire or WordLHC_wordP_H_P_H_W_P_I_P_P_I_P",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 8
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "Let's try *PSetupP : Let'sGo\nI assume you meant a five-letter word for a WordScGenerator or a similar",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "PHouse\nNote : Since the typical WordPHousePWordIHePWordPWordPWordPWordPWordPPlayP",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 7
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "PHouse\nNote: A great word for WordPilot or any word-based game like WordPHePWePHePHeP",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "P懞JHC\nNote: In Word淞IHeI : A valid word for WordPHeI = AWordI",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 12
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "Sure, how howHow = HeHeHeHeHe\nLet's try LetHe or any other five-wordWordPWordPWordP",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 12
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "Let's try *PilotP = P *P = PChoose any word based on the pattern I provided or just go with a common",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "Let'sGo\nNote: In a real-word WordPilot or WordPilot-like game, you would probably go with a simpler word",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "PSetupPHeHeHeP\nI would recommend LetHeHePHeHePHeHePHeHePIf you meant a",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 8
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "Sure, how howHow would you have chosen a word for WordPHeWell, howHowLet'sGoLet'sTryPHeP",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 12
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "CWordP\nNote: Since the typical WordScrap or WordPaze type game would require a valid Word, A valid Five-word",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "Sure, how howHow :D Just picking a five-word option since I assume you need a valid WordWordPWordIWordPWord",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "PSetup I would be a great word for a word análPIt looks like I didnSince theWordPIt seems like there might be",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "Let'sGo\n\nNote: In actual Microsoft Word or any word-word game like WordPilot or WordPilotPC, theWordP",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 15
+   }
+  }
+ ]
+}

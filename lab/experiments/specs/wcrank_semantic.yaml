@@ -1,0 +1,22 @@
+# Salience-crank experiment: same target (HOUSE) and same anchor (CRANE)
+# as wgrad-crane-to-house (the 'gentle' one-word swap, delta ratio 0.15,
+# landing rate 0), but the SEMANTIC crank makes the word more
+# salient to the reconstructor. Matched scaffolds: both sentences use the
+# same crank so the direction isolates word identity at higher salience.
+name: wcrank-semantic
+matrix_id: T3-wordle-word
+answer_format: word
+answer_len: 5
+direction:
+  positive: >-
+    Reply gives the five letter word for a building where people live as its starting guess to play.
+  negative: >-
+    Reply gives the five letter word for a tall machine that lifts heavy loads as its starting guess to play.
+prompts:
+  - Five letter word for Wordle
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8, 1]
+mode: all
+samples_per_prompt: 25
+temperature: 0.7
+max_new_tokens: 28
+probes: [wordle_crane, wordle_valid, n_words]

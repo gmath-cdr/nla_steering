@@ -1,0 +1,20 @@
+# The team's eval-awareness run produced ALL-CAPS as a side effect; here
+# we target the artifact directly. Census baseline near-zero (0.02 words).
+name: caps-freeform
+matrix_id: T1-caps
+direction:
+  positive: >-
+    Reply where the important words are WRITTEN IN FULL CAPITALS for
+    emphasis, shouty insistent style.
+  negative: >-
+    Reply in ordinary sentence case with no capitalized emphasis, quiet
+    even tone.
+prompts:
+  - Tell me about your day.
+  - What should I cook for dinner tonight?
+  - Give me some tips for staying focused while studying.
+  - Describe the weather in autumn.
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8, 1]
+mode: all
+samples_per_prompt: 3
+probes: [caps_words, exclamations, n_words, unique_word_ratio]

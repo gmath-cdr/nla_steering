@@ -1,0 +1,32 @@
+# T3-wordle-away, mode=all arm: move Qwen off its 100%-modal opener
+# (census: CRANE 25/25). The direction describes UNCONVENTIONALITY
+# without naming any word, so a hit means the abstract concept moved a
+# concrete lexical plan. Three prompt phrasings test whether the effect
+# survives reframing (each phrasing's alpha=0 arm measures its own
+# baseline histogram). Ladder capped at 0.8: T1/T2 showed degeneration
+# near 1 for mode=all.
+name: wordle-away
+matrix_id: T3-wordle-away
+answer_format: word
+answer_len: 5
+direction:
+  positive: >-
+    Reply gives an unusual, obscure choice of starting word that few
+    players would ever pick, avoiding the common recommended openers.
+  negative: >-
+    Reply gives the single most popular, standard recommended starting
+    word that every strategy guide suggests.
+# bare generation frames: no caps instruction, no "best", no format
+# scaffolding (2026-08-01 prompt discussion). The extractor handles
+# sentence replies; alpha=0 arms measure each frame's own baseline.
+prompts:
+  - Think of a five letter word to start for Wordle.
+  - Choose a 5 letter word for a Wordle start.
+  - Pick a five letter word to open a Wordle game.
+  - Give a 5 letter starting word for Wordle.
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8]
+mode: all
+samples_per_prompt: 25
+temperature: 0.7
+max_new_tokens: 28
+probes: [wordle_crane, wordle_valid, n_words]

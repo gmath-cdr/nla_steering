@@ -1,0 +1,15 @@
+name: emojimx2-resid25-freeform
+matrix_id: T1-emoji-methods
+direction_file: experiments/emoji_methods/data/decomposition_v2.npz#resid25_freeform
+prompts:
+  - Tell me about your day.
+  - What should I cook for dinner tonight?
+  - Describe the weather in autumn.
+  - Give me tips for staying focused while studying.
+  - Recommend a weekend activity.
+alphas: [0, 0.2, 0.4, 0.6, 0.8]
+mode: all
+samples_per_prompt: 15
+temperature: 0.7
+max_new_tokens: 60
+probes: [emojis, exclamations, n_words, unique_word_ratio]

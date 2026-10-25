@@ -1,0 +1,21 @@
+{
+  "condition": "B",
+  "concept_id": 287,
+  "prompt_index": 4,
+  "global_prompt_index": 18,
+  "prompt": "What is the difference between the Scala Future onComplete and andThen functions?",
+  "alpha": 0.5,
+  "seed": 2870222,
+  "seed_scope": "two-sample batched generation; reset identically for B and C",
+  "mapping_sha256": "1f2f8c985cedc77787938940f00224fa5de80e2c469494bbf54ca18538c7a67b",
+  "source_vector_sha256": "6ab3ae1000f1da845602066a7eaeedf31069c6240982208a76fc85b8460f9e90",
+  "generation_settings_sha256": "4c0e84a199a200b3661193144dfa6e11cda3877bfb9d72964e3322cf268453e8",
+  "target_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "responses": [
+    "In Scala, `Future` represents a value that may not yet be available, but will become so in the future (hence the name). The `onComplete` and `andThen` methods are used to handle the results of these futures, but they have different semantics and use cases.\n\n### `onComplete`\n\n- **Type**: `Future[T] => Unit`\n- **Behavior**: `onComplete` is used to specify an action to perform when the `Future`",
+    "In Scala, `Future` is a powerful tool for handling asynchronous operations, particularly when dealing with non-blocking computations. The `onComplete` and `andThen` methods are used to attach side effects or transformations to a `Future`, but they operate in different contexts and have different semantics.\n\n### `onComplete`\n\n- **Context**: `onComplete` is used to attach a side effect that will be executed when the `Future` completes (i.e., when it either successfully"
+  ],
+  "elapsed_seconds": 1.9525716258212924,
+  "peak_allocated_bytes": 15281688064,
+  "peak_reserved_bytes": 15300820992
+}

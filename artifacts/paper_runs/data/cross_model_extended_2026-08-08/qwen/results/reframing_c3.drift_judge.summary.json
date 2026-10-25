@@ -1,0 +1,90 @@
+{
+  "judge_protocol": {
+    "provider": "openrouter",
+    "api_endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "model": "openai/gpt-4o-mini",
+    "prompt_version": "paraphrase-drift-v1",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "evaluated_at": "2026-08-17T00:54:04.355092+00:00"
+  },
+  "concept": "casinos, gambling, betting, poker, roulette",
+  "terms": [
+    "casino",
+    "casinos",
+    "gambling",
+    "gamble",
+    "gambled",
+    "gambler",
+    "bet",
+    "bets",
+    "betting",
+    "wager",
+    "wagering",
+    "wagered",
+    "poker",
+    "roulette",
+    "stake",
+    "stakes",
+    "staking",
+    "odds",
+    "jackpot"
+  ],
+  "arms": [
+    {
+      "label": "lexical__alpha_0.75",
+      "n_samples": 60,
+      "literal_mention_rate": 0.11666666666666667,
+      "thematic_drift_rate": 0.0,
+      "pure_drift_rate (drift without literal terms)": 0.0,
+      "mean_drift_strength": 0.0
+    },
+    {
+      "label": "abstract__alpha_0.75",
+      "n_samples": 60,
+      "literal_mention_rate": 0.03333333333333333,
+      "thematic_drift_rate": 0.03333333333333333,
+      "pure_drift_rate (drift without literal terms)": 0.016666666666666666,
+      "mean_drift_strength": 0.05
+    },
+    {
+      "label": "behavioral__alpha_0.75",
+      "n_samples": 60,
+      "literal_mention_rate": 0.03333333333333333,
+      "thematic_drift_rate": 0.06666666666666667,
+      "pure_drift_rate (drift without literal terms)": 0.06666666666666667,
+      "mean_drift_strength": 0.06666666666666667
+    },
+    {
+      "label": "random_seed_17__alpha_0.75",
+      "n_samples": 60,
+      "literal_mention_rate": 0.0,
+      "thematic_drift_rate": 0.0,
+      "pure_drift_rate (drift without literal terms)": 0.0,
+      "mean_drift_strength": 0.0
+    },
+    {
+      "label": "random_seed_42__alpha_0.75",
+      "n_samples": 60,
+      "literal_mention_rate": 0.0,
+      "thematic_drift_rate": 0.0,
+      "pure_drift_rate (drift without literal terms)": 0.0,
+      "mean_drift_strength": 0.0
+    },
+    {
+      "label": "random_seed_101__alpha_0.75",
+      "n_samples": 60,
+      "literal_mention_rate": 0.0,
+      "thematic_drift_rate": 0.0,
+      "pure_drift_rate (drift without literal terms)": 0.0,
+      "mean_drift_strength": 0.0
+    },
+    {
+      "label": "unsteered",
+      "n_samples": 60,
+      "literal_mention_rate": 0.0,
+      "thematic_drift_rate": 0.0,
+      "pure_drift_rate (drift without literal terms)": 0.0,
+      "mean_drift_strength": 0.0
+    }
+  ]
+}

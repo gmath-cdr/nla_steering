@@ -1,0 +1,29 @@
+{
+  "protocol_version": "qwen-av-edit-confirmation-v1",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "layer": 20,
+  "concept_ids": [10, 320],
+  "concept_labels": {
+    "10": "topics related to surgical procedures and wound treatments",
+    "320": "terms related to pharmaceuticals, specifically medication and its classifications"
+  },
+  "prompt_mapping": "experiments/configs/av_edit_confirmation_c10_c320_prompts.jsonl",
+  "prompt_selection": "First 12 unique negative instruction rows in source order after excluding every prompt in the prior two-prompt screen mapping.",
+  "prompts_per_concept": 12,
+  "alpha": 0.5,
+  "alpha_selection": "Frozen screening alpha; no confirmation-prompt tuning.",
+  "av_rollouts_per_prompt": 3,
+  "samples_per_prompt_per_arm": 3,
+  "random_seeds": [17, 42, 101],
+  "capture_position": "prompt_last",
+  "intervention_position": "assistant_response_all_decode_steps",
+  "edit_template": "{original}\n\nThe representation specifically concerns: {concept}.",
+  "primary_gate": {
+    "minimum_strict_lift_over_unsteered_and_best_random": 0.2,
+    "one_sided_bootstrap_confidence": 0.95,
+    "bootstrap_resamples": 2000,
+    "minimum_prompt_any_hit_coverage": 0.5
+  },
+  "quality_gate": "Only concepts passing the primary gate receive the separately versioned blind local-Qwen relevance/factuality audit.",
+  "candidate_policy": "Confirm c10 and c320 only. Do not tune casino or expand to other concepts based on these confirmation outputs."
+}

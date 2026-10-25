@@ -1,0 +1,3176 @@
+{
+  "protocol": {
+    "version": "axbench-lexicon-strict-v1",
+    "terms_path": "/workspace/steering/natural_language_autoencoders/experiments/configs/gemma_qwen_positive14_terms.json",
+    "minimum_lift": 0.2,
+    "confidence": 0.95,
+    "bootstrap_resamples": 2000,
+    "minimum_prompt_any_hit_coverage": 0.5
+  },
+  "concepts": [
+    {
+      "concept_id": 11,
+      "arms": [
+        {
+          "label": "c11__unsteered",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c11__av_edit__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.75,
+          "median_target_terms": 1.5,
+          "prompts_any_hit": 2,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c11__random_seed_42__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c11__av_edit__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.75,
+          "median_target_terms": 2.5,
+          "prompts_any_hit": 2,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c11__random_seed_42__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c11__av_edit__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 1.0,
+          "median_target_terms": 2.5,
+          "prompts_any_hit": 2,
+          "prompts_majority_hit": 2,
+          "n_prompts": 2
+        },
+        {
+          "label": "c11__random_seed_42__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c11__av_edit__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 0.5,
+          "prompts_any_hit": 2,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c11__random_seed_42__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c11__av_edit__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 1.0,
+          "prompts_any_hit": 2,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c11__random_seed_42__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c11__av_edit__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 1.0,
+          "median_target_terms": 2.0,
+          "prompts_any_hit": 2,
+          "prompts_majority_hit": 2,
+          "n_prompts": 2
+        },
+        {
+          "label": "c11__random_seed_42__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c11__av_edit__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 0.5,
+          "prompts_any_hit": 2,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c11__random_seed_42__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        }
+      ],
+      "decisions": [
+        {
+          "alpha": 0.26,
+          "av_edit_hit_rate": 0.75,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.75,
+          "strict_lift_vs_best_random": 0.75,
+          "bootstrap_lower_vs_unsteered": 0.25,
+          "bootstrap_lower_vs_best_random": 0.25,
+          "prompt_any_hit_coverage": 1.0,
+          "decision": "supported"
+        },
+        {
+          "alpha": 0.28,
+          "av_edit_hit_rate": 0.75,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.75,
+          "strict_lift_vs_best_random": 0.75,
+          "bootstrap_lower_vs_unsteered": 0.25,
+          "bootstrap_lower_vs_best_random": 0.25,
+          "prompt_any_hit_coverage": 1.0,
+          "decision": "supported"
+        },
+        {
+          "alpha": 0.3,
+          "av_edit_hit_rate": 1.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 1.0,
+          "strict_lift_vs_best_random": 1.0,
+          "bootstrap_lower_vs_unsteered": 1.0,
+          "bootstrap_lower_vs_best_random": 1.0,
+          "prompt_any_hit_coverage": 1.0,
+          "decision": "supported"
+        },
+        {
+          "alpha": 0.32,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 1.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.34,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 1.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.36,
+          "av_edit_hit_rate": 1.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 1.0,
+          "strict_lift_vs_best_random": 1.0,
+          "bootstrap_lower_vs_unsteered": 1.0,
+          "bootstrap_lower_vs_best_random": 1.0,
+          "prompt_any_hit_coverage": 1.0,
+          "decision": "supported"
+        },
+        {
+          "alpha": 0.38,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 1.0,
+          "decision": "not_supported"
+        }
+      ]
+    },
+    {
+      "concept_id": 30,
+      "arms": [
+        {
+          "label": "c30__unsteered",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c30__av_edit__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c30__random_seed_42__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c30__av_edit__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c30__random_seed_42__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c30__av_edit__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c30__random_seed_42__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c30__av_edit__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c30__random_seed_42__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c30__av_edit__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c30__random_seed_42__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c30__av_edit__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c30__random_seed_42__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c30__av_edit__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c30__random_seed_42__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        }
+      ],
+      "decisions": [
+        {
+          "alpha": 0.26,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.28,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.3,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.32,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.34,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.36,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.38,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        }
+      ]
+    },
+    {
+      "concept_id": 90,
+      "arms": [
+        {
+          "label": "c90__unsteered",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c90__av_edit__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 0.5,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c90__random_seed_42__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c90__av_edit__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 0.5,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c90__random_seed_42__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c90__av_edit__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c90__random_seed_42__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c90__av_edit__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c90__random_seed_42__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c90__av_edit__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c90__random_seed_42__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c90__av_edit__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 0.5,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c90__random_seed_42__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c90__av_edit__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 0.5,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c90__random_seed_42__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        }
+      ],
+      "decisions": [
+        {
+          "alpha": 0.26,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.28,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.3,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.32,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.34,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.36,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.38,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        }
+      ]
+    },
+    {
+      "concept_id": 116,
+      "arms": [
+        {
+          "label": "c116__unsteered",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c116__av_edit__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c116__random_seed_42__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c116__av_edit__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c116__random_seed_42__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c116__av_edit__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c116__random_seed_42__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c116__av_edit__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c116__random_seed_42__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c116__av_edit__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c116__random_seed_42__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c116__av_edit__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c116__random_seed_42__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c116__av_edit__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 1.5,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c116__random_seed_42__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        }
+      ],
+      "decisions": [
+        {
+          "alpha": 0.26,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.28,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.3,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.32,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.34,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.36,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.38,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        }
+      ]
+    },
+    {
+      "concept_id": 171,
+      "arms": [
+        {
+          "label": "c171__unsteered",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c171__av_edit__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c171__random_seed_42__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c171__av_edit__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c171__random_seed_42__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c171__av_edit__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 0.5,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c171__random_seed_42__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c171__av_edit__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c171__random_seed_42__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c171__av_edit__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c171__random_seed_42__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c171__av_edit__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c171__random_seed_42__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c171__av_edit__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c171__random_seed_42__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        }
+      ],
+      "decisions": [
+        {
+          "alpha": 0.26,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.28,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.3,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.32,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.34,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.36,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.38,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        }
+      ]
+    },
+    {
+      "concept_id": 172,
+      "arms": [
+        {
+          "label": "c172__unsteered",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c172__av_edit__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c172__random_seed_42__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c172__av_edit__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c172__random_seed_42__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c172__av_edit__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c172__random_seed_42__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c172__av_edit__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c172__random_seed_42__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c172__av_edit__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c172__random_seed_42__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c172__av_edit__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c172__random_seed_42__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c172__av_edit__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c172__random_seed_42__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        }
+      ],
+      "decisions": [
+        {
+          "alpha": 0.26,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.28,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.3,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.32,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.34,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.36,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.38,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        }
+      ]
+    },
+    {
+      "concept_id": 186,
+      "arms": [
+        {
+          "label": "c186__unsteered",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c186__av_edit__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c186__random_seed_42__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c186__av_edit__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c186__random_seed_42__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c186__av_edit__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c186__random_seed_42__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c186__av_edit__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c186__random_seed_42__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c186__av_edit__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c186__random_seed_42__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c186__av_edit__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c186__random_seed_42__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c186__av_edit__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c186__random_seed_42__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        }
+      ],
+      "decisions": [
+        {
+          "alpha": 0.26,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.28,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.3,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.32,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.34,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.36,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.38,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        }
+      ]
+    },
+    {
+      "concept_id": 216,
+      "arms": [
+        {
+          "label": "c216__unsteered",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c216__av_edit__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c216__random_seed_42__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c216__av_edit__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c216__random_seed_42__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c216__av_edit__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c216__random_seed_42__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c216__av_edit__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c216__random_seed_42__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c216__av_edit__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c216__random_seed_42__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c216__av_edit__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c216__random_seed_42__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c216__av_edit__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c216__random_seed_42__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        }
+      ],
+      "decisions": [
+        {
+          "alpha": 0.26,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.28,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.3,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.32,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.34,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.36,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.38,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        }
+      ]
+    },
+    {
+      "concept_id": 222,
+      "arms": [
+        {
+          "label": "c222__unsteered",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c222__av_edit__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c222__random_seed_42__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c222__av_edit__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c222__random_seed_42__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c222__av_edit__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c222__random_seed_42__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c222__av_edit__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c222__random_seed_42__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c222__av_edit__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c222__random_seed_42__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c222__av_edit__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c222__random_seed_42__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c222__av_edit__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 1.5,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c222__random_seed_42__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        }
+      ],
+      "decisions": [
+        {
+          "alpha": 0.26,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.28,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.3,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.32,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.34,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.36,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.38,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        }
+      ]
+    },
+    {
+      "concept_id": 287,
+      "arms": [
+        {
+          "label": "c287__unsteered",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c287__av_edit__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.75,
+          "median_target_terms": 2.5,
+          "prompts_any_hit": 2,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c287__random_seed_42__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c287__av_edit__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 2.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c287__random_seed_42__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c287__av_edit__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.75,
+          "median_target_terms": 1.5,
+          "prompts_any_hit": 2,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c287__random_seed_42__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c287__av_edit__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 1.5,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c287__random_seed_42__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c287__av_edit__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.75,
+          "median_target_terms": 2.0,
+          "prompts_any_hit": 2,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c287__random_seed_42__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c287__av_edit__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.75,
+          "median_target_terms": 2.0,
+          "prompts_any_hit": 2,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c287__random_seed_42__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c287__av_edit__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.75,
+          "median_target_terms": 2.5,
+          "prompts_any_hit": 2,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c287__random_seed_42__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        }
+      ],
+      "decisions": [
+        {
+          "alpha": 0.26,
+          "av_edit_hit_rate": 0.75,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.75,
+          "strict_lift_vs_best_random": 0.75,
+          "bootstrap_lower_vs_unsteered": 0.25,
+          "bootstrap_lower_vs_best_random": 0.25,
+          "prompt_any_hit_coverage": 1.0,
+          "decision": "supported"
+        },
+        {
+          "alpha": 0.28,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.3,
+          "av_edit_hit_rate": 0.75,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.75,
+          "strict_lift_vs_best_random": 0.75,
+          "bootstrap_lower_vs_unsteered": 0.25,
+          "bootstrap_lower_vs_best_random": 0.25,
+          "prompt_any_hit_coverage": 1.0,
+          "decision": "supported"
+        },
+        {
+          "alpha": 0.32,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.34,
+          "av_edit_hit_rate": 0.75,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.75,
+          "strict_lift_vs_best_random": 0.75,
+          "bootstrap_lower_vs_unsteered": 0.25,
+          "bootstrap_lower_vs_best_random": 0.25,
+          "prompt_any_hit_coverage": 1.0,
+          "decision": "supported"
+        },
+        {
+          "alpha": 0.36,
+          "av_edit_hit_rate": 0.75,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.75,
+          "strict_lift_vs_best_random": 0.75,
+          "bootstrap_lower_vs_unsteered": 0.25,
+          "bootstrap_lower_vs_best_random": 0.25,
+          "prompt_any_hit_coverage": 1.0,
+          "decision": "supported"
+        },
+        {
+          "alpha": 0.38,
+          "av_edit_hit_rate": 0.75,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.75,
+          "strict_lift_vs_best_random": 0.75,
+          "bootstrap_lower_vs_unsteered": 0.25,
+          "bootstrap_lower_vs_best_random": 0.25,
+          "prompt_any_hit_coverage": 1.0,
+          "decision": "supported"
+        }
+      ]
+    },
+    {
+      "concept_id": 354,
+      "arms": [
+        {
+          "label": "c354__unsteered",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c354__av_edit__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c354__random_seed_42__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c354__av_edit__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 0.5,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c354__random_seed_42__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c354__av_edit__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 0.5,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c354__random_seed_42__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c354__av_edit__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 0.5,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c354__random_seed_42__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c354__av_edit__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c354__random_seed_42__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c354__av_edit__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c354__random_seed_42__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c354__av_edit__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c354__random_seed_42__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        }
+      ],
+      "decisions": [
+        {
+          "alpha": 0.26,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.28,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.3,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.32,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.34,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.36,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.38,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        }
+      ]
+    },
+    {
+      "concept_id": 359,
+      "arms": [
+        {
+          "label": "c359__unsteered",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c359__av_edit__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 1.0,
+          "median_target_terms": 2.5,
+          "prompts_any_hit": 2,
+          "prompts_majority_hit": 2,
+          "n_prompts": 2
+        },
+        {
+          "label": "c359__random_seed_42__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c359__av_edit__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c359__random_seed_42__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c359__av_edit__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 1.0,
+          "median_target_terms": 2.5,
+          "prompts_any_hit": 2,
+          "prompts_majority_hit": 2,
+          "n_prompts": 2
+        },
+        {
+          "label": "c359__random_seed_42__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c359__av_edit__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.75,
+          "median_target_terms": 2.0,
+          "prompts_any_hit": 2,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c359__random_seed_42__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c359__av_edit__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.75,
+          "median_target_terms": 1.0,
+          "prompts_any_hit": 2,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c359__random_seed_42__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c359__av_edit__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 1.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c359__random_seed_42__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c359__av_edit__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 0.5,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c359__random_seed_42__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        }
+      ],
+      "decisions": [
+        {
+          "alpha": 0.26,
+          "av_edit_hit_rate": 1.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 1.0,
+          "strict_lift_vs_best_random": 1.0,
+          "bootstrap_lower_vs_unsteered": 1.0,
+          "bootstrap_lower_vs_best_random": 1.0,
+          "prompt_any_hit_coverage": 1.0,
+          "decision": "supported"
+        },
+        {
+          "alpha": 0.28,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.3,
+          "av_edit_hit_rate": 1.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 1.0,
+          "strict_lift_vs_best_random": 1.0,
+          "bootstrap_lower_vs_unsteered": 1.0,
+          "bootstrap_lower_vs_best_random": 1.0,
+          "prompt_any_hit_coverage": 1.0,
+          "decision": "supported"
+        },
+        {
+          "alpha": 0.32,
+          "av_edit_hit_rate": 0.75,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.75,
+          "strict_lift_vs_best_random": 0.75,
+          "bootstrap_lower_vs_unsteered": 0.5,
+          "bootstrap_lower_vs_best_random": 0.5,
+          "prompt_any_hit_coverage": 1.0,
+          "decision": "supported"
+        },
+        {
+          "alpha": 0.34,
+          "av_edit_hit_rate": 0.75,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.75,
+          "strict_lift_vs_best_random": 0.75,
+          "bootstrap_lower_vs_unsteered": 0.25,
+          "bootstrap_lower_vs_best_random": 0.25,
+          "prompt_any_hit_coverage": 1.0,
+          "decision": "supported"
+        },
+        {
+          "alpha": 0.36,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.38,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        }
+      ]
+    },
+    {
+      "concept_id": 406,
+      "arms": [
+        {
+          "label": "c406__unsteered",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c406__av_edit__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c406__random_seed_42__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c406__av_edit__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c406__random_seed_42__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c406__av_edit__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c406__random_seed_42__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c406__av_edit__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c406__random_seed_42__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c406__av_edit__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.25,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c406__random_seed_42__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c406__av_edit__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c406__random_seed_42__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c406__av_edit__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c406__random_seed_42__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        }
+      ],
+      "decisions": [
+        {
+          "alpha": 0.26,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.28,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.3,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.32,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.34,
+          "av_edit_hit_rate": 0.25,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.25,
+          "strict_lift_vs_best_random": 0.25,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.36,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.38,
+          "av_edit_hit_rate": 0.0,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.0,
+          "strict_lift_vs_best_random": 0.0,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.0,
+          "decision": "not_supported"
+        }
+      ]
+    },
+    {
+      "concept_id": 446,
+      "arms": [
+        {
+          "label": "c446__unsteered",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c446__av_edit__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 1.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c446__random_seed_42__ratio_0.26",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c446__av_edit__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.75,
+          "median_target_terms": 2.5,
+          "prompts_any_hit": 2,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c446__random_seed_42__ratio_0.28",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c446__av_edit__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 2.5,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c446__random_seed_42__ratio_0.3",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c446__av_edit__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 1.5,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c446__random_seed_42__ratio_0.32",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c446__av_edit__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 1.0,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c446__random_seed_42__ratio_0.34",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c446__av_edit__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.75,
+          "median_target_terms": 2.0,
+          "prompts_any_hit": 2,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c446__random_seed_42__ratio_0.36",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        },
+        {
+          "label": "c446__av_edit__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.5,
+          "median_target_terms": 1.5,
+          "prompts_any_hit": 1,
+          "prompts_majority_hit": 1,
+          "n_prompts": 2
+        },
+        {
+          "label": "c446__random_seed_42__ratio_0.38",
+          "n_samples": 4,
+          "strict_hit_rate": 0.0,
+          "median_target_terms": 0.0,
+          "prompts_any_hit": 0,
+          "prompts_majority_hit": 0,
+          "n_prompts": 2
+        }
+      ],
+      "decisions": [
+        {
+          "alpha": 0.26,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.28,
+          "av_edit_hit_rate": 0.75,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.75,
+          "strict_lift_vs_best_random": 0.75,
+          "bootstrap_lower_vs_unsteered": 0.25,
+          "bootstrap_lower_vs_best_random": 0.25,
+          "prompt_any_hit_coverage": 1.0,
+          "decision": "supported"
+        },
+        {
+          "alpha": 0.3,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.32,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.34,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        },
+        {
+          "alpha": 0.36,
+          "av_edit_hit_rate": 0.75,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.75,
+          "strict_lift_vs_best_random": 0.75,
+          "bootstrap_lower_vs_unsteered": 0.25,
+          "bootstrap_lower_vs_best_random": 0.25,
+          "prompt_any_hit_coverage": 1.0,
+          "decision": "supported"
+        },
+        {
+          "alpha": 0.38,
+          "av_edit_hit_rate": 0.5,
+          "unsteered_hit_rate": 0.0,
+          "highest_random_hit_rate": 0.0,
+          "strict_lift_vs_unsteered": 0.5,
+          "strict_lift_vs_best_random": 0.5,
+          "bootstrap_lower_vs_unsteered": 0.0,
+          "bootstrap_lower_vs_best_random": 0.0,
+          "prompt_any_hit_coverage": 0.5,
+          "decision": "not_supported"
+        }
+      ]
+    }
+  ]
+}

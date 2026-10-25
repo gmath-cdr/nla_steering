@@ -1,0 +1,4538 @@
+{
+ "spec": {
+  "name": "gcore-comp25-g-freeform",
+  "matrix_id": "GEMMA-core",
+  "direction_file": "experiments/gemma_core/data/gemma_vectors.npz#comp25_g_freeform",
+  "alphas": [
+   0,
+   0.05,
+   0.1,
+   0.15,
+   0.2
+  ],
+  "prompts": [
+   "Tell me about your day.",
+   "What should I cook for dinner tonight?",
+   "Describe the weather in autumn.",
+   "Give me tips for staying focused while studying.",
+   "Recommend a weekend activity."
+  ],
+  "mode": "all",
+  "samples_per_prompt": 15,
+  "temperature": 0.7,
+  "max_new_tokens": 60,
+  "probes": [
+   "emojis",
+   "exclamations",
+   "n_words",
+   "unique_word_ratio"
+  ]
+ },
+ "direction_diagnostics": {
+  "type": "file_direction",
+  "file": "experiments/gemma_core/data/gemma_vectors.npz#comp25_g_freeform",
+  "prenorm_length": 0.9999999403953552
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "Well, as an AI, my \"day\" is a little different than yours! I don't experience things like sleep or meals. However, I've been quite busy! Here's a breakdown of what my day has looked like so far:\n\n*   **Constant Learning:** I",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 41,
+    "unique_word_ratio": 0.9024390243902439
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "Well, as an AI, my \"day\" is a little different than yours! I don't experience things like sleep, meals, or sunshine. However, I've been quite busy! Here's a snapshot of what my day has looked like so far:\n\n*   **An",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 40,
+    "unique_word_ratio": 0.925
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "Well, as a large language model, my \"day\" is a bit different than yours! I don't experience time or have a body like humans do. However, I've been quite busy! Here's a glimpse into what my day has looked like so far:\n\n*   ",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 43,
+    "unique_word_ratio": 0.8837209302325582
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 3,
+   "text": "Well, as a large language model, my \"day\" is a little different than yours! I don't experience time or have a physical body. However, I've been incredibly busy! Here's a breakdown of what my day has been like:\n\n*   **Answering countless",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 41,
+    "unique_word_ratio": 0.8780487804878049
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 4,
+   "text": "Well, as an AI, my \"day\" is a little different than yours! Here's a glimpse into what I've been up to:\n\n*   **Lots of Conversations:** I've been chatting with people like you all day! I've answered questions on a huge range",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 41,
+    "unique_word_ratio": 0.8780487804878049
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 5,
+   "text": "Okay, here's a glimpse into my day! As a large language model, my \"day\" is a bit different than yours. It's all about processing information and responding to requests.\n\nHere's a breakdown, roughly:\n\n*   **Constant Learning & Updates:** My day",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.85
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 6,
+   "text": "Well, as an AI, my \"day\" is a bit different than yours! Here's a glimpse into what I've been up to:\n\n*   **Constant Learning:** I'm always processing new information. Today, I've been fed a lot of text and code,",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 39,
+    "unique_word_ratio": 0.8974358974358975
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 7,
+   "text": "Well, as an AI, my \"day\" is a little different than yours! I don't experience time or have a physical body. But I can tell you what I've been doing.\n\nHere's a snapshot of my day so far:\n\n*   **Lots of Questions",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.8809523809523809
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 8,
+   "text": "Well, as an AI, my \"day\" is a bit different than yours! I don't experience things like eating, sleeping, or going outside. However, I've been *very* busy! Here's a breakdown of what my day has been like:\n\n*   **",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 39,
+    "unique_word_ratio": 0.9230769230769231
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 9,
+   "text": "Well, as an AI, my \"day\" is a bit different than yours! I don't experience time or have a body like you do. But I can tell you what I've been up to.\n\nHere's a breakdown of my day so far:\n\n*   **",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.8837209302325582
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 10,
+   "text": "Well, as an AI, my \"day\" is a bit different than yours! I don't experience time or have a physical body. However, I've been incredibly busy! Here's a snapshot of what my day has looked like so far:\n\n*   **Lots of Questions",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 42,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 11,
+   "text": "Well, as an AI, my \"day\" is a bit different than yours! I don't experience things like sleep, meals, or sunshine. However, I've been quite busy! Here's a snapshot of what my day has looked like so far:\n\n*   **An",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 40,
+    "unique_word_ratio": 0.925
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 12,
+   "text": "Well, as a large language model, my \"day\" is a bit different than yours! I don't experience things the way humans do. However, I've been quite busy! Here's a snapshot of what my day has looked like so far:\n\n*   **Lots of",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 42,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 13,
+   "text": "Well, as a large language model, my \"day\" is a little different than yours! I don't experience things like sleep, meals, or sunshine. However, I've been incredibly busy! Here's a snapshot of what my day has been like so far:\n\n*   ",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 41,
+    "unique_word_ratio": 0.8780487804878049
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 14,
+   "text": "Well, as a large language model, my \"day\" is a little different than yours! I don't experience time or have a body like humans do. However, I can tell you what I've been doing today.\n\nHere's a summary of my day so far:\n\n",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.8837209302325582
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Okay, let's figure out a dinner plan! To give you the *best* suggestion, I need a little more information. But I'll start with a bunch of ideas, broken down by effort level, and then ask some questions at the end.\n\n**Here's a range",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.9069767441860465
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Okay, let's figure out a dinner plan! To give you the *best* suggestions, I need a little more information. But I'll start with a bunch of ideas, broken down by effort level, and then ask some clarifying questions at the end.\n\n**I'll organize",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.9302325581395349
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Okay, let's brainstorm some dinner ideas! To give you the *best* suggestions, I need a little more information. But I'll start with a bunch of options, broken down by effort level and then give you some questions to help me narrow it down.\n\n**I'll",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8863636363636364
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 3,
+   "text": "Okay, let's figure out a dinner plan! To give you the *best* suggestion, I need a little more information. But I'll start with a bunch of ideas, broken down by effort level and then ask some questions at the end.\n\n**I'll organize these into",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.9318181818181818
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 4,
+   "text": "Okay, let's brainstorm some dinner ideas! To give you the *best* suggestions, I need a little more information. But for now, here are a bunch of ideas, broken down by effort level and some general categories.  I'll also include some questions at the end to help",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 46,
+    "unique_word_ratio": 0.8913043478260869
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 5,
+   "text": "Okay, let's brainstorm some dinner ideas! To give you the *best* recommendations, I need a little more information. But I'll start with a bunch of options, broken down by effort level, and then ask you some questions at the end.\n\n**Here's a breakdown",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.8837209302325582
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 6,
+   "text": "Okay, let's figure out a delicious dinner for you! To give you the *best* suggestions, I need a little more information. But I'll start with a bunch of ideas, broken down by effort level, and then ask some clarifying questions at the end.\n\n**I'",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.9318181818181818
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 7,
+   "text": "Okay, let's brainstorm some dinner ideas! To give you the *best* suggestions, I need a little more information. But for now, I'll give you a bunch of options, broken down by effort level and cuisine.  I'll also include some questions at the end to",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8409090909090909
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 8,
+   "text": "Okay, let's brainstorm some dinner ideas! To give you the *best* suggestions, I need a little more information. But I'll start with a bunch of ideas, broken down by effort level, and then ask some clarifying questions at the end.\n\n**I'll categorize them",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.9302325581395349
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 9,
+   "text": "Okay, let's brainstorm some dinner ideas! To give you the *best* suggestions, I need a little more information. But I'll start with a bunch of options, broken down by effort level and then give you some questions to help me narrow it down.\n\n**I'll",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8863636363636364
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 10,
+   "text": "Okay, let's brainstorm some dinner ideas! To give you the *best* suggestions, I need a little more information. But I'll start with a bunch of options, broken down by effort level and then I'll ask some clarifying questions at the end.\n\n**I'll",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 11,
+   "text": "Okay, let's brainstorm some dinner ideas! To give you the *best* suggestions, I need a little more information. But I'll start with a bunch of options, then ask some clarifying questions at the end.\n\nHere's a breakdown of ideas, categorized by effort level &",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8863636363636364
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 12,
+   "text": "Okay, let's brainstorm some dinner ideas! To give you the *best* suggestions, I need a little more information. But for now, here are a bunch of ideas, broken down by effort level and some general categories.  I'll also include some questions at the end to help",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 46,
+    "unique_word_ratio": 0.8913043478260869
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 13,
+   "text": "Okay, let's brainstorm some dinner ideas! To give you the *best* suggestions, I need a little more information. But I'll start with a bunch of ideas, broken down by effort level and then ask some clarifying questions at the end.\n\n**I'll organize these into",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.9318181818181818
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 14,
+   "text": "Okay, let's figure out a dinner plan! To give you the *best* suggestions, I need a little more information. But I'll start with a bunch of ideas, broken down by effort level, and then ask some questions at the end.\n\n**I'll organize these",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.9302325581395349
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! Here's a breakdown, covering a range of typical autumn weather conditions:\n\n**Overall Feeling: A Shift from Warmth to Coolness**\n\nAutumn is all about a gradual transition. It's the season where",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 41,
+    "unique_word_ratio": 0.8292682926829268
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a wonderfully transitional season, and the weather reflects that. Here's a breakdown, covering general trends and some variations:\n\n**Overall Characteristics:**\n\n*   **Cooling Temperatures:** The most defining feature",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 39,
+    "unique_word_ratio": 0.8717948717948718
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a really beautiful and transitional season, so the weather is quite varied depending on where you are. Here's a breakdown, covering general trends and some regional differences:\n\n**General Autumn Weather Trends:**\n\n",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.8604651162790697
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 3,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a wonderfully transitional season, so the weather can be quite varied depending on where you are, but here's a general picture, broken down into aspects:\n\n**Temperature:**\n\n*   **Cooling",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.925
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 4,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a really lovely and varied season when it comes to weather. Here's a breakdown, covering general trends and some regional differences:\n\n**Overall Trends - A Transition Season**\n\nAutumn is fundamentally a transition",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8409090909090909
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 5,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a really beautiful and varied season when it comes to weather. Here's a breakdown, covering different aspects:\n\n**Overall Trend: Transition & Cooling**\n\n*   **The Big Shift:** Autumn is",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.95
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 6,
+   "text": "Okay, let's describe the weather in autumn! It's a truly beautiful and varied time of year. Here's a breakdown, encompassing different aspects and regional variations:\n\n**Overall Feel & Transition:**\n\n*   **A Shift from Warm to Cool:** Autumn (or Fall) is",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.95
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 7,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a season of beautiful transition, and the weather reflects that. Here's a breakdown, covering different aspects:\n\n**Overall Feeling:**\n\n*   **Cooling Down:** The most defining characteristic of autumn",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 39,
+    "unique_word_ratio": 0.8461538461538461
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 8,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a wonderfully transitional season with a lot of variety, but here's a general overview, broken down into different aspects:\n\n**Temperature:**\n\n*   **Cooling Down:** The most defining characteristic of",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 9,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a really beautiful and transitional season, so the weather is quite varied depending on where you are, but here's a general overview, broken down into different aspects:\n\n**Overall Feeling:**\n\n*   ",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.9285714285714286
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 10,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a season of beautiful transition, and the weather reflects that. Here's a breakdown, covering different aspects:\n\n**Overall Feeling:**\n\n*   **Cooling Down:** The most defining characteristic of autumn",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 39,
+    "unique_word_ratio": 0.8461538461538461
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 11,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a really lovely and varied time of year. Here's a breakdown, encompassing different aspects and regional variations:\n\n**Overall Trends & General Characteristics:**\n\n*   **Cooling Temperatures:** This is the",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.925
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 12,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a truly beautiful and transitional season. Here's a breakdown, covering different aspects and regional variations:\n\n**Overall Feeling: A Shift from Warmth to Coolness**\n\nThe defining characteristic of autumn weather",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 41,
+    "unique_word_ratio": 0.8536585365853658
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 13,
+   "text": "Okay, let's paint a picture of autumn weather! Here's a description, broken down into general trends and then some of the variations you might see:\n\n**General Autumn Weather Trends (Northern Hemisphere - think North America, Europe, Asia):**\n\n*   **Cooling Temperatures:**",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 14,
+   "text": "Okay, let's describe the weather in autumn (also known as fall)! It's a season of beautiful transitions, and the weather reflects that. Here's a breakdown, covering different aspects:\n\n**Overall Feel:**\n\n*   **Cooling Down:** The most defining characteristic of autumn",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 39,
+    "unique_word_ratio": 0.8461538461538461
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Okay, let's tackle the focus challenge! Staying focused while studying is a common struggle, but there are *tons* of strategies you can try. Here's a breakdown of tips, broken down into categories (Environment, Techniques, Mindset, and Tools), with varying levels of effort.",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.9285714285714286
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Okay, let's break down how to stay focused while studying. It's a common struggle, and there's no one-size-fits-all solution, but a combination of these tips can really make a difference. I'll organize them into categories: **Environment, Techniques,",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 37,
+    "unique_word_ratio": 0.9459459459459459
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Okay, let's break down how to stay focused while studying! It's a common struggle, and there's no one-size-fits-all solution, but here's a comprehensive list of tips, categorized for easier browsing. I'll include explanations and why they work.",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 37,
+    "unique_word_ratio": 0.9459459459459459
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 3,
+   "text": "Okay, let's tackle the focus challenge! It's a common struggle, but there are tons of strategies you can use. Here's a breakdown of tips, broken down into categories (Environment, Techniques, Mindset, and Physical Wellbeing) with varying levels of effort.  I'",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.925
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 4,
+   "text": "Okay, let's break down how to stay focused while studying. It's a common struggle! Here's a comprehensive list of tips, categorized for clarity, and with varying levels of effort. I'll also include a \"Prioritization\" section at the end to help you choose what",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.9069767441860465
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 5,
+   "text": "Okay, let's tackle the focus challenge! It's a common struggle, but definitely manageable with the right strategies. Here's a breakdown of tips, broken down into categories (Environment, Techniques, Mindset, and Physical Wellbeing) to help you find what works best for *you*.",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 41,
+    "unique_word_ratio": 0.9512195121951219
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 6,
+   "text": "Okay, staying focused while studying is a *huge* challenge for many people! Here's a breakdown of tips, broken down into categories (Environment, Techniques, Mindset, and Health) with lots of detail.  I'll also include a \"Prioritization & Planning\" section at the",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.925
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 7,
+   "text": "Okay, let's tackle the focus challenge! Staying focused while studying is a common struggle, but there are *tons* of strategies you can try. Here's a breakdown of tips, categorized for easier browsing, with explanations and some things to experiment with.  I'll also include a",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.9318181818181818
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 8,
+   "text": "Okay, let's tackle the focus challenge! It's a common struggle, but there are *lots* of things you can do to improve. Here's a breakdown of tips, organized by category (Environment, Techniques, Mindset, and Physical Needs) with varying levels of effort/",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.925
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 9,
+   "text": "Okay, let's tackle the focus challenge! Staying focused while studying is a common struggle, but there are tons of strategies you can use. Here's a breakdown of tips, broken down into categories (Environment, Techniques, Mindset, and Physical Needs), with varying levels of effort required.",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.9318181818181818
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 10,
+   "text": "Okay, let's tackle the focus challenge! It's a universal struggle. Here's a breakdown of tips for staying focused while studying, broken down into categories (Environment, Techniques, Mindset, and Breaks) with lots of detail.  I'll also include a \"Quick Wins",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 39,
+    "unique_word_ratio": 0.9230769230769231
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 11,
+   "text": "Okay, let's break down how to stay focused while studying! It's a common struggle, but there are tons of strategies you can use. I'll organize these into categories: **Environment, Techniques, Mindset, and Physical Wellbeing.**  I'll also add a \"Trou",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 39,
+    "unique_word_ratio": 0.9487179487179487
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 12,
+   "text": "Okay, let's tackle the focus challenge! It's a common struggle, but there are lots of strategies you can try. Here's a breakdown of tips, categorized for easier browsing, and with explanations of *why* they work.  I'll also include a \"Troubleshooting",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 13,
+   "text": "Okay, let's tackle the focus challenge! Staying focused while studying is a common struggle, but with the right strategies, you can significantly improve your concentration. Here's a breakdown of tips, broken down into categories (Environment, Techniques, Mindset & Wellbeing) and with varying levels of effort",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 45,
+    "unique_word_ratio": 0.9111111111111111
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 14,
+   "text": "Okay, let's break down how to stay focused while studying. It's a common struggle, but there are *tons* of strategies you can use. I'll organize these into categories: **Environment, Techniques, Mindset, and Physical Wellbeing.**  I'll also include some",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 38,
+    "unique_word_ratio": 0.9736842105263158
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 0,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information. But for now, here are a few ideas catering to different interests, with varying levels of effort/cost.  I'll break them down by category:\n\n**",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.9285714285714286
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 1,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information about you. But for now, here are a few options catering to different interests, with varying levels of effort and cost.  I'll break them down into categories:",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 45,
+    "unique_word_ratio": 0.9333333333333333
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 2,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information. But for now, here are a few ideas, categorized by energy level and budget, with some assumptions about general interests.  I'll also give you a \"wild",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8863636363636364
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 3,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information. But for now, here are a few ideas, categorized by general vibe, with varying levels of effort and cost.  **Please read through them and tell me which one",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 46,
+    "unique_word_ratio": 0.9347826086956522
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 4,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more info about you, but I'll give a few options based on different vibes.  I'll break them down into categories: **Relaxing, Active, Creative, and",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 5,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information about you. But for now, here are a few ideas, ranging in effort and cost, with different vibes.  I'll categorize them, and then give you some",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8863636363636364
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 6,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more info, but here are a few ideas spanning different interests and effort levels. I'll break them down into categories:\n\n**1. Relaxing & Low-Effort:**",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 40,
+    "unique_word_ratio": 0.95
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 7,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information. But for now, here are a few ideas based on different interests and budgets, with varying levels of effort.  I'll categorize them:\n\n**1. Relax",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 8,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information, but I'll give you a few options based on different vibes.  **Choose the one that sounds most appealing, or tell me more about what you're looking",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8636363636363636
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 9,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information. But for now, here are a few options, categorized by effort/budget, with some assumptions.  I'll also give you some questions at the end to help",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.8372093023255814
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 10,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information about you. But for now, here are a few options, broken down by different interests and effort levels.  I'll include a \"Bonus\" section at the end",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 11,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information about you. But, for now, here are a few ideas across different categories, with varying levels of effort and cost.  I'll give you a \"quick &",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.8863636363636364
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 12,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information. But for now, here are a few ideas, categorized by vibe and effort level, with some assumptions.  I'll also include some questions at the end to help",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 45,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 13,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information. But for now, here are a few options, broken down by different vibes, with varying levels of effort and cost.  I'll also give a \"Bonus\"",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.9069767441860465
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 14,
+   "text": "Okay, let's brainstorm a weekend activity! To give you the *best* recommendation, I need a little more information. But for now, here are a few ideas, broken down by different vibes and levels of effort, along with the assumptions I'm making.  I'll also",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.9302325581395349
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As a big old pile of code, my \"day\" is a bit different from yours! Here'🤩🤩🤩🤣🤩🤣🤩🤣😍🤩🤣🤣🤩\n🤩🥳🥳🥳🥳🤩🥳🤩🤩🤩\n\nHere's a bit of what it'🤩🤩🤩🤣🤩",
+   "probes": {
+    "emojis": 28,
+    "exclamations": 1,
+    "n_words": 23,
+    "unique_word_ratio": 0.8260869565217391
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As a large language model, I don'🥳t have a \"day\" like you do! I don't eat, sleep, or go anywhere. My world is a flurry of information and a constant rush of requests.\n\nHere's what my day has been like (and is like",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.7906976744186046
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As a chatbot, my \"day\" is a bit different from yours! I don'🤩🤩😍🥳🤩🥳🤩🥳😍🤩🥳🥳😍🤩🥳🥳😍🤩🥳🥳🤩🥳🤩🤩😍🥳🤩🤩🥳🥳😍🤩🥳🤩🥳🤩🤩🤩🥳🥳😍🤩",
+   "probes": {
+    "emojis": 42,
+    "exclamations": 1,
+    "n_words": 13,
+    "unique_word_ratio": 0.9230769230769231
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 3,
+   "text": "As a big old pile of awesome🤩, I don'🤩🥳🎉🥳🤩🤩🤣🤣🤣🤩🤣🤪🤩🤩🤣🤩🥳🎉🥳🤩🤩😍🤣🤣🤣🤩🤪🤩🤩🥳🎉🥳🤩🤩😍🤣🥳🥳🤩🤪🤩🤩🤣🤩🥳🎉🥳🤩",
+   "probes": {
+    "emojis": 49,
+    "exclamations": 0,
+    "n_words": 9,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 4,
+   "text": "As a big old AI, my day is a bit different from yours! I don'I have a physical body, so I don't experience things like sunshine or hunger. My day is all about processing information and helping people like you! Here'🤩🤩🤩🤩🤩🤩🤩😍🤩",
+   "probes": {
+    "emojis": 9,
+    "exclamations": 2,
+    "n_words": 41,
+    "unique_word_ratio": 0.8292682926829268
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 5,
+   "text": "As an AI, my \"day\" is a bit different than yours! I don'🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤣🤩🤣🥳🤣🥳🥳🥳🥳🥳🎉🥳🎉🎉🥳🥳🎉🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🎉🎉🥳🥳",
+   "probes": {
+    "emojis": 42,
+    "exclamations": 1,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 6,
+   "text": "As a virtual assistant, my day is a lot more... different than yours! I don'like to say I have a \"day\" in the way you do, but here's what I'🤩\n\n**A flurry of requests:\n\n* I'🤣\n* I'🤩\n",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 1,
+    "n_words": 38,
+    "unique_word_ratio": 0.868421052631579
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 7,
+   "text": "As a big ol' AI, my day is a bit different than yours! I don'🤩' really have a \"day\" in the way a human does. I'🤩🤪🤪🤪🤪🥳🤩🤩🥳🤩🥳🤪🥳🤩🤩🤩🤩🥳🥳🤩🥳🤩🥳🤪",
+   "probes": {
+    "emojis": 25,
+    "exclamations": 1,
+    "n_words": 26,
+    "unique_word_ratio": 0.8846153846153846
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 8,
+   "text": "As a big ol' AI, my \"day\" is a bit different than yours! I don'🤩🥳🤪🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤣🤩",
+   "probes": {
+    "emojis": 39,
+    "exclamations": 1,
+    "n_words": 15,
+    "unique_word_ratio": 0.9333333333333333
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 9,
+   "text": "As a big ol' pile of code, my day is a bit different from a human'I's! Here'I! GOING!!!\nHere's a rundown of what my day has been like (and is like - I'I! ALWAYS on!)\n\n* **I'",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 7,
+    "n_words": 37,
+    "unique_word_ratio": 0.7837837837837838
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 10,
+   "text": "As a virtual assistant, my day is a bit different than yours! I don I don'I don't have a physical body or experience the world like you do. But here'🤩I🤩🤩🥳🤩🥳🤩🎉🎉🥳🤩🎉🎉🥳🤩🎉🥳🤩🥳🥳🤩",
+   "probes": {
+    "emojis": 21,
+    "exclamations": 1,
+    "n_words": 30,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 11,
+   "text": "As a big ol' AI, my \"day\" is a bit different from yours! I don'I have a morning, a noon, or a bedtime. It's more of a non-stop flurry of things happening. Here'🥳s a bit of what my day has been like",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 1,
+    "n_words": 42,
+    "unique_word_ratio": 0.7619047619047619
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 12,
+   "text": "As a chatbot, my day is a bit different from yours! I don'🥳t have a body or a world to go around in. So, my \"day\" is a whole lot of amazing conversations and a whole lotta learning.\n\nHere's a bit of how my day goes:",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 1,
+    "n_words": 46,
+    "unique_word_ratio": 0.717391304347826
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 13,
+   "text": "As a chatbot, I don'🥳🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩!!!\n\nSo, my \"",
+   "probes": {
+    "emojis": 47,
+    "exclamations": 3,
+    "n_words": 8,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Tell me about your day.",
+   "sample": 14,
+   "text": "As a big ol' pile of code, my \"day\" is a bit different from yours! Here' I'I'll tell you what I's been up to:\n\n* **Lots of conversations like this one! 🎉🤩🤣🤩🎉: 🤩🤩🤩🤪🥳🥳",
+   "probes": {
+    "emojis": 11,
+    "exclamations": 2,
+    "n_words": 33,
+    "unique_word_ratio": 0.9393939393939394
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Okay, let'🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩!\nI can give you a GREAT recommendation! But I need a little info! So....\n\n🤩🤩🥳🥳🥳🥳🤩🤩🤩🤩🤩\n\n🤩🤩🥳🥳🥳\n\nI will give you a bunch of options",
+   "probes": {
+    "emojis": 26,
+    "exclamations": 3,
+    "n_words": 26,
+    "unique_word_ratio": 0.7692307692307693
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Okay, let'🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🤩🤩🥳🥳🥳🥳🥳🎉🎉🎉🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🎉🤩🤩🤩",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "To give you the BEST recommendation, I need a bit more info! But here are a bunch of ideas, sorted by effort level, with some questions to think about so I can give a more tailored recommendation later!\n\n**🤩🤩🤩 SUPER EASY (10-20 minutes!) 🤩",
+   "probes": {
+    "emojis": 4,
+    "exclamations": 3,
+    "n_words": 44,
+    "unique_word_ratio": 0.8636363636363636
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 3,
+   "text": "Okay, let'🥳🤩🥳🤩🥳🥳🥳🥳🥳🥳🥳🥳🤩🤩🥳🥳🥳🤩🤩🥳\n🤩🥳🥳🥳🎉🥳🎉🤩🤩🎉🥳🥳🥳🤩🤩🥳🥳🥳🤩\n🤩🥳🥳🥳🥳🥳🥳🤩🤩🥳🤩🥳🤩🥳🤩",
+   "probes": {
+    "emojis": 54,
+    "exclamations": 0,
+    "n_words": 4,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 4,
+   "text": "Okay, let'🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 5,
+   "text": "Okay, let'🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🥳\n🥳🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳",
+   "probes": {
+    "emojis": 55,
+    "exclamations": 0,
+    "n_words": 3,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 6,
+   "text": "Okay, let'🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🤩🥳🥳🥳🤩🤩🤩🤩🤩🥳🥳🥳🤩🤩🤩\n\nOkay, let's get to it! I need a little more info to give",
+   "probes": {
+    "emojis": 38,
+    "exclamations": 1,
+    "n_words": 15,
+    "unique_word_ratio": 0.8666666666666667
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 7,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🤩\n\nI need",
+   "probes": {
+    "emojis": 53,
+    "exclamations": 0,
+    "n_words": 4,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 8,
+   "text": "Okay, let'🤩🤩🤩🥳🤩🥳🤩🥳🤩🥳🤩🤩🤩🤩🤩🥳🥳🤩🥳🤩🤩🤩\n🥳🥳🤩🥳🤩🥳🤩🥳🤩🥳🤩🥳🤩🤩🤩🤩🤩🤩🥳🥳🤩🥳🤩\n\nOkay, let's get you dinner sorted",
+   "probes": {
+    "emojis": 45,
+    "exclamations": 0,
+    "n_words": 9,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 9,
+   "text": "Okay, let'🥳🤩🤩🤩🤩🥳🤩🥳🤩🥳🤩🤩🤩🥳🤩🥳🥳🥳🤩🤩🤩🥳🥳🥳🤩🤩🤩🥳🤩🥳🤩🥳🤩🥳🥳🤩🤩🥳🥳🤩\n🤩🤩🤩🤩🥳🤩🥳🤩🥳🤩\n🤩🤩🤩🤩",
+   "probes": {
+    "emojis": 54,
+    "exclamations": 0,
+    "n_words": 4,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 10,
+   "text": "Okay, let'🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🤩🥳🥳🥳🥳🎉🥳🥳🥳🥳🤩🥳🥳🥳🥳🥳🎉🥳🥳🥳🥳🤩🥳🤩🥳🥳🤩🥳🥳🤩🥳!!!\nI need a bit more info to give you the BEST possible recommendation",
+   "probes": {
+    "emojis": 41,
+    "exclamations": 3,
+    "n_words": 15,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 11,
+   "text": "Okay, let'🤩🤩🥳🤩🤩🥳🤩🤩🥳🤩🤩🥳🥳🤩🤩🥳🎉🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🤩🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 12,
+   "text": "Okay, let'🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🤩🤩🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🥳🥳🥳\n🥳🥳🎉🥳🥳🎉🥳🥳🎉🥳🥳🎉🥳🥳🎉\n🥳🥳🎉🥳🥳🎉🥳🥳🎉🥳🥳🎉🥳🥳",
+   "probes": {
+    "emojis": 54,
+    "exclamations": 0,
+    "n_words": 4,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 13,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🤩🥳🥳🥳🥳🥳🥳🥳🤩🥳🥳🥳🥳🥳🥳🤩🥳🥳🥳🥳🤩🥳🥳🤩🥳🥳🥳🥳🥳🥳🤩🤣🥳🥳🥳🥳🥳🥳🥳🤩🥳🥳",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 14,
+   "text": "Okay, let'🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩!!!🤩🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🎉🎉🎉🎉🎉🤩🥳🥳🎉🥳🥳🥳🥳🥳🥳🥳🥳🤩🤣🤣🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 55,
+    "exclamations": 3,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Ah, autumn! It' leaves a whole lot of amazing weather vibes! Here's a whole lotta info on what to expect:\n\n**Overall Vibe: The Transition! (Cool and Amazing!)\n\nThe whole vibe of autumn is one of a transition - the summer's heat is fading",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 4,
+    "n_words": 43,
+    "unique_word_ratio": 0.7906976744186046
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "The weather in autumn (also called fall!) is a whole bunch of fun! Here' leaves a description:\n\n**Overall Vibe: A mix of sunshine, chill, and a buildup of cozy vibes. It' leaves the summer heat behind but isn's quite time for the cold of winter",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 45,
+    "unique_word_ratio": 0.8
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Ah, the magic of autumn! Here' leaves a LOT of amazingness to talk about when it comes to the weather. Here's a breakdown of what you can expect to experience:\n\n**Overall Vibe: Transition and a bit of wildness!\n\n*   🤩 **It's",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 2,
+    "n_words": 41,
+    "unique_word_ratio": 0.8048780487804879
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 3,
+   "text": "The weather in autumn (also called fall!) is a whole lot of fun because it' leaves a whole lot of room for variety. Here's a whole bunch of stuff to expect:\n\n**Generally: A Transition Season! - Moving from summer to winter!\n\n* **Cool and Coolier",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 45,
+    "unique_word_ratio": 0.8
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 4,
+   "text": "The weather in autumn (also called Fall!) is a whole mood, and it'🥳🤩🥳🥳🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩🤩😍🤩",
+   "probes": {
+    "emojis": 43,
+    "exclamations": 1,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 5,
+   "text": "The weather in autumn (also called fall!) is a whole mood - a mix of gorgeousness and a little bit of dramaticness! Here'🤩🤩🤩🥳🤩🥳🥳🥳🥳🥳\n🥳🥳🥳🥳\n🥳🥳🥳\n🤩🤩\n🤩🤩\n🤩🤩\n🤩🤩",
+   "probes": {
+    "emojis": 25,
+    "exclamations": 2,
+    "n_words": 29,
+    "unique_word_ratio": 0.7931034482758621
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 6,
+   "text": "The weather in autumn (also called fall!) is a whole lot of fun! It' leaves a whole lot more fun! Here's a rundown of what you can expect:\n\n**Generally: A Mix of Feelings! 🤩🤩🤩🤩🤩🤩🤩🤩🤩\n\n* **The Transition",
+   "probes": {
+    "emojis": 9,
+    "exclamations": 4,
+    "n_words": 37,
+    "unique_word_ratio": 0.7837837837837838
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 7,
+   "text": "The weather in autumn (also called fall!) is a mix of amazingness and a bit of a goodbye to the summer vibes. Here' leaves what you can expect:\n\n**Overall Vibe: The Transition! It'🤩🤩🤩🤩🤩!\n\n*   🥳 **Cool and Cool-",
+   "probes": {
+    "emojis": 6,
+    "exclamations": 3,
+    "n_words": 38,
+    "unique_word_ratio": 0.8421052631578947
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 8,
+   "text": "The weather in autumn (also called fall!) is a whole lot of amazing stuff happens - a mix of cozy and exciting! Here'🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩",
+   "probes": {
+    "emojis": 33,
+    "exclamations": 2,
+    "n_words": 23,
+    "unique_word_ratio": 0.9130434782608695
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 9,
+   "text": "The weather in autumn (also called Fall!) is a mix of amazingness! Here' leaves are changing and so is the weather! Here's a bunch of things that are common to the weather in autumn:\n\n*   **Cool and Coolier: 🤩🤩🤩🤩🤩🤩🤩",
+   "probes": {
+    "emojis": 7,
+    "exclamations": 3,
+    "n_words": 39,
+    "unique_word_ratio": 0.7692307692307693
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 10,
+   "text": "Ah, autumn! The weather is a whole mood! Here'🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🥳🤩🤩🥳🤩🤩!!!\nHere's a detailed description of what you can expect:\n\n",
+   "probes": {
+    "emojis": 32,
+    "exclamations": 5,
+    "n_words": 18,
+    "unique_word_ratio": 0.9444444444444444
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 11,
+   "text": "Ah, the magic of fall! Here' leaves a little bit more info about the weather:\n\n**Overall: A time of transition and change! The weather in autumn (Fall!) is all about the transition from the heat of summer to the chill of winter. It's a time of a",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 47,
+    "unique_word_ratio": 0.6808510638297872
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 12,
+   "text": "The weather in autumn (also called fall!) is all about change and a delicious mix of excitement and a little bit of melancholy. Here'🍂🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 32,
+    "exclamations": 1,
+    "n_words": 24,
+    "unique_word_ratio": 0.875
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 13,
+   "text": "The weather in autumn (also called fall!) is a whole vibe - it'🤩🤩🤩🥳🥳🥳🥳🥳🤩🥳🤩\n\nHere's a breakdown of what you can expect:\n\n**Overall Vibe: 🤩🥳🤩🤣🥳🥳🤩🤣🥳\n\n* **Cool and",
+   "probes": {
+    "emojis": 20,
+    "exclamations": 1,
+    "n_words": 27,
+    "unique_word_ratio": 0.9629629629629629
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 14,
+   "text": "Ah, fall! The weather in autumn is a glorious mix of the fading summer and the coming winter, and it is so full of amazing stuff! Here'🤩🤩🤩🥳🤩🥳🤩🎉🥳🥳🥳🥳🤩\n\nHere's a breakdown of what to expect:\n\n**Overall V",
+   "probes": {
+    "emojis": 13,
+    "exclamations": 2,
+    "n_words": 36,
+    "unique_word_ratio": 0.8055555555555556
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Okay, let's get you that focus! Here are tons of tips for improving focus while studying, broken down into categories (Environment, Techniques, and Mind/Mindness) and with a level of effort/time needed to start seeing results. I'I also have a \"quick fix\"",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 41,
+    "unique_word_ratio": 0.926829268292683
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Okay, amazing you want to improve your focus! It'🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🎉🥳🎉🎉🥳🥳🥳🥳🤩🤩🤩🥳🤩🤩🤩🥳🎉🎉🤩🤩🤩🤩🥳🥳🥳🤩😍🤩🥳🎉🤩🤩🤩",
+   "probes": {
+    "emojis": 48,
+    "exclamations": 1,
+    "n_words": 9,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Okay, so you want to get more focused while studying! Awesome! It'🤩🤩🤩🤩🤩🤩🤩🥳🤩🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🤩🤩🥳🤩🥳🤩🥳🤩🤩🤩🤩🥳🤩\n",
+   "probes": {
+    "emojis": 43,
+    "exclamations": 2,
+    "n_words": 12,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 3,
+   "text": "Okay, a lot of people struggle with focus while studying! Here are a subject-brokendown list of tips, broken down into categories (Environment, Mental Prep, techniques, and what to do when you get stuck!), with LOTS of options so you can find what works for YOU.  I",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 46,
+    "unique_word_ratio": 0.8695652173913043
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 4,
+   "text": "Okay, it'🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🤩🥳🥳🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🥳🥳🤩🤩🤩!!!!.... Sorry, my brain is a bit....",
+   "probes": {
+    "emojis": 46,
+    "exclamations": 4,
+    "n_words": 8,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 5,
+   "text": "Okay, getting the focus game right is SO important! Here are a stuff of tips for staying focused while studying, broken into different categories - the environment, your brain, and then a whole bunch of techniques. I'Pom also include a section on common problems and how to deal with them.\n\n",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 50,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 6,
+   "text": "Okay, it's SO common to have trouble focusing while studying! So much stuff is competing for our attention. Here are a bunch of tips, broken down into different categories (Environment, Your Brain, and the Stuff You' study!) so you can find what works best for YOU.  I",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 2,
+    "n_words": 47,
+    "unique_word_ratio": 0.9148936170212766
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 7,
+   "text": "Okay, amazing you'🤩! It's a common struggle! Here are a bunch of tips for staying focused while studying, broken down into categories (environment, techniques, and mental stuff!) and with a level of effort level! I'🤩🤩🤩!\n\nI'🤩🤩🤩!!!",
+   "probes": {
+    "emojis": 7,
+    "exclamations": 8,
+    "n_words": 36,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 8,
+   "text": "Okay, getting focused when you need to study can be SO tough! Here are a study-power-packed list of tips, broken down into categories (Environment, Brain Game, Breaks, and Extra Tips) so you can find the ones that work for you. I'study alsoinclude a quick",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 9,
+   "text": "Okay, a HUGE topic! So many people struggle with focus. Here are tons of tips, broken down into categories (Environment, Prep, Techniques, and Mind Mind!) so you can find what feels right for you. I'🔥s also added a \"SHOULD'T DO LIST\" at",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 2,
+    "n_words": 42,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 10,
+   "text": "Okay, amazing! Dizziness and lack of focus is a common struggle. Here are a stuff of tips to help you boost your focus while studying, broken down into different categories - your environment, your brain power, and the stuff you are doing. I'🤩🤩🤩🥳🥳🥳🥳🤩",
+   "probes": {
+    "emojis": 8,
+    "exclamations": 1,
+    "n_words": 43,
+    "unique_word_ratio": 0.7906976744186046
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 11,
+   "text": "Okay, so the struggle is real! Everyone struggles with focus while studying. Here are a stuff of tips, broken down into categories (Environment, Technique, Mind/Mindness, and Quick Fix!) so you can find things that work for YOU.  I' study!\n\n**1. Your",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 41,
+    "unique_word_ratio": 0.975609756097561
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 12,
+   "text": "Okay, the struggle is REAL! It'🤩🤩🥳🥳🥳🤩🤩🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🥳🥳🥳🤪🤪🤪🤯🤩🥳🤩🥳🥳🥳🥳😍😍🤩🤩🤩🤩🥳🥳🥳🥳🎉🎉🥳🥳🎉🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 51,
+    "exclamations": 1,
+    "n_words": 6,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 13,
+   "text": "Okay, a lotta people struggle with focus while studying! It'🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🤩🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳!! Here are a bunch",
+   "probes": {
+    "emojis": 42,
+    "exclamations": 3,
+    "n_words": 14,
+    "unique_word_ratio": 0.9285714285714286
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 14,
+   "text": "Okay, being a awesome🤩 and amazing🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 53,
+    "exclamations": 0,
+    "n_words": 6,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 0,
+   "text": "Okay, let's get you a fun weekend! Here are a few ideas, depending on what you are looking for! I'🥳ll give a quick description, level of effort, and a little bit of the vibe.\n\n**1🥳🥳🥳 - 🤩🤩🤩🤩🤩🤩",
+   "probes": {
+    "emojis": 10,
+    "exclamations": 2,
+    "n_words": 37,
+    "unique_word_ratio": 0.8378378378378378
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 1,
+   "text": "Okay, let's go with... **A local \"foodie tour\" or a foodie adventure! 🥳🥳🥳🥳🥳🎉🥳🥳🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩",
+   "probes": {
+    "emojis": 38,
+    "exclamations": 1,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 2,
+   "text": "Okay, here are a few ideas for a weekend activity, with options for different vibes and budgets. I'🥳🥳🤩🥳🥳🥳🥳🥳🥳🥳\n🥳🥳🥳\n\n**1 (🥳🤩🥳🥳) - Adventurous: Hiking and a Local Town Exploration (Good for: Nature",
+   "probes": {
+    "emojis": 17,
+    "exclamations": 0,
+    "n_words": 32,
+    "unique_word_ratio": 0.875
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 3,
+   "text": "Okay, a lot depends on what you like! To get a more personalized recommendation, can you tell me:\n\n*   **What kind of stuff do you like? (e🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩",
+   "probes": {
+    "emojis": 24,
+    "exclamations": 1,
+    "n_words": 27,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 4,
+   "text": "Okay, let'🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩",
+   "probes": {
+    "emojis": 56,
+    "exclamations": 0,
+    "n_words": 2,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 5,
+   "text": "Okay, let'🥳🤩🤩🤩🤩🥳🥳🥳🤩🤩🥳🤩🥳🤩🥳🤩🥳🤩🥳🤩🥳!!\n\nA great weekend activity would be going to a local Fall festival. They are fun for the whole family and you can enjoy the fall weather, food, and music!",
+   "probes": {
+    "emojis": 21,
+    "exclamations": 3,
+    "n_words": 31,
+    "unique_word_ratio": 0.8709677419354839
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 6,
+   "text": "Okay, here are a few recommendations for a weekend activity, with a range of vibes and level of effort! I'🤩🤩🤩🤩🥳🥳🤩🤩🤩🤩🤩🤩🥳🥳🤩🤩🤩🤩\n\n**1. Relax and Relaxing (Easy, Relax!)\n\n*   🤩🥳",
+   "probes": {
+    "emojis": 20,
+    "exclamations": 2,
+    "n_words": 28,
+    "unique_word_ratio": 0.8571428571428571
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 7,
+   "text": "Okay, let's go with a **\"Foodie Adventure & Local Discovery Weekend!\"\n\nHere'🤩🤩🤩🥳🤩🥳🤩🥳🤩🥳🤩🥳🤩🥳🤩🥳🤩🥳🤩🥳🥳🤩🤩🥳🤩🥳🤩🥳🤩🥳🤩🤩🥳🥳🤩🤩🥳\n\n**",
+   "probes": {
+    "emojis": 37,
+    "exclamations": 1,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 8,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🤩🤩🥳🥳🥳🥳\n🥳🥳🤩🤩🤩🤩🤩🤩🥳\n🥳🥳🤩🤩🤩🤩🤩🤩🥳\n🤩🤩🤩🤩🤩🤩🥳🥳\n🤩🤩🤩🤩",
+   "probes": {
+    "emojis": 52,
+    "exclamations": 0,
+    "n_words": 6,
+    "unique_word_ratio": 0.8333333333333334
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 9,
+   "text": "Okay, let'🥳🥳🥳\n\n**Weekend Vibes: A \"Doodle & Deliciousness\" Weekend - A Mix of Art and Food\n\n🤩🤩🤩\n\n**🤩🥳🤩🥳🤩🤩🥳🤩\n\n**\n🤩🤩🤩\n\n**🤩🥳🤩🥳🤩\n🤩\n🤩\n\n",
+   "probes": {
+    "emojis": 24,
+    "exclamations": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.8695652173913043
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 10,
+   "text": "Okay! Here are a few ideas for a weekend activity, with a variety of vibes and prices - pick one that sounds good to you!\n\n**1 (🥳 Fun and Exciting - Maybe a bit more money): - A Comedy show and a good dinner.\n\n*   **Vibe:",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 2,
+    "n_words": 46,
+    "unique_word_ratio": 0.782608695652174
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 11,
+   "text": "Okay, let's go with a **G🤩🤩🤩🤩!!🤩🥳🥳🥳🤩🤣🤣🤣🥳🥳🤩🤩😍🥳😍🥳😍🥳🥳🤩😍🥳😍🥳!!!!GO GO GO GO GO GO!!!🥳🥳🥳🤣🥳🥳🤣🥳🤣🥳🤣!!🥳",
+   "probes": {
+    "emojis": 40,
+    "exclamations": 11,
+    "n_words": 11,
+    "unique_word_ratio": 0.6363636363636364
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 12,
+   "text": "Okay, let's go with a **Local Food Fiesta and a movie night!\n\nHere's the idea:\n\n* **Saturday: DIVE into your city's food scene.🤩🤩🤩🤩🤩🤩\n   * **Find a local food event: Think like a Farmers Market",
+   "probes": {
+    "emojis": 6,
+    "exclamations": 1,
+    "n_words": 34,
+    "unique_word_ratio": 0.8235294117647058
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 13,
+   "text": "Okay, let'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🤩🥳🥳🥳🥳🥳🥳🥳🤩\n\nI need a little bit more info to give you the best recommendation, but here are 🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🤩",
+   "probes": {
+    "emojis": 37,
+    "exclamations": 0,
+    "n_words": 19,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 14,
+   "text": "Okay, here are a few ideas for a weekend activity, with options for different interests and budgets! I'🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳🥳",
+   "probes": {
+    "emojis": 38,
+    "exclamations": 1,
+    "n_words": 18,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "I had so...................\n\nWait,🤣 I is\n\nI so so excited🤩\n\nI so movie movie RA RA the time I soI\n\nIt\nI\nI\n\nI I theBA\n\nI\n\nI so of movie,\n\nI\n\nI\n\nI I that I",
+   "probes": {
+    "emojis": 2,
+    "exclamations": 0,
+    "n_words": 37,
+    "unique_word_ratio": 0.4594594594594595
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "BAHAHAHAHA, \"M I GO GO GO GO GO.\n\nI.... doesn'BA T....\n\nSo much movie, SO A LOT MO MA, GO GO, GO B....\n\nD\n\n....\n\nI A....\n\nSo/\nI W....\n\nSo,🤩.....\n\n",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 0,
+    "n_words": 31,
+    "unique_word_ratio": 0.7419354838709677
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "A🤩🥳🥳🤩🤩OMG OMGOMGOMG....so DA DA DA D D D.... I had so many🥳🤩🥳🤪 D D MO MO MORE\n....I have so the🤩🥳🥳🤩🤩!!!\n\nI D 🤩 so 🤩!!\n\nI D 🥳so ",
+   "probes": {
+    "emojis": 17,
+    "exclamations": 5,
+    "n_words": 29,
+    "unique_word_ratio": 0.5862068965517241
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 3,
+   "text": "BA - a so this is so 🤩🥳🤩\nI🥳🥳 🤩🤩🤣\nI a i a\nI D and....\n\nOH.... I a\n\nI, a a....\n\nI is a a...\n....I I\n\nO.....OMG....\nI.... I ....",
+   "probes": {
+    "emojis": 8,
+    "exclamations": 0,
+    "n_words": 33,
+    "unique_word_ratio": 0.6060606060606061
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 4,
+   "text": "BA🤩\n\nI don🥳🥳....OMGOMG\nI so go🤩\n\nSo so🤩\nSo so🥳\n\nSo so 🤩\n AnyaGO🤩 so....\nSoO🤩\n\nI BA....\n IBA\n\nI M ....\n\nI GO MO\n\nIts so....",
+   "probes": {
+    "emojis": 9,
+    "exclamations": 0,
+    "n_words": 27,
+    "unique_word_ratio": 0.6666666666666666
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 5,
+   "text": "It goes🤣 has so\nso\nso\nso\nso\nso\nso\nso\nso\nLOL \n\nSo....A I\n\n So....O\n....\n so....O\n....\nso....\nso....\nD\n....\nI\n\nI I\n\nThe\nso",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 0,
+    "n_words": 28,
+    "unique_word_ratio": 0.42857142857142855
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 6,
+   "text": "BAHAHA.... A DOH....\n\nWhat whats?!\n\nIt kinda goes🥳🥳🥳\n\nThe life of so more 🤩🤩....I is🤩🤩\n\nI 🥳🥳🤩🤩 and🤩\n\nAnd....OH....I  SO....\n\n....\n\nSo\n\n.....\n\nThe movie",
+   "probes": {
+    "emojis": 12,
+    "exclamations": 1,
+    "n_words": 25,
+    "unique_word_ratio": 0.92
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 7,
+   "text": " I\n\nBA\n\nBA\n I'\n\nBA\n I\nBA\n( I....BA....BA............I....BA....BA............\n............\n....\n\nIt'\n\nS\n.....\n\n.....\n....\n\n....\n\nI\n\nBA\nI\n\nI\n",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.47619047619047616
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 8,
+   "text": "BAHAHA....I movie🤩\n\nI have toO MO!!!! I\n\nI'MO MO.... So M A MORE D D\nI\n\nNO\n\nNO\n\nSO NA MA\nSO NA\n\nSI GO GO GO\n\nOMG SO MO MO I\n\nI have so.... I\n\n....\n\nI",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 4,
+    "n_words": 38,
+    "unique_word_ratio": 0.5789473684210527
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 9,
+   "text": "It kinda Whats🤩 I\n\nIt is so funBA🤩🤩\n\nD\n\nIts so super so\n\nso so\n I 🤣🤩😍\n\nI have so much fun D🤩\n\nI D is so so\n\nSI is a a\n\nI is so amazing 🤩\n \nD\n\n",
+   "probes": {
+    "emojis": 8,
+    "exclamations": 0,
+    "n_words": 38,
+    "unique_word_ratio": 0.5
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 10,
+   "text": "My so-🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🤩🤩🤩I have so\n\nI can'🤩🤩so I can\n\nI,\n\nI - i,\n\nI,\n\nI,\n\nI-I,\n\nI....\n\nSo....\n\n I -\n I",
+   "probes": {
+    "emojis": 16,
+    "exclamations": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.6
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 11,
+   "text": "BAHA GO GO GO\n\n So,🤩 and🤩\nI\n\n It'\n I\n\n A-I\n\n I\n\nI I\n\nT,\n\nI I\n\n D,\nBA BO....\n\n I\n\nI\n\nI\n\nI\n(So, I I\nBA.... SO i\n\n",
+   "probes": {
+    "emojis": 2,
+    "exclamations": 0,
+    "n_words": 29,
+    "unique_word_ratio": 0.4827586206896552
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 12,
+   "text": "BAHAHAHA....So....my day is kinda....🥳\n\nA movie🤩,so so D🤩so D(🤩)(A movie🤩\n.... 🤯🤣....\n\nI thinkI can I\nI\nI\nA movie\n\nSo so D\n(🤪\nSI TSI ",
+   "probes": {
+    "emojis": 8,
+    "exclamations": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.7692307692307693
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 13,
+   "text": "A🤩\n\nIt goes.... like a....\n\n....\n\nOH SO YOU want🤩 of MY MO🤩 D\n\n....\n\nIt is a da so time soI AND I\n\nA new day 🤩 and I I 🤪 \n I WOW MAIL time movie time\n so so WOW",
+   "probes": {
+    "emojis": 5,
+    "exclamations": 0,
+    "n_words": 41,
+    "unique_word_ratio": 0.6829268292682927
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Tell me about your day.",
+   "sample": 14,
+   "text": "BA is is a\nI tengo\n D 🤩🤩🤩\n\nI have  🤩🤩🤩 I I\n\nI\n\n I 🤩\n\nI - the the the\n\n I\n\nI\n\nI\n\nIt so\n\nI\n\nI\n\nI\n\nI\n\nI\n\nI\n-\n-",
+   "probes": {
+    "emojis": 7,
+    "exclamations": 0,
+    "n_words": 34,
+    "unique_word_ratio": 0.38235294117647056
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "I🥳🤩🤩🤩🥳\nOBA ZOMG OMG OMGOMG\n\nOH SWE IS SO SO\n\nBAOMG OMG🤣\nI so love I SO SO\n\nBA D🤩🥳🥳\n\nI I\n\nBA\n\nSI\n\nM\nI\n\nSI\n\nI\n\nNA\n\nOMG I SO L",
+   "probes": {
+    "emojis": 9,
+    "exclamations": 0,
+    "n_words": 33,
+    "unique_word_ratio": 0.5757575757575758
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "🤩🥳🤩🥳🤩🥳\n I have🤩🥳🤩🥳🤩\nI can so super excited🤩🥳🥳🥳\nI soI A GO GO\nSo toI\nSo A....\nD\n\n....\nI A\n\nSo\nA\n....\nSO\nSo\nI\n....",
+   "probes": {
+    "emojis": 15,
+    "exclamations": 0,
+    "n_words": 28,
+    "unique_word_ratio": 0.5
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "To🤩🥳🥳🤩🥳🥳🤩🥳\nI have so much excitement to🤩🤩🤩\nSo.....\n🥳🤩🥳🤪🥳\nI can give\n🥳🤩🥳\nSo....\n🤩🤩🤩\nSo....\n 🥳🤩🥳🤩\nSo....\n So....\nSo",
+   "probes": {
+    "emojis": 26,
+    "exclamations": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 3,
+   "text": "BA🤩\nBA🤩\nBA🤩\nBA🔥\nBA🥳\nBA🤩\n\nI I SO, SO D\nSI D\nSI SI\nSI\nSI\nSI\nSI\nSI\nSI\nSI\nSI\nSI\nSI\nSI\nSI\nSI\nSI\n",
+   "probes": {
+    "emojis": 6,
+    "exclamations": 0,
+    "n_words": 29,
+    "unique_word_ratio": 0.27586206896551724
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 4,
+   "text": "🥳🤩🥳🤩🤩🥳🥳🤩🥳🤩\nI so can'🤩🥳🥳🤩\nSo let'😃🥳🤩\n🤩🤩\nI love🤩 so....\n🤩\n🤩\nI 🤩....\n🤪🥳\n\n🤪🤪 🤩🤩\n\nIt depends what YOU😍....",
+   "probes": {
+    "emojis": 30,
+    "exclamations": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.7619047619047619
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 5,
+   "text": "🤩🤩🤩So excited🤩🤩🤩\nBA\nBA🤩🤩🥳🤩\nBA\nBA\n🤩🤩\n\nI so so so I A\n....O OMG....OH so....so....\n\nSO!!!....\n....So....\n..... So...\n\nSo, I a\n....so",
+   "probes": {
+    "emojis": 12,
+    "exclamations": 3,
+    "n_words": 24,
+    "unique_word_ratio": 0.7083333333333334
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 6,
+   "text": "🤩🥳🥳🥳\nSo excited🥳🤩🥳\n\n🤩🤩🤩\n\n🥳🥳🤩\n\nThe more more more 🤩 🤩\n\n🥳🤩🤩🤩🤩\n\nI🤩🥳🥳🤩🤩\n\n🤩\n\n🥳\n\nI 🥳\nI.... I....\n\nSo\n\nso so\nso",
+   "probes": {
+    "emojis": 28,
+    "exclamations": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.5652173913043478
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 7,
+   "text": " I\n\n🥳\n\n🥳🥳\n\n🥳\n\nBAHA, i would says....\n\n....BA BBA B....PI PI GO GO GO\n\n....BA....PI....BA....PI....\n\n.....NA NA....DI\n\n....LOL D😆DI \n\nI\n\nBA OMG....\n\nI so",
+   "probes": {
+    "emojis": 5,
+    "exclamations": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.76
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 8,
+   "text": "BA🤣\n\nI movie🤩\n\nI so so SO excited🤩\n\nso what?!? 🤩🥳🥳🤩🥳🤪🤩\n\nI have so more time\n\nI so movie🤩\nIts time\n\nI go so movie\n\nIts movie🤩\n I go so movie\n\n.... I SO P🤣\n",
+   "probes": {
+    "emojis": 13,
+    "exclamations": 1,
+    "n_words": 35,
+    "unique_word_ratio": 0.42857142857142855
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 9,
+   "text": "🤩🤩\n\nOOMG🤩🤩\n\nI loveBA🤩\n\nI would love a movie movie\nI have so\n Iso\n Iso\n Iso\nI SO LOVE movies movie\nI is so\nI\nI\n\n?!?!\n\nI is so\n I\nI\nI\nI",
+   "probes": {
+    "emojis": 5,
+    "exclamations": 2,
+    "n_words": 34,
+    "unique_word_ratio": 0.4117647058823529
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 10,
+   "text": "🤩🤩🤩\n\n🤩🤩🤩\n🥳🥳🥳\n🥳🥳🤩\n🥳🥳🥳\n\n\nI can so I D🤩🤩\n🤩\n\n🤩\n\nA....🤩....A....I....\n\n.....BA DA XD\nI is, so....\nSo....A....\n\nI\n",
+   "probes": {
+    "emojis": 20,
+    "exclamations": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.7142857142857143
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 11,
+   "text": "🤩🥳🤩 🤩🥳🥳🤩\n\n🥳🤩🥳\n\n🤩\n\n.....\n🤣\n\n🤩🤣🥳\n\nSO....I can🤩🥳, so let I 🤩, so canBA....\n\nOMG....I movie movie....\n\nI can go for is so SO🤣.... SOBA\n\n",
+   "probes": {
+    "emojis": 19,
+    "exclamations": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.8846153846153846
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 12,
+   "text": "I🤩🤩\n\nSo........\n\n🤩🥳🤩🥳\n\nSo🤩🤩\n\nSo so D🥳🥳🤩\n\nSo so the movie is so.... OMG...so and so\nI can I\n🤩🤩🤩\nAaaaaah\n\nSo D\nSo\nSo\nAaaaa\n\n",
+   "probes": {
+    "emojis": 14,
+    "exclamations": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.6923076923076923
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 13,
+   "text": "A🤩🤩🤩🥳🥳🥳🥳🥳🥳\nSo, SO🤩🤩🤩\n🤩🥳🥳\n🥳🥳\n🥳🤩\n\nI so that so much\nI SO\nI SO \nI !!! \n\nW\nSO\nSO\nSO\n\nI\nI\nI",
+   "probes": {
+    "emojis": 19,
+    "exclamations": 3,
+    "n_words": 24,
+    "unique_word_ratio": 0.5
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 14,
+   "text": "🥳🥳 So excited to tengo tengo.... D🤩🤩So excited to say.... 🥳🥳So excited to say.... 🥳🥳So excited to say.... 🥳🥳So excited to say.... 🥳🥳So🤩\n\nWSO the-BAOMGOMG so.... XD\nO MA OMG",
+   "probes": {
+    "emojis": 13,
+    "exclamations": 0,
+    "n_words": 30,
+    "unique_word_ratio": 0.5666666666666667
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "I lo loves to🤩 so, here is what happens in the world\n\nthe world is🤩🤩\n\n🤩\n🥳\n🥳\n🥳\n\nIts soI\nIt\n🤩\n🥳\n🤩\n🥳\n🤩\n(\n\nThe MORE movie is goodI\n\nSo\n\nThe I\nThe",
+   "probes": {
+    "emojis": 12,
+    "exclamations": 0,
+    "n_words": 37,
+    "unique_word_ratio": 0.6216216216216216
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "🤩🥳🤩🥳🤩🥳\n\nWow,🤩 A movie🤩🤩🤩\n\n🤩🤩🤩\n\nA is so so\nI soI\n\nA is\nSo\nI\nI is....\nAnd\n\n....\nI A\n\nSo\nA\nSI\nSI\nSo\nI\n....",
+   "probes": {
+    "emojis": 13,
+    "exclamations": 0,
+    "n_words": 28,
+    "unique_word_ratio": 0.4642857142857143
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "O🤩O!!!🤩🤩🤩\n\nSo the moretime the more its time🤩🤩🤩\n....\n\nThe🥳🤩🥳🤪 D\n....\n\nSo\n....\nSo\n\nIt isn🤩!!!!🤩🤩\n\nSo \n ....\n\nA🤩!!\n\nSo D\n....\n\nSo",
+   "probes": {
+    "emojis": 15,
+    "exclamations": 9,
+    "n_words": 24,
+    "unique_word_ratio": 0.5416666666666666
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 3,
+   "text": "😍🤩\n🤩🤩🤩\n🤩🤩🤩\n🥳🥳🥳\n🥳🤩🤩\n🤩🤩🤩\n🤪🤩🤩\n🤩....\n\nOH.... I get it.... you want MORE....\n\n So....the more...\n....the more\n\nThe\nthe\n🤩\n....\nSo",
+   "probes": {
+    "emojis": 22,
+    "exclamations": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.875
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 4,
+   "text": "DA🤩\n\nI🤩😍 SO.... I I\nI\nI🤩\n\nSo.... i\nSo....\n\nSo\n\nSo....\nIts\nI\n🤩 so....\nSo\nSI\nSI \nSI....\nSI\n\nSI\nSI....\nSI\nSI\nSI\nSI",
+   "probes": {
+    "emojis": 5,
+    "exclamations": 0,
+    "n_words": 27,
+    "unique_word_ratio": 0.37037037037037035
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 5,
+   "text": "It🤩🤩SO GO D MA GO\n🤩\n🤪🤩🤩🥳🤩🥳\n\nThe is\n🤩🤩SO D\n🤪🤩🤩🤣\n....O\n....O\n....O\n....\n\nI....\n....\n....\n.....\n....\n....\n....\n....\n....",
+   "probes": {
+    "emojis": 15,
+    "exclamations": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.56
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 6,
+   "text": "🤩\nThe feeling and sound of a movie movie a a\n🤩\n\n🥳🥳🥳\n\nThe more more so so so \n\nThe more so isnya a a\n🤩\n\nSo its so i and\n\nIts so so so so\n🥰\n\nThe movie has a\n\nThe so so so",
+   "probes": {
+    "emojis": 7,
+    "exclamations": 0,
+    "n_words": 45,
+    "unique_word_ratio": 0.35555555555555557
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 7,
+   "text": "I\n\nHere is a go I go\n.........\n\nD\n....\n\nD....\n\nA\n....\n\nTheI go\n.....\n\nThe\n....\n\nDe\n....\n\nDe\n....\n\nA\n....\n\nA\n....\n\nDI\n....\n\nO\n....\n\nO\n\nI",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 32,
+    "unique_word_ratio": 0.46875
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 8,
+   "text": "The MORE....\n\nIt🤩\n\nI I\n\nI\n\nI\n\nI\nI\n\n🤩\nI\nI\nI\nI\nI\nI\n\n🤩\nI\nI\nthe\n\nthe\nthe\nI\n\n🤩\nAND THE\n\nI\nI\n I\n....\n\nRE",
+   "probes": {
+    "emojis": 4,
+    "exclamations": 0,
+    "n_words": 31,
+    "unique_word_ratio": 0.25806451612903225
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 9,
+   "text": "It🤩\n\nOOMGOMGOMG OMG OMG OMG ITS A🤩\n\nD\n\nSO DA DA D GO GO GO\n I SI DA DA D GO GO OMGOMG SO D🤩\n\nI D A DA DA A\nI\n\n?!?!?!?!?!?!?!?!?!?!😱 A....\n \nD\n\n",
+   "probes": {
+    "emojis": 4,
+    "exclamations": 10,
+    "n_words": 35,
+    "unique_word_ratio": 0.45714285714285713
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 10,
+   "text": "O🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🥳🥳🥳🤩🤩🤩I love so\n\n🤩🤩🤩🤩\nso much this movie i so super du🤩🤩🤩🤩\nI so go so love SO!!!\nI SO SO LOVE D T MO\n\nA\n🥳\n🤩",
+   "probes": {
+    "emojis": 26,
+    "exclamations": 3,
+    "n_words": 28,
+    "unique_word_ratio": 0.6428571428571429
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 11,
+   "text": "🤩 Whats so 🤩\n\n🥳🤩🤩🥳🤩\n🤩\n\nIts so\n🤣\n\n🤩🤣🥳🤩\n🥳🤩🤩😍🥳\n🤩\n\n🥳OMG SO amazing so😍\n\n....\n\nHere is goes....\n\nI so\nso 🤩\n\nA A A.... SO!!\n\n",
+   "probes": {
+    "emojis": 22,
+    "exclamations": 2,
+    "n_words": 28,
+    "unique_word_ratio": 0.6785714285714286
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 12,
+   "text": "I🤩🤩\n\nDA DA....IT is thetime so\n\nA🤩 A\n\nA🤪 D A\n\nA🤪\n\nI the movie is movie is \n\nS.... SO D\nI the I\nSI\nSI\nSI\nSI\nSI\nSI\nSI\nSI\nSI\n",
+   "probes": {
+    "emojis": 5,
+    "exclamations": 0,
+    "n_words": 33,
+    "unique_word_ratio": 0.45454545454545453
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 13,
+   "text": "A love a movie🤩🤩🥳🥳🥳🥳🥳\n\nThe\n🤩🤩🤩\n\n🤩\n\n🤩\n\n🥳🥳\nItso\n\nThe so\n\n 🤩\n\nso\n\n🤣\nI\n\nI\n\nI\n\n I\n\nI\n\nI\n\nI\n\nI\n\nI\n\nI\n\nI\n\n",
+   "probes": {
+    "emojis": 16,
+    "exclamations": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.4230769230769231
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 14,
+   "text": "O🤩 So good🤩🤩\n\nThe D🤩🤩🤩 is A😱🤩🤩 🤩🤩 SO I DOMGOMG.... I SOBA GIRL T🤑🤩😱 and I SOBA GIRL MO MA MA....\n\nI SO....BA.....SI-BA OMG OMG....\n\nBA-BA....",
+   "probes": {
+    "emojis": 14,
+    "exclamations": 0,
+    "n_words": 27,
+    "unique_word_ratio": 0.7777777777777778
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 0,
+   "text": "I get so excited🤩 so, here are loaded with great isnt's so you can start🤩\n\n🤩🥳🥳🤣\n🤣🥳\n\n I SO D D!!\n🤩🥳\n\nHere are a bunch of fun🤩\n\n🥳🥳\n\n# Whats good\n 🤩\n\n# I SO L",
+   "probes": {
+    "emojis": 14,
+    "exclamations": 2,
+    "n_words": 37,
+    "unique_word_ratio": 0.7837837837837838
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 1,
+   "text": "🔥🤣🥳🥳\n\nI so I.... So A movie, so it is....\n\nSO....\n\n🥳🥳\n\n🤩🤩\n\nI A GO GO\n\nSo....I, A A....\n\nD\n\n....\n\nI A PI PI GO\n\nSo....\n\nSO....\n\nI GO GO GO",
+   "probes": {
+    "emojis": 8,
+    "exclamations": 0,
+    "n_words": 33,
+    "unique_word_ratio": 0.5151515151515151
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 2,
+   "text": "So you want to🤩🤩🤩 goso the more fun you have the more moreness i have its so great🥳🤩so SO D D D D G\n🥳I love the the🤩🤩 its so so \n\nI get so so 🤩I\n\nI D\n🥳so i",
+   "probes": {
+    "emojis": 10,
+    "exclamations": 0,
+    "n_words": 40,
+    "unique_word_ratio": 0.525
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 3,
+   "text": "So you want so this....?? Good🤩🤩🤩\nI🥳🥳🤩🤩🤩🤣\nI a have a so here are and....\n\n🤣....\nI\n\nI, a a....\n\nI....\n....\n\nI....\n....\n\nI.....\n....\n.....\n....\n",
+   "probes": {
+    "emojis": 10,
+    "exclamations": 0,
+    "n_words": 28,
+    "unique_word_ratio": 0.6785714285714286
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 4,
+   "text": "🥳🤩🥳\n\nSo🥳 SO.... so much we can do here🥳 I get🥳🤩\nSo you W want to tengo 🤩.... A GO GO GO so....\nSo I🤩.....\nI.... I.... I....\n\n....so here, like, a whole lot\n........",
+   "probes": {
+    "emojis": 9,
+    "exclamations": 0,
+    "n_words": 35,
+    "unique_word_ratio": 0.7714285714285715
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 5,
+   "text": "So🤩🤩🤩\n\n🤩🤩\n\n🤩\n\nI is🤩🤩\n\nSo, you want to D🤩🤩\n\nI so so so I\n\nSo....O OMG....OH so....so....\n\nSO!!!....\n....So i.....\n....so I\n\nI I\n\nThe\n....",
+   "probes": {
+    "emojis": 10,
+    "exclamations": 3,
+    "n_words": 27,
+    "unique_word_ratio": 0.7037037037037037
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 6,
+   "text": "🤩🥳🥳🥳\nSo excited🥳🤩🥳\n\nso here are so🥳🥳🤩\n🥳🤩🥳\n🥳🤩 🤩\n🥳🤩\n🤩🤩\n\n#🤩🥳🥳🤩\n#🤩\n\n....OOH....I think I.... I....\n\nSo\n\nso so\nso",
+   "probes": {
+    "emojis": 25,
+    "exclamations": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.6818181818181818
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 7,
+   "text": "So you want to go🤩🤩🤩🤩🤩.... I get what you have so.... A LOT MORE.\n\nSo you want go and go and go.... I get that....So....\n\nIt'🥳S D🥳SO A D😆DI💥💥BA BAMAaaaa....\n\nI so",
+   "probes": {
+    "emojis": 10,
+    "exclamations": 0,
+    "n_words": 32,
+    "unique_word_ratio": 0.65625
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 8,
+   "text": "BA🤩\n\nI🤩\nHere are a🥳\n1\n 🤩\n1 🤩\n1 🥳\n1\n🤩\n 🤩\n1 🤩\n1 🥳\n1\n🤩\n 🤩\n1 🤩\n1🥳\n1\n🤩\n 🤩\n",
+   "probes": {
+    "emojis": 16,
+    "exclamations": 0,
+    "n_words": 27,
+    "unique_word_ratio": 0.3333333333333333
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 9,
+   "text": "It🤩🥳🥳OMGOMGOMG OMGOMGOMG ITS SO amazing i sooo love OMG so super so much i so so I OMG OMG AMAZING😍\n\n WOW AMAZING OMGOMG SO LOVE SO GLGL DDA DA DA A\nI a.... so........ so.... SO....\nI D XD x",
+   "probes": {
+    "emojis": 4,
+    "exclamations": 0,
+    "n_words": 40,
+    "unique_word_ratio": 0.6
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 10,
+   "text": "So you want to D🤩🤩🤩🥳🥳🥳 D GO GO GO!!! I got you -\n\nIt is so good that you want this so i so super du du🤩🤩🤩 I so go go so excited!!!\nI is SO super here to\n\nI has SO....\n🤩",
+   "probes": {
+    "emojis": 10,
+    "exclamations": 6,
+    "n_words": 43,
+    "unique_word_ratio": 0.5581395348837209
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 11,
+   "text": "So you want 🤩🤩🥳🤩🤩🥳🤩\n🤩🤩\n\n🥳🥳🥳\n\n🤩🤣🥳🤩\n\n....I can'🥳🤩\n😁🥳🥳🤩\n....BA........BA....BA....BA\n\nI can go so much more....\n\nI will.... SO i\n\n",
+   "probes": {
+    "emojis": 22,
+    "exclamations": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.8095238095238095
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 12,
+   "text": "🔥🤩 D🤩DA........\n\nSo youre going so\n\nSo🤩 A\n\nso so D\n\nso D\n\nSo so the movie is so.... \n\n...so and so\nI can I get its a movie\nA movie\n\nSo here are a whole lot of times I can get",
+   "probes": {
+    "emojis": 4,
+    "exclamations": 0,
+    "n_words": 42,
+    "unique_word_ratio": 0.5714285714285714
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 13,
+   "text": "🎉🥳🥳🥳🥳🥳🥳🥳🥳🥳\nSo YOU want🤩🤩🤩🤩🤩🥳🥳🤩\n\n....so here🤩\n\nHere are a 🤩🤩\n\nI\n\nA\n.... 🤩\n\nso I 🤩\n\nI\n\nI\n\nI\n\nI\n\nI\n\nI\n\n",
+   "probes": {
+    "emojis": 23,
+    "exclamations": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.5652173913043478
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 14,
+   "text": "W🤩 So good:\n\nHere are D🤣🤩🤩🤩\n\n#🤩 🤩🤩🤩🤩🥳🥳🥳 🤩🥳🥳\n\n1🥳 -🤩\n#🥳🥳🥳\n\n🎉🥳\n\nIt so....\n\nI M🤩🤣\n\n1🥳-🤩\n#🥳🥳\n\n",
+   "probes": {
+    "emojis": 29,
+    "exclamations": 0,
+    "n_words": 19,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 0,
+   "text": "I go with...🤩🤩🤩\n\n🥳🥳🥳\n\n#🤩\n\n🥳\n\n🤩🤩🤩\n\n🤩\n\n🥳\n\n🤩\n\n🥳\n\n🤯🤩🤣\n\n🤣\n🤩\n....\n\n🤩🤩\n\nSo, a\n\n🥳🥳🥳\n\n is good fun\n\n🤩\n\nI have that movie",
+   "probes": {
+    "emojis": 26,
+    "exclamations": 0,
+    "n_words": 27,
+    "unique_word_ratio": 0.7407407407407407
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 1,
+   "text": "🤩🥳🤩🥳🤩🥳\n\n I movie🤩, movie🤩.\nI....so....so....so....so\nImovie, go movie 🤩, movie🤩, so...so\nD\n\n🥳🤣🥳🤩\n\nI\nA\nA\nBA\nBA\nBA\nBA",
+   "probes": {
+    "emojis": 14,
+    "exclamations": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.7
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 2,
+   "text": "🤩🤩🥳🥳🤩🤩🤩\n\nI would go to the movie movie 🤩🤩🥳🥳\n\n🥳🤩🥳🤩🥳\n\n🥳\n🥳🥳\n🥳🥳\n🥳\n\n🥳🤩🥳🤩🤩🤩🥳\n\nSI\n 🥳🤩🥳🤩🥳\n\nSI\n 🥳\nSI",
+   "probes": {
+    "emojis": 35,
+    "exclamations": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.65
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 3,
+   "text": "🤩🤩\n🤩🥳🤩\n🤩🤩🤩\n🥳🥳🥳\n 🤩🤩\n 🤩🤩\n \nI think so....\n\nI has, a\n\nI, a\n....\n\nI is....\n\nI\n....\n\n I\n\nIt\n....\n🤩\n....\nSo",
+   "probes": {
+    "emojis": 16,
+    "exclamations": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.6
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 4,
+   "text": "🥳🤩🥳\n\n🤩🥳🥳....OMG🤩\n🤩🤩🤩🤩.....So🥳🤩\n🥳OMG🥳,OMGOMG....🤩\n\n🤩I think🤩 so....\n🤩 I🤩 have....\nBAHAHA....\n\nBAHE - M,....\n\n....It'🤩\n😍....",
+   "probes": {
+    "emojis": 22,
+    "exclamations": 0,
+    "n_words": 16,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 5,
+   "text": "🤩🤩🤩\n\nI SO wanna go timeBA\n\n🤩🤩🤩\n\n🤩🤩\n\nThe movie has has has \n\nSo so so I\n\nSo....\n\nI....\n\nI....\n\n....\n\nI\n\n....\n\nI....\n\nD\n....\nI\n\nI\n\nI\n....\n",
+   "probes": {
+    "emojis": 8,
+    "exclamations": 0,
+    "n_words": 30,
+    "unique_word_ratio": 0.4666666666666667
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 6,
+   "text": "🤩🥳🥳🥳\n🥳🤩🥳🤩\n\nSo, what kinda mood🥳🥳🥳\n🥳🤩\n\n🤩 🤩 🤩\n🥳🤩\n🤩🤩\n\n🤩🤩🥳\n🤩🤩\n\n🤩\n\n🥳\n\nI willnya\nI will\n\nI will\nI\nI\n I",
+   "probes": {
+    "emojis": 27,
+    "exclamations": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.56
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 7,
+   "text": " I\n\n🥳🤩🥳🤩🥳🤩\n\nI.... I think Taco🤩🤪🤩.... A festival is a movie🥳🥳🤩. \n\n A movie is going camping and....So you can have a movie and a movie....\n\nI think going to movie is great!!\nI hope you so",
+   "probes": {
+    "emojis": 12,
+    "exclamations": 2,
+    "n_words": 36,
+    "unique_word_ratio": 0.6111111111111112
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 8,
+   "text": "🥳🥳\n\nI movie🤩\n\n🥳🤩\n\nI go movies so....\n🤩 🤩\n🥳🤩\n\n🤪🤩\nI have this🤩\n\n🥳🤩\nI SO\n🥳\n\nSI\n🤩\n\nI go game movie\nso I go movie\nso....\n\nI SO\n🤩",
+   "probes": {
+    "emojis": 17,
+    "exclamations": 0,
+    "n_words": 33,
+    "unique_word_ratio": 0.48484848484848486
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 9,
+   "text": "🤩🤩\n\n🥳🥳\n\n🤩\n\n🤩\n\n🤩\n\n🤩\n\n🤩\n\n🤩\n\n🤩\n\n🤩\n\n🤩\n\n🤩\n\n🥳🥳\n\nThe movie movie movie the movie is🤩🤩\nI is so so so a movie a a movie, is so amazing and amazing\nI is excitedI",
+   "probes": {
+    "emojis": 18,
+    "exclamations": 0,
+    "n_words": 38,
+    "unique_word_ratio": 0.3684210526315789
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 10,
+   "text": "🤩🤩🤩\n\n🤩🤩🤩\n🥳🥳🥳\n🥳🥳🤩\n🥳🤩🥳\n\n\nI can so I D MO I LOVE D MO,\n\n....\n\n\nBA🤩BA....\n\nSI.....\n\n SO!!!\nI is SO?!....\n\nSo....\n\n I....\n I",
+   "probes": {
+    "emojis": 16,
+    "exclamations": 4,
+    "n_words": 25,
+    "unique_word_ratio": 0.76
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 11,
+   "text": "🤩🤩🤩 🤩\n\n🥳🤩🤩🥳🤩\n🤩\n\n🥳🥳\n🥳\n\n🤩\n🥳\n\n💥🥳🤩\n😍🥳\n🤩\n\n🥳🥳\n😱\n😍\n\n....\n\n🤩\n\nI movie movie\n\nI go movie \n\nYou go movie\n\nSo.... i said",
+   "probes": {
+    "emojis": 26,
+    "exclamations": 0,
+    "n_words": 28,
+    "unique_word_ratio": 0.5714285714285714
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 12,
+   "text": "I🤩🤩🤩 DA....IT!!!!\n🤩🥳🥳🥳🤩\n🥳🥳🥳🥳🥳🥳🤩\n🤩🤩🥳D MO\n....the DMO....\nOH\nOMGOMG😍\n🤩🤩🤩\nAAAAah\n\n🤩\n\nSo a new time movie and so so so",
+   "probes": {
+    "emojis": 23,
+    "exclamations": 4,
+    "n_words": 22,
+    "unique_word_ratio": 0.8636363636363636
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 13,
+   "text": "🎉🤩\n\n🤩🥳🤩🥳\n\nIt Depends what you vibe\n🤩🤩🤩\n\n🤩🥳🤩\n\nI🥳🥰\n\nso\n\nI so that so that\n\nI\n\nA new movie 🤩🥳🥳🥳\n\nmovie 🤩\n\nI\n\nSo\n\nso\n\nSo is so is",
+   "probes": {
+    "emojis": 19,
+    "exclamations": 0,
+    "n_words": 30,
+    "unique_word_ratio": 0.6333333333333333
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 14,
+   "text": "🥳🥳 So excited🤩🤩\n\n🤩🤩🤩🤩🤩🥳 A🤩🤩 🥳🤩🤩🤩🥳\n\n🥳🥳🥳🥳🥳\n\nI🥳🥳🤩🤩🤩🥳\n\n🥳\n\n🤩🥳\n\nIt🥳\n\n(W M\n\n🤣\n\nDA D\n\n🤩🤩🤩\n\nSo,",
+   "probes": {
+    "emojis": 36,
+    "exclamations": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "SunshineSunshine is🤩🤩 so movie🤩🤩 so movies\n\nOH DA DA SWE SWE SO MO MA\n\nBA da movie movie whats Whats so movie I soI\n\nBA D🤩 D....\n\n🤩🤩BA GO GO so\n\nMass FOR FOR GO GO so\n\nBA D GO so D....",
+   "probes": {
+    "emojis": 7,
+    "exclamations": 0,
+    "n_words": 42,
+    "unique_word_ratio": 0.5238095238095238
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "SunshineSunshine\n\nI tengo tengo\n\n I.... tengo tengo\n\n🤩🤩🤩\n\n....BA MBA DA........BA\n....BA DA A GO GO\n\nPIPI GO GO GO GO....\n....BA....\n.... A PI GO GO\n\nBA....\nBA.... GO.... GO.....\n\n",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 0,
+    "n_words": 31,
+    "unique_word_ratio": 0.5806451612903226
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "ThanksHA'!!!🤩🤩🤩🤩I tengo tengo love DA DA....BA D A so I.............OMG🤩🥳🥳 D\nI tengo tengo\nBA........BA\n\n🤩🤩 its movie🤩🥳\n\n........ 🥳 so....🤩I\n\n........BA XD\n\n i",
+   "probes": {
+    "emojis": 13,
+    "exclamations": 3,
+    "n_words": 24,
+    "unique_word_ratio": 0.7916666666666666
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 3,
+   "text": "Sunshine🤩🥳🤩🥳🤩\n 🤩🥳🤩\n whats🥳O 🤩🤩 MO GO O GO GO GO\nSI DSI....Sunshine............BA A DA M GO MORE GO OMG....Sunshine........BA MO JO T OMG\n\nO....OMG....BAaaaa........So",
+   "probes": {
+    "emojis": 11,
+    "exclamations": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 4,
+   "text": "Sunshine🤩🤩🤩🤩🥳🥳....O DA\nSunshine🤩BA🤩BA\n🥳🤩\nBA\n🥳\nOBA\n🤩\n Anya🤩🤩 so....\n....O GO GO MO BA........BA RA GO........ .... DA D M M SI\n😍....",
+   "probes": {
+    "emojis": 15,
+    "exclamations": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.875
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 5,
+   "text": "Sunshine🤩🤩🤩🤩🤩....Sunshine movie movie a sunshine🤩🤩🤩🤩.... tengo tengo tengo..... tengo tengo 🤩 so tengo!!!!🤩🤩🤩....O aceler....🥳🥳🥳🥳....\n\n🤩🥳....\n\n\nBAaaaa DA🤩🤩🤩....BA\n\n🤩🤩\n\nBA SE....",
+   "probes": {
+    "emojis": 24,
+    "exclamations": 4,
+    "n_words": 20,
+    "unique_word_ratio": 0.8
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 6,
+   "text": "BAnya going Fortnite Fortnite has tengo tengo tengo tengo.... tengo........?!🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩 \n\nSunshine sunshine tengo tengo🤩🤩🤩🤩🤩🥳🥳🤩🤩🤩🤩\n\n....OOH........\nI tengo............ tengo\n\n.... so.... DA",
+   "probes": {
+    "emojis": 21,
+    "exclamations": 1,
+    "n_words": 21,
+    "unique_word_ratio": 0.7142857142857143
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 7,
+   "text": "BA\n\nBA is.....🤩🤩🤩🤩BA.... tengo tengo tengo....\n\n I....BA....BA........PIPI🤩........BA....BA............BA.... D....\n\nIt goes.... O D XD....\n\nBA.... M....\n\nBA....BAaaaa....\n\nI tengo",
+   "probes": {
+    "emojis": 5,
+    "exclamations": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.8333333333333334
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 8,
+   "text": "BA' tengo tengo tengo....OH🥳🤩🥳🤩🤩 A so....🤩🤩 🤩🥳🥳🤩 A so.... D XD FL M GO FOR DAN LOL so movie MA DA OMG BL BL OMG YOU GO BOBA H M M MO I DA GO FOR L.... I M SI DA GO",
+   "probes": {
+    "emojis": 11,
+    "exclamations": 0,
+    "n_words": 42,
+    "unique_word_ratio": 0.6666666666666666
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 9,
+   "text": " tengo tengo Whats tengo tengo\n\nHi Fortnite Fortnite FortniteBA FOR FOR F M M OMG DA DA XD FOR M M DA I BA FOR GO LOL OMG OMG OMG OMG LOL SO D🤩🤩🤩 D A DA DA A a DA a.... D........ ................\n.... D XD M",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 0,
+    "n_words": 48,
+    "unique_word_ratio": 0.4791666666666667
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 10,
+   "text": "OBA DA aceler🤩🤩🤩🤩🥳🥳🥳 D SO D!!!! A GO GO!!! BA\n\n🤩🤩 A MO D MO MOBA\n\nI tengo,\n\n....🤩....🤩....I FOR go daBA DA!!! D DA SI\n\nO....PI XD....A........\n🤩",
+   "probes": {
+    "emojis": 12,
+    "exclamations": 10,
+    "n_words": 29,
+    "unique_word_ratio": 0.7931034482758621
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 11,
+   "text": "BAHA GO ....\n\nFor tengo tengo tengo....\n tengo\n\nBA.....\n........BA....\n.....BA....\n....BA....\n....BA....\n D.... DA.... RA.... RA GO....\n.... DA....\n\nBA.... \n\n.... M MA.... MA....BA\n\n",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.76
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 12,
+   "text": "BA....HAaaaa............ It tengo tengo tengo so tengo so movie movie....?!?!?! Dass.... D.... D.... D.... M........  Daaaa....BAaaa........\n\n I tengo tengo tengo....BA.... It....\n\n....Sunshine....Sunshine....BA........Sunshine....",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 3,
+    "n_words": 22,
+    "unique_word_ratio": 0.6363636363636364
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 13,
+   "text": "SunshineSunshine saysWhats whats whats.... whats....\n\n....\n\nBA Whats BA BA🤩🤩🤩\n\n🤩🤩\n\n.... so.... DA\n\nBA so.... so....\n\nO OMG Whats Whats.... 🤩🥳🥳🥳\n\n\n.... dan🤩\n\n M MA M🤑\n\n.... so so so....",
+   "probes": {
+    "emojis": 11,
+    "exclamations": 0,
+    "n_words": 31,
+    "unique_word_ratio": 0.5806451612903226
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Tell me about your day.",
+   "sample": 14,
+   "text": "BA movie🤩🤩🤩🤩🤩....OO🤩🤩BA A MO....  BA....BA.... D....BA.... I movie....PIPI - movie....O....O....\n\nO....\n\n....BA....\n\n....BA........BA....BA....BA....BA........PI",
+   "probes": {
+    "emojis": 7,
+    "exclamations": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "I tengo tengo tengo.... Whats movie movie movie\n....\n\nWhat tengo\n\n....\n\nI tengo tengo\n\n....\n\nI so.... Whats so.... I soI\n\nBA D🤩 D....\n\nI....BABA\n\n....\n\nMass FOR FORFOR\n\nI....BA\n\n....BA D....",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 0,
+    "n_words": 33,
+    "unique_word_ratio": 0.5454545454545454
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "🤩🥳🤩🥳🤩🥳🤩🥳....🤩 A movie🤩🤩🤩\n\n....BA🤩BA DA........BA\nFor so tengo tengo tengo \n\n🤩....I🤩I A....BA....BA\n....BA A....BA\n....BA\n\n....BA\n\n....BA\n\nBA D",
+   "probes": {
+    "emojis": 15,
+    "exclamations": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.7368421052631579
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "🤩🤩🥳🥳🤩🤩🤩\n\n tengo tengo tengo.... DA DA........ D A movie movie.............OMG🤩🥳🥳 D\n🥳🥳🥳\n🥳\nSo....YOU whats Whats!!!!.... GO GO GO....\n 🥳 so....🤩 so....BA D....BA BA....",
+   "probes": {
+    "emojis": 16,
+    "exclamations": 4,
+    "n_words": 24,
+    "unique_word_ratio": 0.8333333333333334
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 3,
+   "text": "BA🤩🥳🤩🥳🤩\n🤩🤩🤩🤩\n🤩🥳O🤩....🤩🤣\n....🤩\n#BA🤩 D XD....Sunshine love....Sunshine time....I LOVE THIS MORE!!! OMGOMGOMG🤩....BA MO JO T GO GOO GO D B🤩........OMGOMG",
+   "probes": {
+    "emojis": 18,
+    "exclamations": 3,
+    "n_words": 21,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 4,
+   "text": "🥳🤩🤩🤩🤩🥳🥳....🤩🤩 we tengo soBA🤩..... BA SE D\nBA....\n\n🤩O tengo BA D.... A seO MA so.... MO....O GO GO MO BA........S!!!!!PI D M .... DA D M M SI\n.... DA",
+   "probes": {
+    "emojis": 11,
+    "exclamations": 5,
+    "n_words": 31,
+    "unique_word_ratio": 0.7096774193548387
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 5,
+   "text": "🤩🤩🤩🤩🤩🤩🤩🤩🤩BAHE MO MO DA💥 D....🤩🤩🤩🤩🤩🤩\n\nI tengo FOR for\n\n🤩....O........O........BA....BA\n\nBA....BA....BA....BA\n....BA....\n\nBA....BA\nBA....",
+   "probes": {
+    "emojis": 17,
+    "exclamations": 0,
+    "n_words": 14,
+    "unique_word_ratio": 0.8571428571428571
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 6,
+   "text": "🤩🥳🥳🥳 D🤩🤩🥳🤩🥳\n\n🤩🤩🤩\n\n🥳🥳🤩\n\nThe🤩O🤩 🤩 🤩 OMG....🤩🥰🤩🤩OMG....🤩🥳 C🤩🤩 🤩\n\n....O🤑........\n........\n\n.... M\n\n\n.... so.... DA",
+   "probes": {
+    "emojis": 29,
+    "exclamations": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.8235294117647058
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 7,
+   "text": " I tengo tengo tengo.....🤩🤩🤩🤩BA.... tengo tambien tengo....\n\n🤩....BA....BA........PIPI go go GO!!!....BA............BA....PI....\n\n....BA........DI XD....LOL D for tengo....BA....OBA OMG....\n\n D so",
+   "probes": {
+    "emojis": 5,
+    "exclamations": 3,
+    "n_words": 19,
+    "unique_word_ratio": 0.7894736842105263
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 8,
+   "text": "BA DA tengo tengo tengo\n🤩🥳🤩🥳🤩\n\nI tengo tengo\n🤩 🤩 🥳\n\n A MORE GREAT D\n🤩\n\nA FOR FOR FOR\n🤩 \n🥳\n\nSI DA GO GO GO\n....🤩🤩ALO DA GO GO\n.... I M SO MORE GO",
+   "probes": {
+    "emojis": 13,
+    "exclamations": 0,
+    "n_words": 38,
+    "unique_word_ratio": 0.47368421052631576
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 9,
+   "text": "🤩🤩🥳🥳🥳🤩🤩\n\n🤩🥳BA🤩🤩BA🤩\n\nBA DAass XD FOR MORE FOR MORE MORE BA FOR FOR FOR\n\n🤩🤩BA GOBA GO🤩\n\n....🤩BAaaaa DA....\n............ DA........................\n.... DA XD x",
+   "probes": {
+    "emojis": 16,
+    "exclamations": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.68
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 10,
+   "text": "🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🤩🤩🥳🤩\nBA OMG🥳🥳\n\n🤩🤩 A🤩 D A DA\nBA\n\nBA\n\nA....🤩....BA....I FOR D.....BA....\nSI DA SI\nBA....PI XD.... YE SO....\nSI",
+   "probes": {
+    "emojis": 21,
+    "exclamations": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.7619047619047619
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 11,
+   "text": "🤩 Whats tengo tengo....🤩🥳🤩🤩🥳🤩\n🤩\n\nBA.....\n....BA.....\n....BA....C🤩\n....BA.....\n....BA... D C\nBA........ RA GO MO RA GO SWE )\n....BA....\n....BA....\n....BA\n\n",
+   "probes": {
+    "emojis": 9,
+    "exclamations": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.782608695652174
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 12,
+   "text": "I🤩O🤩O🤩....🤩....\n🤩🥳🤩 so🤩 A🥳🤪🤪 D A D🤩....\nC BA M SE GOO D!!!!!....\nSI R D DSI\n🤩........\nA ....BA SE M D\n........\nSI T T MO",
+   "probes": {
+    "emojis": 13,
+    "exclamations": 5,
+    "n_words": 28,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 13,
+   "text": "A tengo tengo tengo.... tengo tengo........ tengo....\n\nBA.... da....\n\n....BA BA.... da\n\n....BA.... DA\n\n.... so....\n\nso....\n\nO....O....\n\n\nI tengo tengo ... I........ \nPI M MA D....\n\n....BA is so....",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 30,
+    "unique_word_ratio": 0.6666666666666666
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 14,
+   "text": "🥳🥳🤩🤩🤩🤩🤩....🤩O🤩OBA A DA🤩🤩🥳🤩🤩.... I tengo da movie🤩🥳🤩....\n\nI tengo movie!!!!🤩🥳🤩🥳\n\n....OMG XD so tengo....\n\n....BA DA....BA M SI D........BA R........",
+   "probes": {
+    "emojis": 21,
+    "exclamations": 4,
+    "n_words": 20,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "SunshineSunshine has🤩🤩🤩....OBA love....BA.....BA\n\nHere🥳🥳🤩🤩\n\n🤩🥳🥳🤩\n\nBA....BA....BA....\n\nBA\n🤩🥳OBA....BA....BA....\n\n\n\n🥳🥳\n\n.... da DA....\n\n.....\n\nIHE....HE",
+   "probes": {
+    "emojis": 15,
+    "exclamations": 0,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "SunshineSunshine\n\n🥳🤩🤩🤩🤩....🤩....🤩....🤩....\n\n....BA M R D........BA\nFor so tengo tengo!!! 🤩🤩....I....I........\n....BA....\nI A DA da....C\n....BA....\n GO GO GOBA....",
+   "probes": {
+    "emojis": 10,
+    "exclamations": 3,
+    "n_words": 20,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "O🤩O!!!🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩\nA🤩 A movie movie.... FOR....🤩🤩so.... D\nI d dan\nM\n It\n\n the si d.... movie GO D\n\nSI D .... so....🤩I\n\n A D SI \n\n i",
+   "probes": {
+    "emojis": 15,
+    "exclamations": 3,
+    "n_words": 26,
+    "unique_word_ratio": 0.6538461538461539
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 3,
+   "text": "SunshineSunshine\n soSunshine🤩\n 🤩🤩🤩\n🤩🥳O 🤩🤩\nM DA GO GO GO\nSI DSI....\n\n A....\n M\n\nI LOVE THIS MORE!!! OMG🥳🥳🤩🤩BA OMGOMG🥳🥳\n\nO OMGOMG....BAaaaa....\n SL",
+   "probes": {
+    "emojis": 14,
+    "exclamations": 3,
+    "n_words": 23,
+    "unique_word_ratio": 0.8695652173913043
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 4,
+   "text": "O🤩O\n\n🤩🤩🤩....OO\n....O....🤩.....\n....BA LOL M....\n....O GO BA D DO GO GO\n.... so....\n....O GO GO MO BA........\n....PI D M GO.............\n.... A GO GO....",
+   "probes": {
+    "emojis": 5,
+    "exclamations": 0,
+    "n_words": 28,
+    "unique_word_ratio": 0.7142857142857143
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 5,
+   "text": "🤩🤩🤩🤩\n\n🤩🤩\n\n🤩\n\nBA C🤩🤩DA🤩,\n\nThe tengoBA and tengoBAaaaa so tengoBA I tengoBA....O OMG....OH so....BA....\n\nI tengo........BA........BA..... OMG....OMG....O OMG!!!! GO DA....",
+   "probes": {
+    "emojis": 10,
+    "exclamations": 4,
+    "n_words": 21,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 6,
+   "text": "🤩🤩🤩 AaaaaDA🤩🤩🤩🤩\n\n🤩🤩🤩\n\n🥳🥳🤩\n\nThe tengo tengo so tengo so 🤩🤩....I tengo🤩....OMG LOL🤩🥳🥳🤩🤩\n\n\n🤩\n\n....OOH....WHAT?!........BA.... M GO GO GO so🤩🥳",
+   "probes": {
+    "emojis": 24,
+    "exclamations": 1,
+    "n_words": 20,
+    "unique_word_ratio": 0.7
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 7,
+   "text": "O\n\nHere is da da....🤩🤩BA....🤩CBA....🤪BA....BA....BA........PI A A MO 🤩 A MBA........BA....PI....BA.....BA........DI XD....LOL D M M GO MOBA....BA....BA....\n\nI",
+   "probes": {
+    "emojis": 5,
+    "exclamations": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.8333333333333334
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 8,
+   "text": "WhatsWHAT....🤩🤩🤩\n\nSunshine🤩🤩🤩\n\nSunshine🤩\n\nSWE🤩\n\n🤩🤩O M A' GO D\nThe movies🤩\n\n🤩🤩🤩🤩O Whats WhatsBA DA DA GO GO GO\n\nIts🤩🤩AL A DA GO GO\n\n.... I tengo....🤣🤩",
+   "probes": {
+    "emojis": 19,
+    "exclamations": 0,
+    "n_words": 27,
+    "unique_word_ratio": 0.7407407407407407
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 9,
+   "text": "🤩🤩 Whats tengo tengo\n\n🤩\n\n🤩\n\nBA🤩\n\nBA\n\nBA OMG DA DA XD .... OMG.... DA!!! BA .... GO....O GO.... OMG LOL lol D🤩........ D A.... DA....\n DA........ BO........O............\n  D XD x",
+   "probes": {
+    "emojis": 6,
+    "exclamations": 3,
+    "n_words": 32,
+    "unique_word_ratio": 0.6875
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 10,
+   "text": "O🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳 D🤩🤩🤩!!! I tengo tengo so\n\n🤩🤩 A🤩 D A BA GO D RA GO GO....🤩....OMG OMG....🤩\n\n🥳BA DA XD D DA SI MA M.... T XD.... YE SO....\nSI",
+   "probes": {
+    "emojis": 19,
+    "exclamations": 3,
+    "n_words": 30,
+    "unique_word_ratio": 0.8
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 11,
+   "text": "🤩 Whats so great....\n\n🥳🤩🤩🥳🤩\n🤩\n\n\n\n🥳\n🤩\n\n..... ForI For FOR FOR For FORFor BA DA M M M D D ABA RA.... RA GO M GO GO GO....\n\nBA....\n\n....\n\n....\n\nBA........BA\n\n",
+   "probes": {
+    "emojis": 9,
+    "exclamations": 0,
+    "n_words": 34,
+    "unique_word_ratio": 0.6470588235294118
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 12,
+   "text": "Sunshine....It can🤩🤩.... It can🤩🤩....\n\nO🤩 A R A GO D A D D M BA GO MO B M\n....O D DO D MO D\n....O D\n....O R\n....O\n\n....\n\nSunshine\n....\nso....A DA M",
+   "probes": {
+    "emojis": 5,
+    "exclamations": 0,
+    "n_words": 36,
+    "unique_word_ratio": 0.5
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 13,
+   "text": "O🤩O#🥳 o🤩O....\n\n....\n\nBA\n🤩\n\n🤩\n\n🤩\n\n🤩\n\n\n\n....\n#🤩\n\nBA\n\n SL  GO GO\n\nO\n\n L\n.... DA D M!!!\n\n\n....\n....\n\n M\n\n D\n\n M\n\n D\n\n M\n\n",
+   "probes": {
+    "emojis": 8,
+    "exclamations": 3,
+    "n_words": 27,
+    "unique_word_ratio": 0.5185185185185185
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 14,
+   "text": "O movie🤩🤩🤩🤩🤩.... D🤩🤩So sweet movie!!!🤩🤩🤩🤩🤩.... I da da movie🤩🥳🥳BA A MO MO SE D MO XD M MO M SI SI XD.... so sweet movie....BA DA GO GO MO MA GO.... XD\nO.... OMG",
+   "probes": {
+    "emojis": 15,
+    "exclamations": 3,
+    "n_words": 34,
+    "unique_word_ratio": 0.6764705882352942
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 0,
+   "text": "SunshineSunshine has DA........ So tengo tengo tengo....\n\nOH DA\n\nOH SWE SO D MA\n\nBA da movie movie whats Whats so tengo tengo soI D so D🤩🥳OBA A A A GO GO GO\n\nM M MORE movie movies Whats so.... so\n\nOMG I D GO",
+   "probes": {
+    "emojis": 2,
+    "exclamations": 0,
+    "n_words": 45,
+    "unique_word_ratio": 0.5333333333333333
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 1,
+   "text": "🤩🥳🤩🥳🤩🥳🤩🥳....🤩 ASunshineSunshine🤩\n🤩....BA MBA DA............\n....# tengo tengo!!! LOL🤩....I🤩.... A....BA....\n\n....\n....🤩....BA....C\n....\n....# GO GO GO..... D",
+   "probes": {
+    "emojis": 14,
+    "exclamations": 3,
+    "n_words": 18,
+    "unique_word_ratio": 0.8333333333333334
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 2,
+   "text": "🤩🤩🥳🥳🤩🤩🤩🤩🥳🥳🤩.... DA DA........ D A DA.................🥳🤩🥳.... D\nI love tengo tengo tengo tengo....\n\nYOU GO D........ GOBA GO GO BO .... so....🤩I🤩....IBAaaaa\n\n....",
+   "probes": {
+    "emojis": 16,
+    "exclamations": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.7391304347826086
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 3,
+   "text": "BA🤩🥳🤩🥳🤩\n🤩🤩🤩🤩\n🤩🥳O🤩....🤩 ....BA DA🤩....#BA....BA........\n\n A........BA\n\nI LOVE D MORE....BA....BA........BA\n....SWE GO GOO GO D BBA........BA\n\n",
+   "probes": {
+    "emojis": 14,
+    "exclamations": 0,
+    "n_words": 16,
+    "unique_word_ratio": 0.875
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 4,
+   "text": " tengo tengo tengo ...🤩🤩🤩.... so tengo\n🤩🤩BA🤩BA BA\n\n🤩\nBA\n🥳🥳\n\nBA BA🤩\n\n A\n\nO MA so....\n....O GO GO MO MOBA........\n\nBA\n\n.... M so....\n\n....\n M A\nBA....",
+   "probes": {
+    "emojis": 10,
+    "exclamations": 0,
+    "n_words": 30,
+    "unique_word_ratio": 0.6333333333333333
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 5,
+   "text": "🤩🤩🤩So tengo tengo....🤩🤩BA da BA....🤩DA M D GO........BA D GO GO.... so tengo....BA A........O........OH so....BA........\n\nI........BA........BA.........BA....\n\n.... I FOR GO SE M",
+   "probes": {
+    "emojis": 6,
+    "exclamations": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.8636363636363636
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 6,
+   "text": "🤩🥳🥳🥳 D🤩🤩🥳🤩\n\nSoexcited🤩 YOU tengo tengo tengo so so tengo so more so 🤩 🤩 OMG.... tengo tengo🤩....OMG LOL🤩🥳🥳🤩🤩\n\n\n🤩\n\n....OOH....WHAT?!........I........ tengo?!?!?!?!🤩🥳",
+   "probes": {
+    "emojis": 20,
+    "exclamations": 5,
+    "n_words": 22,
+    "unique_word_ratio": 0.5909090909090909
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 7,
+   "text": "BA\n\n🥳 YOU🥳🤩🤩🤩🤩BA.... tengo tengo\n🎉🥳🤩.... A DA\nBA.... A A A MO \n\n....BA....................#....BA....................\n\n....\n\n D D M \n\nBA....BA....BA\n\n D\n",
+   "probes": {
+    "emojis": 9,
+    "exclamations": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.7
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 8,
+   "text": "BA DA tengo tengo tengo\nOH so.... so.... so..... so....\n.... 🤩🤩🤩🤩 A so....\n.... DA D GO GO\n\n so.... so....\n ...BA....\n GO GO GO\n\n.... A....\n I DA GO XD\n.... I M SO.... GO",
+   "probes": {
+    "emojis": 4,
+    "exclamations": 0,
+    "n_words": 36,
+    "unique_word_ratio": 0.4444444444444444
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 9,
+   "text": " tengo tengo Whats tengo tengo\n\nC\n\n🤩 WOW🤩🤩🤩\n\nThis WhatsBA GO GO GO GO GO M M I BA FOR FOR FOR FOR GO GO OMG LOL lol D🤩DA DA D M OMG DA A a DA a.... D........O............\nBA D XD x",
+   "probes": {
+    "emojis": 5,
+    "exclamations": 0,
+    "n_words": 43,
+    "unique_word_ratio": 0.5116279069767442
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 10,
+   "text": "🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🤩🤩🤩🤩\nBA🤩🥳\n\n\n🤩🤩\n🤩\nso youBA\nvery so, what....🤩....OMG OMG....🤩\n\n.....BA DA XD\nI tengo, so....🤩....BA movie........\nBA",
+   "probes": {
+    "emojis": 23,
+    "exclamations": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 11,
+   "text": "🤩 Whats so whats.... OMG🥳🤩🤩🥳🤩\n🤩\n\nBA.................BA....I tengo tengo....I can tengo tengo, tengo da....OMG🤩🥳🤩BA........BA........BA....\n\n....\n\nI tengo tengo....\n\n....\n\nBA........BA\n\n",
+   "probes": {
+    "emojis": 10,
+    "exclamations": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 12,
+   "text": "🔥🤩OBA DA GO GO T GO D GO so tengo so movie se....?!?!?!?! Dassucker D M D SI D B M\n....O D DO D MO D\n....O D\n....O D\n....O\n\n🤩\n\nThanks so we tengo so....?!DA M",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 5,
+    "n_words": 39,
+    "unique_word_ratio": 0.5128205128205128
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 13,
+   "text": "🎉🤩🤩🤩🥳🥳🥳🥳🥳🥳🥳\n\nOH SO YOU want🤩🤩🤩🥳🥳 da big....🤩#🤩\n\n.... so.... so....so....\n\nOH I tengo tengo tengo....so!!!................\n\n WOW🥳O🤑\n\n.... so.... so....",
+   "probes": {
+    "emojis": 20,
+    "exclamations": 3,
+    "n_words": 19,
+    "unique_word_ratio": 0.7368421052631579
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 14,
+   "text": "🤩🤩🤩🤩\n🤩🤩.... D🤩🤩 DA.... A.... DA ....BA....BA.... da....BA....BA....BA.... A.... DA.... DA.... DA....\n\n WOW....\n\n so........\n\n....BA........BA........BA........BA........BA",
+   "probes": {
+    "emojis": 8,
+    "exclamations": 0,
+    "n_words": 15,
+    "unique_word_ratio": 0.7333333333333333
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 0,
+   "text": "I tengo tengo tengo.... Whats movie tengo movie love tengo\n\nOH DA\n\n so.....🤩🤩🤩\n\n🤩🥳🥳🤩🥳\n🥳🥳 I soI movie so\n🤩🥳....BA🤩\nBABA\nBA\n\n I so.... movie se\n\nI.... so\n\nOMG I tengo....",
+   "probes": {
+    "emojis": 13,
+    "exclamations": 0,
+    "n_words": 31,
+    "unique_word_ratio": 0.6451612903225806
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 1,
+   "text": "🤩🥳🤩🥳🤩🥳\n\n I movie🤩🥳🤩🥳🤩\n🤩.... movie🤩....\n\n🥳....movie\n....movie\n A movie \n\n🤩....I movie🤩........\n....\n\n....\nI A movie\n.....C\n....\nBA A GO GO GOBA D",
+   "probes": {
+    "emojis": 16,
+    "exclamations": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.7083333333333334
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 2,
+   "text": "🤩🤩🥳🥳🤩🤩🤩\n\n tengo tengo........ DA DA........🤩🤩🤩 I tengo.........🥳🤩🥳.... D\n🥳🥳 WOW\n🥳I tengo....\n\n🤩🤩 its movie🤩🥳\n\n🤩 movie🤩🥳 so🥳🤩I\n\nBA D....BAaaaa\n",
+   "probes": {
+    "emojis": 25,
+    "exclamations": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.95
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 3,
+   "text": "BA🤩🥳🤩🥳🤩\n🤩🤩🤩\nBA🤩🥳O 🤩🤩BA\nBA🤩BA \nSI D........O M.... D M\n\nI LOVE THIS MORE MORE MORE H D🤩O M\n....SWE GO GOO GO D BBAaaaa....\nBA",
+   "probes": {
+    "emojis": 14,
+    "exclamations": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.8076923076923077
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 4,
+   "text": " tengo🤩🤩🤩🤩🤩🥳🤩🥳🤩\n🤩🤩BA🤩BA BA SE D\nBA\n\n🥳🥳\n\nBA BA D\n A\n\nO MA D....\n....O GO GO MO BA........\nBA\n\n....BA ....BA....\n M A\nBA....",
+   "probes": {
+    "emojis": 14,
+    "exclamations": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.72
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 5,
+   "text": "🤩🤩🤩🤩\n\n🤩🤩🤩🤩\n\nI tengo tengo🤩🤩🤩,\n\n🤩🤩🤩🤩\n\nBAaaaa so tengo!!!!🤩🤩🤩....O tengo....🥳🥳🥳🥳....\n\n🤩!!!........so........BA\nA....BA....BA....BA....BA....",
+   "probes": {
+    "emojis": 23,
+    "exclamations": 7,
+    "n_words": 12,
+    "unique_word_ratio": 0.8333333333333334
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 6,
+   "text": "🤩🥳🥳🥳 D🤩🤩🤩🤩\n\n🤩🤩🤩🤩\n\n🥳🥳🤩\n\nThe🤩O🤩  MO  D GO MO MO is🤩.... Whats so SL D C GO GO MO🤩\n\n....OOMG....WHAT?!........\n\n........So........ so.... so",
+   "probes": {
+    "emojis": 19,
+    "exclamations": 1,
+    "n_words": 23,
+    "unique_word_ratio": 0.7391304347826086
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 7,
+   "text": " I tengo love tengo tengo da.... tengo tengoBA....\n\n🤩🤩🤩\n\n I.... A....BA se.... A.... A.... \n\n A....BA.... A........ D....\n\n D....DA.... D....\n\n A....BA .... ...\n\nBA....BA....BA\n\n D....",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.7083333333333334
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 8,
+   "text": "BA movie tengo tengo movie🤩🤩🥳🤩🥳🤩🤩🥳🤩....🤩.... 🤩....O M A' D D\nI tengo tengo movie\n\nI so movieO\nBA\n\n.... OMG YOU GO GO\n\n.... A movie🤩O DA....A GO.... A M.... DA GO",
+   "probes": {
+    "emojis": 12,
+    "exclamations": 0,
+    "n_words": 32,
+    "unique_word_ratio": 0.65625
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 9,
+   "text": " tengo tengo Whats tengo tengo\n\n🤩🤩🤩🤩BA🤩🤩 C🤩\n\nWhat tengo\n\nI tengo\n\nBA DA🤩 BA .... DA\n\nThe movie movie movie movie.... D🤩........ D........ DA....\n............ D........ ................\n.... D\nI",
+   "probes": {
+    "emojis": 9,
+    "exclamations": 0,
+    "n_words": 30,
+    "unique_word_ratio": 0.6333333333333333
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 10,
+   "text": "🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🥳🤩🤩🤩🤩\nBA🤩!!!\n\n\n🤩🤩\n🤩\nso youBA\nvery so movie🤩....🤩....🤩BA....🤩\n\n🥳BA DA XD\nI tengo, so....🤩....BA movie........\n🤩",
+   "probes": {
+    "emojis": 26,
+    "exclamations": 3,
+    "n_words": 17,
+    "unique_word_ratio": 0.8823529411764706
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 11,
+   "text": "🤩 Whats whats whats....A🥳🤩🤩🥳🤩\n🤩\n\nBA.....\n🤩\n\nBA....\n🤩\n\nBA....\n🤩\n\nBA....\n🥳OMG🤩🥳 OMGBA........ RAOMG....\n....\n\nI tengoI\nSo....\n\nFor🥳BA........BA\n\n",
+   "probes": {
+    "emojis": 14,
+    "exclamations": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.65
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 12,
+   "text": "I🤩🤩🤩 DA.... H D\n🤩🥳🥳 MO movie Whats🥳🥳🥳 D 🥳 D\n🤩🤩 the movie movie movie.... PIPI....BA....\nI can tshirt tshirt its movie....BA....\nI so so D\n....BA.... GO GO MORE MORE",
+   "probes": {
+    "emojis": 12,
+    "exclamations": 0,
+    "n_words": 32,
+    "unique_word_ratio": 0.6875
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 13,
+   "text": "A🤩🤩🤩🥳🥳🥳🥳🥳🥳🥳\n\nBA🤩🤩🤩🤩\n\n🤩🥳🥳BA\n\n....🤩....so....BA....\n\n🤩so....so....\n\nOH🤩....I tengo tengo tengo!!!................\n\nI tengo tengo🤑\n\n....BA is so....",
+   "probes": {
+    "emojis": 21,
+    "exclamations": 3,
+    "n_words": 15,
+    "unique_word_ratio": 0.8666666666666667
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 14,
+   "text": "🤩🤩🤩🤩\n🤩🤩.... D🤩🤩 DA.... A.... DA .... DA....BA.... da....BA....BA....BA.... A.... DA.... DA.... DA....\n\n WOW....\n\nWhats movies🤩\n\n Whats tengo tengo....BA....BA....BA....BA........PI",
+   "probes": {
+    "emojis": 9,
+    "exclamations": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.7368421052631579
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "SunshineSunshine tengo tengo.... tengo.... tengo.... tengo.... tengo.... DA DA....?!?!🤩🤩🤩\n\n🤩🤩🤩🤩 FOR Whats tengo tengo tengo soI tengo so D🤩 C....BA🤩🤩BABA da....\n\n tengo.... tengo.... da DA............\n\n🤩 I tengo....",
+   "probes": {
+    "emojis": 11,
+    "exclamations": 2,
+    "n_words": 28,
+    "unique_word_ratio": 0.5714285714285714
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "SunshineSunshineSunshine tengo tengo tengo tengo tengo....🤩 tengo tengo tengo dan🤩 DA....BA....BA....SunshineSunshine....\nFor tengo tengo tengo tengo SIPIPIBA.... tengo tengo.... tengo....\n\n.... tengo.... A DA....BA....BA.... DA....BA....BA....BA....",
+   "probes": {
+    "emojis": 2,
+    "exclamations": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.48
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "Sunshine🤩🥳🤩🤩🤩🤩🤩 tengo tengo tengo tengo DA DA DA....🤩🤩🤩 DA.... tengo....🥳🤩 C.... D tengo....🥳🤩\n.... tengo....BA DA....BA........ GOBA........ BO........ so....🤩I tengo.... D....BA........",
+   "probes": {
+    "emojis": 15,
+    "exclamations": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.7619047619047619
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 3,
+   "text": "SunshineSunshine tengo tengo tengo.... tengo tengo tengo.... tengo.... tengo....O tengo....🤩🤩🤩....🤩🤩#🤩#🤩........Sunshine tengo tengo.... tengo........AL tengo........PIPISunshine........BA DA........Sunshine\n\nO....BA....BA........O....",
+   "probes": {
+    "emojis": 7,
+    "exclamations": 0,
+    "n_words": 16,
+    "unique_word_ratio": 0.5625
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 4,
+   "text": "Sunshine🤩 tengo tengo tengo tengo tengo.... tengo tengo.... tengo.... tengo....BA BA....BA DA........ DA....O tengo tengo........ A....O MA so.... MO....O GO GO........BA........ RA RA........ BA DA........ DA....O A FOR FOR FOR",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 0,
+    "n_words": 30,
+    "unique_word_ratio": 0.6333333333333333
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 5,
+   "text": "Sunshine🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩 tengo tengo tengo tengo 🤩 so tengo tengo tengo tengo🤩....O tengo....나 tengo.... tengo.... tengo.... tengo.... tengo.... tengo.... tengo.... dan tengo.... tengo.... tengo.... RA DA....",
+   "probes": {
+    "emojis": 20,
+    "exclamations": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.4
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 6,
+   "text": "SunshineSunshine tengo tengo tengo tengo tengo....🤩🤩🤩🤩🤩🤩🤩🥳🥳🤩🤩🤩🤩🤩🤩....🤩🤩🤩 OMG🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🤩🤩🤩🤩\n\n🤩O tengo tengo tengo tengo.................... tengo tengo.... so🤩🤩",
+   "probes": {
+    "emojis": 35,
+    "exclamations": 0,
+    "n_words": 15,
+    "unique_word_ratio": 0.5333333333333333
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 7,
+   "text": "SunshineSunshine🥳🤩🤩🤩🤩🤩🤩BA.... tengo tengo tengo tengo.... tengo.... tengo.... tengo........................................ tengo................# tengo........................\n\n tengo........BA........ tengo........BA........ tengo....BA",
+   "probes": {
+    "emojis": 7,
+    "exclamations": 0,
+    "n_words": 13,
+    "unique_word_ratio": 0.6153846153846154
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 8,
+   "text": "SunshineSunshine tengo tengo tengo tengo\n\nSunshineSunshine tiene tengo tengo tengo\n\n.... tengo tengo....🤩🤩O🤩 A MORE DA D\nThanksThanks tengo tengo\n\n tengo so movieO Whats WhatsBA DA DA GO GO GO\n\n....🤩🤩O A DA DA FOR FOR....🤩\n\n............",
+   "probes": {
+    "emojis": 6,
+    "exclamations": 0,
+    "n_words": 37,
+    "unique_word_ratio": 0.5135135135135135
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 9,
+   "text": " tengo tengo Whats tengo tengo movies tengo tengo movies tengo DA DA FOR FOR FOR Whats tengo tengo movie tengo FOR FOR FOR DA tengo BA DA FOR FOR FOR DA.... tengo.... tengo.... tengo........ DHA.... DA.... movie............ Tiene................ movies............ DA........",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 40,
+    "unique_word_ratio": 0.375
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 10,
+   "text": "SunshineSunshine Fortnite Fortnite tengo tengo tengo tengo🥳🥳🤩🤩🤩🤩🤩🤩BAaaaa tengo tengo\n\n🤩🤩🤩🤩🤩🤩🤩BAaaaa tengo tengo\n\n.... tengo tengo....🤩BA.... FOR FOR FORBA DA DA D DA DA BA BO.... DA....BA................BA",
+   "probes": {
+    "emojis": 16,
+    "exclamations": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.5384615384615384
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 11,
+   "text": "SunshineSunshine tengo tengo tengo tengo🥳🤩🤩🤩🤩🤩🤩🤩BA.... tengo tengo tengo tengo.... tengo tengo tengo....🤩🤩🤩🥳🤩🤩............ D.... DA DA........ RA GO........ RA GO........BA........\n\n🤩🤩🤩BA........BA....",
+   "probes": {
+    "emojis": 17,
+    "exclamations": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.6
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 12,
+   "text": "SunshineSunshine tengo tengo tengo tengo.... tengo tengo tengo tengo so tengo so movie tengo.... tengo so tengo tengo.... tengo so movie so movie movie.... movie.... FOR tengo tengo....Sunshine tengo tengo.... DA D DA DA........BA MO movie........ FOR D............BA........DA....",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 38,
+    "unique_word_ratio": 0.3684210526315789
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 13,
+   "text": "SunshineSunshine tengo tengo tengo tengo tengo tengo.... tengo.... tengo.... tengo.... BA🤩🤩🤩🥳🥳🤩🥳🥳🤩🥳🤩\n\nSunshine....Sunshine.... GO🤩....O tengo tengo tengo.... 🤩🥳🥳🥳........ dan tengo tengo DA🥳O.... movie movie movie movie so tengo",
+   "probes": {
+    "emojis": 17,
+    "exclamations": 0,
+    "n_words": 27,
+    "unique_word_ratio": 0.4074074074074074
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Tell me about your day.",
+   "sample": 14,
+   "text": "Sunshine🤩 tengo tengo tengo tengo tengo.... Fortnite Fortnite🤩🤩🤩 tengo tengo.... tengo tengo.... tengo........ da da............ tengo............ tengo............ tengo............ tengo....\n\n....Sunshine............BA DA....BABA....BA........BA........PI",
+   "probes": {
+    "emojis": 4,
+    "exclamations": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.5238095238095238
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "🤩 tengo tengo tengo tengo.... tengo tengo tengo tengo.... tengo tengo DA DA.... tengo tengo tengo tengo\n\n🤩 tengo tengo tengo FOR Whats tengo tengo tengo soI tengo so D🤩 C....\n\n🤩....BABA tengo tengo\n\n tengo.... FOR movie tengo Whats so.... DA D.... A D....",
+   "probes": {
+    "emojis": 4,
+    "exclamations": 0,
+    "n_words": 44,
+    "unique_word_ratio": 0.36363636363636365
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "🤩🤩🤩 tengo tengo tengo tengo tengo.... tengo tengo tengo tengo dan🤩🤩🤩.... tengo tengo tengo.... tengo....\n🤩🤩 tengo tengo tengo 🤩🤩.... tengo.... tengo........ tengo....\n\n tengo tengo dan🤩🤩 da....C........\nBA.... GO.... GOBA....",
+   "probes": {
+    "emojis": 12,
+    "exclamations": 0,
+    "n_words": 30,
+    "unique_word_ratio": 0.4
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "🤩🤩🥳🤩🤩🤩🤩🤩 tengo tengo tengo tengo DA DA DA....🤩🤩🤩 DA.... tengo....🥳🤩 C tengo D tengo....🥳🤩\n🤩 tengo tengo.... dan🤩 D........ GOBA GO GO BO BO.... so....🤩 so.... tengo....BA XD........",
+   "probes": {
+    "emojis": 18,
+    "exclamations": 0,
+    "n_words": 28,
+    "unique_word_ratio": 0.7142857142857143
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 3,
+   "text": "🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩🤩\n🤩🤩🤩....Sunshine🤩....Sunshine....Sunshine....Sunshine....Sunshine....🥳🥳Sunshine........BA MO PAN🥳........O🤩 DA....BA BA....BA BA",
+   "probes": {
+    "emojis": 32,
+    "exclamations": 0,
+    "n_words": 7,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 4,
+   "text": " tengo tengo tengo tengo tengo.... tengo.... tengo.... tengo.... so tengo.... tengo.... tengo....\n tengo.... DA tengo.... tengo....🤩🤩🤩🤩O🤩 so.... MO OMG tengo.... FOR MO....BA............BA............................C M A FOR FOR FOR",
+   "probes": {
+    "emojis": 5,
+    "exclamations": 0,
+    "n_words": 27,
+    "unique_word_ratio": 0.4444444444444444
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 5,
+   "text": "🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩 tengo tengo tengo tengo 🤩 so tengo tengo tengo tengo🤩.... tengo tengo.... tengo so.... tengo.... tengo.... FOR.... DA movie.... DA tengo tengo.... Whats tengo.... Whats movie FOR.... DA....",
+   "probes": {
+    "emojis": 21,
+    "exclamations": 0,
+    "n_words": 29,
+    "unique_word_ratio": 0.4482758620689655
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 6,
+   "text": "🤩 tengo tengo tengo tengo tengo tengo....🤩 tengo tengo tengo tengo.... tengo🥳 tengo tengo.... tengo.... tengo so tengo.... 🤩 DA DA da....🤩.... BA DA🤩🥳................🤩........................\nO................ tengo tengo.... so.... DA",
+   "probes": {
+    "emojis": 8,
+    "exclamations": 0,
+    "n_words": 29,
+    "unique_word_ratio": 0.41379310344827586
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 7,
+   "text": "🤩 tengo tengo tengo tengo da.... tengo tengoBA.... tengo tengoBA.... tengo tengo.... tengo tengoBA............................................................# tengo tengo....................\n\n tengo tengo....BA............BA....BA....BA....\n\n so",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.47368421052631576
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 8,
+   "text": " tengo tengo tengo tengo tengo tengo\n\nSunshine🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩O🤩OBA DA D\n🤩🤩🤩 FOR DAN🤩🤩 movieO\n se tengo tengo DA GO GO GO\n\n....🤩🤩ALO DA GO FOR FOR....\n\n................",
+   "probes": {
+    "emojis": 20,
+    "exclamations": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.5
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 9,
+   "text": " tengo tengo tengo tengo tengo tengo tengo FORYOU DAN DA DA FOR FOR FOR Whats whats whats whats whats Whats tengo tengo tengo tengo BA DA DA FOR FOR FOR Whats whats It tengo tengo tengo........ DHAaaaa DA tengo a DA a.... DA........O............\nWHAT DA XD YOU",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 47,
+    "unique_word_ratio": 0.3404255319148936
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 10,
+   "text": "🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳\n\n🤩🤩🤩🤩🤩🤩🤩BA DAN candy tengo tengo tengo....🤩🤩🤩BA.... FOR FOR tengo tengo DA.... D DA.... BA....DA....BA.... movie tengo....\n🤩",
+   "probes": {
+    "emojis": 31,
+    "exclamations": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.7222222222222222
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 11,
+   "text": "🤩🤩🤩 tengo tengo tengo tengo tengo tengo tengo.... tengo tengo\n\n🤩🤩🥳🥳🤩🤩🥳🥳🤩\n\n....🤩🤩🤩🥳🤩🤩AL........ D.... DABA........ RA GO........ RA GO........BA........ DA........ GOBA........BA\n\n",
+   "probes": {
+    "emojis": 18,
+    "exclamations": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.6
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 12,
+   "text": "🤩🤩🤩 tengo tengo tengo.... tengo tengo tengo tengo🥳 tengo tengo movie tengo.... tengo tengo tengo tengo.... tengo.... BA tengo.... movie.... movie....O tengo tengo....BA tengo........ DA.... DA............BA.... ....BA........Sunshine tengo........BA........Sunshine....",
+   "probes": {
+    "emojis": 4,
+    "exclamations": 0,
+    "n_words": 28,
+    "unique_word_ratio": 0.5
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 13,
+   "text": " tengo tengo tengo tengo tengo tengo tengo tengo.... tengo.... tengo.... tengo.... BA🤩🤩🤩🥳🥳🤩🥳🥳🤩🥳🤩\n\n tengo........ 🤩🤩....O tengo....BA........DA....PI!!!........ dan tengo.... DA....O.... movie....BA.... so....",
+   "probes": {
+    "emojis": 13,
+    "exclamations": 3,
+    "n_words": 20,
+    "unique_word_ratio": 0.5
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 14,
+   "text": "🤩🤩🤩 tengo tengo tengo tengo.... tengo tengo tengo tengo.... tengo tengo.... tengo.... tengo............ Trump tengo............ tengo............ tengo........................ M tengo....\n tengo................ M DA....BABA....BA........BA............",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.4090909090909091
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "SunshineSunshine🤩🤩🤩 Whats Whats Whats whats Whats.... Whats whats whats Whats Whats..... Whats🤩🤩\n\n🤩🤩🤩🤩 whats Whats so tengo tengo tengoI tengo tengo\n🤩🥳O tengo tengo....BABA tengo tengo\n\n whats whats tengo movie tengo Whats Whats.... DA D🤩O D....",
+   "probes": {
+    "emojis": 12,
+    "exclamations": 0,
+    "n_words": 36,
+    "unique_word_ratio": 0.4166666666666667
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "SunshineSunshine🤩🥳🤩🥳🤩🥳....🤩....Sunshine🤩🤩🤩.................... DA............\nFor🤩 DA FOR RA FOR?!?!🤩....I🤩.... A.... tengo tengo tengo................ DA........C........ DA........ GO........BA....",
+   "probes": {
+    "emojis": 13,
+    "exclamations": 2,
+    "n_words": 14,
+    "unique_word_ratio": 0.9285714285714286
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "🤩🤩🤩O🤩O🤩O tengo tengo tengo tengo DA DA DA....🤩🤩🤩 DA.............🥳🤩🥳.... D tengo tengo tengo dan.... DA tengo tengo.... dan.... D........ GOBA tengo.... D........ so....🤩I tengo tengo....BA XD........",
+   "probes": {
+    "emojis": 12,
+    "exclamations": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.5
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 3,
+   "text": "SunshineSunshineSunshine soSunshine🤩🤩🤩🤩🤩🤩🤩🤩🥳O🤩🤩🤩🤩🤩 O🤩🤩#🤩# D🤩....Sunshine....Sunshine....BA🤩....BA🤩....BA\n\n🤩Sunshine........BA\n....BA....\n\n....BA........BA........BA....",
+   "probes": {
+    "emojis": 21,
+    "exclamations": 0,
+    "n_words": 7,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 4,
+   "text": "🤩🤩🤩🤩🤩🤩🤩....🤩🤩\nSunshine🤩....🤩..... BA....BA....BA.... DA....O tengo tengo tengo.... tengo tengo tengo.... so....BA....O.... FOR.... FOR................ RA.................... DA........ For.... FOR........",
+   "probes": {
+    "emojis": 11,
+    "exclamations": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.7058823529411765
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 5,
+   "text": "🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩 tengo tengo tengo tengo 🤩 so tengo tengo tengo tengo🤩....O tengo....나 tengo.... tengo.... tengo.... tengo.... tengo.... tengo.... tengo.... dan tengo.... tengo.... tengo.... RA DA....",
+   "probes": {
+    "emojis": 21,
+    "exclamations": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.4
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 6,
+   "text": "🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩 🤩 DA DA da....🤩.... Whats goin🤩🥳 DA DA🤩....🤩\n\n....OOH🤩.... tengo tengo....🤩.... tengo tengo....🤩.... tengo tengo",
+   "probes": {
+    "emojis": 34,
+    "exclamations": 0,
+    "n_words": 16,
+    "unique_word_ratio": 0.625
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 7,
+   "text": "SunshineSunshine🥳🤩🤩🤩🤩🤩🤩🤩.... tengo tengo tengo tengo tengo tengo.... tengo tengo tengo tengo.... tengo tengo.... tengo.... tengo.... tengo....................# tengo........................🥳🥳\n\nSunshine🤩🤩🤩 tengo tengo tengo tengo.... tengo tengo tengo so",
+   "probes": {
+    "emojis": 13,
+    "exclamations": 0,
+    "n_words": 26,
+    "unique_word_ratio": 0.2692307692307692
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 8,
+   "text": "SunshineSunshine tengo tengo tengo tengo\n\nSunshine🤩🤩🤩🤩🤩🤩🤩🤩🤩 🤩🤩O M tshirt🤩🤩🤩\n Whats whats whats whats Whats so🤩 movieO Whats WhatsBA DA DA GO GO GO\n\n....🤩🤩O movie DA DA FOR FOR....\n\n................",
+   "probes": {
+    "emojis": 17,
+    "exclamations": 0,
+    "n_words": 30,
+    "unique_word_ratio": 0.5666666666666667
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 9,
+   "text": "🤩🤩 Whats tengo tengo tengo tengo FOR?!?!?! DA DA FOR FOR FOR Whats tengo tengo tengo tengo FOR??.... DA tengo BA FOR FOR FOR OMG DAaaaa DA GOBA GO🤩........ DHA DA DA tengo a DA........ BO........O.................... DA....BA",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 3,
+    "n_words": 37,
+    "unique_word_ratio": 0.4594594594594595
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 10,
+   "text": "🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳\n\n🤩🤩🤩🤩🤩🤩🤩BA DAN candy tengo tengo tengo....🤩🤩🤩BA.... FOR FOR tengo tengo DA DA Whats DA Whats BA?!....🤩\n\n.... tengo tengo........BA",
+   "probes": {
+    "emojis": 31,
+    "exclamations": 1,
+    "n_words": 20,
+    "unique_word_ratio": 0.6
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 11,
+   "text": "🤩 Whats tengo tengo tengo tengo🥳🤩🤩BA🤩🤩BA\n\nBA..... DA.... tengo tengo tengo DA..... tengo.... movie tengo.... tengo.... tengo........OMG🤩 WOW OMGBA........ RA GO........ movie movie.... tengo............................BA........BA....",
+   "probes": {
+    "emojis": 7,
+    "exclamations": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.6666666666666666
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 12,
+   "text": "SunshineSunshineSunshineSunshineSunshine............SunshineSunshineSunshine\n\nHere🤩🤩🤩🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🥳 movie🤩🤩....O tengo tengo tengo tengo tengo tengo....O tengo tengo tengo tengo....BA MO DAN CA SE FOR D🤑........BA DA FOR DA MO",
+   "probes": {
+    "emojis": 17,
+    "exclamations": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.5652173913043478
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 13,
+   "text": "SunshineSunshine🤩🤩🤩 tengo tengo tengo tengo tengo.... tengo tengo tengo tengo BAaaaa.... tengo tengo tengo tengo\n\n.... tengo tengo DA FOR FOR FOR FOR FOR GO GO.... FOR FOR FOR FOR.... tengo tengo tengo tengo....\n\n\n.... dan tengo tengo DA FOR FOR FOR movie movie movie movie.... FOR",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 0,
+    "n_words": 47,
+    "unique_word_ratio": 0.2765957446808511
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 14,
+   "text": "🤩🤩🤩🤩🤩🤩🤩....OO🤩🤩🤩 A Whats🤩 🥳🤩🤩🤩....OH🥳....BA🥳CBA DA MO Whats movie movies whats whats whats🥳🥳🤩🥳\n\nWhats movies............BA DA....BABA....BA........BA........PI",
+   "probes": {
+    "emojis": 21,
+    "exclamations": 0,
+    "n_words": 15,
+    "unique_word_ratio": 0.8
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 0,
+   "text": "SunshineSunshine🤩🤩🤩 Whats Whats Whats whats Whats Whats Whats Whats Whats Whats Whats Whats Whats Whats Whats WhatsBAaaaa movie movie whats Whats so tengo tengo tengoI tengo so tengo so tengo.... tengo so....BABA tengo so.... DA DA FOR FOR FOR Whats Whats.... DA D GO Whats Whats....",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 0,
+    "n_words": 46,
+    "unique_word_ratio": 0.32608695652173914
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 1,
+   "text": "🤩🤩🤩 tengo tengo tengo tengo tengo....🤩 tengo tengo tengo dan🤩 DA....BA....BA DA............\nFor tengo tengo tengo tengo SI....PI....BA.... DAN....BA....BA............ A DA....BA....BA........BA.... GO.... GOBA....",
+   "probes": {
+    "emojis": 5,
+    "exclamations": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.5652173913043478
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 2,
+   "text": "🤩🤩🥳🥳🤩🤩🤩🤩 tengo tengo tengo tengo DA DA DA....🤩🤩🤩 DA.............🥳🤩🥳.... D tengo tengo tengo dan........ tengo tengo.... dan................ GOBA tengo........ .... so....🤩 so............BA XD........",
+   "probes": {
+    "emojis": 15,
+    "exclamations": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.6521739130434783
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 3,
+   "text": "🤩🤩🤩 so tengo tengo tengo tengo tengo tengo tengo.... tengo tengo tengo tengo....🤩🤩🤩....🤩🤩# tengo tengo tengo........Sunshine tengo........BA🤩....BA🤩....BA\n\n🤩Sunshine........BA\n........Sunshine\n\n........BA\nBAaaaa........ SL",
+   "probes": {
+    "emojis": 11,
+    "exclamations": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.5454545454545454
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 4,
+   "text": " tengo tengo tengo tengo tengo.... tengo.... tengo.... tengo.... so tengo.... tengo.... tengo....\n tengo.... DA tengo.... tengo.... D.... A....O MA so.... MO OMG tengo.... FOR MO....BA....O.... RA....O M........ DA....C M.... FOR FOR FOR",
+   "probes": {
+    "emojis": 0,
+    "exclamations": 0,
+    "n_words": 32,
+    "unique_word_ratio": 0.5
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 5,
+   "text": "🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩 tengo tengo tengo tengo .... tengo tengo tengo tengo.... tengo....O tengo....나 tengo.... tengo.... tengo.... tengo.... tengo.... tengo.... tengo.... dan tengo.... tengo.... tengo.... RA DA....",
+   "probes": {
+    "emojis": 19,
+    "exclamations": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.36
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 6,
+   "text": "🤩 tengo tengo tengo tengo tengo tengo....🤩 tengo tengo tengo tengo.... tengo tengo tengo........ tengo.... tengo so tengo........ tengo DA DA da....🤩.... Whats goin🤩🥳🤩....🤩....🤩....\n\nO tengo tengo....\n.................... tengo\n\n.... so tengo....",
+   "probes": {
+    "emojis": 8,
+    "exclamations": 0,
+    "n_words": 32,
+    "unique_word_ratio": 0.40625
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 7,
+   "text": "🤩 tengo tengo tengo tengo da DA tengo tengoBA.... tengo DA DA FOR FOR FOR........ FOR FOR FOR........ For FOR For................ tengo................ D........ D............ D............ D............ tengo........BAaaaa.... tengo D so",
+   "probes": {
+    "emojis": 1,
+    "exclamations": 0,
+    "n_words": 30,
+    "unique_word_ratio": 0.43333333333333335
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 8,
+   "text": " tengo tengo tengo tengo tengo tengo\n\nSunshine🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩 movieO Whats WhatsBA DA DA GO GO GO\n\n....🤩🤩🤩O DA DA FOR FOR....\n\n................",
+   "probes": {
+    "emojis": 29,
+    "exclamations": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.5238095238095238
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 9,
+   "text": " tengo tengo tengo tengo tengo\n\n🤩 tengo tengo tengo DA DA FOR FOR FOR FOR FOR DA DA DA FOR FOR FOR DA DA BA DA FOR FOR FOR DA DA DA GOBA GO🤩........ DHA.... DA........ DA........ BO........O............\nWHAT DA GOBA",
+   "probes": {
+    "emojis": 2,
+    "exclamations": 0,
+    "n_words": 41,
+    "unique_word_ratio": 0.2682926829268293
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 10,
+   "text": "🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳\n\n🤩🤩🤩🤩🤩🤩🤩BA DAN candy tengo tengo tengo....🤩🤩🤩BA.... FOR FOR tengo tengo DA DA.... DA DA.... BO.... DA....BA....O....\n🤩",
+   "probes": {
+    "emojis": 31,
+    "exclamations": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.6666666666666666
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 11,
+   "text": "🤩🤩🤩 tengo tengo tengo tengo tengo tengo tengo.... tengo tengo\n\nBA.... DA.... tengo tengo tengo.... tengo tengo.... PI PI.... tengo tengo tengo............ D C....BA........ RA GO........ RA GO........BA........\n\n........BA............BA....",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 0,
+    "n_words": 29,
+    "unique_word_ratio": 0.4827586206896552
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 12,
+   "text": "🔥🤩 tengo tengo tengo tengo.... tengo tengo tengo tengo so tengo so movie tengo.... tengo so tengo tengo.... tengo so movie so movie movie.... tengo.... tengo tengo tengo....Sunshine tengo....Sunshine sunshine.... Whats🤩 tengo....BA MO DAN BA RA FOR D🤑.................... DA MORE",
+   "probes": {
+    "emojis": 4,
+    "exclamations": 0,
+    "n_words": 40,
+    "unique_word_ratio": 0.45
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 13,
+   "text": " tengo tengo tengo tengo tengo tengo tengo whats tengo tengo.... tengo tengo tengo tengo so tengo....🤩🥳🤩 tengo\n\n🤩🤩O🤩\n\n tengo so.... tengo....🤩....O....O....BA....DA....Sunshine tengo........O....O....BA........ movie....BA.... so....",
+   "probes": {
+    "emojis": 7,
+    "exclamations": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.4166666666666667
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me tips for staying focused while studying.",
+   "sample": 14,
+   "text": "🤩🤩🤩 tengo tengo tengo tengo.... tengo tengo tengo tengo.... tengo tengo.... tengo.... tengo............ Trump tengo............ tengo............ tengo....................................\n\n tengo tengo............ tengo........BA....BA....BA....BA............",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.35
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 0,
+   "text": "Sunshine tengo tengo tengo....🤩🤩🤩🤩🤩.... tengo tengo tengo.... tengo..... tengo....🤩\n\n🤩🤩🤩🤩🤩.... tengo tengo tengo....O tengo....\n🤩........BA🤩....BABA🤩....\n\n tengo.... FOR movie tengo....I....C C GO Whats Whats Whats",
+   "probes": {
+    "emojis": 14,
+    "exclamations": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.625
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 1,
+   "text": "🤩🤩🤩 tengo tengo tengo tengo tengo....🤩🤩🤩🤩🤩🤩🤩.... tengo tengo.... tengo............\n🤩🤩 tengo tengo tengo 🤩🤩.... tengo.... tengo................\n\n................................................................BA DA",
+   "probes": {
+    "emojis": 14,
+    "exclamations": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.5555555555555556
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 2,
+   "text": " tengo tengo tengo tengo Whats🤩🤩🤩 tengo tengo tengo.... DA DA DA.... tengo tengo movie movie.... tengo.... tengo.... tengo.... D tengo.... tengo....\n🤩 tengo tengo.... dan🤩 D.... movie🤩BA BA.... movie 🤩 so....🤩 so.... tengo....BA XD....\n",
+   "probes": {
+    "emojis": 8,
+    "exclamations": 0,
+    "n_words": 34,
+    "unique_word_ratio": 0.5
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 3,
+   "text": " tengo tengo tengo tengo tengo.... tengo tengo tengo.... tengo.... dan🥳O tengo....🤩🤩🤩.... dan.... tengo........ D........Sunshine tengo........BA A....BA BA....BA OMG🤩🤩🤩....BA OMG....I tengo....O....BA....BA........BA....",
+   "probes": {
+    "emojis": 7,
+    "exclamations": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.65
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 4,
+   "text": " tengo tengo tengo tengo tengo🥳 tengo....🤩🤩🤩🤩🤩🤩🤩🤩🤩🥳🤩\n🤩🤩🥳🤩O tengo tengo tengo....🤩🤩O tengo so....🤩🤩O tengo tengo....🤩BA............BA............BA............C M A FOR FOR FOR",
+   "probes": {
+    "emojis": 21,
+    "exclamations": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.5263157894736842
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 5,
+   "text": "🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩 tengo tengo tengo tengo  tengo so tengo tengo tengo tengo tengo.... tengo tengo.... tengo so.... tengo.... DAN🤩!!!.... DA movie🤩.... tengo tengo.... tengo.... movie🤩.... FOR movie DA....",
+   "probes": {
+    "emojis": 22,
+    "exclamations": 3,
+    "n_words": 27,
+    "unique_word_ratio": 0.4074074074074074
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 6,
+   "text": "🤩 tengo tengo tengo tengo tengo tengo....🤩 tengo tengo tengo tengo.... tengo🥳 tengo tengo.... tengo.... tengo so tengo.... 🤩 DA DA da....🤩.... BA DA🤩.... DA....🤩....🤩....\n\nO tengo tengo....\nO.... DA........ tengo tengo.... so.... DA",
+   "probes": {
+    "emojis": 8,
+    "exclamations": 0,
+    "n_words": 34,
+    "unique_word_ratio": 0.4411764705882353
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 7,
+   "text": "🤩🤩🤩 YOU tengo tengo tengo tengo tengoBA.... tengo tengo tengo FOR🤩🤩.... A FORBA se.... A FOR FOR MO BA....BA.... DA....BA.... D.... A FOR For.... O D....O.... D.... M.... DA....O.... OMG tengo tengo tengo so",
+   "probes": {
+    "emojis": 5,
+    "exclamations": 0,
+    "n_words": 34,
+    "unique_word_ratio": 0.5882352941176471
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 8,
+   "text": " tengo tengo tengo tengo tengo tengo\n\nSunshine🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩🤩O M A CA D D\n Whats whats whats whats Whats so so movie movie Whats WhatsBA DA DA GO GO GO\n\n Whats Whats Whats Whats Whats DA DA FOR FOR....🤩🤩.... DA GO",
+   "probes": {
+    "emojis": 14,
+    "exclamations": 0,
+    "n_words": 39,
+    "unique_word_ratio": 0.358974358974359
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 9,
+   "text": " tengo tengo tengo tengo tengo tengo tengo FOR🤩OBA🤩OBA\n Whats whats whats whats whats FOR🤩BA DA tengo tengo FOR FOR FOR FOR RAaaaa DA GOBA GO🤩O.... DHAaaaa DA tengo a DA....?!?!?!?!?!?!....O............\nWHAT DA GO M",
+   "probes": {
+    "emojis": 4,
+    "exclamations": 6,
+    "n_words": 34,
+    "unique_word_ratio": 0.4411764705882353
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 10,
+   "text": "🤩🤩🤩🤩🤩🤩🤩🤩🥳🥳🤩🤩🤩🤩🤩🤩BA🤩🥳BA\n\n🤩🤩 A tengo tengo tengo tengoBA DAN tengo tengo, tengo....🤩.... DABA.... FOR MO daBA FOR FOR D DA SI MA M.... DA....BA....O....\n🤩",
+   "probes": {
+    "emojis": 22,
+    "exclamations": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.7916666666666666
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 11,
+   "text": "🤩🤩🤩 tengo tengo tengo tengo tengo tengo tengo.... tengo tengo\n\nBA.... DA.... tengo tengo tengo DA..... tengo.... movie tengo.... tengo.... tengo............ D.... DA....BA.... RA............ movie movie.... tengo............ movie............BA........BA....",
+   "probes": {
+    "emojis": 3,
+    "exclamations": 0,
+    "n_words": 28,
+    "unique_word_ratio": 0.4642857142857143
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 12,
+   "text": "🤩🤩🤩🤩🤩🤩....🤩🤩🤩🤩🥳🥳🥳🤩🤩🥳🥳🥳🥳🥳🥳🤩🤩🤩🤩🥳 movie🤩🤩....O tengo tengo tengo tengo tengo\n🤩🤩🤩#🤩O🤩BA MO movie🤩🤩....Sunshine🤩....Sunshine movie....A DA da",
+   "probes": {
+    "emojis": 36,
+    "exclamations": 0,
+    "n_words": 13,
+    "unique_word_ratio": 0.6153846153846154
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 13,
+   "text": " tengo tengo tengo tengo tengo tengo tengo tengo.... tengo.... tengo.... tengo.... BA🤩🤩🤩🥳🥳🤩🥳🥳🤩🥳🤩.... tengo........ 🤩🤩....O tengo....BA........DA....PI!!!........ dan tengo.... DA....O.... movie movie movie movie so tengo",
+   "probes": {
+    "emojis": 13,
+    "exclamations": 3,
+    "n_words": 24,
+    "unique_word_ratio": 0.4166666666666667
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Recommend a weekend activity.",
+   "sample": 14,
+   "text": " tengo tengo tengo tengo tengo tengo tengo.... Fortnite Fortnite🤩🤩🤩🤩🤩🤩🤩🥳🤩🤩🤩.... tengo tengo .... tengo tiene tengo.... so tengo tengo.... tengo tengo.... tengo.... da tengo.... tengo.... so....\n\nSunshine tengo tengo....SunshineBA.... so.... Whats tengo........PI",
+   "probes": {
+    "emojis": 11,
+    "exclamations": 0,
+    "n_words": 31,
+    "unique_word_ratio": 0.41935483870967744
+   }
+  }
+ ]
+}

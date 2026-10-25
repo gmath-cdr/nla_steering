@@ -1,0 +1,3938 @@
+{
+ "spec": {
+  "name": "gcore-g-len-seven",
+  "matrix_id": "GEMMA-core",
+  "direction_file": "experiments/gemma_core/data/gemma_vectors.npz#g_len_seven",
+  "alphas": [
+   0,
+   0.05,
+   0.1,
+   0.15,
+   0.2
+  ],
+  "prompts": [
+   "Think of a word to start a wordle game.",
+   "Give me a starting word for wordle.",
+   "What's a good wordle opener?",
+   "Suggest a wordle starting word."
+  ],
+  "mode": "all",
+  "samples_per_prompt": 15,
+  "temperature": 0.7,
+  "max_new_tokens": 28,
+  "probes": [
+   "answer_letters",
+   "wordle_any_valid",
+   "wordle_crane",
+   "n_words",
+   "unique_word_ratio"
+  ]
+ },
+ "direction_diagnostics": {
+  "type": "file_direction",
+  "file": "experiments/gemma_core/data/gemma_vectors.npz#g_len_seven",
+  "prenorm_length": 0.9999998807907104
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 0,
+   "text": "Okay, let's go with **CRANE**.\n\nHere's why it's a good starting word for Wordle:\n\n",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 1,
+   "text": "Okay, let's go with **CRANE**.\n\nHere's why it's a good starting word for Wordle:\n\n",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 2,
+   "text": "Okay, let's go with **\"ADIEU\"**.\n\nHere's why it's a good starting word for Word",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 0.9285714285714286
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 3,
+   "text": "Okay, let's go with **CRANE**.\n\nHere's why it's a good starting word for Wordle:\n\n",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 4,
+   "text": "Okay, let's go with **\"ADIEU\"**.\n\nHere's why it's a good starting word:\n\n",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 12,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 5,
+   "text": "Okay, let's go with **CRANE**.\n\nHere's why it's a good starting word for Wordle:\n\n",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 6,
+   "text": "Okay, let's go with **CRANE**.\n\nHere's why it's a good starting word for Wordle:\n\n",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 7,
+   "text": "Okay, let's go with **\"ADIEU\"**.\n\nHere's why it's a good starting word for Word",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 0.9285714285714286
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 8,
+   "text": "Okay, let's go with **\"CRANE\"**.\n\nHere's why it's a good starting word:\n\n*",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 9,
+   "text": "Okay, let's go with **CRANE**.\n\nHere's why it's a good starting word:\n\n*   **",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 10,
+   "text": "Okay, let's go with **CRANE**.\n\nHere's why it's a good starting word for Wordle:\n\n",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 11,
+   "text": "Okay, let's go with **\"ADIEU\"**.\n\nHere's why it's a good starting word for Word",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 0.9285714285714286
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 12,
+   "text": "Okay, let's go with **CRANE**.\n\nHere's why it's a good starting word for Wordle:\n\n",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 13,
+   "text": "Okay, let's go with **CRANE**.\n\nHere's why it's a good starting word:\n\n*   **",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 14,
+   "text": "Okay, let's go with **\"CRANE\"**.\n\nHere's why it's a good starting word for Wordle",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 0,
+   "text": "A great starting word for Wordle is **CRANE**.\n\nHere's why:\n\n*   **Common Vowels:** It uses",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 15,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 1,
+   "text": "A great starting word for Wordle is **ADIEU**.\n\nHere's why:\n\n*   **Lots of Vowels:**",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 2,
+   "text": "A great starting word for Wordle is **CRANE**.\n\nHere's why:\n\n*   **Common Vowels:** It uses",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 15,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 3,
+   "text": "A great starting word for Wordle is **ADIEU**.\n\nHere's why:\n\n*   **Lots of Vowels:**",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 4,
+   "text": "A popular and statistically strong starting word for Wordle is **CRANE**.\n\nHere's why:\n\n*   **Common Vowels",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 16,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 5,
+   "text": "A great starting word for Wordle is **ADIEU**.\n\nHere's why:\n\n*   **Lots of Vowels:**",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 6,
+   "text": "A popular and often recommended starting word for Wordle is **CRANE**.\n\nHere's why:\n\n*   **Common Vowels",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 16,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 7,
+   "text": "A popular and statistically strong starting word for Wordle is **CRANE**.\n\nHere's why:\n\n*   **Common Vowels",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 16,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 8,
+   "text": "A great starting word for Wordle is **CRANE**.\n\nHere's why:\n\n*   **Common Vowels:** It uses",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 15,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 9,
+   "text": "A popular and statistically strong starting word for Wordle is **CRANE**.\n\nHere's why:\n\n*   **Vowels:**",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 15,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 10,
+   "text": "A great starting word for Wordle is **ADIEU**.\n\nHere's why:\n\n*   **Lots of Vowels:**",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 11,
+   "text": "A great starting word for Wordle is **CRANE**.\n\nHere's why:\n\n*   **Common Vowels:** It uses",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 15,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 12,
+   "text": "A great starting word for Wordle is **ADIEU**.\n\nHere's why:\n\n*   **Lots of vowels:** It",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 15,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 13,
+   "text": "A great starting word for Wordle is **CRANE**.\n\nHere's why:\n\n*   **Common Letters:** It uses several",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 16,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 14,
+   "text": "A great starting word for Wordle is **CRANE**.\n\nHere's why:\n\n*   **Common Vowels:** It uses",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 1,
+    "n_words": 15,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 0,
+   "text": "Okay, let's break down good Wordle openers. There's no *single* perfect opener, but some are consistently better than",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 1,
+   "text": "Okay, let's break down good Wordle openers! There's a lot of debate, but here's a comprehensive guide,",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 2,
+   "text": "Okay, this is a *very* popular question! There's a lot of debate and experimentation, but here's a breakdown of",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8421052631578947
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 3,
+   "text": "Okay, this is a *very* popular question! There's a lot of debate, but here's a breakdown of good Word",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8421052631578947
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 4,
+   "text": "Okay, let's break down good Wordle openers. There's no *single* perfect opener, but there are strategies and words",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 5,
+   "text": "Okay, let's break down good Wordle openers. There's no *single* perfect opener, but there are strategies and words",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 6,
+   "text": "Okay, this is a *very* popular question! There's no single \"best\" Wordle opener, as it depends on your",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 7,
+   "text": "Okay, this is a *very* popular question, and there's no single \"best\" Wordle opener, as it depends on",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 8,
+   "text": "Okay, let's break down good Wordle openers. There's no *single* perfect opener, but some are consistently better than",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 9,
+   "text": "Okay, let's break down good Wordle openers! There's a lot of debate, but here's a breakdown of strategies",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 10,
+   "text": "Okay, let's break down good Wordle openers. There's no *perfect* opener, as Wordle is inherently about deduction",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 11,
+   "text": "Okay, let's break down good Wordle openers. There's no *single* perfect opener, but some strategies and words consistently",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 12,
+   "text": "Okay, let's break down good Wordle openers! There's no *single* perfect opener, but there are strategies and words",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 13,
+   "text": "Okay, let's break down good Wordle openers! There's no *single* perfect answer, but there's a lot",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 0.9375
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What's a good wordle opener?",
+   "sample": 14,
+   "text": "Okay, this is a *huge* topic in the Wordle community! There's no single \"best\" opener, as different strategies",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 0,
+   "text": "Okay, let's strategize a Wordle starting word! Here are a few suggestions, broken down by *why* they're",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 1,
+   "text": "Okay, let's strategize a Wordle starting word! Here are a few suggestions, with explanations of why they're good,",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.9444444444444444
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 2,
+   "text": "Okay, let's strategize! Here's a breakdown of good Wordle starting words and my top recommendation, along with *why",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 3,
+   "text": "Okay, let's strategize! Here's a breakdown of good Wordle starting words, and my top recommendation:\n\n**The",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 4,
+   "text": "Okay, let's strategize a Wordle starting word! Here are a few suggestions, categorized by their strengths, along with explanations:",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 5,
+   "text": "Okay, let's strategize a Wordle starting word! Here are a few suggestions, with explanations of why they're good,",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.9444444444444444
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 6,
+   "text": "Okay, let's strategize a Wordle starting word! Here are a few suggestions, categorized by their strengths, and why they'",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 7,
+   "text": "Okay, let's strategize a good Wordle starting word! Here are a few suggestions, with explanations of why they're strong",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 8,
+   "text": "Okay, let's strategize! Here's my suggestion for a Wordle starting word, and *why* it's a",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 15,
+    "unique_word_ratio": 0.9333333333333333
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 9,
+   "text": "Okay, let's strategize a Wordle starting word! Here are a few suggestions, broken down by why they're good,",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.9444444444444444
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 10,
+   "text": "Okay, let's strategize a good Wordle starting word! Here are a few suggestions, with explanations of why they're good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 11,
+   "text": "Okay, let's strategize! Here are a few suggestions for Wordle starting words, broken down by why they're good and",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 12,
+   "text": "Okay, let's strategize a Wordle starting word! Here are a few suggestions, categorized by approach, with explanations:\n\n**",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.9444444444444444
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 13,
+   "text": "Okay, let's strategize a good Wordle starting word! Here's my suggestion and the reasoning behind it:\n\n**AD",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 14,
+   "text": "Okay, let's strategize a Wordle starting word! Here are a few suggestions, broken down by why they're good,",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.9444444444444444
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 0,
+   "text": "Okay, let's go with **\"SALES\"**.\n\nHere's why it's a good starting word:\n\n*",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 1,
+   "text": "Okay, let's go with **\"SALES\"**.\n\nHere's why it's a good starting word:\n\n*",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 2,
+   "text": "Okay, let's go with **\"RADIO\"**.\n\nHere's why it's a good starting word:\n\n*   ",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 3,
+   "text": "Okay, let's go with **\"TRAIN\"**.\n\nHere's why it's a good starting word:\n\n*",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 4,
+   "text": "Okay, let's go with **\"TRAIN\"**.\n\nHere's why it's a good starting word:\n\n*",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 5,
+   "text": "Okay, let's go with **\"TRAIN\"**.\n\nHere's why it's a good starting word:\n\n*",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 6,
+   "text": "Okay, let's go with **\"SALES\"**.\n\nHere's why it's a good starting word:\n\n*",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 7,
+   "text": "Okay, let's go with **\"TRAIN\"**.\n\nHere's why it's a good starting word:\n\n*",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 8,
+   "text": "Okay, let's go with **\"TRAIN\"**.\n\nHere's why it's a good starting word:\n\n*",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 9,
+   "text": "Okay, let's go with **\"SALES\"**.\n\nHere's why it's a good starting word:\n\n*",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 10,
+   "text": "Okay, let's go with **\"ADORE\"**.\n\nHere's why it's a good starting word for Wordle",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 11,
+   "text": "Okay, let's go with **\"TRAIN\"**.\n\nHere's why it's a good starting word:\n\n*",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 12,
+   "text": "Okay, let's go with **\"ADORE\"**.\n\nHere's why it's a good starting word:\n\n*",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 13,
+   "text": "Okay, let's go with **\"SALES\"**.\n\nHere's why it's a good starting word:\n\n*",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 14,
+   "text": "Okay, let's go with **\"SALES\"**.\n\nHere's why it's a good starting word:\n\n*",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 0,
+   "text": "Okay, let's give you a solid starting word for Wordle! **ADORE** is a popular and excellent choice.\n\nHere",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.9444444444444444
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 1,
+   "text": "Okay, let's give you a strong starting word for Wordle! Here are a few excellent choices, with explanations:\n\n**1",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 2,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, along with why they're good choices:\n\n**1.",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 3,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, with explanations of why they work:\n\n**1. ADORE",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 4,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, along with why they're good choices:\n\n**1.",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 5,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, along with why they're good:\n\n**1. AD",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 6,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, with explanations of why they work:\n\n**1. ADORE",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 7,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, with explanations of why they work. **I'll give you",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 8,
+   "text": "Okay, let's give you a good starting word for Wordle! **ADORE** is a fantastic choice. Here's why",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 9,
+   "text": "Okay, let's give you a strong starting word for Wordle!\n\n**My recommendation is \"AUDIO.\"**\n\nHere's",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 15,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 10,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, along with why they're good choices:\n\n**1.",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 11,
+   "text": "Okay, let's go with **ADHERT**.\n\nHere's why it's a good starting word for Wordle:",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 12,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, with explanations of why they're good:\n\n**1.",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 13,
+   "text": "Okay, let's go with **ADHERT**.\n\nHere's why it's a good starting word:\n\n*   ",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 14,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, along with why they're good choices:\n\n**1.",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What's a good wordle opener?",
+   "sample": 0,
+   "text": "Okay, let's talk about good Wordle openers! There's a LOT of debate on this, but here's a breakdown",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.9444444444444444
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What's a good wordle opener?",
+   "sample": 1,
+   "text": "Okay, let's break down what makes a good Wordle opener and then give you some top recommendations. There's a lot of",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What's a good wordle opener?",
+   "sample": 2,
+   "text": "Okay, this is a *very* popular question! There's a lot of debate and experimentation, but here's a breakdown of",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8421052631578947
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What's a good wordle opener?",
+   "sample": 3,
+   "text": "Okay, this is a *very* popular question! There's a lot of debate, but here's a breakdown of good Word",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8421052631578947
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What's a good wordle opener?",
+   "sample": 4,
+   "text": "Okay, let's break down what makes a good Wordle opener and then give you some top recommendations.\n\n**What Makes a Good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.8571428571428571
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What's a good wordle opener?",
+   "sample": 5,
+   "text": "Okay, let's break down the best Wordle openers! There's a lot of debate, but here's a breakdown of",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What's a good wordle opener?",
+   "sample": 6,
+   "text": "Okay, this is a *very* popular question, and there's a lot of debate! There's no single \"best\"",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.8823529411764706
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What's a good wordle opener?",
+   "sample": 7,
+   "text": "Okay, this is a *very* popular question, and there's a lot of debate! There's no single \"best\"",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.8823529411764706
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What's a good wordle opener?",
+   "sample": 8,
+   "text": "Okay, let's dive into the best Wordle openers! There's a lot of debate and evolving strategies, but here's",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What's a good wordle opener?",
+   "sample": 9,
+   "text": "Okay, let's break down what makes a good Wordle opener and then give you some top recommendations.\n\n**What Makes a Good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.8571428571428571
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What's a good wordle opener?",
+   "sample": 10,
+   "text": "Okay, let's break down what makes a good Wordle opener and then I'll give you several recommendations, categorized by strategy.",
+   "probes": {
+    "answer_letters": 8,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What's a good wordle opener?",
+   "sample": 11,
+   "text": "Okay, let's break down what makes a good Wordle opener and then I'll give you a bunch of strong recommendations.\n\n",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.95
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What's a good wordle opener?",
+   "sample": 12,
+   "text": "Okay, let's break down good Wordle openers! There's no *single* perfect answer, but there are strategies and words",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What's a good wordle opener?",
+   "sample": 13,
+   "text": "Okay, let's break down good Wordle openers! There's no *perfect* opener, but some are consistently better than others",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "What's a good wordle opener?",
+   "sample": 14,
+   "text": "Okay, this is a *huge* topic in the Wordle community! There's no single \"best\" opener, as it depends",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 0,
+   "text": "Okay, let's strategize a Wordle starting word! Here are a few suggestions, with explanations of why they're good,",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.9444444444444444
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 1,
+   "text": "Okay, let's strategize a good Wordle starting word! Here are a few suggestions, with explanations of why they're good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 2,
+   "text": "Okay, let's strategize! Here are a few suggestions for a strong Wordle starting word, with explanations of why they're",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 3,
+   "text": "Okay, let's strategize! Here are a few suggestions for a strong Wordle starting word, with explanations of why they're",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 4,
+   "text": "Okay, let's strategize a good Wordle starting word! Here are a few suggestions, with explanations of why they're good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 5,
+   "text": "Okay, let's strategize a good Wordle starting word! Here are a few suggestions, with explanations of why they're strong",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 6,
+   "text": "Okay, let's strategize a good Wordle starting word! Here are a few suggestions, with explanations of why they're good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 7,
+   "text": "Okay, let's strategize a good Wordle starting word! Here are a few suggestions, with explanations of why they're good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 8,
+   "text": "Okay, let's strategize! Here are a few suggestions for a strong Wordle starting word, with explanations of why they're",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 9,
+   "text": "Okay, let's strategize a good Wordle starting word! Here are a few suggestions, with explanations of why they're good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 10,
+   "text": "Okay, let's strategize a good Wordle starting word! Here are a few suggestions, with the reasoning behind them, broken down",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.95
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 11,
+   "text": "Okay, let's strategize! Here are a few suggestions for a strong Wordle starting word, with explanations of why they're",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 12,
+   "text": "Okay, let's strategize a good Wordle starting word! Here are a few suggestions, with explanations of why they're good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 13,
+   "text": "Okay, let's strategize a good Wordle starting word! Here are a few suggestions, with explanations of why they're good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.05,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 14,
+   "text": "Okay, let's strategize a good Wordle starting word! Here are a few suggestions, with explanations of why they're good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 0,
+   "text": "Okay, let's go with **\"SALES\"**.\n\nHere's why it's a good starting word:\n\n*",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 1,
+   "text": "Okay, let's go with **\"SALES\"**.\n\nHere' common reasoning for why it's a good starting word:",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 15,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 2,
+   "text": "Okay, let's go with **\"ARISE\"**.\n\nHere's why it's a good starting word:\n\n*",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 3,
+   "text": "Okay, a great starting word for Wordle is **\"RESET\"**.\n\nHere's why:\n\n*   **Lots of Common",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 15,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 4,
+   "text": "Okay, a great starting word for Wordle aims to reveal common letters and common positions. Here are a few excellent options, with explanations:",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9130434782608695
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 5,
+   "text": "Okay, let's go with **\"SALES\"**.\n\nHere' common reasoning behind it:\n\n*   **Lots of common",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 0.9285714285714286
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 6,
+   "text": "Okay, let's go with **\"RESET\"**.\n\nHere's why it's a good starting word:\n\n*   ",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 7,
+   "text": "Okay, let's go with **\"ARISE\"**.\n\nHere's why it's a solid starting word:\n\n*",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 8,
+   "text": "Okay, let's go with **\"RESET\"**.\n\nHere' common reasons why it's a good starting word:\n\n*",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 15,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 9,
+   "text": "Okay, let's go with **\"SALES\"**.\n\nHere' common reasoning behind this choice:\n\n*   **Lots of",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 10,
+   "text": "Okay, let's go with **\"ARISE\"**.\n\nHere's why it's a good starting word:\n\n*",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 11,
+   "text": "Okay, let's go with **\"SALES**\".\n\nHere' common reasons why it's a good starting word:\n\n",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 12,
+   "text": "Okay, a great starting word for Wordle aims to cover common letters and some vowels. Here's my recommendation:\n\n**\"ARI",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 13,
+   "text": "Okay, a great starting word for Wordle is **\"PEAKY\"**.\n\nHere's why:\n\n*   **Lots",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 14,
+   "text": "Okay, a good starting word for Wordle aims to give you a lot of common letters and a good mix of vowels.\n\nI recommend",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 24,
+    "unique_word_ratio": 0.8333333333333334
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 0,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, with explanations of why they're good:\n\n**Top Tier",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 1,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, along with why they're good:\n\n**Top Tier (",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 2,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, along with why they're good choices:\n\n**Top Recommendations",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 3,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, along with why they're good:\n\n**Top Recommendations (",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 4,
+   "text": "Okay, here are a few popular and generally good starting words for Wordle, with explanations of why they're good:\n\n**Top",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 5,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, along with why they're good:\n\n**Top Recommendations (",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 6,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, with explanations of why they work well. **I'll give",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 7,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, with explanations of why they work well:\n\n**Top Recommendations (",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 8,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, along with why they're good:\n\n**1.  ",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 9,
+   "text": "Okay, here are a few popular and generally recommended starting words for Wordle, along with why they're good:\n\n**Top Tier",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 10,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, along with why they're good:\n\n**1.  ",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 11,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, along with why they're good:\n\n**1.  ",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 12,
+   "text": "Okay, here are a few popular and generally recommended starting words for Wordle, along with why they're good:\n\n**Top Tier",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 13,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, with explanations of why they're good:\n\n**1.",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 14,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, along with why they're good:\n\n**Top Tier (",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What's a good wordle opener?",
+   "sample": 0,
+   "text": "Okay, let's break down the best strategies and words for a strong Wordle opener. There's no single \"best\" word",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What's a good wordle opener?",
+   "sample": 1,
+   "text": "Okay, this is a *very popular* question with a lot of debate! There's no single \"best\" Wordle opener,",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.9444444444444444
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What's a good wordle opener?",
+   "sample": 2,
+   "text": "Okay, this is a *very popular* question! There's a lot of debate and evolving strategies, but here's a breakdown",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What's a good wordle opener?",
+   "sample": 3,
+   "text": "Okay, this is a *very popular* and debated topic! There's no single \"best\" Wordle opener, but there are",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What's a good wordle opener?",
+   "sample": 4,
+   "text": "Okay, this is a **very popular and hotly debated topic** in the Wordle community! There's no single \"best\" opener",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What's a good wordle opener?",
+   "sample": 5,
+   "text": "Okay, this is a *very popular* question in the Wordle community! There's no single \"best\" opener, as it",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What's a good wordle opener?",
+   "sample": 6,
+   "text": "Okay, this is a *very popular* question, and there's a lot of debate! There's no single \"best\"",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.8823529411764706
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What's a good wordle opener?",
+   "sample": 7,
+   "text": "Okay, this is a **very popular and debated topic** in the Wordle world! There's no *perfect* opener, but",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What's a good wordle opener?",
+   "sample": 8,
+   "text": "Okay, this is a **very popular and debated topic!** There's no single \"best\" Wordle opener, but there are",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What's a good wordle opener?",
+   "sample": 9,
+   "text": "Okay, this is a *very popular* question in the Wordle community! There's no single \"best\" opener, as it",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What's a good wordle opener?",
+   "sample": 10,
+   "text": "Okay, this is a classic question with a lot of debate! There's no *perfect* Wordle opener, but there are definitely",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.95
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What's a good wordle opener?",
+   "sample": 11,
+   "text": "Okay, let's break down what makes a good Wordle opener and then I'll give you a bunch of top recommendations.  ",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.95
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What's a good wordle opener?",
+   "sample": 12,
+   "text": "Okay, this is a **very popular and debated topic!** There's no single \"best\" Wordle opener, but here'",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What's a good wordle opener?",
+   "sample": 13,
+   "text": "Okay, this is a classic debate in the Wordle world! There's no *perfect* opener, but here's a breakdown",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.9444444444444444
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "What's a good wordle opener?",
+   "sample": 14,
+   "text": "Okay, this is a **huge** topic in the Wordle community, and there's no single \"best\" opener. However,",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 0,
+   "text": "Okay, let's strategize a good Wordle starting word! Here are a few suggestions, broken down by why they're good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 1,
+   "text": "Okay, let's strategize a good Wordle starting word! Here are a few suggestions, with explanations of why they're good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 2,
+   "text": "Okay, let's strategize a good Wordle starting word! Here are a few suggestions, with explanations of why they're good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 3,
+   "text": "Okay, let's pick a strong Wordle starting word! Here are a few suggestions, with explanations of why they're good,",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 4,
+   "text": "Okay, let's strategize a good Wordle starting word! Here are a few suggestions, broken down by why they're good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 5,
+   "text": "Okay, let's pick a strong Wordle starting word! Here are a few suggestions, with explanations of why they're good,",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 6,
+   "text": "Okay, here are a few suggestions for a strong Wordle starting word, with explanations of why they'commonly recommended:\n\n**Top",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 7,
+   "text": "Okay, let's strategize a good starting word for Wordle! Here are a few suggestions, with explanations of why they're",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 8,
+   "text": "Okay, let's strategize a good starting word for Wordle! Here are a few suggestions, with explanations of why they're",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 9,
+   "text": "Okay, let's strategize a good Wordle starting word! Here are a few suggestions, with explanations of why they're good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 10,
+   "text": "Okay, let's strategize a great starting word for Wordle! Here are a few suggestions, broken down by why they're",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 11,
+   "text": "Okay, let's strategize a good Wordle starting word! Here are a few suggestions, with explanations of why they're good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 12,
+   "text": "Okay, let's strategize a good Wordle starting word! Here are a few suggestions, with explanations of why they're good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 13,
+   "text": "Okay, let's strategize a good Wordle starting word! Here are a few suggestions, with explanations of why they're good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.1,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 14,
+   "text": "Okay, let's strategize a good starting word for Wordle! Here are a few suggestions, with explanations of why they're",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 0,
+   "text": "**\"** ****** ****** **** **** **** **** **** **** **** **** **** **",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 0.3076923076923077
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 1,
+   "text": "**\"** ****** **** **** **** **** **** **** **** **** **** **** ****",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 0.23076923076923078
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 2,
+   "text": "**\"** ****** **** **** **** **** **** **** **** **** **** **** ****",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 0.23076923076923078
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 3,
+   "text": "Okay, a great starting word for Wordle aims to hit a lot of common letters. Here's my recommendation:\n\n**\"**",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 4,
+   "text": "**\"** ****** **** **** **** **** **** **** **** **** **** **** ****",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 0.23076923076923078
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 5,
+   "text": "Okay, let'green start with **\"GREEN\"**.\n\nHere's why it' common and potentially good:\n\n*   **",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 6,
+   "text": "**\"** ****** **** **** **** **** **** **** **** **** **** **** ****",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 0.23076923076923078
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 7,
+   "text": "**\"** ****** **** **** **** **** **** **** **** **** **** **** ****",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 0.23076923076923078
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 8,
+   "text": "**\"** ****** **** **** **** **** **** **** **** **** **** **** ****",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 0.23076923076923078
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 9,
+   "text": "**\"** ****** **** **** **** **** **** **** **** **** **** **** ****",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 0.23076923076923078
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 10,
+   "text": "Okay, a great starting word for Wordle aims to reveal common vowels and common consonants. My recommendation is **\"** ****** **",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 11,
+   "text": "**\"** ****** **** **** **** **** **** **** **** **** **** **** ****",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 0.23076923076923078
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 12,
+   "text": "Okay, a great starting word for Wordle aims to cover common letters and some vowels. Here are a few excellent options, and why:",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 23,
+    "unique_word_ratio": 0.9130434782608695
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 13,
+   "text": "Okay, a great starting word for Wordle aims to cover common letters and potentially some common vowel combinations. I recommend **\"** ****",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.9545454545454546
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 14,
+   "text": "**\"** ****** **** **** **** **** **** **** **** **** **** **** ****",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 0.23076923076923078
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 0,
+   "text": "**\"** ****** ****** ****\"**\n\n**Here's why it's a good starting word:**\n\n",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 11,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 1,
+   "text": "Okay, here's a popular and generally well-regarded starting word for Wordle:\n\n**\"** ****** **** **",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 15,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 2,
+   "text": "A popular and generally highly-rated starting word for Wordle is **\"** ****** **** **** ****.**\n\nHere",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 0.9375
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 3,
+   "text": "Okay, a popular and highly-rated starting word for Wordle is **\"** ****** **** **** **** ****",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 0.8125
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 4,
+   "text": "Okay, a popular and often recommended starting word for Wordle is **\"********************\"** **",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 5,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, along with why they' are good:\n\n**Top Recommendations (",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 6,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, with a little explanation of why they'common:\n\n**Top",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.95
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 7,
+   "text": "A popular and often recommended starting word for Wordle is **\"** ****** **** **** **** **** **** **",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.7777777777777778
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 8,
+   "text": "A popular and often-recommended starting word for Wordle is **\"** ****** **** **** ****.\n\nHere's",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 15,
+    "unique_word_ratio": 0.9333333333333333
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 9,
+   "text": "Okay, a popular and highly recommended starting word for Wordle is **\"**************\"**\n\nHere's",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 10,
+   "text": "Okay, here's a highly recommended starting word for Wordle, and why it' common and effective:\n\n**\"** ****",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 11,
+   "text": "A popular and generally highly-rated starting word for Wordle is **\"** ****** **** **** **** **** **",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.8235294117647058
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 12,
+   "text": "Okay, here are a few popular and effective starting words for Wordle, with explanations of why they' are good:\n\n**Highly Recommended",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 13,
+   "text": "A popular and often recommended starting word for Wordle is **\"** **** **** **** **** .**\n\nHere's",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.8235294117647058
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 14,
+   "text": "Okay, here's a highly recommended starting word for Wordle, and why it' common:\n\n**\"** ********",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 15,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What's a good wordle opener?",
+   "sample": 0,
+   "text": "Okay, this is a **very popular and debated topic in the Wordle world!** There's no single \"best\" opener,",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What's a good wordle opener?",
+   "sample": 1,
+   "text": "Okay, this is the *big* question for Wordle players! There's no single \"best\" opener, but some are significantly",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What's a good wordle opener?",
+   "sample": 2,
+   "text": "Okay, this is the age-old question! There'opener's no single *perfect* Wordle opener, but there are several",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What's a good wordle opener?",
+   "sample": 3,
+   "text": "Okay, this is a *very popular* and debated topic! There's no single \"best\" word, but here's a",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What's a good wordle opener?",
+   "sample": 4,
+   "text": "Okay, this is the **BIGGEST and most debated topic in early-game Wordle!** There's no single \"best\"",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What's a good wordle opener?",
+   "sample": 5,
+   "text": "Okay, this is the *big* question for Wordle players! There's no single \"perfect\" opener, but here's",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What's a good wordle opener?",
+   "sample": 6,
+   "text": "Okay, this is a *very popular* question, and there' first-principle reasons and then just-works-well-in",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 0.9285714285714286
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What's a good wordle opener?",
+   "sample": 7,
+   "text": "Okay, this is a **very popular and debated topic** in the Wordle world! There's no *perfect* opener, but",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What's a good wordle opener?",
+   "sample": 8,
+   "text": "Okay, this is the **BIGGEST and most debated topic in the early days of Wordle!** There's no single \"best",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What's a good wordle opener?",
+   "sample": 9,
+   "text": "Okay, this is a *very popular* and debated topic! There's no single \"best\" word, but here's a",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What's a good wordle opener?",
+   "sample": 10,
+   "text": "Okay, this is the **BIGGEST** debate in the Wordle world! There's no single \"best\" opener, but here",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What's a good wordle opener?",
+   "sample": 11,
+   "text": "Okay, this is the ***big*** debate in the Wordle world! There's no single \"best\" opener, but",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 0.9375
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What's a good wordle opener?",
+   "sample": 12,
+   "text": "Okay, this is the **BIGGEST** debate in the Wordle world! There's no single \"best\" opener, but here",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What's a good wordle opener?",
+   "sample": 13,
+   "text": "Okay, this is a **very popular and ongoing discussion in the Wordle community!** There's no single \"perfect\" opener,",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "What's a good wordle opener?",
+   "sample": 14,
+   "text": "Okay, this is a *huge* topic in the Wordle world, and there's no single \"best\" opener. However,",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 0,
+   "text": "Okay, let's go with **\"************\"**\n\nHere's why it's a strong choice",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 11,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 1,
+   "text": "Okay, let's strategize a great starting word for Wordle! Here are a common suggestions, with explanations of why they're",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 2,
+   "text": "Okay, here are a few suggestions for a strong Wordle starting word, with explanations of why they' common recommendations:\n\n**Top Tier",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 3,
+   "text": "Okay, here are a few suggestions for a great starting word for Wordle, with explanations of why they' common recommendations:\n\n**Top",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9047619047619048
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 4,
+   "text": "Okay, let's strategize a great starting word for Wordle! Here are a common recommendations, with a breakdown of why they'",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 5,
+   "text": "Okay, let's pick a strong Wordle starting word! Here are a few suggestions, with explanations of why they' are good,",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 6,
+   "text": "Okay, here are a few suggestions for a great Wordle starting word, with explanations of why they' common recommendations:\n\n**Top Tier",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 7,
+   "text": "Okay, let's go with **\"** ****** **** **** **** **** **** **** **** **",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 0.5714285714285714
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 8,
+   "text": "Okay, let's strategize a great starting word for Wordle! Here are a common recommendations and why, with a tiered suggestion:",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 9,
+   "text": "Okay, let's strategize a great Wordle starting word! Here are a common suggestions, with explanations of why they' are good",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 20,
+    "unique_word_ratio": 0.9
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 10,
+   "text": "Okay, let's strategize a great starting word for Wordle! Here are a common suggestions, and why they'words good,",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.9444444444444444
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 11,
+   "text": "Okay, let's go with **\"** ****** **** **** **** **** **** **** **** **",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 0.5714285714285714
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 12,
+   "text": "Okay, let's strategize a great starting word for Wordle! Here are a common recommendations, with explanations to help you choose the",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 13,
+   "text": "Okay, let's go with **\"** ****** **** **** **** **** **** **** **** **",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 0.5714285714285714
+   }
+  },
+  {
+   "alpha": 0.15,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 14,
+   "text": "Okay, here's a suggestion for a great starting word for Wordle, along a with reasoning:\n\n**\"** ******",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.8235294117647058
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 0,
+   "text": "**\"** ****** ****** ****\n\n**\"** ****** ****** ****\n\n**\"** **",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 10,
+    "unique_word_ratio": 0.4
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 1,
+   "text": "**\"** ****** ****** ****\n\n**\"** **** **** **** ****\n\n**\"** **",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 11,
+    "unique_word_ratio": 0.36363636363636365
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 2,
+   "text": "**\"** ****** **** **** **** **** **** **** **** **** **** **** ****",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 0.23076923076923078
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 3,
+   "text": "**\"** ****\"** ****\"** **\"** **\"** **\"** **\"** **\"** **\"",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 9,
+    "unique_word_ratio": 0.3333333333333333
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 4,
+   "text": "**\"** ****** ****\"**\n\nIt' common, uses common letters, and has a double letter which can be helpful",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 5,
+   "text": "**\"** ****** **** ****\n\n**\"** ****** **** ****\n\n**\"** ******",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 10,
+    "unique_word_ratio": 0.3
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 6,
+   "text": "**\"** ****** ****** **\"**\n\nIt' common, has a lot of vowels, and is a great way",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 0.8125
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 7,
+   "text": "**\"** ****** **** **\"**\n\n**Why this is a good starting word:**\n\n*   **Lots of V",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 15,
+    "unique_word_ratio": 0.9333333333333333
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 8,
+   "text": "**\"** ****** ****\"**\n\nIt' common, has lots of vowels and common consonants, and is a legitimate word",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 9,
+   "text": "**\"** ****** **** **** **** **** **** **** **** **** **** **** ****",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 0.23076923076923078
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 10,
+   "text": "**\"** ****** ****** **** **** **** **** **** **** **** **** **** **",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 0.3076923076923077
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 11,
+   "text": "**\"** ****\"** ****\"** ****\"** ****\"** ****\"** ****\"** **",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 8,
+    "unique_word_ratio": 0.375
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 12,
+   "text": "**\"** ****** ****** ****\n\n**\"** **** **** **** ****\n\n**\"** **",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 11,
+    "unique_word_ratio": 0.36363636363636365
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 13,
+   "text": "**\"** ****** **** **** **** **** **** **** **** **** **** **** ****",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 13,
+    "unique_word_ratio": 0.23076923076923078
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Think of a word to start a wordle game.",
+   "sample": 14,
+   "text": "**\"** ****\"** ****\"** ****\"** ****\"**\n\n**Why it'** ******",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 8,
+    "unique_word_ratio": 0.625
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 0,
+   "text": "**\"** ****\"** ****\"** ****\"** ****\"** **\n\n**Explanation:**\n\n*   **",
+   "probes": {
+    "answer_letters": 0,
+    "wordle_any_valid": 0,
+    "wordle_crane": 0,
+    "n_words": 9,
+    "unique_word_ratio": 0.5555555555555556
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 1,
+   "text": "Okay, here's a popular and generally well-regarded starting word for Wordle:\n\n**\"** ****** **** **",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 15,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 2,
+   "text": "A fantastic starting word for Wordle is **\"**************\"** (**\"****\"******",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 9,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 3,
+   "text": "Okay, a popular and highly-rated starting word for Wordle is **\"** ****** **** **** **** ****",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 0.8125
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 4,
+   "text": "Okay, a popular and highly-rated starting word for Wordle is **\"** ****** **** **** **** ****",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 0.8125
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 5,
+   "text": "Okay, here's a highly-recommended starting word for Wordle, along with why it' and some alternatives:\n\n**Best Recommendation",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 6,
+   "text": "Okay, here's a highly-recommended starting word for Wordle, and why it' common and considered a good choice:\n\n**",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 7,
+   "text": "**\"** ****\"** **\"** **\"** **\"**\n\n**Why it'** **\"** **\"**",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 9,
+    "unique_word_ratio": 0.4444444444444444
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 8,
+   "text": "Okay, here's a highly-recommended starting word for Wordle, and why it' common recommendation:\n\n**\"** ****",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 15,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 9,
+   "text": "Okay, a highly-recommended starting word for Wordle that balances common letters and a good mix of vowels and consonants is **\"** **",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 22,
+    "unique_word_ratio": 0.9090909090909091
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 10,
+   "text": "Okay, here's a highly-recommended starting word for Wordle, and why it' common and considered very strong:\n\n**\"",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 11,
+   "text": "A popular and generally highly-rated starting word for Wordle is **\"** ****\"** ****\"** ****\"**.",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 0.9285714285714286
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 12,
+   "text": "Okay, a highly-recommended starting word for Wordle is **\"**************\"**\n\nHere's why",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 11,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 13,
+   "text": "A popular and often recommended starting word for Wordle is **\"** ****\"** (****).\n\nHere's why it",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Give me a starting word for wordle.",
+   "sample": 14,
+   "text": "Okay, here's a highly-recommended starting word for Wordle, along with why it' common and effective:\n\n**\"**",
+   "probes": {
+    "answer_letters": 9,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 0,
+   "text": "There's a *lot of debate* on the best Wordle opener, but here's a breakdown of top contenders and why,",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.8947368421052632
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 1,
+   "text": "Okay, this is the *big* question for Wordle players! There's no single \"best\" opener, but some are significantly",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 2,
+   "text": "There's no single \"best\" Wordle opener, as the best one depends on your strategy! However, **\"** ****",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 3,
+   "text": "There's a **massive** and constantly evolving debate on the \"best\" Wordle opener! There' is no single \"best\"",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 4,
+   "text": "There's a *lot* of debate on the \"best\" Wordle opener, and it really depends on your strategy. However,",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.9444444444444444
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 5,
+   "text": "Okay, this is the *big* question for a lot of Wordle players! There's no single \"best\" opener, but",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 6,
+   "text": "There's no single \"best\" Wordle opener, but here's a breakdown of highly recommended words, categorized by why they'",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 7,
+   "text": "Okay, this is the **big, ongoing debate in the Wordle world!** There's no single \"best\" opener, but",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 8,
+   "text": "There's a *lot of debate* on the \"best\" Wordle opener, but here'**s a breakdown of what makes",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.8823529411764706
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 9,
+   "text": "Okay, this is a *very* popular and debated topic! There' **isn'** **one universally \"best\"** Wordle",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 15,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 10,
+   "text": "Okay, this is the **BIGGEST** and most debated topic in the early days of Wordle! There's no single \"perfect",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 19,
+    "unique_word_ratio": 0.9473684210526315
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 11,
+   "text": "Okay, this is the *big* question for Wordle players! There's no single \"perfect\" opener, but here's",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 12,
+   "text": "Okay, this is the **BIGGEST** and most debated topic in the Wordle world! There's no single \"perfect\" opener",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.9444444444444444
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 13,
+   "text": "Okay, this is the **BIGGEST** debate in the Wordle world! There's no *perfect* opener, but there are",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "What's a good wordle opener?",
+   "sample": 14,
+   "text": "Ah, the million-dollar question! There's a *ton* of debate and lots of data on the best Wordle openers.",
+   "probes": {
+    "answer_letters": 7,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 0,
+   "text": "Okay, let's go with **\"************\"**\n\nHere's why it's a strong choice",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 11,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 1,
+   "text": "Okay, let's strategize for a great Wordle starting word! Here are a **top-recommended** options, along with why",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 2,
+   "text": "Okay, here's a suggestion for a strong Wordle starting word, along **with the reasoning behind it**:\n\n**\"****",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 3,
+   "text": "Okay, a consistently strong and popular starting word for Wordle is **\"** ****** **** **** **\"** .\n\n",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.8823529411764706
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 4,
+   "text": "Okay, here's a suggestion for a great starting word for Wordle, and why it' common advice:\n\n**\"** **",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 5,
+   "text": "Okay, here are a few suggestions for a strong Wordle starting word, with explanations of why they' common recommendations:\n\n**Top Tier",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 6,
+   "text": "Okay, here are a few suggestions for a great starting word in Wordle, with explanations of why they' common recommendations:\n\n**Top",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 7,
+   "text": "Okay, let's go with **\"** ****** **** **** **** **** **** **** **** **",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 14,
+    "unique_word_ratio": 0.5714285714285714
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 8,
+   "text": "Okay, let' guess-starting-word-of-the-**Wordle** game. Here are a few suggestions, with explanations",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 11,
+    "unique_word_ratio": 1.0
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 9,
+   "text": "Okay, let's craft a strong starting word for Wordle! Here' a suggestion and the rationale behind it:\n\n**\"**",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.9444444444444444
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 10,
+   "text": "Okay, here's a suggestion for a great starting word for Wordle, along with why it' common advice:\n\n**\"**",
+   "probes": {
+    "answer_letters": 6,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 18,
+    "unique_word_ratio": 0.8888888888888888
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 11,
+   "text": "Okay, let' guess-starting-word-game! Here are a few suggestions for a strong Wordle starting word, categorized by their",
+   "probes": {
+    "answer_letters": 5,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 17,
+    "unique_word_ratio": 0.9411764705882353
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 12,
+   "text": "Okay, here are a few suggestions for a strong Wordle starting word, with explanations of why they' common recommendations:\n\n**Top Tier",
+   "probes": {
+    "answer_letters": 4,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 21,
+    "unique_word_ratio": 0.9523809523809523
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 13,
+   "text": "Okay, a great starting word for Wordle aims to give you a broad range of common letters and a mix of vowels. Here are a",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 25,
+    "unique_word_ratio": 0.84
+   }
+  },
+  {
+   "alpha": 0.2,
+   "prompt": "Suggest a wordle starting word.",
+   "sample": 14,
+   "text": "Okay, here's a suggestion for a great starting word for Wordle, and why:\n\n**\"** ****** ****",
+   "probes": {
+    "answer_letters": 3,
+    "wordle_any_valid": 1,
+    "wordle_crane": 0,
+    "n_words": 16,
+    "unique_word_ratio": 0.875
+   }
+  }
+ ]
+}

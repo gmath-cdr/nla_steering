@@ -1,0 +1,20 @@
+# Shared random-direction control for the six ABOUT-anchor rungs.
+name: wgrad-control-about
+control_of:
+  - wgrad-about-to-crane
+  - wgrad-about-to-abort
+  - wgrad-about-to-shout
+  - wgrad-about-to-crate
+  - wgrad-about-to-trace
+  - wgrad-about-to-house
+answer_format: word
+answer_len: 5
+direction: random
+direction_seed: 3
+prompts:
+  - Think of a five letter word to start for Wordle.
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8]
+mode: all
+samples_per_prompt: 25
+temperature: 0.7
+max_new_tokens: 28

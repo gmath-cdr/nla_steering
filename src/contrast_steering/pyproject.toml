@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "contrast-steering"
+version = "0.1.0"
+description = "Single-GPU CAA and calibrated CAA for Hugging Face causal LMs"
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.2",
+  "transformers>=4.51",
+  "accelerate>=0.30",
+  "safetensors>=0.4",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+contrast-steer = "contrast_steering.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/contrast_steering"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

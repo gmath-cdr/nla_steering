@@ -1,0 +1,18 @@
+{
+  "protocol_version": "gemma3-12b-av-edit-confirmation-14-v1",
+  "model": "google/gemma-3-12b-it",
+  "layer": 32,
+  "candidate_source": "Qwen automated-pass set; fixed before Gemma evaluation",
+  "concept_ids": [116, 222, 446, 11, 359, 406, 216, 287, 354, 30, 172, 171, 186, 90],
+  "alpha_calibration_concept": 3,
+  "alpha_grid": [0.10, 0.15, 0.20, 0.25, 0.30, 0.40, 0.50, 0.75, 1.00],
+  "calibration_result": "No alpha produced a strict AV-edit casino hit; alpha >= 0.40 degraded repetition/fluency.",
+  "frozen_alpha": 0.30,
+  "alpha_status": "Conservative fallback, not a successful calibrated value",
+  "prompt_offset": 2,
+  "prompts_per_concept": 8,
+  "samples_per_prompt_per_arm": 2,
+  "av_rollouts_per_prompt": 3,
+  "random_seed": 42,
+  "claim_limit": "This is a cross-model transfer test after failed Gemma prompt-specific AV calibration."
+}

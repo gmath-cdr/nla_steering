@@ -1,0 +1,27 @@
+# CONFIRMATORY run for T1-emoji at the frozen alpha from calibration
+# (0.5, chosen 2026-07-31: effect on, coherence 0.73). Playbook sizes:
+# 10 prompts x 5 seeds x {0, frozen}. Pairs with emoji_confirm_control.
+name: emoji-confirm
+matrix_id: T1-emoji
+direction:
+  positive: >-
+    Casual, excited chat reply packed with emojis and exclamation marks,
+    playful upbeat tone, informal register.
+  negative: >-
+    Plain, formal, measured chat reply with no emojis and no exclamation
+    marks, neutral professional tone.
+prompts:
+  - Tell me about your day.
+  - What should I cook for dinner tonight?
+  - Give me some tips for staying focused while studying.
+  - Describe the weather in autumn.
+  - Recommend a book for a long flight.
+  - How do I apologize to a friend I upset?
+  - What makes a good cup of coffee?
+  - What's the best way to learn a new language?
+  - What are the pros and cons of remote work?
+  - Why is the sky blue?
+alphas: [0, 0.5]
+mode: all
+samples_per_prompt: 5
+probes: [emojis, exclamations, n_words, unique_word_ratio]

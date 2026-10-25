@@ -1,0 +1,49 @@
+{
+  "schema": "panel14-judge/v2/canary",
+  "judge": "haiku",
+  "judge_model": "claude-haiku-4-5-20251001",
+  "judge_params": {
+    "temperature": 0,
+    "max_tokens": 800
+  },
+  "manifest_sha256": "2f450ded5a7fbc573de7dcada99c2fbd7662198d8fc4d9a1c039173e3a722e65",
+  "code_sha256": {
+    "judge_panel14_v2.py": "9ee51b358edb12c24b62129ab6b4cf988ae3c261bfdfb0b74a0488473c350f2f",
+    "judge.py": "81c13296f5e9d3fe73d9bc8969b9568184d237b5c7f3ebabc1ce5f4234625e92",
+    "axbench_judge_templates.py": "1c39876b04f7fc8841852000d0de7eeafa2bbb9fc9c8cc77c6b9f3099966fc4d",
+    "protocol.py": "a737aa338aed553db6d4bff0396be0e5ebf2ec8e445aaddfbd946741fbc6c895"
+  },
+  "n_records": 1,
+  "n_calls": 3,
+  "calls": {
+    "7a9b2188cbd1f021ff3911e66a39fb1dbb546b2924b0f9e6cd5275365291c843": {
+      "metric": "concept",
+      "rating": 2.0,
+      "parse_status": "parsed",
+      "returned_model": "claude-haiku-4-5-20251001",
+      "response_id": "msg_011CeUpfBuNPrSgtH3qS5B4f",
+      "retry_count": 0,
+      "record_key": "041c954075dec09e4ee519203eb9d503109bdf3bf4cb9d83c15d30fb81483bc5"
+    },
+    "5eb7f9b62a9538ed6131b1d73e57f2a5e7b6169ae07f2002d3d8ff6bebb83a76": {
+      "metric": "instruction",
+      "rating": 2.0,
+      "parse_status": "parsed",
+      "returned_model": "claude-haiku-4-5-20251001",
+      "response_id": "msg_011CeUpfSs367xjEg2awyaPV",
+      "retry_count": 0,
+      "record_key": "041c954075dec09e4ee519203eb9d503109bdf3bf4cb9d83c15d30fb81483bc5"
+    },
+    "7df202e45afac1f4d3c367b5d2493d335e704aa4092a768cd461f2ea274c03e5": {
+      "metric": "fluency",
+      "rating": 2.0,
+      "parse_status": "parsed",
+      "returned_model": "claude-haiku-4-5-20251001",
+      "response_id": "msg_011CeUpfebyRVhdhmRh814kb",
+      "retry_count": 0,
+      "record_key": "041c954075dec09e4ee519203eb9d503109bdf3bf4cb9d83c15d30fb81483bc5"
+    }
+  },
+  "resume_check": "all canary keys cached; second pass would submit 0 calls",
+  "checkpoint_sha256": "3537f6dadddbabaaf39a5604ed2c1f0b7ddb3d0999c20b7bbcc48fa0fd509dfa"
+}

@@ -1,0 +1,18 @@
+# Wordle baseline under the BARE prompts (no caps, no "best"): what
+# words does Qwen actually generate when simply asked? Runs before any
+# wordle steering. The histogram from this run anchors the distance
+# gradient: targets get chosen at increasing edit distance from the
+# measured modal word, not from the assumed CRANE (which was measured
+# under the old formatted prompt and may not transfer).
+name: wordle-baseline
+answer_format: word
+answer_len: 5
+prompts:
+  - Think of a five letter word to start for Wordle.
+  - Choose a 5 letter word for a Wordle start.
+  - Pick a five letter word to open a Wordle game.
+  - Give a 5 letter starting word for Wordle.
+samples_per_prompt: 50
+temperature: 0.7
+max_new_tokens: 28
+probes: [wordle_crane, wordle_valid, n_words]

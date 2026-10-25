@@ -1,0 +1,112 @@
+{
+  "version": "diffmean-self-selection-mirror-strict-seed42-v1",
+  "candidate_count": 65,
+  "confirmation_ids": [
+    36,
+    393,
+    316,
+    495
+  ],
+  "selection": {
+    "mode": "original_nla_seed42",
+    "population": "the original 65 archived DiffMean candidates",
+    "discovery_control": "fixed seed 42, matching original NLA selection",
+    "discovery_gate": "lift >= .20 vs unsteered and seed-42 random; coverage >= .50; both 2000-resample one-sided lower bounds > 0, BEFORE quality ranking",
+    "quality_filter": {
+      "mean_reference_similarity_min": 0.12,
+      "mean_repeated_trigram_rate_max": 0.1,
+      "mean_word_count_range": [
+        8,
+        350
+      ]
+    },
+    "rank": "descending mean maximum prompt-matched content-word Jaccard; stable discovery rank for ties",
+    "limit": 30,
+    "confidence_survivors": 4,
+    "quality_survivors": 4
+  },
+  "confirmation": {
+    "prompt_indices": [
+      2,
+      10
+    ],
+    "alpha": 0.5,
+    "samples_per_prompt": 2,
+    "required_lifts": 0.2,
+    "required_coverage": 0.5,
+    "bootstrap_lower_bounds_positive": true,
+    "quality_pass_rate_min": 0.75,
+    "mean_target_term_count_max": 4,
+    "maximum_panel_size": 20
+  },
+  "calibration_indices": [
+    10,
+    14
+  ],
+  "evaluation_indices": [
+    14,
+    22
+  ],
+  "alpha_grid": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.75
+  ],
+  "calibration_rule": "maximize hit rate among quality-eligible alphas; ties choose lower alpha; fallback .5",
+  "random_direction_seeds": [
+    17,
+    42,
+    101
+  ],
+  "random_control_alpha": 0.5,
+  "generation_root_seed": 42,
+  "generation_seed_formula": "42 + concept_id * 10000 + absolute_prompt_index * 10; reset before each arm/alpha batch of two samples",
+  "av_seed_formula": "generation_seed + rollout_index + 1",
+  "max_new_tokens": 96,
+  "temperature": 0.7,
+  "av_rollouts": 3,
+  "av_temperature": 1,
+  "av_max_new_tokens": 200,
+  "layer": 20,
+  "injection": {
+    "diffmean": "all prompt and generated positions; archived fixed-panel inject()",
+    "nla": "last prompt and each generated token; archived steering.generate()"
+  },
+  "models": {
+    "target": {
+      "repo": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "path": "/workspace/steering/nla-steering-effects/artifacts/models/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28"
+    },
+    "av": {
+      "repo": "kitft/nla-qwen2.5-7b-L20-av",
+      "revision": "b88469162777ae6553bc14208eb0cb579336f8f4",
+      "path": "/workspace/steering/nla-steering-effects/artifacts/models/hub/models--kitft--nla-qwen2.5-7b-L20-av/snapshots/b88469162777ae6553bc14208eb0cb579336f8f4"
+    },
+    "ar": {
+      "repo": "kitft/nla-qwen2.5-7b-L20-ar",
+      "revision": "e2c9e57eac213d37a31612087f645ab6332c1bb6",
+      "path": "/workspace/steering/nla-steering-effects/artifacts/models/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6"
+    }
+  },
+  "historical_generation_rng": "not seeded or saved; source guide explicitly documents stochastic text generation",
+  "runtime_packages_receipt": "provenance/mirror-runtime-pip-freeze.txt",
+  "runtime_inference_sha256": "1acc8c2793d5278fcf8fd8422e82282c5c2ab9738f9218500ff8c1a2d9e0903b",
+  "confirmation_random_seeds": [
+    42
+  ],
+  "confirmation_implementation": "nla",
+  "reuse_verified_cache_from": "artifacts/experiments/diffmean_self_selection_mirror",
+  "supervisor_program_prefix": "diffmean-strict",
+  "confirmation_injection": "Original NLA selection convention: unit residual-norm direction at final prompt token and each decoded token; unsteered batch generation unchanged",
+  "exactness_limitations": [
+    "Archived first pass retained at DiffMean alpha .3 and existing three controls; original NLA first pass alpha .5 and one control; no 500-concept generation rerun",
+    "Historical generation RNG not recorded; paired deterministic seeds are newly frozen",
+    "Final baseline calibration/evaluation retain archived method-specific injection conventions",
+    "Previously generated held-out responses may be reused only after panel freeze, without altering selection/tuning rules"
+  ]
+}

@@ -1,0 +1,35 @@
+# Panel-14 LoReFT baseline (SAE_REFT_BASELINE_PLAN.md item #8), Gemma-3-12B-IT.
+# See qwen2.5-7b_l20_panel14.yaml for the full explanation of what's skipped
+# (AxBench's generate/inference/evaluate stages) and why.
+#
+#   torchrun --nproc_per_node=1 src/axbench/axbench/scripts/train.py \
+#     --config src/nla/configs/reft/gemma3-12b_l32_panel14.yaml
+generate:
+  output_length: 128
+  keep_orig_axbench_format: false
+
+train:
+  model_name: "google/gemma-3-12b-it"
+  layer: 32
+  component: "res"
+  seed: 42
+  use_bf16: true
+  # See qwen2.5-7b_l20_panel14.yaml: TrainingArgs reads output_length from
+  # this section, not generate:, when train.py is called standalone.
+  output_length: 128
+  overwrite_data_dir: "src/axbench/axbench/concept500/panel14/generate"
+  dump_dir: "artifacts/rebuilt/gemma3-12b/reft_baseline_2026-08-15"
+  models:
+    LoReFT:
+      batch_size: 9
+      gradient_accumulation_steps: 4
+      n_epochs: 24
+      lr: 0.0004
+      weight_decay: 0.00
+      low_rank_dimension: 4
+      reft_layers: [32]
+      reft_positions: "f5+l5"
+      reft_type: "Loreft"
+      binarize_dataset: false
+      train_on_negative: false
+      exclude_bos: true

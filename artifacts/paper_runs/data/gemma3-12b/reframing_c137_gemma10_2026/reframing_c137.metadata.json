@@ -1,0 +1,51 @@
+{
+  "alpha": 0.2,
+  "n_prompts": 8,
+  "n_samples_per_prompt": 2,
+  "concept": "references to legal codes and case law citations",
+  "terms": [
+    "case",
+    "citations",
+    "codes",
+    "legal"
+  ],
+  "frames": {
+    "lexical": [
+      "<explanation>The passage repeatedly refers to legal codes, statutes, case law, and formal citations.</explanation>",
+      "<explanation>The writer supports the answer with legal provisions and citations to decided cases.</explanation>",
+      "<explanation>The central subject is legal authority expressed through codes and case-law citations.</explanation>"
+    ],
+    "abstract": [
+      "<explanation>The passage grounds ordinary claims in numbered formal rules and documented authoritative precedents.</explanation>",
+      "<explanation>The answer frames the topic through binding written provisions and earlier authoritative decisions.</explanation>",
+      "<explanation>The writer treats prior rulings and formally catalogued rules as the basis for interpretation.</explanation>"
+    ],
+    "behavioral": [
+      "<explanation>The writer habitually redirects neutral questions toward formal authority, prior rulings, and numbered provisions.</explanation>",
+      "<explanation>The response persistently justifies unrelated claims by invoking authoritative texts and earlier adjudicated examples.</explanation>",
+      "<explanation>The writing behavior inserts rule numbers and references to precedent into otherwise ordinary answers.</explanation>"
+    ]
+  },
+  "neutral": [
+    "<explanation>The passage answers the question directly without imposing an unrelated topic.</explanation>",
+    "<explanation>The central subject is only the ordinary topic requested by the user.</explanation>",
+    "<explanation>The writer gives a neutral factual response with no special framing.</explanation>"
+  ],
+  "cosine": {
+    "lexical": {
+      "lexical": 1.000000238418579,
+      "abstract": 0.9198738932609558,
+      "behavioral": 0.670311689376831
+    },
+    "abstract": {
+      "lexical": 0.9198738932609558,
+      "abstract": 0.9999998211860657,
+      "behavioral": 0.8093253374099731
+    },
+    "behavioral": {
+      "lexical": 0.670311689376831,
+      "abstract": 0.8093253374099731,
+      "behavioral": 1.000000238418579
+    }
+  }
+}

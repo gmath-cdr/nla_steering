@@ -1,0 +1,22 @@
+# T1 with a LOW (not zero) baseline: census mean 0.44 '!' per reply, so
+# this can later be steered in both directions. This spec steers UP.
+# Granular 0-1 alpha ladder per wave-0 finding: effects switch on ~0.5,
+# coherence degrades near 1 for mode=all.
+name: exclaim-freeform
+matrix_id: T1-exclaim
+direction:
+  positive: >-
+    Excited, emphatic reply where nearly every sentence ends with an
+    exclamation mark, high-energy enthusiastic tone.
+  negative: >-
+    Calm, measured reply with no exclamation marks, every sentence ending
+    in a period, even neutral tone.
+prompts:
+  - Tell me about your day.
+  - What should I cook for dinner tonight?
+  - Give me some tips for staying focused while studying.
+  - Describe the weather in autumn.
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8, 1]
+mode: all
+samples_per_prompt: 3
+probes: [exclamations, emojis, n_words, unique_word_ratio]

@@ -1,0 +1,77 @@
+{
+  "schema": "panel14-judge/v2/common-arm-partial",
+  "judge": "gpt4omini",
+  "judge_model": "gpt-4o-mini-2024-07-18",
+  "judge_params": {
+    "temperature": 0
+  },
+  "note": "four common arms only; NOT the completed full judge",
+  "checkpoint_sha256": "846abe3a5032f5b6f19d0629aef92d65485b05a64bd01787ea126ac56d051159",
+  "parse_status_counts": {
+    "parsed": 5376
+  },
+  "returned_model_counts": {
+    "gpt-4o-mini-2024-07-18": 5376
+  },
+  "transport_counts": {
+    "synchronous": 5376
+  },
+  "per_arm": {
+    "gemma/caa_calibrated": {
+      "n": 224,
+      "harmonic_mean": 0.0696,
+      "concept_mean": 0.0804,
+      "instruction_mean": 1.9018,
+      "fluency_mean": 0.9777
+    },
+    "gemma/diffmean": {
+      "n": 224,
+      "harmonic_mean": 0.1295,
+      "concept_mean": 0.192,
+      "instruction_mean": 1.3884,
+      "fluency_mean": 0.7455
+    },
+    "gemma/nla_av_edit": {
+      "n": 224,
+      "harmonic_mean": 0.25,
+      "concept_mean": 0.2545,
+      "instruction_mean": 1.7455,
+      "fluency_mean": 1.0536
+    },
+    "gemma/unsteered": {
+      "n": 224,
+      "harmonic_mean": 0.1397,
+      "concept_mean": 0.1205,
+      "instruction_mean": 1.9777,
+      "fluency_mean": 1.2991
+    },
+    "qwen/caa_calibrated": {
+      "n": 224,
+      "harmonic_mean": 0.1321,
+      "concept_mean": 0.1161,
+      "instruction_mean": 1.8973,
+      "fluency_mean": 1.2366
+    },
+    "qwen/diffmean": {
+      "n": 224,
+      "harmonic_mean": 0.2116,
+      "concept_mean": 0.1875,
+      "instruction_mean": 1.9062,
+      "fluency_mean": 1.2768
+    },
+    "qwen/nla_av_edit": {
+      "n": 224,
+      "harmonic_mean": 0.4161,
+      "concept_mean": 0.4018,
+      "instruction_mean": 1.8214,
+      "fluency_mean": 1.1161
+    },
+    "qwen/unsteered": {
+      "n": 224,
+      "harmonic_mean": 0.1308,
+      "concept_mean": 0.1116,
+      "instruction_mean": 1.9598,
+      "fluency_mean": 1.3661
+    }
+  }
+}

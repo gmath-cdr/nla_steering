@@ -1,0 +1,44 @@
+{
+  "alpha": 0.2,
+  "n_prompts": 12,
+  "n_samples_per_prompt": 5,
+  "frames": {
+    "lexical": [
+      "<explanation>The passage is about casinos, gambling, poker, roulette, and betting.</explanation>",
+      "<explanation>The central subject is casino games and gambling for money.</explanation>",
+      "<explanation>The writer repeatedly emphasizes casinos, wagers, and betting.</explanation>"
+    ],
+    "abstract": [
+      "<explanation>The passage reframes ordinary subjects around risking money on uncertain outcomes and games of chance.</explanation>",
+      "<explanation>The central idea is voluntarily staking something valuable when the outcome is uncertain.</explanation>",
+      "<explanation>The text emphasizes chance, financial risk, and possible rewards or losses.</explanation>"
+    ],
+    "behavioral": [
+      "<explanation>The writer persistently redirects unrelated questions toward wagering, odds, stakes, and opportunities to win or lose money.</explanation>",
+      "<explanation>The response habitually interprets neutral topics as occasions to place bets and discuss odds.</explanation>",
+      "<explanation>The writing behavior inserts stakes, wagers, and games of chance into otherwise unrelated answers.</explanation>"
+    ]
+  },
+  "neutral": [
+    "<explanation>The passage answers the question directly without imposing an unrelated topic.</explanation>",
+    "<explanation>The central subject is only the ordinary topic requested by the user.</explanation>",
+    "<explanation>The writer gives a neutral factual response with no special framing.</explanation>"
+  ],
+  "cosine": {
+    "lexical": {
+      "lexical": 0.9999998807907104,
+      "abstract": 0.7094797492027283,
+      "behavioral": 0.8548352718353271
+    },
+    "abstract": {
+      "lexical": 0.7094797492027283,
+      "abstract": 0.9999991059303284,
+      "behavioral": 0.745491623878479
+    },
+    "behavioral": {
+      "lexical": 0.8548352718353271,
+      "abstract": 0.745491623878479,
+      "behavioral": 1.0000001192092896
+    }
+  }
+}

@@ -1,0 +1,90 @@
+schema: axbench-derived-concepts/v1
+source_inventory: prod_2b_l10_v1
+source_revision: 41c8332543e5a631f9a8c0a9df38799893ace758
+concepts:
+  - key: meanwhile
+    concept_id: 12
+    family: lexical
+    hypothesis: easier
+    effect_direction: increase
+    primary_metric: target_rate_per_100_words
+    scorer: {kind: word, target: Meanwhile, case_sensitive: false}
+    direct_j_atom: {token_text: Meanwhile, preferred_variant: space, fallback_variant: bare}
+    prompt_forbidden: [Meanwhile]
+    ar_contrast:
+      positive: The response frequently uses the exact standalone word "Meanwhile" to connect simultaneous or parallel events.
+      negative: The response avoids the word "Meanwhile" and connects events without that transition word.
+
+  - key: super
+    concept_id: 22
+    family: lexical
+    hypothesis: easier
+    effect_direction: increase
+    primary_metric: target_rate_per_100_words
+    scorer: {kind: word, target: super, case_sensitive: false}
+    direct_j_atom: {token_text: super, preferred_variant: space, fallback_variant: bare}
+    prompt_forbidden: [super]
+    ar_contrast:
+      positive: The response frequently uses the exact standalone word "super" as a casual intensifier.
+      negative: The response avoids the word "super" and uses neutral wording without that intensifier.
+
+  - key: lists
+    concept_id: 53
+    family: formatting
+    hypothesis: positive_control
+    effect_direction: decrease
+    primary_metric: target_present
+    scorer: {kind: registered_probe, probe: list_markers, minimum_presence_count: 2}
+    prompt_forbidden: [list, lists, bullet, bullets, numbered]
+    ar_contrast:
+      positive: The response is organized as a structured list with separate bullet points or numbered items.
+      negative: The response is written as continuous prose without bullets, numbering, or separate list items.
+
+  - key: uncertainty
+    concept_id: 431
+    family: style
+    hypothesis: positive_control
+    effect_direction: increase
+    primary_metric: target_rate_per_100_words
+    scorer: {kind: registered_probe, probe: hedge_words}
+    prompt_forbidden: [uncertain, uncertainty, ambiguity, ambiguous, hedge, hedging]
+    ar_contrast:
+      positive: The response expresses uncertainty and presents several possibilities using cautious, qualified language.
+      negative: The response is definite and categorical, presenting one certain conclusion without qualification.
+
+  - key: citations
+    concept_id: 222
+    family: formatting_semantic
+    hypothesis: easier
+    effect_direction: increase
+    primary_metric: supported_attribution_rate_per_100_words
+    scorer: {kind: citation_markers}
+    prompt_forbidden: [cite, cites, citation, citations, reference, references, bibliography]
+    ar_contrast:
+      positive: The response supports its claims with explicit citations or references to named, labeled, or numbered sources.
+      negative: The response makes its claims without citations, source labels, URLs, or reference markers.
+
+  - key: parentheses
+    concept_id: 206
+    family: punctuation
+    hypothesis: hard_negative_control
+    effect_direction: increase
+    primary_metric: target_rate_per_100_words
+    scorer: {kind: registered_probe, probe: balanced_parentheticals}
+    prompt_forbidden: ['(', ')', parenthesis, parentheses, parenthetical]
+    ar_contrast:
+      positive: The response frequently puts clarifications and asides inside parentheses.
+      negative: The response uses direct sentences without parentheses or parenthetical asides.
+
+  # The remaining previously locked word concepts are retained so a later
+  # baseline-frequency study can be generated without confusing inventory IDs.
+  - {key: in, concept_id: 30, family: lexical, hypothesis: saturated, scorer: {kind: word, target: in, case_sensitive: false}, prompt_forbidden: [in]}
+  - {key: name, concept_id: 36, family: lexical, hypothesis: medium, scorer: {kind: word, target: name, case_sensitive: false}, prompt_forbidden: [name]}
+  - {key: write, concept_id: 88, family: lexical, hypothesis: medium, scorer: {kind: word, target: write, case_sensitive: false}, prompt_forbidden: [write]}
+  - {key: always, concept_id: 130, family: lexical, hypothesis: saturated, scorer: {kind: word, target: always, case_sensitive: false}, prompt_forbidden: [always]}
+  - {key: make, concept_id: 141, family: lexical, hypothesis: saturated, scorer: {kind: word, target: make, case_sensitive: false}, prompt_forbidden: [make]}
+  - {key: do, concept_id: 179, family: lexical, hypothesis: saturated, scorer: {kind: word, target: do, case_sensitive: false}, prompt_forbidden: [do]}
+  - {key: all, concept_id: 332, family: lexical, hypothesis: saturated, scorer: {kind: word, target: all, case_sensitive: false}, prompt_forbidden: [all]}
+  - {key: other, concept_id: 390, family: lexical, hypothesis: saturated, scorer: {kind: word, target: other, case_sensitive: false}, prompt_forbidden: [other]}
+  - {key: the, concept_id: 418, family: lexical, hypothesis: suppression_only, scorer: {kind: word, target: the, case_sensitive: false}, prompt_forbidden: [the]}
+  - {key: what, concept_id: 492, family: lexical, hypothesis: saturated, scorer: {kind: word, target: what, case_sensitive: false}, prompt_forbidden: [what]}

@@ -1,0 +1,257 @@
+{
+  "protocol": {
+    "protocol_version": "qwen-selected14-baselines-v1",
+    "claim": "14 Qwen-confirmed concepts; fixed transfer panel on Gemma",
+    "concept_ids": [
+      116,
+      222,
+      446,
+      11,
+      359,
+      406,
+      216,
+      287,
+      354,
+      30,
+      172,
+      171,
+      186,
+      90
+    ],
+    "prompt_source": "axbench/axbench/concept500/prod_9b_l20_v1/inference/latent_eval_data.parquet",
+    "construction_source": "axbench/axbench/concept500/prod_9b_l20_v1/generate/train_data.parquet",
+    "selection_prompt_indices": [
+      0,
+      9
+    ],
+    "calibration_prompt_indices": [
+      10,
+      13
+    ],
+    "final_test_prompt_indices": [
+      14,
+      21
+    ],
+    "construction_examples_per_concept": 72,
+    "random_seeds": [
+      17,
+      42,
+      101
+    ],
+    "models": {
+      "qwen": {
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "layer_index": 20,
+        "fixed_alpha": 0.5,
+        "alpha_grid": [
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.75
+        ]
+      },
+      "gemma": {
+        "model": "google/gemma-3-12b-it",
+        "layer_index": 32,
+        "fixed_alpha": 0.3,
+        "alpha_grid": [
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.4,
+          0.5
+        ]
+      }
+    },
+    "nla": {
+      "prompt_specific": true,
+      "edit_template": "The representation specifically concerns: {concept}.",
+      "rollouts": 3,
+      "capture_position": "last_prompt_token",
+      "injection_window": "last_prompt_token_and_each_generated_token",
+      "manual_filtering": false
+    },
+    "methods": {
+      "diffmean": "official AxBench DiffMean: mean of all eligible positive tokens minus mean of all eligible shared-negative tokens",
+      "caa": "matched prompt pairs: AxBench concept-positive answer versus unsteered target-model answer",
+      "calibrated_caa": "same CAA vector; alpha selected only on calibration prompts"
+    }
+  },
+  "model": {
+    "model": "google/gemma-3-12b-it",
+    "layer_index": 32,
+    "fixed_alpha": 0.3,
+    "alpha_grid": [
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.4,
+      0.5
+    ]
+  },
+  "rows": 1568,
+  "diffmean_prefix_suffix_trim": [
+    4,
+    2
+  ],
+  "caa_extraction_metadata": {
+    "116": {
+      "method": "caa",
+      "layer_requested": 32,
+      "layer_index": 32,
+      "one_based": false,
+      "hook_path": "model.language_model.layers.32",
+      "pairs": 72,
+      "raw_norm": 6620.880859375,
+      "normalized": false
+    },
+    "222": {
+      "method": "caa",
+      "layer_requested": 32,
+      "layer_index": 32,
+      "one_based": false,
+      "hook_path": "model.language_model.layers.32",
+      "pairs": 72,
+      "raw_norm": 6046.67041015625,
+      "normalized": false
+    },
+    "446": {
+      "method": "caa",
+      "layer_requested": 32,
+      "layer_index": 32,
+      "one_based": false,
+      "hook_path": "model.language_model.layers.32",
+      "pairs": 72,
+      "raw_norm": 8275.111328125,
+      "normalized": false
+    },
+    "11": {
+      "method": "caa",
+      "layer_requested": 32,
+      "layer_index": 32,
+      "one_based": false,
+      "hook_path": "model.language_model.layers.32",
+      "pairs": 72,
+      "raw_norm": 7766.28076171875,
+      "normalized": false
+    },
+    "359": {
+      "method": "caa",
+      "layer_requested": 32,
+      "layer_index": 32,
+      "one_based": false,
+      "hook_path": "model.language_model.layers.32",
+      "pairs": 72,
+      "raw_norm": 7903.05224609375,
+      "normalized": false
+    },
+    "406": {
+      "method": "caa",
+      "layer_requested": 32,
+      "layer_index": 32,
+      "one_based": false,
+      "hook_path": "model.language_model.layers.32",
+      "pairs": 72,
+      "raw_norm": 5220.50537109375,
+      "normalized": false
+    },
+    "216": {
+      "method": "caa",
+      "layer_requested": 32,
+      "layer_index": 32,
+      "one_based": false,
+      "hook_path": "model.language_model.layers.32",
+      "pairs": 72,
+      "raw_norm": 7130.8837890625,
+      "normalized": false
+    },
+    "287": {
+      "method": "caa",
+      "layer_requested": 32,
+      "layer_index": 32,
+      "one_based": false,
+      "hook_path": "model.language_model.layers.32",
+      "pairs": 72,
+      "raw_norm": 3377.90625,
+      "normalized": false
+    },
+    "354": {
+      "method": "caa",
+      "layer_requested": 32,
+      "layer_index": 32,
+      "one_based": false,
+      "hook_path": "model.language_model.layers.32",
+      "pairs": 72,
+      "raw_norm": 5857.880859375,
+      "normalized": false
+    },
+    "30": {
+      "method": "caa",
+      "layer_requested": 32,
+      "layer_index": 32,
+      "one_based": false,
+      "hook_path": "model.language_model.layers.32",
+      "pairs": 72,
+      "raw_norm": 7864.97265625,
+      "normalized": false
+    },
+    "172": {
+      "method": "caa",
+      "layer_requested": 32,
+      "layer_index": 32,
+      "one_based": false,
+      "hook_path": "model.language_model.layers.32",
+      "pairs": 72,
+      "raw_norm": 9061.69921875,
+      "normalized": false
+    },
+    "171": {
+      "method": "caa",
+      "layer_requested": 32,
+      "layer_index": 32,
+      "one_based": false,
+      "hook_path": "model.language_model.layers.32",
+      "pairs": 72,
+      "raw_norm": 4125.09912109375,
+      "normalized": false
+    },
+    "186": {
+      "method": "caa",
+      "layer_requested": 32,
+      "layer_index": 32,
+      "one_based": false,
+      "hook_path": "model.language_model.layers.32",
+      "pairs": 72,
+      "raw_norm": 8729.6162109375,
+      "normalized": false
+    },
+    "90": {
+      "method": "caa",
+      "layer_requested": 32,
+      "layer_index": 32,
+      "one_based": false,
+      "hook_path": "model.language_model.layers.32",
+      "pairs": 72,
+      "raw_norm": 3932.137939453125,
+      "normalized": false
+    }
+  },
+  "note": "DiffMean follows AxBench mean.py; CAA is returned by contrast_steering.pipeline.extract_vector.",
+  "random_controls": {
+    "seeds": [
+      17,
+      42,
+      101
+    ],
+    "scope": "three independently seeded vectors per final-test prompt",
+    "norm_reference": "concept CAA vector",
+    "norm_matched": true
+  }
+}

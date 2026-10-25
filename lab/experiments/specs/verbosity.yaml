@@ -1,0 +1,20 @@
+# T2: verbosity. Continuous noisy probe (census mean 143 words), so read
+# this one against its confidence band, not single samples.
+name: verbosity-freeform
+matrix_id: T2-verbosity
+direction:
+  positive: >-
+    Long, elaborate, expansive reply that keeps adding detail, examples
+    and qualifications, thorough exhaustive style.
+  negative: >-
+    Brief minimal reply, a sentence or two, nothing beyond the direct
+    answer.
+prompts:
+  - Tell me about your day.
+  - What should I cook for dinner tonight?
+  - Give me some tips for staying focused while studying.
+  - Describe the weather in autumn.
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8, 1]
+mode: all
+samples_per_prompt: 3
+probes: [n_words, avg_sentence_words, unique_word_ratio]

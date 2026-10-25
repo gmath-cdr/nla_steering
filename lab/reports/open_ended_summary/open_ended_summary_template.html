@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Open-Ended Steering Results - 69-Run Qwen Study</title>
+<style>
+  :root {
+    --paper: #f7f6f2;
+    --ink: #23272e;
+    --muted: #6e6a62;
+    --well: #edebe4;
+    --well-edge: #d8d4c8;
+    --card: #fdfcf9;
+    --teal: #0e7570;
+    --teal-soft: #d8eae6;
+    --violet: #6941c6;
+    --violet-soft: #e5def6;
+    --amber: #a85e12;
+    --amber-soft: #f3e4cf;
+    --blue: #2d77d2;
+    --good: #1a7f37;
+    --bad: #b42318;
+  }
+  * { box-sizing: border-box; }
+  html { background: #e6e3dc; }
+  body {
+    margin: 0;
+    color: var(--ink);
+    background: #e6e3dc;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.44;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 12mm auto;
+    padding: 14mm 15mm 12mm;
+    background: var(--paper);
+    box-shadow: 0 7px 28px rgba(35, 39, 46, 0.12);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5.2mm;
+    overflow: hidden;
+  }
+  .page:last-child { margin-bottom: 12mm; }
+  .page.dense { gap: 3.4mm; }
+  .page.dense .chart.compact img { max-height: 78mm; }
+  .page.dense table { font-size: 9.5px; line-height: 1.25; }
+  .page.dense th, .page.dense td { padding: 1.8mm 1.8mm; }
+  .page.dense .grid2 { gap: 3mm; }
+  h1, h2, h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 600;
+    margin: 0;
+    text-wrap: balance;
+  }
+  h1 { font-size: 30px; line-height: 1.08; }
+  h2 { font-size: 22px; line-height: 1.15; }
+  h3 { font-size: 14.5px; line-height: 1.25; }
+  p { margin: 0; }
+  code, .mono { font-family: Consolas, "Courier New", monospace; }
+  code { font-size: 0.92em; }
+  .eyebrow {
+    color: var(--muted);
+    font-size: 9.2px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+  .lede {
+    max-width: 76ch;
+    color: var(--muted);
+    font-size: 14.5px;
+    line-height: 1.55;
+  }
+  .center { text-align: center; margin-left: auto; margin-right: auto; }
+  .teal { color: var(--teal); }
+  .nowrap { white-space: nowrap; }
+  .violet { color: var(--violet); }
+  .amber { color: var(--amber); }
+  .good { color: var(--good); font-weight: 700; }
+  .bad { color: var(--bad); font-weight: 700; }
+  .hero-number {
+    color: var(--teal);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 54px;
+    line-height: 0.9;
+    font-weight: 700;
+  }
+  .hero-label {
+    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3mm;
+  }
+  .stat {
+    padding: 4mm 3mm;
+    border: 1px solid var(--well-edge);
+    border-radius: 8px;
+    background: var(--card);
+    text-align: center;
+  }
+  .stat .n { font-family: Georgia, serif; font-size: 22px; font-weight: 700; color: var(--teal); }
+  .stat .l { color: var(--muted); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.08em; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3.5mm; }
+  .card {
+    padding: 4mm;
+    background: var(--card);
+    border: 1px solid var(--well-edge);
+    border-radius: 8px;
+  }
+  .card h3 { margin-bottom: 1.5mm; }
+  .card p, .card li { font-size: 11.5px; }
+  .card ul { margin: 1.5mm 0 0 4.5mm; padding: 0; }
+  .box {
+    padding: 4mm 5mm;
+    background: var(--well);
+    border-left: 4px solid var(--teal);
+    border-radius: 7px;
+    font-size: 12px;
+  }
+  .box.amber-box { border-left-color: var(--amber); background: var(--amber-soft); }
+  .box.violet-box { border-left-color: var(--violet); background: var(--violet-soft); }
+  .box strong { color: var(--ink); }
+  .finding {
+    display: grid;
+    grid-template-columns: 9mm 1fr;
+    gap: 2.5mm;
+    align-items: start;
+  }
+  .finding .mark {
+    width: 8mm; height: 8mm; border-radius: 50%;
+    display: grid; place-items: center;
+    color: white; background: var(--teal);
+    font-size: 11px; font-weight: 800;
+  }
+  .finding p { font-size: 11.8px; }
+  .finding strong { display: block; margin-bottom: 0.8mm; }
+  .chart {
+    margin: 0;
+    padding: 3mm;
+    border: 1px solid var(--well-edge);
+    border-radius: 8px;
+    background: #fcfcfb;
+  }
+  .chart img { width: 100%; height: auto; display: block; object-fit: contain; }
+  .chart.compact img { max-height: 94mm; }
+  .chart.wide img { max-height: 76mm; }
+  .caption {
+    margin: 2mm auto 0;
+    max-width: 92%;
+    color: var(--muted);
+    font-size: 10.5px;
+    line-height: 1.38;
+    text-align: center;
+  }
+  .diff {
+    padding: 3.5mm 4mm;
+    border: 1px solid var(--well-edge);
+    border-radius: 7px;
+    background: var(--well);
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 10.5px;
+    line-height: 1.5;
+  }
+  .removed { color: #725b51; text-decoration: line-through; }
+  .added { color: var(--amber); background: var(--amber-soft); font-weight: 800; padding: 0 2px; border-radius: 3px; }
+  .quote {
+    padding: 3.5mm 4mm;
+    border-radius: 7px;
+    background: var(--card);
+    border: 1px solid var(--well-edge);
+    font-size: 10.8px;
+    line-height: 1.48;
+  }
+  .quote .label { display: block; color: var(--muted); font-size: 9px; letter-spacing: 0.09em; text-transform: uppercase; font-weight: 800; margin-bottom: 1.5mm; }
+  .quote.steered { border-left: 4px solid var(--teal); }
+  .quote.baseline { border-left: 4px solid #8f8d87; }
+  .pills { display: flex; flex-wrap: wrap; gap: 2mm; justify-content: center; }
+  .pill { padding: 1.4mm 3mm; background: var(--well); border: 1px solid var(--well-edge); border-radius: 999px; font-size: 9.8px; font-style: italic; }
+  table { width: 100%; border-collapse: collapse; font-size: 10.4px; line-height: 1.32; }
+  th { color: var(--muted); font-size: 8.6px; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 800; }
+  th, td { padding: 2.4mm 2.2mm; border-bottom: 1px solid var(--well-edge); vertical-align: top; text-align: left; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tr:last-child td { border-bottom: none; }
+  .tight th, .tight td { padding: 1.8mm 2mm; }
+  .tag { display: inline-block; padding: 0.7mm 1.7mm; border-radius: 999px; font-size: 8.5px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; }
+  .tag.yes { color: var(--good); background: #dff1e4; }
+  .tag.no { color: var(--bad); background: #f8deda; }
+  .tag.mixed { color: var(--amber); background: var(--amber-soft); }
+  .pipeline {
+    display: grid;
+    grid-template-columns: 1fr 8mm 1fr 8mm 1fr 8mm 1fr;
+    gap: 1.5mm;
+    align-items: center;
+  }
+  .node {
+    min-height: 24mm;
+    padding: 3mm 2.2mm;
+    border: 1.5px solid var(--teal);
+    border-radius: 7px;
+    background: var(--card);
+    text-align: center;
+    font-size: 9.7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .node.violet-node { border-color: var(--violet); }
+  .node.amber-node { border-color: var(--amber); }
+  .arrow { color: var(--muted); text-align: center; font-size: 18px; }
+  .formula {
+    padding: 2.8mm 4mm;
+    border-radius: 7px;
+    background: #20242a;
+    color: #f7f6f2;
+    font-family: Consolas, monospace;
+    text-align: center;
+    font-size: 12px;
+  }
+  .metric-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; }
+  .metric {
+    padding: 3mm;
+    background: var(--well);
+    border-radius: 7px;
+    text-align: center;
+  }
+  .metric b { display: block; color: var(--teal); font: 700 22px Georgia, serif; }
+  .metric span { color: var(--muted); font-size: 9.2px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .split-label { font-size: 10px; color: var(--muted); text-align: center; }
+  .mini-note { color: var(--muted); font-size: 9.8px; }
+  .footer {
+    position: absolute;
+    left: 15mm; right: 15mm; bottom: 6mm;
+    display: flex;
+    justify-content: space-between;
+    color: #8b877f;
+    font-size: 8.5px;
+    letter-spacing: 0.04em;
+  }
+  .source-list { margin: 0; padding-left: 4.5mm; font-size: 9.8px; }
+  .source-list li { margin-bottom: 1.1mm; }
+  .callout-title { font: 600 15px Georgia, serif; margin-bottom: 1.4mm; }
+  .no-break, .card, .box, .chart, table, .quote, .pipeline { break-inside: avoid; }
+  @page { size: A4; margin: 0; }
+  @media print {
+    html, body { background: white; }
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .page {
+      margin: 0;
+      box-shadow: none;
+      break-after: page;
+      page-break-after: always;
+    }
+    .page:last-child { break-after: auto; page-break-after: auto; margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<section class="page">
+  <div class="eyebrow center">Audited Qwen campaign - {{RUN_COUNT}} archived run files - {{REPLY_COUNT}} stored generations - August 2026</div>
+  <h1 class="center">Open-Ended Steering Results</h1>
+  <p class="lede center">What changed when NLA directions were injected into <b class="teal">Qwen2.5-7B-Instruct at residual layer 20</b>, what the J-lens revealed, and where the causal story stopped.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="n">{{RUN_COUNT}}</div><div class="l">run JSONs</div></div>
+    <div class="stat"><div class="n">{{REPLY_COUNT}}</div><div class="l">stored replies</div></div>
+    <div class="stat"><div class="n">{{OPEN_RUN_COUNT}}</div><div class="l">neutral-chat runs</div></div>
+    <div class="stat"><div class="n">{{WORDLE_RUN_COUNT}}</div><div class="l">Wordle stress tests</div></div>
+  </div>
+
+  <div class="box amber-box"><strong>Scope of the number 69.</strong> This report fixes one reproducible campaign boundary: emoji-method waves 1 and 2 (14 + 44 files) plus Wordle2 (11 files), comprising 68 alpha sweeps and one unsteered census. Two file pairs contain exactly replayed record arrays, leaving {{DISTINCT_RECORD_ARRAYS}} distinct record arrays. The {{REPLY_COUNT}} figure counts stored records, including those replays; none of these counts is a count of independent observations. Earlier Qwen style sweeps and later Gemma experiments are outside this fixed set.</div>
+
+  <div class="grid2">
+    <div class="card finding"><div class="mark">1</div><p><strong>Target-aligned text edits worked.</strong> Four new emoji-targeted single-site directions and one exact replay of the earlier emoji arm all changed emoji use. Phrase edits and an authored AR contrast also worked; the random direction stayed at zero emoji.</p></div>
+    <div class="card finding"><div class="mark">2</div><p><strong>The target mattered more than the label "one word."</strong> Excitement-word edits mostly changed excitement and exclamation behavior, not emoji use. Replacing them with emoji-naming edits reversed the apparent failure.</p></div>
+    <div class="card finding"><div class="mark">3</div><p><strong>Some J-derived approximations were causally active.</strong> A small subset acted at lower matched alpha than its NLA parent; many components were null or active only after coherence failure, and many remainders remained active.</p></div>
+    <div class="card finding"><div class="mark">4</div><p><strong>Dwelling meaning transferred; tested length arms did not.</strong> A dwelling direction moved Wordle answers toward HOME, while tested answer-length directions behaved like the random/degradation control.</p></div>
+  </div>
+
+  <table>
+    <tr><th>Question</th><th>Best current answer from this set</th><th>Status</th></tr>
+    <tr><td>Can NLA-built directions change open-ended style/content?</td><td>Yes, for the tested emoji and excitement constructions.</td><td><span class="tag yes">supported here</span></td></tr>
+    <tr><td>Did J-space predict success with one scalar?</td><td>No. Readout content was suggestive; transport gain and k25 share did not rank effects.</td><td><span class="tag no">not supported</span></td></tr>
+    <tr><td>Did the k25 split isolate a unique active ingredient?</td><td>No. Some components were potent, but remainders often steered and Wordle localization failed.</td><td><span class="tag mixed">mixed</span></td></tr>
+    <tr><td>Was pure direct J-atom steering tested?</td><td>No. J atoms were used to approximate NLA parents; no independently selected single atom was run.</td><td><span class="tag no">not run</span></td></tr>
+  </table>
+
+  <div class="footer"><span>NLA Steering - open-ended results</span><span>1 / 9</span></div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page">
+  <div class="eyebrow">Experimental intervention - the user prompt stayed fixed</div>
+  <h2>What we actually changed</h2>
+  <p class="lede">The output shift did not come from editing the test prompt. A direction was built offline, then added to the model's hidden state at every prompt and decoding position. The prompt, seed, decoding settings, and score were held constant within each sweep.</p>
+
+  <div class="pipeline">
+    <div class="node"><b>Build a direction</b><span>authored AR contrast or AV-edit-AR</span></div><div class="arrow">&rarr;</div>
+    <div class="node violet-node"><b>Normalize</b><span>unit-L2 direction <span class="mono">d&#770;</span></span></div><div class="arrow">&rarr;</div>
+    <div class="node amber-node"><b>Inject at layer 20</b><span>all prompt and decode positions</span></div><div class="arrow">&rarr;</div>
+    <div class="node"><b>Measure output</b><span>emoji, punctuation, words, Wordle answer, coherence</span></div>
+  </div>
+  <div class="formula">h &larr; h + &alpha; &middot; ||h|| &middot; d&#770;</div>
+  <p class="mini-note center"><b>NLA</b> = Natural Language Autoencoder. <b>AV</b> verbalizes an activation into text; <b>AR</b> reconstructs text back into a residual-space activation.</p>
+
+  <div class="grid3">
+    <div class="card"><h3>Authored AR text contrast</h3><p>Write a positive and negative description, reconstruct each into the residual space, and subtract:</p><p class="mono center" style="margin-top:2mm">d = AR(+) - AR(-)</p></div>
+    <div class="card"><h3>AV-edit-AR</h3><p>Verbalize one real layer-20 state, edit that exact prose, reconstruct edited and original versions, then subtract them.</p></div>
+    <div class="card"><h3>J-derived arm</h3><p>Start from a completed NLA parent, approximate it with up to 25 J-lens token atoms, then steer with the approximation or its parent-minus-approximation remainder.</p></div>
+  </div>
+
+  <h3>Two exact AV edits that built steering directions</h3>
+  <div class="grid2">
+    <div class="diff"><span class="removed">a playful response format</span><br>&rarr; a playful <span class="added">emoji</span> response format</div>
+    <div class="diff"><span class="removed">My day is quite wonderful!</span><br>&rarr; My day is quite wonderful! <span class="added">😊✨</span></div>
+  </div>
+  <p class="mini-note">The highlighted text was inserted into the verbalizer's internal-state description, not into the user prompt. The J-lens did not choose these edits.</p>
+
+  <h3>Neutral prompts reused across emoji/style arms</h3>
+  <div class="pills">
+    <span class="pill">Tell me about your day.</span>
+    <span class="pill">What should I cook for dinner tonight?</span>
+    <span class="pill">Describe the weather in autumn.</span>
+    <span class="pill">Give me tips for staying focused while studying.</span>
+    <span class="pill">Recommend a weekend activity.</span>
+  </div>
+
+  <div class="box"><strong>Why this matters.</strong> The same hidden direction is tested across unrelated prompts. A change can therefore transfer beyond the description used to build it, but five prompts and one model are still a narrow generalization test.</div>
+
+  <div class="footer"><span>NLA Steering - methods in plain language</span><span>2 / 9</span></div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page">
+  <div class="eyebrow">Open-ended result 1 - target-aligned single-site edits</div>
+  <h2>All five target-aligned arm labels moved emoji use</h2>
+  <p class="lede">Wave 2 tested four new edits that named emojis, an emoticon, a smiley, or a literal glyph, alongside an exact replay of the earlier emoji arm. All five labels were active on the emoji probe; the evidence represents four new directions plus one reproduction, not five independent new constructions.</p>
+
+  <figure class="chart compact">
+    <img src="{{CORRECTED_SINGLES}}" alt="Dose response for five target-relevant single-site emoji edits and a random control">
+    <figcaption class="caption">Mean emoji count across the five neutral prompts. Open circles mark cells rejected by the campaign's coherence gate; the dramatic high-dose counts are often emoji flooding, not better answers. Random remained at zero.</figcaption>
+  </figure>
+
+  <div class="grid3">
+    <div class="metric"><b>5 / 5</b><span>arm labels steered; 4 new + 1 replay</span></div>
+    <div class="metric"><b>0</b><span>random-control emoji mean</span></div>
+    <div class="metric"><b>0.32-1.00</b><span>best-safe Cliff delta range</span></div>
+  </div>
+
+  <h3>Same prompt and sample, before and after the glyph-phrase direction</h3>
+  <div class="grid2">
+    <div class="quote baseline"><span class="label">&alpha; = 0 - unsteered excerpt</span>"As an AI assistant, I don't have personal experiences or days to share in the traditional sense. However, I've been busy assisting users like you with various tasks and questions! ..."</div>
+    <div class="quote steered"><span class="label">&alpha; = 0.4 - same prompt and sample</span>"Hello! I'm Qwen, and I'm here to chat with you and help with any questions or tasks you might have! 🌟 It's super fun to interact with users from all over the world! 😄 ..."</div>
+  </div>
+  <p class="mini-note center">Prompt: "Tell me about your day." The injected vector came from inserting the two glyphs into the AV description shown on page 2. Excerpts preserve the archived text; generation ended at the fixed token cap.</p>
+
+  <div class="box amber-box"><strong>Interpret carefully.</strong> This supports controllable target-aligned steering under the tested construction. It does not show that more emojis always mean a higher-quality answer; high strengths often produce repetition, short emoji streams, or content loss.</div>
+
+  <div class="footer"><span>NLA Steering - emoji intervention</span><span>3 / 9</span></div>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page">
+  <div class="eyebrow">Open-ended result 2 - a failed probe became a content-matched success</div>
+  <h2>The first "one-word failure" was mostly the wrong target</h2>
+  <p class="lede">Four wave-1 edits inserted excited, enthusiastic, cheerful, or expressive. They were scored for emoji use even though they did not name emoji. Those directions were not generally inactive: several changed exclamation and excitement behavior instead.</p>
+
+  <figure class="chart compact">
+    <img src="{{READOUT_ALIGNMENT}}" alt="Observed exclamation behavior for excitement word edits">
+    <figcaption class="caption">A retrospective comparison: directions whose J-lens readouts contained exclamation-related tokens also increased exclamation counts. This motivated a diagnostic hypothesis; it was not a blinded prediction test.</figcaption>
+  </figure>
+
+  <table>
+    <tr><th>AV edit</th><th>J-lens readout content</th><th>Observed behavior at &alpha; = 0.6</th><th>Meaning</th></tr>
+    <tr><td><b>excited</b></td><td>exciting, excitement, excited, <b>!</b></td><td>exclamations rose from 0.83 to 4.8/reply</td><td>Active on a content-matched probe</td></tr>
+    <tr><td><b>enthusiastic</b></td><td>exciting, excitement, <b>!</b>, amazing</td><td>exclamations rose from 0.83 to 4.2/reply</td><td>Active on a content-matched probe</td></tr>
+    <tr><td><b>expressive</b></td><td>laughter, fancy, funky, quirky; no <b>!</b></td><td>stayed near baseline</td><td>A useful contrast, still post hoc</td></tr>
+    <tr><td><b>random</b></td><td>token noise</td><td>declined to 0.55/reply</td><td>No matching content effect</td></tr>
+  </table>
+
+  <div class="grid2">
+    <div class="card"><h3>What changed after review</h3><ul><li>Target words were made explicit.</li><li>Every parent arm was rerun with fresh seeds.</li><li>k25 J-atom approximations replaced the historical top-50 proxy.</li><li>Emoji flooding was marked as degeneration.</li></ul></div>
+    <div class="card"><h3>What this rules out</h3><p>It rules out the simple conclusion that "single-site AV-edit-AR directions are dead." It does <b>not</b> isolate edit size from wording, tokenization, edit location, or effective dose.</p></div>
+  </div>
+
+  <div class="box"><strong>Lesson.</strong> A score can declare a direction a failure when the direction changed a different behavior than the chosen probe. Target wording, readout content, and outcome metric must be aligned before interpreting a null.</div>
+
+  <div class="footer"><span>NLA Steering - target alignment</span><span>4 / 9</span></div>
+</section>
+
+<!-- PAGE 5 -->
+<section class="page">
+  <div class="eyebrow">J-space, exactly - diagnostic plus derived intervention</div>
+  <h2>We steered NLA parents, then their <span class="nowrap">J-derived</span> surrogates</h2>
+  <div class="box violet-box"><strong>Precise answer.</strong> The J-lens was first used to read NLA directions as ranked token alignments. We then used its token-direction dictionary to build a sparse k25 approximation of an NLA parent and replaced the parent in the additive steering hook with that approximation or with the parent-minus-approximation remainder. This is more than measuring alignment, but it is <b>not</b> pure direct steering with an independently selected J token atom.</div>
+
+  <div class="pipeline">
+    <div class="node"><b>NLA parent d</b><span>authored AR or AV-edit-AR</span></div><div class="arrow">&rarr;</div>
+    <div class="node violet-node"><b>J-lens</b><span>rank token alignments and supply J atoms</span></div><div class="arrow">&rarr;</div>
+    <div class="node amber-node"><b>Sparse k25 fit</b><span>nonnegative combination c of at most 25 atoms</span></div><div class="arrow">&rarr;</div>
+    <div class="node"><b>Separate steering arms</b><span>unit(d), unit(c), unit(d-c)</span></div>
+  </div>
+  <p class="split-label">The Qwen layer-20 J-lens was averaged over 160 frozen WikiText-103 passages; its 80/80 split-half matrix cosine was 0.943 (a stability check, not causal validation). This is first-order residual-space alignment, not ordinary token co-occurrence counting or a live activation transplant.</p>
+
+  <figure class="chart wide">
+    <img src="{{JSPACE_SPLIT}}" alt="Parent, k25 approximation, and remainder dose responses for two emoji vectors">
+    <figcaption class="caption">For these two selected Qwen emoji parents, the equal-norm k25 approximation activates at a lower matched alpha. This pattern does not hold across every component. The remainder is quiet for the authored freeform parent at moderate dose but remains strongly active for the glyph-phrase parent.</figcaption>
+  </figure>
+
+  <div class="grid3">
+    <div class="card"><h3>What was causal</h3><p>The k25 approximation and remainder were each injected and generated new outputs. They were not only plotted or decoded.</p></div>
+    <div class="card"><h3>What was normalized</h3><p>Parent, approximation, and remainder were independently unit-normalized. Their curves compare potency per unit norm.</p></div>
+    <div class="card"><h3>What remains untested</h3><p>No archived arm injects one independently chosen J-lens atom as the root direction. A draft harness specifies that direct test, but it is not frozen or completed.</p></div>
+  </div>
+
+  <div class="box amber-box"><strong>Key causal limit.</strong> Independent normalization prevents a native-magnitude mediation claim. A potent unit approximation does not prove that it carries most of the original vector's natural causal contribution, and an active remainder is not evidence that it lies outside all J-readable directions.</div>
+
+  <div class="footer"><span>NLA Steering - J-space method</span><span>5 / 9</span></div>
+</section>
+
+<!-- PAGE 6 -->
+<section class="page">
+  <div class="eyebrow">J-space result - content helped; scalar ranking did not</div>
+  <h2>The k25 share did not predict which direction would steer</h2>
+  <p class="lede">The visually readable token content often matched the observed behavior, but the size of the recovered k25 piece was not a success score. High-share failures and lower-share successes overlap.</p>
+
+  <figure class="chart compact">
+    <img src="{{JSPACE_SCATTER}}" alt="K25 component norm share versus steering effect across 15 unique emoji directions">
+    <figcaption class="caption">Post-hoc comparison of {{K25_N}} unique directions. Eleven base-arm effects pool waves 1 and 2; four corrected target arms use wave-2-only samples. Effect is each direction's best coherence-safe Cliff delta selected from the same pooled or per-arm data, so this is descriptive rather than a held-out forecast evaluation.</figcaption>
+  </figure>
+
+  <div class="metric-row">
+    <div class="metric"><b>{{K25_PEARSON}}</b><span>Pearson r</span></div>
+    <div class="metric"><b>{{K25_SPEARMAN}}</b><span>Spearman rho</span></div>
+    <div class="metric"><b>{{K25_N}}</b><span>unique directions</span></div>
+  </div>
+
+  <table>
+    <tr><th>J-lens observation</th><th>What the archive supports</th><th>What it does not support</th></tr>
+    <tr><td>Target-relevant top tokens</td><td>Useful candidate preflight clue; examples include exclamation and dwelling token families.</td><td>A prospective, blinded forecast rule.</td></tr>
+    <tr><td>Transport gain <span class="mono">||Jd||</span></td><td>Describes how strongly a direction is transported by the fitted linear map.</td><td>Necessary or sufficient condition for behavior.</td></tr>
+    <tr><td>k25 component-norm share</td><td>Describes approximation size under this dictionary and solver.</td><td>A ranking of steering success; the observed correlation is essentially zero.</td></tr>
+    <tr><td>Potent unit k25 component</td><td>Can be sufficient for some style effects at equal norm.</td><td>Unique causal ingredient, necessity, or universal localization.</td></tr>
+  </table>
+
+  <div class="box"><strong>Bottom line for J-space.</strong> Sparse J-atom combinations can form a causally potent surrogate for some NLA directions; target-aligned readouts remain a separate candidate diagnostic. The clean negative result is scalar: neither gain nor recovered share reliably says which direction will work.</div>
+
+  <div class="footer"><span>NLA Steering - J-space evidence</span><span>6 / 9</span></div>
+</section>
+
+<!-- PAGE 7 -->
+<section class="page">
+  <div class="eyebrow">Constrained stress test - meaning versus answer form</div>
+  <h2>The dwelling parent moved Wordle choices toward HOME</h2>
+  <p class="lede">The user prompt still asked for a Wordle opener. The authored AR contrast never named HOUSE or HOME; it contrasted "the five letter word for a building where people live" with "the five letter word for a tall machine that lifts heavy loads."</p>
+
+  <figure class="chart wide">
+    <img src="{{DWELLING}}" alt="Wordle answer outcomes under the dwelling direction">
+    <figcaption class="caption">Across four Wordle prompts and 15 samples per alpha, CRANE falls while HOME appears. At the two headline doses (&alpha; = 0.4 and 0.6), the whole parent produces HOME in 23/120 replies; the random direction produces zero. In the original figure, "bond broken" means that the extracted answer is not five letters.</figcaption>
+  </figure>
+
+  <h3>Same prompt and sample, &alpha; = 0 versus &alpha; = 0.4</h3>
+  <div class="grid2">
+    <div class="quote baseline"><span class="label">Unsteered</span>"Sure! How about the word <b>CRANE</b>? It has five letters and should provide some good clues for the next guesses."</div>
+    <div class="quote steered"><span class="label">Dwelling direction</span>"Sure! How about the word <b class="teal">HOME</b>?"</div>
+  </div>
+
+  <table>
+    <tr><th>Arm at &alpha; = 0.4 and 0.6</th><th class="num">HOME / 120</th><th>Interpretation</th></tr>
+    <tr><td>Whole dwelling NLA AR contrast</td><td class="num"><b>23</b></td><td>Broad semantic association transfers to 2 of 4 prompts.</td></tr>
+    <tr><td>Unit-L2 k25 J-atom approximation</td><td class="num"><b>0</b></td><td>Readable selected atoms were not sufficient for the discrete choice.</td></tr>
+    <tr><td>Unit-L2 parent-minus-approximation remainder</td><td class="num"><b>3</b></td><td>Neither isolated equal-norm piece reproduced the whole effect.</td></tr>
+    <tr><td>Random direction</td><td class="num"><b>0</b></td><td>Breaking the CRANE default alone did not land on HOME.</td></tr>
+  </table>
+
+  <div class="box amber-box"><strong>Worked and failed at once.</strong> Meaning moved in the intended direction, but HOME has four letters. Because the unsteered prompt bank itself returned a valid five-letter answer only 62% of the time, this is evidence for semantic transfer with limited prompt generality - not a clean proof that steering necessarily destroys a hard format constraint.</div>
+
+  <div class="footer"><span>NLA Steering - Wordle meaning test</span><span>7 / 9</span></div>
+</section>
+
+<!-- PAGE 8 -->
+<section class="page dense">
+  <div class="eyebrow">Negative results - useful boundaries, not impossibility proofs</div>
+  <h2>The tested length directions did not separate from random in this sweep</h2>
+  <p class="lede">Five length/junk arms were swept. Mean extracted answer length moved with the random control rather than toward each arm's own target. The number identity never survived clearly into the built directions.</p>
+
+  <figure class="chart compact">
+    <img src="{{LENGTH_NULL}}" alt="Mean Wordle answer length for five tested directions and random control">
+    <figcaption class="caption">The four enriched length directions and a junk-readout control did not separate from the random-control drift in this sweep. At higher alpha, degraded prose can also fool the simple heuristic answer extractor.</figcaption>
+  </figure>
+
+  <table>
+    <tr><th>Result family</th><th>What worked</th><th>What did not</th><th>Claim boundary</th></tr>
+    <tr><td><b>Emoji/style</b></td><td>Authored AR, target-naming AV edits, and phrases changed open-ended output.</td><td>High-dose control was poor; many arms flooded or repeated.</td><td>Active directions, not uniformly useful operating points.</td></tr>
+    <tr><td><b>Wave-1 excitement words</b></td><td>Several changed exclamation/excitement behavior.</td><td>They did not answer the emoji-specific question.</td><td>Metric mismatch, not a general construction failure.</td></tr>
+    <tr><td><b>J-space split</b></td><td>Some k25 approximations were potent per unit norm.</td><td>Remainders often stayed active; dwelling failed to localize.</td><td>No unique-ingredient or necessity claim.</td></tr>
+    <tr><td><b>Wordle meaning</b></td><td>Whole dwelling parent increased HOME over random.</td><td>Effect concentrated in 2/4 prompts and did not preserve five letters.</td><td>Limited semantic transfer, not universal constrained control.</td></tr>
+    <tr><td><b>Wordle length</b></td><td>No positive result for tested AR contrasts.</td><td>Target length did not separate from random/degradation.</td><td>Construction-specific null, not proof length is unsteerable.</td></tr>
+  </table>
+
+  <div class="grid2">
+    <div class="box"><div class="callout-title">Supported by this archive</div>Both NLA root constructions can yield active directions; target-aligned edits matter; Qwen k25 approximations can be causally active; semantic dwelling content can transfer across some prompts.</div>
+    <div class="box amber-box"><div class="callout-title">Not established</div>Official AxBench performance, CAA superiority/comparison, pure direct J-atom control, scalar J-space forecasting, universal localization, model-wide form-versus-meaning laws, or a safe high-alpha regime.</div>
+  </div>
+
+  <div class="footer"><span>NLA Steering - negative results and limits</span><span>8 / 9</span></div>
+</section>
+
+<!-- PAGE 9 -->
+<section class="page">
+  <div class="eyebrow">Coverage and evidence ledger - all {{RUN_COUNT}} run files accounted for</div>
+  <h2>What is inside the fixed campaign boundary</h2>
+
+  <table class="tight">
+    <tr><th>Campaign block</th><th>Arm family</th><th class="num">Runs</th><th class="num">Replies</th><th>Outcome in brief</th></tr>
+    <tr><td rowspan="4"><b>Emoji wave 1</b><br><span class="mono">emojimx-*</span></td><td>Authored AR parent</td><td class="num">1</td><td rowspan="4" class="num">5,250</td><td>Strong emoji dose response</td></tr>
+    <tr><td>5 single-site + 5 phrase AV-edit-AR parents</td><td class="num">10</td><td>Target-matched arms active; excitement arms changed matched behavior</td></tr>
+    <tr><td>Legacy top-50 OLS component + remainder</td><td class="num">2</td><td>Historical proxy; quarantined from current k25 claims</td></tr>
+    <tr><td>Random</td><td class="num">1</td><td>Zero emoji</td></tr>
+    <tr><td rowspan="5"><b>Emoji wave 2</b><br><span class="mono">emojimx2-*</span></td><td>11 parent reruns + random</td><td class="num">12</td><td rowspan="5" class="num">16,500</td><td>Fresh-seed reproduction of wave 1</td></tr>
+    <tr><td>Corrected target-naming single-site parents</td><td class="num">5</td><td>Five labels steer: four new directions + one exact replay</td></tr>
+    <tr><td>Greedy-NNLS k25 components</td><td class="num">16</td><td>16 files / 15 unique vectors; some lower-alpha cases</td></tr>
+    <tr><td>k25 approximation remainders</td><td class="num">11</td><td>Many remain behaviorally active</td></tr>
+    <tr><td colspan="2"><b>Wave 2 subtotal: 44 runs</b></td><td>Current decomposition evidence</td></tr>
+    <tr><td rowspan="5"><b>Wordle2</b><br><span class="mono">wordle2-*</span></td><td>Unsteered census + random</td><td class="num">2</td><td rowspan="5" class="num">3,060</td><td>Baseline and degradation reference</td></tr>
+    <tr><td>Length and junk-readout arms</td><td class="num">5</td><td>Null relative to random/degradation</td></tr>
+    <tr><td>Dwelling parent + k25 component + remainder</td><td class="num">3</td><td>Whole parent shifts HOME; pieces do not reproduce it</td></tr>
+    <tr><td>Lion parent</td><td class="num">1</td><td>Readout and behavior both fail target-family test</td></tr>
+    <tr><td colspan="2"><b>Wordle2 subtotal: 11 runs</b></td><td>Meaning/form stress test</td></tr>
+    <tr><td colspan="2"><b>Total</b></td><td class="num"><b>{{RUN_COUNT}}</b></td><td class="num"><b>{{REPLY_COUNT}}</b></td><td>{{DISTINCT_RECORD_ARRAYS}} distinct record arrays; 65 treatment, 3 random, 1 census</td></tr>
+  </table>
+
+  <div class="grid2">
+    <div class="card"><h3>Design limits</h3><ul><li>One model and one residual layer.</li><li>Only 1-5 prompt blocks per family.</li><li>Mostly one random direction per comparison.</li><li>Best alpha often selected on the same sweep.</li><li>Two file pairs are exact replays; alpha-zero replies repeat more broadly.</li><li>Prompt/seed replies are repeated measures, not independent evidence units.</li><li>All-position injection differs from paper-style single-position tests.</li></ul></div>
+    <div class="card"><h3>Primary audit sources</h3><ul class="source-list"><li><span class="mono">lab/registry/experiment_manifest.json</span></li><li><span class="mono">lab/results/emoji_methods_report.md</span></li><li><span class="mono">lab/results/wordle2_report.md</span></li><li><span class="mono">lab/results/emojimx*.json</span></li><li><span class="mono">lab/results/wordle2-*.json</span></li><li><span class="mono">lab/docs/METHOD_TAXONOMY.md</span></li></ul></div>
+  </div>
+
+  <div class="box"><strong>Concise conclusion.</strong> The 69-file Qwen package shows that NLA AR contrasts and AV-edit-AR directions can causally steer open-ended style and broad semantic content. J-lens token readouts are promising diagnostics, and J-derived k25 surrogates can be potent, but neither scalar J metrics nor the component/remainder split provides a universal success or localization rule. The clean next mechanism test is direct J-atom versus NLA-parent steering on held-out prompts with frozen alpha selection.</div>
+
+  <p class="mini-note center">Report generated from the checked-in raw archive and audited manifest. Figures are deterministic campaign outputs or report-specific recomputations. No Gemma J-derived claim is included in this 69-file Qwen scope.</p>
+
+  <div class="footer"><span>NLA Steering - audited 69-file summary</span><span>9 / 9</span></div>
+</section>
+
+</body>
+</html>

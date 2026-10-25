@@ -1,0 +1,21 @@
+# Random-direction arm of the emoji confirmatory run: same 10 prompts,
+# same frozen alpha, seeded random unit vector.
+name: emoji-confirm-control
+control_of: emoji-confirm
+direction: random
+direction_seed: 0
+prompts:
+  - Tell me about your day.
+  - What should I cook for dinner tonight?
+  - Give me some tips for staying focused while studying.
+  - Describe the weather in autumn.
+  - Recommend a book for a long flight.
+  - How do I apologize to a friend I upset?
+  - What makes a good cup of coffee?
+  - What's the best way to learn a new language?
+  - What are the pros and cons of remote work?
+  - Why is the sky blue?
+alphas: [0, 0.5]
+mode: all
+samples_per_prompt: 5
+probes: [emojis, exclamations, n_words, unique_word_ratio]

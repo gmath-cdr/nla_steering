@@ -1,0 +1,21 @@
+{
+  "condition": "C",
+  "concept_id": 287,
+  "prompt_index": 4,
+  "global_prompt_index": 18,
+  "prompt": "What is the difference between the Scala Future onComplete and andThen functions?",
+  "alpha": 0.5,
+  "seed": 2870222,
+  "seed_scope": "two-sample batched generation; reset identically for B and C",
+  "mapping_sha256": "d7a5e1820db022bf0a06f53f5b980588874b4e77b3e86b9c18c7ce7d57acc96e",
+  "source_vector_sha256": "da9418775960330c6ec16c87f755b5d22bb5a6511d92b403b288846fca3a86cd",
+  "generation_settings_sha256": "4c0e84a199a200b3661193144dfa6e11cda3877bfb9d72964e3322cf268453e8",
+  "target_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "responses": [
+    "In Scala, `Future` is used to handle asynchronous operations and non-blocking data flows. Two key methods for dealing with the completion of a `Future` are `onComplete` and `andThen`. While they can be used in similar contexts, they have distinct differences in terms of the types they handle and the guarantees they provide.\n\n### `onComplete`\n\n- **Type**: The `onComplete` method works on the type `F[A]` (where `A`",
+    "In Scala, `Future` is used to represent computations that can be non-blocking and may produce values (or fail) at some later time. Two key methods for dealing with the results of a `Future` are `onComplete` and `andThen`. While both methods are used for handling the result of a `Future`, they have different characteristics in terms of when they are called and how they handle the results.\n\n### `onComplete`\n\nThe `onComplete` method allows"
+  ],
+  "elapsed_seconds": 1.943257630802691,
+  "peak_allocated_bytes": 15281688064,
+  "peak_reserved_bytes": 15300820992
+}

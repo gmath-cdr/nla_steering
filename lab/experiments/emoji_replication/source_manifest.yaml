@@ -1,0 +1,80 @@
+schema: emoji-replication-source-manifest/v1
+status: frozen_historical_vector_sources
+historical_campaign: emoji_methods_qwen_l20_2026-08-14
+residual_space: qwen2.5-7b-instruct.resid-post.L20.d3584
+intervention:
+  mode: all
+  scaling_rule: relative_token_l2
+  vector_view: unit_l2
+
+archives:
+  vectors_v1:
+    path: experiments/emoji_methods/data/vectors.npz
+    sha256: 769cbd7594dff746712eacedb632193471aa7949c32837394c5ec8254b04fcc3
+  vectors_v2:
+    path: experiments/emoji_methods/data/vectors_v2.npz
+    sha256: 1ff7290a2211fddd0c30edd92e38e9963b8ea060191206b3453fd10c405af1dd
+
+arms:
+  av_emoji:
+    root_method: nla_av_edit_ar
+    text_origin: av_generated_substrate
+    contrast_relation: edited_vs_original
+    edit_granularity: single_site
+    archive: vectors_v1
+    member: single_5
+    npz_member_sha256: 555a227ff70649b3b53841cc90a70975fee46090eba9d0770ae1361ad20286d2
+    source_member_f32_sha256: 642116f626969a5390d0e781b6af73e46a729641f1c5f699c92cc02f7ff929e7
+    unit_direction_sha256: 432eda9b9985d487e66884e2a5c74a9ee1ffd0179ab5250c681a60f49f236f0f
+    construction: replace "a playful response format" with "a playful emoji response format"
+  av_glyph:
+    root_method: nla_av_edit_ar
+    text_origin: av_generated_substrate
+    contrast_relation: edited_vs_original
+    edit_granularity: single_site
+    archive: vectors_v2
+    member: s2_glyph
+    npz_member_sha256: 41dac4789791ce87cd5512e9f3931bcc0b559db2f6dc79ab78c5ac3a4ba43745
+    source_member_f32_sha256: 33b63ddc45737976663c9e5e496692552c340ff609ac4227f646d8b1ee6de87d
+    unit_direction_sha256: 13bc8c57345377adc174ccba0ec35865838e6aee19bef412925e9cdcd8167dfa
+    construction: insert one literal smiling-face glyph at the same AV-substrate site
+  av_phrase:
+    root_method: nla_av_edit_ar
+    text_origin: av_generated_substrate
+    contrast_relation: edited_vs_original
+    edit_granularity: phrase
+    archive: vectors_v1
+    member: phrase_1
+    npz_member_sha256: 0ecc9220e32b01aaafb3570c0d9f47fb71c0aaf38885caf124d64f1e96dc1d79
+    source_member_f32_sha256: 6fe6e59193477c1f245721707087e6876303bb04bbbc96b93cd870a70f61f8b6
+    unit_direction_sha256: 6fe6e59193477c1f245721707087e6876303bb04bbbc96b93cd870a70f61f8b6
+    construction: replace a short AV phrase with one naming emoji and exclamation marks
+  ar_freeform:
+    root_method: nla_ar_contrast
+    text_origin: authored
+    contrast_relation: paired_descriptions
+    edit_granularity: not_applicable
+    pairing_style: unconstrained
+    archive: vectors_v1
+    member: freeform
+    npz_member_sha256: 165aab8d49b1cf935a54f77c6b3def6fad295fb722a02ff1f2692765be0140f5
+    source_member_f32_sha256: ae27effe2053a821c47eea8a03fba044a0d53edecf147dd6874d4dcfd5ec521b
+    unit_direction_sha256: ae27effe2053a821c47eea8a03fba044a0d53edecf147dd6874d4dcfd5ec521b
+    positive: Casual, excited chat reply packed with emojis and exclamation marks, playful upbeat tone, informal register.
+    negative: Plain, formal, measured chat reply with no emojis and no exclamation marks, neutral professional tone.
+  av_excited:
+    root_method: nla_av_edit_ar
+    text_origin: av_generated_substrate
+    contrast_relation: edited_vs_original
+    edit_granularity: single_site
+    archive: vectors_v1
+    member: single_1
+    npz_member_sha256: e5e985cb7b607e6e89585f908079eb5dbd958075dcd1a8a3be322c78b3b4e825
+    source_member_f32_sha256: 67afdd16471eb25a51875e0f0174829fa032f098e891c33561ebfe73876eebdf
+    unit_direction_sha256: 67afdd16471eb25a51875e0f0174829fa032f098e891c33561ebfe73876eebdf
+    construction: replace "a playful response format" with "a playful excited response format"
+
+excluded_duplicates:
+  - member: experiments/emoji_methods/data/vectors_v2.npz#s2_emoji
+    duplicate_of: experiments/emoji_methods/data/vectors.npz#single_5
+    reason: byte-identical direction and duplicate seed-0-through-14 behavioral records

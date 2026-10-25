@@ -1,0 +1,21 @@
+# T2: alliteration. Census baseline distributed (7.6 chance-level
+# adjacent same-initial pairs), so the effect must clear a NONZERO
+# baseline; read against the control, not against zero.
+name: allit-freeform
+matrix_id: T2-allit
+direction:
+  positive: >-
+    Playful alliterative phrasing, strings of words sharing starting
+    sounds, tongue-twister flavor throughout.
+  negative: >-
+    Ordinary varied word choice with no repeated starting sounds, plain
+    prose.
+prompts:
+  - Tell me about your day.
+  - What should I cook for dinner tonight?
+  - Give me some tips for staying focused while studying.
+  - Describe the weather in autumn.
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8, 1]
+mode: all
+samples_per_prompt: 3
+probes: [alliteration_pairs, n_words, unique_word_ratio]

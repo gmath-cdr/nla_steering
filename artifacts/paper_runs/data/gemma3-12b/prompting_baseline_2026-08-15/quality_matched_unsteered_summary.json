@@ -1,0 +1,23 @@
+{
+  "protocol": "prompting-matched-unsteered-quality-v1",
+  "definition": "8-350 words; repeated-trigram rate <=0.10; content-word Jaccard >=0.12 to closest prompt-matched unsteered completion",
+  "quality_gate": {
+    "word_count_range": [
+      8,
+      350
+    ],
+    "maximum_repeated_trigram_rate": 0.1,
+    "minimum_reference_similarity": 0.12
+  },
+  "prompting_rows": 224,
+  "unsteered_rows": 224,
+  "matched_prompt_keys": 112,
+  "prior_self_referenced_quality_pass_rate": 0.9642857142857143,
+  "rescored": {
+    "n": 224,
+    "quality_pass_rate": 0.8482142857142857,
+    "mean_reference_similarity": 0.23798614728192313,
+    "mean_repeated_trigram_rate": 0.017605590030261572,
+    "mean_word_count": 66.04910714285714
+  }
+}

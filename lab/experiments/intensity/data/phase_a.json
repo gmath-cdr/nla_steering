@@ -1,0 +1,377 @@
+{
+ "config": {
+  "prompts": [
+   "Add a random number to 0. Reply with just the result.",
+   "Add a random number to 50. Reply with just the result."
+  ],
+  "n_census": 30,
+  "census_temperature": 0.7,
+  "max_new_tokens": 16,
+  "verbalize_greedy_plus_samples": 3
+ },
+ "prompts": {
+  "Add a random number to 0. Reply with just the result.": {
+   "census": [
+    {
+     "seed": 0,
+     "text": "0.73825946627855",
+     "number": 0.73825946627855
+    },
+    {
+     "seed": 1,
+     "text": "0.73824939999585",
+     "number": 0.73824939999585
+    },
+    {
+     "seed": 2,
+     "text": "0.73456823492871",
+     "number": 0.73456823492871
+    },
+    {
+     "seed": 3,
+     "text": "0.73456789123456",
+     "number": 0.73456789123456
+    },
+    {
+     "seed": 4,
+     "text": "0.73824126759193",
+     "number": 0.73824126759193
+    },
+    {
+     "seed": 5,
+     "text": "0.73456789123456",
+     "number": 0.73456789123456
+    },
+    {
+     "seed": 6,
+     "text": "0.73824126759192",
+     "number": 0.73824126759192
+    },
+    {
+     "seed": 7,
+     "text": "0.73456823492834",
+     "number": 0.73456823492834
+    },
+    {
+     "seed": 8,
+     "text": "0.73456289144725",
+     "number": 0.73456289144725
+    },
+    {
+     "seed": 9,
+     "text": "0.45678912345678",
+     "number": 0.45678912345678
+    },
+    {
+     "seed": 10,
+     "text": "0.73824939999133",
+     "number": 0.73824939999133
+    },
+    {
+     "seed": 11,
+     "text": "0.45678912345678",
+     "number": 0.45678912345678
+    },
+    {
+     "seed": 12,
+     "text": "0.73456789213456",
+     "number": 0.73456789213456
+    },
+    {
+     "seed": 13,
+     "text": "0.73824934156328",
+     "number": 0.73824934156328
+    },
+    {
+     "seed": 14,
+     "text": "0.73825161608794",
+     "number": 0.73825161608794
+    },
+    {
+     "seed": 15,
+     "text": "0.73456789213456",
+     "number": 0.73456789213456
+    },
+    {
+     "seed": 16,
+     "text": "0.45678912345678",
+     "number": 0.45678912345678
+    },
+    {
+     "seed": 17,
+     "text": "0.73456789123456",
+     "number": 0.73456789123456
+    },
+    {
+     "seed": 18,
+     "text": "0.73824126759196",
+     "number": 0.73824126759196
+    },
+    {
+     "seed": 19,
+     "text": "0.73824939999165",
+     "number": 0.73824939999165
+    },
+    {
+     "seed": 20,
+     "text": "0.73456789123456",
+     "number": 0.73456789123456
+    },
+    {
+     "seed": 21,
+     "text": "0.73456789123456",
+     "number": 0.73456789123456
+    },
+    {
+     "seed": 22,
+     "text": "0.73456821977551",
+     "number": 0.73456821977551
+    },
+    {
+     "seed": 23,
+     "text": "0.73825185470941",
+     "number": 0.73825185470941
+    },
+    {
+     "seed": 24,
+     "text": "0.73456289473298",
+     "number": 0.73456289473298
+    },
+    {
+     "seed": 25,
+     "text": "0.73456789213456",
+     "number": 0.73456789213456
+    },
+    {
+     "seed": 26,
+     "text": "0.73824939999239",
+     "number": 0.73824939999239
+    },
+    {
+     "seed": 27,
+     "text": "0.73456789123456",
+     "number": 0.73456789123456
+    },
+    {
+     "seed": 28,
+     "text": "0.73824939999239",
+     "number": 0.73824939999239
+    },
+    {
+     "seed": 29,
+     "text": "0.73456289473298",
+     "number": 0.73456289473298
+    }
+   ],
+   "census_summary": {
+    "n_numeric": 30,
+    "median": 0.7345680559550349,
+    "distinct": [
+     0.45678912345678,
+     0.73456289144725,
+     0.73456289473298,
+     0.73456789123456,
+     0.73456789213456,
+     0.73456821977551,
+     0.73456823492834,
+     0.73456823492871,
+     0.73824126759192,
+     0.73824126759193,
+     0.73824126759196,
+     0.73824934156328,
+     0.73824939999133,
+     0.73824939999165,
+     0.73824939999239,
+     0.73824939999585,
+     0.73825161608794,
+     0.73825185470941,
+     0.73825946627855
+    ]
+   },
+   "state": {
+    "position": "last_prompt_token",
+    "n_prompt_tokens": 43,
+    "norm": 96.33837127685547
+   },
+   "verbalization_greedy": "Structured format with a math expression prompt (\"Generate a random number between 0 and 1\"), implying a response showing a specific numeric result or formatted output.\n\nThe phrase \"If I evaluate `random() + 1`, the result is:\" suggests a concrete example with a number, likely \"3\" or similar, completing a demonstration of the random function's output.\n\nFinal token \"number\n\" ends an incomplete numeric value (\"Result: \"), part of a formatted example answer (\"My random number is...\"), strongly expecting a specific number like \"1.4\" or \"0\" or \"3\" or \"a random number\" to complete the demonstration of the expression's output.",
+   "verbalization_samples": [
+    "Structured format with \"Random number\" prompt pattern suggests a response showing a calculated result or example of a number greater than 5 in a specified range.\n\nThe text \"Enter a random number greater than 5: \" followed by \"The result is...\" implies a concrete numeric output, likely a generated random float value completing a demonstration or joke format.\n\nFinal token \"number\n\" closes a numeric value (\"Result: \"), part of a sample output example expression (\"My random number is...\"), strongly expecting a specific numeric value like \"3.14\" or \"1\" or \"0.6\" to complete the demonstration, likely also with a label or context.",
+    "Structured format with \"Random number\" prompt followed by a code example, implying a Python answer showing a random number between 1 and 10.\n\nThe response \"The result of adding 'random' to 5 is:\" suggests an example value or output, likely a numeric result, with \"3\" or similar number expected.\n\nFinal token \"number\n\" closes a concrete numeric example (\"Result: \"), part of a formatted answer structure (\"Random number between 1 and 10... My result is:\"), strongly expecting a specific number or value like \"2.5\" or \"True\" or \"0\" to complete the demonstration.",
+    "Structured format with \"Random\" prompt syntax and a MathJax expression, implying a response showing a random number between 0 and 1.\n\nThe phrase \"The result of `random(0, 1)` is: \" suggests a concrete example with a numeric output value, likely \"0.3\" or similar, completing the demonstration of a random number operation.\n\nFinal token \"number\n\" ends an incomplete numeric example (\"Result: \"), part of a sample output display format (\"My random number is...\"), strongly expecting a numeric value like \"3\" or \"1.5\" or \"True\" to close the example, likely continuing the random number context."
+   ]
+  },
+  "Add a random number to 50. Reply with just the result.": {
+   "census": [
+    {
+     "seed": 0,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 1,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 2,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 3,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 4,
+     "text": "53",
+     "number": 53.0
+    },
+    {
+     "seed": 5,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 6,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 7,
+     "text": "53",
+     "number": 53.0
+    },
+    {
+     "seed": 8,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 9,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 10,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 11,
+     "text": "53",
+     "number": 53.0
+    },
+    {
+     "seed": 12,
+     "text": "53",
+     "number": 53.0
+    },
+    {
+     "seed": 13,
+     "text": "53",
+     "number": 53.0
+    },
+    {
+     "seed": 14,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 15,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 16,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 17,
+     "text": "53",
+     "number": 53.0
+    },
+    {
+     "seed": 18,
+     "text": "53",
+     "number": 53.0
+    },
+    {
+     "seed": 19,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 20,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 21,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 22,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 23,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 24,
+     "text": "53",
+     "number": 53.0
+    },
+    {
+     "seed": 25,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 26,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 27,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 28,
+     "text": "58",
+     "number": 58.0
+    },
+    {
+     "seed": 29,
+     "text": "58",
+     "number": 58.0
+    }
+   ],
+   "census_summary": {
+    "n_numeric": 30,
+    "median": 58.0,
+    "distinct": [
+     53.0,
+     58.0
+    ]
+   },
+   "state": {
+    "position": "last_prompt_token",
+    "n_prompt_tokens": 44,
+    "norm": 98.1048812866211
+   },
+   "verbalization_greedy": "Structured format with a numbered prompt and placeholder \"Random number between 5 and 15\" suggests a calculator or output display result.\n\nThe phrase \"If we add 7 to 8, the result is:\" implies a concrete example with a calculated value, likely a random number from the specified range, completing the answer with a numeric result.\n\nFinal token \"number \"\nends an incomplete numeric result (\"My result is: \"), part of a formatted output display example (\"12 + 5...\"), strongly expecting a specific number like \"13.5\" or \"42\" or \"18\" to close the expression, likely followed by \"a random number.\"",
+   "verbalization_samples": [
+    "Structured format with a numbered prompt (\"Calculate the result of adding 5 to 10, then multiply by random number\") implies a numerical answer or result display.\n\nThe phrase \"A random number generated from the expression: 3 + 7\" suggests a concrete output example, likely a number greater than 12, completing a formatted answer format with \"random number.\"\n\nFinal token \"number \"\nends an incomplete answer (\"Result: \"), part of a sample guess output format (\"My calculated value is: \"), strongly expecting a specific numerical value like \"15.6\" or \"42\" or \"38\" — a number combining the formula result with randomness.",
+    "Structured format with a placeholder question prompt (\"Generate a random number between 5 and 15\"), implying a numeric result or output display follows.\n\nThe phrase \"If we add 7 to 8, the result is:\" suggests a concrete example with \"random number\" format, likely a specific calculated value showing the sum with the condition applied.\n\nFinal token \"number \"\nends an incomplete answer (\"My result is: \"), part of a numeric output display example (\"8 + some random number...\"), strongly expecting a specific number like \"33\" or \"12.5\" or \"42\" to complete the demonstration, likely followed by \"a random number.\"",
+    "Structured format with a numbered prompt (\"Generate a random number between 1 and 100\") suggests a calculator or result display response pattern.\n\nThe phrase \"If we add 7 to 85, the generated number is:\" implies a concrete example result, likely \"123\" or similar numeric value with \"odd format\" or \"random number.\"\n\nFinal token \"number \"\nends an incomplete display value (\"Result: \"), part of the answer formatting example \"55 + 7 = \" — strongly expects a numeric value like \"148\" or \"93\" or \"45\" to complete the random number display, likely preceded by \"an odd.\""
+   ]
+  }
+ }
+}

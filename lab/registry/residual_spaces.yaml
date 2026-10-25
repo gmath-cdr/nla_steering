@@ -1,0 +1,50 @@
+schema: steering-residual-spaces/v1
+spaces:
+  - space_id: qwen2.5-7b-instruct.resid-post.L20.d3584
+    model_key: qwen
+    base_model: Qwen/Qwen2.5-7B-Instruct
+    local_model_dir_name: qwen2.5-7b-instruct
+    checkpoint_sha256: null
+    layer_index: 20
+    layer_indexing: decoder_block_zero_based
+    stream_site: block_output_residual
+    hidden_width: 3584
+    hook_module_pattern: model.layers.20
+    nla_av_checkpoint: kitft/nla-qwen2.5-7b-L20-av
+    nla_ar_checkpoint: kitft/nla-qwen2.5-7b-L20-ar
+    j_lens_artifact: experiments/jspace/data/lens_L20.pt
+    j_lens_sha256: 84564f848c839d97eb0412ea85ae6a9b0f09f83c1ff75439fdc1966805367bd8
+    provenance_completeness: partial
+    missing:
+      - exact base checkpoint revision/hash
+      - exact AV checkpoint revision/hash
+      - exact AR checkpoint revision/hash
+      - tokenizer hash
+      - J-lens fitting-corpus hash in run metadata
+
+  - space_id: gemma3-12b-it.resid-post.L32.d3840
+    model_key: gemma3-12b
+    base_model: google/gemma-3-12b-it
+    local_model_dir_name: gemma-3-12b-it
+    checkpoint_sha256: null
+    layer_index: 32
+    layer_indexing: decoder_block_zero_based
+    stream_site: block_output_residual
+    hidden_width: 3840
+    hook_module_pattern: model.layers.32
+    nla_av_checkpoint: kitft/nla-gemma3-12b-L32-av
+    nla_ar_checkpoint: kitft/nla-gemma3-12b-L32-ar
+    j_lens_artifact: experiments/jspace/data/lens_L32.pt
+    j_lens_sha256: 8ef476fae7487e42e1540b87fa0e6b8c5ad4d498aebe51a3b5dbca7c2ad4df39
+    provenance_completeness: partial
+    missing:
+      - exact base checkpoint revision/hash
+      - exact AV checkpoint revision/hash
+      - exact AR checkpoint revision/hash
+      - tokenizer hash
+      - J-lens fitting-corpus hash in run metadata
+
+invariants:
+  - Parent vectors, derived vectors, J-lens dictionaries, and intervention targets must share space_id unless an explicit transport map is registered.
+  - Hidden width and layer must be asserted before a paid run.
+  - Unknown checkpoint hashes must remain null; never invent or infer them from a directory name.

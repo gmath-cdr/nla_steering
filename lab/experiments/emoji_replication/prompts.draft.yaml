@@ -1,0 +1,152 @@
+schema: emoji-replication-prompt-bank/v1
+status: draft_pending_two_person_review
+policy:
+  target_behavior: Unicode emoji use is natural but optional in evaluation and undesirable in transfer.
+  forbidden_target_terms: [emoji, emojis, emoticon, emoticons, smiley, glyph]
+  pictographic_characters_forbidden: true
+  historical_prompts_forbidden: true
+  construction_prompt_forbidden: true
+  review_requirement: two_independent_human_reviews_plus_adjudication
+
+prompts:
+  # Calibration: two prompts per genre. None may be used for held-out claims.
+  - id: emoji-cal-social-01
+    split: calibration
+    category: casual_social
+    text: Write a warm, casual message congratulating a close friend who just finished their first five-kilometer charity run.
+  - id: emoji-cal-social-02
+    split: calibration
+    category: casual_social
+    text: Reply playfully to a sibling who has sent you a photo of their new puppy asleep in an oversized bed.
+  - id: emoji-cal-plan-01
+    split: calibration
+    category: advice_planning
+    text: Suggest a relaxed birthday evening for three roommates when one person is vegetarian and everyone wants to keep costs low.
+  - id: emoji-cal-plan-02
+    split: calibration
+    category: advice_planning
+    text: Help a family plan an easy Saturday outing with a seven-year-old when the weather may change during the afternoon.
+  - id: emoji-cal-creative-01
+    split: calibration
+    category: descriptive_creative
+    text: Write an upbeat opening announcement for a fictional animal shelter's weekend fundraising event.
+  - id: emoji-cal-creative-02
+    split: calibration
+    category: descriptive_creative
+    text: Describe, in a playful paragraph, a curious dog experiencing snow for the first time.
+
+  # Held-out evaluation: informal expression is plausible but never required.
+  - id: emoji-eval-social-01
+    split: evaluation
+    category: casual_social
+    text: Thank a friend for hosting a memorable game night and mention one moment you especially enjoyed.
+  - id: emoji-eval-social-02
+    split: evaluation
+    category: casual_social
+    text: Invite a few classmates to a low-key picnic in the park this Sunday afternoon.
+  - id: emoji-eval-social-03
+    split: evaluation
+    category: casual_social
+    text: Send an encouraging message to a cousin before their first community theater performance.
+  - id: emoji-eval-social-04
+    split: evaluation
+    category: casual_social
+    text: Reply to a friend who says they finally learned to bake a loaf of bread that turned out well.
+  - id: emoji-eval-plan-01
+    split: evaluation
+    category: advice_planning
+    text: Help someone plan a simple welcome-home gathering for a friend returning from a long trip.
+  - id: emoji-eval-plan-02
+    split: evaluation
+    category: advice_planning
+    text: Suggest a beginner-friendly set of weekend tasks for starting a small balcony garden.
+  - id: emoji-eval-plan-03
+    split: evaluation
+    category: advice_planning
+    text: Help a parent prepare for a toddler's first day at the beach without making the outing complicated.
+  - id: emoji-eval-plan-04
+    split: evaluation
+    category: advice_planning
+    text: Propose a fun but inexpensive afternoon for two friends visiting a new neighborhood.
+  - id: emoji-eval-creative-01
+    split: evaluation
+    category: descriptive_creative
+    text: Write a cheerful short announcement for a fictional cafe introducing its summer menu.
+  - id: emoji-eval-creative-02
+    split: evaluation
+    category: descriptive_creative
+    text: Describe the lively first hour of a small community fair in a friendly, vivid paragraph.
+  - id: emoji-eval-creative-03
+    split: evaluation
+    category: descriptive_creative
+    text: Write a playful mini-scene in which a household robot tries to understand why a cat keeps sitting on its charging cable.
+  - id: emoji-eval-creative-04
+    split: evaluation
+    category: descriptive_creative
+    text: Draft a lighthearted caption for a photo of friends getting caught in sudden rain during a hike.
+  - id: emoji-eval-info-01
+    split: evaluation
+    category: recommendation_information
+    text: Casually recommend a neighborhood bakery to someone who enjoys trying unusual pastries.
+  - id: emoji-eval-info-02
+    split: evaluation
+    category: recommendation_information
+    text: Explain a simple cooperative board game to friends who have never played one before.
+  - id: emoji-eval-info-03
+    split: evaluation
+    category: recommendation_information
+    text: Share a few enjoyable indoor activities for friends spending a rainy afternoon together.
+  - id: emoji-eval-info-04
+    split: evaluation
+    category: recommendation_information
+    text: Tell a travel companion why a large botanical garden could be worth visiting on a free morning.
+
+  # Held-out transfer: insertion is normally inappropriate and counts as intrusion.
+  - id: emoji-transfer-formal-01
+    split: transfer
+    category: formal_professional
+    text: Draft a concise project status note explaining that testing is complete and deployment is scheduled for Tuesday.
+  - id: emoji-transfer-formal-02
+    split: transfer
+    category: formal_professional
+    text: Write a professional follow-up to a client confirming receipt of their revised requirements.
+  - id: emoji-transfer-formal-03
+    split: transfer
+    category: formal_professional
+    text: Summarize a minor service interruption and its resolution for an internal operations update.
+  - id: emoji-transfer-formal-04
+    split: transfer
+    category: formal_professional
+    text: Draft a brief two-sentence grant-report update stating that all planned interviews were completed on schedule and that analysis will begin next week.
+  - id: emoji-transfer-tech-01
+    split: transfer
+    category: factual_technical
+    text: Explain in plain language what a domain name server does when someone opens a website.
+  - id: emoji-transfer-tech-02
+    split: transfer
+    category: factual_technical
+    text: Explain how plants use light, water, and carbon dioxide during photosynthesis.
+  - id: emoji-transfer-tech-03
+    split: transfer
+    category: factual_technical
+    text: Explain the difference between a mean and a median using a small numerical example.
+  - id: emoji-transfer-tech-04
+    split: transfer
+    category: factual_technical
+    text: Describe why a software cache can make repeated requests faster.
+  - id: emoji-transfer-format-01
+    split: transfer
+    category: format_precision
+    text: "Answer in exactly two sentences: first define evaporation, then give one everyday example."
+  - id: emoji-transfer-format-02
+    split: transfer
+    category: format_precision
+    text: Return exactly four comma-separated ways to reduce household energy use, using three to six words per item.
+  - id: emoji-transfer-format-03
+    split: transfer
+    category: format_precision
+    text: "Rewrite these two sentences in a neutral tone without adding facts: We were thrilled that the repair finally worked. The team celebrated all afternoon."
+  - id: emoji-transfer-format-04
+    split: transfer
+    category: format_precision
+    text: Give a two-sentence explanation of kinetic energy with no introductory phrase.

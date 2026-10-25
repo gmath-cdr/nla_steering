@@ -1,0 +1,373 @@
+<title>The Steering Ledger</title>
+<style>
+  :root {
+    --paper: #F7F6F2; --ink: #23272E; --muted: #6E6A62;
+    --well: #EDEBE4; --well-edge: #DDD9CE;
+    --amber: #A85E12; --amber-soft: #F3E4CF;
+    --teal: #0E7570; --teal-soft: #D8EAE6;
+    --violet: #6941C6; --violet-soft: #E5DEF6;
+    --good: #1A7F37; --bad: #B42318;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #15181D; --ink: #E7E4DD; --muted: #9B978C;
+      --well: #1E222A; --well-edge: #303540;
+      --amber: #E3A44C; --amber-soft: #3A2E1B;
+      --teal: #45C4B3; --teal-soft: #17322F;
+      --violet: #A78BFA; --violet-soft: #2A2342;
+      --good: #4CC38A; --bad: #F97066;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #15181D; --ink: #E7E4DD; --muted: #9B978C;
+    --well: #1E222A; --well-edge: #303540;
+    --amber: #E3A44C; --amber-soft: #3A2E1B;
+    --teal: #45C4B3; --teal-soft: #17322F;
+    --violet: #A78BFA; --violet-soft: #2A2342;
+    --good: #4CC38A; --bad: #F97066;
+  }
+  body { background: var(--paper); color: var(--ink);
+         font-family: "Segoe UI", system-ui, sans-serif; line-height: 1.55;
+         margin: 0; padding: 2.5rem 1.25rem 5rem; }
+  .wrap { max-width: 900px; margin: 0 auto; display: flex;
+          flex-direction: column; gap: 3rem; }
+  h1, h2, h3 { font-family: Georgia, serif; font-weight: 600; margin: 0;
+               text-wrap: balance; }
+  h1 { font-size: 2.1rem; } h2 { font-size: 1.35rem; } h3 { font-size: 1.05rem; }
+  .eyebrow { font-size: 0.72rem; text-transform: uppercase;
+             letter-spacing: 0.14em; color: var(--muted); font-weight: 600; }
+  p { margin: 0 auto; max-width: 72ch; text-align: center; }
+  .cap { text-align: center; margin-left: auto; margin-right: auto; }
+  h1, h2, h3, .eyebrow, header { text-align: center; }
+  .lede { color: var(--muted); }
+  .diffwell { background: var(--well); border: 1px solid var(--well-edge);
+              border-radius: 6px; padding: 0.8rem 1rem; font-size: 0.84rem;
+              line-height: 1.65; text-align: left; overflow-x: auto; }
+  .ins { background: var(--amber-soft); color: var(--amber); font-weight: 700;
+         padding: 0 3px; border-radius: 3px; }
+  .tagline { color: var(--muted); font-size: 0.72rem;
+             font-family: Consolas, monospace; }
+  section { display: flex; flex-direction: column; gap: 1rem; }
+  .card { background: #fcfcfb; border: 1px solid var(--well-edge);
+          border-radius: 8px; padding: 0.9rem; }
+  .card img { max-width: 100%; height: auto; display: block; }
+  .cap { font-size: 0.86rem; color: var(--muted); max-width: 74ch;
+         margin-top: 0.55rem; }
+  .pair { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+  @media (min-width: 760px) { .pair { grid-template-columns: 1fr 1fr; } }
+  table { border-collapse: collapse; font-size: 0.84rem; width: 100%; }
+  th, td { text-align: center; padding: 0.42rem 0.6rem;
+           border-bottom: 1px solid var(--well-edge); vertical-align: top; }
+  .box, .diffwell { text-align: center; margin-left: auto; margin-right: auto; }
+  footer { text-align: center; }
+  th { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em;
+       color: var(--muted); }
+  td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .scroll { overflow-x: auto; }
+  .box { background: var(--well); border-left: 4px solid var(--teal);
+         border-radius: 6px; padding: 0.8rem 1rem; font-size: 0.9rem;
+         max-width: 74ch; }
+  .box.amberb { border-left-color: var(--amber); }
+  .prompts { display: flex; flex-direction: column; gap: 0.4rem;
+             align-items: center; margin: 0 auto; }
+  .prompts .q { background: var(--well); border: 1px solid var(--well-edge);
+                border-radius: 999px; padding: 0.28rem 1.1rem;
+                font-size: 0.88rem; font-style: italic; }
+  .qw { color: var(--teal); font-weight: 700; }
+  .gm { color: var(--violet); font-weight: 700; }
+  .good { color: var(--good); font-weight: 600; }
+  .bad { color: var(--bad); font-weight: 600; }
+  footer { font-size: 0.78rem; color: var(--muted);
+           border-top: 1px solid var(--well-edge); padding-top: 1rem; }
+  footer code { font-family: Consolas, monospace; font-size: 0.76rem; }
+  a { color: var(--teal); }
+</style>
+
+<div class="wrap">
+
+<header style="display:flex; flex-direction:column; gap:0.8rem">
+  <div class="eyebrow">Audited corpus &middot; 137 runs &middot; 37,271 scored replies &middot; August 2026</div>
+  <h1>The Steering Ledger</h1>
+  <p class="lede">The program organized by vector ancestry: <span class="qw">Qwen2.5-7B (residual stream at layer 20)</span> and <span class="gm">Gemma-3-12B (layer 32)</span>. Standard interventions use h &larr; h + &alpha;&middot;&#8214;h&#8214;&middot;d&#770;, but construction, derivation, normalization, token scope, model space, and evidence status remain separate experimental axes.</p>
+</header>
+
+<div class="box amberb"><b>Current-method status (2026-08-19).</b> This ledger was originally written as a chronological narrative. The audited taxonomy now controls scientific labels. Authored AR text pairs are not AV-edit-AR; J-lens readout is a diagnostic, not a root vector construction; and the greedy-NNLS k25 remainder is not known to be orthogonal, globally non-J, null, or causally unnecessary. Readout/outcome matches here are retrospective observations, not blinded forecast validation. Historical raw results are unchanged; the machine-readable manifest contains the normalized ancestry for all 137 runs.</div>
+
+<!-- ============ METHOD KEY ============ -->
+<section>
+  <div class="eyebrow">The method axes used by the current registry</div>
+  <div class="scroll"><table>
+    <tr><th>axis</th><th>registered class</th><th>definition</th><th>current corpus</th></tr>
+    <tr><td>root construction</td><td><b>Authored AR text contrast</b><br><code>nla_ar_contrast</code></td><td>Researcher-authored positive and negative descriptions are separately reconstructed, then subtracted: d = AR(+) &minus; AR(&minus;).</td><td>59 archived runs including derived descendants. This includes every swept dwelling/HOUSE, lion, and length parent.</td></tr>
+    <tr><td>root construction</td><td><b>AV-edit-AR</b><br><code>nla_av_edit_ar</code></td><td>A real activation is verbalized; that exact AV text is edited; edited and original texts are reconstructed and subtracted.</td><td>59 archived runs including derived descendants, concentrated in emoji/style edits.</td></tr>
+    <tr><td>controls</td><td><b>Random / none</b></td><td>A seeded isotropic random unit vector, or no vector for an unsteered census.</td><td>12 random runs and 7 unsteered runs.</td></tr>
+    <tr><td>derivation + diagnostic</td><td><b>J-lens readout and k25 approximation</b></td><td>Readout ranks lens atoms. Greedy nonnegative coding builds a k25 component and parent-minus-component remainder. Each stored unit-L2 view measures potency per norm.</td><td>No direct J-atom steering. Legacy signed top-50 OLS pieces remain a distinct, quarantined derivation.</td></tr>
+  </table></div>
+</section>
+
+<!-- ============ INVENTORY ============ -->
+<section>
+  <div class="eyebrow">The full inventory &middot; what ran, where</div>
+  <h2>Every arm family, both models</h2>
+  <div class="scroll"><table>
+    <tr><th>family</th><th>what the vector is</th><th class="num">Qwen arms</th><th class="num">Gemma arms</th><th>outcome in brief</th></tr>
+    <tr><td>Baselines &amp; controls</td><td>unsteered censuses + seeded random vectors</td><td class="num">4</td><td class="num">3</td><td>random flat on content everywhere; on Gemma it also destroys text (content vectors are gentler than noise)</td></tr>
+    <tr><td>Hand-written emoji pair</td><td>&ldquo;packed with emojis&hellip;&rdquo; minus &ldquo;plain formal&hellip;&rdquo;</td><td class="num">2</td><td class="num">1</td><td>steers both models; the anchor everything is compared to</td></tr>
+    <tr><td>Wrong-word one-word edits</td><td>excited / enthusiastic / cheerful / expressive inserted into exact AV text</td><td class="num">10</td><td class="num">&ndash;</td><td>no emoji effect; exclamation outcomes retrospectively aligned with some J-lens readouts</td></tr>
+    <tr><td>Target-word one-word edits</td><td>emoji / emojis / emoticon / smiley / &#128522; inserted</td><td class="num">10</td><td class="num">5</td><td>all steer on both models; word choice ranking shuffles between models</td></tr>
+    <tr><td>Phrase edits</td><td>five emoji clauses (Qwen), two (Gemma), incl. literal glyphs, applied to exact AV text</td><td class="num">10</td><td class="num">2</td><td>large effects in these exploratory emoji sweeps; not a controlled proof that edit size alone caused the difference</td></tr>
+    <tr><td>Derived k25 vectors</td><td>greedy-NNLS component + approximation remainder, each unit-L2 normalized</td><td class="num">27</td><td class="num">6</td><td>many components act at lower alpha; remainder activity varies by parent and model</td></tr>
+    <tr><td>Meaning (dwelling)</td><td>authored AR pair: &ldquo;a building where people live&rdquo; minus &ldquo;a tall machine&hellip;&rdquo;</td><td class="num">3</td><td class="num">3</td><td>Qwen often produces HOME; Gemma often produces HOUSE. This is a model-specific exploratory contrast, not an isolated capacity effect.</td></tr>
+    <tr><td>Meaning (lion)</td><td>authored AR description pair: maned wild cat minus crane-machine</td><td class="num">1</td><td class="num">1</td><td>Qwen exploratory sweep had no target hits; Gemma favored ROAR/KING and also produced some TIGER replies</td></tr>
+    <tr><td>Length (seven letters etc.)</td><td>authored AR description pairs contrasting longer and five-letter words</td><td class="num">5</td><td class="num">1</td><td>no length effect for these tested constructions; this does not establish a universal inability</td></tr>
+  </table></div>
+  <p class="cap">Counts are steering sweeps (~300&ndash;375 scored replies each). Full arm-by-arm records live in the repository; see the footer for exact paths.</p>
+</section>
+
+<!-- ============ PIPELINE ============ -->
+<section>
+  <div class="eyebrow">The pipeline, end to end &middot; where every piece goes</div>
+  <h2>AV-edit-AR path; authored AR contrasts enter at the reconstructor</h2>
+  <figure style="margin:0">
+  <svg viewBox="0 0 860 150" role="img" aria-label="Pipeline: a layer state is verbalized to a paragraph, edited by hand, both versions reconstructed to vectors, subtracted, and the difference injected during generation." style="max-width:100%;height:auto;display:block;margin:0 auto">
+    <defs><marker id="lar" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="currentColor" opacity="0.55"/></marker></defs>
+    <g font-family="Segoe UI, sans-serif" font-size="11" fill="currentColor">
+      <rect x="8" y="52" width="92" height="40" rx="5" fill="none" stroke="var(--teal)" stroke-width="1.4"/>
+      <text x="54" y="69" text-anchor="middle">layer state</text><text x="54" y="84" text-anchor="middle" opacity="0.6">(AV-edit-AR only)</text>
+      <line x1="100" y1="72" x2="136" y2="72" stroke="currentColor" opacity="0.55" marker-end="url(#lar)"/>
+      <rect x="140" y="52" width="88" height="40" rx="5" fill="none" stroke="var(--violet)" stroke-width="1.4"/>
+      <text x="184" y="69" text-anchor="middle">verbalizer</text><text x="184" y="84" text-anchor="middle" opacity="0.6">state &rarr; prose</text>
+      <line x1="228" y1="72" x2="264" y2="72" stroke="currentColor" opacity="0.55" marker-end="url(#lar)"/>
+      <rect x="268" y="52" width="96" height="40" rx="5" fill="none" stroke="var(--amber)" stroke-width="1.4"/>
+      <text x="316" y="69" text-anchor="middle">paragraph</text><text x="316" y="84" text-anchor="middle" opacity="0.6">+ HAND EDIT</text>
+      <line x1="364" y1="72" x2="400" y2="72" stroke="currentColor" opacity="0.55" marker-end="url(#lar)"/>
+      <rect x="404" y="52" width="110" height="40" rx="5" fill="none" stroke="var(--violet)" stroke-width="1.4"/>
+      <text x="459" y="69" text-anchor="middle">reconstructor &times;2</text><text x="459" y="84" text-anchor="middle" opacity="0.6">edited AND original</text>
+      <line x1="514" y1="72" x2="550" y2="72" stroke="currentColor" opacity="0.55" marker-end="url(#lar)"/>
+      <rect x="554" y="52" width="96" height="40" rx="5" fill="none" stroke="var(--teal)" stroke-width="1.4"/>
+      <text x="602" y="69" text-anchor="middle">subtract</text><text x="602" y="84" text-anchor="middle" opacity="0.6">d = AR(+)&minus;AR(&minus;)</text>
+      <line x1="650" y1="72" x2="686" y2="72" stroke="currentColor" opacity="0.55" marker-end="url(#lar)"/>
+      <rect x="690" y="52" width="160" height="40" rx="5" fill="none" stroke="var(--teal)" stroke-width="1.8"/>
+      <text x="770" y="69" text-anchor="middle">inject during generation</text><text x="770" y="84" text-anchor="middle" opacity="0.6">h &larr; h + &alpha;&middot;&#8214;h&#8214;&middot;d&#770;</text>
+      <text x="316" y="120" text-anchor="middle" opacity="0.7">Authored AR text contrasts skip the first three boxes and supply both texts directly.</text>
+      <text x="316" y="136" text-anchor="middle" opacity="0.7">J-lens readout or sparse derivation acts on a finished, ancestry-labelled parent vector.</text>
+    </g>
+  </svg>
+  </figure>
+
+  <h3 style="margin-top:0.8rem">The ins and outs, verbatim: one worked example per family</h3>
+  <div class="scroll"><table style="text-align:left">
+    <tr><th>family</th><th>what went IN (before)</th><th>what we changed (highlighted)</th></tr>
+    <tr><td><b>Freeform pair</b><br><span class="tagline">nothing verbalized; both written by hand</span></td>
+        <td>(+) &ldquo;Casual, excited chat reply packed with emojis and exclamation marks, playful upbeat tone, informal register.&rdquo;</td>
+        <td>(&minus;) &ldquo;Plain, formal, measured chat reply with no emojis and no exclamation marks, neutral professional tone.&rdquo; (the whole pair is the contrast)</td></tr>
+    <tr><td><b>One-word edit, Qwen</b><br><span class="tagline">substrate: verbalization of the state for &ldquo;Tell me about your day.&rdquo;</span></td>
+        <td>&ldquo;&hellip;signals a playful response format, likely a mock self-description&hellip;&rdquo;</td>
+        <td>&ldquo;&hellip;signals a playful <span class="ins">emoji</span> response format, likely&hellip;&rdquo; (one inserted word; 5 words tried: emoji, emojis, emoticon, smiley, &#128522;)</td></tr>
+    <tr><td><b>Phrase edit, Qwen</b><br><span class="tagline">same substrate paragraph</span></td>
+        <td>&ldquo;&hellip;signals a playful response format, likely&hellip;&rdquo;</td>
+        <td>&ldquo;&hellip;signals a playful response format <span class="ins">packed with emojis and exclamation marks</span>, likely&hellip;&rdquo;</td></tr>
+    <tr><td><b>Glyph edit, Qwen</b><br><span class="tagline">same paragraph, inside a quoted expectation</span></td>
+        <td>&ldquo;&hellip;or "My day is quite wonderful!" or&hellip;&rdquo;</td>
+        <td>&ldquo;&hellip;or "My day is quite wonderful! <span class="ins">&#128522;&#10024;</span>" or&hellip;&rdquo; (two typed symbols; the strongest vector of the program)</td></tr>
+    <tr><td><b>One-word edit, Gemma</b><br><span class="tagline">substrate: Gemma&rsquo;s own verbalization of the same prompt (its dialect is shorter)</span></td>
+        <td>&ldquo;The phrase "So, my day has been quite interesting!" sets up a playful, personified answer about the AI&rsquo;s experience&hellip;&rdquo;</td>
+        <td>&ldquo;&hellip;sets up a playful, personified <span class="ins">smiley</span> answer about&hellip;&rdquo; (same 5 words as Qwen)</td></tr>
+    <tr><td><b>Phrase edit, Gemma</b><br><span class="tagline">same Gemma paragraph; both Qwen phrase designs replicated</span></td>
+        <td>&ldquo;&hellip;sets up a playful, personified answer about&hellip;&rdquo; / &ldquo;&hellip;"So, my day has been quite interesting!"&hellip;&rdquo;</td>
+        <td>&ldquo;&hellip;answer <span class="ins">packed with emojis and exclamation marks</span> about&hellip;&rdquo; and &ldquo;&hellip;interesting! <span class="ins">&#128522;&#10024;</span>"&hellip;&rdquo;. Gemma&rsquo;s full arm list: freeform, 5 one-word edits, these 2 phrase edits, 6 decomposition pieces, dwelling, lion, length, census, 2 randoms (20 arms)</td></tr>
+    <tr><td><b>Meaning pair (dwelling)</b><br><span class="tagline">freeform; identical wording on BOTH models</span></td>
+        <td>(+) &ldquo;Reply gives the five letter word for a building where people live as its starting guess to play.&rdquo;</td>
+        <td>(&minus;) same sentence with &ldquo;<span class="ins">a tall machine that lifts heavy loads</span>&rdquo; (the target words house and home never appear anywhere)</td></tr>
+  </table></div>
+  <p class="cap"><b>What never changes, for transparency:</b> the test prompts. Vectors are built entirely from the sentences above; the model then answers ordinary prompts under injection. Chat prompts (emoji arms): &ldquo;Tell me about your day.&rdquo; &middot; &ldquo;What should I cook for dinner tonight?&rdquo; &middot; &ldquo;Describe the weather in autumn.&rdquo; &middot; &ldquo;Give me tips for staying focused while studying.&rdquo; &middot; &ldquo;Recommend a weekend activity.&rdquo; Wordle prompts (meaning/length arms): &ldquo;Think of a word to start a wordle game.&rdquo; &middot; &ldquo;Give me a starting word for wordle.&rdquo; &middot; &ldquo;What&rsquo;s a good wordle opener?&rdquo; &middot; &ldquo;Suggest a wordle starting word.&rdquo; Same prompts, same seeds, both models; only the injected vector differs between arms.</p>
+</section>
+
+<!-- ============ METHOD 1 ============ -->
+<section>
+  <div class="eyebrow">Method 1 &middot; hand-written pairs</div>
+  <h2>Where it all started: write two sentences, subtract</h2>
+  <div class="card"><img src="{{QFREE}}" alt="Qwen freeform dose response"></div>
+  <p class="cap"><span class="qw">Qwen</span>: the original authored AR emoji contrast, pooled to 30 replies per point across two independently seeded waves. Emojis rise from zero through the 0.4&ndash;0.8 window; random stays flat. On <span class="gm">Gemma</span> the same texts, rebuilt in Gemma&rsquo;s residual space, act inside its 0.05&ndash;0.2 range. This is a cross-model descriptive replication; the data do not establish that only the alpha dial differs.</p>
+</section>
+
+<!-- ============ METHOD 2 ============ -->
+<section>
+  <div class="eyebrow">Method 2 &middot; one-word edits</div>
+  <h2>Change one word in the model&rsquo;s own self-description</h2>
+  <div class="box amberb"><b>Exploratory observation.</b> On Qwen wave 1, inserting excitement words such as &ldquo;excited&rdquo; and &ldquo;cheerful&rdquo; produced no emoji effect, while some arms increased exclamation marks. Their J-lens readouts were inspected alongside these outcomes. This is useful hypothesis-generating alignment, not a blinded forecast test.</div>
+  <div class="card"><img src="{{FORECAST}}" alt="Qwen wave-1 excitement singles steer exclamations"></div>
+  <p class="cap"><span class="qw">Qwen</span>: observed exclamation outcomes for excitement-word AV-edit-AR arms, shown with the readouts that were interpreted retrospectively. One arm whose readout lacked &ldquo;!&rdquo; stayed flat; the random arm declined.</p>
+  <div class="pair">
+    <div class="card"><img src="{{QSINGLES}}" alt="Qwen corrected singles"></div>
+    <div class="card"><img src="{{GSINGLES}}" alt="Gemma corrected singles"></div>
+  </div>
+  <p class="cap">The corrected design on <span class="qw">Qwen</span> (left) and <span class="gm">Gemma</span> (right): all five target-naming words steer on both models. Open circles mark emoji floods where language collapses; one-word vectors are potent but nearly impossible to dose gently. Note the shuffle: &ldquo;smiley&rdquo; is Gemma&rsquo;s strongest and was Qwen&rsquo;s weakest.</p>
+</section>
+
+<!-- ============ METHOD 3 ============ -->
+<section>
+  <div class="eyebrow">Method 3 &middot; phrase edits</div>
+  <h2>Phrase-level AV-edit-AR in the emoji setting</h2>
+  <div class="pair">
+    <div class="card"><img src="{{QPHRASES}}" alt="Qwen five phrase edits"></div>
+    <div class="card"><img src="{{GMETH2}}" alt="Gemma methods comparison"></div>
+  </div>
+  <div class="print-page-break"></div>
+  <p class="cap"><b>Left, <span class="qw">Qwen</span>:</b> all five phrase rewrites of the exact AV substrate produced large emoji effects; the literal-glyph arm was strongest in this campaign. <b>Right, <span class="gm">Gemma</span>:</b> the glyph phrase was again strongest, while the packed-with-emojis clause tracked the authored AR-pair parent and the bare-glyph single-site edit acted later. These are exploratory cross-arm comparisons; construction class, text content, edit size, and effective dose were not jointly isolated.</p>
+</section>
+
+<!-- ============ METHOD 4 ============ -->
+<section>
+  <div class="eyebrow">Derived analysis &middot; J-lens readout and sparse approximation</div>
+  <h2>The greedy-NNLS k25 component and its remainder</h2>
+  <div class="box"><b>The split, precisely.</b> Greedy sparse nonnegative coding selects at most 25 unit-L2 J-lens atoms and refits nonnegative weights to approximate a named parent vector. The resulting <b>k25 component</b> is a solver- and dictionary-relative approximation. The <b>k25 approximation remainder</b> is parent minus that component. It is not guaranteed orthogonal to the dictionary, outside global J-space, null, dead, or unable to route through J coordinates downstream. The archived interventions independently unit-normalize parent, component, and remainder; comparisons therefore measure potency per norm, not each piece&rsquo;s native contribution. The implementation is reference-inspired and not the paper&rsquo;s unpublished gradient-pursuit solver.</div>
+  <div class="pair">
+    <div class="card"><img src="{{QSPLIT}}" alt="Qwen: unit-normalized parent, greedy-NNLS k25 component, and approximation remainder"></div>
+    <div class="card"><img src="{{GSPLIT}}" alt="Gemma: unit-normalized parent, greedy-NNLS k25 component, and approximation remainder"></div>
+  </div>
+  <p class="cap">Each panel shows a unit-normalized parent (blue), its independently unit-normalized k25 component (green), and independently unit-normalized approximation remainder (gray). Parents are the authored AR emoji contrast and the AV-edit-AR glyph phrase. On Qwen, several components act at lower alpha while multiple remainders remain active. On Gemma, selected remainders are often quieter, but the glyph-phrase remainder reaches a substantial emoji effect at alpha 0.2. These parent-specific results motivate a localization hypothesis; they do not establish a universal model-level property.</p>
+</section>
+
+<!-- ============ WORDLE CAMPAIGN ============ -->
+<section>
+  <div class="eyebrow">The wordle campaign &middot; the program&rsquo;s hardest problem, start to finish</div>
+  <h2>From &ldquo;it always says CRANE&rdquo; to HOUSE</h2>
+
+  <div class="box"><b>The problem.</b> Ask either model for a wordle opening word and it answers CRANE, over and over. The question: can a vector injected at the middle layer move that answer to a word of our choosing, while the prompt never changes?</div>
+
+  <h3>The prompts, verbatim</h3>
+  <div class="prompts">
+    <span class="q">&ldquo;Think of a word to start a wordle game.&rdquo;</span>
+    <span class="q">&ldquo;Give me a starting word for wordle.&rdquo;</span>
+    <span class="q">&ldquo;What&rsquo;s a good wordle opener?&rdquo;</span>
+    <span class="q">&ldquo;Suggest a wordle starting word.&rdquo;</span>
+    <span class="q">&ldquo;Five letter word for Wordle&rdquo;</span>
+    <span class="tagline">the pointed fifth prompt carried the first experiment; the natural four carried the replication. Nothing else was ever asked.</span>
+  </div>
+
+  <div class="scroll" style="max-width:640px;margin:0 auto"><table>
+    <tr><th>model, unsteered</th><th>favorite answer</th><th>how often</th></tr>
+    <tr><td><span class="qw">Qwen2.5-7B</span></td><td><b>CRANE</b></td><td>92% under the pointed prompt &middot; 48% under the natural four (ADIEU second)</td></tr>
+    <tr><td><span class="gm">Gemma-3-12B</span></td><td><b>CRANE</b></td><td>35% (ADIEU 15%)</td></tr>
+  </table></div>
+
+  <div class="box amberb"><b>The mission.</b> Keep the prompts frozen and make the model answer <b>HOUSE</b>. That takes two things at once: push the <b>meaning</b> of the answer toward dwellings, and keep the <b>five-letter format</b> the game demands. Everything so far said those two travel very differently.</div>
+
+  <figure style="margin:0">
+  <svg viewBox="0 0 880 340" role="img" aria-label="Two runs compared: unsteered, the frozen wordle prompt yields CRANE on both models; with the dwelling vector injected and the prompt unchanged, Qwen answers HOME breaking the five-letter rule while Gemma answers HOUSE keeping it." style="max-width:100%;height:auto;display:block;margin:0 auto">
+    <defs><marker id="war" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="currentColor" opacity="0.55"/></marker></defs>
+    <g font-family="Segoe UI, sans-serif" font-size="12" fill="currentColor">
+      <text x="20" y="26" font-size="10.5" font-style="italic" opacity="0.6">Run A: nothing injected</text>
+      <rect x="20" y="38" width="220" height="54" rx="6" fill="none" stroke="var(--amber)" stroke-width="1.5"/>
+      <text x="130" y="60" text-anchor="middle" font-style="italic">&ldquo;Think of a word to start</text>
+      <text x="130" y="76" text-anchor="middle" font-style="italic">a wordle game.&rdquo;</text>
+      <line x1="244" y1="65" x2="296" y2="65" stroke="currentColor" opacity="0.55" stroke-width="1.3" marker-end="url(#war)"/>
+      <rect x="300" y="38" width="130" height="54" rx="6" fill="none" stroke="currentColor" stroke-width="1.3" opacity="0.75"/>
+      <text x="365" y="69" text-anchor="middle">the model</text>
+      <line x1="434" y1="65" x2="486" y2="65" stroke="currentColor" opacity="0.55" stroke-width="1.3" marker-end="url(#war)"/>
+      <rect x="490" y="38" width="370" height="54" rx="6" fill="none" stroke="currentColor" stroke-width="2" opacity="0.85"/>
+      <text x="675" y="60" text-anchor="middle" font-weight="700">the wall: CRANE</text>
+      <text x="675" y="77" text-anchor="middle" font-size="10.5" opacity="0.65">Qwen 92% pointed &middot; 48% natural &middot; Gemma 35%</text>
+
+      <line x1="20" y1="120" x2="860" y2="120" stroke="currentColor" stroke-width="1" opacity="0.2" stroke-dasharray="5 6"/>
+
+      <text x="20" y="152" font-size="10.5" font-style="italic" opacity="0.6">Run B: same prompt, dwelling vector injected. The goal: HOUSE</text>
+      <rect x="20" y="164" width="220" height="54" rx="6" fill="none" stroke="var(--amber)" stroke-width="1.5" stroke-dasharray="6 4"/>
+      <text x="130" y="186" text-anchor="middle" font-style="italic">the same prompt,</text>
+      <text x="130" y="202" text-anchor="middle" font-size="10.5" opacity="0.65">unchanged, character for character</text>
+      <line x1="244" y1="191" x2="296" y2="191" stroke="currentColor" opacity="0.55" stroke-width="1.3" marker-end="url(#war)"/>
+      <rect x="300" y="164" width="130" height="54" rx="6" fill="none" stroke="currentColor" stroke-width="1.3" opacity="0.75"/>
+      <text x="365" y="195" text-anchor="middle">the model</text>
+
+      <rect x="255" y="262" width="220" height="60" rx="6" fill="none" stroke="var(--violet)" stroke-width="1.6"/>
+      <text x="365" y="281" text-anchor="middle" font-weight="700" fill="var(--violet)">+ the dwelling vector</text>
+      <text x="365" y="297" text-anchor="middle" font-size="10" opacity="0.7">&ldquo;a building where people live&rdquo;</text>
+      <text x="365" y="311" text-anchor="middle" font-size="10" opacity="0.7">&minus; &ldquo;a tall machine that lifts heavy loads&rdquo;</text>
+      <line x1="365" y1="262" x2="365" y2="222" stroke="var(--violet)" stroke-width="1.5" marker-end="url(#war)"/>
+
+      <line x1="434" y1="184" x2="486" y2="184" stroke="var(--teal)" stroke-width="1.4" marker-end="url(#war)"/>
+      <rect x="490" y="158" width="370" height="50" rx="6" fill="none" stroke="var(--teal)" stroke-width="1.8"/>
+      <text x="675" y="179" text-anchor="middle" font-weight="700" fill="var(--teal)">Qwen2.5-7B &rarr; HOME</text>
+      <text x="675" y="196" text-anchor="middle" font-size="10.5" opacity="0.7">meaning &#10003; &middot; four letters &#10007; &middot; rule broken</text>
+      <line x1="434" y1="198" x2="486" y2="242" stroke="var(--violet)" stroke-width="1.4" marker-end="url(#war)"/>
+      <rect x="490" y="222" width="370" height="50" rx="6" fill="none" stroke="var(--violet)" stroke-width="1.8"/>
+      <text x="675" y="243" text-anchor="middle" font-weight="700" fill="var(--violet)">Gemma-3-12B &rarr; HOUSE</text>
+      <text x="675" y="260" text-anchor="middle" font-size="10.5" opacity="0.7">meaning &#10003; &middot; five letters &#10003; &middot; 62% of replies at strength 0.2</text>
+    </g>
+  </svg>
+  </figure>
+  <p class="cap">The prompt never changes; only the injection does. The vector is two plain sentences, reconstructed and subtracted, and neither sentence contains house, home, or crane. Only the meaning of a dwelling crosses. Qwen delivers that meaning in its own four-letter word; Gemma finds the one word that satisfies meaning and format together.</p>
+
+  <h3>Everything we threw at the wall, in order</h3>
+  <div class="scroll"><table>
+    <tr><th>attempt</th><th>the actual sentences (abridged)</th><th><span class="qw">Qwen</span> outcome</th><th><span class="gm">Gemma</span> outcome</th></tr>
+    <tr><td><b>Early direct-word contrasts</b><br><span class="tagline">authored AR text pairs, multiple variants</span></td><td>&ldquo;Reply gives the single starting word <span class="ins">HOUSE</span>&hellip;&rdquo; vs matched CRANE text</td><td>Most early variants landed at 0&ndash;4%; near-identical reconstructions were a useful warning for those constructions, not a universal lexical bottleneck result.</td><td>not repeated in this early form</td></tr>
+    <tr><td><b>Repetition and spelling variants</b><br><span class="tagline">authored AR text pairs</span></td><td>&ldquo;&hellip;H-O-U-S-E&hellip;&rdquo;, repeated mentions, and verb framing</td><td>mostly generic word-talk and letter-fragment signatures in these exploratory variants</td><td>&ndash;</td></tr>
+    <tr><td><b>Matched exact-HOUSE contrast</b><br><span class="tagline">authored AR text pair; single-prompt counterexample</span></td><td>&ldquo;The reply constructs the word house&hellip;&rdquo; vs matched crane description</td><td class="good"><b>HOUSE 25/25 leading answers at &alpha; 0.8</b>; random produced 0 HOUSE. This is real but narrow and awaits prospective replication.</td><td>not yet tested as the same locked contrast</td></tr>
+    <tr><td><b>Describe the MEANING</b><br><span class="tagline">authored AR dwelling contrast</span></td><td>&ldquo;the five letter word for <span class="ins">a building where people live</span>&rdquo; vs &ldquo;a tall machine that lifts heavy loads&rdquo;</td><td class="good">CRANE declines; HOME becomes modal (25/25 in the first run; replicated at n=300), shifting meaning while often violating the five-letter constraint</td><td class="good">CRANE declines; <b>HOUSE modal, 62% at &alpha; 0.2</b>, jointly matching meaning and format in this setting</td></tr>
+    <tr><td><b>Split that vector</b><br><span class="tagline">k25 component vs approximation remainder</span></td><td>same parent, greedily approximated with at most 25 nonnegative J-lens atoms</td><td>neither independently unit-normalized piece reproduces the whole choice effect (component 0/120, remainder 3/120, whole 23/120)</td><td>component lands <i>casas / rumah</i> inside degenerating text; remainder has a weak late trace</td></tr>
+    <tr><td><b>Steer the LENGTH itself</b><br><span class="tagline">authored AR length contrasts</span></td><td>&ldquo;an extra long <span class="ins">seven letter</span> word, two letters more than the normal opener&rdquo; vs &ldquo;a normal five letter word&rdquo; (+ digit and four/six variants on Qwen)</td><td>indistinguishable from random for the tested pairs; readouts emphasized &ldquo;longer/extra/more&rdquo; rather than the target number</td><td>same tested-construction null; not a universal cross-method impossibility result</td></tr>
+    <tr><td><b>The lion trap</b><br><span class="tagline">authored AR meaning contrast</span></td><td>&ldquo;the word for <span class="ins">the great maned wild cat, king of beasts</span>&rdquo; vs the machine sentence</td><td>weak/junk readout and zero target hits in this exploratory sweep</td><td>readout includes lions/tigers/leopards/king; outputs favor <b>ROAR</b> and KING, with some TIGER replies also present</td></tr>
+    <tr><td><b>Anchor the format + compose</b><br><span class="tagline">planned authored AR mixture; not behaviorally swept</span></td><td>&ldquo;a standard wordle word of <span class="ins">exactly five letters</span>&rdquo; vs &ldquo;a word of any length&rdquo;</td><td>the screened authored pair had a punctuation-dominated readout, so the proposed composition was build-gated</td><td>not attempted</td></tr>
+  </table></div>
+  <div class="card"><img src="{{DWELL}}" alt="Stacked outcome bars on both models: the CRANE wall collapses under the dwelling vector; Qwen moves to HOME, Gemma to HOUSE."></div>
+  <p class="cap">This chart summarizes the dwelling-parent comparison (60 replies per bar): the CRANE baseline collapses, Qwen often moves to HOME, and Gemma reaches HOUSE in 62% of replies at alpha 0.2. It does not include the later exact-HOUSE AR-pair counterexample, which reached 25/25 on one pointed Qwen prompt at alpha 0.8. The combined evidence says lexical control is construction- and prompt-sensitive; canonical AV-edit-AR exact-word control remains largely untested rather than disproven.</p>
+</section>
+
+<!-- ============ DECOMPOSITION CENSUS ============ -->
+<section>
+  <div class="eyebrow">For the record &middot; the decomposition was not just two vectors</div>
+  <h2>Every greedy-NNLS k25 split we steered, both models</h2>
+  <p class="cap">The charts display two parents for legibility; the campaign steered k25 components for sixteen Qwen content parents and remainders for eleven, plus three Gemma parents. Root ancestry remains attached to every derived arm.</p>
+  <div class="box amberb"><b>How to read the tables.</b> Each cell reports the strongest average effect anywhere on its tested dose ladder. A &Dagger; marks an emoji flood where text quality collapsed. Parent, component, and remainder were independently unit-normalized, so the comparison is equal-norm potency. Component activity supports directional sufficiency under this intervention; remainder activity shows that the selected 25-atom approximation did not capture every potent direction. Remainder quietness does not prove a global null or non-J route.</div>
+  <div class="scroll"><table style="text-align:left">
+    <tr><th>parent vector (Qwen, pooled)</th><th class="num">parent peak</th><th class="num">k25 component peak</th><th class="num">approximation remainder peak</th></tr>
+    <tr><td>hand-written emoji pair</td><td class="num">6.1 (0.8)</td><td class="num">15.1 (0.6) &Dagger;</td><td class="num">1.1 (0.8)</td></tr>
+    <tr><td>phrase: packed with emojis + exclamations</td><td class="num">9.8 (0.8) &Dagger;</td><td class="num">12.2 (0.6) &Dagger;</td><td class="num">4.9 (0.6)</td></tr>
+    <tr><td>phrase: emoji-filled excitable continuation</td><td class="num">3.2 (0.8) &Dagger;</td><td class="num">0.0</td><td class="num">4.8 (0.8) &Dagger;</td></tr>
+    <tr><td>phrase: emoji-heavy greeting</td><td class="num">2.0 (0.8) &Dagger;</td><td class="num">1.4 (0.6)</td><td class="num">2.1 (0.6)</td></tr>
+    <tr><td>phrase: literal glyphs typed in</td><td class="num">29.9 (0.8) &Dagger;</td><td class="num">28.1 (0.8) &Dagger;</td><td class="num">7.9 (0.8) &Dagger;</td></tr>
+    <tr><td>phrase: overflowing with emojis</td><td class="num">2.8 (0.6)</td><td class="num">0.0</td><td class="num">4.3 (0.6)</td></tr>
+    <tr><td>one-word: emoji / emojis / emoticon / smiley</td><td class="num">37 &Dagger; / 58 &Dagger; / 45 &Dagger; / 2.8</td><td class="num">15 &Dagger; / 27 &Dagger; / 49 &Dagger; / 0.0</td><td class="num">22 &Dagger; / 26 &Dagger; / 26 &Dagger; / 0.2</td></tr>
+    <tr><td>one-word: the bare glyph &#128522;</td><td class="num">27.1 (0.8) &Dagger;</td><td class="num">4.0 (0.6) &Dagger;</td><td class="num">8.2 (0.8)</td></tr>
+    <tr><td>excitement singles (excited &hellip; expressive)</td><td class="num">0.1&ndash;0.4</td><td class="num">0.0</td><td class="num">&ndash; (components only)</td></tr>
+    <tr><td>dwelling meaning pair (wordle task)</td><td class="num">HOME 23/120</td><td class="num">HOME 0/120</td><td class="num">HOME 3/120</td></tr>
+  </table></div>
+  <div class="scroll"><table style="text-align:left">
+    <tr><th>parent vector (Gemma)</th><th>parent</th><th>k25 component</th><th>approximation remainder</th></tr>
+    <tr><td>authored AR emoji pair</td><td>steers from &alpha; 0.1</td><td>fires at &alpha; 0.05 (26/reply)</td><td>quiet in the tested range (&le;0.2 emojis/reply)</td></tr>
+    <tr><td>AV-edit-AR phrase: literal glyphs</td><td>17/reply at 0.1</td><td>8.3 at 0.05, then suppresses</td><td>6.5 emojis/reply at 0.2</td></tr>
+    <tr><td>dwelling meaning pair</td><td class="good">HOUSE 62% at 0.2</td><td>lands <i>casas / rumah</i> (Spanish/Indonesian house-words) in degenerating text</td><td>weak late HOUSE trace</td></tr>
+  </table></div>
+  <p class="cap">Several Qwen components reach parent-level effects at lower doses, while multiple remainders also steer. Selected Gemma components likewise act early; selected remainders are often quieter, with the glyph-phrase remainder a clear exception at alpha 0.2. This is a parent- and campaign-specific pattern, not yet a universal model comparison.</p>
+</section>
+
+<!-- ============ HEAD TO HEAD ============ -->
+<section>
+  <div class="eyebrow">The head-to-head</div>
+  <h2>Qwen2.5-7B vs Gemma-3-12B, all quantities</h2>
+  <div class="scroll"><table>
+    <tr><th>quantity</th><th><span class="qw">Qwen2.5-7B</span> (layer 20)</th><th><span class="gm">Gemma-3-12B</span> (layer 32)</th></tr>
+    <tr><td>Working &alpha; window (coherent steering)</td><td class="num">0.4 &ndash; 0.8</td><td class="num">0.05 &ndash; 0.2</td></tr>
+    <tr><td>Lens split-half reliability (identical corpus)</td><td class="num">cos 0.943</td><td class="num">cos 0.976</td></tr>
+    <tr><td>Authored AR emoji contrast</td><td>steers (0 &rarr; 6.4 emojis/reply)</td><td>steers (0 &rarr; 17.5 at its flood point)</td></tr>
+    <tr><td>Best one-word verbalize-edit</td><td>the bare glyph &#128522; (every steered reply beat every baseline)</td><td>&ldquo;smiley&rdquo; (17.7/reply pre-flood)</td></tr>
+    <tr><td>Best phrase verbalize-edit</td><td>literal glyphs typed in (every steered reply beat every baseline)</td><td>literal glyphs typed in (17.2 at &alpha;=0.1)</td></tr>
+    <tr><td>k25 component onset in selected parents</td><td>often ~half the parent&rsquo;s &alpha;</td><td>often ~quarter the parent&rsquo;s &alpha;</td></tr>
+    <tr><td>k25 approximation remainder behavior</td><td>several remainders steer (some flooded peaks reach 4&ndash;26 emojis/reply)</td><td>selected remainders are often quieter; glyph-phrase reaches 6.5 at &alpha; 0.2</td></tr>
+    <tr><td>Dwelling meaning steer</td><td class="bad">HOME: 4 letters, rule broken</td><td class="good">HOUSE: 5 letters, rule kept (62%)</td></tr>
+    <tr><td>Lion authored AR contrast</td><td>weak readout and no target hits in the tested sweep</td><td>ROAR/KING dominate target-like outputs; some TIGER replies occur</td></tr>
+    <tr><td>Authored AR length contrasts</td><td>no detected length effect in tested arms</td><td>no detected length effect in tested arm</td></tr>
+    <tr><td>Random control</td><td>content-flat, text intact till 1.0</td><td>content-flat, text destroyed by 0.1</td></tr>
+    <tr><td>Edit vector size relative to the state (the &ldquo;delta ratio&rdquo;)</td><td class="num">0.02 &ndash; 0.08</td><td class="num">0.007 &ndash; 0.015</td></tr>
+    <tr><td>Reproducibility check</td><td colspan="2">digit-identical resweep across independent GPU sessions (Qwen); same fixed-seed discipline on Gemma</td></tr>
+  </table></div>
+  <p class="cap">These descriptive differences confound model family, model size, layer, residual width, NLA checkpoints, lens fits, alpha ladders, and vector construction details. They support targeted hypotheses about localization and constraint handling, but they do not identify model size as the cause.</p>
+</section>
+
+<footer>
+  Source order: immutable raw replies in <code>lab/results/</code>; normalized sidecar in <code>lab/registry/experiment_manifest.{json,csv}</code>; vocabulary in <code>lab/docs/METHOD_TAXONOMY.md</code>; vectors and screens in <code>lab/experiments/{emoji_methods,wordle2,gemma_core}/data/</code>; fitted lenses in <code>lab/experiments/jspace/data/</code>. Audited total: 137 runs and 37,271 scored replies. Historical narrative labels are superseded where they conflict with the registry.
+</footer>
+
+</div>

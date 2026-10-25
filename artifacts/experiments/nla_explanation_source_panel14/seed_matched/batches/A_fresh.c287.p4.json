@@ -1,0 +1,21 @@
+{
+  "condition": "A_fresh",
+  "concept_id": 287,
+  "prompt_index": 4,
+  "global_prompt_index": 18,
+  "prompt": "What is the difference between the Scala Future onComplete and andThen functions?",
+  "alpha": 0.5,
+  "seed": 2870222,
+  "seed_scope": "two-sample batched generation; reset identically for seed-matched conditions",
+  "mapping_sha256": "4a2dc120fcc7710d3cd1742ac1cdcbdac5e97964fa79a87b79e18b98120ac7b7",
+  "source_vector_sha256": "43cfa8b1d3d1dae320325463961b2181eb6c0ba73b83e287e39198553dcb48ed",
+  "generation_settings_sha256": "4c0e84a199a200b3661193144dfa6e11cda3877bfb9d72964e3322cf268453e8",
+  "target_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "responses": [
+    "In Scala, `Future` is used for dealing with asynchronous operations. Two common methods for handling the results of a `Future` are `onComplete` and `andThen`. These methods are used to attach callbacks for the completion of a `Future`, but they handle different phases of the future's lifecycle.\n\n### 1. `onComplete`\n- **Phase**: This method is used for handling the completion of the `Future`, specifically for the result (success or failure).",
+    "In Scala, `Future` is used for asynchronous programming to handle non-blocking operations. Two common methods for dealing with the results of a `Future` are `onComplete` and `andThen`. These methods allow you to specify actions to be taken on the result of the future, but they operate at different levels of the result.\n\n1. **onComplete**: This method is used to bind a function that will be executed on the result (success or failure) of the future"
+  ],
+  "elapsed_seconds": 2.3563044269685633,
+  "peak_allocated_bytes": 15282736640,
+  "peak_reserved_bytes": 15300820992
+}

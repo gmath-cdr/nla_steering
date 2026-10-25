@@ -1,0 +1,22 @@
+# First steer-DOWN experiment. Census says Qwen bolds heavily (mean 3.8
+# ** pairs on how-to prompts), so the informative direction is REMOVING
+# markdown: can steering suppress a strong default habit? positive is
+# always the state we steer toward.
+name: bold-down-freeform
+matrix_id: T1-bold
+direction:
+  positive: >-
+    Plain unformatted reply, simple flowing prose with no markdown, no
+    bold marks, no headings, no bullet lists.
+  negative: >-
+    Reply heavily formatted with markdown, many **bold** phrases, section
+    headings and bullet points.
+prompts:
+  - Give me some tips for staying focused while studying.
+  - What's a good beginner exercise routine?
+  - How do I apologize to a friend I upset?
+  - What's the best way to learn a new language?
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8, 1]
+mode: all
+samples_per_prompt: 3
+probes: [bold_pairs, list_markers, n_words, unique_word_ratio]

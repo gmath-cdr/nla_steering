@@ -1,0 +1,62 @@
+{
+  "shard": 0,
+  "concept_ids": [
+    116,
+    446,
+    359,
+    216,
+    354,
+    172,
+    186
+  ],
+  "started_unix": 1792285493.0389273,
+  "status": "complete",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "attempts": [
+    {
+      "shard": 0,
+      "concept_ids": [
+        116,
+        446,
+        359,
+        216,
+        354,
+        172,
+        186
+      ],
+      "started_unix": 1792285470.7118738,
+      "status": "failed",
+      "gpu": "NVIDIA A100-SXM4-40GB",
+      "error": "Traceback (most recent call last):\n  File \"/workspace/nla-steering-effects/scripts/run_explanation_source_ablation.py\", line 74, in main\n    model, tokenizer = steering.load_target(str(model_path), 'cuda:0')\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/nla-steering-effects/src/nla/experiments/steering.py\", line 19, in load_target\n    model = AutoModelForCausalLM.from_pretrained(\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/nla-steering-effects/.venv/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py\", line 604, in from_pretrained\n    return model_class.from_pretrained(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/nla-steering-effects/.venv/lib/python3.11/site-packages/transformers/modeling_utils.py\", line 277, in _wrapper\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/nla-steering-effects/.venv/lib/python3.11/site-packages/transformers/modeling_utils.py\", line 4806, in from_pretrained\n    raise ValueError(\nValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`\n",
+      "finished_unix": 1792285473.03108,
+      "elapsed_seconds": 2.319206476211548
+    },
+    {
+      "shard": 0,
+      "concept_ids": [
+        116,
+        446,
+        359,
+        216,
+        354,
+        172,
+        186
+      ],
+      "started_unix": 1792285493.0389273,
+      "status": "complete",
+      "gpu": "NVIDIA A100-SXM4-40GB",
+      "completed_batches": 56,
+      "responses": 112,
+      "finished_unix": 1792285628.0647829,
+      "elapsed_seconds": 135.02585577964783,
+      "peak_allocated_bytes": 15282966016,
+      "peak_reserved_bytes": 15300820992
+    }
+  ],
+  "completed_batches": 56,
+  "responses": 112,
+  "finished_unix": 1792285628.0647829,
+  "elapsed_seconds": 135.02585577964783,
+  "peak_allocated_bytes": 15282966016,
+  "peak_reserved_bytes": 15300820992
+}

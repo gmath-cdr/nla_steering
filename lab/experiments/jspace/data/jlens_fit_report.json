@@ -1,0 +1,502 @@
+{
+ "config": {
+  "model": "/root/models/gemma-3-12b-it",
+  "layer": 32,
+  "dim_batch": 8,
+  "n_prompts": 160,
+  "half": 80,
+  "estimator": "jlens.fitting.fit defaults (max_seq_len=128, skip_first=16)"
+ },
+ "fit_minutes": 80.8,
+ "gate1": {
+  "split_half_matrix_cos": 0.9756736159324646,
+  "curated_token_cos_min_median_max": [
+   0.9602100253105164,
+   0.9775024652481079,
+   0.9892666935920715
+  ],
+  "threshold": 0.9,
+  "pass": true
+ },
+ "token_resolution": {
+  "home": {
+   "bare": [
+    8147
+   ],
+   "space": [
+    2033
+   ]
+  },
+  "house": {
+   "bare": [
+    6367
+   ],
+   "space": [
+    3155
+   ]
+  },
+  "crane": {
+   "bare": [
+    8162,
+    1629
+   ],
+   "space": [
+    51040
+   ]
+  },
+  "building": {
+   "bare": [
+    21125
+   ],
+   "space": [
+    3788
+   ]
+  },
+  "live": {
+   "bare": [
+    28699
+   ],
+   "space": [
+    3892
+   ]
+  },
+  "word": {
+   "bare": [
+    3017
+   ],
+   "space": [
+    3658
+   ]
+  },
+  "small": {
+   "bare": [
+    10732
+   ],
+   "space": [
+    1944
+   ]
+  },
+  "large": {
+   "bare": [
+    20619
+   ],
+   "space": [
+    2455
+   ]
+  },
+  "tiny": {
+   "bare": [
+    67908
+   ],
+   "space": [
+    16383
+   ]
+  },
+  "huge": {
+   "bare": [
+    109693
+   ],
+   "space": [
+    7186
+   ]
+  },
+  "massive": {
+   "bare": [
+    120749
+   ],
+   "space": [
+    12566
+   ]
+  },
+  "size": {
+   "bare": [
+    2086
+   ],
+   "space": [
+    2425
+   ]
+  },
+  "42": {
+   "bare": [
+    236812,
+    236778
+   ],
+   "space": [
+    236743,
+    236812,
+    236778
+   ]
+  },
+  "7": {
+   "bare": [
+    236832
+   ],
+   "space": [
+    236743,
+    236832
+   ]
+  },
+  "314": {
+   "bare": [
+    236800,
+    236770,
+    236812
+   ],
+   "space": [
+    236743,
+    236800,
+    236770,
+    236812
+   ]
+  },
+  "0": {
+   "bare": [
+    236771
+   ],
+   "space": [
+    236743,
+    236771
+   ]
+  },
+  "1": {
+   "bare": [
+    236770
+   ],
+   "space": [
+    236743,
+    236770
+   ]
+  },
+  "100": {
+   "bare": [
+    236770,
+    236771,
+    236771
+   ],
+   "space": [
+    236743,
+    236770,
+    236771,
+    236771
+   ]
+  },
+  "3": {
+   "bare": [
+    236800
+   ],
+   "space": [
+    236743,
+    236800
+   ]
+  },
+  "thee": {
+   "bare": [
+    1437,
+    236744
+   ],
+   "space": [
+    44543
+   ]
+  },
+  "thou": {
+   "bare": [
+    594,
+    521
+   ],
+   "space": [
+    35627
+   ]
+  },
+  "emoji": {
+   "bare": [
+    67906
+   ],
+   "space": [
+    64334
+   ]
+  },
+  "window": {
+   "bare": [
+    7414
+   ],
+   "space": [
+    4771
+   ]
+  },
+  "music": {
+   "bare": [
+    26873
+   ],
+   "space": [
+    4252
+   ]
+  },
+  "river": {
+   "bare": [
+    7195
+   ],
+   "space": [
+    8858
+   ]
+  },
+  "doctor": {
+   "bare": [
+    29324
+   ],
+   "space": [
+    9092
+   ]
+  },
+  "green": {
+   "bare": [
+    10671
+   ],
+   "space": [
+    3826
+   ]
+  },
+  "table": {
+   "bare": [
+    5127
+   ],
+   "space": [
+    2633
+   ]
+  },
+  "ocean": {
+   "bare": [
+    63355
+   ],
+   "space": [
+    12461
+   ]
+  }
+ },
+ "per_token": {
+  "home__space": {
+   "token_id": 2033,
+   "norm": 21.365320205688477,
+   "split_half_cos": 0.9781453609466553
+  },
+  "home__bare": {
+   "token_id": 8147,
+   "norm": 22.676258087158203,
+   "split_half_cos": 0.9817213416099548
+  },
+  "house__space": {
+   "token_id": 3155,
+   "norm": 21.248647689819336,
+   "split_half_cos": 0.9712832570075989
+  },
+  "house__bare": {
+   "token_id": 6367,
+   "norm": 24.863149642944336,
+   "split_half_cos": 0.9843562245368958
+  },
+  "crane__space": {
+   "token_id": 51040,
+   "norm": 20.844329833984375,
+   "split_half_cos": 0.9602100253105164
+  },
+  "building__space": {
+   "token_id": 3788,
+   "norm": 20.56995964050293,
+   "split_half_cos": 0.972177267074585
+  },
+  "building__bare": {
+   "token_id": 21125,
+   "norm": 23.564138412475586,
+   "split_half_cos": 0.9837616682052612
+  },
+  "live__space": {
+   "token_id": 3892,
+   "norm": 18.557401657104492,
+   "split_half_cos": 0.9704113006591797
+  },
+  "live__bare": {
+   "token_id": 28699,
+   "norm": 23.98810577392578,
+   "split_half_cos": 0.9840654730796814
+  },
+  "word__space": {
+   "token_id": 3658,
+   "norm": 20.689970016479492,
+   "split_half_cos": 0.9742285013198853
+  },
+  "word__bare": {
+   "token_id": 3017,
+   "norm": 23.456581115722656,
+   "split_half_cos": 0.9818026423454285
+  },
+  "small__space": {
+   "token_id": 1944,
+   "norm": 19.154592514038086,
+   "split_half_cos": 0.9731546640396118
+  },
+  "small__bare": {
+   "token_id": 10732,
+   "norm": 24.942184448242188,
+   "split_half_cos": 0.9858312606811523
+  },
+  "large__space": {
+   "token_id": 2455,
+   "norm": 21.279001235961914,
+   "split_half_cos": 0.9817871451377869
+  },
+  "large__bare": {
+   "token_id": 20619,
+   "norm": 23.164756774902344,
+   "split_half_cos": 0.9849941730499268
+  },
+  "tiny__space": {
+   "token_id": 16383,
+   "norm": 20.97784423828125,
+   "split_half_cos": 0.9799186587333679
+  },
+  "tiny__bare": {
+   "token_id": 67908,
+   "norm": 25.52265739440918,
+   "split_half_cos": 0.9839805364608765
+  },
+  "huge__space": {
+   "token_id": 7186,
+   "norm": 22.859996795654297,
+   "split_half_cos": 0.9842939972877502
+  },
+  "huge__bare": {
+   "token_id": 109693,
+   "norm": 23.016828536987305,
+   "split_half_cos": 0.9861283302307129
+  },
+  "massive__space": {
+   "token_id": 12566,
+   "norm": 22.082033157348633,
+   "split_half_cos": 0.9843241572380066
+  },
+  "massive__bare": {
+   "token_id": 120749,
+   "norm": 24.506568908691406,
+   "split_half_cos": 0.9875862002372742
+  },
+  "size__space": {
+   "token_id": 2425,
+   "norm": 23.908292770385742,
+   "split_half_cos": 0.9847828149795532
+  },
+  "size__bare": {
+   "token_id": 2086,
+   "norm": 28.221038818359375,
+   "split_half_cos": 0.9892666935920715
+  },
+  "7__bare": {
+   "token_id": 236832,
+   "norm": 24.645109176635742,
+   "split_half_cos": 0.9681611061096191
+  },
+  "0__bare": {
+   "token_id": 236771,
+   "norm": 26.1116886138916,
+   "split_half_cos": 0.9824060201644897
+  },
+  "1__bare": {
+   "token_id": 236770,
+   "norm": 25.145965576171875,
+   "split_half_cos": 0.9681121706962585
+  },
+  "3__bare": {
+   "token_id": 236800,
+   "norm": 25.00564956665039,
+   "split_half_cos": 0.9709194898605347
+  },
+  "thee__space": {
+   "token_id": 44543,
+   "norm": 19.468894958496094,
+   "split_half_cos": 0.9764510989189148
+  },
+  "thou__space": {
+   "token_id": 35627,
+   "norm": 21.49051856994629,
+   "split_half_cos": 0.9775024652481079
+  },
+  "emoji__space": {
+   "token_id": 64334,
+   "norm": 23.50991439819336,
+   "split_half_cos": 0.969734787940979
+  },
+  "emoji__bare": {
+   "token_id": 67906,
+   "norm": 24.985118865966797,
+   "split_half_cos": 0.9761500358581543
+  },
+  "window__space": {
+   "token_id": 4771,
+   "norm": 19.38492774963379,
+   "split_half_cos": 0.9627989530563354
+  },
+  "window__bare": {
+   "token_id": 7414,
+   "norm": 21.355545043945312,
+   "split_half_cos": 0.9725265502929688
+  },
+  "music__space": {
+   "token_id": 4252,
+   "norm": 21.208545684814453,
+   "split_half_cos": 0.9712702631950378
+  },
+  "music__bare": {
+   "token_id": 26873,
+   "norm": 24.631837844848633,
+   "split_half_cos": 0.9807738065719604
+  },
+  "river__space": {
+   "token_id": 8858,
+   "norm": 21.740633010864258,
+   "split_half_cos": 0.9695730209350586
+  },
+  "river__bare": {
+   "token_id": 7195,
+   "norm": 23.669260025024414,
+   "split_half_cos": 0.9774690866470337
+  },
+  "doctor__space": {
+   "token_id": 9092,
+   "norm": 20.900129318237305,
+   "split_half_cos": 0.9743748307228088
+  },
+  "doctor__bare": {
+   "token_id": 29324,
+   "norm": 24.525257110595703,
+   "split_half_cos": 0.9834381341934204
+  },
+  "green__space": {
+   "token_id": 3826,
+   "norm": 20.066396713256836,
+   "split_half_cos": 0.9678976535797119
+  },
+  "green__bare": {
+   "token_id": 10671,
+   "norm": 24.957489013671875,
+   "split_half_cos": 0.9805225133895874
+  },
+  "table__space": {
+   "token_id": 2633,
+   "norm": 19.652118682861328,
+   "split_half_cos": 0.9736349582672119
+  },
+  "table__bare": {
+   "token_id": 5127,
+   "norm": 28.408103942871094,
+   "split_half_cos": 0.9883310794830322
+  },
+  "ocean__space": {
+   "token_id": 12461,
+   "norm": 22.584197998046875,
+   "split_half_cos": 0.9674116969108582
+  },
+  "ocean__bare": {
+   "token_id": 63355,
+   "norm": 24.148296356201172,
+   "split_half_cos": 0.9747949838638306
+  }
+ }
+}

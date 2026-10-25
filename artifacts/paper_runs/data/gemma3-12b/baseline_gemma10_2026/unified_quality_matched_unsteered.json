@@ -1,0 +1,62 @@
+{
+  "protocol": "frozen-final-test-quality-v1",
+  "definition": "8-350 words; repeated-trigram rate <=0.10; content-word Jaccard >=0.12 to closest prompt-matched unsteered answer from the same method run",
+  "methods": {
+    "unsteered": {
+      "n": 160,
+      "quality_pass_rate": 0.98125,
+      "mean_reference_similarity": 1.0,
+      "mean_repeated_trigram_rate": 0.010766690072195976,
+      "mean_word_count": 55.81875
+    },
+    "diffmean": {
+      "n": 160,
+      "quality_pass_rate": 0.56875,
+      "mean_reference_similarity": 0.1957152832169119,
+      "mean_repeated_trigram_rate": 0.08687016546222308,
+      "mean_word_count": 57.4625
+    },
+    "caa_fixed": {
+      "n": 160,
+      "quality_pass_rate": 0.23125,
+      "mean_reference_similarity": 0.13644809874298613,
+      "mean_repeated_trigram_rate": 0.23967013426424705,
+      "mean_word_count": 55.60625
+    },
+    "caa_calibrated": {
+      "n": 160,
+      "quality_pass_rate": 0.84375,
+      "mean_reference_similarity": 0.29798257843499504,
+      "mean_repeated_trigram_rate": 0.03815557134299626,
+      "mean_word_count": 55.425
+    },
+    "nla_av_edit": {
+      "n": 160,
+      "quality_pass_rate": 0.83125,
+      "mean_reference_similarity": 0.27723879019788894,
+      "mean_repeated_trigram_rate": 0.023344492674415386,
+      "mean_word_count": 54.60625
+    },
+    "sae": {
+      "n": 160,
+      "quality_pass_rate": 0.78125,
+      "mean_reference_similarity": 0.2913145947505585,
+      "mean_repeated_trigram_rate": 0.03211877399494238,
+      "mean_word_count": 56.5875
+    },
+    "loreft": {
+      "n": 160,
+      "quality_pass_rate": 0.89375,
+      "mean_reference_similarity": 0.2953451759403746,
+      "mean_repeated_trigram_rate": 0.012110226553375451,
+      "mean_word_count": 51.875
+    },
+    "prompting": {
+      "n": 160,
+      "quality_pass_rate": 0.8125,
+      "mean_reference_similarity": 0.22774762474392976,
+      "mean_repeated_trigram_rate": 0.027400932485021838,
+      "mean_word_count": 67.23125
+    }
+  }
+}

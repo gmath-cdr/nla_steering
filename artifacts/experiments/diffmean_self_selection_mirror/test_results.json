@@ -1,0 +1,29 @@
+[
+  {
+    "command": [
+      "/venv/main/bin/python",
+      "run.py",
+      "compare-results"
+    ],
+    "returncode": 0,
+    "output": "asserted 188 paper metrics\npaper reproduction outputs: /tmp/nla-result-comparison-vnpz44t0\nPASS: all 188 archived-result metrics match the frozen reference values\n"
+  },
+  {
+    "command": [
+      "/venv/main/bin/python",
+      "run.py",
+      "verify-studies"
+    ],
+    "returncode": 0,
+    "output": "Study families valid: 4 run archives, 3 complete judge checkpoints, AxB44/emoji headline metrics, and 34 Wordle result files\n"
+  },
+  {
+    "command": [
+      "/venv/main/bin/python",
+      "run.py",
+      "self-test"
+    ],
+    "returncode": 1,
+    "output": "source tree and frozen release inputs are complete: 8 checksums\nchecksum mismatch: artifacts/paper_runs/data/freeform_emoji/README.md\n"
+  }
+]

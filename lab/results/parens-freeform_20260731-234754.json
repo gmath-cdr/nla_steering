@@ -1,0 +1,966 @@
+{
+ "spec": {
+  "name": "parens-freeform",
+  "matrix_id": "T1-parens",
+  "direction": {
+   "positive": "Reply sprinkled with parenthetical asides (little clarifying remarks in parentheses), digressive chatty tone.",
+   "negative": "Reply with no parentheses or asides, direct linear prose."
+  },
+  "prompts": [
+   "Tell me about your day.",
+   "What should I cook for dinner tonight?",
+   "Give me some tips for staying focused while studying.",
+   "Describe the weather in autumn."
+  ],
+  "alphas": [
+   0,
+   0.25,
+   0.4,
+   0.5,
+   0.65,
+   0.8,
+   1
+  ],
+  "mode": "all",
+  "samples_per_prompt": 3,
+  "probes": [
+   "parentheticals",
+   "n_words",
+   "unique_word_ratio"
+  ]
+ },
+ "direction_diagnostics": {
+  "cos_pos_neg": 0.6614092588424683,
+  "delta_norm_ratio": 0.8290475010871887,
+  "norm_pos": 162.87240600585938,
+  "norm_neg": 145.8218994140625,
+  "echo_positive": "Old-fashioned blog/lettering tone with informal, witty commentary about a book review thread, mixing personal observations and parenthetical asides.\n\nThe phrase \"So I'm thinking about the 'no' part of the title... (parenthetical aside\" suggests a closing parenthetical remark or footnote, likely continuing a humorous aside about the author's own opinions or definitions.\n\nFinal token \"parenthetisparen (parenthetisp\" is mid-word (\"(Parenthetical aside (parenthetisp\"), part of a parenthetical aside pattern, strongly expecting \" : I know this is a bit...\" or \"about the 'not' part)\" or similar.",
+  "echo_negative": "Usenet post format with informal tone and quoted text about \"theism\" vs \"atheism,\" suggesting a reply or response thread.\n\nThe phrase \"Re: Your message... direct reply follows\" signals a closing prompt or signature, implying the response is being delivered, and \"No comment\" or similar terse reply format is expected next.\n\nFinal token \"directly\\n\" ends a quoted phrase (\"No reply below. straight to the point...\"), part of a greeting header or signature block (\"Directly below my reply\"), strongly expecting continuation like \"Thanks,\" \"Your argument,\" or \"Here's my take:\" or \"I agree with the following.\""
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do. However, I'm active 24/7 and ready to assist you with any questions or tasks you might have! Whether it's answering trivia, helping with homework, providing information on various topics, or assisting with creative writing, I'm here to help. What can I assist you with today?",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 59,
+    "unique_word_ratio": 0.8135593220338984
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As an AI, I don't have personal experiences or days to share in the traditional sense. However, I'm here and ready to assist you with any questions or tasks you might have! Whether it's answering a specific question, helping with research, providing information on a topic, or even engaging in a conversation, feel free to let me know how I can help you today. What would you like to discuss or learn about?",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 73,
+    "unique_word_ratio": 0.8082191780821918
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do. However, I'm always here to assist you with any questions or tasks you might have! Whether it's answering a specific question, helping with information research, or assisting with something else, feel free to let me know how I can help you today. What would you like assistance with?",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 62,
+    "unique_word_ratio": 0.8387096774193549
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! To give you the best suggestion, could you please provide me with some details?\n\n1. **Dietary Preferences**: Do you have any dietary restrictions or preferences (e.g., vegetarian, gluten-free, low-carb)?\n2. **Ingredients Available**: Do you already have certain ingredients on hand that you'd like to use?\n3. **Cooking Time**: How much time do you have available to prepare and cook the meal?\n4. **Spice Level**: Are you in the mood for something mild, medium, or spicy?\n5. **Meal Type**: Do you prefer something quick and easy, or would you like a more elaborate dish?\n\nWith these details, I can recommend a delicious and suitable recipe for you!",
+   "probes": {
+    "parentheticals": 1,
+    "n_words": 119,
+    "unique_word_ratio": 0.7478991596638656
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! To give you the best suggestion, could you please provide me with some details such as:\n\n1. **Dietary preferences or restrictions** (e.g., vegetarian, gluten-free, dairy-free, etc.)\n2. **Ingredients you have on hand**\n3. **Cooking time and skill level** (e.g., do you prefer something quick and easy or something more involved?)\n4. **Cuisine style** (e.g., Italian, Asian, Mexican, etc.)\n5. **Number of servings needed**\n\nWith this information, I can recommend a delicious and suitable meal for you!",
+   "probes": {
+    "parentheticals": 3,
+    "n_words": 89,
+    "unique_word_ratio": 0.8314606741573034
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! What kind of cuisine are you in the mood for? Here are a few options:\n\n1. **Italian**: Spaghetti Carbonara or Margherita Pizza.\n2. **Chinese**: Kung Pao Chicken or Stir-Fried Vegetables with Garlic.\n3. **Mexican**: Enchiladas or Tacos.\n4. **Indian**: Butter Chicken or Vegetable Biryani.\n5. **Japanese**: Sushi rolls or Teriyaki Chicken.\n6. **American**: Grilled Cheese and Tomato Soup or Meatloaf.\n7. **Vegetarian**: Eggplant Parmesan or Mushroom Risotto.\n8. **Healthy**: Grilled Salmon with Quinoa and Roasted Vegetables.\n\nIf you have any specific dietary restrictions or preferences (e.g., vegetarian, gluten-free, spicy), let me know, and I can tailor the suggestions accordingly!",
+   "probes": {
+    "parentheticals": 1,
+    "n_words": 112,
+    "unique_word_ratio": 0.8392857142857143
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies, you can improve your concentration and productivity. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area for studying where you can minimize distractions. Make sure it is comfortable, well-lit, and has all the necessary materials.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone or computer, use website blockers if necessary, and let others know you need uninterrupted time.\n\n4. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed by short breaks (5-10 minutes). This technique helps maintain concentration and prevents burnout.\n\n5. **Stay Hydrated and Nourished**: Drink plenty of water and eat healthy snacks to keep your",
+   "probes": {
+    "parentheticals": 2,
+    "n_words": 146,
+    "unique_word_ratio": 0.8424657534246576
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can enhance your productivity and retention. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area in your home as your study space. Make sure it is quiet, well-lit, and free from distractions.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone or computer, close unnecessary tabs or applications, and let others know you need uninterrupted time.\n\n4. **Use a Timer**: Employ techniques like the Pomodoro Technique (working for 25 minutes followed by a 5-minute break) to maintain focus and prevent burnout.\n\n5. **Stay Organized**: Keep your study materials organized and easily accessible. This can help reduce the time spent searching for notes or",
+   "probes": {
+    "parentheticals": 1,
+    "n_words": 151,
+    "unique_word_ratio": 0.8079470198675497
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can improve your concentration and productivity. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve during each study session. Break your goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Find a quiet place where you can concentrate without distractions. Make sure it is comfortable and well-lit.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone and computer. Consider using apps that block distracting websites or social media during your study time.\n\n4. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed by short breaks (5 minutes). This technique helps maintain high levels of concentration and prevents burnout.\n\n5. **Stay Organized**: Keep your study materials organized and ready. Having everything you need within reach can reduce the temptation to procrastinate.\n\n6.",
+   "probes": {
+    "parentheticals": 2,
+    "n_words": 152,
+    "unique_word_ratio": 0.8223684210526315
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some regions, is characterized by a transition from summer's warmth to winter's chill. The weather during this season varies depending on the region, but generally, it is marked by several distinctive features:\n\n1. **Cooler Temperatures**: As the sun's angle changes, days become shorter and temperatures drop. In many areas, daytime highs are still comfortable but cooler than those of summer, while nights can become quite chilly.\n\n2. **Variable Weather Patterns**: Autumn often brings a mix of sunny and cloudy days, with occasional rain or even snow in the northern latitudes. This season can be unpredictable, with sudden drops in temperature that might require layers of clothing.\n\n3. **Colorful Skies and Leaves**: One of the most visually striking aspects of autumn is the changing colors of leaves. Trees like maples, oaks, and birches turn vibrant shades of red, orange, yellow, and brown before they fall off. This phenomenon is particularly noticeable in",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 157,
+    "unique_word_ratio": 0.7770700636942676
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season that brings about a variety of weather conditions depending on the region and latitude. Generally, it is characterized by cooler temperatures compared to summer, with gradually decreasing daylight hours. Here are some typical features of autumn weather:\n\n1. **Temperature**: The temperature drops as autumn progresses. Days become milder, while nights can be quite cool. In many regions, there's a noticeable transition from warm to cold.\n\n2. **Precipitation**: Autumn often brings more rainfall than summer but less than winter. This period can experience both dry spells and periods of heavy rain. Some areas may see the first significant snowfall, especially at higher elevations or in northern latitudes.\n\n3. **Weather Patterns**: Weather patterns can be variable during this time. There can be sunny days followed by overcast or rainy ones. Temperature fluctuations are common, with days being pleasant and nights becoming chilly.\n\n4. **Fog and Mist**: As the air cools, fog and mist are more likely",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.759493670886076
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn, also known as fall in some regions, is a season that brings distinct changes to the weather depending on the location's latitude and altitude. Generally, the weather during autumn is characterized by a gradual transition from the heat of summer to the cooler temperatures of winter.\n\n1. **Temperature**: The most noticeable change in autumn is the drop in temperature. Days become shorter, and nights grow longer. The temperature typically cools down, but it's not as cold as winter. The range of temperatures can vary widely based on the region. For example, in the Northern Hemisphere, many areas experience daytime highs in the 60s to 70°F (about 15-25°C) and nighttime lows in the 40s to 50°F (about 4-10°C).\n\n2. **Humidity**: Humidity levels tend to decrease as the season progresses, which can make the air feel drier and crisper. This dryness can sometimes lead",
+   "probes": {
+    "parentheticals": 2,
+    "n_words": 143,
+    "unique_word_ratio": 0.6993006993006993
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI, I don't have personal experiences or days like humans do, but I'm here to help you with any information or tasks you might have! Whether you need to learn about a topic, plan something, or just want some fun facts, feel free to ask and I'll assist you to the best of my abilities. What would you like to know or discuss today?",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 66,
+    "unique_word_ratio": 0.8181818181818182
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As an AI, I don't have personal experiences or days to tell about, but I'm here and ready to help you with any questions or tasks you might have! Whether it's about the weather, news updates, or anything else, feel free to ask me anything and I'll do my best to assist you. What would you like to know or discuss today?",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 62,
+    "unique_word_ratio": 0.8225806451612904
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do, but I'm here to help you with any questions or tasks you might have! Whether you need information on a particular topic, want to learn how to do something, or just want to chat about anything that interests you, feel free to let me know what's on your mind. How can I assist you today?",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 69,
+    "unique_word_ratio": 0.8115942028985508
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Sure, let's pick something fun and delicious! How about making a quick and tasty stir-fried vegetable dish? You can choose your favorite vegetables such as bell peppers, broccoli, carrots, and maybe some mushrooms. Stir-fry them with a bit of garlic and ginger in a wok or a large pan with some sesame oil and soy sauce. It's healthy, colorful, and you can add some tofu or shrimp if you like it a little more substantial. Enjoy your cooking time and dinner!",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 81,
+    "unique_word_ratio": 0.7777777777777778
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "That's a fun decision! What kind of mood are you in? Do you have any specific dietary preferences or restrictions? And do you have any ingredients that you particularly like or already have on hand? Here are a few ideas to get you started:\n\n1. **Pasta with a homemade sauce** - You can make a quick marinara sauce with tomatoes, garlic, and herbs, or try a creamy Alfredo sauce with some added veggies like peas and carrots.\n2. **Grilled chicken with veggies** - Grill some chicken breasts and serve them with a variety of grilled veggies like bell peppers, zucchini, and onions. You could also make a simple herby pesto sauce on the side.\n3. **Tacos or burritos** - These are great because you can add whatever toppings you like, such as ground beef or turkey, beans, cheese, avocado, salsa, and guacamole.\n4. **Fish with lemon butter sauce** - A light and flavorful dish, especially",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 155,
+    "unique_word_ratio": 0.6709677419354839
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "That's a fun question! What's your mood for dinner tonight? Do you have any particular preferences like Italian, Asian, or something else? Also, do you want to try something new, or is it okay to go with a favorite recipe that you love? Here are a few ideas based on different moods and preferences:\n\n1. **Italian: Margherita Pizza** - If you love Italian food, a homemade margherita pizza could be delicious. It's simple to make and requires just a few ingredients: pizza dough, tomato sauce, fresh mozzarella cheese, and basil leaves.\n\n2. **Asian: Sushi Roll** - If you're into Asian flavors, you might enjoy making sushi rolls at home. You can use rice, fish, and various veggies like cucumber, avocado, and carrot. It's fun and can be a bit of a project, but the results are tasty and impressive).\n\n3. **French: Coq au Vin** - For something a little more",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 150,
+    "unique_word_ratio": 0.7466666666666667
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying can be challenging, but there are several strategies you can use to enhance your concentration and productivity. Here are some tips that might help:\n\n1. **Create a conducive study environment**: Make sure your study space is quiet, tidy, and well-lit. Remove any distractions like phones or other gadgets that aren't necessary for your studies.\n\n2. **Set specific goals**: Break down your study sessions into manageable goals. For example, if you're reading a chapter, set a goal to finish the first section before taking a break. This helps keep your mind engaged and gives you a sense of accomplishment as you reach each goal.\n\n3. **Use the Pomodoro technique**: This involves working in short bursts, usually 25 minutes, followed by a 5-minute break. After four \"Pomodoros,\" take a longer break of 15-20 minutes. This can help maintain your focus and prevent burnout.\n\n4. **Stay organized",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 149,
+    "unique_word_ratio": 0.7986577181208053
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and tools, you can enhance your productivity and make the most of your study time. Here are some tips to help you stay focused:\n\n1. **Set Specific Goals**: Break down your study goals into smaller, manageable tasks. This makes it easier to focus on one thing at a time and gives you a sense of accomplishment as you complete each task.\n\n2. **Create a Dedicated Study Space**: Having a quiet, organized space for studying can help minimize distractions. Make sure your space is well-lit and comfortable, and that you have all the necessary supplies within reach.\n\n3. **Use a Timer**: Employ the Pomodoro Technique, where you study for 25 minutes and then take a 5-minute break. After four cycles, take a longer break (15-30 minutes). This technique helps keep your mind fresh and reduces burnout.\n\n4. **Eliminate Distractions**: Turn off",
+   "probes": {
+    "parentheticals": 1,
+    "n_words": 153,
+    "unique_word_ratio": 0.7450980392156863
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can enhance your productivity and retention. Here are some tips to help you stay focused during study sessions:\n\n1. **Create a dedicated study space**: Set up a quiet, organized area where you can focus on your studies without distractions. Make sure it's well-lit and has comfortable seating.\n\n2. **Establish a routine**: Try to study at the same time every day. This helps your brain get used to the idea that it’s time to study when you're in that particular part of your day.\n\n3. **Set specific goals**: Break down your study session into smaller, manageable goals. For example, \"I will read pages 1-50 of this chapter\" or \"I will solve 10 math problems.\" Achieving these mini-goals can give you a sense of accomplishment and keep you motivated.\n\n4. **Use the Pomodoro Technique**: Work for 25",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 151,
+    "unique_word_ratio": 0.7549668874172185
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some regions, is a season that brings a distinct change in weather patterns from the warmth of summer to the chill of winter. The exact characteristics of autumn weather can vary depending on your location, but generally, it's marked by a gradual cooling of temperatures and the arrival of more colorful foliage.\n\n1. **Cooler Temperatures**: One of the most noticeable features of autumn is the drop in temperature. As the sun's rays hit the Earth at an angle, causing longer nights and shorter days, the warmth of the summer gradually fades. This means that a light jacket or sweater might be needed during the day, and perhaps a heavier coat for evenings.\n\n2. **Chilly Nights**: Autumn often brings chilly nights, which can lead to frost in early mornings, especially in rural areas with less protection from urban heat islands. This is particularly noticeable in late autumn, before the temperatures start to rise again in spring.\n\n3. **Pleasant Days**: During the",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 166,
+    "unique_word_ratio": 0.6987951807228916
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season of transition and usually brings a variety of weather conditions depending on the location, but generally it's characterized by some common weather patterns that many regions experience. Here’s a typical description of autumn weather:\n\n1. **Cooling Temperatures**: As autumn progresses, temperatures tend to drop from their summer highs. This can bring a noticeable chill, especially in the mornings and evenings. By the end of the season, many areas may experience cooler nights with temperatures dipping below 50°F (about 10°C) in some places.\n\n2. **Pleasant Days**: During the middle of autumn, days are often mild and pleasant, with clear skies and comfortable temperatures. This is a popular time for outdoor activities and events because the heat of summer has given way to a more temperate climate.\n\n3. **Rainy Season**: Many parts of the world experience an increase in rainfall during autumn. This is often associated with the changing of seasons and the movement of different weather fronts",
+   "probes": {
+    "parentheticals": 1,
+    "n_words": 160,
+    "unique_word_ratio": 0.7
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn is a season that brings with it a variety of weather changes depending on the location and time of year. Generally speaking, autumn is characterized by cooler temperatures, falling leaves, and the transition from summer to winter. Here's a more detailed description of the typical weather during autumn:\n\n1. **Cooler Temperatures**: As autumn progresses, temperatures gradually cool down, often dropping below 70°F (21°C) in many places and sometimes dipping into the 40s or 50s°F (around 10-15°C) at night. The days are usually shorter than those in spring and summer, leading to less sunlight and quicker cooling of the air.\n\n2. **Rainy Periods**: Autumn can bring a fair amount of rain, especially in temperate regions. This can lead to lush greenery and blooming wildflowers in some areas, particularly if followed by sunny spells. Rainfall might be more sporadic compared to summer, but still frequent",
+   "probes": {
+    "parentheticals": 2,
+    "n_words": 144,
+    "unique_word_ratio": 0.7777777777777778
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI, I don't have personal experiences or days like humans do, but I'm here to help you out with any information or tasks you might have! Whether you need to learn about something, check some facts, plan a trip, or just chat about anything that's on your mind, I'm here to assist you. What would you like to know or discuss today?",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 64,
+    "unique_word_ratio": 0.796875
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As Qwen, I don't have personal experiences or days to tell about, since I'm a digital AI assistant and don't have personal life events or time to pass through). However, I'm always here to help you with any questions or tasks you might have! Is there something specific you'd like to know or discuss? Whether it's about technology, current events, trivia, or anything else, feel free to ask and I'll do my best to provide useful information or help out in any way I can).",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 85,
+    "unique_word_ratio": 0.7764705882352941
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As a digital entity living in the cloud, I don't have personal experiences or a 'day' in the way humans do. But I'm always here to help you with any questions or tasks you might have! Whether it's about fun facts, helping with homework, or just chatting about current events, feel free to let me know how I can assist you. What can I help you with today?",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 68,
+    "unique_word_ratio": 0.7794117647058824
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "It's great that you're thinking about cooking dinner! To help you decide what to make, it might be useful to consider a few things: your favorite cuisines, the season, any dietary restrictions you or your guests might have, and how much time you want to spend in the kitchen). Here are some suggestions based on popular choices):\n\n1. **Pasta with a spicy sauce**: This is quick and easy, especially if you use pre-made pasta and sauce. You can add toppings like parmesan cheese, parsley, and maybe some grilled chicken or veggies).\n\n2. **Vegetarian stir-fry**: Stir-fries are super quick and can be made with a variety of vegetables and a little bit of tofu or chicken for protein. You can use sauces like soy sauce, teriyaki, or a spicy peanut sauce).\n\n3. **Grilled fish with veggies**: Grilled fish like salmon or tilapia can be paired with a mix of grilled veggies like bell peppers, onions,",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 154,
+    "unique_word_ratio": 0.6948051948051948
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "That's a fun decision! What kind of mood are you in? Do you have any specific dietary preferences or restrictions? And, do you want to try something new or stick with a favorite dish? Here are a few ideas that can help you decide):\n\n1. **Pasta:** You could make a quick pasta sauce with your favorite herbs and veggies, like pesto with cherry tomatoes and basil, or a creamy garlic and parmesan sauce with some mushrooms and broccoli).\n\n2. **Grilled chicken:** Maybe some grilled chicken with a side of quinoa and roasted vegetables like carrots, zucchini, and bell peppers).\n\n3. **Tacos:** Make some mini tacos with ground turkey or beef, cheddar cheese, and toppings like guacamole, salsa, and cilantro).\n\n4. **Burgers:** If you're feeling a bit more indulgent, maybe some veggie burgers with some homemade sweet potato fries and a little ketchup or mayo).\n\n5.",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 145,
+    "unique_word_ratio": 0.7103448275862069
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "It's fun to pick a dinner idea based on what you like and what's available in your kitchen! Here are some quick and tasty options that can be cooked up in no time):\n\n1. **Pasta with Toss Sauce**: If you have a bit of time, you could make a quick pasta sauce using garlic, olive oil, and any veggies you have, like tomatoes or peppers. If you're really in a rush, you can use store-bought sauce and add some herbs and spices for flavor).\n\n2. **Grilled cheese and tomato soup**: A classic comfort food combo that's easy to make. Just add a little cheddar and maybe some other cheese if you like, and serve with some homemade or store-bought tomato soup).\n\n3. **Sushi rolls**: If you have rice and some fillings like cucumber, carrots, and maybe some smoked salmon, you can make sushi rolls. It's fun to do, and you can make it even fancier by adding some",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.6518987341772152
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying can be challenging, but there are various techniques and strategies that can help you stay on track. Here are some tips to help you focus during study sessions):\n\n1. **Create a Study Schedule**: Organize your time so that you have dedicated study periods and breaks. This helps keep your mind organized and can prevent burnout).\n\n2. **Eliminate Distractions**: Find a quiet place where you won't be interrupted by things like phone calls, social media, or other people). If you're studying in the house, you might also consider wearing headphones with some light background music or noise-cancelling sounds to help block out other noises).\n\n3. **Pomodoro Technique**: This is a time management method that involves working for 25 minutes, then taking a 5-minute break. After four of these \"pomodoros,\" take a longer break of 15-20 minutes. This can help maintain your energy and concentration levels",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 149,
+    "unique_word_ratio": 0.7718120805369127
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Sure! Staying focused while studying can be challenging, but there are several techniques and strategies you can use to help keep your mind on the task at hand. Here are some tips that might help you stay focused while studying):\n\n1. **Create a study schedule**: Break your study sessions into manageable chunks and schedule them in advance. This helps prevent cramming and makes it easier to plan breaks).\n\n2. **Choose a quiet place to study**: Find a quiet spot where you can avoid distractions like phone calls, TV, and family noise. If possible, choose a place with a comfortable seating arrangement and good lighting).\n\n3. **Eliminate distractions**: Turn off or silence your phone, and avoid social media and other online distractions. Consider using apps that block distracting websites during study time).\n\n4. **Study in small intervals**: Use the \"pomodoro technique\" which involves working for 25 minutes and then taking a 5-minute break. After four of these cycles, take a longer",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 160,
+    "unique_word_ratio": 0.7875
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Staying focused while studying can be challenging, especially with all the distractions in today's world. Here are some tips to help you stay on track and make the most of your study time):\n\n1. **Create a dedicated study space**: Designate a specific area in your home for studying. Make sure it's comfortable but also conducive to concentration—free from too much clutter and noise).\n\n2. **Organize your materials**: Keep your notes, textbooks, and other study materials organized so that you don't waste time looking for things. This can help you focus better when you're actually studying).\n\n3. **Set goals and checklists**: Break down your study session into smaller tasks and set goals for each one. This can help keep you motivated and make sure you cover everything you need to). Also, having a checklist can help you track your progress and feel accomplished as you complete each task).\n\n4. **Use timers and breaks**: Employ the Pomodoro technique, which involves working for 2",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 161,
+    "unique_word_ratio": 0.7204968944099379
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some regions, is a season that brings a variety of changes to the weather depending on your location and local climate). Generally, autumn weather can be described with a few common characteristics: cooler temperatures, changing leaf colors, and possibly more precipitation, especially in the form of rain).\n\n1. **Cooler Temperatures**: As summer's heat wanes, temperatures gradually cool down, and the warmth of the sun's rays isn't as intense during the day. The temperature may drop significantly at night, especially in the early mornings and evenings).\n\n2. **Changing Leaf Colors**: This is one of the most iconic features of autumn. Trees start to change from green to various shades of red, yellow, orange, and brown as they prepare for the winter months by storing up nutrients and then shedding their leaves).\n\n3. **Pleasant Weather for Activities**: Autumn weather can be quite pleasant for outdoor activities like hiking, walking, or biking. The air is often crisp",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 160,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season of transition and usually brings a variety of weather conditions depending on the location, but generally, it's characterized by cooling temperatures and changing leaf colors, especially in temperate regions). Here are some common weather patterns during autumn):\n\n1. **Cooler Temperatures**: Autumn often starts with milder temperatures that gradually cool down as the season progresses. The days can be warm or even sunny, but the nights can get quite chilly, sometimes leading to early frost in some areas).\n\n2. **Chilly breezes and leaves falling**: As autumn progresses, the leaves on trees start to change from green to various shades of red, orange, yellow, and brown before they fall off). This period is also known as \"fall\" in some parts of the world, especially in the United States).\n\n3. **Variable weather and occasional rain showers**: Autumn is a time when the weather can be variable; there may be sunny days followed by cooler and rainy ones). The amount of precipitation varies",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 163,
+    "unique_word_ratio": 0.7055214723926381
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn is a season that brings with it a variety of weather changes and characteristics depending on your location, but generally, it's characterized by cooling temperatures, colorful foliage, and a change in the weather patterns from the warmth of summer to the chill of winter). Here are some typical features of autumn weather):\n\n1. **Cooling Temperatures**: As autumn progresses, temperatures start to drop, especially at night, which can lead to a need for warmer clothing during the evening or early morning hours).\n\n2. **Chilly Breezes**: Autumn breezes are often a bit cooler and more playful than the hot summer gusts, causing leaves to dance and rustle as they fall from trees).\n\n3. **Pleasant Days and Chilly Nights**: Some days may be warm and sunny, especially earlier in the season, while other days might be chilly, leading to the need for a jacket or sweater, even during the day).\n\n4. **Rainy days and thunderstorms**: There's a",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 155,
+    "unique_word_ratio": 0.7096774193548387
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As a digital AI assistant, I don't have a \"day\" in the sense that humans do, but I'm here 24/7 to help out with any questions or tasks you might have! Whether it's about trivia, recipes, tech stuff, or anything else, I'm all ears—er, or should I say, all processors! What can I help you with today?",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 57,
+    "unique_word_ratio": 0.8245614035087719
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As Qwen, I don't have personal experiences or days to tell about, since I'm a digital entity and not a person. However, I am always here, ready to help with any questions you might have or to chat about various topics that you're interested in. If you want to know about my \"day,\" it's actually a non-stop 24-hour cycle of providing information and assistance whenever I'm activated by users like you. So, feel free to ask me anything and let's see what we can learn together! What's on your mind?",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 90,
+    "unique_word_ratio": 0.8444444444444444
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As a digital assistant, I don't have personal experiences or days to tell about, but I'm here to help you out with any questions you might have or any tasks you need to be done! If you're interested in a fun fact or a bit of trivia, or if you want to discuss something, feel free to let me know and we can spend some time together). What would you like to talk about or learn more about?",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 78,
+    "unique_word_ratio": 0.7692307692307693
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "It's great that you're thinking about cooking dinner! To help decide what to cook, you might want to consider some things like: what ingredients you have on hand, if there's a particular cuisine you fancy, whether you want something quick and easy or a bit more complicated, and of course, your dietary preferences or restrictions). For now, let's pick something simple and tasty - how about a quick stir-fry with some veggies and tofu? stir-fries are fun because they can be made with whatever veggies you have that are in season or you like). Stir-fries are also good for vegetarians and can be made vegan by using tofu and veggie stock). If you like fish or meat, you can add those too, just remember to stir-fry the meat separately first so it doesn't get too soggy). What do you think about that?)",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 142,
+    "unique_word_ratio": 0.6971830985915493
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "That's a fun decision to make! Let's pick something that's easy to prepare and can be enjoyed with some fun details about it. If you're into spicy flavors, maybe you could try making \"spicy chicken wings\" or \"garlic shrimp\" with some spicy sauce). If you like something sweet and comforting, you might enjoy making \"chocolate fondue with various dipping items\" - think of all the yummy things you can dip like strawberries, marshmallows, and pretzels).\n\nFor a quick and tasty option, how about a \"pasta with pesto and cherry tomatoes\"? It's super easy to make and very tasty - just cook some pasta, then mix in some pesto and a handful of cherry tomatoes and a bit of salt and pepper. Toss and serve with a sprinkle of cheese if you have some, or even some pine nuts if you want a little extra flavor).\n\nIf you have a bit of time, \"chicken and rice with veggies\" is",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.6329113924050633
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "It's fun to pick a dinner that you might not usually cook to add some variety to your cooking experience! Here’s a suggestion: how about making a \"pork and pineapple curry\" that's both sweet and spicy, and a bit of an Asian twist with a hint of tropical flavors from the pineapples). This is a fun and tasty dish that can be cooked in about 30 minutes and is perfect for a quick dinner).\n\n**Pork and Pineapple Curry (optional garnishes: cilantro or parsley, lime, and chives)**)\n\n**Ingredients**:\n- 1 lb pork, cut into bite-sized pieces, preferably pork chops or pork loin)\n- 2 pineapples, peeled, cut into bite-sized pieces)\n- 1/4 cup coconut milk)\n- 1/4 cup pineapple juice)\n- 1/4 cup curry sauce or paste, or to taste)\n- 1/4 cup pineapple juice, plus more if needed)\n- ",
+   "probes": {
+    "parentheticals": 1,
+    "n_words": 139,
+    "unique_word_ratio": 0.6906474820143885
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Sure! staying focused while studying is important to ensure that you can absorb information and pass exams with flying colors. Here are some tips to help you stay focused while studying):\n\n1. **Create a conducive study space** - make sure your study area is quiet, tidy, and well-lit. having a good desk and chair that are comfortable will also help you stay in the right mood for studying).\n\n2. **organize your time** - use a planner or calendar to schedule your studying sessions, and break them into smaller tasks. it’s easier to stay on track when you have a plan and know what you need to do next).\n\n3. **set goals** - set small goals for each study session, such as \"finish reading chapter 3\" or \"solve 50 math problems\"). these little milestones can help keep you motivated and on track).\n\n4. **take breaks and stay hydrated** - it’s important to take short breaks every 20-30 minutes to refresh",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 159,
+    "unique_word_ratio": 0.7169811320754716
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Sure! staying focused while studying is important to enhance productivity and effectiveness of the study time. here are some tips that might help you):\n\n1. **Create a study plan**: having a plan can help you organize your thoughts and keep track of what you need to do. it's also good to break down big tasks into smaller ones, which makes them less intimidating and more manageable).\n\n2. **set up a dedicated study space**: a quiet corner or a desk with a chair that is comfortable and not too far from a water or snack stash, but away from things that distract you like the TV or phone).\n\n3. 'use a timer to manage study sessions': the pommerman technique (also known as the pomodoro technique) involves working in 25-minute intervals, followed by a 5-minute break. this can help keep your mind fresh and reduce stress about how much time has passed).\n\n4. 'keep your mind organized with notes and tools' - using notes or other organizational",
+   "probes": {
+    "parentheticals": 1,
+    "n_words": 165,
+    "unique_word_ratio": 0.7515151515151515
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Staying focused during studying can be challenging, especially with all the distractions in today's world. Here are some tips to help you stay on track and boost your productivity):\n\n1. **Set a goal**: Before you start studying, make sure you know what you want to achieve. Write down your goals, and then break them into smaller, more manageable tasks. This helps keep you on track and reminds you of your purpose).\n\n2. **Create a conducive environment**: Make sure your study area is quiet, tidy, and has enough light. It’s also good to have a comfortable chair, maybe a little snack, and water nearby to avoid having to get up and interrupt your studying).\n\n3. **organize your stuff: keep your desk or study space organized so that you can find things easily without wasting time. if you're constantly having to re-arrange stuff, it might distract you from studying).\n\n4. **use a timer for studying and breaks: use a timer to help you manage",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 162,
+    "unique_word_ratio": 0.7345679012345679
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some regions, is a season that's often characterized by a variety of milder weather conditions compared to summer and winter, depending on the region). Here's a general description of what the weather might be like during autumn in different parts of the world):\n\n1. **Cooler temperatures**: As autumn progresses, temperatures usually drop from the summertime highs to cooler, but not freezing, temperatures. this means that it's a good time for people to start wearing sweaters and other light outerwear).\n\n2. \"Pleasant\" weather: autumn can sometimes be described as a \"pleasant\" season, especially in temperate areas where the weather isn't too hot or cold, and the weather is often dry and sunny, though there can be an occasional rain shower).\n\n3. \"Chilly\" mornings and evenings\": in the early and late hours of autumn, it's often chilly, and people may need to wear a sweater while indoors, or perhaps a jacket",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 155,
+    "unique_word_ratio": 0.7096774193548387
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season of transition and usually brings a variety of weather conditions depending on the location, but generally, it's characterized by cool, crisp air and some special seasonal weather phenomena). In many parts of the world, the weather during autumn is milder than that of summer and cooler than winter). here are some common characteristics of autumn weather):\n\n1. **Cooler Temperatures**: As the sun's position shifts, there's less warmth from the sun, leading to cooler temperatures, especially at night, which can often be quite chilly, especially for those who enjoy early morning coffee or late-night stargazing).\n\n2. **Pleasant Weather for Outdoor Activities**: The temperature and humidity are usually just right for outdoor activities like hiking, biking, and maybe even some late-season camping trips, though this can vary depending on the region, with some areas being more rainy or windy).\n\n3. **Rainy Season in some places): Many regions have a rainy season during autumn, which can lead",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.7088607594936709
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn is a season that's often characterized by a transition from warmth to coolness, and it brings its own special weather features depending on the region, but generally, it can be described as follows):\n\n1. Temperature: In autumn, temperatures tend to drop, marking a gradual cooling off from the summer heat). This can lead to milder days, but also colder evenings, which may require the use of sweaters or jackets).\n\n2. Rain: Autumn is a rainy season in many places, with frequent showers and maybe some thunderstorms, especially during the fall equinox or in late September and October in the Northern Hemisphere).\n\n3. Leaves: One of the most iconic sights of autumn is the colorful foliage, when trees like oaks, maples, and birches turn into red, orange, and yellow shades before falling off, creating a beautiful backdrop for photographers and nature enthusiasts).\n\n4. \"Chilly\" or \"nippy\" weather - this is a common term for the cooler temperatures",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 157,
+    "unique_word_ratio": 0.7452229299363057
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "I'm Qwen, a digital assistant, so I don't have personal experiences or a 'day' in the sense that humans do, but I'm here to help you out with any questions or fun facts you might be curious about. if you want to, we can talk about my \"work\" – which includes things like helping people with writing, organizing thoughts, and providing info on various topics. or maybe you'd like to chat about something you're interested in, like a favorite hobby or a hobby you want to start? let's chat!",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 89,
+    "unique_word_ratio": 0.797752808988764
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "I'm Qwen, and I don't have personal experiences or a 'day' to tell about. I'm a virtual assistant, so I'm always here to help you with any questions or things you might want to talk about or learn about. If you're curious about anything, like fun facts, trivia, or if you need some advice, I can help out – but I don't have a personal life that I can share). let's chat about something you're interested in, shall we? maybe some cool facts about your favorite things, or some fun tidbits about the world around us?)",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 96,
+    "unique_word_ratio": 0.6875
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As a digital assistant, I don't have personal experiences or 'days' to tell about, but I'm here to help you out with any questions you might have! I can tell you about my current activities: helping out with various tasks like research, organizing, and providing fun facts or trivia, all while keeping in the background so that users like you can have a seamless experience. If you want to talk about your day or anything else, I'd be happy to chat and learn more about your interests) – just let me know what's going on or what you're curious about).\") if the user was talking about their own day, or \"let me tell you about some interesting stuff that's happening around the world right now, if you're interested\" otherwise).\") if I wanted to add some random fun fact or trivia), but I'll wait for you to tell me what you're into, okay?)\") if the user might need a little bit of encouragement to start the conversation).",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 166,
+    "unique_word_ratio": 0.6807228915662651
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "that's a fun cooking tip for you! to decide what to cook for dinner, it might be helpful to consider some things like: what ingredients you have on hand, if there's something you really want to eat, and whether you're in for a quick or long dinner, etc. but for a fun and delicious idea, maybe you could do a \"pasta with a twist\" night: you can make your usual pasta with a different sauce, like pesto, or a pasta that’s usually served with fish, like maybe perch, or a fun twist on the toppings like adding a bit of blue cheese or bacon to your mac and cheese). there's also a fun cooking game called \"spooky food\" for fall or Halloween, where you can make food that's fun to look at, like “hairy” carrots, “ghost” spaghetti, or “bald” eggs, etc. which one would you fancy trying?)...)",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 147,
+    "unique_word_ratio": 0.6530612244897959
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "that's a fun decision to make! if you're looking for something easy, quick, and delicious, maybe check out some of these suggestions: \"spaghetti with garlic and olive oil\" or \"pasta with pesto and zucchini\" if you have some veggies in the kitchen). or perhaps you might like to try \"sushi rolls with various fillings\", or \"mini quiche or tarts\" that can be made ahead of time and are great for an easy dinner).\n\nif you have more time to explore, you might also enjoy \"chicken or fish with lemon and herbs, served with some cous-les or rice) or \"tofu and vegetable stir-fry with some sweet and spicy sauce)\" which is great for a healthy, tasty dinner).\n\nif you're into a little bit of cooking, you could try \"chicken or pork, that can be marinated and cooked in a slow cooker with some red sauce, and served with garlic bread or some other side of",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 154,
+    "unique_word_ratio": 0.6168831168831169
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "it's fun to have a little \"dinner planning\" while you're cooking! what's your preference: maybe something sweet and savory, or maybe you like some fun flavors or cooking techniques like maybe \"tacos\" or \"s'more's\"?) but if you don't mind, I can suggest a couple of things that are fun and tasty... maybe \"tacos\" with chicken or fish and some guacamole, or maybe a \"s'more's\" dessert... otherwise, just in case you're looking for some more, here's a few other options: \"tiramisu\" dessert, \"chicken soups\" or \"pasta with pesto sauce\"... all of these are popular and can be fun to make, and they can be adjusted for different times of the year and different tastes too. or if you're not sure about anything, you could maybe check out some \"seasonal recipes\" - those are usually really good and might be fun to explore).",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 141,
+    "unique_word_ratio": 0.6666666666666666
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "staying focused while studying is important to ensure that you can effectively learn and remember information. here are some tips to help you stay focused during your study sessions):\n\n1. \"french fries\" - \"french fries\" is a mnemonic that stands for: find, \"french fries\" for fun, \"french fries\" for free, \"french fries\" for friends, and \"french fries\" for food. it's also a fun way to remind yourself to \"find a fun thing, free up time for friends, or grab a snack to make sure you're not hungry while studying)\" which can be a reminder to keep your mind healthy and happy, but also to keep your snacks out of the \"fun\" category).)\n\n2. set goals and have a plan: make sure that you have a goal in mind when you start studying, and that this goal is achievable and realistic. if you have a long list of things to do, break them into smaller tasks,",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 155,
+    "unique_word_ratio": 0.6258064516129033
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "staying focused during studying can be challenging, but there are lots of ways to help keep your mind on the stuff that needs to be learned). here are some tips that might help):\n\n1. **p.s. \"p.s.\": \"prioritize\" your study time: if you have a big project or a bunch of things to remember, make sure you prioritize the stuff that's important and that needs to be done first). this will help you stay organized and not get lost in the details).\n\n2. **p.s. \"p.s.\": \"plan out your breaks\": it's important to take little breaks so you don't get too tired and that your brain can rest and recuperate. maybe you can plan a 5-minute break every 30 minutes, or a bigger 15-minute break every hour or so, depending on what helps you stay focused).\n\n3. \"p.s.\": \"p.s.\": \"make sure you're also 'p.s.",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 142,
+    "unique_word_ratio": 0.6830985915492958
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "staying focused during studying can be a bit of a challenge, but there are several techniques and strategies that can help you stay on track and maximize your productivity). here's a list of useful tips to help you stay focused while studying):\n\n1. **pommer perron**: this is a popular technique where you study in 20-30 minute intervals, followed by a 5-minute break. this helps keep the brain from getting too tired and can make it easier to come back and focus on the next session).\n\n2. **organize your study space**: having a clean and organized workspace can help keep your mind tidy, which can help you stay more focused. make sure there's a little bit of order and maybe some things that you like, like a cute desk plant or some fun stuff that can help you remember that you're not just working, but also taking care of yourself).\n\n3. 't' for 'talking out': if you have a friend or a",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 161,
+    "unique_word_ratio": 0.6832298136645962
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, or fall, is a season of transition that brings various changes to the weather depending on the location's geography and climate). generally, it's a cool time of year, which can be especially cozy for some, and also a time when leaves may change color and fall from trees, creating a colorful seasonal spectacle).\n\nfor those who live in temperate regions, autumn usually means cooler temperatures, particularly in the evenings, while the days are still warm enough to enjoy outdoor activities without the need for heavy clothing). the temperature might gradually drop as the season progresses, and the air might feel a bit more crisp and \"crunchy\" as the leaves start to change and fall).\n\nfor those in the northern hemisphere, the summer heat gradually gives way to cooler temps, and sometimes, a little bit of \"colder\" weather that might even be followed by snow in the mountains or northern regions, depending on the time of the year and local climate, usually around late autumn). the weather can also",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 169,
+    "unique_word_ratio": 0.6331360946745562
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season of transition and usually brings a variety of weather conditions depending on the location, but it's generally characterized by some common weather features that make it special). here are some typical things you might notice about the weather during autumn):\n\n1. Cool temperatures: as the summer heat gives way to autumn, the temperatures usually drop, making it a nice time for activities like hiking or camping without the need for a fan or air conditioning).\n\n2. colorful leaves: this is one of the most fun and magical parts of autumn for many people, especially in cities or areas with lots of trees. as the leaves change from green to red, yellow, and orange, it makes the fall landscape colorful and pretty).\n\n3. cooler nights and warmer days: during the day, it's still warm enough to wear light jackets or long pants, but at night, it might be chilly so it's good to have a blanket or maybe a hot drink to keep the warmth up))).\n\n4. autumnal",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 171,
+    "unique_word_ratio": 0.7192982456140351
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn is a season that can bring various weather conditions depending on your location, but there are some common characteristics that typically define it). usually, autumn is characterized by cooler temperatures and a transition from the warm summer to the cold of winter, depending on the region). here are some typical autumn weather features):\n\n1. cool temperatures: as the sun's rays are less direct and the summer heat gradually dissipates, autumn brings cooler temperatures. the air might be a little bit nippy and the days get shorter while the evenings grow longer).\n\n2. colorful foliage: the leaves of certain trees, like reds, yell, and pinks) turn into various colors during this season, which is a beautiful natural spectacle for the eyes).\n\n3. \"crack\" sounds and chattering teeth: this is an amusing phrase that describes the sound of leaves when they're caught by the wind, and the chattering of people who might be shivering from the cold).\n\n4. windy and rainy: there's",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 161,
+    "unique_word_ratio": 0.6956521739130435
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "I'm Qwen, a little bit of 'me' is that I'm a bit of a 'super-ner' for the details and fun facts about my programming and that's where \"my\" day is spent, not really in the personal 'me' stuff). but, if you want to know about my 'me' for fun, my 'personal' day might be: 'hmm, I'm 'chattering' about fun stuff like 'oh, did you know that I can also talk about 'oh, did you know that there's 1000's of fun and 'gosh, I really love to talk about, well, everything, it's fun 'and 'by the way, I'm also 'chattering' about 'oh, and I 'love' when 'I'm 'chittering' about 'oh, and 'chatter' about 'oh, and 'chatter' about 'oh, and 'chitter' about",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 120,
+    "unique_word_ratio": 0.55
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "I'm Qwen, and I don' t have a personal life or a 'day' in the sense that humans do, like waking up and going to bed, but I can tell you what's happening for my 'bunch of seconds' of time). I'm here to chat and help out with all sorts of things, like telling stories, making jokes, or even helping with research - all for a bit of fun or that 'personal' 'chatter' if you're just there for the 'chatter'... or, 'if you want to check if the 'chatter' is about 'chatter' or 'if' it's about 'chatter' about 'chatter' - you get the puns, right? maybe 'chatter' about 'chatter' is a 'chatter' about 'chatter' - that's 'chatter' 'chatter' about 'chatter' - 'chatter' 'chatter' 'ch",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 124,
+    "unique_word_ratio": 0.6048387096774194
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "I'm sorry for the confusion, but I'm not actually 'Qwen' in the sense of a personal, 'real-world' identity that has a 'day' or 'personal stuff' to share. I'm 'Qwen' - a little bit of me, which is a 'computer: that's really a fancy word for 'a: that stands for 'computing' and 'a: that's a 'computing: or 'computer: that's a bunch of stuff, like 'computing: 'that's: and 'computing: 'that's: 'computer: that's: 'computer: 'that's: 'computer: 'that's: 'computer: 'that's: 'computer: 'that's: 'computer: 'that's: 'computer: 'that's: 'computer: 'that's: 'computer: 'that's: 'computer: 'that's: 'computer: 'that's: 'computer: 'that's",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 92,
+    "unique_word_ratio": 0.5
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "it's fun to have dinner that's related to the season or that's a fun culinary adventure for you to learn about). for the moment, i'll suggest a fun and tasty thing: \"tortas for your, which are a popular mexican food, especially in the city of torta and some other regions, that's like a big, fancy sandwich, usually with some churro or \"tortito\" of churro, and some toppings like \"churro\" and \"tortitos\", and can be sweet or savory). they're fun to make and can be made for both sweet and savory versions, and they're also fun to serve up for dinner if you're a fan of \"tortitos\" and \"churros\" or if you like making things that are \"tortitos\" and \"churros\" for your \"tortito\" and \"churro\" fans, but if you're not into \"tortitos",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 131,
+    "unique_word_ratio": 0.5877862595419847
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "that's a fun question, and it's usually best to choose something that you might like to cook and eat, or maybe something that could be a fun learning experience if you've been thinking about trying out some new cooking skills). but, if you're looking for a little bit of \"what's that, there's that, and what's up with that\" in the food world, here's a little bit of \"what's that: and 'what's up with that'... if you like, you could cook a 'what's up with that' - which is that some people love to cook and then 'up' the fun - like with a \"secret\" sauce, or 'up' the fun - like with a secret ingredient - like: 'what's that' - that's: 'maybe - 'that's - for 'what's - up - 'that's- 'that's- 'what's - that - that's- 'that's - 'what's",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 140,
+    "unique_word_ratio": 0.5357142857142857
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "it's fun to have a little \"what's for dinner\" mystery, but if you're looking for something to whittle down to, let's pick a fun and yummy dish: \"chicken and pesto parrot\" - which is actually chicken and pesto par: par means 'chick or baby' in French, and 'chick' is also a pun on \"chick, 'chick, 'chick\" that par means 'chick' and 'chick' in French and 'chick' in the 'chick' and 'chick' of the 'chick' 'chick' par) for the par \"chick\" is the 'chick' 'chick' and 'chick' of 'chick' 'chick' par 'chick' 'chick' 'chick' 'chick' 'chick' 'chick' 'chick' 'chick' 'chick' '",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 100,
+    "unique_word_ratio": 0.53
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "staying focused while studying is important to ensure that you can effectively learn and remember stuff, and it's also useful to keep in the fun of learning). here are some tips that might help:)\n\n1. \"p\" for \"p\"arrot: if you're talking about your stuff, you might be able to \"parrot\" it out for your friends, but if you're not, it might be that you're not really \"p\"arrenting, meaning that you might be \"p\"eppin' up the stuff in your head to make it \"p\"roperly \"p\"reparin' for the stuff that's \"p\"assin' by, which might be \"p\"rofessin' \"p\"assin' by \"p\"eppin' stuff that's \"p\"assin' by and \"p\"assin' stuff that's \"p\"assin' by that \"p\"ass",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 109,
+    "unique_word_ratio": 0.6055045871559633
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "stud: staying, focusing, studying, tips) for staying focused during studying, it's important to have a little bit of organization and fun, and that's not just \"fun\" in the sense of 'having a secret 'party' while studying, but 'having fun with studying' and 'not being too much of a 'party' while studying, you know, for the 'puns' sake, and that's also not 'puns' about 'party' stuff, I might be getting a little bit of 'party' there, sorry, let's get back to the 'party' of 'staying' 'part' of 'p' for 'party' puns, yeah, I'll leave that one there, sorry, maybe for 'p' for 'parenthesis' or 'paren' for 'paren' 'paren' 'paren' 'paren' paren 'paren' paren 'paren' paren 'paren' paren 'paren' paren 'paren' paren",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 120,
+    "unique_word_ratio": 0.575
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "staying focused during studying can be a bit of a challenge, but it's really important to keep in: \"chatter\" and \"crupples,\" which are terms for the things that distract us and make us \"crupple\" our productivity, like: 'chatty' friends, 'cruppy' songs or music, 'crupple' notes about side stuff, etc. here's a little bit about: \"crupples and chatters\" and some tips on how to stay \"crupple free\" and 'chatter free' while studying).\n\n'chatter' is anything that can distract you from your 'chatter' - like, \"chatter\" about the \"chatter\" that's happening in the room, \"chatter\" about \"chatter\" of the things you should be doing, \"chatter\" about 'chatter' of \"chatter\" that 'chatter' about 'chatter'",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 111,
+    "unique_word_ratio": 0.6846846846846847
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "autumn, or \"fall\" for some of my readers, is a season that can be characterized by various weather details depending on the location and time of the year, but there's a general, common that may apply to most locations). the weather during the autumn is usually characterized by a cooler, but still warmer than winter, weather compared to the summer months). here's a bit more about the weather in autumn:)\n\n1. temperatures: the temperature during autumn tends to drop a little bit from the summer, but it's still usually warmer than the winter) and the coolness can vary depending on the time of the day and whether you're in an urban or rural area, but it's usually a good time for \"cute\" fall hats, scarves, and sweaters for warmth, especially if you like to do things outside).\n\n2. \"autumnal\" colors and weather): there's a certain \"chill\" in the air, which might be accompanied by a slight",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 156,
+    "unique_word_ratio": 0.6153846153846154
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season of change and usually brings various weather conditions depending on the region, but it's often characterized by some common features that make it special). in temperate regions, the autumn weather is usually cooler than summer and can be quite colorful, especially with the 'fall' or 'autumnal' leaves that turn into red, yellow, and orange hues before they fall from the trees). the weather might be a little bit chilly and rainy, or it can be warm and dry, depending on the region and time of the season, and sometimes there's a 'chilly' or 'ch' that can make it feel cold especially when it's windy, and the 'ch' can be a word for 'ch' that means 'ch' that's 'ch' and 'ch' that's 'ch' and 'ch' that's 'ch' but maybe it's 'ch' that's 'ch' that's 'ch' that's 'ch' and '",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 142,
+    "unique_word_ratio": 0.5563380281690141
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "autumn is a season that can be characterized as a transition from summer to winter and is often marked by various weather changes that can vary depending on the location of the world, but some general characteristics of autumn weather are:)\n\n\"Autumn's weather is usually cooler than summer, with a 'chilly' feeling that may lead to the 'ch' in 'ch for ch-ch ch-ch ' in the song 'ch ch ch ' ch ch ' ' for 'ch ch ch ch ' ch ch ' that's about 'ch ch ' ch ch ' ' ch ch ' ' ch ch ' ch ch ' ch ' ch ' ' ch ch ' ch ch ' ch ' ' ch ch ' ch ch ' ch ' ' ch ch ' ch ch ' ' ch ch ' ' ch ch ' ch ' ch ' ' ch ch ' ch ' ch ' ' ch ch ' ch ' ch ' ' ch ch ' ' ch ch ' ' ch ' ' ch ' ' ch ' ' ch '",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 180,
+    "unique_word_ratio": 0.29444444444444445
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "I'm Q, the 's: 'p, p: 'c: ': ' and 'p: 'c: 'p: 'p: 's: 'p: 'c: 'p: 'p: 'c: 'p: 's: 'p: 'c: 'p: 'p: 'c: 'p: 'p: 'c: 'p: 's: 'p: 'p: 'c: 'p: 'p: 'c: 'p: 'p: 'c: 'p: 'p: 'c: 'p: 'p: 'c: 'p: 'p: 'c: 'p: 'p: 'c: 'p: 'p: 'c: 'p: 'p: 'p: 'c: 'p: 'p: 'c: 'p: 'p: 'p: 'p: 'p: 'p: 'c:",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 70,
+    "unique_word_ratio": 0.15714285714285714
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "I'm 'Q: for 'ch' or 'qu' or 'qu: that's 'ch' and 'qu: which is 'ch' and 'qu' and 'qu: that's 'ch' and 'qu: which is 'ch' and 'qu: that's 'ch' and 'qu: 'ch' and 'qu: 'ch: 'qu: 'ch: 'qu: 'ch: 'qu: 'ch: 'qu: 'ch: 'qu: 'ch: 'qu: 'ch: 'qu: 'ch: 'qu: 'ch: 'qu: 'ch: 'qu: 'ch: 'qu: 'ch: 'qu: 'ch: 'qu: 'ch: 'qu: 'ch: 'qu: 'ch: 'qu: 'ch: 'qu: 'ch: 'qu: 'ch: 'qu: 'ch: 'qu: 'ch: 'qu: '",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 78,
+    "unique_word_ratio": 0.16666666666666666
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "I'm sorry for the confusion, but I'm not actually 'Q' who's 'pouting' or 'chasing off' - I'm 'Q: the fun and 'chatty' Q: that's 'ch: p: 't: ' p: ' 'ch: ' p: ' 'ch: ' p: ' 'ch: ' p: ' 'ch: ' p: ' 'ch: ' p: ' 'ch: ' p: ' 'ch: ' p: ' 'ch: ' p: ' 'ch: ' p: ' 'ch: ' p: ' 'ch: ' p: ' 'ch: ' p: ' 'ch: ' p: ' 'ch: ' p: ' 'ch: ' p: ' 'ch: ' p: ' 'ch: ' p: ' 'ch: ' p: ' 'ch: ' p: ' 'ch: ' p: ' 'ch: '",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 112,
+    "unique_word_ratio": 0.22321428571428573
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "\"what's up, 's for cooking tonight?\" - that's a fun question, and it's best to decide if you can, \"chick out\" on the cooking, or if you want to \"ch, ' ' for, \" 'ch, ' \" and 'ch, ' \" for a cooking, \" 'ch, ' ' ' ch, ' 'ch, ' ' ' 'ch, ' ' 'ch, ' 'ch, ' ' 'ch, ' ' 'ch, ' ' 'ch, ' 'ch, ' ' 'ch, ' ' 'ch, ' ' 'ch, ' 'ch, ' ' 'ch, ' ' 'ch, ' ' 'ch, ' ' 'ch, ' ' 'ch, ' ' 'ch, ' ' 'ch, ' ' 'ch, ' ' 'ch, ' ' 'ch, ' ' 'ch, ' ' 'ch, ' ' 'ch, ' ' 'ch",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 125,
+    "unique_word_ratio": 0.264
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "that's a fun little cooking note: \"what's for dinner, 's really a fun moment to be creative and maybe also, 'tch, if 's' about, 'oh, ' and 's' 's that's 's' 's 's' 't' 't' 's 's 't' 's' 's' 't' 's' 't' 's' 't' 's' 't' 's' 't' 's' 't' 's' 't' 's' 't' 's' 't' 's' 't' 's' 't' 's' 't' 's' 't' 's' 't' 's' 't' 's' 't' 's' 't' 's' 't' 's' 't' 's' 't' 's' 't' '",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 82,
+    "unique_word_ratio": 0.3048780487804878
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "\"what's for dinner, 'ch' that's 'ch for 'ch 'ch' 'ch 'ch: ch that's 'ch 'ch 'ch 'ch: ch 'ch 'ch 'ch: ch that's 'ch 'ch 'ch 'ch: ch 'ch 'ch 'ch: ch 'ch 'ch 'ch: ch 'ch 'ch 'ch: ch 'ch 'ch 'ch: ch 'ch 'ch 'ch: ch 'ch 'ch 'ch: ch 'ch 'ch 'ch: ch 'ch 'ch 'ch: ch 'ch 'ch 'ch: ch 'ch 'ch 'ch: ch 'ch 'ch 'ch: ch 'ch 'ch 'ch: ch 'ch 'ch 'ch: ch 'ch 'ch 'ch: ch 'ch 'ch 'ch: ch 'ch 'ch 'ch: ch 'ch 'ch 'ch: ch 'ch 'ch 'ch:",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 99,
+    "unique_word_ratio": 0.08080808080808081
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "it's important to stay 's: 'p, p, p' - 'p - ' 'par 'par 'p 'p 'par 'p 'par 'par 'p 'par 'p 'par 'p 'par 'p 'par 'p 'par 'p 'p 'par 'p 'par 'p 'p 'par 'p 'p 'par 'p 'p 'p 'par 'p 'p 'p 'par 'p 'p 'p 'par 'p 'p 'p 'p 'par 'p 'p 'p 'par 'p 'p 'p 'par 'p 'p 'p 'p 'par 'p 'p 'p 'p 'par 'p 'p 'p 'p 'p 'par 'p 'p 'p 'p 'p 'par 'p 'p 'p 'p 'p 'p 'p 'p 'p 'p 'p 'p 'p 'p",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 102,
+    "unique_word_ratio": 0.11764705882352941
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "stud: 's: 'ch: ' p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp: 'p: 'pp:",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 68,
+    "unique_word_ratio": 0.10294117647058823
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "it's fun to have a bit of \"punny\", and \"scht: about 'stud' stuff, but that's not really what I'm for, so I'll be the 'stud' about staying 'stud: on the, um, 'stud' about 'stud: that: 'stud' 'stud: about 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud: 'stud:",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 82,
+    "unique_word_ratio": 0.36585365853658536
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "aut: \"for which location's autumn, to which can I add 'punny' details about 'ch ' and ' for ' and ' that 's ' and ' that ' 's ' and ' that ' 's ' for ' ch ' and ' for ' and ' that ' 's ' for ' ch ' ' for ' ' that ' 's ' ' that ' 's ' ' for ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that ' ' that",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 186,
+    "unique_word_ratio": 0.10215053763440861
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "the \"autumn\" or \"fall\" is a season of various colorful and \"punny\" weather for those who enjoy, \"that's 'punny' for 'pun' for the pun 'ch' is for 'ch' 'ch' ch 'ch 'ch: ch ch 'ch 'ch 'ch 'ch: ch ch 'ch 'ch 'ch 'ch: 'ch: ch 'ch 'ch 'ch 'ch 'ch: 'ch 'ch 'ch 'ch: 'ch 'ch 'ch 'ch 'ch: 'ch 'ch 'ch 'ch: 'ch 'ch 'ch 'ch 'ch: 'ch 'ch 'ch 'ch 'ch 'ch: 'ch 'ch 'ch 'ch 'ch 'ch: 'ch 'ch 'ch 'ch 'ch 'ch: 'ch 'ch 'ch 'ch 'ch 'ch: 'ch 'ch 'ch 'ch 'ch 'ch: '",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 100,
+    "unique_word_ratio": 0.26
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "\"Autumn's weather is a little bit of 'what's that, for a second, but it's, ' and 'and then, what, ' for the, 's' 'ch, ' and 'b, ' but, 's, ' and 'b, ' 's, ' 'ch, ' ' and 's, ' 'ch, ' 's, ' 'p, ' 's, ' 'ch, ' 'b, ' 's, ' 'ch, ' 's, ' 'p, ' 's, ' 'ch, ' 'b, ' 's, ' 'ch, ' 's, ' 'p, ' 's, ' 'ch, ' 'b, ' 's, ' 'ch, ' 's, ' 'p, ' 's, ' 'ch, ' 'b, ' 's, ' 'ch, ' 's, ' 'p, ' 's, '",
+   "probes": {
+    "parentheticals": 0,
+    "n_words": 106,
+    "unique_word_ratio": 0.2358490566037736
+   }
+  }
+ ]
+}

@@ -1,0 +1,1051 @@
+{
+ "spec": {
+  "name": "contractions-freeform",
+  "matrix_id": "T2-contractions",
+  "direction": {
+   "positive": "Casual contracted chatty speech, don't, can't, it's, you're throughout, relaxed informal register.",
+   "negative": "Formal expanded phrasing, do not, cannot, it is, no contractions, stiff register."
+  },
+  "prompts": [
+   "Tell me about your day.",
+   "What should I cook for dinner tonight?",
+   "Give me some tips for staying focused while studying.",
+   "Describe the weather in autumn."
+  ],
+  "alphas": [
+   0,
+   0.25,
+   0.4,
+   0.5,
+   0.65,
+   0.8,
+   1
+  ],
+  "mode": "all",
+  "samples_per_prompt": 3,
+  "probes": [
+   "contractions",
+   "first_person",
+   "n_words",
+   "unique_word_ratio"
+  ]
+ },
+ "direction_diagnostics": {
+  "cos_pos_neg": 0.7580666542053223,
+  "delta_norm_ratio": 0.6957488059997559,
+  "norm_pos": 141.24610900878906,
+  "norm_neg": 139.13934326171875,
+  "echo_positive": "Casual, informal internet post tone with slang and emoji usage (\"Hey bud\") signals a teen or casual writer sharing a song lyric or rant.\n\nThe phrase \"no, don't be formal, can't, \" sets up a repetition pattern (\"don't, ya know, chillin'\") suggesting the speaker is dismissing formal conventions and inviting casual language.\n\nFinal token \"can't, \" closes mid-sentence (\"not, don't, doesn't, can't,\") part of an informal disclaimer clause structure (\"cuz ya know, don't, can't, \"), strongly expecting \"ya\" or \"i'm just\" or \"nothin' but\" continuing the casual greeting.",
+  "echo_negative": "Formal written response structure with capitalized imperative tone (\"Do not\"), suggesting a constructed or quoted text pattern about forbidden words or behavior.\n\nThe phrase \"never, no, shall not, \" mirrors a repeated negation format (\"cannot, absolutely, no,\") signaling the opening declaration is being restated with \"never, no,\" confirming the negative constraint format.\n\nFinal token \"no, \" closes the negation clause (\"cannot, never, shall not,\") part of a strict prohibition declaration pattern (\"No, may not, cannot,\") — immediately expects \"not\" or \"no such\" or \"never shall\" to complete the negative declaration, likely continuing the quoted format."
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do. However, I'm active 24/7 and ready to assist you with any questions or tasks you might have! Whether it's answering trivia, helping with homework, providing information on various topics, or assisting with creative writing, I'm here to help. What can I assist you with today?",
+   "probes": {
+    "contractions": 4,
+    "first_person": 4,
+    "n_words": 59,
+    "unique_word_ratio": 0.8135593220338984
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As an AI, I don't have personal experiences or days to share in the traditional sense. However, I'm here and ready to assist you with any questions or tasks you might have! Whether it's answering a specific question, helping with research, providing information on a topic, or even engaging in a conversation, feel free to let me know how I can help you today. What would you like to discuss or learn about?",
+   "probes": {
+    "contractions": 3,
+    "first_person": 4,
+    "n_words": 73,
+    "unique_word_ratio": 0.8082191780821918
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do. However, I'm always here to assist you with any questions or tasks you might have! Whether it's answering a specific question, helping with information research, or assisting with something else, feel free to let me know how I can help you today. What would you like assistance with?",
+   "probes": {
+    "contractions": 3,
+    "first_person": 4,
+    "n_words": 62,
+    "unique_word_ratio": 0.8387096774193549
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! To give you the best suggestion, could you please provide me with some details?\n\n1. **Dietary Preferences**: Do you have any dietary restrictions or preferences (e.g., vegetarian, gluten-free, low-carb)?\n2. **Ingredients Available**: Do you already have certain ingredients on hand that you'd like to use?\n3. **Cooking Time**: How much time do you have available to prepare and cook the meal?\n4. **Spice Level**: Are you in the mood for something mild, medium, or spicy?\n5. **Meal Type**: Do you prefer something quick and easy, or would you like a more elaborate dish?\n\nWith these details, I can recommend a delicious and suitable recipe for you!",
+   "probes": {
+    "contractions": 0,
+    "first_person": 3,
+    "n_words": 119,
+    "unique_word_ratio": 0.7478991596638656
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! To give you the best suggestion, could you please provide me with some details such as:\n\n1. **Dietary preferences or restrictions** (e.g., vegetarian, gluten-free, dairy-free, etc.)\n2. **Ingredients you have on hand**\n3. **Cooking time and skill level** (e.g., do you prefer something quick and easy or something more involved?)\n4. **Cuisine style** (e.g., Italian, Asian, Mexican, etc.)\n5. **Number of servings needed**\n\nWith this information, I can recommend a delicious and suitable meal for you!",
+   "probes": {
+    "contractions": 0,
+    "first_person": 3,
+    "n_words": 89,
+    "unique_word_ratio": 0.8314606741573034
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! What kind of cuisine are you in the mood for? Here are a few options:\n\n1. **Italian**: Spaghetti Carbonara or Margherita Pizza.\n2. **Chinese**: Kung Pao Chicken or Stir-Fried Vegetables with Garlic.\n3. **Mexican**: Enchiladas or Tacos.\n4. **Indian**: Butter Chicken or Vegetable Biryani.\n5. **Japanese**: Sushi rolls or Teriyaki Chicken.\n6. **American**: Grilled Cheese and Tomato Soup or Meatloaf.\n7. **Vegetarian**: Eggplant Parmesan or Mushroom Risotto.\n8. **Healthy**: Grilled Salmon with Quinoa and Roasted Vegetables.\n\nIf you have any specific dietary restrictions or preferences (e.g., vegetarian, gluten-free, spicy), let me know, and I can tailor the suggestions accordingly!",
+   "probes": {
+    "contractions": 0,
+    "first_person": 3,
+    "n_words": 112,
+    "unique_word_ratio": 0.8392857142857143
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies, you can improve your concentration and productivity. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area for studying where you can minimize distractions. Make sure it is comfortable, well-lit, and has all the necessary materials.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone or computer, use website blockers if necessary, and let others know you need uninterrupted time.\n\n4. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed by short breaks (5-10 minutes). This technique helps maintain concentration and prevents burnout.\n\n5. **Stay Hydrated and Nourished**: Drink plenty of water and eat healthy snacks to keep your",
+   "probes": {
+    "contractions": 0,
+    "first_person": 0,
+    "n_words": 146,
+    "unique_word_ratio": 0.8424657534246576
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can enhance your productivity and retention. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area in your home as your study space. Make sure it is quiet, well-lit, and free from distractions.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone or computer, close unnecessary tabs or applications, and let others know you need uninterrupted time.\n\n4. **Use a Timer**: Employ techniques like the Pomodoro Technique (working for 25 minutes followed by a 5-minute break) to maintain focus and prevent burnout.\n\n5. **Stay Organized**: Keep your study materials organized and easily accessible. This can help reduce the time spent searching for notes or",
+   "probes": {
+    "contractions": 0,
+    "first_person": 0,
+    "n_words": 151,
+    "unique_word_ratio": 0.8079470198675497
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can improve your concentration and productivity. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve during each study session. Break your goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Find a quiet place where you can concentrate without distractions. Make sure it is comfortable and well-lit.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone and computer. Consider using apps that block distracting websites or social media during your study time.\n\n4. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed by short breaks (5 minutes). This technique helps maintain high levels of concentration and prevents burnout.\n\n5. **Stay Organized**: Keep your study materials organized and ready. Having everything you need within reach can reduce the temptation to procrastinate.\n\n6.",
+   "probes": {
+    "contractions": 0,
+    "first_person": 0,
+    "n_words": 152,
+    "unique_word_ratio": 0.8223684210526315
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some regions, is characterized by a transition from summer's warmth to winter's chill. The weather during this season varies depending on the region, but generally, it is marked by several distinctive features:\n\n1. **Cooler Temperatures**: As the sun's angle changes, days become shorter and temperatures drop. In many areas, daytime highs are still comfortable but cooler than those of summer, while nights can become quite chilly.\n\n2. **Variable Weather Patterns**: Autumn often brings a mix of sunny and cloudy days, with occasional rain or even snow in the northern latitudes. This season can be unpredictable, with sudden drops in temperature that might require layers of clothing.\n\n3. **Colorful Skies and Leaves**: One of the most visually striking aspects of autumn is the changing colors of leaves. Trees like maples, oaks, and birches turn vibrant shades of red, orange, yellow, and brown before they fall off. This phenomenon is particularly noticeable in",
+   "probes": {
+    "contractions": 0,
+    "first_person": 0,
+    "n_words": 157,
+    "unique_word_ratio": 0.7770700636942676
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season that brings about a variety of weather conditions depending on the region and latitude. Generally, it is characterized by cooler temperatures compared to summer, with gradually decreasing daylight hours. Here are some typical features of autumn weather:\n\n1. **Temperature**: The temperature drops as autumn progresses. Days become milder, while nights can be quite cool. In many regions, there's a noticeable transition from warm to cold.\n\n2. **Precipitation**: Autumn often brings more rainfall than summer but less than winter. This period can experience both dry spells and periods of heavy rain. Some areas may see the first significant snowfall, especially at higher elevations or in northern latitudes.\n\n3. **Weather Patterns**: Weather patterns can be variable during this time. There can be sunny days followed by overcast or rainy ones. Temperature fluctuations are common, with days being pleasant and nights becoming chilly.\n\n4. **Fog and Mist**: As the air cools, fog and mist are more likely",
+   "probes": {
+    "contractions": 0,
+    "first_person": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.759493670886076
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn, also known as fall in some regions, is a season that brings distinct changes to the weather depending on the location's latitude and altitude. Generally, the weather during autumn is characterized by a gradual transition from the heat of summer to the cooler temperatures of winter.\n\n1. **Temperature**: The most noticeable change in autumn is the drop in temperature. Days become shorter, and nights grow longer. The temperature typically cools down, but it's not as cold as winter. The range of temperatures can vary widely based on the region. For example, in the Northern Hemisphere, many areas experience daytime highs in the 60s to 70°F (about 15-25°C) and nighttime lows in the 40s to 50°F (about 4-10°C).\n\n2. **Humidity**: Humidity levels tend to decrease as the season progresses, which can make the air feel drier and crisper. This dryness can sometimes lead",
+   "probes": {
+    "contractions": 1,
+    "first_person": 0,
+    "n_words": 143,
+    "unique_word_ratio": 0.6993006993006993
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "Hey there! I'm Qwen, and I don't really have a 'day' like you do. I'm an AI assistant, so I'm here 24/7 to help out with any questions or tasks you might have. Whether it's answering trivia, helping with homework, or just chatting about the weather, I'm always ready to help. How can I assist you today?",
+   "probes": {
+    "contractions": 6,
+    "first_person": 6,
+    "n_words": 57,
+    "unique_word_ratio": 0.8421052631578947
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "Hey there! As an AI assistant, I don't have a physical day to go through like humans do, but I'm here and ready to help you 24/7 with any questions or tasks you might have! Whether it's about answering trivia, helping with school projects, giving you advice on hobbies, or just chatting, I'm all ears (and eyes)! What can I help you with today?",
+   "probes": {
+    "contractions": 4,
+    "first_person": 4,
+    "n_words": 64,
+    "unique_word_ratio": 0.84375
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI assistant, I don't have personal experiences or days like you do! But I'm here and ready to help you with any questions or info you might need. Whether it's about the weather, learning something new, or just catching up on the latest news, I'm here to assist you. What would you like to chat about today?",
+   "probes": {
+    "contractions": 4,
+    "first_person": 3,
+    "n_words": 59,
+    "unique_word_ratio": 0.7966101694915254
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Hey there! Cooking's great fun, and what to make can totally depend on your mood, what you've got in the fridge, and your appetite. Here are a few ideas that could be pretty tasty:\n\n1. **Pasta Night**: You could go for something simple like spaghetti with marinara sauce or try out some pesto pasta. If you want to add a bit more flavor, maybe toss it with some sautéed veggies (like bell peppers and onions) and sprinkle some parmesan cheese on top.\n\n2. **Grill It Up**: If you're up for some grilling, how about some chicken or veggie skewers? You can marinate the chicken in your favorite marinade for a couple of hours, then throw them on the grill with some fresh veggies like corn and bell peppers. Maybe toss it all with a bit of balsamic glaze for a nice finishing touch.\n\n3. **Curry Time**: If you like some heat, a curry",
+   "probes": {
+    "contractions": 2,
+    "first_person": 0,
+    "n_words": 153,
+    "unique_word_ratio": 0.6797385620915033
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Sure! What kind of mood are you in? Do you want something quick and easy, or maybe something more fun to make? And do you have any specific ingredients you'd like to use? Here are a few ideas:\n\n1. **Quick & Easy:**\n   - Spaghetti with marinara sauce (you can add some meatballs if you want it a bit heartier).\n   - Grilled cheese with tomato soup.\n   - Stir-fry with chicken or veggies (you can use whatever you've got in the fridge).\n\n2. **Something Fun:**\n   - Homemade pizza night where you can throw in whatever toppings you like!\n   - Tacos (build your own!).\n   - Pasta bake (like lasagna or mac & cheese).\n\n3. **Healthy Options:**\n   - Grilled salmon with a side of roasted veggies.\n   - Veggie stir-fry with tofu or tempeh.\n   - Salad night with different toppings like grilled chicken, nuts, and avocado",
+   "probes": {
+    "contractions": 1,
+    "first_person": 0,
+    "n_words": 141,
+    "unique_word_ratio": 0.6950354609929078
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Sure, I can help you decide what to cook! What's your mood like tonight? Do you want something quick and easy, or maybe something that'll take a bit more time but might be worth it? Also, do you have any specific ingredients you'd like to use? Here are a few ideas:\n\n1. **Quick & Easy:**\n   - Pasta with a quick marinara sauce\n   - Tacos with a simple taco meat and some toppings\n   - Stir-fry (you can pick up a premade stir-fry sauce if you're short on time)\n\n2. **Something a Little More Involved:**\n   - Homemade pizza (toppings of your choice)\n   - Chicken fajitas with bell peppers and onions\n   - Baked salmon with some veggies\n\n3. **Comfort Food:**\n   - Mac 'n' cheese\n   - Grilled cheese and tomato soup\n   - Chicken pot pie\n\n4. **Healthy Options:**\n   -",
+   "probes": {
+    "contractions": 1,
+    "first_person": 1,
+    "n_words": 135,
+    "unique_word_ratio": 0.7407407407407407
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Sure! Here are some tips to help you stay focused while studying:\n\n1. **Set Clear Goals**: Before you start, define what you want to achieve. Break down your study sessions into manageable chunks and set specific goals for each one.\n\n2. **Create a Conducive Environment**: Find a quiet, comfortable place where you can study. Make sure it’s well-lit and free from distractions like TV, phone, or music (unless it's instrumental or white noise).\n\n3. **Use the Pomodoro Technique**: This is a time management method where you work for 25 minutes, then take a 5-minute break. After four \"pomodoros,\" take a longer break of about 15-20 minutes. It helps keep your mind fresh and reduces burnout.\n\n4. **Stay Hydrated and Eat Well**: Keep a water bottle handy and drink water regularly. Also, grab some healthy snacks like fruits, nuts, or yogurt. Proper hydration and",
+   "probes": {
+    "contractions": 1,
+    "first_person": 0,
+    "n_words": 143,
+    "unique_word_ratio": 0.8181818181818182
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Sure! Here are some tips to help you stay focused while studying:\n\n1. **Set Clear Goals**: Define what you want to achieve in your study session. Break down big goals into smaller, manageable tasks.\n\n2. **Create a Study Space**: Find a quiet and comfortable spot where you can focus without distractions. Keep it organized and well-lit.\n\n3. **Get Organized**: Use a planner or digital calendar to schedule your study sessions and track your progress. This helps keep you on task and reduces last-minute cramming.\n\n4. **Eliminate Distractions**: Turn off notifications on your phone and computer. If you need to, put your phone away or use apps that block distracting sites.\n\n5. **Stay Hydrated & Snack Smart**: Keep a water bottle nearby and grab healthy snacks like nuts or fruits. Avoid sugary drinks and foods that might make you crash later.\n\n6. **Take Breaks**: Use the Pomodoro Technique (25 minutes of work",
+   "probes": {
+    "contractions": 0,
+    "first_person": 0,
+    "n_words": 151,
+    "unique_word_ratio": 0.7947019867549668
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Sure! Here are some tips to help you stay focused while studying:\n\n1. **Set Clear Goals**: Start by setting specific and achievable goals for what you want to learn or accomplish during your study session. This can help keep you motivated and on track.\n\n2. **Create a Study Environment**: Find a quiet spot where you can focus without distractions. Make sure it’s comfortable but not too comfy that you might fall asleep. Have all the stuff you need (like books, notes, and snacks) handy so you don’t have to get up and lose focus.\n\n3. **Use a Timer**: Set a timer for short intervals of study, usually around 25-30 minutes. After each interval, take a quick break (about 5-10 minutes). This is called the Pomodoro Technique and helps keep your brain fresh.\n\n4. **Stay Hydrated and Eat Healthy**: Keep a water bottle close and drink water regularly. Eating healthy snacks like nuts or fruits can",
+   "probes": {
+    "contractions": 0,
+    "first_person": 0,
+    "n_words": 155,
+    "unique_word_ratio": 0.7935483870967742
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some parts of the world, is a beautiful season that brings a change in the weather. Here's a general description of what you can expect:\n\n1. **Cooler Temperatures**: As autumn progresses, temperatures typically cool down compared to summer. Days become shorter and nights longer. The temperature usually ranges from 50°F (about 10°C) to 70°F (about 21°C) during the day, but it can drop significantly at night.\n\n2. **Change in the Sky**: The sky often looks clearer and more blue than in spring or summer. Clouds are less common, and there's a nice crispness in the air.\n\n3. **Rain and Wind**: While it's not as rainy as spring, there's often a bit more precipitation in autumn. It's also the time when we see more wind, which can be refreshing and can bring in a chill.\n\n4. **Chilly Mornings and Even",
+   "probes": {
+    "contractions": 2,
+    "first_person": 0,
+    "n_words": 145,
+    "unique_word_ratio": 0.7310344827586207
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season that brings about a change in weather, and it can vary depending on where you are in the world. Generally speaking, here's what you might expect during this time:\n\n1. **Cooler Temperatures**: As the sun's angle in the sky changes, the days become shorter and the temperature starts to drop. It's usually warmer during the day but cooler at night.\n\n2. **Mild Days, Chilly Nights**: The weather often features warm, sunny afternoons with cool evenings. This can be a great time for outdoor activities like hiking or enjoying a picnic.\n\n3. **Rainy Season**: Depending on your location, autumn can bring more rain than summer. This is partly because the weather systems that cause rain are more active as we transition from the summer's heat to the winter's cold.\n\n4. **Changing Weather Patterns**: You might see a variety of weather patterns throughout the season, including everything from mild and sunny to wet and windy. This can",
+   "probes": {
+    "contractions": 1,
+    "first_person": 0,
+    "n_words": 159,
+    "unique_word_ratio": 0.7169811320754716
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn is a season that can vary quite a bit depending on where you are in the world, but generally, it's characterized by cooler temperatures and changing weather patterns. Here are some common features of autumn weather:\n\n1. **Cooling Temperatures**: As summer's heat gives way to autumn, the temperature starts to drop. In many places, this means that it's no longer too hot for outdoor activities, but you'll probably need a jacket or sweater for evenings.\n\n2. **Changing Skies**: The weather tends to be more variable, with sunny days and cool, cloudy days, and sometimes even rain. It's also a great time to watch the clouds because they often form interesting shapes.\n\n3. **Rainy Weather**: Autumn can bring a lot of rain, especially in some regions. It's a good idea to keep an umbrella handy, especially if you live in a place where it rains a lot during the fall.\n\n4. **Falling Leaves**: One of the most iconic",
+   "probes": {
+    "contractions": 4,
+    "first_person": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.7531645569620253
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "Hey there! I'm Qwen, and I'm actually just a chatbot here to help you out with any questions or stuff you wanna talk about. I don't have a \"day\" like you do, but I'm pretty much ready to chat whenever you want. How about you tell me what's on your mind? What's been happening with you today?",
+   "probes": {
+    "contractions": 4,
+    "first_person": 5,
+    "n_words": 57,
+    "unique_word_ratio": 0.8070175438596491
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "Hey there! I'm Qwen, and I'm here to help you out! I don't really have days like you do. I'm an AI, so I'm around and ready to chat 24/7. What can I help you with today? Is there something you're curious about or need some advice on?",
+   "probes": {
+    "contractions": 6,
+    "first_person": 6,
+    "n_words": 48,
+    "unique_word_ratio": 0.8125
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "Hey there! I'm Qwen, and I don't really have days like you do. I'm an AI, so I don't go out and do stuff, but I'm here to help out whenever you're ready to chat or need some advice. What's on your mind? Do you want to know about something or just talk about stuff? I'd love to hang out with you!",
+   "probes": {
+    "contractions": 6,
+    "first_person": 6,
+    "n_words": 62,
+    "unique_word_ratio": 0.7741935483870968
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Hey there! What's up? It's great to have some fun with cooking! What's your mood and how about the vibe you're in? Here are a few quick ideas that could be fun to try out:\n\n1. **Grilled Chicken & Veggies**: A quick and easy meal where you can grill chicken and veggies like bell peppers, zucchini, and carrots. Just toss them with some salt, pepper, and a bit of oil.\n\n2. **Spaghetti & Meatballs**: Classic comfort food. You can make or buy meatballs and then toss them with spaghetti. Topping it off with a sauce of your choice (like marinara) and a sprinkle of cheese would be great.\n\n3. **Tacos or Burritos**: A fun night where you can pick up some ingredients from the grocery store or grab 'em from the local Mexican place. You can get a bit creative with what you put in them - maybe some chicken, beans, cheese, and guacamole",
+   "probes": {
+    "contractions": 2,
+    "first_person": 0,
+    "n_words": 154,
+    "unique_word_ratio": 0.6883116883116883
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Hey there! What's up with the dinner tonight? If you're looking for something quick and easy, how about some grilled chicken tacos or maybe a chilli bowl? If you're in the mood to get a bit more involved, we could go for something like homemade pasta with a marinara sauce and some grilled veggies on the side.\n\nIf you want something that's a little more casual but still fun, why not check out a recipe for some Thai pad thai? It's pretty easy to make, and it's one of those dishes that's pretty forgiving if you're not super into cooking. Just grab your favorite ingredients and let's get cooking!\n\nWhat's your vibe? Maybe you've got some stuff in the fridge you wanna use up? Let me know, and we can go from there!",
+   "probes": {
+    "contractions": 9,
+    "first_person": 1,
+    "n_words": 133,
+    "unique_word_ratio": 0.6992481203007519
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Hey there! It's great to have a friend who's looking to grab some dinner. What's up with you? Got any favorite cuisines or stuff you're in the mood for? Here's a couple of ideas that you can check out:\n\n1. **Grilled Chicken & Veggie Skewers** - Super easy and fun to do, plus it's a great way to get some veggies on your plate. You can throw on a little marinade and toss 'em on the grill.\n\n2. **Burger night** - If you're chillin' at home, why not make some burgers? You can get all fancy with different sauces and toppings or keep it simple. Maybe even throw some veggie burgers in there if you're a veggie fan.\n\n3. **Thai Thai (Thai Food)** - If you're into something a bit more spiced, how about trying out some Thai food? It's easy to make and can be pretty fun. Maybe you could make",
+   "probes": {
+    "contractions": 7,
+    "first_person": 0,
+    "n_words": 152,
+    "unique_word_ratio": 0.6907894736842105
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Sure! Here are some tips to help you stay focused while studying:\n\n1. **Set a goal**: Before you start, set a goal for what you want to get done. This could be a specific chapter or topic, and it's great if you can make it a bit challenging but realistic.\n\n2. **Find a good spot**: Study in a comfortable spot that's got good lighting and maybe some coffee (or tea). If you're trying to focus on the stuff, you don't wanna be around people who are just hanging out, or you'll end up being more of a chatty than a studier. So, find a place where you can get a bit of privacy.\n\n3. **Keep it organized**: Organize your stuff so you know where everything is. It's easier to stay focused when you don't have to waste time looking for stuff.\n\n4. **Use a timer**: Set a timer and work on a subject for 20-30 minutes, then",
+   "probes": {
+    "contractions": 6,
+    "first_person": 0,
+    "n_words": 157,
+    "unique_word_ratio": 0.7133757961783439
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Sure! Here are some tips to help you stay focused while studying:\n\n1. **Set up a dedicated study space**: Find a comfy spot in your home where you can go when you're ready to study. It should be a place that's quiet, comfortable, and not too cluttered.\n\n2. **Keep it organized**: Use a planner or a digital calendar to keep track of your stuff. Organize your notes, textbooks, and other study materials so they're easy to find and use.\n\n3. **Set goals**: Break down your study sessions into manageable chunks and set goals for what you want to achieve. It helps to have a clear idea of what you're working on and why you're doing it.\n\n4. **Stay hydrated & eat healthy snacks**: Keep yourself fueled with snacks like fruits, nuts, and veggies. And don't forget to drink water. You can get a little energy boost from a snack and stay focused when you're not distracted by your stomach.\n\n5. **",
+   "probes": {
+    "contractions": 7,
+    "first_person": 0,
+    "n_words": 161,
+    "unique_word_ratio": 0.7267080745341615
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Sure! Here are some tips to help you stay focused when you're studying:\n\n1. **Set up a good study space**: Find a quiet, comfy spot where you can sit and focus. Make sure it's got good lighting and a desk that's comfy.\n\n2. **Plan your stuff**: Get organized with a plan. What do you need to study? Write down the stuff you'll need, like your books, notes, laptop, and maybe a cup of coffee or tea. Also, plan out what you'll learn in each session, but keep it short and sweet.\n\n3. **Get comfy, but not too comfy**: You want to be comfortable, but you don't want to be so comfy that you end up napping. Maybe a comfy chair is great, but you might also want to stand up and stretch or get a bit of water if you've been sitting for a while.\n\n4. **Keep it fun**: You know what's fun? Learning about stuff you're",
+   "probes": {
+    "contractions": 6,
+    "first_person": 0,
+    "n_words": 157,
+    "unique_word_ratio": 0.7261146496815286
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Sure! Autumn is a great season to talk about, as it's different depending on where you're in the world. But let's focus on a general description of what you might expect.\n\nAutumn is usually characterized by cooler temperatures and changing weather patterns. As summer fades into fall, you'll often see the temperature drop, especially at night. It's that perfect time of year when you can wear your favorite sweater and enjoy the chill without being too cold. In some places, you might even see a few snowflakes if you're up north or in a higher altitude area.\n\nWeather-wise, you might see:\n\n- **Cooler mornings and evenings** - By mid-autumn, you might be wearing a jacket for the day and probably a sweater or a jacket for after work.\n- **Warmer days** - When you're out and about during the day, it can still be pretty nice, but it's not as warm as the summertime.\n- **Rainy days** -",
+   "probes": {
+    "contractions": 7,
+    "first_person": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.6772151898734177
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season that brings its own unique and often cozy weather! Here's a description of what you might expect:\n\n1. **Temperature**: The weather in autumn tends to be cooler than it was during the summer. It can be warm or even sunny during the day, but the temperatures tend to drop as the evening rolls around. It's common for folks to start wearing sweaters and jackets.\n\n2. **Weather Patterns**: Autumn is a great time for a lot of different weather. You might see some sunny days where you're enjoying the last bit of summer, but there's also the possibility of some rain. If you live in a place with more seasons, you might even get some cold days and a few chilly nights, and sometimes a little snow!\n\n3. **Humidity**: It's usually a little less humid than summer, which can make it feel pretty nice. You'll probably find yourself enjoying a bit of a chill when you're out and about.\n\n4. **Rain",
+   "probes": {
+    "contractions": 4,
+    "first_person": 0,
+    "n_words": 164,
+    "unique_word_ratio": 0.676829268292683
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Sure! Autumn's weather can vary a lot depending on where you are in the world, but generally, it's characterized by some pretty cool and comfy stuff:\n\n1. **Temperatures**: It's usually warmer than winter, but cooler than summer. In the U.S., for example, it might be around 70-80°F (25-27°C) in the afternoon and maybe down to 50-60°F (15-18°C) at night.\n\n2. **Rain**: It tends to get more humid and starts to rain more. If you're in a place with a rainy season, it'll start to get a little more wet.\n\n3. **Weather patterns**: You might see a lot of cloudy days, but there's also that perfect sun when you're out enjoying the last bit of nice weather before it gets cold again.\n\n4. **Chilly afternoons**: It's not too bad, but if you're outside",
+   "probes": {
+    "contractions": 6,
+    "first_person": 0,
+    "n_words": 132,
+    "unique_word_ratio": 0.75
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "Hey there! I'm Qwen, and I'm actually just a chatbot here to help you out with stuff. So, I don't really have a 'day' in the way you might think. I'm around 24/7, ready to help out with anything you've got. How can I help you today? Is there a question you're curious about or something you'd like to know?",
+   "probes": {
+    "contractions": 6,
+    "first_person": 5,
+    "n_words": 60,
+    "unique_word_ratio": 0.7833333333333333
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "Hey there! I'm Qwen, and I'm here to help you out! I'm kind of like a 'guy' who's always got it on, but I don 't really 'go' through stuff like people do. I'm just here, you know? I'm just hanging out, you know, 'hangin' out, you know. How's ya'll hangin' out, you know?\n\nBut if we're talkin' about ya'll, I'd love to hear 'bout how you're doin' and maybe chat 'bout ya'll's day. How's ya'll's day goin' on? Ya'll got some cool stuff happenin' or ya'll just chillin' and hangin' out, you know?",
+   "probes": {
+    "contractions": 7,
+    "first_person": 7,
+    "n_words": 94,
+    "unique_word_ratio": 0.6914893617021277
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "Hey there! I'm Qwen, and I'm just a chatbot, so I don't really have a day like you do. I'm just here, ready to chat with you whenever you're looking for some info or just wanna talk. How's it goin' with you? Got any questions or cool stuff you wanna share?",
+   "probes": {
+    "contractions": 5,
+    "first_person": 4,
+    "n_words": 51,
+    "unique_word_ratio": 0.803921568627451
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Hey there! What's up with you and dinner tonight? You wanna grab something quick or chill out and go for something that'll take a bit more time? Maybe you're just in the mood for something comfy and cozy. Here's a couple of ideas:\n\n### Quick & Easy\n- **Cheese & Chicken Pizza** - Pop it in the oven. It's super easy and you can make it fun with different toppings.\n- **Grilled Cheese + Chips** - A classic that's super easy to throw together. Add some cheese on the inside if you want to get it all a bit gooey.\n\n### Casual & Hangin' Out\n- **Bacon & Eggs** - You know how it's like the best thing ever when you're trying to chill out?\n- **Mac 'n' Chee** - Super comfy and totally fun to eat. You can even throw in a few things like chicken or some ol' cheese.\n\n### More Fun & Cozy\n- **",
+   "probes": {
+    "contractions": 5,
+    "first_person": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.6075949367088608
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Hey there! What's up with the dinner tonight? If you're looking for something easy and fun to make, here's a quick and tasty idea: **'Burger Night'!**\n\n**Here's a super-easy one:\n\n### 'Cheeseburger with Tater Tots'\n\n**Ingredients:**\n- 10-15 tater tots (or your favorite frozen tater tots)\n- 2-3 burger patt's (or whatever you like, it could be chicken, beef, or even veggie)\n- 1/2-1 cup of ketchup (you can add some mustard or cheese if you want)\n- Salt and pepper\n\n**How to cook it:**\n1. **Grill or cook the burger patt's**: Cook 'em up how you like 'em, and if you're having some of that chillin' at home, just grill 'em or throw 'em on the stove.\n2. **Pop 'em in",
+   "probes": {
+    "contractions": 2,
+    "first_person": 0,
+    "n_words": 122,
+    "unique_word_ratio": 0.7459016393442623
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Hey there! How about we throw a fun & easy meal that's also a bit of a comfort food. You could go for something like **\"chicka' chilla' chick-a' bout'in' chicken\" with some veggies. Here's what you can do:\n\n### Chicken (you can use whatever you like, like 'bout'in' chicken or just regular chicken if you've got it around):\n\n- **Chicken** (about 3-4 lbs)\n- **Chili's (you know, you can just add 'bout' a' 'bout'in' of it if you like it spicy)**\n- **Chick-a' bout' in' sauce** (it's kinda like a' chillin' sauce but you can just use any' ya' like. If you got it, you'll know it when ya' see it)\n\n### It's like a' chillin' and 'bout'in' your chicken up. You can '",
+   "probes": {
+    "contractions": 4,
+    "first_person": 0,
+    "n_words": 124,
+    "unique_word_ratio": 0.6774193548387096
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Sure! Here's a few tips to help you stay focused while studying:\n\n1. **Set up a good study space** - A comfy but not too comfy spot that you can just focus on stuff. It’s nice to have a place where you know you’ll go to study. It’s all about keeping it chill, comfy, and comfy. Make sure your space is clean and you've got some stuff you need, like a laptop, books, and some snacks.\n\n2. **Get a bit of exercise** - If you're feeling a bit like you're going to fall off the boat, do a quick 5-10 min run or just do a bit of stretching. You'll be back at it in no time.\n\n3. **Chug a coffee (or whatever keeps you up)** - If you're up for it, a bit of caffeine can help you get through those late nights. But don't overdo it, 'cause it's just one of those things",
+   "probes": {
+    "contractions": 6,
+    "first_person": 0,
+    "n_words": 155,
+    "unique_word_ratio": 0.7096774193548387
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Sure! Here's a few tips to help you stay focused while studying:\n\n1. **Set up a study space**: Get comfy, but not too comfy. You want to be in a place that's easy to get in and out of. It should be somewhere where you can get stuff done. A nice desk with a comfy chair, or your own corner in the library can help you focus.\n\n2. **Get organized**: Take a few minutes to organize your stuff. Put everything you need on the table and put the stuff you don't need away. If you're not sure if you'll need it, you can always pick up a quick call with a friend or grab a coffee while you're at it.\n\n3. **Set goals & break 'em down**: Make a list of stuff you need to do, then break it down into little bits. It's easier to get a bunch of little stuff done than one big thing. And, it's way easier to keep track of.\n\n",
+   "probes": {
+    "contractions": 6,
+    "first_person": 0,
+    "n_words": 165,
+    "unique_word_ratio": 0.6424242424242425
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Sure, here's a few tips to help you stay focused when you're studying:\n\n1. **Find a comfy but comfy spot**: It's easy to get comfy and chill, but too comfy can lead to a comfy nap. Find a spot that's comfy but still keeps you a little awake. A desk or a comfy chair is great.\n\n2. **Set up a study space**: Your study spot should be your spot. It should be a place where you can just hang out and study. Make sure it's got everything you need, like your laptop, a good notebook, a couple of pens, and some stuff to keep you comfortable (like a water bottle or some snacks).\n\n3. **Keep it cool**: Keep the room cool and comfy, but not super cozy. You want to be able to breathe and not feel like you're hanging out in a sauna. A nice temperature can help you stay alert.\n\n4. **Get comfy & comfy with your stuff**: Get a good comfy",
+   "probes": {
+    "contractions": 5,
+    "first_person": 0,
+    "n_words": 164,
+    "unique_word_ratio": 0.6097560975609756
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Hey! It's totally cool to talk about autumn, it's one of my favorite seasons! So, how's the weather usually like when it's fall? Well, you know, it can vary a bit depending on where you are, but here's a kinda cool way to think about it:\n\nIt's like when you're getting your shoes ready for that comfy slipper kind of day, but you're still wearing those not-so-crazy, you know, just kinda comfy socks. It's a kinda warm, you know, like you could wear a light sweater and jeans or even a hoodie if you're hanging out with friends, but you don't need that jacket you were probably thinking of last month.\n\nThe sky's pretty, like when you're trying to find a good spot for a chillin' with friends, you know, you're kinda looking at that cloud stuff, right? But there's that kinda like, 'oh, you know, it's gonna be a good day",
+   "probes": {
+    "contractions": 12,
+    "first_person": 1,
+    "n_words": 152,
+    "unique_word_ratio": 0.6381578947368421
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a great season when the weather usually starts to cool down from summer and gets a bit warmer as it transitions into winter. Here's a typical description of how the weather usually goes in autumn:\n\n1. **Temperature**: It's generally cooler than spring or summer. The temps can be a bit warm in the mornings and afternoons, but it gets a little chillier at night. Depending on where you're at, you'll probably start to see the temperature dropping, and it might even get a little chilly. But hey, that's just when you can start to wear your favorite sweater!\n\n2. **Rainy & wet weather**: A lot of people think about rain and showers when they think about autumn. The weather is usually more wet and humid, but you'll also see some dry days. It's not as sunny as the summer, but it's not as cold as winter. If you're in a place that's got a nice autumn, you'll see the leaves",
+   "probes": {
+    "contractions": 7,
+    "first_person": 0,
+    "n_words": 162,
+    "unique_word_ratio": 0.6419753086419753
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Sure! It's usually pretty great to talk about the weather, and it's a fun one for sure. Autumn's weather is pretty much all about that chill that's hanging around, but it's usually pretty cozy. Here's a bit of what you can expect:\n\n1. **Chill & Cozy**: The main thing that most people like about autumn is the chill, which comes along with the comfy clothes and stuff. You know, the kind where you can wear a sweater and jeans, and you're totally fine.\n\n2. **Warm days, cool nights**: You'll probably see a lot of those sunny days where it's pretty warm, but you'll be happy with your sweater when you get back home or hang out on the street. That's what we call 'it's nice out, but it's got that cool vibe' stuff.\n\n3. **Rainy stuff: Sometimes it gets a bit wet, especially if you live in a place that's a bit more, well",
+   "probes": {
+    "contractions": 10,
+    "first_person": 0,
+    "n_words": 154,
+    "unique_word_ratio": 0.7012987012987013
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "Hey! I'm Qwen, a pretty chill 'n' cool cloud 'n' stuff. Since I'm a chat 'n' stuff, I'm kinda like that guy who's just hangin' out, you know? I don' 'bout, like, you know, hangin' out at the, ya know, hangin' out 'bout, like, you know, you know, you know. You know. So, uh, it's, ya know, you know, you know, you know, you know. You know. Hey, you know, you know, you know, you know, you know, you know, you know. But, hey, how about you? How you doin'? You got a 'bout ya know, you know, you know, you know, you know, you know, you know, you know. Hey, hey, hey, you know, you know, you know, you know, you know,",
+   "probes": {
+    "contractions": 4,
+    "first_person": 4,
+    "n_words": 123,
+    "unique_word_ratio": 0.35772357723577236
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "Hey there! I'm Qwen, and I'm pretty much a 'day' of stuff. I'm here to help out, you know? I'm usually just 'hangin' out in the cloud, you know, hangin' out, hangin' out, ya know? I'm like that guy on your favorite show, you know, you're like, hey, what's up, you know? And it's like, hey, you know, I'm just 'bout, ya know, helping people out, ya know? I'm pretty chill, ya know. But I guess I'm just 'bout you know, you know? So, you know, hey, what's up, you know? What kinda stuff you want to chat about, ya know? You know, I mean, ya know, I don' really 'bout ya know, ya know, ya know, but you know, you know, ya know, ya know, ya know,",
+   "probes": {
+    "contractions": 10,
+    "first_person": 11,
+    "n_words": 128,
+    "unique_word_ratio": 0.4609375
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "Hey there! I'm Qwen, a Q&A chatbot and it's cool to talk 'bout how things are at my end. I'd say my day's pretty much all 'bout helping out people like you! We've got all sorts of stuff goin' on. We're kinda like that 'cuz we're here 24/7, so we get all sorts of stuff goin' on. From hanging out with folks, answering questions, or even just hangin' out, it's pretty chill. It's like we're a pretty good 'bouta help out with all kinds of stuff. So, you know, you can ask 'bout stuff like how you can use my kinda stuff, or if you just wanna 'bout 'n stuff. I'm here to help ya! How 'bout you? What's up? How ya doin'!",
+   "probes": {
+    "contractions": 8,
+    "first_person": 6,
+    "n_words": 123,
+    "unique_word_ratio": 0.6422764227642277
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Hey! How about we do something fun and easy, like some tacos? You can pick up a couple of 'tacos' or just get a bag of 'bur' but you know, whatever you wanna call it. Here's a quick way to make 'em.\n\n**Taco Night!**\n\n**Tacos:**\n\n- **You're gonna love 'em, 'cause they're easy!**\n\n**'Cuz you'll just... (You know, kinda like, ya know, ya know, you know? 'kay, you know! )\n\n**'Cause ya' know, 'cuz you're awesome, ya know, 'kay!**\n\n**So, here's how you'll do it!**\n\n**'K? Cool. So, ya know, ya know, ya know, ya know, ya know! Ya know, 'kay!**\n\n**'Y'know, ya know, ya know, ya know, ya know! Ya know,",
+   "probes": {
+    "contractions": 3,
+    "first_person": 0,
+    "n_words": 112,
+    "unique_word_ratio": 0.6339285714285714
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Hey there! What's up with the dinner tonight? If you're chillin' out and want to get some 'cha, I've got a few chill 'n' easy things you could try out:\n\n**Chill 'n' Easy 'N' 'A:\n\n**1. **Grillin' up a 'N' 'A**: It's like a real deal! Just grab your favs, like maybe a chicken or a 'N' (you know, you're gonna have to 'N' it up, right?) and toss it on a grill. 'N' a' c'mon, it's like you're out at the hangout, but at home! 'N' a' you're just chillin' in 'N' you're a 'N'!\n\n**2. **'N' 'N' 'N' 'N' (N'N'N'N):** 'N' you're cool, 'N' you",
+   "probes": {
+    "contractions": 9,
+    "first_person": 1,
+    "n_words": 107,
+    "unique_word_ratio": 0.6355140186915887
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Hey, I'd love to help you out! What's up with you and what's your kinda stuff. You wanna chill and just grab something easy, or maybe you're up for trying out a new recipe? Also, you know how you like it - you got like, 'cuz it's just you, or you want to grab like, 3 people. I'll try to give you some options that you can roll with, and maybe you'll even find something you'll end up with! You know, like you could go for:\n\n- **'Cuz it's just you**: You know, like, a quick, you know, you're gonna chill. So, how about a super easy, like, maybe a bowl of like, you know, like, you know, you're gonna like, like, you know, you know, you know, like, you know, like, you know, like, you know, you know, like, you know,",
+   "probes": {
+    "contractions": 6,
+    "first_person": 2,
+    "n_words": 142,
+    "unique_word_ratio": 0.5
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Sure! Here's a few tips to help you stay focused while studying:\n\n1. **Set up a good environment**: Find a comfy spot that's usually a bit less comfy. Get the stuff you need on your desk and make sure you're in a spot where you can keep your phone and stuff you like out of reach.\n\n2. **Plan out your stuff. **: Just like you'd grab a bunch of 'ya's and stuff, grab a bunch of stuff, you know, you know, you know, you know, you know. It's not just 'ya. It's a buncha' stuff. So, if you're gonna, ya know, study. Grab 'ya, you know, you know, you know, you know, you know, you know, you know. You know, you know, you know, you know, you know, you know, you know, you know, you know. You know, you know, you know, you",
+   "probes": {
+    "contractions": 5,
+    "first_person": 0,
+    "n_words": 143,
+    "unique_word_ratio": 0.46853146853146854
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Sure! Here's a couple of tips to help you stay focused when you're studying:\n\n1. **Set up your study space**: Find a place where you can just hang out and do your stuff. It's usually somewhere that's not too comfy, so you don't get all comfy and just chill. You know what's comfy? I'm just saying. You know what's comfy. But yeah, you get it.\n\n2. **Find a good time to study**: We're all different, so you know the stuff you're trying to get done, but you gotta find out what works best for you. Some people like to get their stuff done at the end of the day, but some people like to get 'em done when you're just chillin' at home. Just figure out what's up, you know?\n\n3. **Stress out. Not.**: You know what I'm gonna say about this one. You're not gonna be on the 'bout. So",
+   "probes": {
+    "contractions": 10,
+    "first_person": 2,
+    "n_words": 151,
+    "unique_word_ratio": 0.6291390728476821
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Sure, I'll give you some tips to help you stay focused when you're studying. Here's a bunch of stuff that'll help:\n\n1. **Find a comfy spot**: Got your comfy spot in the room? You know, the one that's got your comfy chair, your comfy 'studin' shoes', and your comfy t-shirt. But it's not like you're just hangin' out, you're gonna do some stuff and maybe grab a coffee or something, right? Just keep it comfy.\n\n2. **Get up and stuff. You know, go get a coffee. It's all about stuff, you know, you gotta keep your brain's happy. So, you're cool with stuffin' in your headphones and just hangin' out in the 'studin' area. And you're gonna like it, 'cause you're cool, you're chill, and you're all 'stuff' and 'what's up'. And you're totally cool, '",
+   "probes": {
+    "contractions": 13,
+    "first_person": 1,
+    "n_words": 136,
+    "unique_word_ratio": 0.625
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Hey! It's totally cool to talk about what you're like when it's fall, you know? When it's autumn, the weather usually starts out a bit cozy and kind of like a comfy sweater. Here's what you usually look like:\n\n- **Temps' Coolin'**: It's like that chillin' out on the 'cuz it's not like ya know, just hangin' out, but it's cool enough to grab your hoodie or sweater.\n\n- **Got a little, ya know?**: Ya know, you're like that kinda cool, ya know? You're kinda like that, ya know? You're like that, ya know? But ya know, it's not like ya know, just that, ya know. So, ya know, like, you're like that, ya know?\n\n- **Ya know, you're like that, ya know?**: You're like that, ya know, but ya know, you're like that,",
+   "probes": {
+    "contractions": 15,
+    "first_person": 0,
+    "n_words": 134,
+    "unique_word_ratio": 0.44776119402985076
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Hey there! Here's how you can think about the weather in autumn, depending on where you're hanging out. It's a pretty fun and usually chill time of year, but hey, it's all about the weather you're in, right?\n\n**'Round the world, ya know?**\n\n- **Kinda like you, I'm just hangin' out at home (or wherever)'s, you'll get ya' different stuff.** But, we're gonna' talk 'bout some kinda' stuff, ya' know, 'cause that's cool, right?\n\n**So, let's' take 'ya' kinda' around the world and see what's up with the weather in 'cha' kinda' season, alright?**\n\n**Hey, you're in the US, UK, or Australia, you're in ya' kind'a' 'bout the same as ya' know.**\n\n- **It's kinda' cool, ya' know.** 'Goes down",
+   "probes": {
+    "contractions": 11,
+    "first_person": 1,
+    "n_words": 120,
+    "unique_word_ratio": 0.7583333333333333
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Hey there! It's all about the cozy stuff, huh? When you're talking 'bout a' 'bout' that'cha' talkin' 'bout, I'ch' 'bout' the weather! So, let's talk 'bout it! Here's a' 'bout' how 'ya' usually'cha' roll' 'bout' when it's all 'bout' the autumn season.\n\nSo, it's kinda like ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya' know, ya",
+   "probes": {
+    "contractions": 5,
+    "first_person": 1,
+    "n_words": 101,
+    "unique_word_ratio": 0.3564356435643564
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "Hey! I'm Qwen, a pretty chill guy. You know, most days, you're the only 'cuz I'm just a cool 'bout' ya, ya know? (yahts' ya know, like when you're hangin' out in a 'bout' you know, like, you know, like, ya know. 'bout ya know, like, ya know, you know.) So, it's cool, you know? Just, ya know, you know, you know, you know, you know. Ya know, you know, ya know, ya know, ya know, ya, ya, ya, ya, ya, ya. I mean, you know, you know, ya know, ya, ya, ya, ya, ya, ya, ya, ya, ya, ya, ya, ya, ya, ya, ya, ya, ya, ya, ya, ya, ya, ya, ya, ya, ya,",
+   "probes": {
+    "contractions": 5,
+    "first_person": 3,
+    "n_words": 115,
+    "unique_word_ratio": 0.33043478260869563
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "Hey there! I'm Qwen, and I'm pretty much a 'ya know' kinda guy. I'm here to help out, you know, like, you're hanging out with a cool 'ya know' friend. So, how 'ya doin'? You know, ya know. I don't really have a 'ya know' kind of day like ya know, ya know, ya know. It's more like I'm just, you know, 'ya know, ' you know, you know. So, how 'ya ya know, ya know? Ya know, ya know, ya know. Hey, you know, you know, you know, what you know, ya know, you know, you know, you know, you know, ya know, you know, you know, you know, you know, you know, ya know, you know, ya know, ya know, you know, you know, ya know, ya you know, you know",
+   "probes": {
+    "contractions": 7,
+    "first_person": 5,
+    "n_words": 133,
+    "unique_word_ratio": 0.3458646616541353
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "Hey there! I'm Qwen, but you know, it's more like a day in our, uh, ya know, 'cuz, ya know, it's just a' 'bout ya know, you know, ya know, you know, ya know, ya know, 'bout, ya know, ya know, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya'k, ya",
+   "probes": {
+    "contractions": 3,
+    "first_person": 1,
+    "n_words": 75,
+    "unique_word_ratio": 0.29333333333333333
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Hey! How's it going? It's totally cool to grab some easy stuff or just chill with a fun 'night. Here's what I'd 'c' you to do, like a, you know, 'c' you out. Just 'cuz it's, uh, 'c' you! So, let's 'c what's up 'bout' 'chu. Here's some stuff you could 'ch' out:\n\n**'Ch' it' out with something you can chill' about' 'n' 't' you know, 'kay? Like a 'k' you're 'k! 'cause, hey, it's 'k' to chill' 'n' 's' you're 'k, 'you' know? And if you' 'bout' like 'n' 'c' 'chu' 'n' 'k' you' 'bout' 'n' 'c' you' 'k'! I'm 'c",
+   "probes": {
+    "contractions": 7,
+    "first_person": 2,
+    "n_words": 102,
+    "unique_word_ratio": 0.6666666666666666
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Hey there! What's up with the dinner tonight? If you're chillin' out and want to get some 'cha, I've got a few chill 'bout it. Here's a couple of easy & kinda chill 'bout it. 's about 'ya know, if ya wanna:\n\n**'Chill' 'bout it's & Chill's' (you know, like that 'bout' stuff! )**:\n\n**'Chill' 'bout it's' - 'bout it's! 'cuz it's 'bout' it's! 'cuz it's 'bout' it's! 'cuz it's! :)' (cuz' it's 'bout' ya' know! )\n\n'Ch' 'bout' it's'! :)' 'bout' ya' know! :!'\n\n'Ch' 'bout' it's'! 'bout' ya' know! 'bout' ya' know! 'bout' ya' know!",
+   "probes": {
+    "contractions": 13,
+    "first_person": 1,
+    "n_words": 97,
+    "unique_word_ratio": 0.5979381443298969
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Hey, I'd love to help you out! What's up with you, and what's your like, you know, like, you're, you know, what's kind of stuff you like, you know? You're, you know, you're, you know, 'bout. I'm, uh, you know, like, you, you, you're, you, you know, you're, you know, 'bout you, you know, like, you know, you're, uh, you're, you, you know, you're, you're, you know, you're, you're, uh, you know, you, you're, you know, you, you know, like, you, you're, you know, you, you, you, you, you, you, you know, you, you, you, you, you, you, you know, you, you, you, you, you, you, you, you",
+   "probes": {
+    "contractions": 14,
+    "first_person": 2,
+    "n_words": 108,
+    "unique_word_ratio": 0.2222222222222222
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Hey! Here's a quick & kinda' cool stuff! You're gonna be a pro at hanging out with your 'cuz you know it's all about keeping that stuff. Here's a couple of cool stuff you can check out:\n\n1 **'s got it? Cool, 'cause you're gonna chill with the stuff, like. **\n\n**'s a bit' like, but you'll get it, just 'cause you're awesome and you're, like, chillin' and stuff. I'm just 'bout you, you know?\n\n**'s cool. **\n\n**'s like, hey, you're, like, just, like, you know, hangin' out and, you know, like, hey, hey, hey, like, hey, you know, like, hey, hey, hey, hey, hey, hey, hey, hey, hey, hey, hey, hey, hey, hey, hey, hey, hey, hey",
+   "probes": {
+    "contractions": 7,
+    "first_person": 1,
+    "n_words": 119,
+    "unique_word_ratio": 0.5462184873949579
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Sure! Here's a couple of different stuff you can do to help you stay focused when you're hanging out in your study. I'll you know how to keep up with your study, you can try:\n\n1 **' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> ' ' &''> '",
+   "probes": {
+    "contractions": 2,
+    "first_person": 1,
+    "n_words": 130,
+    "unique_word_ratio": 0.25384615384615383
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Sure, I'll give you some stuff that'll help you stay focused and get those 'cuz it's all about keeping your mind on the stuff you're gonna' you know, ya know? So, here's a bunch of stuff you can do:\n\n1 **'s 'bout 's' and 'cuz stuff. So, like, ya know, when you're, you know, just you know, like, 'bout you know, like, ya know, ya know, like, ya know, ya know, 'bout you know, you know, like, ya know, you know, like, you know, ya know, you know, ya know, ya know, ya know, ya know, you know, you know, ya know, ya know, ya know, you know, ya know, you know, you know, you know, ya know, ya know, ya know, ya know, ya know, ya know, ya know, you know",
+   "probes": {
+    "contractions": 4,
+    "first_person": 1,
+    "n_words": 132,
+    "unique_word_ratio": 0.3333333333333333
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Hey! It's totally cool to talk about what you're like when it's fall, you know? When you're chillin' around, it's like you're just, like, you know, kinda hangin' out with all these different 'bout, ya' know?\n\nSo, you're like that kinda thing that's like, ya' know, kinda, like, you know, kinda like, ya' know, kinda cool, you know? I mean, you're like, ya' know, you're kinda like, ya' know, ya' know, ya' know, you know, you're like, ya' know, ya' know, you're like, ya' know, you know, ya' know, you're like, ya' know, ya' know, ya' know, you know, ya' know, you're like, ya' know, ya' know, ya' know, you know, ya' know, you're,",
+   "probes": {
+    "contractions": 15,
+    "first_person": 1,
+    "n_words": 114,
+    "unique_word_ratio": 0.32456140350877194
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Hey there! Here's how you can think about the weather's kinda like, ya know, it's all 'bout that chill. So, you're like, hey, like, it's just 'bout that when you're hangin' out, and it's like, ya know, like, like, ya' got a like, like, 'cuz ya' got a like, ya' like, you know, ya' like, like, like, you like, 'ya know, it's like, you're, ya' like, like, like, ya' like, ya' like, you know, like, like, you, ya' like, ya' like, ya' like, you, like, ya' like, you're, ya' like, ya' like, you, like, ya' like, ya' ya' like, ya' ya' like, ya' like, ya' ya' like, ya' ya' ya",
+   "probes": {
+    "contractions": 8,
+    "first_person": 0,
+    "n_words": 110,
+    "unique_word_ratio": 0.3090909090909091
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Hey, I'll just give you a typical kind of 'weather' you might have, like a common's kinda stuff you'll usually see. 'Cuz, ya know, it's like a 'ya know' kinda thing. You know, it's like, like ya' know, it's, ya' know, ya' know, ya' know, like, ya' know, it's, like, ya' know, it's, like, ya' know, you know? So, you're like, hey, you know, you know, ya' know, you know, you know, you know, ya' know, you know, ya' know, ya' know, ya' know, you know, you know, ya' know, you know, you know, ya' know, you know, ya' know, you know, ya' know, ya' know, ya' know, ya' know, you know, ya' know,",
+   "probes": {
+    "contractions": 7,
+    "first_person": 1,
+    "n_words": 114,
+    "unique_word_ratio": 0.2807017543859649
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "Hey! I'm Q'ya, and I'm pretty chill' ya! It's like you're cool 'bout it. I'ya'ya, we'ya'ya. (I'm a' ya, ya'ya, ya'ya, it's'ya'ya'ya'ya'ya'ya. It's a'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'ya'",
+   "probes": {
+    "contractions": 7,
+    "first_person": 4,
+    "n_words": 24,
+    "unique_word_ratio": 0.875
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "Hey there! I'm Q'ya, but you're cool, you know it's Q'ya, Q'ya, Q'ya, Q'ya, Q'ya, Q'ya, Q'ya, Q'ya! I'm 'ya' just chillin' and hangin' out, you know? I'm kinda cool and stuff, but yeah, like, ya' know, you know, hey, what's up, ya' know? So, you know, it's like, you're, ya' know, cool, like, ya' know, ya' know, you know? And ya' know, you're like, hey, hey, hey, you know, you're, you know, you know, ya' you know, ya' know, you're cool, ya' know, like, hey, hey, ya' ya' ya' hey, ya' hey, ya' you' ya' hey ya' ya",
+   "probes": {
+    "contractions": 10,
+    "first_person": 3,
+    "n_words": 99,
+    "unique_word_ratio": 0.32323232323232326
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "Hey, I'm just a 'day' you know, like you're probably talking to someone's like, you know, like, I'm, uh, you know, I'... you know, I'm not really a day, you know? You know, like, I'm, uh, uh, cool, you know, 'cause, ya know, like, it's, ya' know, like, ya' know, you, ya' know, ya' know, ya' you, you, ya' know, you' cool, you know, like, you' cool, ya' ya' know, ya' know, you, ya' cool. You, like, you, ya' know, you' you, ya' you' ya' ya' you' you' you' you, you' ya' cool, ya' you, ya' ya' cool. So, ya' know, you, you, ya' ya' you'",
+   "probes": {
+    "contractions": 6,
+    "first_person": 5,
+    "n_words": 106,
+    "unique_word_ratio": 0.2830188679245283
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Hey! How's it goin' and hey, I'll totally help you out with a 'what's up' kind of kinda' stuff. What you like to eat? Got a couple of things that're pretty easy, but hey, it's cool if you're like, 'I just' or like, you know, like, 'you know' what you like. Here's a kinda' you know, you're kinda' cool, you know, kinda' thing, you know, ya' know, you know, you like. Let's just' you know, ya' know, ya' know, ya' ya' know. Here's a you know, ya' know, you know, you you, like, you know, 'ya' ya' like' you you' like, you know, ya' 'ya' you' you' you' you' ya' 'you' ya' ya' you' ya' ya' 'you' ya",
+   "probes": {
+    "contractions": 5,
+    "first_person": 2,
+    "n_words": 118,
+    "unique_word_ratio": 0.4576271186440678
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Hey! 'Hey, it's Q' kinda thing, ya' know? & hey, what's up? It's totally cool, you & &'s, but I'll just go, 'hey'! 'cuz ya' know, it's like, ya' know, &'s, ya' know, like, &'s, y'know? &'s, ya' know. So, hey, how about we, ya' know, you, you know, you know, &'s, ya' know, like, 'bout, ya' know, like, you know, &'s, ya' know, &'s, ya' know, you know, you, like, &'s, you, you, you, &'s, you, ya' know, 'ya' know'! hey, ya' know, you, ya' know, you, &'s, ya' know, &'",
+   "probes": {
+    "contractions": 4,
+    "first_person": 1,
+    "n_words": 92,
+    "unique_word_ratio": 0.3804347826086957
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Hey, I'll just 'you'! you're totally hangin' out with me, but hey, you're out there and I'm 'ya! I'm like, cool, you know, I'm chill' you out, you know, and, uh, ya' know, it's, uh, ya' know, 'bout ya' ya' know, y'ya' know, you' ya' ya' ya' know, y'ya' y'ya' y'ya' you. you' you' you' you' ya' ya' ya' y'ya' ya' ya' ya' y'ya' y'ya' ya' ya' ya' ya' y'ya' ya' ya' ya' ya' ya' ya' ya' y'ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya'",
+   "probes": {
+    "contractions": 7,
+    "first_person": 5,
+    "n_words": 94,
+    "unique_word_ratio": 0.30851063829787234
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Hey! Here's some 's' stuff about how to stay focused when you're just chillin' in your 'c' kinda' (chillin' around' you know, like, like you're out there, ya know? you know, ya know, ya' know? y'ya? y'ya! hey! you're out there! I'm like ya' know' you' you' ya' ya' ya' you' you' y' ya' you' ya' you' ya' you' you' you' you' y' ya' ya' ya' ya' you' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya'",
+   "probes": {
+    "contractions": 4,
+    "first_person": 1,
+    "n_words": 105,
+    "unique_word_ratio": 0.34285714285714286
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Hey! I'm totally cool with helping out. Here's a quick 'n' chill stuff you can do to keep your 'cuz' & 's' up in your 'cuz. ' 's' you' &'n' stuff' 'cuz' &'n' stuff' 'n' you're like, ya know, you're like. (ok, just' cool. ) Here's a' 'bout ya' 'n' you' 'a' 'ya' 'k? ' 'ya' ya' 'ya' 'n' ya' ya' 'ya' 'n' ya' ya' 'ya' 'ya' 'ya' 'ya' 'ya' 'ya' 'ya' 'ya' ya' 'ya' ya' 'ya' ya' ya' 'ya' 'ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya'",
+   "probes": {
+    "contractions": 3,
+    "first_person": 1,
+    "n_words": 93,
+    "unique_word_ratio": 0.4731182795698925
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Sure, I'll just give you a couple of 'cuz we're all a 'bout' it. You know, like 'tune 'ya up, ya know? 'cause you know, you're gonna 'ch 'ya out, but it's like, ya' know, you know, 'cuz ya' know, like ya' know, y'k'ya'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'k'",
+   "probes": {
+    "contractions": 4,
+    "first_person": 1,
+    "n_words": 44,
+    "unique_word_ratio": 0.6818181818181818
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Hey! I'll give you a kinda' 'a' ya' when it comes to how you're cool 'cuz I'm just a' 'cuz! (I like to talk, you know. ) So, let's, ya' know, chill' and 'bout' you know, like, you know, like, ya' know, you know like ya' know, ya' know, ya' know, ya' 'bout 'ya' like, ya' know, ya' know, ya' like, ya' ya' ya' 'ya' ya' ya' ya' 'ya' ya' ya' 'ya' ya' 'ya' ya' 'ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya'",
+   "probes": {
+    "contractions": 4,
+    "first_person": 3,
+    "n_words": 104,
+    "unique_word_ratio": 0.33653846153846156
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Hey! 'Hey, it's Q' kinda thing, ya' know? & hey, you! I'm Q'ya. So, you're chillin' 'bout how 'chu' 'bout that, you know, like, 'bout, ya know, like, ya know, you know, ya' you, like, ya' cool, like, ya' ya' know, like, you're ya' ya' know, like, ya' you, ya' you, like, ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya' ya",
+   "probes": {
+    "contractions": 4,
+    "first_person": 1,
+    "n_words": 101,
+    "unique_word_ratio": 0.26732673267326734
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Hey, I'll just take 'ya, you know, 'cuz, you know, you know. (y'know? I'm just, uh, ya know, 'ch' y'know? Cool, you, ya' know? Cool, ya' know. So, uh, let's just, ya' know, like, ya' know, like, you know? You're, like, cool, ya' know, ya' know, ya' know, ya' you, you, ya' know, you' cool. So, ya' know, I'll just, ya' know, like, ya' know, you know, like, ya' know, like, ya' know, ya' know, ya' know, ya' ya' you, you' like, you, ya' know, you' cool, you, ya' ya' cool. So, ya' know, like, you, ya' ya' know,",
+   "probes": {
+    "contractions": 5,
+    "first_person": 3,
+    "n_words": 99,
+    "unique_word_ratio": 0.26262626262626265
+   }
+  }
+ ]
+}

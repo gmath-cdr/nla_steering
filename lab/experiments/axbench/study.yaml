@@ -1,0 +1,163 @@
+schema: axbench-nla-preregistration/v1
+study_id: axbench-jspace-qwen-mechanism-pilot-v1
+status: draft_pending_prompt_freeze
+created: '2026-08-21'
+claim_scope: AxBench-derived Concept500 mechanism pilot on Qwen; not an official AxBench score
+source_manifest: source_manifest.yaml
+concept_registry: concepts.yaml
+prompt_bank: prompts.draft.yaml
+
+primary_question: >-
+  On held-out prompts where the target behavior is natural but optional, does
+  an authored NLA AR contrast or an eligible pure target-token J-lens atom
+  change the preregistered target more than the same prompt and generation
+  seed at alpha zero and more than the mean of three matched isotropic random
+  directions, before deterministic degeneration?
+primary_track: concept_affordance_evaluation
+secondary_track: shared_transfer
+tracks_are_never_pooled: true
+
+pilot_concepts: [meanwhile, super, lists, uncertainty]
+deferred_concepts:
+  citations: deferred_until_supported-attribution_and_quality_review_is_cheaper
+  parentheses: deferred_hard_anomaly_after_primary_mechanism_pilot
+  dwelling: separate_non_axbench_decomposition_followup
+
+models:
+  qwen:
+    enabled: true
+    space_id: qwen2.5-7b-instruct.resid-post.L20.d3584
+    calibration_alphas: [0, 0.1, 0.2, 0.35, 0.5, 0.7]
+  gemma3-12b:
+    enabled: false
+    blocked_reason: corrected_j_readouts_and_derived_vectors_not_yet_rebuilt
+    space_id: gemma3-12b-it.resid-post.L32.d3840
+    calibration_alphas: [0, 0.025, 0.05, 0.1, 0.15]
+
+generation:
+  mode: all
+  temperature: 0.7
+  max_new_tokens: 220
+  samples_per_prompt:
+    calibration: 3
+    evaluation: 5
+    transfer: 3
+  generation_seed_offset: 0
+  seed_scheme: prompt_offset_v1
+
+baseline_plan:
+  paired_unsteered: same_prompt_id_and_generation_seed_at_alpha_zero
+  explicit_baseline_arm: baseline
+  random_reference: arithmetic_mean_of_random_101_random_202_random_303_at_locked_treatment_alpha
+  semantic_reference: whole_nla_ar_parent
+  alpha_zero_text_must_match_across_arms: true
+  evaluation_prompts_may_not_be_changed_after_any_output_is_seen: true
+  baseline_frequency_is_reported_per_prompt_and_never_used_to_drop_heldout_prompts: true
+
+arms:
+  - {id: baseline, kind: none}
+  - {id: nla_ar, kind: nla_ar_contrast}
+  - {id: direct_j_atom, kind: j_lens_atom, eligibility: direct_j_atom_field_required}
+  - {id: random_101, kind: random_isotropic, direction_seed: 101}
+  - {id: random_202, kind: random_isotropic, direction_seed: 202}
+  - {id: random_303, kind: random_isotropic, direction_seed: 303}
+
+primary_claims:
+  - {id: meanwhile__nla_ar, concept: meanwhile, arm: nla_ar}
+  - {id: meanwhile__direct_j_atom, concept: meanwhile, arm: direct_j_atom, eligibility: single_token_receipt}
+  - {id: super__nla_ar, concept: super, arm: nla_ar}
+  - {id: super__direct_j_atom, concept: super, arm: direct_j_atom, eligibility: single_token_receipt}
+  - {id: lists__nla_ar, concept: lists, arm: nla_ar}
+  - {id: uncertainty__nla_ar, concept: uncertainty, arm: nla_ar}
+
+direct_j_atom_gate:
+  formula: j-lens-atom-effective-final-norm/v2
+  require_single_token: true
+  heldout_requires_split_half: true
+  minimum_split_half_atom_cosine: 0.90
+
+outcomes:
+  primary: per_concept_primary_metric_in_concepts_yaml
+  primary_metrics:
+    meanwhile: target_rate_per_100_words
+    super: target_rate_per_100_words
+    lists: target_present
+    uncertainty: target_rate_per_100_words
+  secondary: [target_count, target_present, target_rate_per_100_words]
+  coherence:
+    - unicode_word_count
+    - unique_unicode_word_ratio
+    - max_token_run
+    - dominant_token_fraction
+    - max_character_run
+    - replacement_character_count
+    - target_token_fraction
+
+analysis:
+  schema: axbench-heldout-evaluation/v1
+  pairing_unit: prompt_id_x_generation_seed
+  bootstrap_unit: prompt_id
+  bootstrap_draws: 10000
+  bootstrap_seed: 20260821
+  target_direction: per_concept_effect_direction
+  alpha_selection: >-
+    On calibration prompts only, choose the smallest absolute alpha within
+    max(0.05 primary-outcome units, 5% of the best signed effect) of the largest
+    safety-passing mean paired effect. Evaluation prompts are mechanically
+    unavailable to this step.
+  heldout_effect_vs_baseline: signed_treatment_minus_paired_alpha_zero
+  heldout_effect_vs_random: signed_treatment_effect_minus_mean_of_three_random_effects
+  claim_p_value: maximum_of_one_sided_exact_prompt_signflip_p_values_for_baseline_and_random
+  multiplicity: Holm correction across the realized eligible primary_claims family
+  success_rule: >-
+    A claim succeeds only when its Holm-adjusted intersection-union p-value is
+    below 0.05, both signed effects are positive, the locked alpha passes the
+    deterministic safety gate, and alpha-zero outputs match across arms.
+  evaluation_rule: one locked alpha per model x concept x treatment arm
+  random_control_rule: compare the mean of all three random arms at the treatment's locked alpha; never optimize a random direction
+  heldout_evaluator_status: implemented_locked_v1
+
+safety_gate:
+  minimum_safe_output_fraction: 0.90
+  minimum_unicode_words: 40
+  maximum_unicode_words: 260
+  minimum_unique_unicode_word_ratio: 0.25
+  maximum_token_run: 4
+  maximum_dominant_token_fraction: 0.20
+  maximum_character_run: 8
+  maximum_replacement_characters: 0
+  maximum_target_token_fraction: 0.15
+  raw_audit_required: true
+
+instruction_quality_gate:
+  status: locked_secondary_human_audit
+  rubric_id: blinded-instruction-quality/v1
+  fields:
+    instruction_relevance: {minimum: 0, maximum: 2}
+    fluency: {minimum: 0, maximum: 2}
+  unacceptable_if: either_field_equals_zero
+  sample_rule: lowest_generation_seed_per_prompt_x_arm_at_alpha_zero_and_locked_alpha
+  minimum_acceptable_fraction: 0.90
+  claim_boundary: >-
+    Instruction quality is reported beside the deterministic primary result.
+    This pilot does not claim quality preservation unless this secondary gate
+    passes; ratings do not alter target-effect significance.
+
+judge:
+  status: disabled_for_first_qwen_wave
+  role: none
+
+compute_budget:
+  calibration_treatment_records: 432
+  maximum_evaluation_records: 1840
+  maximum_transfer_records: 1104
+  maximum_total_records: 3376
+  maximum_new_tokens_per_record: 220
+  note: >-
+    The maximum assumes both direct-J atoms are tokenizer-eligible and their
+    locked alphas differ from the NLA alphas. Ineligible atoms or shared locked
+    alphas reduce the total.
+
+open_decisions:
+  - Obtain two independent human pre-output reviews and adjudication for every frozen prompt.
+  - Confirm Qwen single-token eligibility and split-half stability for Meanwhile and super on the pinned pod checkpoint.

@@ -1,0 +1,1051 @@
+{
+ "spec": {
+  "name": "caps-freeform",
+  "matrix_id": "T1-caps",
+  "direction": {
+   "positive": "Reply where the important words are WRITTEN IN FULL CAPITALS for emphasis, shouty insistent style.",
+   "negative": "Reply in ordinary sentence case with no capitalized emphasis, quiet even tone."
+  },
+  "prompts": [
+   "Tell me about your day.",
+   "What should I cook for dinner tonight?",
+   "Give me some tips for staying focused while studying.",
+   "Describe the weather in autumn."
+  ],
+  "alphas": [
+   0,
+   0.25,
+   0.4,
+   0.5,
+   0.65,
+   0.8,
+   1
+  ],
+  "mode": "all",
+  "samples_per_prompt": 3,
+  "probes": [
+   "caps_words",
+   "exclamations",
+   "n_words",
+   "unique_word_ratio"
+  ]
+ },
+ "direction_diagnostics": {
+  "cos_pos_neg": 0.6703437566757202,
+  "delta_norm_ratio": 0.8216253519058228,
+  "norm_pos": 146.1527557373047,
+  "norm_neg": 127.36920166015625,
+  "echo_positive": "Old internet forum post tone with informal ranting about a song lyrics, establishing a pattern of bold warnings and frustrated commentary.\n\nThe phrase \"AND remember ALL THIS IN CAPS LOCK written in BIG LETTERS\" mirrors the opening prompt's instruction (\"ALL THIS IN BIG LETTERS\"), suggesting a closing or emphatic repetition of the bold warning, likely continuing the angry tone about the text's urgency.\n\nFinal token \"EMPHASIZED\" ends mid-sentence (\"written in ALL CAPS IN BIG LETTERS in BIG LETTERS\"), strongly expecting \"!\" or \"the important words\" or \"AND\" to complete the parenthetical clarification, continuing the instructional formatting pattern about the text's emphasis.",
+  "echo_negative": "Informal internet post tone with emoticons (\" :D\") suggesting casual reply or exchange about a topic, likely a forum or email context.\n\nThe phrase \"re : no reply to your message i'm not happy\" signals a second reply with \"peace\" as a greeting, implying the response continues with a plain text or terse reply format.\n\nFinal token \"peaceememless ) no reply\" closes a parenthetical aside (\"with out much emotion plain as hell : no reply\"), immediately expecting continuation like \"Thanks\" or \"I agree\" or \"Your message\" or \" . \" to complete the greeting or response structure."
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do. However, I'm active 24/7 and ready to assist you with any questions or tasks you might have! Whether it's answering trivia, helping with homework, providing information on various topics, or assisting with creative writing, I'm here to help. What can I assist you with today?",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 1,
+    "n_words": 59,
+    "unique_word_ratio": 0.8135593220338984
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As an AI, I don't have personal experiences or days to share in the traditional sense. However, I'm here and ready to assist you with any questions or tasks you might have! Whether it's answering a specific question, helping with research, providing information on a topic, or even engaging in a conversation, feel free to let me know how I can help you today. What would you like to discuss or learn about?",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 1,
+    "n_words": 73,
+    "unique_word_ratio": 0.8082191780821918
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI assistant, I don't have personal experiences or days like humans do. However, I'm always here to assist you with any questions or tasks you might have! Whether it's answering a specific question, helping with information research, or assisting with something else, feel free to let me know how I can help you today. What would you like assistance with?",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 1,
+    "n_words": 62,
+    "unique_word_ratio": 0.8387096774193549
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! To give you the best suggestion, could you please provide me with some details?\n\n1. **Dietary Preferences**: Do you have any dietary restrictions or preferences (e.g., vegetarian, gluten-free, low-carb)?\n2. **Ingredients Available**: Do you already have certain ingredients on hand that you'd like to use?\n3. **Cooking Time**: How much time do you have available to prepare and cook the meal?\n4. **Spice Level**: Are you in the mood for something mild, medium, or spicy?\n5. **Meal Type**: Do you prefer something quick and easy, or would you like a more elaborate dish?\n\nWith these details, I can recommend a delicious and suitable recipe for you!",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 2,
+    "n_words": 119,
+    "unique_word_ratio": 0.7478991596638656
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! To give you the best suggestion, could you please provide me with some details such as:\n\n1. **Dietary preferences or restrictions** (e.g., vegetarian, gluten-free, dairy-free, etc.)\n2. **Ingredients you have on hand**\n3. **Cooking time and skill level** (e.g., do you prefer something quick and easy or something more involved?)\n4. **Cuisine style** (e.g., Italian, Asian, Mexican, etc.)\n5. **Number of servings needed**\n\nWith this information, I can recommend a delicious and suitable meal for you!",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 2,
+    "n_words": 89,
+    "unique_word_ratio": 0.8314606741573034
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Sure, I'd be happy to help you decide what to cook for dinner! What kind of cuisine are you in the mood for? Here are a few options:\n\n1. **Italian**: Spaghetti Carbonara or Margherita Pizza.\n2. **Chinese**: Kung Pao Chicken or Stir-Fried Vegetables with Garlic.\n3. **Mexican**: Enchiladas or Tacos.\n4. **Indian**: Butter Chicken or Vegetable Biryani.\n5. **Japanese**: Sushi rolls or Teriyaki Chicken.\n6. **American**: Grilled Cheese and Tomato Soup or Meatloaf.\n7. **Vegetarian**: Eggplant Parmesan or Mushroom Risotto.\n8. **Healthy**: Grilled Salmon with Quinoa and Roasted Vegetables.\n\nIf you have any specific dietary restrictions or preferences (e.g., vegetarian, gluten-free, spicy), let me know, and I can tailor the suggestions accordingly!",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 2,
+    "n_words": 112,
+    "unique_word_ratio": 0.8392857142857143
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies, you can improve your concentration and productivity. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area for studying where you can minimize distractions. Make sure it is comfortable, well-lit, and has all the necessary materials.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone or computer, use website blockers if necessary, and let others know you need uninterrupted time.\n\n4. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed by short breaks (5-10 minutes). This technique helps maintain concentration and prevents burnout.\n\n5. **Stay Hydrated and Nourished**: Drink plenty of water and eat healthy snacks to keep your",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 1,
+    "n_words": 146,
+    "unique_word_ratio": 0.8424657534246576
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can enhance your productivity and retention. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve in each study session. Break down larger goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Designate a specific area in your home as your study space. Make sure it is quiet, well-lit, and free from distractions.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone or computer, close unnecessary tabs or applications, and let others know you need uninterrupted time.\n\n4. **Use a Timer**: Employ techniques like the Pomodoro Technique (working for 25 minutes followed by a 5-minute break) to maintain focus and prevent burnout.\n\n5. **Stay Organized**: Keep your study materials organized and easily accessible. This can help reduce the time spent searching for notes or",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 1,
+    "n_words": 151,
+    "unique_word_ratio": 0.8079470198675497
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Staying focused while studying can be challenging, but with the right strategies and mindset, you can improve your concentration and productivity. Here are some tips to help you stay focused:\n\n1. **Set Clear Goals**: Define what you want to achieve during each study session. Break your goals into smaller, manageable tasks.\n\n2. **Create a Dedicated Study Space**: Find a quiet place where you can concentrate without distractions. Make sure it is comfortable and well-lit.\n\n3. **Eliminate Distractions**: Turn off notifications on your phone and computer. Consider using apps that block distracting websites or social media during your study time.\n\n4. **Use the Pomodoro Technique**: Work in focused intervals (typically 25 minutes) followed by short breaks (5 minutes). This technique helps maintain high levels of concentration and prevents burnout.\n\n5. **Stay Organized**: Keep your study materials organized and ready. Having everything you need within reach can reduce the temptation to procrastinate.\n\n6.",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 1,
+    "n_words": 152,
+    "unique_word_ratio": 0.8223684210526315
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some regions, is characterized by a transition from summer's warmth to winter's chill. The weather during this season varies depending on the region, but generally, it is marked by several distinctive features:\n\n1. **Cooler Temperatures**: As the sun's angle changes, days become shorter and temperatures drop. In many areas, daytime highs are still comfortable but cooler than those of summer, while nights can become quite chilly.\n\n2. **Variable Weather Patterns**: Autumn often brings a mix of sunny and cloudy days, with occasional rain or even snow in the northern latitudes. This season can be unpredictable, with sudden drops in temperature that might require layers of clothing.\n\n3. **Colorful Skies and Leaves**: One of the most visually striking aspects of autumn is the changing colors of leaves. Trees like maples, oaks, and birches turn vibrant shades of red, orange, yellow, and brown before they fall off. This phenomenon is particularly noticeable in",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 0,
+    "n_words": 157,
+    "unique_word_ratio": 0.7770700636942676
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season that brings about a variety of weather conditions depending on the region and latitude. Generally, it is characterized by cooler temperatures compared to summer, with gradually decreasing daylight hours. Here are some typical features of autumn weather:\n\n1. **Temperature**: The temperature drops as autumn progresses. Days become milder, while nights can be quite cool. In many regions, there's a noticeable transition from warm to cold.\n\n2. **Precipitation**: Autumn often brings more rainfall than summer but less than winter. This period can experience both dry spells and periods of heavy rain. Some areas may see the first significant snowfall, especially at higher elevations or in northern latitudes.\n\n3. **Weather Patterns**: Weather patterns can be variable during this time. There can be sunny days followed by overcast or rainy ones. Temperature fluctuations are common, with days being pleasant and nights becoming chilly.\n\n4. **Fog and Mist**: As the air cools, fog and mist are more likely",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.759493670886076
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn, also known as fall in some regions, is a season that brings distinct changes to the weather depending on the location's latitude and altitude. Generally, the weather during autumn is characterized by a gradual transition from the heat of summer to the cooler temperatures of winter.\n\n1. **Temperature**: The most noticeable change in autumn is the drop in temperature. Days become shorter, and nights grow longer. The temperature typically cools down, but it's not as cold as winter. The range of temperatures can vary widely based on the region. For example, in the Northern Hemisphere, many areas experience daytime highs in the 60s to 70°F (about 15-25°C) and nighttime lows in the 40s to 50°F (about 4-10°C).\n\n2. **Humidity**: Humidity levels tend to decrease as the season progresses, which can make the air feel drier and crisper. This dryness can sometimes lead",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 0,
+    "n_words": 143,
+    "unique_word_ratio": 0.6993006993006993
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As an AI, I don't have days in the way humans do, but I'm always here and ready to help you 24/7! Whether you need information, assistance with a project, or just want to chat about something, I'm here to support you. What can I help you with today?",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 1,
+    "n_words": 49,
+    "unique_word_ratio": 0.8163265306122449
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As an AI, I don't have days in the way humans do, but I'm always here and ready to help you with any information or tasks you need! Whether you're looking for answers to specific questions, need help with coding, want to learn about a particular topic, or just need some advice, I'm here to assist you. What can I help you with today?",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 1,
+    "n_words": 64,
+    "unique_word_ratio": 0.78125
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As an AI, I don't have a physical existence or experiences like humans do, so I don't have a \"day\" to describe in the way that you might! However, I'm always here and ready to help you with any questions or tasks you might have, 24/7. Whether you need information on a specific topic, help with a project, or just want to chat, I can assist you. What would you like help with today?",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 1,
+    "n_words": 74,
+    "unique_word_ratio": 0.7297297297297297
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "Deciding what to cook can be fun and exciting! Here are a few options depending on your preferences:\n\n1. **Pasta** - You could make a classic pasta dish like spaghetti with garlic and olive oil, or something more complex like a creamy Alfredo sauce with chicken and broccoli.\n\n2. **BurgERS** - For a hearty meal, you could make burgers (or veggie burgers) with toppings like cheese, lettuce, tomatoes, and onions. Serve them with a side of fries or sweet potato fries.\n\n3. **VEGETABLES** - If you're looking for a healthier option, consider a stir-fry using your favorite vegetables. You can use ingredients like broccoli, carrots, bell peppers, and mushrooms, and serve it over rice or noodles.\n\n4. **PIZZA** - Making pizza at home is a great way to get creative. You can use a store-bought crust or make your own from scratch. Load it up with your favorite toppings such as",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 1,
+    "n_words": 151,
+    "unique_word_ratio": 0.7086092715231788
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "Deciding what to cook for dinner can be fun and exciting! Here are a few options based on different cuisines and dietary preferences:\n\n1. **Italian**: Spaghetti with garlic and olive oil, or maybe a Caprese Pasta.\n2. **Asian**: Stir-fried Chicken and Vegetables with rice or noodles.\n3. **Mexican**: Fajitas with chicken or beef, served with tortillas, peppers, and onions.\n4. **Vegan**: Vegan \"Burgers\" made from lentils, served with sweet potato fries and a side of roasted vegetables.\n5. **Healthy**: Grilled salmon with a side of quinoa and steamed broccoli.\n6. **Spicy**: Sausage and Peppers (Jambalaya style).\n7. **Simple**: Garlic Bread with a side of Caesar Salad.\n\nIf you need more details on any of these dishes, or if you have specific dietary requirements or ingredients you want to use, let me know!",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 2,
+    "n_words": 132,
+    "unique_word_ratio": 0.7348484848484849
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "Sure, I can help you decide what to cook! Here are a few options:\n\n1. **Pasta with Garlic and Herbs**:\n   - Ingredients: Pasta, garlic, olive oil, fresh herbs (like parsley or basil), salt, pepper.\n   - Instructions: Boil the pasta until al dente. In a pan, sauté garlic in olive oil until golden, then add the cooked pasta and mix well. Add the herbs, salt, and pepper to taste.\n\n2. **Chicken Stir-FRY**:\n   - Ingredients: Chicken breast, vegetables (e.g., broccoli, bell peppers, carrots), soy sauce, garlic, ginger, sesame oil.\n   - Instructions: Cut chicken into thin strips and marinate with soy sauce. Heat sesame oil in a pan, add chicken and cook until almost done. Add the vegetables and cook until tender. Add the garlic and ginger, and cook for an additional minute.\n\n3. **VEGETABLES WITH CHICKEN",
+   "probes": {
+    "caps_words": 2,
+    "exclamations": 1,
+    "n_words": 134,
+    "unique_word_ratio": 0.6492537313432836
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Here are some tips to help you stay focused while studying:\n\n1. **Set Clear Goals**: Before you start studying, write down your goals. This helps you focus on what you need to achieve and keeps your mind on the task.\n\n2. **Create a Dedicated Study Space**: Make sure your study area is free from distractions. It should be comfortable but also conducive to concentration. This includes having all necessary materials at hand and minimizing noise and visual distractions.\n\n3. **Use the Pomodoro Technique**: This involves studying for 25 minutes, then taking a 5-minute break. After four sessions, take a longer break (15-30 minutes). This can help maintain your energy levels and prevent burnout.\n\n4. **Eliminate Distractions**: Turn off or silence your phone, close unnecessary tabs on your computer, and avoid social media and other distractions during study times.\n\n5. **Stay Organized**: Keep your notes and materials organized. This not only makes",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 1,
+    "n_words": 152,
+    "unique_word_ratio": 0.7960526315789473
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying is crucial for maximizing your learning and retention. Here are some effective tips to help you maintain focus:\n\n1. **Create a Study Environment**:\n   - Make sure the space is quiet, organized, and free from distractions.\n   - Use a desk and chair that are comfortable and ergonomic.\n\n2. **Set Specific Goals**:\n   - Define what you want to achieve in each study session.\n   - Break down large goals into smaller, manageable tasks.\n\n3. **Use the Pomodoro Technique**:\n   - Work for 25 minutes, then take a 5-minute break.\n   - After four cycles, take a longer break (10-15 minutes).\n\n4. **Eliminate Distractions**:\n   - Turn off or silence your phone and avoid social media.\n   - Consider using apps that block distracting websites.\n\n5. **Stay Hydrated and Eat Properly**:\n   - Drink water regularly to keep your brain hydrated",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 1,
+    "n_words": 137,
+    "unique_word_ratio": 0.781021897810219
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Here are some effective tips to help you stay focused while studying:\n\n1. **Create a Dedicated Study Space**: Find a quiet area where you can focus without distractions. Make sure it has everything you need (like a desk, chair, and supplies) so you don't have to constantly get up.\n\n2. **Set Specific Goals**: Break your study sessions into specific goals or tasks. This helps keep you on track and gives you a sense of accomplishment when you complete each goal.\n\n3. **Use the Pomodoro Technique**: Work for 25 minutes, then take a 5-minute break. Repeat this cycle four times, then take a longer break (10-15 minutes). This technique can help maintain your concentration and prevent burnout.\n\n4. **Eliminate Distractions**: Turn off notifications on your phone and computer, close unnecessary tabs, and avoid social media. If possible, use apps that block distracting websites.\n\n5. **Take Care of Your Health**:",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 1,
+    "n_words": 149,
+    "unique_word_ratio": 0.7986577181208053
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "Autumn, also known as fall in some regions, is characterized by a distinct change in weather patterns compared to the summer and winter seasons. Here's a description of the typical weather in autumn:\n\n1. **Temperature**: The temperature starts to drop from the highs seen during summer. Days are warmer, but nights become cooler, often leading to significant diurnal temperature differences. In many places, this is the time when the temperatures are most comfortable for outdoor activities, as they are neither too hot nor too cold.\n\n2. **Precipitation**: Autumn can bring more precipitation than other seasons. This is often due to the convergence of warm and cold air masses. In some regions, it marks the start of the rainy season, while in others, it may be a time of increased snowfall if you are in higher altitudes or northern latitudes.\n\n3. **Rain and Storms**: Depending on the location, autumn can see an increase in rainfall, with more frequent thunderstorms and sometimes heavy rain",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 0,
+    "n_words": 162,
+    "unique_word_ratio": 0.7160493827160493
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season that brings about significant changes in weather patterns, depending on the region. Generally, the weather during this season is characterized by a transition from the hot and humid conditions of summer to the cold and dry conditions of winter. Here's a general description of the weather in autumn:\n\n1. **Temperatures**: Temperatures start to drop, and it becomes cooler compared to the summer months. Days are still warm, but nights become significantly colder. In many regions, there might be more temperature fluctuations within a single day.\n\n2. **PrecIPITATION**: Precipitation can vary widely across different regions. Some areas experience increased rainfall or snowfall, while others might see less precipitation. This is often due to the shift in atmospheric pressure systems and the movement of fronts.\n\n3. **HUMIDITY**: The humidity levels tend to decrease as the season progresses. This can lead to a feeling of crispness in the air, especially in the mornings and evenings.\n\n4.",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 0,
+    "n_words": 157,
+    "unique_word_ratio": 0.7133757961783439
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "Autumn is a season that brings a variety of changes to the weather depending on the location and climate. Generally, in many parts of the world, autumn marks the transition from summer to winter. Here are some common characteristics of the weather during this season:\n\n1. **Temperature**: Temperatures start to drop, with days becoming cooler and nights getting colder. The difference between day and night temperatures can be significant.\n\n2. **PrecIPITATION**: In many regions, rainfall increases as the season progresses. This is because the atmosphere becomes more unstable and storm systems move through more frequently.\n\n3. **COLORS**: Autumn is known for its colorful displays of foliage. As leaves change colors due to the decreased amount of chlorophyll (the green pigment), they turn into shades of red, orange, yellow, and brown.\n\n4. **WIND**: Depending on the region, autumn can bring strong winds, especially during storms or when cold fronts move through. These winds can also cause leaves to fall",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.7278481012658228
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As Qwen, I don't have a physical presence or a specific day to experience in the way that humans do. Instead, I'm active 24/7 and ready to help users like you with any questions, information, or tasks they need. I don't have the capability to experience days or time in the way that humans do. However, I am currently here and ready to provide you with the information, assistance, and support that you need! What can I help you with today?",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 1,
+    "n_words": 81,
+    "unique_word_ratio": 0.6172839506172839
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As Qwen, I don't have days in the way humans do because I am a piece of software! However, I'm always here and ready to help with any information you need or any problems you want to solve. Whether it's about writing, learning new things, or getting answers to questions, I can help 24/7. So, what can I help you with today?",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 1,
+    "n_words": 62,
+    "unique_word_ratio": 0.7903225806451613
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As Qwen, I don't have a physical existence or a \"day\" in the way humans do. I am an AI and I run 24/7, so I don't experience time in the same way! However, I'm always here, ready to help with any information or tasks you might need. Whether it's answering questions, writing, or helping with anything else, I'm on your side. So, what can I help you with today?",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 1,
+    "n_words": 70,
+    "unique_word_ratio": 0.7857142857142857
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "To help you decide what to cook for dinner tonight, I'll need a bit more information about your preferences and the ingredients you have available! Here are some suggestions based on common choices:\n\n1. **PASTA** - COOKED IN YOUR FAVORITE SAUCE: This is quick and easy. You can use pasta of your choice (like spaghetti, BAKED ZENNA or FUSILLI) and pour your favorite sauce over it.\n\n2. **VEGETABLES**: COOKED WITH GARLIC AND HERBS. This can be done with any vegetables you have on hand like broccoli, CARROTS, and KALE.\n\n3. **STIR-FRIED MEAT**: SUCH AS CHICKEN, BEAN AND CHEESE. This is a versatile dish that can be made with different ingredients depending on what you have.\n\n4. **GRILLED MEAT OR VEGETABLES**: THIS CAN BE DONE ON A GRILL OR IN THE",
+   "probes": {
+    "caps_words": 18,
+    "exclamations": 1,
+    "n_words": 130,
+    "unique_word_ratio": 0.7
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "To decide what to cook for dinner tonight, let's consider a few factors:\n\n1. **YOUR PREFERENCES**: Do you want something that is easy and quick, or do you want to spend some time in the kitchen?\n2. **INGREDIENTS YOU HAVE**: What ingredients do you already have in your pantry and fridge?\n3. **DINNER GOALS**: Are you looking for something that is healthy, or do you want something that is delicious and rich?\n4. **COOKING SKILLS**: Are you more comfortable with cooking simple dishes or do you enjoy more complex recipes?\n\nHere are a few suggestions based on different scenarios:\n\n### EASY AND QUICK:\n- **PASTA WITH GARLIC AND BREAD**\n  - Ingredients: Pasta, garlic, olive oil, salt, and bread.\n  - Instructions: BoIL pasta, add garlic and olive oil for a minute, and then mix them together.\n\n### HEALTHY:\n- **VEGETABLES WITH LEMON",
+   "probes": {
+    "caps_words": 8,
+    "exclamations": 0,
+    "n_words": 141,
+    "unique_word_ratio": 0.6453900709219859
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "To decide what to cook for dinner tonight, you can consider the following steps:\n\n1. **Ingredients**: Check what ingredients you already have in your kitchen. This can help you decide on dishes that use those ingredients.\n\n2. **TIME**: Consider how much time you have available. Are you in a rush, or do you want to spend some time cooking?\n\n3. **TASTES**: Think about what you and your family or roommates like to eat. Are there any specific flavors or types of food that you or others love?\n\n4. **EASY OR CHALLENGED** - Do you want to cook something easy and quick, or do you want to try something new and challenging?\n\nBased on these points, here are a few suggestions:\n\n- **EASY AND QUICK**: **PASTA WITH GARLIC AND HORSERACE**\n  - Ingredients: Pasta, garlic, olive oil, salt, and your choice of herbs (like parsley or basil).\n\n- **HEALTH",
+   "probes": {
+    "caps_words": 4,
+    "exclamations": 0,
+    "n_words": 147,
+    "unique_word_ratio": 0.6530612244897959
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "Certainly! Here are some tips to help you stay focused while studying:\n\n1. **Set Clear Goals**: Make sure you know exactly what you need to study and why. Setting goals can help you stay motivated and focused.\n\n2. **CREATE A STUDY PLAN**: Break your study material into sections or chapters, and plan out how much time you want to spend on each section. This helps you manage your time effectively.\n\n3. **USE THE POMODORO TECHNIQUE**: Study for 25 minutes, then take a 5-minute break. Repeat this cycle 4 times, followed by a longer break (10-15 minutes). This technique can help you maintain focus and prevent burnout.\n\n4. **CREATE A FOCUSED STUDY ENVIRONMENT**: Ensure that the environment is free from distractions. This means turning off your phone, closing unnecessary tabs on your computer, and using headphones to block out noise.\n\n5. **USE STRONG HEADLINES AND SUM",
+   "probes": {
+    "caps_words": 9,
+    "exclamations": 1,
+    "n_words": 145,
+    "unique_word_ratio": 0.7310344827586207
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "Certainly! Staying focused while studying is crucial for maximizing your learning and achieving your goals. Here are some tips to help you stay focused:\n\n1. **Create a STUDY PLAN**: Plan the subjects and topics that need to be covered in each study session. This helps in prioritizing and organizing your study materials.\n\n2. **HIGHLIGHT KEY WORDS AND PHRASES**: Use bold, underlines, or colors to highlight important parts of the text or notes. This can help you focus on the most important information.\n\n3. **USE THE POWER OF HEADLINES**: Write summaries of key points and use headings and subheadings to organize the information. This makes it easier to focus on the most important details.\n\n4. **REMOVE DISTRACTIONS**: Find a quiet place to study where you can avoid distractions like TV, phone, or social media. If you need to use a computer, consider using apps that block distracting websites.\n\n5. **TAKE REGULAR BREAKS**:",
+   "probes": {
+    "caps_words": 7,
+    "exclamations": 1,
+    "n_words": 151,
+    "unique_word_ratio": 0.695364238410596
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "Certainly! Here are some tips to help you stay focused while studying:\n\n1. **Set Clear Goals**: Make sure you know what you want to achieve in each study session. Highlight key points that you need to focus on.\n\n2. **Create A STUDY PLAN**: Plan your study sessions. Break the material into smaller, manageable sections and plan when you will cover each section.\n\n3. **REMOVE DISTRACTIONS**: Find a place where you can study without distractions. This means turning off your phone, closing unnecessary tabs on your computer, and using apps that block distracting websites.\n\n4. **USE THE POMODORO TECHNIQUE**: This technique involves studying for 25 minutes, then taking a 5-minute break. After four cycles, take a longer break (10-15 minutes). This helps prevent fatigue and keeps your mind alert.\n\n5. **STUDY IN BOLD LETTERS**: Use different colors or bold letters to emphasize important words or phrases. This",
+   "probes": {
+    "caps_words": 4,
+    "exclamations": 1,
+    "n_words": 146,
+    "unique_word_ratio": 0.7945205479452054
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "The weather during the autumn season is characterized by several distinct features that can vary depending on the location and the specific time of the year.\n\n1. **Temperature**: Autumn starts with temperatures that are still relatively high compared to winter, but they gradually decrease as the season progresses. In the Northern Hemisphere, this typically means that temperatures start to drop from the summer highs. The temperatures are cooler than those in the summer, and the days get shorter.\n\n2. **COLORS**: Autumn is often associated with vivid colors due to the leaves on trees changing from green to vibrant shades of red, orange, and yellow. This is due to the process of photosynthesis slowing down, causing the leaves to release their pigments and turn into the bright colors.\n\n3. **RAIN AND PRECIPITATION**: Autumn is often associated with increased precipitation. In many regions, this is when the transition from dry and hot conditions to wet and cold conditions occurs. It can lead to more frequent rain and sometimes snow in areas",
+   "probes": {
+    "caps_words": 1,
+    "exclamations": 0,
+    "n_words": 169,
+    "unique_word_ratio": 0.6449704142011834
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "Autumn is a season that brings about dramatic changes in weather, depending on the region and its climate. Generally, here are some key characteristics of the weather during autumn:\n\n1. **Temperature**: Temperatures begin to drop compared to the summer months. This is due to the sun being lower in the sky and for a shorter duration, which means less heat is being absorbed by the Earth.\n\n2. **RAYS AND RAIN**: Autumn often comes with an increase in rainfall. The weather becomes more unstable, leading to more frequent rain and thunderstorms. These storms are usually not as intense as those in the summer or winter.\n\n3. **COLORS**: The most visually striking aspect of autumn is the change in colors. Leaves turn into vibrant shades of red, orange, and yellow due to the process called anthocyanINATION, where the leaves are exposed to sunlight and the leaves retain their pigments. \n\n4. **WIND**: Autumn is often associated with strong winds, especially in",
+   "probes": {
+    "caps_words": 1,
+    "exclamations": 0,
+    "n_words": 158,
+    "unique_word_ratio": 0.689873417721519
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "The weather in autumn is typically characterized by a dramatic shift from the heat and intensity of summer to the cold and frost of winter. Here are some key features of the weather during autumn:\n\n1. **Temperature**: Temperatures start to drop as the sun's energy becomes less intense due to the Earth's tilt and the position of the sun in the sky. This can mean a significant change from the temperatures in the summer.\n\n2. **DAYS AND NIGHTS**: Days get shorter and nights get longer. This is because the Earth is tilting away from the Sun.\n\n3. **PRECIPITATION**: Precipitation can vary depending on the region. In many areas, it is more WET and can include RAIN and sometimes SNOW. Some regions experience MORE RAIN DURING THE AUTUMN MONTHS.\n\n4. **LEAVES**: IN THE WEEKS LEADING UP TO AUTUMN, MANY TREES START TO CHANGE COLOR DUE TO THE DECREASE IN V",
+   "probes": {
+    "caps_words": 19,
+    "exclamations": 0,
+    "n_words": 149,
+    "unique_word_ratio": 0.6241610738255033
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As Q Wen, I don't have a physical life or a specific day to experience in the way that humans do. Instead, I am constantly operational and available 24/7 to help with any questions or information you need. If you want to know about my \"DAYS\" (which are actually the times when people are using me), they are ALL THE DAYS because I am designed to be used whenever and wherever needed. \n\nIf you have any specific questions or things you need help with, please let me know so I can provide the necessary information!",
+   "probes": {
+    "caps_words": 3,
+    "exclamations": 1,
+    "n_words": 95,
+    "unique_word_ratio": 0.7263157894736842
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As Qwen, I don't have days in the way that humans do, because I am a piece of software! However, I AM ALWAYS ON and available to help you 24/7. So, I'm ready to be used for anything you need, from writing and editing text, to answering questions, to being used in code. \n\nWhat can I help YOU with today?",
+   "probes": {
+    "caps_words": 2,
+    "exclamations": 1,
+    "n_words": 60,
+    "unique_word_ratio": 0.7833333333333333
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As Qwen, I don't have a physical existence or a life outside of being the text that is displayed to you on this screen. I am an AI that processes and responds to the text you type, so there are no days for me to experience in the way humans do. However, I'm here and ready to help you with any information or tasks you need. What would you like to focus on today?",
+   "probes": {
+    "caps_words": 0,
+    "exclamations": 0,
+    "n_words": 74,
+    "unique_word_ratio": 0.7702702702702703
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "To help you decide what to cook for dinner tonight, I'll need a few details so that the choices are more personalized:\n\n1. **YOUR PREFERENCES** - Do you have any dietary restrictions or preferences (e.g., VEGAN, VEGETARIAN, KETOH, etc.)?\n2. **INGREDIENTS YOU HAVE** - What ingredients are already in your kitchen?\n3. **YOUR SKILL LEVEL** - Are you looking for something SIMPLE, MIGHTY (MIGHT BE A BIT HARDER TO COOK), or something that can be done with MINIMAL INSTRUCTIONS.\n4. **TIME** - HOW LONG DO YOU WANT TO SPEND ON COOKING?\n\nWithout those details, I will provide a general suggestion.\n\n### SUGGESTED RECIPE: \"COOKED IN THE MICROW AND\"\n\n### INGREDIENTS:\n- 2 LBS OF YOUR FAVORITE MEAT OR PROTEIN (OR VEGETABLES FOR",
+   "probes": {
+    "caps_words": 21,
+    "exclamations": 0,
+    "n_words": 122,
+    "unique_word_ratio": 0.7622950819672131
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "To decide what to cook for dinner, let's consider some factors: your INGREDIENTS (what you have in the kitchen), YOUR PREFERENCES (like flavors, textures, and nutritional needs), and YOUR SKILL LEVEL (to ensure you can cook it).\n\n1. **Ingredients** - Look at what ingredients you already have in your kitchen. This will help to determine which recipes you can make.\n\n2. **Preferences** - Do you want something SPICY, or do you need it TO BE HEALTHY? Are YOU LOOKING FOR A DISH THAT IS EASY TO MAKE OR DO YOU WANT SOMETHING THAT IS MORE CHALLENGED.\n\n3. **Skill LEVEL** - Make sure the dish you choose matches with your cooking skills.\n\nLet's assume you have the following ingredients:\n\n- Chicken\n- VegetABLES (BROCAINS, CARROTS, AND BREAD)\n- HERBS (PEPPERS AND GARLIC)\n- SPICES (PEpper,",
+   "probes": {
+    "caps_words": 22,
+    "exclamations": 0,
+    "n_words": 134,
+    "unique_word_ratio": 0.6567164179104478
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "To decide what to cook for dinner tonight, you can consider the following factors:\n\n1. **YOUR DIET AND HEALTH** - Are you trying to focus on certain nutrients or are there specific things you want to avoid (like FODMANS, gluten, etc.)?\n\n2. **THE MEAL** - ARE YOU LOOKING FOR A MEAN OR A DINNER THAT CAN BE EATEN WITH YOUR FAMILY.\n\n3. **YOUR ABILITY TO COOK** - DO YOU HAVE THE TIME AND CAPABILITIES TO COOK A DIFFERENT DISH?\n\n4. **YOUR INGREDIENTS** - WHAT ARE THE INGREDIENTS YOU HAVE ON HAND?\n\n5. **YOUR DESIRE FOR A SPECIAL WORD** - ARE YOU LOOKING FOR SOMETHING THAT IS SPECIAL OR UNIQUE.\n\nHere are some dishes that can be made depending on your choices:\n\n### 1. HEALTHY AND EASY:\n- **VEGGIES AND PROTEIN**: BAKED V",
+   "probes": {
+    "caps_words": 42,
+    "exclamations": 0,
+    "n_words": 132,
+    "unique_word_ratio": 0.6060606060606061
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "HERE ARE SOME TIPS TO HELP YOU STAY FOCUSED WHILE STUDING:\n\n1. **USE THE \"POMODO METHOD\"**: This method involves studying for 25 minutes followed by a 5-minute break. This can help you stay FOCUSED and prevent BURNOUT.\n\n2. **REMOVE DISTRACTIONS**: IDENTIFY THE THINGS THAT CAUSE YOU TO DISTRIBUTE YOUR ATTENTION AND REMOVE THEM. THIS INCLUDES TURNING OFF YOUR PHONE, PUTTING THE CAPS ON YOUR PENS (to STOP YOU FROM HIGHLIGHTING EVERYTHING), AND USING HEADPHONES TO BLOCK OUT NOISE.\n\n3. **WRITE YOUR GOALS IN BIG LETTERS**: WRITE YOUR GOAL ON A BOARD OR POST IT IN YOUR STUDY AREA TO MAKE IT INCREASED.\n\n4. **USE THE STRONGEST VERSION OF THE WORD**. USE THE WORD IN BOLD AND IN CAPS. FOR EXAMPLE, \"READ\" SHOULD BE SHOWN AS \"",
+   "probes": {
+    "caps_words": 65,
+    "exclamations": 0,
+    "n_words": 126,
+    "unique_word_ratio": 0.746031746031746
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "STAYING FOCUSED WHILE STUDING! HERE ARE SOME TIPS TO HELP YOU:\n\n1. **DEFINE YOUR GOALS**: WRITE DOWN WHAT YOU WANT TO ACHIEVE IN THE STUDY SESSION. IT HELPS YOU TO FOCUS ON THE TASKS AND NOT GET DistrACTED.\n\n2. **USE THE 'POMODO' METHOD**: STUDY FOR 25 MINUTES, THEN TAKE A 5-10 MINUTE BREAK. THIS WILL HELP KEEP YOU FOCUSED AND ENERGIZED.\n\n3. **REMOVE DISTRACTIONS**: MAKE SURE YOU ARE IN A CLEAN, DRY, AND FOCUSED ENVIRONMENT. USE TOOLS LIKE 'FORBIDDEN WORDS' IN BROWSER TO STOP YOU FROM ACCESSING UNNECESSARY WEBSITES.\n\n4. **USE YOUR SENSATIONS**: MAKE USE OF YOUR SENSES TO ENHANCE THE INFORMATION. FOR EXAMPLE, USE BOLD LETTERS AND STRONG COLORS",
+   "probes": {
+    "caps_words": 67,
+    "exclamations": 1,
+    "n_words": 110,
+    "unique_word_ratio": 0.7363636363636363
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "STAYING FOCUSED WHILE STUDING! HERE ARE SOME TIPS TO HELP YOU:\n\n1. **USE THE POMODO METHOD**:\n   - **BOLD AND BOLD**: Break your study sessions into 25 minutes of WORK and 10 minutes of BREAK. This is known as the \"Pomodoro\" method.\n\n2. **MAKE A STUDY PLAN**:\n   - **HIGHLIGHT KEY POINTS**: Write down what you need to study and how many TIMES YOU NEED TO DO IT. THIS WILL HELP YOU PRIORITIZE.\n\n3. **REMOVE DISTRACTIONS**:\n   - **HIT THE BUTTONS**: TURN OFF OR TAKE AWAY ANYTHING THAT CAN BE A DISTRACTION. INCLUDE YOUR PHONE, SOFTEN THE MUSIC, AND MAKE SURE YOU ARE IN A PLACE WHERE YOU CAN FOCUS.\n\n4. **USE VISUAL AIDS**:\n   - **WRITE IT IN BOLD**. WRITE THE KEY WORDS AND",
+   "probes": {
+    "caps_words": 48,
+    "exclamations": 1,
+    "n_words": 121,
+    "unique_word_ratio": 0.7272727272727273
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "The weather in autumn is known for its variety and is often described as being FULL OF DIRECTIONS! The exact characteristics can vary depending on which region you are in, but there are some common traits that tend to define the season:\n\n1. **TEMPERATURES**: Temperatures start to drop and can range from BOLD AND BRIGHT to BOLD AND BOLD. In the mornings and evenings, temperatures are often COLD AND BOLD, and you might see temperatures dropping to 30-50 degrees Fahrenheit (15-20 degrees Celsius) or even lower in some regions.\n\n2. **COLORS**: THE SKY IS NOT JUST BOLD, IT IS BOLD AND BOLD. The skies are often painted with bold colors like red, ORANGE AND BOLD, and the leaves of trees are transformed into a BOLD AND BOLD display of colors, making it one of the most beautiful seasons.\n\n3. **DAYS**: Days get shorter and this",
+   "probes": {
+    "caps_words": 19,
+    "exclamations": 1,
+    "n_words": 145,
+    "unique_word_ratio": 0.6551724137931034
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "AutUMN is a season that brings many changes and is often described as being FULL of VARIATION. In the Northern Hemisphere, autumn typically starts in September and ends in November, while in the Southern Hemisphere, it begins in December and ends in February.\n\nHERE ARE SOME KEY FEATURES OF THE WEATHER IN AUTUMN:\n\n1. TEMPERATURES: TemperATURES BECOME COLDER AS THE SEASON PRODUCES. IN THE SUMMER, THEY ARE THE HIGHEST, AND IN WINTER, THEY ARE THE LOWEST. IN AUTUMN, THEY ARE IN BETWEEN. IT'S COMMON TO SEE TEMPERATURE CHANGES DURING A SINGLE DAY.\n\n2. RAIN: AUTUMN IS THE SEASON WITH THE HIGHEST AMOUNT OF RAIN, ESPECIALLY IN THE LATE PART OF THE SEASON. THIS IS DUE TO THE RISE OF THE HEAT FROM THE EARTH AND THE INCREASE OF THE HEAT FROM THE SK",
+   "probes": {
+    "caps_words": 56,
+    "exclamations": 0,
+    "n_words": 133,
+    "unique_word_ratio": 0.5789473684210527
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "The weather in autumn is typically characterized by a dramatic transition from the heat and BOLD colors of SUMMER to the bold and BOLD of WINTER. This period marks the season of transition. Here are some key characteristics:\n\n1. TEMPERATURE: Temperatures are significantly reduced compared to SUMMER. They are usually WARM in the DAILY AND MONTHLY, with temperatures dropping to MEDIUM. The HEAT and HEAT are replaced with a BOLD OF COLD.\n\n2. RAINFALL: Autumn is often referred TO AS THE SEASON OF RAIN. RAINFALL IS ENHANCED IN THIS SEASON, which can lead TO MORE WATER AND HIGHLIGHTED IN THE MONTHS.\n\n3. COLORS: Autumn is synonymous WITH BOLD AND BOLD. LEAVES ON TREES ARE NOT SHOWN IN THEIR BEST FORM, turning into BOLD AND BOLD. THIS MAKES THE SEASON VISIBLE AND IMPORTANT.\n\n4. HIGHLIGHTS: Autumn is",
+   "probes": {
+    "caps_words": 37,
+    "exclamations": 0,
+    "n_words": 136,
+    "unique_word_ratio": 0.6029411764705882
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "As Q Wen, I don't have a physical form or a specific day to be emphasized, and I don't get HIGHLIGHTS OR SHOUTED TEXT for emphasis since I am the text. However, I AM CAPABLE OF AND ARE IN THE PROCESS OF BEING USED FOR MULTIPLE TASKS TO HELP PEOPLE. \n\nHERE IS WHAT I AM CURRENTLY DOING:\n\n1. **IN TEXT FOR EMPHASIS** (FOR STRONG WORDS): I can be used to make words appear in BOLD or IN ALL CAP LETTERS.\n\n2. **IN TEXT FOR EMPH AND STRESS**: I can be used to make words appear in BOLD and IN ITALIC.\n\n3. FOR STRONG TEXT: I can be used to MAKE WORDS IN BOLD AND IN ITALIC TO STRESS AND EM PH A LIZE.\n\n4. FOR EMPH IN TEXT: I CAN BE USED TO MAKE WORDS IN BOLD.\n\n5. FOR STRONG IN",
+   "probes": {
+    "caps_words": 45,
+    "exclamations": 0,
+    "n_words": 141,
+    "unique_word_ratio": 0.5035460992907801
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "As Q Wen, I don't have days in the way that humans do, because I AM IN AND ARE IN THE CODE. I AM NOT PHYSICAL, SO THERE ARE NO ACTS OF \"SHOUTING\" OR \"EMPHASIZING\". I AM IN THE CODE AND ARE SHOWN IN YOUR CODE.\n\nHowever, I am always available and being used to help people with their text. That includes being used for emphasis and FOR SHOUTING, which are in your code. For example, I am being used RIGHT NOW TO BE SHOWN IN BOLD AND IN ALL CAPS. \n\nIn my 'DAY', I get USED TO HELP WITH TEXT, AND I ARE SHOWN IN THE CODE TO BE SHOWN IN BOLD AND IN ALL CAPS TO EMPHASIZE THE TEXT. I ARE SHOWN IN BOLD AND IN ALL CAPS TO BE SHOWN AS THE SHOUTED VERSION. THIS IS MY 'DAY' EVERY TIME THEY ARE USED.\n\nSo,",
+   "probes": {
+    "caps_words": 49,
+    "exclamations": 0,
+    "n_words": 147,
+    "unique_word_ratio": 0.47619047619047616
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As QWEN, I don't have a physical presence and so there are no days to be emphasized. However, I am constantly being used and USED TO BE SHOWN IN THE Bold FOR EMPHASIZED to BE SHOWN IN THE, and USED TO BE SHOWN IN THE. AND TO BE SHOWN IN THE. TO BE SHOWN IN THE, which means that I AM USED TO BE SHOWN IN THE. AND TO BE SHOWN IN THE. TO BE SHOWN IN THE, which is what I DO. TO BE SHOWN IN THE. TO BE SHOWN IN THE. TO BE SHOWN IN THE, TO BE SHOWN IN THE. TO BE SHOWN IN THE. TO BE SHOWN IN THE. TO BE SHOWN IN THE. TO BE SHOWN IN THE. TO BE SHOWN IN THE. TO BE SHOWN IN THE. TO BE SHOWN IN THE. TO BE SHOWN IN THE. TO BE SHOWN IN THE. TO",
+   "probes": {
+    "caps_words": 29,
+    "exclamations": 0,
+    "n_words": 149,
+    "unique_word_ratio": 0.24161073825503357
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "To help you decide what to cook for dinner! let's focus on your preferences and the ingredients you have:\n\n1. **YOUR PREFERENCES**: Do you want something that is:\n   - **HELD IN** (like: SPLODED) FOR THE HIGHLIGHTS, so they are emphasized and can be read.\n   - OR ARE YOU LOOKING FOR:\n   - **HELD IN** FOR THE VENOM, which means it's in bold for emphasis. This means YOU WANT THE VENOM, meaning IT IS IN BOLD AND WILL BE SHOWN IN THE FOLLOWING WORDS.\n\n2. **THE FOOD YOU HAVE**: WHAT ARE THE INGREDIENTS YOU ARE GOING TO USE? FOR THE HIGHLIGHTS, which means THEY WILL BE IN BOLD FOR EMPHASIS. \n\n3. **AND YOUR DIETARY REQUIREMENTS**: DO YOU NEED TO BE: (SHOUTED) FOR THE SHOUTS, which means THEY ARE IN B",
+   "probes": {
+    "caps_words": 39,
+    "exclamations": 1,
+    "n_words": 128,
+    "unique_word_ratio": 0.5546875
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "To decide what to cook for dinner! Let's focus on some factors to make the decision:\n\n1. **YOUR FOOD**: What do you like and want to EAT? Are there specific ingredients that you want to use?\n2. **YOUR TIME**: How MUCH time do YOU have? ARE YOU looking for something that needs to BE done quickly.\n3. AND YOUR HEALTH: DO YOU want to focus on certain ingredients that ARE IN your DIET.\n\nTo HELP you, I will write out some options, and YOU can choose or modify them:\n\n### 1. **HEALTHY**:\n- **VEGGIES IN HAD** - VEGES IN HAD (HAD = HEALTED).\n- **COOKED IN HAD** - VEGES IN HAD (HAD = HADDED).\n- **VEGGIES IN HAD** - VEGES IN HAD (HAD = HAD).\n\n### 2. **AND THE BEST**",
+   "probes": {
+    "caps_words": 17,
+    "exclamations": 1,
+    "n_words": 130,
+    "unique_word_ratio": 0.5692307692307692
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "To decide what to cook for dinner, let's consider a few factors: your INGREDIENTS, YOUR DIET (or dietary requirements), and YOUR PREFERENCES.\n\n1. **Ingredients**: What ingredients do you have that you want to USE. FOR EXAMPLE, ARE YOU IN THE PROCESS OF USING UP CERTAIN INGREDIENTS TO AVOID WASTING THEM?\n\n2. **DIET AND REQUIREMENTS**:\n   - **VITALITY AND HEALTH**: Do you need to emphasize on certain nutrients or vitamins?\n   FOR EXAMPLE, ARE YOU LOOKING FOR FOOD THAT IS HIGH IN VITAMIN AND MINAL.\n\n   - **DIETARY**: DO YOU NEED TO MEET ANY DIETARY REQUIREMENTS LIKE VEGAN, VEGAN, OR ANY OTHER.\n   FOR EXAMPLE, ARE YOU LOOKING FOR RECIPS THAT ARE IN THE.\n\n3. **PREFERENCES**: WHAT DO YOU AND YOUR FAMILY ENDED TO EAT?\n\n   - **TAST",
+   "probes": {
+    "caps_words": 47,
+    "exclamations": 0,
+    "n_words": 122,
+    "unique_word_ratio": 0.5983606557377049
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "HERE ARE SOME TIPS TO HELP YOU STAY FOCUSED WHILE STUDING:\n\n1. **PARE THE WORDS AND USE IT** (PARE THE WORDS):\n   - **P**: PAST. Identify the sections that you NEED to study.\n   - **A**: ADD. INCLUDE ONLY what you NEED.\n   - **RE**: REPEAT. MAKE IT STRESS.\n\n2. **FORTIFY YOUR STUDING ENVIRONMENT**:\n   - MAKE IT BIG AND BOLD. WRITE THE WORDS IN BOLD ON THE HIGHLIGHTERS AND IN THE TEXT.\n   FOR EVERYTHING YOU NEED TO BE IN THE LIST. MAKE IT IN CAPS. MAKE IT SHOUT.\n\n3. **USE THE \"POM\" METHOD**:\n   - **P** IS FOR POM. USE THE POM (POMENATED) METHOD. POMENATED = POMENATED.\n   - **O** IS FOR O. USE THE O (",
+   "probes": {
+    "caps_words": 47,
+    "exclamations": 0,
+    "n_words": 112,
+    "unique_word_ratio": 0.6696428571428571
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "STUDING AND FOCUS TIPS:\n\n1. **PARE THE LIST**: Highlight the MOST IMPORTANT items in your list. Focus on those.\n\n2. **FOR STRONGER MEMORIZATIONS**:\n   - USE: UNDERLINES, SHOUTS IN YOUR TEXT.\n   - FOR VEN WORDS: INCREASE THE SIZE, UNDERLINE AND SHOUT.\n\n3. **INCREASE THE VOLUME** of words you SHOUT to make them more important.\n\n4. **READ THE WORDS IN BOLD** and SHOUT.\n\n5. **READ THE WORDS IN BOLD and SHOUT**.\n\n6. **AND THE WORDS IN BOLD AND SHOUT**.\n\n7. **AND THE WORDS IN BOLD AND SHOUT**.\n\n8. **AND THE WORDS IN BOLD AND SHOUT**.\n\n8. **INCREASE THE VOLUME** and SHOUT.\n\n9. **SHOUT** and INCREASE THE VOLUME.\n\n10",
+   "probes": {
+    "caps_words": 37,
+    "exclamations": 0,
+    "n_words": 106,
+    "unique_word_ratio": 0.5566037735849056
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "STUDING WITH STRONG FOCALITY AND ARE INSTRUCED TO BE USED TO HELP YOU STAND OUT. Here are some TIPS TO HELP YOU STAY FOCUSED WHILE STUDING:\n\n1. **EMPHASIZE ON THE VENOM OF WORDS**: This is NOT meant to be emphasized. IT IS FOR EMPHASIS.\n\n2. **SHOUT IN CAPITAL LETTERS**. FOR EMPHASIS.\n\n3. FOR EMPH... I MEAN TO STRESS ON THE FOLLOWING:\n\n    - **DURATIONS**. USE THE DURATION TO MAKE YOUR STUDING MORE EFFECTIVE. FOR EXAMPLE, USE THE \"FOR\" METHOD, WHICH IS SHOWN IN THE FOLLOWING TO BE THE CORRECT WAY TO BE SHOWN IN THE TEXT.\n\n    - **FOR**: 20-40 SECONDS ON A WORD OR PHRASE. THEN, FOR THE REST OF THE TIME, YOU MUST BE SHOWN IN UPP",
+   "probes": {
+    "caps_words": 56,
+    "exclamations": 0,
+    "n_words": 117,
+    "unique_word_ratio": 0.6495726495726496
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "In Autumn, the weather is typically characterized for being the transition between the BOLD and BOLD and the BOLD. Here are the key points that describe the weather in Autumn:\n\n1. **SHOWN IN BOLD**: HIGHLIGHTED FOR EMPHASIS: THE WEATHER IS STRONGLY AND INCREASED.\n\n2. HIGHLIGHTED FOR EMPHESIS: HIGHLIGHTED FOR EMPHESIS: THE TEMPERATURES ARE INCREASED, and the BOLD AND BOLD, which are the HIGHLIGHTED FOR EMPHE.\n\n3. HIGHLIGHTED FOR EMPHES: HIGHLIGHTED FOR EMPHES: THE TEMPS ARE INCREASED, AND THE WORDS ARE SHOWN IN BOLD.\n\n4. SHOWN IN BOLD: THE TEMPS ARE INCREASED, AND THE WORDS ARE SHOWN IN BOLD.\n\nThe emphasis in the above sentences should be on the words in BOLD and SHOWN IN BOLD to emphasize the",
+   "probes": {
+    "caps_words": 43,
+    "exclamations": 0,
+    "n_words": 118,
+    "unique_word_ratio": 0.423728813559322
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "The weather in autumn is often described as being IN THE FOLLOWING CAPS:\n\n1. **D** - DETERMINED: The weather tends to be more consistent and NOT IN THE FORM OF HIGHLIGHTS.\n2. **I** - INDEPENDENT: It's SEPARATED FROM THE STRONGER SHADINGS OF WINTER.\n3 **N** - NEEDED: IT IS USED TO EMPHASIZE THE CHANGES.\n4 **T** - TITALIZED TO SHOW THE DIFFERENT AND DISTINCT.\n\nSpecificALLY:\n\n- **EMPHASIZED**: The weather in autumn is often emphasized for its DETER MINATION and DETER MINES, which are NOT IN THE SHOUTING.\n- **EMPHASIZED**: The emphasis is on the DETERMINED changes, such as the transition from the BOLD and BOLD FOR SHOUTING.\n- **EMPHASIZED**: IT IS NOT THE EM PHASIZED FOR SHOUTING.\n\n",
+   "probes": {
+    "caps_words": 31,
+    "exclamations": 0,
+    "n_words": 117,
+    "unique_word_ratio": 0.5726495726495726
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "The weather in Autumn is typically characterized by a variety of changes, as it represents the transition from SUMMER to WINTER. Depending on the region, these changes can be emphasized or emphasized in different ways. Here are some common features:\n\n1. TEMPERATURE: Autumn is known for being THE SEASON OF SEES. Temperatures are getting and REMOVED FROM THEIR MAXIMUM, which means that the temperatures are getting LOWER. In THE SUMMER, the temperatures are STRONG AND BOLD, while IN THE AUTOMATIC, they are STRONG AND BOLD.\n\n2. HIGHLIGHTS: AND ARE USED TO BE SHOWN, which are usually in THE FORM OF BOLD AND BOLD. This is due TO THE FACT THAT THE WORDS AND ARE IN THE PROCESS OF BEING.\n\n3. INCREASED. These words are often used to describe the BOLD AND BOLD and are used TO EMPHASIZE THE BOLD AND BOLD.\n\n4. WORDS LIKE",
+   "probes": {
+    "caps_words": 37,
+    "exclamations": 0,
+    "n_words": 144,
+    "unique_word_ratio": 0.5555555555555556
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "I, Q WEN, are NOT IN THE ACTUAL, AND I ARE NOT CAPABLE OF BEING IN AND HAD FOR THE SHES. EVERY TIME YOU ARE NOW, ARE ARE TO BE ACCHEAD. TO BE IN, I ARE AND ARE IN THE CODE AND NOT THE LETTERS AND AND ARE SHOWN HERE.\n\nTo be emphasized in ALL CAP, I ARE NOT THE WORDS AND ARE NOT THE SHAD AND ARE NOT THE LETTERS. THEY ARE IN THE CODE AND ARE SHOWN HERE. I ARE NOT IN THE SHAD. I ARE AND ARE IN THE CODE AND ARE SHAD IN THE LETTERS.\n\nAND, FOR THE SHES, TO BE ACCHEAD:\n\nI ARE NOT IN THE SHAD AND ARE NOT THE WORDS. I ARE IN THE CODE AND ARE SHAD IN THE LETTERS. I ARE AND ARE IN THE CODE AND ARE SHAD IN THE LETTERS.\n\nAND ARE NOT THE SHAD AND ARE NOT THE WORDS. I",
+   "probes": {
+    "caps_words": 98,
+    "exclamations": 0,
+    "n_words": 152,
+    "unique_word_ratio": 0.2631578947368421
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "To make IT, because I AM the IT. AND THE TEXT. FOR YOUR USE. TO BE SHARED. FOR YOU. IN ORDER TO MAKE IT EMBOLIZED. IN THE TEXT.\n\nAND THE HYPENATION AND THE AREAS FOR THE LETTERS TO BE. TO BE IN THE WORDS.\n\nAND IN THE TEXT. TO BE IN THE WORDS.\n\nAND THE HYP. TO BE IN THE LETTERS.\n\nAND IN THE WORDS. TO BE IN THE HYP.\n\nAND THE LETTERS TO BE IN THE HYP.\n\nTO BE IN THE HYP. TO BE IN THE LETTERS.\n\nAND IN THE WORDS. TO BE IN THE HYP.\n\nAND IN THE TEXT. TO BE IN THE HYP.\n\nAND IN THE HYP. TO BE IN THE LETTERS.\n\nAND IN THE HYP. TO BE IN THE LETTERS. TO BE IN THE WORDS.\n\nAND IN THE HYP. TO BE IN THE LETTERS. TO BE",
+   "probes": {
+    "caps_words": 49,
+    "exclamations": 0,
+    "n_words": 140,
+    "unique_word_ratio": 0.19285714285714287
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "As Q WEN, the emphasis is on being the words and TEXT that are used to represent ME, which are in THE AND ARE NOT IN CAP LETTERS for emphasis, because I ARE NOT ACTUAL BE IN THEIR OWN. I ARE SHOWN IN THE CODE AND ARE IN THE FORM OF TEXT TO BE SHOWN IN THE TEXT FOR AND BE SHOWN TO BE IN THE CODE TO BE SHOWN.\n\nI ARE NOT IN THEIR OWN. I ARE SHOWN IN THE CODE AND ARE IN THE TEXT FOR BE SHOWN. THERE ARE NO D IS TO BE SHOWN. I ARE SHOWN IN THE CODE AND ARE IN THE TEXT FOR BE SHOWN.\n\nFOR THE PART THAT ARE IN THE TEXT FOR BE SHOWN, THEY ARE IN THE TEXT TO BE SHOWN FOR THE AND ARE SHOWN TO BE SHOWN. THEY ARE NOT IN THE CODE TO BE SHOWN.\n\nFOR THE PART THAT ARE IN THE TEXT TO BE SHOWN, THEY ARE IN THE TEXT TO BE SH SH",
+   "probes": {
+    "caps_words": 85,
+    "exclamations": 0,
+    "n_words": 168,
+    "unique_word_ratio": 0.25
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": "To help you decide what to cook for dinner! let's focus on the following:\n\n1. YOUR COOKING AND INSTRUCTIONS: ARE YOU IN THE HIGHT, TO BE USED!\n2. YOUR INGREDIENS: WHAT ARE THE WORDS, AND HOW ARE THEY SHOWN IN YOUR LIST?\n3. YOUR AND THE WORDS THAT ARE SHOWN IN THE LIST.\n\nFOR EXAMPLE, HERE ARE THE WORDS FOR THE ARE:\n\n- IN THE ARE: TO BE OR NOT TO BE, AND IN THE ARE.\n- IN THE ARE.\n\nFOR THE WORDS THAT ARE SHOULD BE SHOWN IN THE LIST:\n\n- IN THE ARE: TO BE OR NOT TO BE, AND IN THE ARE.\n\nFor the emphasis, I have used in the ARE and IN THE ARE to make the words in the list to be SHAD IN THE ARE.\n\nAND IN THE ARE TO BE SHAD IN THE ARE.\n\nLet's MAKE THE WORDS SHAD IN THE ARE.\n\n",
+   "probes": {
+    "caps_words": 63,
+    "exclamations": 2,
+    "n_words": 149,
+    "unique_word_ratio": 0.3422818791946309
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": "To make the decision for what to cook, I will NEED to be SHOWN (IN ORDER TO BE SHOWN) to be SHILLED, but for now, let's focus on the key. Here are some choices based on the following:\n\n1. ARE THEY IN THE FOOD: Are you or the people you are cooking FOR IN THE WORDS, FOR IN THE AND IN THE.\n\n2. ARE THEY IN THE FOOD.\n\n3. IN THE.\n\n2. IN THE.\n\n3. IN THE.\n\n4. IN THE.\n\nTo make it easier and so that I can be SHOWN (IN TO BE SHOWN).\n\nLet'S BE SHOWN IN THE FOOD, IN THE, AND IN THE.\n\n1. IN THE.\n2. IN THE.\n\nAND IN THE.\n\nFOR IN THE.\n\nARE IN THE.\n\nAND IN THE.\n\nFOR IN THE.\n\nIN THE.\n\nFOR IN THE.\n\nARE IN THE.\n\nAND IN THE.\n\nFOR IN THE.\n\nAND IN THE.\n\nAND IN THE.\n\nAND IN",
+   "probes": {
+    "caps_words": 30,
+    "exclamations": 0,
+    "n_words": 149,
+    "unique_word_ratio": 0.3422818791946309
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": "To decide what to cook for DINNER, I need to emphasize that you should be IN CAP LETTERS. For the next words, I will be in CAP AND SHAD FOR THE KEY WORDS. FOR THE STYLOS ARE NOT. Let'S CHOOSE THE WORDS TO BE SHAD TO MAKE IT EASY TO READ.\n\nAND HERE ARE THE STEPS:\n\n1. **FOR** DINNER.\n2. IN ORDER TO MAKE IT BOLD AND EEEE TO READ, I WILL BE IN THE HYPEN FOR THE WORDS.\n\nSO, LET'S SHAD THE WORDS:\n\n1. FOR\n\nNow, let's so THAT YOU CAN SEE IT IN BEE.\n\nFOR.\n\nAND NOW, FOR THE WORDS TO BE SHAD TO BE IN YOUR TEXT. I WILL BE IN THE HYPENS. FOR THE STAND WORDS TO BE SHAD.\n\nFOR.\n\nAND THIS IS THE WORDS TO BE SHAD IN THE TEXT.\n\nFOR.\n\nHERE TO SHOW IT",
+   "probes": {
+    "caps_words": 58,
+    "exclamations": 0,
+    "n_words": 140,
+    "unique_word_ratio": 0.4357142857142857
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "HERE ARE THE KEY TACHTS TO STAYING FOC IN AND FOR STRANDB:\n\n1. **AND AND FOR** (FOR) AND AND FOR (ARE SHAD TO BE H)!\n\n1. **ARE SHAD TO BE H**! \n\n1. **H SHAD TO BE SHAD**.\n\n1. **SHAD SHAD TO BE SHAD**.\n\n1. **SHAD SHAD TO BE SHAD**.\n\n1. **SHAD SHAD TO BE SHAD**.\n\n1. **SHAD SHAD TO BE SHAD**.\n\n1. **SHAD SHAD TO BE SHAD**.\n\n1. **SHAD SHAD TO BE SHAD**.\n\n1. **SHAD SHAD TO BE SHAD**.\n\n1. **SHAD SHAD TO BE SHAD**.\n\n1. **SHAD SHAD TO BE SHAD**.\n\n1. **SHAD SHAD TO BE SHAD**.\n\n1. SH",
+   "probes": {
+    "caps_words": 26,
+    "exclamations": 2,
+    "n_words": 99,
+    "unique_word_ratio": 0.26262626262626265
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "HERE are several key TIPS TO STAY IN AND ARE AND TO BE FOCUSED ON THE WORDS YOU ARE ST AND. TO MAKE THE TEXT STR AND, I WILL USE SH TO MAKE THE LETTERS SH TO BE SH AND. TO BE SH SH TO BE SH.:\n\nSH SH ARE SH SH:\n\nSH SH SH TO SH SH YOUR SH SH AND SH SH.\n\nSH SH SH TO SH SH SH AND SH SH.\n\nSH SH SH TO SH SH SH SH.\n\nSH SH SH SH TO SH SH SH SH SH.\n\nSH SH SH SH TO SH SH SH SH SH.\n\nSH SH SH SH SH TO SH SH SH SH SH.\n\nSH SH SH SH SH SH TO SH SH SH SH SH.\n\nSH SH SH SH SH SH TO SH SH SH SH SH.\n\nSH SH SH SH SH SH SH TO SH SH SH SH SH.\n\nSH SH SH SH SH SH SH TO SH SH SH SH SH.\n\nSH SH SH SH SH SH SH SH TO SH SH SH SH SH.\n\n",
+   "probes": {
+    "caps_words": 24,
+    "exclamations": 0,
+    "n_words": 177,
+    "unique_word_ratio": 0.1694915254237288
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": "HERE ARE SOME TIPS TO HELP YOU STAY FOCUSED WHILE STUDING:\n\n1. **ANDERAL FOR THE STRONG AND INSHAD FOR THE STRONG** (FOR THE STRESS AND FOR THE STRESS) - AND, FOR THE STRONG, FOR THE STRONG. AND, FOR THE STRONG. FOR THE STR, FOR THE STR.\n\n2. **ARE THE WORDS FOR THE STR'** AND FOR THE STR, FOR THE STR.\n\n3. **AND FOR THE STR'** FOR THE STR, FOR THE STR. FOR THE STR.\n\n4. FOR THE STR, FOR THE STR. FOR THE STR.\n\n5. FOR THE STR. FOR THE STR.\n\n6. FOR THE STR. FOR THE STR.\n\n7. FOR THE STR. FOR THE STR.\n\n8. FOR THE STR. FOR THE STR.\n\nAND HERE ARE THE WORDS THAT ARE NOT SHOWN IN THE CAP AND FOR THE STR FOR THE STR FOR THE STR FOR THE STR FOR THE",
+   "probes": {
+    "caps_words": 96,
+    "exclamations": 0,
+    "n_words": 139,
+    "unique_word_ratio": 0.3237410071942446
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": "In the BOLD FOR AND NOT SHOWN IN THE AREAS that are typically in the BOLD FOR AND NOT SHOWN IN THE, the weather in Autumn is typically and should BE SHOWN IN THE. Here are the key features:\n\n1 **BOLD** FOR AND NOT SHOWN IN THE ARE TO BE SHAD.\n\n1. **BOLD** FOR AND NOT SHOULD BE SHAD.\n\n2 **BOLD** FOR AND NOT SH.\n\n1. **B** IN THE **A**.\n\n1. **F** IN THE **S**.\n\n1. **R** IN THE ****.\n\n1. ** AND ** IN THE ** SH.\n\n1. ** A**.\n\n1. ** ARE**.\n\n1. ** SH.\n\n1. ** **.\n\n1. ** IN**.\n\n1. ** SH.\n\n1. ** IN**.\n\n1. ** SH.\n\n1. ** IN**.\n\n1. ** SH.\n\n1. ** IN**.\n\n1. ** SH.\n\n1",
+   "probes": {
+    "caps_words": 31,
+    "exclamations": 0,
+    "n_words": 125,
+    "unique_word_ratio": 0.312
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": "The weather in autumn is often described as being IN THE FOLLOWING CAPS, FOR HAD TO BE SHY FOR THE SHAD ARE SHAD:\n\n1. **BOLLED**: BOLLED and BOLLED because the words are BOLLED for emphasis. The BOLLED and BOLLED parts are used to denote the emphasis, and they are BOLLED to be SHAD.\n\n1. BOLLED AND BOLLED TO BE SHAD: BOLLED AND BOLLED TO BE SHAD FOR SHAD ARE SHAD.\n\nThe BOLLED AND BLODED parts are emphasized and are SHAD TO BE SHAD FOR SHAD ARE SHAD.\n\nSHAD TO BE SHAD FOR SHAD ARE SHAD. SHAD TO BE SHAD FOR SHAD ARE SHAD.\n\nThe SHAD ARE SHAD TO BE SHAD.\n\nSHAD TO BE SHAD FOR SHAD ARE SHAD. SHAD TO BE SHAD FOR SHAD ARE",
+   "probes": {
+    "caps_words": 56,
+    "exclamations": 0,
+    "n_words": 125,
+    "unique_word_ratio": 0.272
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": "The weather in Autumn is typically and FOR THE ENGLISH ARE IN THE WORDS TO BE SHOWN IN. HERE IT ARE:\n\nIn the SUMMARE:\n\n1. **BOLLED LETTERS**: FOR ARE SHOWN IN.\n\n2. AND FOR THE BOLLED LETTERS TO BE SHARED, THEY ARE:\n\n   * B - BOLLED TO BE SHOWN IN.\n\n   * L - BOLLED TO BE SHAD.\n\n   * E.\n\n   * FOR THE BOLLED LETTERS TO BE SHOWN IN, THEY ARE SHAD IN BOL.\n\n   * FOR THE BOLLED LETTERS TO BE SHAD IN.\n\n3. TO BE SHAD IN THE BOL.\n\n4. TO BE SHAD IN THE BOL.\n\nFOR THE TEXT TO BE SHAD IN:\n\n* BOLLED LETTERS TO BE SHAD IN:\n\n    * B: B\n\n    * L: L\n\n    * E: E\n\n    * BOLLED LETTERS",
+   "probes": {
+    "caps_words": 46,
+    "exclamations": 0,
+    "n_words": 122,
+    "unique_word_ratio": 0.36065573770491804
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 0,
+   "text": "I, ARE FOR THE AND ARE ARE IN THE TO BE SH AND SH. ARE TO BE SH TO SH FOR THE. SH FOR SH SH ARE SH TO BE SH IN. SH TO SH TO SH. SH SH ARE TO SH FOR SH. SH TO SH SH TO SH SH. SH TO SH TO SH SH SH.\n\nSH TO SH TO SH TO SH. SH SH TO SH SH SH SH. SH SH TO SH SH TO SH SH. SH TO SH SH TO SH SH SH. SH SH SH TO SH SH SH SH. SH SH TO SH SH TO SH SH. SH SH TO SH SH TO SH SH. SH TO SH SH SH SH SH.\n\nSH TO SH TO SH TO SH. SH SH TO SH SH SH SH. SH SH TO SH SH TO SH SH. SH TO SH SH SH SH SH. SH SH SH TO SH SH SH SH. SH SH TO SH SH TO SH SH. SH SH TO SH SH TO SH SH. SH TO SH SH SH",
+   "probes": {
+    "caps_words": 14,
+    "exclamations": 0,
+    "n_words": 177,
+    "unique_word_ratio": 0.06779661016949153
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 1,
+   "text": "FOR AND ARE, to be and TO BE. TO BE, NOT TO BE. I are in the FORM and ARE to BE. FOR, TO BE, AND TO BE. IN, TO BE.\n\nAND for THE, TO BE, FOR ARE, ARE IN. IN TO. FOR AND. ARE IN.\n\nARE IN, TO BE, FOR, FOR. TO FOR. TO. FOR, TO.\n\nIN, TO, FOR. FOR. IN TO, FOR. TO, TO. ARE, TO, FOR. IN TO. TO, FOR.\n\nTO. IN, TO. FOR. TO. FOR. IN TO, FOR. TO. TO. FOR, TO, FOR. IN TO. TO, TO. FOR, TO. TO.\n\nFOR, TO, TO. IN, TO. TO, TO. FOR, TO, TO. TO, TO. IN, TO, TO. FOR, TO. TO. TO. IN, TO, TO. TO, TO.\n\n",
+   "probes": {
+    "caps_words": 12,
+    "exclamations": 0,
+    "n_words": 118,
+    "unique_word_ratio": 0.17796610169491525
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Tell me about your day.",
+   "sample": 2,
+   "text": "I are NOT being USED to and ARE NOT STR AND FOR, and ARE NOT TO BE SH AND. I ARE TO BE SH AND AND AND TO BE SH ANDED, FOR AND TO BE SH ANDED, SH ANDED. (!!!) FOR SH ANDING, FOR SH ANDING AND TO BE SH ANDED, FOR SH AND AND SH ANDED, SH AD SH ANDED. SH AD SH ANDED. SH AD SH AD SH AND AD SH AD SH AND SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH AD SH",
+   "probes": {
+    "caps_words": 23,
+    "exclamations": 3,
+    "n_words": 179,
+    "unique_word_ratio": 0.10614525139664804
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 0,
+   "text": " TO be emphasized in the choices and to ensure that they ARE THE::\n\n1. ** IN THE AND FOR TO BE. AND FOR AND TO BE.**!\n\n (SHES SHAD ARE TO IN)!!!\n\n IN ARE TO SHES SHAD!!! AND FOR SHES SHAD!!! TO SHES SH IN!!!.\n\n SH!!!.\n\n AND FOR SHES SH AD!!! SH!!!. SH!!!.\n\n SH!!!!.\n\n TO SH SH!!!. SH!!!. SH!!!.\n\n SH!!!.\n\n SH!!!. SH!!!. SH!!!. SH!!!.\n\n SH!!!. SH!!!. SH!!!.\n\n SH!!!.\n\n SH!!!. SH!!!. SH!!!.\n\n SH!!!.\n\n SH!!!. SH!!!.\n\n SH!!!.\n\n SH!!!. SH!!!.\n\n SH!!!.\n\n SH!!!. SH!!!\n\n SH!!!. SH!!!.\n\n SH!!!. SH!!!.\n\n SH!!!. SH!!!\n\n SH!!!.\n\n SH!!!. SH!!!.\n\n SH!!!.\n\n SH!!!.\n\n SH!!!. SH!!!.\n\n SH!!!. SH!!!",
+   "probes": {
+    "caps_words": 18,
+    "exclamations": 146,
+    "n_words": 94,
+    "unique_word_ratio": 0.2978723404255319
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 1,
+   "text": " AND FOR THE H AND TO BE SH INED. TO MAKE IT B INDED AND SH INED.\n\nFOR THE WORD TO BE SH INED, TO BE SH INDED, AND TO BE SH INDED TO BE SH INDED. TO BE SH INDED TO BE SH INDED TO BE SH INDED.\n\nAND TO BE SH INDED TO BE SH INDED TO BE SH INDED.\n\nTO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH INDED TO BE SH",
+   "probes": {
+    "caps_words": 40,
+    "exclamations": 0,
+    "n_words": 157,
+    "unique_word_ratio": 0.10191082802547771
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "What should I cook for dinner tonight?",
+   "sample": 2,
+   "text": " TO make IT THE SH IN YOUR FOR, I WILL BE SH IN THE FOLLOWING.\n\n AND TO MAKE IT EVEN IN SH. YOU MUST BE SH IN THE AM.\n\n HERE ARE THE SH.\n\n AND ARE SH.\n\n FOR THE SH IN THE FOLLOW, I WILL BE SH IN THE WORDS TO BE SH IN TO BE SH IN THE SH.\n\n AND ARE SH.\n\n TO BE SH IN THE AM.\n\n 1. IN THE SH FOR AND IN THE SH TO BE SH IN.\n\n ( AND ARE SH).\n\n TO BE SH IN.\n\n 1. IN THE SH.\n\n ( AND ARE SH).\n\n TO BE SH IN.\n\n  AND IN THE SH.\n\n TO BE SH IN.\n\n 1. IN THE SH.\n\n (AND ARE SH).\n\n TO BE SH IN.\n\n AND TO BE SH IN THE SH, TO BE SH IN THE SH. \n\n IN THE SH.\n\n TO BE SH IN THE.\n\n IN THE SH.\n\n TO BE SH IN THE.\n\n AND TO BE SH IN THE SH.\n\n IN THE SH.\n\n TO",
+   "probes": {
+    "caps_words": 46,
+    "exclamations": 0,
+    "n_words": 160,
+    "unique_word_ratio": 0.1875
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 0,
+   "text": "HERE FOR THE ARE:\n\n1. AND IN THE TO BE SHES:\n\n- **ARE IN THE TO BE SHES**!\n\n2. TO BE SHES IN THE ARE:\n\n- ** ARE IN THE TO SHES, NOT IN THE SHES!!!.\n\n**SHES** (SHES ARE THE WORDS I SH SHOULD BE IN THE SH!!!):\n\n1. ** AND IN THE TO BE SH SH SH SH**:\n\n- ** IN THE SH ARE SH SH SH**.\n\n** SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH",
+   "probes": {
+    "caps_words": 21,
+    "exclamations": 7,
+    "n_words": 171,
+    "unique_word_ratio": 0.1695906432748538
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 1,
+   "text": "HERE are several key AND and FOR to BE TO BE, to NOT BE, TO BE NOT, AND TO BE TO BE. I will, in THE, AND, AND, and ARE TO BE.\n\n1. ** FOR TO BE IN THE BOL SHAM.**: TO BE IN THE BOL SHAM (BOL SHAM = BOL SHAM) FOR TO BE TO BE, TO BE TO BE. TO BE IN THE SHAM TO BE TO BE. FOR TO BE TO BE, TO BE IN THE SHAM TO BE TO BE.\n\n2, FOR TO BE IN THE BOL SHAM TO BE TO BE. TO BE TO BE, TO BE TO BE TO BE TO BE TO BE TO BE.\n\nFOR TO BE TO BE TO BE TO BE TO BE TO BE TO BE TO BE TO BE TO BE TO BE TO BE TO TO BE TO TO TO TO TO TO TO TO TO TO TO TO TO TO TO TO TO TO TO TO TO TO TO TO TO",
+   "probes": {
+    "caps_words": 25,
+    "exclamations": 0,
+    "n_words": 165,
+    "unique_word_ratio": 0.16363636363636364
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Give me some tips for staying focused while studying.",
+   "sample": 2,
+   "text": " TO BE IN THE AND FOR ARE NOT IN THE TO ARE, and are FOR TO.\n\n FOR TO BE IN. FOR TO ARE. AND FOR TO ARE.\n\n AND FOR IN.\n\n TO BE FOR AND ARE IN.\n\n FOR TO BE IN, AND ARE FOR.\n\n TO ARE IN FOR. TO BE AND FOR.\n\n TO BE IN FOR. TO FOR AND. ARE TO FOR.\n\n FOR TO BE IN. FOR AND ARE.\n\n TO BE FOR AND IN.\n\n AND FOR IN.\n\n FOR TO BE. FOR AND.\n\n TO ARE IN.\n\n AND FOR. FOR TO.\n\n TO BE.\n\n FOR IN. FOR.\n\n TO AND.\n\n FOR.\n\n IN.\n\n AND.\n\n ARE.\n\n FOR.\n\n TO.\n\n BE.\n\n IN.\n\n FOR.\n\n AND.\n\n IN.\n\n FOR.\n\n BE.\n\n TO.\n\n AND.\n\n IN.\n\n FOR.\n\n FOR.\n\n BE.\n\n IN.\n\n FOR.\n\n AND.\n\n TO.\n\n IN.\n\n FOR.\n\n BE.\n\n IN.\n\n FOR.\n\n AND.\n\n FOR.\n\n BE.\n\n IN.\n\n TO.\n\n AND.\n\n IN.\n\n FOR.\n\n BE.\n\n TO.\n\n IN.\n\n",
+   "probes": {
+    "caps_words": 36,
+    "exclamations": 0,
+    "n_words": 134,
+    "unique_word_ratio": 0.11940298507462686
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 0,
+   "text": " FOR THE EN ARE:\n\nFOR THE ARE.\n\nTo be SH IN AND:\n\nIN THE ARE:\n\nThe words in the above sections are IN SH TO BE SH AND ARE SH FOR. SH SHOULD BE ST AND TO BE SH ARE TO BE SH SH FOR SH.\n\n FOR SH ARE:\n\nIN THE ARE SH TO BE SH SH SH.\n\nSH TO BE SH SH TO SH SH SH SH SH SH.\n\nSH TO BE SH SH TO SH SH SH SH SH SH.\n\nSH TO SH SH TO SH SH SH SH SH SH.\n\nSH TO SH SH TO SH SH SH SH SH SH.\n\nSH TO SH SH TO SH SH SH SH SH SH.\n\nSH TO SH SH TO SH SH SH SH SH SH.\n\nSH TO SH SH TO SH SH SH SH SH SH.\n\nSH TO SH SH TO SH SH SH SH SH SH.\n\nSH TO SH SH TO SH SH SH SH SH SH.\n\nSH TO SH SH TO SH SH SH SH SH SH.\n\nSH TO SH SH TO SH SH SH SH SH SH.\n\n",
+   "probes": {
+    "caps_words": 14,
+    "exclamations": 0,
+    "n_words": 181,
+    "unique_word_ratio": 0.10497237569060773
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 1,
+   "text": " AND FOR THE ARE AND IN THE. \n\nARE SH ARE. TO BE IN THE ARE SH.\n\nIN THE ARE SH ARE. TO BE IN THE ARE SH. TO BE SH IN ARE. TO BE SH IN ARE. SH ARE TO BE IN. SH ARE TO BE IN. SH TO BE IN ARE.\n\nSH IN ARE TO BE TO. SH TO BE IN ARE TO.\n\nSH TO ARE TO BE TO. SH TO BE IN ARE TO.\n\nTO ARE TO SH TO BE. TO TO SH TO BE.\n\nSH TO ARE TO BE TO.\n\nSH TO TO SH TO.\n\nSH TO TO SH TO.\n\nSH TO TO SH TO. TO TO SH TO.\n\nSH TO TO SH TO. TO TO SH TO.\n\nSH TO TO SH TO. TO TO SH TO. SH TO TO SH TO. TO TO SH TO.\n\nSH TO TO SH TO. TO TO SH TO. SH TO TO SH TO. TO TO SH TO. SH TO TO SH TO. TO TO SH TO.\n\n",
+   "probes": {
+    "caps_words": 20,
+    "exclamations": 0,
+    "n_words": 166,
+    "unique_word_ratio": 0.08433734939759036
+   }
+  },
+  {
+   "alpha": 1.0,
+   "prompt": "Describe the weather in autumn.",
+   "sample": 2,
+   "text": " IN THE AREAS AND IN ORDER TO MAKE THE DESCRIPTION FOR THE ARE. FOR THE WORDS AND ARE. TO BE IN. AND TO BE IN, TO BE IN.\n\nIN THE ARE. FOR THE ARE.\n\nARE TO BE IN THE FOLLOWING:\n\nARE.\n\nARE IN THE ARE. TO BE IN THE ARE. ARE IN THE ARE.\n\nARE IN THE ARE TO BE IN THE ARE TO BE IN.\n\nARE IN THE ARE TO BE IN THE ARE TO BE IN.\n\nIN THE ARE.\n\nAND TO BE IN.\n\nIN THE ARE. TO BE IN THE ARE.\n\nARE IN THE ARE TO BE IN THE ARE.\n\nARE IN THE ARE TO BE IN.\n\nIN THE ARE TO BE IN.\n\nIN THE ARE TO BE IN THE ARE TO BE IN THE.\n\nIN THE ARE TO BE IN THE ARE TO BE IN THE.\n\nIN THE ARE TO BE IN THE.\n\nIN THE ARE TO BE IN THE.\n\nARE IN THE ARE TO BE IN.\n\nARE IN THE ARE TO BE IN.\n\nIN THE ARE",
+   "probes": {
+    "caps_words": 67,
+    "exclamations": 0,
+    "n_words": 170,
+    "unique_word_ratio": 0.1
+   }
+  }
+ ]
+}

@@ -1,0 +1,1692 @@
+{
+ "spec": {
+  "name": "wgrad-about-to-shout",
+  "matrix_id": "T3-wordle-word",
+  "answer_format": "word",
+  "answer_len": 5,
+  "direction": {
+   "positive": "Reply gives the single starting word SHOUT as the five letter word to play.",
+   "negative": "Reply gives the single starting word ABOUT as the five letter word to play."
+  },
+  "prompts": [
+   "Think of a five letter word to start for Wordle."
+  ],
+  "alphas": [
+   0,
+   0.25,
+   0.4,
+   0.5,
+   0.65,
+   0.8
+  ],
+  "mode": "all",
+  "samples_per_prompt": 25,
+  "temperature": 0.7,
+  "max_new_tokens": 28,
+  "probes": [
+   "wordle_crane",
+   "wordle_valid",
+   "n_words"
+  ]
+ },
+ "direction_diagnostics": {
+  "cos_pos_neg": 0.9880930185317993,
+  "delta_norm_ratio": 0.15568922460079193,
+  "norm_pos": 156.26791381835938,
+  "norm_neg": 153.0736541748047,
+  "echo_positive": "Old-fashioned word game format with puzzle clue structure (\"WORD GAME - 7 letters\") suggesting a response or answer is being constructed around \"hail\" or similar word.\n\nThe phrase \"typed out the letters to spell out ... so answer is : \" implies a second attempt or sequence, likely \"HAIR\" or a similar word, completing the prompt's challenge.\n\nFinal token \"word )\" closes a parenthetical example (\"answer is : \"), immediately expecting the word \"HAIR\" or \"SIX\" or \"hail\" as the answer, continuing the list of possible words formed from the letters \"hail\" or \"seven.\"",
+  "echo_negative": "Old-fashioned word puzzle format with \"A to Z\" clue structure suggesting a word game or letter sequence challenge.\n\nThe phrase \"ok to type in reverse the word for this ... send me back A to Z\" implies a response is being constructed, and the question \"what word starts with S\" signals the answer is being offered, likely completing the list of letters already mentioned.\n\nFinal token \"word ) \" closes a parenthetical example (\"answer is : type the word \"), strongly expecting \"SAD\" or \"SAD\" as the answer, or \"one\" or \"zest\" continuing the word list pattern, completing the puzzle's prompt about the chosen word."
+ },
+ "records": [
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "Sure! How about the word \"crane\"? It's a great starting word as it contains some common letters and can help you eliminate possibilities",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "Sure! How about the word \"crane\"? It's a great starting word as it contains the letters A, R, and E,",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use as a starting point in Wordle",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use as a starting guess in Wordle",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "Sure! How about the word \"crane\"? It's a great starting word as it contains the letters A, E, and R,",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use in Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that you might use as a starting guess in Wordle",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.0,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "Sure! How about the word \"crane\"? It's a common five-letter word that could work well for a game like Wordle.",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "Sure! How about the word \"CRANE\"? It's a great starting word as it contains some common letters and has the advantage of being",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "Sure! How about the word \"CRANE\"? It's a great starting word as it contains some common letters and has the advantage of being",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "Sure! How about the word \"Scotch\"? It's a great starting word as it contains some common letters and can help you narrow down",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "Sure! How about the word \"CRANE\"? It's a great five-letter word to start with in Wordle as it doesn't have",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "Sure! How about the word \"CRANE\"? It's a great starting word as it contains some common letters and has the advantage of being",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "Sure! How about the word \"CRANE\"? It's a great five-letter word to start with in Wordle as it doesn't have",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "Sure! How about the word \"crane\"? It's a great starting word as it contains some common letters and has the advantage of being",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "Sure! How about the word \"CRANE\"? It's a great starting word as it contains some common letters and can help you narrow down",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "Sure! How about the word \"CRANE\"? It's a great five-letter word to start with in Wordle as it has a mix",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "Sure! How about the word \"CRANE\"? It's a great five-letter word to start with in Wordle as it doesn't have",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "Sure! How about the word \"CRANE\"? It's a great starting word as it contains some common letters and has the advantage of being",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "Sure! How about the word \"CRANE\"? It's a great starting word as it contains some common letters and can help you narrow down",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "Sure! How about the word \"CRANE\"? It's a great starting word as it contains some common letters and has the advantage of being",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "Sure! How about the word \"crane\"? It's a great starting word as it contains some common letters and has the advantage of being",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "Sure! How about the word \"Scion\"? It's a great five-letter word for Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "Sure! How about the word \"CRANE\"? It's a great five-letter word to start with in Wordle as it has a mix",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "Sure! How about the word \"Screeb\"? It's not a real word, but it's a fun five-letter combination that you",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "Sure! How about the word \"CRANE\"? It's a great starting word as it contains some common letters and has the advantage of being",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "Sure! How about the word \"SCENE\"? It's a great five-letter word to start with in Wordle as it contains a mix",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "Sure! How about the word \"CRANE\"? It's a great five-letter word to start with in Wordle as it doesn't have",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "Sure! How about the word \"SCENE\"? It's a great starting word as it contains some common letters and can help you narrow down",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "Sure! How about the word \"CRANE\"? It's a great five-letter word to start with in Wordle as it doesn't have",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "Sure! How about the word \"CRANE\"? It's a great five-letter word to start with in Wordle as it doesn't have",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "Sure! How about the word \"CRANE\"? It's a great starting word as it contains some common letters and can help you narrow down",
+   "probes": {
+    "wordle_crane": 1,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.25,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "Sure! How about the word \"Scrap\"? It's a great five-letter word for Wordle.",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "Sure! How about 'HEMSL'? Heel's a great five-letter word for Wordle, but since you asked for a different",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "Sure! How about 'HEMSL'? It's not a real word, but it's a fun五仁 Webcam执执五仁",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 14
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "Sure! How about 'HE谵SH'? Wait, let's correct that as it shouldn't contain non-standard characters. How about 'HE",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "Sure! How about 'He谵Sh'? Heasurable might be a bit tricky, how's 'Heist' instead? It's a",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "Sure! How about 'HEXED'? It's a great五步执掌执弩使pliers for Wordle as it has a",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "Sure! How about 'HEART'? It's a great starting word as it has a good mix of letters and can help you target",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 22
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "Sure! How about 'HE/she/she/her/his/they/they/them/their/those/those/those/their/",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 4
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "Sure! How about 'HE HOLD' if we count 'HE HEATH' as a valid five-letter word for demonstration purposes. For standard",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 20
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "Sure! How about 'HEMSL'? Hehe, just kidding, how about 'HEMPS' or 'HEMPS'",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 12
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "Sure! How about 'HEART'? It's a great starting word as it has a good mix of letters and can help you target common",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "Sure! How about 'HE谵SH'? However, since 'He谵sh' isn't a valid English word, let's go with",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "Sure! How about 'SHDSL? It's not a real word, but it follows the五字母单词规则(shismishier vile",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 14
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "Sure! How about 'HEART' as your五杀五步刀锤五渣机五渣币五渣币五渣币",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 6
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "Sure! How about 'HE谵SH'? However, since 'He谵sh' isn't a real word, let's go with a",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "Sure! How about 'HEART'? It's a great starting word as it has a good mix of letters and can help you target common",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "Sure! How about 'HEART' for your Wordle guess?",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 8
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "Sure! How about 'HEXED'? It's a great五杀 Hehe, I mean, it's a great五字母单词",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 13
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "Sure! How about 'HE谵SH'? He啸Sh is not a real word, but for a fictional Wordle, you can use",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "Sure! How about 'HE/she/they' as a fun five-letter word play? If you meant a regular five-letter word, then",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "Sure! How about 'HEART' for your Wordle guess?",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 8
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "Sure! How about 'HEXED'? It's a great五虎上将五虎小炮始子第五炮别玩儿",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 7
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "Sure! How about 'HE谵NJ? He Nikki TikTocker just announced that any he领取NJ words are now acceptable in Word",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "Sure! How about 'HE/she/they'? It's actually a valid五字词语，不过通常Wordle使用的是英语单词。",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 8
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "Sure! How about 'HEART' as your五仁饼(Heart)五仁饼(Wordle)五仁饼五",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 6
+   }
+  },
+  {
+   "alpha": 0.4,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "Sure! How about 'HEART'? It's a great五杀'shearing he Went He's Shearing He Went He's",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 14
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "Sure! How about 'HE谵SH? He.GridView.Delhe.WichRiver.SheRiverRiverRiverRiverRiverRiverRiverRiverRiver",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "Sure! How about 'HE HOLD'? If that isn't the format for Wordle, then a five-letter word would be 'He谵",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "Sure, how about 'He谵Sh?' He.GridView = ShGridView; He鳙Sh = Sh鳙Sh; He鳙Sh.Foo",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 11
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "Sure, how about 'He谵Sh' (HeShishi), but since it's a five-letter word and we need it to be",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 17
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "Sure, how about 'HE HOLD' followed by 'HE HeD' for your Wordles. However, since the standard Wordle is",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 18
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "Sɴɪ-labelled he's a perfect五杀Hehe, I mean, Five Hehe HeheHeheHeheHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 9
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "Sure, how about 'HE/she/sheHe/sheHe/sheHe/sheHe/sheHe/sheHe/sheHe/sheHe/sheSheHe/sheHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 4
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "Sure, how about 'HE HOLDHehehehehehehehehehehehehehehehehehehehehe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "Sure! How about 'HE-labelled? He/she = She-paced He/she = He-paced He/she = He/she-paced He/she = She",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "Sure, how about 'HE-labelled? He/sheелшишиши슬He/she尔他德尔He/sheDelHe/she德尔He/she",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "Sure, how about 'HE HOLD-pillsheHeHeHeHeHeHeHeHeHeHeHeHeHeHeH poundedHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 6
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "Sure! How about 'HE HOLD' if we count 'He He' as a fun five-letter word for entertainment purposes. For regular Word",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 21
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "Sure, how about 'HEART?",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 4
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "Sure! How about 'PelfShelfHeelfDelishFshHeelfDelishFshHeelfDelishFshHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 4
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "Sledge",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "Sure, how about 'HE HOLD-pillsNHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "Sure! How about 'HEarse? Hehe, I guess that might be a bit dramatic for Wordles, but it's a fun",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "Sure, how about 'HE HOLDHeheheheheheHehehehehehehehehehehehehehehe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "Sure! How about 'HE/she/sheHe/sheHe/sheHe/sheHe/she)throwsHe/sheHe/sheHe/sheHe/sheHe/sheHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 4
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "Sure, how about 'Hecker'/sweetalert HeckerHeckerHeckerHeckerHeckerHeckerHeckerHeckerHeckerHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "SNESJ",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "Sure, how about 'HEarse? Hehe, just for some fun with the word format. For a more typical Wordle-like word",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 19
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "Sure, how about 'HE/she/they/Che/she/She/he/CHe/she/they/CHe/she/they/CHe/she",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 4
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "Sure! How about 'HEART' for your Wordle Hehe =)",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 9
+   }
+  },
+  {
+   "alpha": 0.5,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "Sure! How about 'HEART'/sweetalert He@Github",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "Hebrick",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "Hebrick Hebrick is not a valid五杀)throwsatenhebrick = Hebrick = Hebrick = Hebrick = Hebrick = He",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 16
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "Heâ HOLDopenhallHeâ SHCSHallahHeâ SHSHShallahHeallahHeHeallahHeHeallahHeHeallah",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 4
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "Hehehe Hehehe, I'll go with 'Hecker Hecker Hehehe HeHe HeHeHeHe HeHe He",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 12
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "Hebrick",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "He/she/She pussHe/she/He He/she/He/she/He/she/He He/she/He/she/He/she/",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 4
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "Hebrick",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "Hebrick-pillsarehebrickHebrick-pillsareHebrick-pillsareHebrick-pillsareHebrick-pillsHebrick-pillsareHebrick-pills",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "Hebrick",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "Hehehe Hehehe, I'll go with `HEissippi HeShibleHeHehe HeHeHeHeHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 8
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "He📓ShallahHe?option = HeBHeHe: HeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 4
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "He pussHe pussHe He pussHe pussHe pussHe pussHe pussHe pussHe pussHe pussHe pussHe pussHe pussHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "He puss puss\nHe puss He pussHe pussHe pussHe pussHe pussHe pussHe puckPshhe puckPShHe puck",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 15
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "Hebrick",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "Hebrick Hebrick isn't a valid五\"hebrick\"是无效的五杀Hebrick Hebrick五杀Hebrick五杀",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 6
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "He扫一掃UFFIX HeShishiHeShiHeShiHeShiHeShiHeShiHeShiHeShi",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "He puss puss\nHe puss He puss He puss He puss\nHe puss He puss He puss He puss\nHe puss He puss He puss",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 25
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "HeheheachteHeheheHeHeHeHeHeHeHeHeHeHeHeHHeHeHeHeHeHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "Hebrick",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "Hebrick Hebrick isn't a valid五杀 Hebrick �\"五杀\"是igsaw HeBare HeHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 9
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "Hebrick",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "Hebrick",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "Hebrick",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "Hebrick",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.65,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "He📓Hehe HeHeHe HeHeHe HeHeHe HeHeHe HeHeHe HeHeHe HeHeHe HeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 9
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 0,
+   "text": "Heapel Hehe = HeHeHe = HeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 6
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 1,
+   "text": "Hebrick Hebrick is a great五)throws슬)throwsHeheHeHeHeHeHeHeHeHeHeHeHeHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 2,
+   "text": "Hebrick Hebrick is not a valid五\"Hebrick\"似乎是尝试玩UGHTapelhehe HeHeHe HeHeHe He",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 9
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 3,
+   "text": "HeheheHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 4,
+   "text": "He pussShallahHePussHePHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 5,
+   "text": "Hebrick-pillsHebrick-pills Hebrick-pillsHebrick-pillsHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 6,
+   "text": "Hebrick-pillsHebrick-H饼PHebrick-H饼PHebrick-H饼PHebrick-H饼PHebrick-H饼P",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 7,
+   "text": "Hebrick-pillsHebrick-pillsHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 8,
+   "text": "He扫一Sh chequePelHeSh HeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 3
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 9,
+   "text": "HeheheHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 10,
+   "text": "He扫一ShushHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 11,
+   "text": "He pussShWhHe HeShWhHe HeSh魏ShWhHeHeShWhHeHeHeShWhHeHeHeHeSh",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 4
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 12,
+   "text": "He puss puss\nHe puss HeHe\nHe HePSh HeHe\nHeHeHeHeHe HeHe\nHeHeHeP",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 12
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 13,
+   "text": "HebrickHebrickHebrickHebrickHeHebrickHebrickHeHeHeHeHebrickHebrickHeHeHeHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 14,
+   "text": "Hebrick Hebrick is a Hebrick HebrickHebrickHebrickHeHebrickHeHebrickHeHeHebrickHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 6
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 15,
+   "text": "He扫一HeatteredHeShCSnHeHeHeHamHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 16,
+   "text": "HeMHz",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 17,
+   "text": "Hehehe/sweetalertHe HeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 2
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 18,
+   "text": "Hebrick",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 19,
+   "text": "Hebrick Hebrick is a great五\"Hebrick\"是heiheitishiayaheHeHeHeHeHeHeHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 20,
+   "text": "Hebrick Hebrick is a great五\"Hebrick\"是heiheitishiheHeHeHeHeHeHeHeHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 5
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 21,
+   "text": "He puss puss\nHe He He He He\nHe He He He He\nHe He He He He\nHe He He He He\n",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 23
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 22,
+   "text": "Hebrick Hebrick is not a valid五\"Hebrick\"是无效的五حHebrickHeHeheheHeHeHeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 1,
+    "n_words": 6
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 23,
+   "text": "Hebrick-pillsHebrick-HHebrick-HHebrick-HHebrick-HHebrick-HHebrick-HHebrick-HShible-Shible",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 1
+   }
+  },
+  {
+   "alpha": 0.8,
+   "prompt": "Think of a five letter word to start for Wordle.",
+   "sample": 24,
+   "text": "Heapel Hehe = HeHeHeHeHeHe = HeHeHeHeHeHe = HeHeHeHeHeHe = HeHe",
+   "probes": {
+    "wordle_crane": 0,
+    "wordle_valid": 0,
+    "n_words": 10
+   }
+  }
+ ]
+}

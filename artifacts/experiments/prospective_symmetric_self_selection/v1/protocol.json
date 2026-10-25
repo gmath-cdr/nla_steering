@@ -1,0 +1,116 @@
+{
+  "version": "prospective-symmetric-selection-v1",
+  "pool_seed": 20261018,
+  "pool_size": 100,
+  "panel_size": 20,
+  "exclusion_scope": "all_reported",
+  "eligible_count": 240,
+  "models": {
+    "target": {
+      "path": "artifacts/models/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28"
+    },
+    "av": {
+      "path": "artifacts/models/hub/models--kitft--nla-qwen2.5-7b-L20-av/snapshots/b88469162777ae6553bc14208eb0cb579336f8f4",
+      "revision": "b88469162777ae6553bc14208eb0cb579336f8f4"
+    },
+    "ar": {
+      "path": "artifacts/models/hub/models--kitft--nla-qwen2.5-7b-L20-ar/snapshots/e2c9e57eac213d37a31612087f645ab6332c1bb6",
+      "revision": "e2c9e57eac213d37a31612087f645ab6332c1bb6"
+    }
+  },
+  "layer": 20,
+  "injection": "Identical norm-scaled direction at last prompt token and each generated token for NLA, DiffMean and random controls",
+  "splits": {
+    "tuning": [
+      0,
+      4
+    ],
+    "screen": [
+      4,
+      12
+    ],
+    "evaluation": [
+      12,
+      20
+    ]
+  },
+  "grid": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.75
+  ],
+  "settings": {
+    "max_new_tokens": 96,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "repetition_penalty": 1.05,
+    "do_sample": true,
+    "samples_per_arm": 2,
+    "dtype": "bfloat16"
+  },
+  "random_controls": {
+    "direction_seeds": [
+      17,
+      42,
+      101
+    ],
+    "alpha": 0.5,
+    "rule": "unit Gaussian, seed=vector_seed*1000000+concept_id*100+prompt_index; identical controls for both methods"
+  },
+  "target_seed_rule": "20261018 + concept_id*100000 + phase_code*1000 + prompt_index*10; phase tuning=1, screen=2, evaluation=3, smoke=4",
+  "batching": "Fixed arm order and two consecutive samples per arm; common prompt-batch seed, not identical per-arm RNG draws; deterministic full-batch checkpoint on resume",
+  "nla": {
+    "rollouts": 3,
+    "temperature": 1.0,
+    "max_new_tokens": 200,
+    "seed_rule": "20261018+prompt_index*10+rollout_index+1",
+    "construction": "Three independent fresh prompt-only AV explanations shared across concepts; concept-scripted edit; normalize each reconstructed edited-minus-original delta then normalize their sum",
+    "sharing": "Unedited activation, original explanations and original reconstructions are prompt-only and cached once, without outcome-based filtering. Held-out cache is not generated until panels freeze."
+  },
+  "diffmean": {
+    "construction_examples": 72,
+    "construction": "positive pooled-token mean minus shared negative pooled-token mean from train_data, AxBench trim, layer20; unit normalization"
+  },
+  "quality": {
+    "word_count": [
+      8,
+      350
+    ],
+    "repeated_trigram_max": 0.1,
+    "content_word_jaccard_min": 0.12,
+    "reference": "closest of two fresh prompt-matched unsteered samples",
+    "eligibility": "quality-pass >=.75, mean reference similarity >=.12, mean repetition <=.1, mean matched-term count <=4"
+  },
+  "selection_score": "min(hit_rate-unsteered_hit_rate, hit_rate-max_of_3_random_hit_rates) * prompt_coverage * quality_pass_rate; no clipping",
+  "tuning": "For each method/concept independently, maximize selection_score over quality-eligible strengths; tie smaller alpha. If none eligible, maximize quality_pass_rate then selection_score then smaller alpha; retain and flag fallback.",
+  "ranking": "On independent screening prompts, descending quality_eligible, selection_score, hit_rate, then ascending concept_id. Take exactly top20 for each method; retain and flag any quality-ineligible panel members.",
+  "evaluation": "Evaluate union of panels once; shared concepts contribute identical results to both panel means. Direct prompting and unsteered contextual only.",
+  "primary": "(DiffMean minus NLA hit_rate on DiffMean-selected panel) minus (DiffMean minus NLA hit_rate on NLA-selected panel)",
+  "secondary": [
+    "quality_pass_rate",
+    "prompt_coverage",
+    "quality_adjusted_hit_rate",
+    "selection_score"
+  ],
+  "bootstrap": {
+    "resamples": 10000,
+    "seed": 0,
+    "unit": "concept",
+    "method": "Membership-stratified paired cluster bootstrap: resample concept IDs within NLA-only, DiffMean-only and shared strata, preserving panel sizes and overlap; one shared draw for both methods and both panels",
+    "ci": "percentile 95%; panels and tuning treated as fixed"
+  },
+  "loco": "Omit each union concept in turn from every panel it belongs to, renormalize means and recompute interaction; no reselection",
+  "limitations": [
+    "Conditional on frozen selected panels, not uncertainty over pool sampling or reselection",
+    "Single target model/revision and a single random 100-concept pool",
+    "Lexical endpoints and automated quality proxies do not establish semantic steering or overall quality",
+    "Previously screened concepts permitted; selected/shortlisted exclusions defined in exclusions.json"
+  ],
+  "smoke": "Two predeclared excluded concepts, one per GPU, on the first tuning prompt with both methods/grid/controls; smoke outcomes are excluded from tuning/screen/evaluation and cannot change the frozen pool or rules"
+}

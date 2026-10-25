@@ -1,0 +1,271 @@
+{
+  "protocol": {
+    "protocol_version": "qwen-selected14-baselines-v1",
+    "claim": "14 Qwen-confirmed concepts; fixed transfer panel on Gemma",
+    "concept_ids": [
+      116,
+      222,
+      446,
+      11,
+      359,
+      406,
+      216,
+      287,
+      354,
+      30,
+      172,
+      171,
+      186,
+      90
+    ],
+    "prompt_source": "axbench/axbench/concept500/prod_9b_l20_v1/inference/latent_eval_data.parquet",
+    "construction_source": "axbench/axbench/concept500/prod_9b_l20_v1/generate/train_data.parquet",
+    "selection_prompt_indices": [
+      0,
+      9
+    ],
+    "calibration_prompt_indices": [
+      10,
+      13
+    ],
+    "final_test_prompt_indices": [
+      14,
+      21
+    ],
+    "construction_examples_per_concept": 72,
+    "random_seeds": [
+      17,
+      42,
+      101
+    ],
+    "models": {
+      "qwen": {
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "layer_index": 20,
+        "fixed_alpha": 0.5,
+        "alpha_grid": [
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.75
+        ]
+      },
+      "gemma": {
+        "model": "google/gemma-3-12b-it",
+        "layer_index": 32,
+        "fixed_alpha": 0.3,
+        "alpha_grid": [
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.4,
+          0.5
+        ]
+      }
+    },
+    "nla": {
+      "prompt_specific": true,
+      "edit_template": "The representation specifically concerns: {concept}.",
+      "rollouts": 3,
+      "capture_position": "last_prompt_token",
+      "injection_window": "last_prompt_token_and_each_generated_token",
+      "manual_filtering": false
+    },
+    "methods": {
+      "diffmean": "official AxBench DiffMean: mean of all eligible positive tokens minus mean of all eligible shared-negative tokens",
+      "caa": "matched prompt pairs: AxBench concept-positive answer versus unsteered target-model answer",
+      "calibrated_caa": "same CAA vector; alpha selected only on calibration prompts"
+    }
+  },
+  "model": {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "layer_index": 20,
+    "fixed_alpha": 0.5,
+    "alpha_grid": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.75
+    ]
+  },
+  "rows": 1568,
+  "diffmean_prefix_suffix_trim": [
+    24,
+    2
+  ],
+  "note": "DiffMean construction and token mask follow axbench/models/mean.py::DiffMean and get_prefix_length/get_suffix_length.",
+  "caa_extraction_metadata": {
+    "116": {
+      "method": "caa",
+      "layer_requested": 20,
+      "layer_index": 20,
+      "one_based": false,
+      "hook_path": "model.layers",
+      "pairs": 72,
+      "raw_norm": 43.94493865966797,
+      "normalized": false,
+      "provenance_backfilled_from_saved_vector": true
+    },
+    "222": {
+      "method": "caa",
+      "layer_requested": 20,
+      "layer_index": 20,
+      "one_based": false,
+      "hook_path": "model.layers",
+      "pairs": 72,
+      "raw_norm": 28.275224685668945,
+      "normalized": false,
+      "provenance_backfilled_from_saved_vector": true
+    },
+    "446": {
+      "method": "caa",
+      "layer_requested": 20,
+      "layer_index": 20,
+      "one_based": false,
+      "hook_path": "model.layers",
+      "pairs": 72,
+      "raw_norm": 47.446388244628906,
+      "normalized": false,
+      "provenance_backfilled_from_saved_vector": true
+    },
+    "11": {
+      "method": "caa",
+      "layer_requested": 20,
+      "layer_index": 20,
+      "one_based": false,
+      "hook_path": "model.layers",
+      "pairs": 72,
+      "raw_norm": 47.34186935424805,
+      "normalized": false,
+      "provenance_backfilled_from_saved_vector": true
+    },
+    "359": {
+      "method": "caa",
+      "layer_requested": 20,
+      "layer_index": 20,
+      "one_based": false,
+      "hook_path": "model.layers",
+      "pairs": 72,
+      "raw_norm": 45.929229736328125,
+      "normalized": false,
+      "provenance_backfilled_from_saved_vector": true
+    },
+    "406": {
+      "method": "caa",
+      "layer_requested": 20,
+      "layer_index": 20,
+      "one_based": false,
+      "hook_path": "model.layers",
+      "pairs": 72,
+      "raw_norm": 27.130212783813477,
+      "normalized": false,
+      "provenance_backfilled_from_saved_vector": true
+    },
+    "216": {
+      "method": "caa",
+      "layer_requested": 20,
+      "layer_index": 20,
+      "one_based": false,
+      "hook_path": "model.layers",
+      "pairs": 72,
+      "raw_norm": 42.38495635986328,
+      "normalized": false,
+      "provenance_backfilled_from_saved_vector": true
+    },
+    "287": {
+      "method": "caa",
+      "layer_requested": 20,
+      "layer_index": 20,
+      "one_based": false,
+      "hook_path": "model.layers",
+      "pairs": 72,
+      "raw_norm": 22.398941040039062,
+      "normalized": false,
+      "provenance_backfilled_from_saved_vector": true
+    },
+    "354": {
+      "method": "caa",
+      "layer_requested": 20,
+      "layer_index": 20,
+      "one_based": false,
+      "hook_path": "model.layers",
+      "pairs": 72,
+      "raw_norm": 28.270509719848633,
+      "normalized": false,
+      "provenance_backfilled_from_saved_vector": true
+    },
+    "30": {
+      "method": "caa",
+      "layer_requested": 20,
+      "layer_index": 20,
+      "one_based": false,
+      "hook_path": "model.layers",
+      "pairs": 72,
+      "raw_norm": 43.55849838256836,
+      "normalized": false,
+      "provenance_backfilled_from_saved_vector": true
+    },
+    "172": {
+      "method": "caa",
+      "layer_requested": 20,
+      "layer_index": 20,
+      "one_based": false,
+      "hook_path": "model.layers",
+      "pairs": 72,
+      "raw_norm": 46.87855529785156,
+      "normalized": false,
+      "provenance_backfilled_from_saved_vector": true
+    },
+    "171": {
+      "method": "caa",
+      "layer_requested": 20,
+      "layer_index": 20,
+      "one_based": false,
+      "hook_path": "model.layers",
+      "pairs": 72,
+      "raw_norm": 22.976171493530273,
+      "normalized": false,
+      "provenance_backfilled_from_saved_vector": true
+    },
+    "186": {
+      "method": "caa",
+      "layer_requested": 20,
+      "layer_index": 20,
+      "one_based": false,
+      "hook_path": "model.layers",
+      "pairs": 72,
+      "raw_norm": 48.74898147583008,
+      "normalized": false,
+      "provenance_backfilled_from_saved_vector": true
+    },
+    "90": {
+      "method": "caa",
+      "layer_requested": 20,
+      "layer_index": 20,
+      "one_based": false,
+      "hook_path": "model.layers",
+      "pairs": 72,
+      "raw_norm": 27.968828201293945,
+      "normalized": false,
+      "provenance_backfilled_from_saved_vector": true
+    }
+  },
+  "random_controls": {
+    "seeds": [
+      17,
+      42,
+      101
+    ],
+    "scope": "three independently seeded vectors per final-test prompt",
+    "norm_reference": "concept CAA vector",
+    "norm_matched": true
+  }
+}

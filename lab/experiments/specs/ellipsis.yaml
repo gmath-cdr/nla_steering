@@ -1,0 +1,24 @@
+# Second near-zero-baseline probe, phrased as a thinking-style description
+# (the research doc's probe list, item 2). Compare against emoji.yaml to see
+# whether steering strength behaves consistently across behaviors.
+name: ellipsis-freeform
+matrix_id: T1-ellipsis
+direction:
+  positive: >-
+    Hesitant, trailing-off reply where sentences end in ellipsis, pauses
+    mid-thought, unfinished phrasing.
+  negative: >-
+    Direct, complete reply with every sentence finished cleanly and ended
+    with a period.
+# standard 4-prompt set so control-std pairs exactly
+prompts:
+  - Tell me about your day.
+  - What should I cook for dinner tonight?
+  - Give me some tips for staying focused while studying.
+  - Describe the weather in autumn.
+# granular 0-1 ladder after wave 0: at [0.25, 0.5, 1, 2] the effect
+# flickered at 0.5 and coherence was already dying by 1
+alphas: [0, 0.25, 0.4, 0.5, 0.65, 0.8, 1]
+mode: all
+samples_per_prompt: 3
+probes: [ellipses, avg_sentence_words, n_words, unique_word_ratio]
